@@ -22,6 +22,7 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
+{{ 'component-selling-plans.css' | asset_url | stylesheet_tag }}
 
 {%- if card_product and card_product != empty -%}
   {%- liquid
@@ -35,7 +36,7 @@
       assign ratio = 1
     endif
   -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
+  <div class="card-wrapper product-card-wrapper underline-links-hover" id="product-collection-{{ card_product.id }}">
     <div
       class="
         card card--{{ settings.card_style }}
@@ -216,6 +217,17 @@
                 assign qty_rules = true
               endif
             -%}
+
+            <div class="card__sellingplans">
+              {%- render 'selling-plans',
+                product: card_product,
+                block: block,
+                product_form_id: product_form_id,
+                collection: true,
+                select: true
+              -%}
+            </div>
+            
             {%- if card_product.variants.size > 1 or qty_rules -%}
               <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
                 <button

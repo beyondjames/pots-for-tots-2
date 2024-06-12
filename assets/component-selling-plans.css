@@ -1,0 +1,34 @@
+.selling_plan_theme_integration {
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+.selling_plan_theme_integration select {
+  width: 100%;
+  padding: 8px;
+  font-family: Clear Sans;
+  background-color: #fff;
+  border: 1px solid #5c8972;
+  border-radius: 0;
+  color: rgb(var(--color-foreground));
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.selling_plan_app_container fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.selling_plan_label {
+  font-size: 12px;
+}
+
+.selling_plan_theme_arrow {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  background-color: transparent;
+  transform: rotate(90deg);
+}
