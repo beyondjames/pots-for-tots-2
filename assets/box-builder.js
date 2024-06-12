@@ -34,6 +34,7 @@ let subscription = {
     reviewBoxModalQuantity: '[data-modal-product-quantity]',  // Element displaying product quantity in the review box
     totalPrice: '[data-modal-total-price]',  // Element displaying total price in the review box
     spaceRemaining: '[data-remaining]',
+    upsellContainer: 'upsell-card'
   },
 
   // Function to initialize product state and UI elements
@@ -71,27 +72,12 @@ let subscription = {
 
     // Check for saved product list in session storage
     if (getCookie('potsProducts') == "true" && sessionStorage.getItem("potsProductList") !== null) {
-      // Retrieve saved product list from session storage
-      let productList = JSON.parse(sessionStorage.getItem('potsProductList'));
 
       // Set session storage item for subscription type
       sessionStorage.setItem('potsType', this.state.subscriptionType);
 
-      // Update UI elements based on saved product list
-      productList.forEach((item) => {
-        // Code to update UI elements for each saved product
-        const btnId = "Button-" + item.id;
-        const qtyId = "Quantity-" + item.id;
-        const qtyBtnWrap = document.getElementById(btnId);
-        const qtySelector = document.getElementById(qtyId);
+      this.handleUIElements();
 
-        if (qtySelector && item.quantity > 0) {
-          const qtyBtn = qtyBtnWrap.querySelector('button');
-          qtyBtn.classList.add("hidden");
-          qtySelector.parentElement.parentElement.classList.remove("hidden");
-          qtySelector.value = item.quantity;
-        }
-      });
     } else {
       // Build product list from initial product variants
       variants.forEach(function (item) {
@@ -133,12 +119,72 @@ let subscription = {
       // Save product list and settings
       setCookie('potsProducts', true, 1);
       sessionStorage.setItem('potsProductList', JSON.stringify(productList))
+
       sessionStorage.setItem('potsType', this.state.subscriptionType);
       sessionStorage.setItem('potsFreq', this.state.subscriptionFrequency);
 
       // Perform calculations and updates
       this.calculateTotals();
       this.updateProgressBar();
+    }
+  },
+  handleUIElements: function () {
+
+    // Retrieve saved product list from session storage
+    let productList = JSON.parse(sessionStorage.getItem('potsProductList'));
+
+    const upsells = document.querySelectorAll('#upsells');
+
+    // Update UI elements based on saved product list
+    productList.forEach((item) => {
+
+      if (upsells) {
+
+        let upSellArray = Array.from(upsells); // Convert to array
+
+        const matchingUpsells = upSellArray.filter(upsell => upsell.dataset.id === item.id);
+
+        // Group matching upsells by ID
+        const groupedUpsells = {};
+        matchingUpsells.forEach(upsell => {
+          const id = upsell.dataset.id;
+          if (!groupedUpsells[id]) {
+            groupedUpsells[id] = [];
+          }
+          groupedUpsells[id].push(upsell);
+        });
+
+        // Process groups with at least two matching items
+        for (const id in groupedUpsells) {
+          if (groupedUpsells[id].length >= 2) {
+            const group = groupedUpsells[id];
+
+            if (item.quantity >= 1) {
+              group.forEach(upsell => {
+                upsell.classList.add('hidden');
+              });
+            }
+          }
+        }
+      }
+
+      // Code to update UI elements for each saved product
+      const btnId = "Button-" + item.id;
+      const qtyId = "Quantity-" + item.id;
+      const qtyBtnWrap = document.getElementById(btnId);
+      const qtySelector = document.getElementById(qtyId);
+
+
+      if (qtySelector && item.quantity > 0) {
+        const qtyBtn = qtyBtnWrap.querySelector('button');
+        qtyBtn.classList.add("hidden");
+        qtySelector.parentElement.parentElement.classList.remove("hidden");
+        qtySelector.value = item.quantity;
+      }
+    });
+
+    if (upsells) {
+      this.updateUpsellContainer();
     }
   },
 
@@ -200,6 +246,7 @@ let subscription = {
       setCookie('potsProducts', true, 1); // Set a cookie indicating product selection
       sessionStorage.setItem('potsProductList', JSON.stringify(productJson));
       this.calculateTotals(); // Recalculate totals
+      this.handleUpsellRemovalChange();
       this.updateReviewBoxModal(); // Update the review box modal
       this.updateProgressBar(); // Update any progress bars
     });
@@ -253,7 +300,7 @@ let subscription = {
       button.disabled = false;
     } else {
       // Display the warning message with the required count
-      countWarning.textContent = `Must add a minimum of 8 meals, please add ${count} more`;
+      countWarning.textContent = `Minimum order of 8 meals, please add ${count} more`;
       countWarning.classList.remove("hidden");
       // Disable the checkout button
       button.disabled = true;
@@ -282,7 +329,7 @@ let subscription = {
           item += '<td class="box-drawer__table-data box-drawer__product-image summary-image"><img src="' + product.imageURL + '" alt="' + product.title + " : " + product.variantTitle + '"></td>';
         }
 
-        item += '<td class="box-drawer__table-data box-drawer__product-title summary-title"><div class="summary-product">' + product.title + '</div><div class="box-drawer__product-variant summary-variant">' + product.variantTitle + '</div></td>';
+        item += '<td class="box-drawer__table-data box-drawer__product-title summary-title"><div class="box-drawer__product-title-text summary-product">' + product.title + '</div><div class="box-drawer__product-variant summary-variant">' + product.variantTitle + '</div></td>';
         item += '<td class="box-drawer__table-data box-drawer__product-quantity summary-quantity">' + product.quantity + '</td>';
         item += '<td class="box-drawer__table-data box-drawer__product-price summary-price">' + currency + '</td>';
         item += '</tr>';
@@ -296,13 +343,94 @@ let subscription = {
     // Update the modal list content with the generated HTML
     modalList.innerHTML = productListContents;
   },
+  handleUpsellRemovalChange: function () {
 
+    let productList = JSON.parse(sessionStorage.getItem('potsProductList'));
+
+    const upsells = document.querySelectorAll('#upsells');
+    if (upsells) {
+
+      // Update UI elements based on saved product list
+      productList.forEach((item) => {
+
+        const upSellArray = Array.from(upsells); // Convert to array
+
+        const matchingUpsells = upSellArray.filter(upsell => upsell.dataset.id === item.id);
+
+        // Group matching upsells by ID
+        const groupedUpsells = {};
+        matchingUpsells.forEach(upsell => {
+          const id = upsell.dataset.id;
+          if (!groupedUpsells[id]) {
+            groupedUpsells[id] = [];
+          }
+          groupedUpsells[id].push(upsell);
+        });
+
+        // Process groups with at least two matching items
+        for (const id in groupedUpsells) {
+          if (groupedUpsells[id].length >= 2) {
+            const group = groupedUpsells[id];
+
+            if (item.quantity < 1) {
+              group.forEach(upsell => {
+                upsell.classList.remove('hidden');
+                this.updateUpsellContainer();
+              });
+            }
+          }
+        }
+      });
+    }
+  },
+  updateUpsellContainer: function () {
+
+    const upsells = document.querySelectorAll('#upsells');
+
+    let upsellsArray = [];
+    upsells.forEach(upsellDiv => {
+      if (!upsellDiv.classList.contains('hidden')) {
+        // The upsell element is NOT hidden
+        upsellsArray.push(upsellDiv); // Add it to the array
+      }
+    });
+    if (upsellsArray.length === 0) {
+      upsells.forEach(upsellDiv => {
+        const outerDiv = upsellDiv.closest('.box-drawer__outer');
+
+        const mobileUpsells = upsellDiv.parentNode.parentNode.closest("#mobileUpsells");
+
+        if (mobileUpsells) {
+          mobileUpsells.classList.add("hidden")
+
+        }
+        if (outerDiv) {
+          outerDiv.classList.add("hidden")
+        }
+      });
+    } else {
+      upsells.forEach(upsellDiv => {
+        const outerDiv = upsellDiv.closest('.box-drawer__outer');
+
+        const mobileUpsells = upsellDiv.parentNode.parentNode.closest("#mobileUpsells");
+
+        if (mobileUpsells) {
+          mobileUpsells.classList.remove("hidden")
+        }
+        if (outerDiv) {
+          outerDiv.classList.remove("hidden")
+        }
+      });
+    }
+  },
   calculateTotals: function () {
     console.log("Calculating totals");
     let productCount = 0;
     let productTotalCost = 0;
     let productSubscriptionTotalCost = 0;
     let productJson;
+    let upsellProductJson;
+
 
     // Get the product array
     let productList = sessionStorage.getItem('potsProductList');
@@ -320,6 +448,7 @@ let subscription = {
       productSubscriptionTotalCost += productSubScriptionLineTotal;
       productCount += parseInt(product.quantity);
     });
+
 
     this.state.selectedItemCount = productCount;
 
@@ -390,7 +519,7 @@ let subscription = {
 
       if (space == 1) {
         labelText = "Add " + space + " more meal and delivery is £5.99";
-      }else{
+      } else {
         labelText = "Add " + space + " more meals and delivery is £5.99";
       };
 
@@ -401,7 +530,7 @@ let subscription = {
       space = goal2 - combinedTotal;
       if (space == 1) {
         labelText = "Checkout or add " + space + " more meal and delivery is";
-      }else{
+      } else {
         labelText = "Checkout or add " + space + " more meals and delivery is";
       };
 
@@ -419,7 +548,7 @@ let subscription = {
 
       if (space == 1) {
         labelText = "Checkout or add " + space + " more meal and delivery is";
-      }else{
+      } else {
         labelText = "Checkout or add " + space + " more meals and delivery is";
       };
 
@@ -437,7 +566,7 @@ let subscription = {
 
       if (space == 1) {
         labelText = "Checkout or add " + space + " more meal and delivery is";
-      }else{
+      } else {
         labelText = "Checkout or add " + space + " more meals and delivery is";
       };
 
@@ -773,6 +902,78 @@ class ProductButton extends HTMLElement {
 }
 customElements.define('product-button', ProductButton);
 
+
+
+// Define a custom element for a product button
+class UpsellProductButton extends HTMLElement {
+  constructor() {
+    super();
+
+    // Get references to the button and related elements
+    const button = this.querySelector('button');
+    const buttonId = this.id; // Get the button's ID for product identification
+    const parent = this.parentNode;
+    const selector = this.closest(".box-drawer__products__upsell")// Selector for the quantity input wrapper
+
+
+    // Add an event listener to the button
+    if (button) {
+      button.addEventListener('click', (e) => {
+        e.preventDefault(); // Prevent default button behavior
+
+        // Update the quantity input value to 1
+        const input = parent.querySelector('[data-upsell-product-quantity]');
+
+        // Manage product list in session storage
+        let productList = sessionStorage.getItem("potsProductList");
+        let productJson = JSON.parse(productList);
+
+        // Find the product in the list and update its quantity
+        let found = false;
+        const id = buttonId.replace("Upsell-Button-", ""); // Extract product ID from button ID
+
+        productJson.forEach(function (product) {
+          if (product.id == id) {
+            product.quantity = product.quantity++;
+            input.value = product.quantity++;
+            // Hide the button after it's clicked
+            selector.classList.add("hidden");
+            found = true;
+
+          }
+
+        });
+
+        // If the product is not in the list, add it
+        if (!found) {
+          let img = input.dataset.imageUrl;
+
+          productJson.push({
+            id: input.dataset.index,
+            quantity: input.value,
+            price: input.dataset.price,
+            title: input.dataset.title,
+            variantTitle: input.dataset.variantTitle,
+            imageURL: img
+          })
+        }
+
+
+        // Update the product list in session storage
+        sessionStorage.setItem('potsProductList', JSON.stringify(productJson));
+
+        subscription.handleUIElements();
+        subscription.calculateTotals();
+        // subscription.updateProgressBar();
+        subscription.updateUpsellContainer();
+        subscription.updateReviewBoxModal();
+
+      });
+    }
+  }
+}
+customElements.define('upsell-product-button', UpsellProductButton);
+
 // Define Modal Card Opener
 class ModalCardOpener extends HTMLElement {
   constructor() {
@@ -892,6 +1093,7 @@ class subscriptionType extends HTMLElement {
           // Trigger updates for calculations and review box
           subscription.calculateTotals();
           subscription.updateReviewBoxModal();
+          subscription.updateUpsellPrices();
         }
       });
     });
