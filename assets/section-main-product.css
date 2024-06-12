@@ -174,7 +174,6 @@
   padding-left: 0;
 }
 
-
 /* Fallback */
 .no-js .shopify-payment-button__button [role='button']:focus + label {
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0 0.5rem rgba(var(--color-foreground), 0.55);
@@ -1508,4 +1507,13 @@ a.product__text {
   color: rgb(var(--color-foreground));
   -webkit-appearance: none;
   appearance: none;
+}
+
+.product .rc-template__button-group .rc-radio {
+  padding: 1.5rem;
+  border-radius: 0 !important;
+}
+
+.product .rc-template__button-group .price-label {
+  display: none;
 }
