@@ -113,7 +113,32 @@
                   </thead>
 
                   <tbody role="rowgroup">
-                    {%- for item in cart.items -%}
+                    
+      
+{% # comment - Start Recharge bundle %}
+{%- assign rc_displayed_bundles = '' -%}
+{%- assign rc_bundles = '' -%}
+{%- for recharge_cart_item in cart.items -%}
+  {%- if recharge_cart_item.properties._rc_bundle -%}
+    {%- unless rc_bundles contains recharge_cart_item.properties._rc_bundle -%}
+      {%- assign rc_bundles = rc_bundles | append: ',' | append: recharge_cart_item.properties._rc_bundle -%}
+    {%- endunless -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign rc_bundles = rc_bundles | remove_first: ',' -%}
+{% # comment - End Recharge bundle %}
+
+      {%- for item in cart.items -%}
+      
+{% # comment - Start Recharge bundle %}          
+{%- if rc_bundles contains item.properties._rc_bundle -%}
+  {% render 'cart-recharge-bundle-product' with { item: item, rc_displayed_bundles: rc_displayed_bundles, template: 'drawer' } %}
+  {%- assign rc_displayed_bundles = rc_displayed_bundles | append: ',' | append: item.properties._rc_bundle -%}
+  {% continue %}
+{%- endif -%}
+{% # comment - End Recharge bundle %}
+
+    
                       <tr id="CartDrawer-Item-{{ item.index | plus: 1 }}" class="cart-item" role="row">
                         <td class="cart-item__media" role="cell" headers="CartDrawer-ColumnProductImage">
                           {% if item.image %}
