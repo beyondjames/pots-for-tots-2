@@ -1,0 +1,119 @@
+{{ 'section-brands.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+{%- capture brands -%}
+  {%- for block in section.blocks -%}
+    <li class="brands__item">
+      <div class="brands__card">
+        {%- if block.settings.image != blank -%}
+          <div class="brands__image">
+            <img src="{{ block.settings.image | image_url: width: 90 }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" alt="{{ block.settings.image.alt }}" loading="lazy" />
+          </div>
+        {%- endif -%}
+
+        {%- if block.settings.title != blank -%}
+          <span class="brands__title">
+            {{- block.settings.title -}}
+          </span>
+        {%- endif -%}
+      </div>
+    </li>
+  {%- endfor -%}
+{%- endcapture -%}
+
+<div class="brands section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient">
+  <div class="brands__inner">
+    <div class="brands__body">
+      <ul class="brands__items">
+        {{ brands }}
+      </ul>
+
+      <ul class="brands__items" aria-hidden="true">
+        {{ brands }}
+      </ul>
+
+      <ul class="brands__items" aria-hidden="true">
+        {{ brands }}
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Brands (C)",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "brand",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brands (C)"
+    }
+  ]
+}
+{% endschema %}

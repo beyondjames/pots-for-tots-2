@@ -1,0 +1,113 @@
+<div id="card__variants">
+  {%- for variant in card_product.variants -%}
+    <div class="card__variants-item{% if variant.metafields.custom.hide_from_box_builder == true %} card__variants-item--hide{% endif %}">
+      <div class="card__variants-price">
+        {%- if variant.compare_at_price -%}
+          <div class="price compare-price">
+            {{- variant.selling_plan_allocations[0].compare_at_price | money -}}
+          </div>
+        {%- endif -%}
+
+        <div class="price">
+          {{ variant.selling_plan_allocations[0].price | money }}
+
+          {%- if card_variant_title == true -%}
+            <span class="price__variant">
+              {% if variant.title == 'Small' %}
+                ({{ variant.title | downcase }})
+              {% elsif variant.title == 'Medium' %}
+                ({{ variant.title | downcase }})
+              {% endif %}
+            </span>
+          {%- endif -%}
+        </div>
+      </div>
+
+      {%- if variant.available == true -%}
+        <div class="card__variants-variant" id="{{ variant.id }}" data-variant>
+          <ul class="card__variant-selling-plans hidden">
+            {%- for allocation in variant.selling_plan_allocations -%}
+              {%- for option in allocation.selling_plan.options -%}
+                {%- assign frequency = option.value | remove: 'Week(s)' | strip -%}
+
+                <li
+                  value="{{ frequency }}"
+                  data-selling-plan-id="{{ allocation.selling_plan.id }}"
+                  data-selling-plan-price="{{ allocation.price }}"
+                >
+                  {{- allocation.selling_plan.name -}}
+                </li>
+              {%- endfor -%}
+            {%- endfor -%}
+          </ul>
+
+          <div class="card__variants-title hidden">
+            {%- if variant.title == 'Default Title' -%}
+              Single Item
+            {%- elsif variant.title == 'Small' -%}
+              {{- variant.title -}}
+            {%- elsif variant.title == 'Medium' -%}
+              {{- variant.title -}}
+            {%- else -%}
+              {{- variant.title -}}
+            {%- endif -%}
+          </div>
+
+          <div class="card__variants-quantity">
+            <div class="cart-item__quantity">
+              <product-button id="Button-{{ variant.id }}">
+                <button class="quick-add__submit button button--full-width button--primary{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %} card__variants-button" name="add">
+                  {{- 'products.product.add' | t -}}
+                </button>
+              </product-button>
+
+              <div class="cart-item__quantity-wrapper hidden">
+                <label class="visually-hidden" for="Quantity-{{ variant.id }}">
+                  {{- 'products.product.quantity.label' | t -}}
+                </label>
+
+                <box-quantity-input class="quantity">
+                  <button class="quantity__button no-js-hidden" name="minus" type="button">
+                    <span class="visually-hidden">
+                      {{- 'products.product.quantity.decrease' | t: product: item.product.title | escape -}}
+                    </span>
+
+                    {%- render 'icon-minus' -%}
+                  </button>
+
+                  <input
+                    class="quantity__input"
+                    data-product-quantity
+                    type="number"
+                    name="updates[]"
+                    value="0"
+                    min="0"
+                    aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                    id="Quantity-{{ variant.id }}"
+                    data-index="{{ variant.id }}"
+                    data-price="{{ variant.price }}"
+                    data-title="{{ card_product.title }}"
+                    data-variant-title="{{ variant.title }}"
+                    data-image-url="{{ card_product.featured_media | image_url: width: 150 }}"
+                  >
+
+                  <button class="quantity__button no-js-hidden" name="plus" type="button">
+                    <span class="visually-hidden">
+                      {{- 'products.product.quantity.increase' | t: product: item.product.title | escape -}}
+                    </span>
+
+                    {%- render 'icon-plus' -%}
+                  </button>
+                </box-quantity-input>
+              </div>
+            </div>
+          </div>
+        </div>
+      {%- else -%}
+        <span class="card__variants-soldout">
+          SOLD OUT
+        </span>
+      {%- endif -%}
+    </div>
+  {%- endfor -%}
+</div>

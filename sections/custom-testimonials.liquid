@@ -1,0 +1,212 @@
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="testimonials-section section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient {% if section.settings.full_width %}rich-text--full-width content-container--full-width{% endif %}">
+  <div class="page-width{% if section.settings.custom_alignment == 'center' %} center{% endif %}">
+    <div class="testimonial-header">
+      {%- if section.settings.custom_text_title != blank -%}
+        <h2 class="testimonial-title h1">
+          {{- section.settings.custom_text_title -}}
+        </h2>
+      {%- endif -%}
+
+      {%- if section.settings.custom_text_body != blank -%}
+        <div class="testimonial-description rte">
+          {{- section.settings.custom_text_body -}}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <div class="slider-wrapper">
+      <div class="swiper testimonials-swiper">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            <div class="swiper-slide">
+              <div class="swiper-content">
+                {%- render 'icon-quote' -%}
+
+                {%- if block.settings.text != blank -%}
+                  <div class="rte">
+                    {{- block.settings.text -}}
+                  </div>
+                {%- endif -%}
+
+                {%- if block.settings.title != blank -%}
+                  <p class="testimonial-author">
+                    {{- block.settings.title | escape -}}
+                  </p>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+  var swiperSpeed = {{ section.settings.speed }};
+  var swiper = new Swiper(".testimonials-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay : swiperSpeed
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      750: {
+        slidesPerView: 2
+      },
+      990: {
+        slidesPerView: 2,
+        spaceBetween: 40
+      }
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Testimonials (C)",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "t:sections.rich-text.settings.full_width.label"
+    },
+    {
+      "id": "custom_text_title",
+      "type": "text",
+      "label": "Section heading",
+      "default": "Title"
+    },
+    {
+      "id": "custom_text_body",
+      "type": "richtext",
+      "label": "Section description",
+      "default": "<p>Add your text here</p>"
+    },
+    {
+      "type": "select",
+      "id": "custom_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left",
+      "label": "Section alignment"
+    },
+    {
+      "type": "range",
+      "id": "speed",
+      "min": 0,
+      "max": 9000,
+      "step": 100,
+      "unit": "ms",
+      "label": "Transition Speed",
+      "default": 2400
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Name",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "t:sections.multicolumn.blocks.column.settings.text.label"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Testimonials (C)",
+      "blocks": [
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        },
+        {
+          "type": "testimonial"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

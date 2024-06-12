@@ -1,0 +1,114 @@
+/*
+|--------------------------------------------------------------------------
+| Order Type
+|--------------------------------------------------------------------------
+| @namespace: order-type
+|
+*/
+
+.order-type__items {
+  margin: 8px 0 0;
+  padding-left: 16px;
+}
+
+.order-type__items--border {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(var(--color-foreground), var(--popup-border-opacity));
+}
+
+.order-type__item {
+  margin: 0;
+  font-size: 12px;
+}
+
+.order-type__buttons {
+  display: flex;
+  border: 1px solid #5c8972;
+}
+
+.order-type__button {
+  flex: 1;
+  padding: 1rem 1.5rem;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+
+.order-type__button.active {
+  background-color: #5c8972;
+}
+
+.order-type__button.active .order-type__text {
+  color: #fff;
+}
+
+.order-type__stack {
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.order-type__inline {
+  align-items: center;
+  display: flex;
+}
+
+.order-type__circle {
+  align-items: center;
+  flex-grow: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  display: flex !important;
+  width: 16px;
+  height: 16px;
+  border-radius: 9999px;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  border: 1px solid #5c8972;
+}
+
+.order-type__button.active .order-type__circle {
+  box-shadow: #5c8972 0 0 0 3px;
+  border: 4px solid #fff;
+  background: #5c8972;
+}
+
+.order-type__text {
+  margin: 0;
+  font-family: 'Clear Sans';
+  font-size: 14px;
+  color: rgb(var(--color-foreground));
+}
+
+.order-type__select {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px;
+  font-family: 'Clear Sans';
+  background-color: #fff;
+  border: 1px solid #5c8972;
+  border-radius: 0;
+  color: rgb(var(--color-foreground));
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.order-type__select:focus-visible {
+  outline: 0;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+@media screen and (min-width: 600px) {
+  .order-type__item {
+    font-size: 14px;
+  }
+
+  .order-type__button {
+    padding: 1.5rem;
+  }
+
+  .order-type__circle {
+    width: 22px;
+    height: 22px;
+  }
+}

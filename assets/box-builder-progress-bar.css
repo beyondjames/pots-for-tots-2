@@ -1,0 +1,162 @@
+/*
+|--------------------------------------------------------------------------
+| Progress Bar
+|--------------------------------------------------------------------------
+| @namespace: progress-bar
+|
+*/
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.progress-bar__indicator {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  width: 0%;
+  height: 100%;
+  background-color: #5c8972;
+  border-radius: 15px;
+  -webkit-transition: width 0.5s;
+  transition: width 0.5s;
+}
+
+.progress-bar__indicator:empty{
+  display: block;
+}
+
+.progress-bar__delay {
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.progress-bar__goal {
+  position: absolute;
+  left: 33%;
+  width: 4px;
+  height: 16px;
+  background-color: #fff;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+}
+
+.progress-bar__goal:empty {
+  display: block;
+}
+
+.progress-bar__goal-1 {
+  left: calc(33.33% - 4px);
+}
+
+.progress-bar__goal-2 {
+  left: calc(50% - 4px);
+}
+
+.progress-bar__goal-3 {
+  left: calc(66.66% - 4px);
+}
+
+.progress-bar__goal-4 {
+  left: 100%;
+}
+
+.progress-bar__goal-title {
+  position: absolute;
+  top: 24px;
+  left: 0;
+  display: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.progress-bar__goal-text {
+  position: absolute;
+  top: 24px;
+  display: none;
+  min-width: 128px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.progress-bar__goal-text-1 {
+  left: calc(25% - 140px);
+}
+
+.progress-bar__goal-text-2 {
+  left: calc(50% - 80px);
+}
+
+.progress-bar__goal-text-3 {
+  left: calc(75% - 30px);
+}
+
+.progress-bar__goal-text-4 {
+  left: calc(100% - 128px);
+  text-align: right;
+}
+
+.progress-bar__goal-text-highlight {
+  display: inline-block;
+  margin-top: 0.2rem;
+  padding: 0.4rem 1rem;
+  background-color: #5c8972;
+  color: #fff;
+}
+
+.progress-bar__goal-reached {
+  background-color: #5c8972;
+}
+
+.progress-bar__remaining {
+  padding-top: 1.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  line-height: 16px;
+  outline: none !important;
+}
+
+@media screen and (min-width: 600px) {
+  .progress-bar__remaining {
+    font-size: 1.4rem;
+    letter-spacing: 0.6px;
+    line-height: calc(1 + 0.8 / var(--font-body-scale));
+  }
+}
+
+@media screen and (min-width: 990px) {
+  .progress-bar__goal-title {
+    display: block;
+  }
+
+  .progress-bar__goal-text {
+    display: block;
+  }
+
+  .progress-bar__goal-text-1 {
+    left: calc(33.33% - 38px);
+  }
+
+  .progress-bar__goal-text-2 {
+    left: calc(50% - 44px);
+  }
+
+  .progress-bar__goal-text-3 {
+    left: calc(66.66% - 44px);
+  }
+
+  .progress-bar__goal-text-4 {
+    left: calc(100% - 128px);
+  }
+
+  .progress-bar__remaining {
+    display: none;
+  }
+}

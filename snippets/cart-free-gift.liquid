@@ -1,0 +1,208 @@
+{%- liquid
+  assign free_product_count = section.settings.free_gift_count
+  assign free_product_handle = section.settings.free_gift_product
+  assign free_product = all_products[free_product_handle]
+-%}
+
+{%- if cart.item_count >= free_product_count and section.settings.free_gift_enable != blank and free_product_handle != blank -%}
+  {{ 'component-cart-modal-free-gift.css' | asset_url | stylesheet_tag }}
+
+  <script>
+    window.mugo = window.mugo || {};
+
+    window.mugo.free_product = {
+      enabled: {{ section.settings.free_gift_enable | json }},
+      id: {{ free_product.id | default: null | json }},
+      count: {{ cart.item_count | json }},
+    }
+  </script>
+
+  {%- assign show_free_product = true -%}
+
+  {%- capture free_product_added -%}
+    {%- for item in cart.items -%}
+      {%- if item.product.id == free_product.id -%}
+        {%- assign show_free_product = false -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+
+  {%- if show_free_product -%}
+    <div class="cart-modal-free-gift">
+      <div class="cart-modal-free-gift__box">
+        <button class="cart-modal-free-gift__close" type="button" aria-label="{{ 'accessibility.close' | t }}">
+          {%- render 'icon-close' -%}
+        </button>
+
+        <div class="cart-modal-free-gift__image-container">
+          <img class="cart-modal-free-gift__image" src="{{ free_product.featured_image | image_url: width: 300 }}" width="150" height="{{ 150 | divided_by: free_product.featured_image.aspect_ratio | ceil }}" alt="{{ free_product.featured_image.alt | escape }}" loading="lazy">
+        </div>
+
+        <div class="cart-modal-free-gift__content">
+          {%- assign free_product_title = free_product.title -%}
+
+          <h2 class="cart-modal-free-gift__title">
+            {{- free_product_title -}}
+          </h2>
+
+          {%- if section.settings.free_gift_text != blank -%}
+            <p class="cart-modal-free-gift__text">
+              {{-
+                section.settings.free_gift_text
+                | newline_to_br
+                | replace: '%count%', free_product_count
+                | replace: '%product%', free_product_title
+              -}}
+            </p>
+          {%- endif -%}
+
+          {%- if section.settings.free_gift_button_text != blank -%}
+            <form id="addToCart" class="cart-modal-free-gift__form" enctype="multipart/form-data">
+              <input type="hidden" name="id" value="{{ free_product.selected_or_first_available_variant.id }}">
+              <input type="hidden" name="quantity" value="1">
+              <input type="hidden" name="title" value="{{- free_product_title -}}">
+
+              <button id="handleAddToCart" class="cart-modal-free-gift__button button">
+                {{- section.settings.free_gift_button_text -}}
+              </button>
+            </form>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  {%- endif -%}
+
+  {%- assign sellingPlanId = null -%}
+  {%- assign productId = '' -%}
+  {%- assign itemCount = 0 -%}
+
+  {%- for cartItem in cart.items -%}
+    {%- if cartItem.id == free_product.selected_or_first_available_variant.id -%}
+      {%- assign itemCount = cart.item_count | minus: 1 -%}
+      {%- assign productId = cartItem.key -%}
+    {%- endif -%}
+
+    {%- assign sellingPlanId = cartItem.selling_plan_allocation.selling_plan.id -%}
+  {%- endfor -%}
+
+  <script>
+    const product = document.getElementById('main-cart-items');
+
+    const itemCount = '{{ itemCount }}'
+    const freeItemId = '{{ productId }}'
+    const freeGiftCount = '{{ free_product_count }}'
+    const freeGiftModal = document.querySelector('.cart-modal-free-gift')
+    const freeGiftClose = document.querySelector('.cart-modal-free-gift__close')
+
+    freeGiftClose.addEventListener('click', function() {
+      freeGiftModal.classList.add('cart-modal-free-gift--hide');
+    });
+
+    if(itemCount < freeGiftCount ){
+      if(freeItemId.trim()){
+        const body = { 'id': freeItemId }
+        let redirectUrl = '/cart';
+
+        fetch(window.Shopify.routes.root + "cart/change.js", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            ...body,
+            quantity: 0
+          })
+        }).then((response) => {
+          return response.json();
+        }).then((json) => {
+          console.log(json)
+          /* yay! our products were added - do something here to indicate to the user */
+          window.location.href = redirectUrl;
+        }).catch((error) => {
+          console.log(error)
+        })
+      }
+    }
+
+    let addToCart = document.getElementById("handleAddToCart");
+    addToCart.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const id = document.querySelector('[name=id]').value;
+
+      let productList = sessionStorage.getItem('pots.productlist');
+      let productJson = JSON.parse(productList);
+
+      let extraList = sessionStorage.getItem('pots.extralist');
+      let extraJson = JSON.parse(productList);
+
+      let plans = [];
+
+      {% comment %} let frequency =  {% endcomment %}
+      let currentProduct = '{{ sellingPlanId }}';
+      let planId;
+      let freq = null;
+
+      productJson.forEach(function (product) {
+        if (product.quantity > 0) {
+          if (product.sellingPlans) {
+            product.sellingPlans.forEach(function (plan) {
+              if (String(plan.id) == currentProduct) {
+                freq = plan.frequency;
+                console.log(plan)
+              }
+            });
+          }
+        }
+      });
+
+      extraJson.forEach(function (extra) {
+        if(id == extra.id){
+          if (extra.sellingPlans) {
+            extra.sellingPlans.forEach(function (plan) {
+              if (String(plan.frequency) == freq) {
+                planId = plan.id;
+                console.log(plan)
+              }
+            });
+          }
+        }
+      });
+
+      plans.push({
+        id: planId,
+        frequency: freq,
+        price: 0
+      })
+      {% comment %} console.log(plan) {% endcomment %}
+
+      let productData = {
+        'items': [{
+          'id': id,
+          'quantity': 1,
+          'selling_plan': planId
+        }]
+      };
+
+      let redirectUrl = '/cart';
+
+      fetch(window.Shopify.routes.root + 'cart/add.js', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(productData)
+      }).then((response) => {
+        return response.json();
+      }).then((json) => {
+        console.log(json)
+        /* yay! our products were added - do something here to indicate to the user */
+        window.location.href = redirectUrl;
+      }).catch((err) => {
+        /* uh oh, we have error. */
+        console.error(err)
+      });
+    });
+  </script>
+{%- endif -%}

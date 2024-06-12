@@ -1,0 +1,101 @@
+<div style="display: none;" id="shopify-section-announcement-bar" class="shopify-section shopify-section-discount-bar {% if template contains 'cart' %}shopify-section-discount-bar--white{% endif %}">
+  <div class="announcement-bar discount-bar fade-in" role="region" aria-label="Announcement">
+    <p class="announcement-bar__message discount-message"></p>
+  </div>
+</div>
+
+<script type="text/javascript">
+  const discountBar = document.querySelector('.discount-bar');
+  const discountMessage = document.querySelector('.discount-message');
+
+  let codeCookieValue;
+  let getTheCookie = function (name) {
+    var value = "; " + document.cookie;
+    var parts = value.split('; ' + name + '=');
+
+    if (parts.length == 2) return parts.pop().split(";").shift();
+  };
+  codeCookieValue = getTheCookie('discount_code');
+
+  const showBanner = () => {
+    setTimeout(function() {
+      discountBar.style.display = 'block';
+    }, 1000);
+
+    //setTimeout(function() {
+    //  discountBar.classList.add('fade-out');
+    //  setTimeout(function() {
+    //    discountBar.style.display = 'none';
+    //  }, 1000)
+    //}, 5000);
+  }
+
+  if (!codeCookieValue) {
+    console.log("No Discount Code");
+  }
+
+  if (codeCookieValue) {
+    console.log("Discount Code - " + codeCookieValue);
+    discountMessage.innerHTML = "<div class='show-discount'>Discount code <strong>" + codeCookieValue + "</strong> will be applied at checkout for subscriptions</div>";
+    showBanner();
+  }
+</script>
+
+<style>
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeOutOpacity {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  .fade-in {
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+
+  .fade-out {
+    opacity: 1;
+    animation-name: fadeOutOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+  }
+
+  .shopify-section-discount-bar {
+    min-height: 46px;
+    background-color: #F3F3F3;
+  }
+
+  .shopify-section-discount-bar--white {
+    background-color: transparent;
+  }
+
+  .discount-bar {
+    background-color: rgb(var(--color-foreground));
+    display: none;
+  }
+
+  .discount-bar p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+  }
+</style>

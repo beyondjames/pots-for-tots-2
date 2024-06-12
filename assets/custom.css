@@ -1,0 +1,105 @@
+@font-face {
+  font-family: 'Nadira Pro Bold';
+  src: url('font-nadira-pro-bold.woff2') format('woff2'),
+       url('font-nadira-pro-bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Clear Sans';
+  src: url('font-clear-sans.woff2') format('woff2'),
+       url('font-clear-sans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-family: 'Nadira Pro Bold' !important;
+	outline: none !important;
+}
+
+body {
+  font-family: 'Clear Sans' !important;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button,
+.shopify-challenge__button,
+.customer button,
+button.shopify-payment-button__button--unbranded,
+.shopify-payment-button [role='button'],
+.cart__dynamic-checkout-buttons [role='button'],
+.cart__dynamic-checkout-buttons iframe {
+  text-transform: uppercase;
+}
+
+.customer .button--recharge {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: calc(12rem + var(--buttons-border-width) * 2);
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  border: 0;
+  padding: 0 3rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: calc(1 + 0.2 / var(--font-body-scale));
+  text-decoration: none;
+  color: rgb(var(--color-button-text));
+  transition: box-shadow var(--duration-short) ease;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(var(--color-button), var(--alpha-button-background));
+}
+
+.customer .button--recharge:hover {
+  color: #fff;
+}
+
+#rc_login p a {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  min-width: calc(12rem + var(--buttons-border-width) * 2);
+  min-height: calc(4.5rem + var(--buttons-border-width) * 2);
+  border: 0;
+  padding: 0 3rem;
+  cursor: pointer;
+  font: inherit;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: calc(1 + 0.2 / var(--font-body-scale));
+  text-decoration: none;
+  color: rgb(var(--color-button-text));
+  transition: box-shadow var(--duration-short) ease;
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: rgba(var(--color-button), var(--alpha-button-background));
+}
+
+#HeaderMenu-shop-now {
+  background-color: #4f7765 !important;
+  color: #fff !important;
+}
+
+.footer__content-top {
+  padding-bottom: 3rem !important;
+}
+
+.footer-block--newsletter {
+  margin-top: 1rem !important;
+}
+
+.footer__payment {
+  display: none !important;
+}

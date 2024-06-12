@@ -1,0 +1,147 @@
+/*
+|--------------------------------------------------------------------------
+| Box Drawer
+|--------------------------------------------------------------------------
+| @namespace: box-drawer
+|
+*/
+
+.box-drawer {
+  z-index: 1000;
+  justify-content: flex-end;
+  display: flex;
+  margin: 0;
+  opacity: 1;
+  transition: visibility var(--duration-default) ease;
+}
+
+.box-drawer[open] {
+  z-index: 1000;
+}
+
+.box-drawer .box-drawer__content {
+  position: static;
+  height: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  padding: 0;
+  background-color: rgb(var(--color-background));
+  overflow: hidden;
+  transform: translateX(100%);
+  transition: transform var(--duration-default) ease;
+}
+
+@media screen and (min-width: 600px) {
+  .box-drawer .box-drawer__content {
+    max-width: 475px;
+  }
+}
+
+.box-drawer[open] .box-drawer__content {
+  transform: translateX(0);
+}
+
+.box-drawer__content-info {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.box-drawer__title {
+  margin: 0;
+}
+
+.box-drawer__table {
+  width: 100%;
+  margin-top: -1rem;
+  box-shadow: none;
+}
+
+.box-drawer__table-row {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.box-drawer__table-data {
+  padding: 0;
+  border: 0;
+}
+
+.box-drawer__products .box-drawer__product-image {
+  width: 75px;
+}
+
+.box-drawer__products .box-drawer__product-image img {
+  position: relative;
+  display: flex;
+  width: 75px;
+}
+
+.box-drawer__products .box-drawer__product-title {
+  flex: 1;
+  padding-left: 1.4rem !important;
+}
+
+.box-drawer__products .box-drawer__product-variant {
+  font-size: 1.2rem;
+}
+
+.box-drawer__products .box-drawer__product-quantity {
+  width: 32px;
+}
+
+.box-drawer__products .box-drawer__product-price {
+  font-weight: 700;
+}
+
+.box-drawer__total {
+  justify-content: space-between;
+  display: flex;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.box-drawer__total-label-text {
+  font-family: var(--font-body-family);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.box-drawer__minimum {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  text-align: center;
+  background-color: #faebd7;
+}
+
+@media screen and (min-width: 600px) {
+  .box-drawer__minimum {
+    font-size: 1.4rem;
+  }
+}
+
+.box-drawer__small-print {
+  margin: 12px 0 0;
+  font-size: 0.8rem;
+  line-height: 1.2rem;
+}
+
+.box-drawer__small-print strong {
+  letter-spacing: 0.3px;
+}
+
+@media screen and (min-width: 600px) {
+  .box-drawer__small-print {
+    font-size: 1rem;
+    line-height: 1.4rem;
+  }
+
+  .box-drawer__small-print strong {
+    letter-spacing: 0.6px;
+  }
+}

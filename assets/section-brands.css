@@ -1,0 +1,77 @@
+/*
+|--------------------------------------------------------------------------
+| Brands
+|--------------------------------------------------------------------------
+| @namespace: brands
+|
+*/
+
+.brands {
+  overflow: hidden;
+}
+
+.brands__body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  user-select: none;
+}
+
+.brands__items {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  animation: marquee 20s linear infinite;
+  will-change: transform;
+}
+
+.brands__item {
+  width: 90px;
+  margin-inline-start: 40px;
+}
+
+.brands__image {
+  width: 90px;
+  height: 43px;
+}
+
+.brands__image img {
+  width: 90px;
+  height: 43px;
+  object-fit: cover;
+}
+
+.brands__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .brands__items {
+    animation-play-state: paused !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .brands:hover .brands__items {
+    animation-play-state: paused;
+  }
+
+  .brands__item {
+    margin-inline-start: 60px;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}

@@ -1,0 +1,269 @@
+{{ 'section-image-banner-action.css' | asset_url | stylesheet_tag }}
+
+{%- liquid
+  assign image_url = section.settings.image
+  assign image_overlay_opacity = section.settings.image_overlay_opacity
+  assign image_badge = section.settings.image_badge
+  assign image_badge_width = section.settings.image_badge_width
+  assign image_badge_vertical_position = section.settings.image_badge_vertical_position | replace: '_', ''
+  assign image_badge_horizontal_position = section.settings.image_badge_horizontal_position | replace: '_', ''
+
+  assign title = section.settings.title
+  assign text = section.settings.text
+  assign link_text = section.settings.link_text
+  assign link_url = section.settings.link_url
+  assign color_scheme = section.settings.color_scheme
+
+  assign content_background = section.settings.show_text_box
+  assign content_alignment = section.settings.content_alignment
+  assign content_vertical_position = section.settings.content_vertical_position | replace: '_', ''
+  assign content_horizontal_position = section.settings.content_horizontal_position | replace: '_', ''
+-%}
+
+{%- style -%}
+  .image-banner-action__card::after {
+    opacity: {{ image_overlay_opacity | divided_by: 100.0 }};
+  }
+{%- endstyle -%}
+
+{%- if image_badge_width != blank -%}
+  {%- style -%}
+    .image-banner-action__award-image {
+      max-width: calc({{ image_badge_width }}px / 1.5);
+    }
+
+    @media screen and (min-width: 750px) {
+      .image-banner-action__award-image {
+        max-width: {{ image_badge_width }}px;
+      }
+    }
+  {%- endstyle -%}
+{%- endif -%}
+
+<div class="image-banner-action">
+  <div class="image-banner-action__card" {% if image_url != blank %}style="background-image: url('{{ image_url | image_url: width: 1780 }}');"{% endif %}>
+    <div class="image-banner-action__content image-banner-action__content--{{ content_vertical_position }} image-banner-action__content--{{ content_horizontal_position }} page-width">
+      <div class="image-banner-action__alignment image-banner-action__alignment--{{ content_alignment }} image-banner-action__box image-banner-action__box--background-{{ content_background }} color-{{ color_scheme }} gradient">
+        {%- if title != blank -%}
+          <h2 class="image-banner-action__title">
+            {{- title -}}
+          </h2>
+        {%- endif -%}
+
+        {%- if text != blank -%}
+          <p class="image-banner-action__text">
+            {{- text -}}
+          </p>
+        {%- endif -%}
+
+        {%- if link_text != blank -%}
+          <span class="button image-banner-action__link button">
+            {{- link_text -}}
+          </span>
+        {%- endif -%}
+      </div>
+
+      {%- if image_badge != blank -%}
+        <div class="image-banner-action__award image-banner-action__award--{{ image_badge_vertical_position }} image-banner-action__award--{{ image_badge_horizontal_position }}">
+          <img
+            class="image-banner-action__award-image"
+            srcset="{%- if image_badge.width >= 375 -%}{{ image_badge | image_url: width: 375 }} 375w,{%- endif -%}
+              {%- if image_badge.width >= 550 -%}{{ image_badge | image_url: width: 550 }} 550w,{%- endif -%}
+              {%- if image_badge.width >= 750 -%}{{ image_badge | image_url: width: 750 }} 750w,{%- endif -%}
+              {{ image_badge | image_url }} {{ image_badge.width }}w"
+            sizes="100vw"
+            src="{{ image_badge | image_url: width: 1500 }}"
+            loading="lazy"
+            width="{{ image_badge.width }}"
+            height="{{ image_badge.height }}"
+            alt="{{ image_badge.alt | escape }}"
+          >
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- if link_url != blank -%}
+      <a class="image-banner-action__faux-link" href="{{ link_url }}">
+        {%- if title != blank -%}
+          <span class="visibility-hidden">
+            {{- title -}}
+          </span>
+        {%- endif -%}
+      </a>
+    {%- endif -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Image banner action (C)",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "header",
+      "content": "Media"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "range",
+      "id": "image_overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 10,
+      "unit": "%",
+      "label": "t:sections.image-banner.settings.image_overlay_opacity.label",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Link text"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Link"
+    },
+    {
+      "type": "text_alignment",
+      "id": "content_alignment",
+      "label": "Alignment",
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "content_vertical_position",
+      "label": "Vertical postition",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "middle"
+    },
+    {
+      "type": "select",
+      "id": "content_horizontal_position",
+      "label": "Horizontal postition",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "centre",
+          "label": "Centre"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "centre"
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_text_box",
+      "default": true,
+      "label": "Show background colour"
+    },
+    {
+      "type": "header",
+      "content": "Badge"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_badge",
+      "label": "Image"
+    },
+    {
+      "type": "text",
+      "id": "image_badge_width",
+      "label": "Width",
+      "info": "Value will be 1.5x smaller on mobile"
+    },
+    {
+      "type": "select",
+      "id": "image_badge_vertical_position",
+      "label": "Vertical postition",
+      "options": [
+        {
+          "value": "top",
+          "label": "Top"
+        },
+        {
+          "value": "middle",
+          "label": "Middle"
+        },
+        {
+          "value": "bottom",
+          "label": "Bottom"
+        }
+      ],
+      "default": "middle"
+    },
+    {
+      "type": "select",
+      "id": "image_badge_horizontal_position",
+      "label": "Horizontal postition",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "centre",
+          "label": "Centre"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "centre"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image banner action (C)"
+    }
+  ]
+}
+{% endschema %}

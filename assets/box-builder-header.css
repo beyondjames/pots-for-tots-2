@@ -1,0 +1,24 @@
+/*
+|--------------------------------------------------------------------------
+| Header
+|--------------------------------------------------------------------------
+| @namespace: header
+|
+*/
+
+.header__progress-bar {
+  grid-area: navigation;
+  display: block;
+  text-align: center;
+  transition: padding 0.3s cubic-bezier(0.52, 0, 0.61, 0.99);
+}
+
+@media screen and (min-width: 990px) {
+  .header__progress-bar {
+    align-items: center;
+    display: flex;
+    text-align: left;
+    padding-bottom: 5rem;
+    padding-left: 3rem;
+  }
+}

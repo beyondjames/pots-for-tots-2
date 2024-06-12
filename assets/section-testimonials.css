@@ -1,0 +1,55 @@
+/*
+|--------------------------------------------------------------------------
+| Testimonials
+|--------------------------------------------------------------------------
+| @namespace: testimonial
+|
+*/
+
+.testimonials-section .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.testimonials-section .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonials-section .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonials-section .swiper-content svg {
+  width: 30px;
+  padding-bottom: 1rem;
+}
+
+.testimonials-section .swiper-pagination {
+  position: relative;
+  text-align: center;
+  transition: .3s opacity;
+  transform: translate3d(0,0,0);
+  z-index: 10;
+  padding-top: 2rem;
+  bottom: 0;
+}
+
+.testimonial-header {
+  padding-bottom: 4rem;
+}
+
+.testimonial-title {
+  margin: 0;
+}
+
+.testimonial-author {
+  font-weight: 700;
+  margin-bottom: 0;
+}
