@@ -1,0 +1,7 @@
+# Reference:
+
+# https://shopify.dev/docs/themes/tools/cli#excluding-files-from-shopify-cli
+
+.git
+.gitignore
+package.json

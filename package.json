@@ -1,0 +1,12 @@
+{
+  "name": "potsfortots",
+  "version": "1.0.0",
+  "author": "James Cartwright",
+  "private": true,
+  "scripts": {
+    "start": "shopify theme dev --store=pots-for-tots-food.myshopify.com",
+    "pull": "shopify theme pull",
+    "push": "shopify theme push",
+    "kill": "kill -9 $(lsof -ti:9292)"
+  }
+}
