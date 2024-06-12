@@ -1496,3 +1496,14 @@ a.product__text {
     border: none;
   }
 }
+
+/* ReCharge Override  */
+.rc-selling-plans-dropdown__select {
+  width: 100%;
+  padding: 8px;
+  font-family: Clear Sans;
+  background-color: #fff;
+  border: 1px solid #5c8972;
+  border-radius: 0;
+  color: rgb(var(--color-foreground));
+}
