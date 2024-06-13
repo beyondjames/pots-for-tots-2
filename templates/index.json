@@ -3,14 +3,14 @@
     "custom_image_banner_text_ehtMaq": {
       "type": "custom-image-banner-text",
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/Website_banner_snacks.png",
+        "image_desktop": "shopify:\/\/shop_images\/Snacks_desktop_header.png",
         "image_height": "large",
-        "image_mobile": "shopify:\/\/shop_images\/Pots_For_Tots_Pancakes_2_6340a587-b4d4-4c41-9152-c68e804c130f.png",
+        "image_mobile": "shopify:\/\/shop_images\/snacks_mobile_header.png",
         "title": "New snacks on the menu!",
         "title_size": "large",
         "button_label": "SHOP NOW",
         "link_url": "shopify:\/\/collections\/build-your-box",
-        "section_color_scheme": "scheme-1"
+        "section_color_scheme": "scheme-4"
       }
     },
     "custom_image_banner_text_QpjWfY": {
@@ -844,6 +844,7 @@
         "text_rHbxL4",
         "buttons_CM6QmT"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2024-06-13_at_12.34.57.png",
         "image_overlay_opacity": 0,
