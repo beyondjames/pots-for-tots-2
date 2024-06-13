@@ -69,7 +69,7 @@
         "row_PWeJdB": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6.png",
+            "image": "shopify:\/\/shop_images\/Hero_group_shot.png",
             "caption": "",
             "heading": "Size",
             "text": "<p>We recognise that there are growth and developmental differences between infants under 12 months and those over 12 months: Babies have very high nutritional requirements, and as these start to slow considerably from 18-24 months, it means that our 200g portion size can be suitable for both a one-year-old and also a five-year-old <strong>- this is approved by our Children's Dietitian. <\/strong>However, this can vary based on your little one's appetite - you know your tot better than anyone, so you might find that for those with larger appetites, you may benefit from adding an additional side or portion of veg with the meal.<\/p>",
@@ -330,6 +330,7 @@
       "block_order": [
         "column_EWGAGB"
       ],
+      "disabled": true,
       "settings": {
         "title": "Subscribe today and save 10% on EVERY order!",
         "heading_size": "h1",
