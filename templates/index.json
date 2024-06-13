@@ -274,11 +274,11 @@
     "custom_multicolumn_adV6Gn": {
       "type": "custom-multicolumn",
       "blocks": {
-        "column_FNaUJd": {
+        "column_QDQrVz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Cottage-pie_web.png",
-            "title": "Cottage Pie",
+            "image": "shopify:\/\/shop_images\/Lamb_tagine.png",
+            "title": "NEW! Lamb Tagine",
             "title_size": "h2",
             "text": "<p>From £4.19<\/p>",
             "link_label": "Create a box",
@@ -296,6 +296,17 @@
             "link": "shopify:\/\/collections\/build-your-box"
           }
         },
+        "column_FNaUJd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pasta_primavera_16fb99c7-0e29-46ad-ba1c-2a4cdb5069a2.png",
+            "title": "Limited Edition Pasta Primavera",
+            "title_size": "h2",
+            "text": "<p>From £4.19<\/p>",
+            "link_label": "Create a box",
+            "link": "shopify:\/\/collections\/build-your-box"
+          }
+        },
         "column_Yc6brM": {
           "type": "column",
           "settings": {
@@ -306,24 +317,13 @@
             "link_label": "Create a box",
             "link": "shopify:\/\/collections\/build-your-box"
           }
-        },
-        "column_QDQrVz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/New_meals_-_email_assets.png",
-            "title": "Chicken Korma",
-            "title_size": "h2",
-            "text": "<p>From £4.19<\/p>",
-            "link_label": "Create a box",
-            "link": "shopify:\/\/collections\/build-your-box"
-          }
         }
       },
       "block_order": [
-        "column_FNaUJd",
+        "column_QDQrVz",
         "column_XgNy9B",
-        "column_Yc6brM",
-        "column_QDQrVz"
+        "column_FNaUJd",
+        "column_Yc6brM"
       ],
       "settings": {
         "title": "Made for your little ones",
