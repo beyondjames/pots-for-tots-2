@@ -8,7 +8,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Double loyalty points on all orders, ends tonight!",
+            "text": "Get 20% off your first 3 orders with code TOTS20",
             "link": "shopify:\/\/collections\/build-your-box"
           }
         }
