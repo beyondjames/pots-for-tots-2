@@ -12,7 +12,7 @@
     "custom_image_banner_text_ehtMaq": {
       "type": "custom-image-banner-text",
       "blocks": {
-        "buttons_gN6Er7": {
+        "buttons_jft8ea": {
           "type": "buttons",
           "settings": {
             "button_label_1": "Shop Now",
@@ -25,7 +25,7 @@
         }
       },
       "block_order": [
-        "buttons_gN6Er7"
+        "buttons_jft8ea"
       ],
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/Snacks_desktop_header.png",
@@ -33,7 +33,7 @@
         "image_mobile": "shopify:\/\/shop_images\/snacks_mobile_header.png",
         "title": "New snacks on the menu!",
         "title_size": "large",
-        "link_url": "",
+        "link_url": "shopify:\/\/collections\/build-your-box",
         "section_color_scheme": "scheme-4"
       }
     },
