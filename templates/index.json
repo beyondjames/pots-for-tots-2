@@ -1,15 +1,39 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "custom_image_banner_text_ehtMaq": {
       "type": "custom-image-banner-text",
+      "blocks": {
+        "buttons_gN6Er7": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop Now",
+            "button_link_1": "shopify:\/\/collections\/build-your-box",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "buttons_gN6Er7"
+      ],
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/Snacks_desktop_header.png",
         "image_height": "large",
         "image_mobile": "shopify:\/\/shop_images\/snacks_mobile_header.png",
         "title": "New snacks on the menu!",
         "title_size": "large",
-        "button_label": "SHOP NOW",
-        "link_url": "shopify:\/\/collections\/build-your-box",
+        "link_url": "",
         "section_color_scheme": "scheme-4"
       }
     },
@@ -22,7 +46,6 @@
         "image_mobile": "shopify:\/\/shop_images\/PotsforTots0358_1_b4086c7e-abc7-4116-9941-5d997f6fdc45.jpg",
         "title": "Mealtimes made easy",
         "title_size": "medium",
-        "button_label": "Shop now",
         "link_url": "shopify:\/\/collections\/build-your-box",
         "section_color_scheme": "scheme-4"
       }
