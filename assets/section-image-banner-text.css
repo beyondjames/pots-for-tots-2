@@ -40,8 +40,9 @@
   text-shadow: 0 0 2.4rem #40250a;
 }
 
-.image-banner-text__button {
+.image-banner-text__content .banner__buttons {
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .image-banner-text__link {
@@ -109,7 +110,7 @@
     font-size: calc(var(--font-heading-scale) * 14rem);
   }
 
-  .image-banner-text__button {
+  .image-banner-text__content .banner__buttons {
     margin-top: 4rem;
   }
 }
