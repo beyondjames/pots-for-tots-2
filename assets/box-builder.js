@@ -659,7 +659,7 @@ let subscription = {
     let discounts = '';
 
     // Check if the cart has discounts
-    for (discount_application in data.cart.discount_applications) {
+    for (discount_application in data.cart.cart_level_discount_applications) {
       discounts += `<div class="box-drawer__discount">${discount_application.title}</div>`;
     }
 
