@@ -3,22 +3,6 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 
-{%- capture item_title -%}
-  {%- for item in cart.items -%}
-    {%- if item.product.title == '8 Simple Meals Bundle + FREE Digital Fussy Eating Guide' -%}
-      {{- item.product.title | escape -}}
-    {%- endif -%}
-
-    {%- if item.product.title == 'Fussy Eating Digital Guide' -%}
-      {{- item.product.title | escape -}}
-    {%- endif -%}
-
-    {%- if item.product.title == 'The Online Gift Card' -%}
-      {{- item.product.title | escape -}}
-    {%- endif -%}
-  {%- endfor -%}
-{%- endcapture -%}
-
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -100,19 +84,9 @@
                   </button>
                 </noscript>
 
-                {%- if cart.item_count < 8 -%}
-                  <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout" {% unless item_title == '8 Simple Meals Bundle + FREE Digital Fussy Eating Guide' or item_title == 'Fussy Eating Digital Guide' or item_title == 'The Online Gift Card' -%}disabled{% endunless %} form="cart">
-                    {%- if item_title == '8 Simple Meals Bundle + FREE Digital Fussy Eating Guide' or item_title == 'Fussy Eating Digital Guide' or item_title == 'The Online Gift Card' -%}
-                      {{- 'sections.cart.checkout' | t -}}
-                    {%- else -%}
-                      {{- 'sections.cart.order_imcomplete' | t -}}
-                    {%- endif -%}
-                  </button>
-                {%- else -%}
-                  <button type="submit" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
-                    {{ 'sections.cart.checkout' | t }}
-                  </button>
-                {%- endif -%}
+                <button type="submit" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                  {{ 'sections.cart.checkout' | t }}
+                </button>
               </div>
 
               <div class="cart__small-print">
