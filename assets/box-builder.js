@@ -15,25 +15,26 @@ let subscription = {
     subscriptionFrequency: 4,
 
     // Subscription type (one-time or recurring)
-    subscriptionType: "subscription",
+    subscriptionType: 'subscription',
   },
 
   selector: {
     // CSS selectors for interacting with DOM elements
-    productsGrid: '#product-grid',  // Grid containing product cards
-    variants: '#card__variants',    // Elements for product variant selection
-    minimumProducts: '#productCount',  // Element displaying minimum product count warning
-    checkoutButton: '#checkoutButton',  // Checkout button
-    cardModal: '#cardModal',          // Modal for displaying product details
-    frequencySection: '.frequency__selector',  // Section for selecting subscription frequency
-    progressBar: '#progress-bar-indicator',  // Progress bar element
-    reviewBoxButton: '#reviewBoxButton',  // Button to open the review box
-    productModalList: '[data-modal-product-list]',  // Element for displaying product list in the review box
-    reviewBoxClose: '#reviewBoxClose',  // Button to close the review box
-    reviewBoxModal: '#reviewBox',          // Review box modal
-    reviewBoxModalQuantity: '[data-modal-product-quantity]',  // Element displaying product quantity in the review box
-    totalPrice: '[data-modal-total-price]',  // Element displaying total price in the review box
+    productsGrid: '#product-grid', // Grid containing product cards
+    variants: '#card__variants', // Elements for product variant selection
+    minimumProducts: '#productCount', // Element displaying minimum product count warning
+    checkoutButton: '#checkoutButton', // Checkout button
+    cardModal: '#cardModal', // Modal for displaying product details
+    frequencySection: '.frequency__selector', // Section for selecting subscription frequency
+    progressBar: '#progress-bar-indicator', // Progress bar element
+    reviewBoxButton: '#reviewBoxButton', // Button to open the review box
+    productModalList: '[data-modal-product-list]', // Element for displaying product list in the review box
+    reviewBoxClose: '#reviewBoxClose', // Button to close the review box
+    reviewBoxModal: '#reviewBox', // Review box modal
+    reviewBoxModalQuantity: '[data-modal-product-quantity]', // Element displaying product quantity in the review box
+    totalPrice: '[data-modal-total-price]', // Element displaying total price in the review box
     spaceRemaining: '[data-remaining]',
+    drawerDiscountSection: '.box-drawer__discounts', // Section for displaying cart drawer discounts
   },
 
   // Function to initialize product state and UI elements
@@ -41,11 +42,10 @@ let subscription = {
     // Get references to product-related elements
     const productWrapper = document.querySelector(this.selector.productsGrid);
     const variants = productWrapper.querySelectorAll(this.selector.variants);
-    let productList = []
-
+    let productList = [];
 
     // Handle subscription frequency settings
-    if (getCookie('potsFreq') !== "") {
+    if (getCookie('potsFreq') !== '') {
       // Use frequency from cookie if available
       this.state.subscriptionFrequency = getCookie('potsFreq');
       sessionStorage.setItem('potsFreq', subscription.state.subscriptionFrequency);
@@ -55,9 +55,8 @@ let subscription = {
       sessionStorage.setItem('potsFreq', this.state.subscriptionFrequency);
     }
 
-
     // Handle subscription type settings
-    if (getCookie('potsType') !== "") {
+    if (getCookie('potsType') !== '') {
       // Use frequency from cookie if available
       this.state.subscriptionType = getCookie('potsType');
       sessionStorage.setItem('potsType', this.state.subscriptionType);
@@ -65,12 +64,10 @@ let subscription = {
       // Set default frequency in cookie
       setCookie('potsType', this.state.subscriptionType, 1);
       sessionStorage.setItem('potsType', this.state.subscriptionType);
-
     }
 
-
     // Check for saved product list in session storage
-    if (getCookie('potsProducts') == "true" && sessionStorage.getItem("potsProductList") !== null) {
+    if (getCookie('potsProducts') == 'true' && sessionStorage.getItem('potsProductList') !== null) {
       // Retrieve saved product list from session storage
       let productList = JSON.parse(sessionStorage.getItem('potsProductList'));
 
@@ -80,15 +77,15 @@ let subscription = {
       // Update UI elements based on saved product list
       productList.forEach((item) => {
         // Code to update UI elements for each saved product
-        const btnId = "Button-" + item.id;
-        const qtyId = "Quantity-" + item.id;
+        const btnId = 'Button-' + item.id;
+        const qtyId = 'Quantity-' + item.id;
         const qtyBtnWrap = document.getElementById(btnId);
         const qtySelector = document.getElementById(qtyId);
 
         if (qtySelector && item.quantity > 0) {
           const qtyBtn = qtyBtnWrap.querySelector('button');
-          qtyBtn.classList.add("hidden");
-          qtySelector.parentElement.parentElement.classList.remove("hidden");
+          qtyBtn.classList.add('hidden');
+          qtySelector.parentElement.parentElement.classList.remove('hidden');
           qtySelector.value = item.quantity;
         }
       });
@@ -105,15 +102,13 @@ let subscription = {
             let plans = [];
 
             if (sellingPlans) {
-              sellingPlans.forEach(
-                function (sellingPlan) {
-                  plans.push({
-                    id: sellingPlan.dataset.sellingPlanId,
-                    frequency: sellingPlan.value,
-                    price: sellingPlan.dataset.sellingPlanPrice
-                  })
-                }
-              );
+              sellingPlans.forEach(function (sellingPlan) {
+                plans.push({
+                  id: sellingPlan.dataset.sellingPlanId,
+                  frequency: sellingPlan.value,
+                  price: sellingPlan.dataset.sellingPlanPrice,
+                });
+              });
             }
 
             // Add products to array
@@ -124,15 +119,15 @@ let subscription = {
               title: element.dataset.title,
               variantTitle: element.dataset.variantTitle,
               sellingPlans: plans,
-              imageURL: element.dataset.imageUrl
+              imageURL: element.dataset.imageUrl,
             });
-          })
+          });
         }
       });
 
       // Save product list and settings
       setCookie('potsProducts', true, 1);
-      sessionStorage.setItem('potsProductList', JSON.stringify(productList))
+      sessionStorage.setItem('potsProductList', JSON.stringify(productList));
       sessionStorage.setItem('potsType', this.state.subscriptionType);
       sessionStorage.setItem('potsFreq', this.state.subscriptionFrequency);
 
@@ -156,7 +151,7 @@ let subscription = {
       }
 
       // Get product variant ID and quantity from the input
-      const productVariant = event.target.getAttribute("data-index");
+      const productVariant = event.target.getAttribute('data-index');
       const quantity = event.target.value;
 
       // Handle quantity zero: hide quantity selector, show add button
@@ -166,12 +161,12 @@ let subscription = {
       const button = wrapper.querySelector('.card__variants-button');
 
       if (quantity == 0) {
-        qtySelector.classList.add("hidden");
-        button.classList.remove("hidden");
+        qtySelector.classList.add('hidden');
+        button.classList.remove('hidden');
       }
 
       // Retrieve product list from session storage
-      let productList = sessionStorage.getItem("potsProductList");
+      let productList = sessionStorage.getItem('potsProductList');
       let productJson = JSON.parse(productList);
 
       // Find and update the quantity in the product list
@@ -192,8 +187,8 @@ let subscription = {
           price: element.dataset.price,
           title: element.dataset.title,
           variantTitle: element.dataset.variantTitle,
-          imageURL: element.dataset.imageUrl
-        })
+          imageURL: element.dataset.imageUrl,
+        });
       }
 
       // Update session storage and trigger related actions
@@ -246,15 +241,15 @@ let subscription = {
 
     if (productCount >= minimum) {
       // Hide the minimum product count warning if visible
-      if (!countWarning.classList.contains("hidden")) {
-        countWarning.classList.add("hidden");
+      if (!countWarning.classList.contains('hidden')) {
+        countWarning.classList.add('hidden');
       }
       // Enable the checkout button
       button.disabled = false;
     } else {
       // Display the warning message with the required count
       countWarning.textContent = `Must add a minimum of 8 meals, please add ${count} more`;
-      countWarning.classList.remove("hidden");
+      countWarning.classList.remove('hidden');
       // Disable the checkout button
       button.disabled = true;
     }
@@ -265,25 +260,40 @@ let subscription = {
     productJson.forEach(function (product) {
       if (product.quantity > 0) {
         let amount;
-        if (type == "subscription") {
+        if (type == 'subscription') {
           // Calculate price for subscription products
           if (product.sellingPlans) {
-            amount = (product.sellingPlans[0].price * product.quantity / 100).toFixed(2);
+            amount = ((product.sellingPlans[0].price * product.quantity) / 100).toFixed(2);
           }
         } else {
           // Calculate price for one-time products
           amount = ((product.price * product.quantity) / 100).toFixed(2);
         }
 
-        let currency = "£" + amount;
+        let currency = '£' + amount;
         let item = '<tr class="box-drawer__table-row">';
 
         if (product.imageURL) {
-          item += '<td class="box-drawer__table-data box-drawer__product-image summary-image"><img src="' + product.imageURL + '" alt="' + product.title + " : " + product.variantTitle + '"></td>';
+          item +=
+            '<td class="box-drawer__table-data box-drawer__product-image summary-image"><img src="' +
+            product.imageURL +
+            '" alt="' +
+            product.title +
+            ' : ' +
+            product.variantTitle +
+            '"></td>';
         }
 
-        item += '<td class="box-drawer__table-data box-drawer__product-title summary-title"><div class="summary-product">' + product.title + '</div><div class="box-drawer__product-variant summary-variant">' + product.variantTitle + '</div></td>';
-        item += '<td class="box-drawer__table-data box-drawer__product-quantity summary-quantity">' + product.quantity + '</td>';
+        item +=
+          '<td class="box-drawer__table-data box-drawer__product-title summary-title"><div class="summary-product">' +
+          product.title +
+          '</div><div class="box-drawer__product-variant summary-variant">' +
+          product.variantTitle +
+          '</div></td>';
+        item +=
+          '<td class="box-drawer__table-data box-drawer__product-quantity summary-quantity">' +
+          product.quantity +
+          '</td>';
         item += '<td class="box-drawer__table-data box-drawer__product-price summary-price">' + currency + '</td>';
         item += '</tr>';
 
@@ -291,14 +301,14 @@ let subscription = {
       }
     });
 
-    productListContents += "</tbody></table>";
+    productListContents += '</tbody></table>';
 
     // Update the modal list content with the generated HTML
     modalList.innerHTML = productListContents;
   },
 
   calculateTotals: function () {
-    console.log("Calculating totals");
+    console.log('Calculating totals');
     let productCount = 0;
     let productTotalCost = 0;
     let productSubscriptionTotalCost = 0;
@@ -325,7 +335,7 @@ let subscription = {
 
     let type = sessionStorage.getItem('potsType');
 
-    if (type == "subscription") {
+    if (type == 'subscription') {
       this.updateTotalPrice(productSubscriptionTotalCost);
     } else {
       this.updateTotalPrice(productTotalCost);
@@ -341,7 +351,7 @@ let subscription = {
   },
 
   updateReviewButton: function (val) {
-    let buttonText = "Review Box";
+    let buttonText = 'Review Box';
     // Update price on modal cart
     const checkButton = document.querySelector(this.selector.reviewBoxButton);
     if (val == 0) {
@@ -379,80 +389,79 @@ let subscription = {
 
     // Determine progress and goal completion based on item counts
     if (currentItemCount === 0) {
-      labelText = "Add 8 meals to get started";
+      labelText = 'Add 8 meals to get started';
     } else if (currentItemCount < goal1) {
       // Reset goal indicators
-      goal1indicator.classList.remove("progress-bar__goal-reached");
-      goal2indicator.classList.remove("progress-bar__goal-reached");
-      goal3indicator.classList.remove("progress-bar__goal-reached");
+      goal1indicator.classList.remove('progress-bar__goal-reached');
+      goal2indicator.classList.remove('progress-bar__goal-reached');
+      goal3indicator.classList.remove('progress-bar__goal-reached');
       space = goal1 - currentItemCount;
-      console.log(space)
+      console.log(space);
 
       if (space == 1) {
-        labelText = "Add " + space + " more meal and delivery is £5.99";
-      }else{
-        labelText = "Add " + space + " more meals and delivery is £5.99";
-      };
-
+        labelText = 'Add ' + space + ' more meal and delivery is £5.99';
+      } else {
+        labelText = 'Add ' + space + ' more meals and delivery is £5.99';
+      }
 
       // Calculate progress based on main items
-      width = ((currentItemCount / maximum) * 100);
+      width = (currentItemCount / maximum) * 100;
     } else if (combinedTotal < goal2) {
       space = goal2 - combinedTotal;
       if (space == 1) {
-        labelText = "Checkout or add " + space + " more meal and delivery is";
-      }else{
-        labelText = "Checkout or add " + space + " more meals and delivery is";
-      };
+        labelText = 'Checkout or add ' + space + ' more meal and delivery is';
+      } else {
+        labelText = 'Checkout or add ' + space + ' more meals and delivery is';
+      }
 
-      labelText += " £3.99";
+      labelText += ' £3.99';
       // Mark goal 1 as reached
-      goal1indicator.classList.add("progress-bar__goal-reached");
+      goal1indicator.classList.add('progress-bar__goal-reached');
       // if user goes back remove goal 2 as marked
-      goal2indicator.classList.remove("progress-bar__goal-reached");
+      goal2indicator.classList.remove('progress-bar__goal-reached');
       // Calculate progress based on combined items
-      width = ((combinedTotal / maximum) * 100);
+      width = (combinedTotal / maximum) * 100;
     } else if (combinedTotal < goal3) {
       // Goal 3 messaging
       space = goal3 - combinedTotal;
-      console.log(space)
+      console.log(space);
 
       if (space == 1) {
-        labelText = "Checkout or add " + space + " more meal and delivery is";
-      }else{
-        labelText = "Checkout or add " + space + " more meals and delivery is";
-      };
+        labelText = 'Checkout or add ' + space + ' more meal and delivery is';
+      } else {
+        labelText = 'Checkout or add ' + space + ' more meals and delivery is';
+      }
 
-      labelText += " £1.99";
+      labelText += ' £1.99';
       // Mark goals 1 and 2 as reached
-      goal1indicator.classList.add("progress-bar__goal-reached");
-      goal2indicator.classList.add("progress-bar__goal-reached");
+      goal1indicator.classList.add('progress-bar__goal-reached');
+      goal2indicator.classList.add('progress-bar__goal-reached');
 
       // if user goes back remove goal 3 as marked
-      goal3indicator.classList.remove("progress-bar__goal-reached");
-      width = ((combinedTotal / maximum) * 100);
+      goal3indicator.classList.remove('progress-bar__goal-reached');
+      width = (combinedTotal / maximum) * 100;
     } else if (combinedTotal < goal4) {
       // Goal 4 messaging
       space = goal4 - combinedTotal;
 
       if (space == 1) {
-        labelText = "Checkout or add " + space + " more meal and delivery is";
-      }else{
-        labelText = "Checkout or add " + space + " more meals and delivery is";
-      };
+        labelText = 'Checkout or add ' + space + ' more meal and delivery is';
+      } else {
+        labelText = 'Checkout or add ' + space + ' more meals and delivery is';
+      }
 
-      labelText += " FREE";
+      labelText += ' FREE';
       // Mark all goals as reached
-      goal1indicator.classList.add("progress-bar__goal-reached");
-      goal2indicator.classList.add("progress-bar__goal-reached");
-      goal3indicator.classList.add("progress-bar__goal-reached");
-      width = ((combinedTotal / maximum) * 100);
+      goal1indicator.classList.add('progress-bar__goal-reached');
+      goal2indicator.classList.add('progress-bar__goal-reached');
+      goal3indicator.classList.add('progress-bar__goal-reached');
+      width = (combinedTotal / maximum) * 100;
     } else {
       // Box is full
       labelText = "You've got free delivery!";
-      goal1indicator.classList.add("progress-bar__goal-reached");
-      goal2indicator.classList.add("progress-bar__goal-reached");
-      goal3indicator.classList.add("progress-bar__goal-reached");
+      goal1indicator.classList.add('progress-bar__goal-reached');
+      goal2indicator.classList.add('progress-bar__goal-reached');
+      goal3indicator.classList.add('progress-bar__goal-reached');
       width = 100;
     }
 
@@ -473,13 +482,13 @@ let subscription = {
 
   // Generate the products to send to cart
   generateProductArray: function () {
-    console.log("Generating Product List");
+    console.log('Generating Product List');
 
     // Create an empty array to hold the formatted product items
     let items = [];
 
     // Retrieve the product list from session storage
-    let productList = sessionStorage.getItem("potsProductList");
+    let productList = sessionStorage.getItem('potsProductList');
     let productJson = JSON.parse(productList);
 
     // Get the subscription frequency and type from session storage
@@ -492,7 +501,7 @@ let subscription = {
       let planId = null;
 
       // If the product has selling plans and it's a subscription type
-      if (product.sellingPlans && type == "subscription") {
+      if (product.sellingPlans && type == 'subscription') {
         // Find the selling plan with the matching frequency
         product.sellingPlans.forEach(function (plan) {
           if (String(plan.frequency) == freq) {
@@ -502,7 +511,7 @@ let subscription = {
       }
 
       // Add the product to the formatted array based on conditions
-      if (product.quantity > 0 && planId != null && type == "subscription") {
+      if (product.quantity > 0 && planId != null && type == 'subscription') {
         // Add the product with its selling plan ID
         items.push({
           id: product.id,
@@ -528,15 +537,15 @@ let subscription = {
       // Additional attributes
       attributes: {
         // Include the calculated delivery date
-        "Delivery Date": DeliveryDate,
-      }
+        'Delivery Date': DeliveryDate,
+      },
     };
   },
 
   // Function to format a price with currency symbol and two decimal places
   toCurrency: function (val) {
     let amount = (val / 100).toFixed(2); // Divide by 100 and format to 2 decimals
-    let currency = "£" + amount; // Append currency symbol
+    let currency = '£' + amount; // Append currency symbol
     return currency;
   },
 
@@ -549,15 +558,15 @@ let subscription = {
       credentials: 'same-origin',
       headers: {
         'Content-Type': 'application/json',
-        'X-Requested-With': 'xmlhttprequest'
+        'X-Requested-With': 'xmlhttprequest',
       },
-      method: 'POST'
+      method: 'POST',
     })
       .then((response) => {
         return response.json();
       })
       .then((json) => {
-        return "Cart Cleared";
+        return 'Cart Cleared';
       })
       .catch((err) => {
         console.error(err); // Log any errors
@@ -566,16 +575,15 @@ let subscription = {
 
   // Function to handle adding products to the cart
   handleAddToCart: async function (data) {
-
     // Send a POST request to the cart endpoint to add products
     fetch('/cart/add.js', {
       body: JSON.stringify(data), // Pass the product data as JSON
       credentials: 'same-origin',
       headers: {
         'Content-Type': 'application/json',
-        'X-Requested-With': 'xmlhttprequest'
+        'X-Requested-With': 'xmlhttprequest',
       },
-      method: 'POST'
+      method: 'POST',
     })
       .then((response) => {
         return response.json();
@@ -597,7 +605,7 @@ let subscription = {
     function getThursday(orderDate) {
       orderDate = orderDate || new Date(); // Use current date if not provided
       if (!(orderDate instanceof Date)) {
-        throw "Invalid date";
+        throw 'Invalid date';
       }
 
       // Calculate the date of the previous Thursday
@@ -607,7 +615,7 @@ let subscription = {
       // Adjust for delivery rules:
       // - If order date is before Monday noon, deliver this week's Thursday.
       // - Otherwise, deliver next Thursday.
-      if (orderDate.getDay() < 1 || ((orderDate.getDay() === 1) && orderDate.getHours() < 24)) {
+      if (orderDate.getDay() < 1 || (orderDate.getDay() === 1 && orderDate.getHours() < 24)) {
         lastThursday.setDate(lastThursday.getDate());
       } else {
         lastThursday.setDate(lastThursday.getDate() + 7);
@@ -625,22 +633,55 @@ let subscription = {
     }
 
     // Format and return the delivery date as DD/MM/YYYY
-    return date2digits(deliveryDate.getDate()) + "/" + date2digits((deliveryDate.getMonth() + 1)) + "/" + deliveryDate.getFullYear();
+    return (
+      date2digits(deliveryDate.getDate()) +
+      '/' +
+      date2digits(deliveryDate.getMonth() + 1) +
+      '/' +
+      deliveryDate.getFullYear()
+    );
+  },
+
+  getCart: async function () {
+    // Get cart drawer discount section
+    const discountSection = document.querySelector(this.selector.drawerDiscountSection);
+
+    // Function to get cart contents
+    const response = await fetch(`/cart.js`, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    const data = await response.json();
+    console.log(data);
+
+    // Generate the discount HTML
+    let discounts = '';
+
+    // Check if the cart has discounts
+    for (discount_application in data.cart.discount_applications) {
+      discounts += `<div class="box-drawer__discount">${discount_application.title}</div>`;
+    }
+
+    console.log(discounts);
+
+    // Update the discount section with the generated HTML
+    discountSection.innerHTML = discounts;
+
+    return data;
   },
 
   // Function to reset the product selection state
   reset: function () {
-    console.log("Resetting");
+    console.log('Resetting');
 
     // Clear session storage items related to product selection
     sessionStorage.removeItem('potsProductList');
     sessionStorage.removeItem('potsType');
     sessionStorage.removeItem('potsFreq');
 
-
-
     // Reset quantity inputs to 0
-    const quanityInput = document.querySelectorAll(".quantity__input");
+    const quanityInput = document.querySelectorAll('.quantity__input');
     quanityInput.forEach(function (input) {
       input.value = 0;
     });
@@ -651,13 +692,13 @@ let subscription = {
 
   // Function to initialize various functions
   init: function () {
+    this.getCart(); // Get cart contents
     this.initialise(); // Initialize product state and UI elements
     this.updateReviewBoxModal(); // Update review box modal
     this.handleProductQuantityChange(); // Set up quantity change handling
     this.handleReviewBox(); // Handle review box functionality
     this.calculateTotals(); // Perform initial calculations
   },
-
 };
 
 subscription.init();
@@ -683,7 +724,6 @@ class BoxQuantityInput extends HTMLElement {
       // Call an external function to handle product quantity changes
       subscription.handleProductQuantityChange();
       subscription.updateReviewBoxModal();
-
     });
   }
 
@@ -719,11 +759,11 @@ class ProductButton extends HTMLElement {
         e.preventDefault(); // Prevent default button behavior
 
         // Hide the button after it's clicked
-        e.target.classList.add("hidden");
+        e.target.classList.add('hidden');
 
         // Show the quantity input wrapper if it's hidden
-        if (selector.classList.contains("hidden")) {
-          selector.classList.remove("hidden");
+        if (selector.classList.contains('hidden')) {
+          selector.classList.remove('hidden');
         }
 
         // Update the quantity input value to 1
@@ -731,7 +771,7 @@ class ProductButton extends HTMLElement {
         input.value = 1;
 
         // Manage product list in session storage
-        let productList = sessionStorage.getItem("potsProductList");
+        let productList = sessionStorage.getItem('potsProductList');
         let productJson = JSON.parse(productList);
 
         // Find the product in the list and update its quantity
@@ -755,8 +795,8 @@ class ProductButton extends HTMLElement {
             price: input.dataset.price,
             title: input.dataset.title,
             variantTitle: input.dataset.variantTitle,
-            imageURL: img
-          })
+            imageURL: img,
+          });
         }
 
         // Update the product list in session storage
@@ -766,7 +806,6 @@ class ProductButton extends HTMLElement {
         subscription.calculateTotals();
         subscription.updateProgressBar();
         subscription.updateReviewBoxModal();
-
       });
     }
   }
@@ -788,22 +827,22 @@ class ModalCardOpener extends HTMLElement {
       e.preventDefault();
 
       // Hide button
-      e.target.classList.add("hidden");
+      e.target.classList.add('hidden');
 
       // Remove hidden class from selector
-      if (selector.classList.contains("hidden")) {
-        selector.classList.remove("hidden");
+      if (selector.classList.contains('hidden')) {
+        selector.classList.remove('hidden');
       }
 
       const buttonParent = e.target.parentNode;
-      buttonParent.classList.add("active");
+      buttonParent.classList.add('active');
 
       const close = selector.querySelector('#close');
       close.addEventListener('click', (e) => {
         e.preventDefault();
-        selector.classList.add("hidden");
-        button.classList.remove("hidden");
-        buttonParent.classList.remove("active");
+        selector.classList.add('hidden');
+        button.classList.remove('hidden');
+        buttonParent.classList.remove('active');
       });
     });
   }
@@ -822,7 +861,7 @@ class FrequencySelector extends HTMLElement {
     select.addEventListener('change', (event) => {
       subscription.state.subscriptionFrequency = select.value;
       setCookie('potsFreq', select.value, 1);
-      sessionStorage.setItem('potsFreq', select.value)
+      sessionStorage.setItem('potsFreq', select.value);
     });
   }
 }
@@ -857,18 +896,18 @@ class subscriptionType extends HTMLElement {
 
     // Get references to buttons and the order type element
     const buttons = this.querySelectorAll('button');
-    const orderType = document.getElementById("orderType");
-    const oneTimeContent = orderType.querySelector("#oneTimeContent");
-    const subscriptionContent = orderType.querySelector("#subscriptionContent");
-
-
+    const orderType = document.getElementById('orderType');
+    const oneTimeContent = orderType.querySelector('#oneTimeContent');
+    const subscriptionContent = orderType.querySelector('#subscriptionContent');
 
     // Add event listeners to each button
     buttons.forEach((button) => {
       button.addEventListener('click', (e) => {
-        if (!button.classList.contains('active')) { // Check if the button is not already active
+        if (!button.classList.contains('active')) {
+          // Check if the button is not already active
           button.classList.add('active'); // Make the clicked button active
-          buttons.forEach((otherButton) => { // Deactivate other buttons
+          buttons.forEach((otherButton) => {
+            // Deactivate other buttons
             if (otherButton !== button) {
               otherButton.classList.remove('active');
             }
@@ -876,17 +915,15 @@ class subscriptionType extends HTMLElement {
 
           // Update subscription type based on the clicked button's ID
           if (button.id === 'onetime') {
-            setCookie('potsType', "onetime", 1); // Set cookie and session storage
-            sessionStorage.setItem('potsType', "onetime");
-            oneTimeContent.classList.remove("hidden");
-            subscriptionContent.classList.add("hidden");
-
+            setCookie('potsType', 'onetime', 1); // Set cookie and session storage
+            sessionStorage.setItem('potsType', 'onetime');
+            oneTimeContent.classList.remove('hidden');
+            subscriptionContent.classList.add('hidden');
           } else {
-            setCookie('potsType', "subscription", 1); // Set cookie and session storage
-            sessionStorage.setItem('potsType', "subscription");
-            subscriptionContent.classList.remove("hidden");
-            oneTimeContent.classList.add("hidden");
-
+            setCookie('potsType', 'subscription', 1); // Set cookie and session storage
+            sessionStorage.setItem('potsType', 'subscription');
+            subscriptionContent.classList.remove('hidden');
+            oneTimeContent.classList.add('hidden');
           }
 
           // Trigger updates for calculations and review box
@@ -915,7 +952,7 @@ class footerButtons extends HTMLElement {
         e.preventDefault(); // Prevent default button behavior
 
         // If the clicked button has the ID "cart-reset"
-        if (e.target.id == "cart-reset") {
+        if (e.target.id == 'cart-reset') {
           // Call the subscription.reset() function to reset product selection
           subscription.reset();
         }
@@ -944,17 +981,17 @@ customElements.define('product--info-modal-opener', ProductInfoModalOpener);
 
 // Cookie helper functions
 function setCookie(cname, cvalue, exdays) {
-  console.log("Setting Cookie: " + cname);
-  console.log("Setting Cookie: " + cvalue);
+  console.log('Setting Cookie: ' + cname);
+  console.log('Setting Cookie: ' + cvalue);
 
   const d = new Date();
   d.setTime(d.getTime() + 1 * 3600 * 1000);
-  let expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+  let expires = 'expires=' + d.toUTCString();
+  document.cookie = cname + '=' + cvalue + ';' + expires + ';path=/';
 }
 
 function getCookie(cname) {
-  let name = cname + "=";
+  let name = cname + '=';
   let ca = document.cookie.split(';');
 
   for (let i = 0; i < ca.length; i++) {
@@ -969,7 +1006,7 @@ function getCookie(cname) {
     }
   }
 
-  return "";
+  return '';
 }
 
 async function updateCart(data) {
@@ -980,15 +1017,14 @@ async function updateCart(data) {
     credentials: 'same-origin',
     headers: {
       'Content-Type': 'application/json',
-      'X-Requested-With': 'xmlhttprequest'
+      'X-Requested-With': 'xmlhttprequest',
     },
-    method: 'POST'
+    method: 'POST',
   })
     .then((response) => {
       return response.json();
     })
     .then((json) => {
-
       // Call the function to handle adding box to the cart
       subscription.handleAddToCart(data);
     })
