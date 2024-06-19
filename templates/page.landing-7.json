@@ -1,1 +1,277 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"padding_top":60,"padding_bottom":60}},"image_banner_GVmUkf":{"type":"image-banner","blocks":{"heading_pfn3KB":{"type":"heading","settings":{"heading":"Where to find Pots for Tots","heading_size":"h1"}},"text_MbxqGN":{"type":"text","settings":{"text":"We're delighted to be stocked in a variety of wonderful retail partners. From luxury hotels to delis and farm shops, wonderful soft play centres, cafes, country parks and private members clubs.","text_style":"body"}},"buttons_4ch6Ez":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_pfn3KB","text_MbxqGN","buttons_4ch6Ez"],"settings":{"image":"shopify:\/\/shop_images\/Screenshot_2024-03-05_at_10.34.00.png","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"multirow_nyEeCi":{"type":"multirow","blocks":{"row_7NKAM4":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/Nobu_hotel.png","caption":"Hotels","heading":"Nobu Hotel","text":"<p>We understand the unique challenges faced by families on the go. That’s why we’ve collaborated with Nobu London Portman Square Hotel to create a menu that not only tantalises the taste buds but also meets the nutritional needs of young adventurers. Our Pots for Tots meals & snacks are made with love, care, and the finest ingredients to ensure a delightful dining experience for little guests and a worry-free, enjoyable mealtime for parents.<\/p>","button_label":"","button_link":""}},"row_6UYaMQ":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/Cloud_Twelve_2.png","caption":"Private members clubs","heading":"Cloud Twelve","text":"<p>Find us in this one-of-a-kind wellness and lifestyle club in the heart of Notting Hill, extending over three floors with an interactive play and learn zone for families with children, indulgent spa, luxury salon, nutritionally focused brasserie and a holistic wellness clinic.<\/p>","button_label":"","button_link":""}},"row_dcm9U4":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/Village_Wholefoods.jpg","caption":"Farm shops and delis","heading":"Village Wholefoods","text":"<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>","button_label":"","button_link":""}}},"block_order":["row_7NKAM4","row_6UYaMQ","row_dcm9U4"],"settings":{"image_height":"adapt","desktop_image_width":"medium","heading_size":"h1","text_style":"body","button_style":"secondary","desktop_content_position":"middle","desktop_content_alignment":"left","image_layout":"alternate-left","section_color_scheme":"scheme-2","row_color_scheme":"scheme-2","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"custom_multicolumn_WQTFhF":{"type":"custom-multicolumn","blocks":{"column_G4NcFg":{"type":"column","settings":{"title":"","title_size":"h2","text":"<p>Some of our other wonderful retail partners including, Falconhurst Estate, Jolly Nice Farm Shop, Clara's Corner and The Walled Garden.<\/p>","link_label":"","link":""}}},"block_order":["column_G4NcFg"],"settings":{"title":"","heading_size":"h1","text":"","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"left","background_style":"primary","button_label":"","button_link":"","color_scheme":"","image":"shopify:\/\/shop_images\/Recycled_background_medium_res.png","columns_mobile":"1","swipe_on_mobile":false,"padding_top":36,"padding_bottom":40}},"image_banner_GCEXWU":{"type":"image-banner","blocks":{"heading_kBiexL":{"type":"heading","disabled":true,"settings":{"heading":"Image banner","heading_size":"h1"}},"text_7FXThm":{"type":"text","disabled":true,"settings":{"text":"Give customers details about the banner image(s) or content on the template.","text_style":"body"}},"buttons_R98gUg":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_kBiexL","text_7FXThm","buttons_R98gUg"],"settings":{"image":"shopify:\/\/shop_images\/Retail_partners.png","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"rich_text_F7VhGF":{"type":"rich-text","blocks":{"heading_RJVfwj":{"type":"heading","settings":{"heading":"Want to be a Pots for Tots retail partner?","heading_size":"h1"}},"text_jTfpct":{"type":"text","settings":{"text":"<p>We'd love to hear from you! Get in touch using the form below and we'll get back to you as soon as possible.<\/p>"}},"button_RiqUny":{"type":"button","disabled":true,"settings":{"button_label":"Button label","button_link":"","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_RJVfwj","text_jTfpct","button_RiqUny"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"scheme-3","full_width":true,"padding_top":40,"padding_bottom":0}},"contact_form_j3KgEG":{"type":"contact-form","settings":{"heading":"Contact form","heading_size":"h1","color_scheme":"scheme-3","padding_top":36,"padding_bottom":36}}},"order":["main","image_banner_GVmUkf","multirow_nyEeCi","custom_multicolumn_WQTFhF","image_banner_GCEXWU","rich_text_F7VhGF","contact_form_j3KgEG"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_banner_GVmUkf": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pfn3KB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Where to find Pots for Tots",
+            "heading_size": "h1"
+          }
+        },
+        "text_MbxqGN": {
+          "type": "text",
+          "settings": {
+            "text": "We're delighted to be stocked in a variety of wonderful retail partners. From luxury hotels to delis and farm shops, wonderful soft play centres, cafes, country parks and private members clubs.",
+            "text_style": "body"
+          }
+        },
+        "buttons_4ch6Ez": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pfn3KB",
+        "text_MbxqGN",
+        "buttons_4ch6Ez"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-03-05_at_10.34.00.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "multirow_nyEeCi": {
+      "type": "multirow",
+      "blocks": {
+        "row_7NKAM4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Nobu_hotel.png",
+            "caption": "Hotels",
+            "heading": "Nobu Hotel",
+            "text": "<p>We understand the unique challenges faced by families on the go. That’s why we’ve collaborated with Nobu London Portman Square Hotel to create a menu that not only tantalises the taste buds but also meets the nutritional needs of young adventurers. Our Pots for Tots meals & snacks are made with love, care, and the finest ingredients to ensure a delightful dining experience for little guests and a worry-free, enjoyable mealtime for parents.<\/p><h6>Image credit: Jack Hardy\/Condé Nast Traveller<\/h6>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_6UYaMQ": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cloud_Twelve_2.png",
+            "caption": "Private members clubs",
+            "heading": "Cloud Twelve",
+            "text": "<p>Find us in this one-of-a-kind wellness and lifestyle club in the heart of Notting Hill, extending over three floors with an interactive play and learn zone for families with children, indulgent spa, luxury salon, nutritionally focused brasserie and a holistic wellness clinic.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_dcm9U4": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Village_Wholefoods.jpg",
+            "caption": "Farm shops and delis",
+            "heading": "Village Wholefoods",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_7NKAM4",
+        "row_6UYaMQ",
+        "row_dcm9U4"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_multicolumn_WQTFhF": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_G4NcFg": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "title_size": "h2",
+            "text": "<p>Some of our other wonderful retail partners including, Falconhurst Estate, Jolly Nice Farm Shop, Clara's Corner and The Walled Garden.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_G4NcFg"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "text": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 40
+      }
+    },
+    "image_banner_GCEXWU": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_kBiexL": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_7FXThm": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_R98gUg": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_kBiexL",
+        "text_7FXThm",
+        "buttons_R98gUg"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Retail_partners.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_F7VhGF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RJVfwj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Want to be a Pots for Tots retail partner?",
+            "heading_size": "h1"
+          }
+        },
+        "text_jTfpct": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We'd love to hear from you! Get in touch using the form below and we'll get back to you as soon as possible.<\/p>"
+          }
+        },
+        "button_RiqUny": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RJVfwj",
+        "text_jTfpct",
+        "button_RiqUny"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "contact_form_j3KgEG": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "Contact form",
+        "heading_size": "h1",
+        "color_scheme": "scheme-3",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_GVmUkf",
+    "multirow_nyEeCi",
+    "custom_multicolumn_WQTFhF",
+    "image_banner_GCEXWU",
+    "rich_text_F7VhGF",
+    "contact_form_j3KgEG"
+  ]
+}
