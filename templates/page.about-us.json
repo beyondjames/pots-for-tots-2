@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -27,13 +36,12 @@
         },
         "buttons_iFD7YV": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "Build a box",
+            "button_link_1": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
+            "button_label_2": "Bundles",
+            "button_link_2": "shopify:\/\/collections\/bundles",
             "button_style_secondary_2": false
           }
         }
@@ -107,7 +115,7 @@
         "row_tmiQpL": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image00017_VSCO.jpg",
+            "image": "shopify:\/\/shop_images\/Lentil_bol_square.png",
             "caption": "we are",
             "heading": "Responsible",
             "text": "<p>We think children deserve to eat REAL food, whether that’s at home or on the go. We have a responsibility to provide nutritious food for the future health of our children. We are the change we’d like to see.<\/p>",
@@ -151,7 +159,7 @@
         "row_LxU9aH": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image00022_VSCO.jpg",
+            "image": "shopify:\/\/shop_images\/Cottage_pie_square.png",
             "caption": "We Are",
             "heading": "Trailblazing",
             "text": "<p>We’re here to make an impact in the children’s food space. We’re not afraid to call out big brands, who use misleading marketing messages and we will always be an advocate for the health of our children and yours.<\/p>",
@@ -181,6 +189,50 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_y6X7Wg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gUGXiV": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_TygPaX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button_XhCH6G": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP ALL",
+            "button_link": "shopify:\/\/collections\/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "SHOP BUNDLES",
+            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gUGXiV",
+        "text_TygPaX",
+        "button_XhCH6G"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "image_with_text_NaHfeY": {
@@ -483,6 +535,7 @@
     "image_banner_qGFk8P",
     "rich_text_PcW3HN",
     "multirow_GMHCyC",
+    "rich_text_y6X7Wg",
     "image_with_text_NaHfeY",
     "custom_image_with_text_FEpgip",
     "multicolumn_THQAtb",
