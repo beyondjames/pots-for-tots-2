@@ -303,7 +303,7 @@
             "image": "shopify:\/\/shop_images\/Lamb_tagine.png",
             "title": "NEW! Lamb Tagine",
             "title_size": "h2",
-            "text": "<p>From £4.65<\/p>",
+            "text": "<p>£4.65<\/p>",
             "link_label": "Create a box",
             "link": "shopify:\/\/collections\/build-your-box"
           }
@@ -311,10 +311,10 @@
         "column_XgNy9B": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banana_Pancakes.png",
+            "image": "shopify:\/\/shop_images\/Banana_pancakes_square.png",
             "title": "Banana Pancakes",
             "title_size": "h2",
-            "text": "<p>From £3.59<\/p>",
+            "text": "<p>£3.99<\/p>",
             "link_label": "Create a box",
             "link": "shopify:\/\/collections\/build-your-box"
           }
@@ -325,7 +325,7 @@
             "image": "shopify:\/\/shop_images\/Pasta_primavera_16fb99c7-0e29-46ad-ba1c-2a4cdb5069a2.png",
             "title": "Limited Edition Pasta Primavera",
             "title_size": "h2",
-            "text": "<p>From £4.19<\/p>",
+            "text": "<p>£4.60<\/p>",
             "link_label": "Create a box",
             "link": "shopify:\/\/collections\/build-your-box"
           }
@@ -333,10 +333,10 @@
         "column_Yc6brM": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Mac_cheese_web_NEW_1.png",
-            "title": "Mac & Cheese",
+            "image": "shopify:\/\/shop_images\/Broc_tots_square.png",
+            "title": "Broccoli Tots",
             "title_size": "h2",
-            "text": "<p>From £4.19<\/p>",
+            "text": "<p>£3.99<\/p>",
             "link_label": "Create a box",
             "link": "shopify:\/\/collections\/build-your-box"
           }
@@ -706,7 +706,7 @@
         "template--16755842351362__7e794788-fc62-4baf-b008-d2d8ed71fd6c-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Master_taste_tester.jpg",
+        "image": "shopify:\/\/shop_images\/Simple_Orzo_square.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
