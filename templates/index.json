@@ -15,12 +15,12 @@
         "buttons_jft8ea": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "Shop Now",
+            "button_label_1": "Build a box",
             "button_link_1": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary_1": false,
-            "button_label_2": "",
+            "button_label_2": "Bundles",
             "button_link_2": "shopify:\/\/collections\/bundles",
-            "button_style_secondary_2": true
+            "button_style_secondary_2": false
           }
         }
       },
@@ -28,10 +28,10 @@
         "buttons_jft8ea"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/Snacks_desktop_header.png",
+        "image_desktop": "shopify:\/\/shop_images\/Website_homepage_hero_landscape.png",
         "image_height": "large",
-        "image_mobile": "shopify:\/\/shop_images\/snacks_mobile_header.png",
-        "title": "New snacks on the menu!",
+        "image_mobile": "shopify:\/\/shop_images\/Hero_group_shot.png",
+        "title": "New meals and bundles!",
         "title_size": "large",
         "link_url": "",
         "section_color_scheme": "scheme-4"
