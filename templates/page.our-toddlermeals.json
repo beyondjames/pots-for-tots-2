@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -205,11 +214,11 @@
         "buttons_VV9MN3": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "SHOP NOW",
+            "button_label_1": "Build a box",
             "button_link_1": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "bundles",
+            "button_link_2": "shopify:\/\/collections\/bundles",
             "button_style_secondary_2": false
           }
         }
@@ -248,11 +257,23 @@
           "settings": {
             "text": "<p>We pride ourselves on using a minimum of three different vegetables in every meal. We also make sure we include a range of meat dishes, fish dishes and vegetable dishes. We add meals to our range frequently to make sure your child is getting a good variety.<\/p><p>We make some meals without milk, however they <strong>may contain<\/strong> <strong>traces<\/strong> of milk as we work in a small kitchen and with small suppliers. <\/p><p>However, it is better to avoid ordering any of our meals if your child has a serious allergy. <\/p>"
           }
+        },
+        "button_PLx6P9": {
+          "type": "button",
+          "settings": {
+            "button_label": "Build a box",
+            "button_link": "shopify:\/\/collections\/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "Bundles",
+            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_style_secondary_2": false
+          }
         }
       },
       "block_order": [
         "16496797794197e084-0",
-        "16496797794197e084-1"
+        "16496797794197e084-1",
+        "button_PLx6P9"
       ],
       "disabled": true,
       "settings": {
