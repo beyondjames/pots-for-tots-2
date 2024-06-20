@@ -107,6 +107,17 @@
     "custom_multicolumn_DLcnct": {
       "type": "custom-multicolumn",
       "blocks": {
+        "column_TMDEpg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pasta_Primavera_045b511e-bb9c-4369-82f2-c220619d9063.png",
+            "title": "Limited Edition Pasta Primavera",
+            "title_size": "h2",
+            "text": "<p>Pair with a side of fresh tomato slices covered in olive oil to add some extra fats.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_pURBhE": {
           "type": "column",
           "settings": {
@@ -136,17 +147,6 @@
             "title": "Fish Pie",
             "title_size": "h2",
             "text": "<p>Add extra fibre to this fish dish with a side of juicy corn on the cob.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_TMDEpg": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Pasta_Primavera_045b511e-bb9c-4369-82f2-c220619d9063.png",
-            "title": "Limited Edition Pasta Primavera",
-            "title_size": "h2",
-            "text": "<p>Pair with a side of fresh tomato slices covered in olive oil to add some extra fats.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -209,10 +209,10 @@
         "column_iwqqNH": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-2_31ff38a2-3dad-43ee-8b4e-ebfd057f4b5e.png",
-            "title": "Sweet Potato Curry",
+            "image": "shopify:\/\/shop_images\/Spanish-Style_Chicken_Rice.png",
+            "title": "Spanish-Style Chicken & Rice",
             "title_size": "h2",
-            "text": "<p>Pair with some fresh mango or pineapple fingers to cut through the spices and provide Vitamins A and C.<\/p>",
+            "text": "<p>Team with roasted vegetables for extra fibre and vitamin C.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -406,10 +406,10 @@
         }
       },
       "block_order": [
+        "column_TMDEpg",
         "column_pURBhE",
         "column_48ypXC",
         "column_wpQzRW",
-        "column_TMDEpg",
         "column_X4mkNY",
         "column_DdjxzT",
         "column_8Xf9yn",
