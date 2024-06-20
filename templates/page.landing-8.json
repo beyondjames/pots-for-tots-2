@@ -307,6 +307,7 @@
         },
         "column_KJnkbX": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-14.png",
             "title": "Apple & Cinnamon Oat Bites",
@@ -330,7 +331,7 @@
         "column_tYdTeV": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-9.png",
+            "image": "shopify:\/\/shop_images\/Banana_Pancakes_bda102c3-80dd-48e7-975a-4fa17c608b63.png",
             "title": "Mini Banana Pancakes",
             "title_size": "h2",
             "text": "<p>Team with yoghurt and a drizzle of peanut butter, chia jam, or sprinkle of ground seeds. <\/p>",
@@ -341,7 +342,7 @@
         "column_Becwxk": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-4.png",
+            "image": "shopify:\/\/shop_images\/Broc_Tots_ae5da3b8-c8bb-414b-bb88-6bace2a8ce7e.png",
             "title": "Broccoli Tots",
             "title_size": "h2",
             "text": "<p>Pair with hummus or cream cheese for extra protein. Or make it a meal with potato wedges and veggies.<\/p>",
@@ -352,7 +353,7 @@
         "column_xwiyqw": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-5.png",
+            "image": "shopify:\/\/shop_images\/Hidden_Veg_Pasta_Sauce.png",
             "title": "Classic Tomato Sauce",
             "title_size": "h2",
             "text": "<p>The possibilities are endless. Use in pasta, baked eggs, for pizza toppings or even poured over chicken or fish.<\/p>",
