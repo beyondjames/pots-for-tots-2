@@ -111,7 +111,7 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/Pasta_Primavera_045b511e-bb9c-4369-82f2-c220619d9063.png",
-            "title": "Limited Edition Pasta Primavera",
+            "title": "Pasta Primavera",
             "title_size": "h2",
             "text": "<p>Pair with a side of fresh tomato slices covered in olive oil to add some extra fats.<\/p>",
             "link_label": "",
@@ -176,7 +176,7 @@
         "column_8Xf9yn": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-7.png",
+            "image": "shopify:\/\/shop_images\/Chicken_Korma_5c2cd446-78a5-41f9-b2e0-c09b66fe6ba6.png",
             "title": "Mild Chicken Korma",
             "title_size": "h2",
             "text": "<p>Serve with a dollop of yoghurt (contains Vitamin C!) and grated cucumber (our quick take on raita!).<\/p>",
@@ -187,7 +187,7 @@
         "column_WpheET": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-3.png",
+            "image": "shopify:\/\/shop_images\/Lentil_Bolognese_53b6b743-c938-45d8-8769-32c86a379ccb.png",
             "title": "Lentil Bolognese",
             "title_size": "h2",
             "text": "<p>Super sides include cheese (or plant based alternative) or even cheesy garlic toast fingers.<\/p>",
@@ -198,7 +198,7 @@
         "column_c4dHb7": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/17.png",
+            "image": "shopify:\/\/shop_images\/Coconut_Fish_Curry_1e40160b-00a0-4986-a137-d92e9e4ba744.png",
             "title": "Coconut Fish Curry",
             "title_size": "h2",
             "text": "<p>Serve with flatbreads for dipping, or stir fried green beans for some extra fibre and folate.<\/p>",
@@ -220,7 +220,7 @@
         "column_HAncTp": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-8.png",
+            "image": "shopify:\/\/shop_images\/Pasta_Bolognese.png",
             "title": "Pasta Bolognese",
             "title_size": "h2",
             "text": "<p>Add a side of garlic bread, or nudge up the vegetables even more with some cucumber and carrot sticks.<\/p>",
@@ -253,7 +253,7 @@
         "column_JY9AAC": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_248a3815-0b93-48d5-a72a-896d1b316c4e.png",
+            "image": "shopify:\/\/shop_images\/Cheesy_Veg_Bites_b1d6a28a-7de3-4877-9b47-fa3f23073292.png",
             "title": "Cheesy Veg Bites",
             "title_size": "h2",
             "text": "<p>Add a pop of extra colour and to your 5-a-day by dunking into a tomato salsa dip.<\/p>",
@@ -264,7 +264,7 @@
         "column_KTdPac": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_9300face-913d-4a60-bb75-a5a478249f5c.png",
+            "image": "shopify:\/\/shop_images\/Apple_Cinnamon_Mini_Muffins.png",
             "title": "Apple & Cinnamon Mini Muffins",
             "title_size": "h2",
             "text": "<p>Serve warm with a side of frozen yoghurt or low sugar custard, or a side of grated apple.<\/p>",
