@@ -143,8 +143,8 @@
         "column_TMDEpg": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website_65c624bb-50ae-48aa-b3f2-1b763b2d8291.png",
-            "title": "Pasta Primavera",
+            "image": "shopify:\/\/shop_images\/Pasta_Primavera_045b511e-bb9c-4369-82f2-c220619d9063.png",
+            "title": "Limited Edition Pasta Primavera",
             "title_size": "h2",
             "text": "<p>Pair with a side of fresh tomato slices covered in olive oil to add some extra fats.<\/p>",
             "link_label": "",
@@ -154,7 +154,7 @@
         "column_X4mkNY": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-6.png",
+            "image": "shopify:\/\/shop_images\/Chicken_Leek_Pie_64447f6a-aebf-4893-88a0-68a4983be068.png",
             "title": "Creamy Chicken & Leek Pie",
             "title_size": "h2",
             "text": "<p>Team with green peas and a dollop of mint sauce, for extra veggies and Vitamin C.<\/p>",
@@ -165,7 +165,7 @@
         "column_DdjxzT": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/19.png",
+            "image": "shopify:\/\/shop_images\/Med_Veg_Orzo_8f5b03be-f6ba-494a-9b90-666240d85afa.png",
             "title": "Mediterranean Veg Orzo",
             "title_size": "h2",
             "text": "<p>Elevate the protein content with a side of leftover roast chicken, stir fried prawns or tofu.<\/p>",
