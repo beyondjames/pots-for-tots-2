@@ -1,1 +1,462 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"padding_top":60,"padding_bottom":60}},"image_with_text_JGiH46":{"type":"image-with-text","blocks":{"heading_w4iap7":{"type":"heading","settings":{"heading":"Serving suggestions","heading_size":"h1"}},"text_DJe6fL":{"type":"text","settings":{"text":"<p>For little ones with larger appetites or for those over 5 years old, we suggest serving an additional side with our meals. For some inspiration, Lucy Upton shares a range of nutritious and tasty serving suggestions below!<\/p><p><br\/><\/p>","text_style":"body"}},"button_DcX6Bz":{"type":"button","settings":{"button_label":"ORDER YOUR MEALS","button_link":"https:\/\/potsfortots.co.uk\/collections\/build-your-box","button_style_secondary":false}}},"block_order":["heading_w4iap7","text_DJe6fL","button_DcX6Bz"],"settings":{"image":"shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"overlap","section_color_scheme":"scheme-2","color_scheme":"","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"custom_image_with_text_9nUKWR":{"type":"custom-image-with-text","blocks":{"heading_cEigtk":{"type":"heading","settings":{"heading":"Serving suggestions","heading_size":"h1"}},"text_Lw6C3T":{"type":"text","settings":{"text":"<p>Our Children's Dietitian has shared a selection of serving suggestions for our meals.  <\/p>","text_style":"body"}}},"block_order":["heading_cEigtk","text_Lw6C3T"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png","height":"small","desktop_image_width":"large","image_heading":"","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"no-overlap","section_color_scheme":"","color_scheme":"scheme-2","image_behavior":"none","mobile_content_alignment":"left","padding_top":0,"padding_bottom":0}},"custom_multicolumn_DLcnct":{"type":"custom-multicolumn","blocks":{"column_pURBhE":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/11_cfc2362a-4748-409d-a6ba-a46783d2a375.png","title":"Chilli con Carne","title_size":"h2","text":"<p>Team with mashed or sliced avocado for a dose of extra fats. Don't forget the tortilla crisps for dunking!<\/p>","link_label":"","link":""}},"column_48ypXC":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/21.png","title":"Mac & Cheese","title_size":"h2","text":"<p>Level up this meal with extra sprinkles; spring onions, shredded chicken, herbs or crushed sunflower seeds.<\/p>","link_label":"","link":""}},"column_wpQzRW":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/15_d33d4438-4859-43ba-87a3-5b76ffaac7ab.png","title":"Fish Pie","title_size":"h2","text":"<p>Add extra fibre to this fish dish with a side of juicy corn on the cob.<\/p>","link_label":"","link":""}},"column_TMDEpg":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website_65c624bb-50ae-48aa-b3f2-1b763b2d8291.png","title":"Pasta Primavera","title_size":"h2","text":"<p>Pair with a side of fresh tomato slices covered in olive oil to add some extra fats.<\/p>","link_label":"","link":""}},"column_X4mkNY":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-6.png","title":"Creamy Chicken & Leek Pie","title_size":"h2","text":"<p>Team with green peas and a dollop of mint sauce, for extra veggies and Vitamin C.<\/p>","link_label":"","link":""}},"column_DdjxzT":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/19.png","title":"Mediterranean Veg Orzo","title_size":"h2","text":"<p>Elevate the protein content with a side of leftover roast chicken, stir fried prawns or tofu.<\/p>","link_label":"","link":""}},"column_8Xf9yn":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-7.png","title":"Mild Chicken Korma","title_size":"h2","text":"<p>Serve with a dollop of yoghurt (contains Vitamin C!) and grated cucumber (our quick take on raita!).<\/p>","link_label":"","link":""}},"column_WpheET":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-3.png","title":"Lentil Bolognese","title_size":"h2","text":"<p>Super sides include cheese (or plant based alternative) or even cheesy garlic toast fingers.<\/p>","link_label":"","link":""}},"column_c4dHb7":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/17.png","title":"Coconut Fish Curry","title_size":"h2","text":"<p>Serve with flatbreads for dipping, or stir fried green beans for some extra fibre and folate.<\/p>","link_label":"","link":""}},"column_iwqqNH":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-2_31ff38a2-3dad-43ee-8b4e-ebfd057f4b5e.png","title":"Sweet Potato Curry","title_size":"h2","text":"<p>Pair with some fresh mango or pineapple fingers to cut through the spices and provide Vitamins A and C.<\/p>","link_label":"","link":""}},"column_HAncTp":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-8.png","title":"Pasta Bolognese","title_size":"h2","text":"<p>Add a side of garlic bread, or nudge up the vegetables even more with some cucumber and carrot sticks.<\/p>","link_label":"","link":""}},"column_ibq7KM":{"type":"column","disabled":true,"settings":{"title":"Veggie Korma","title_size":"h2","text":"","link_label":"","link":""}},"column_myYPFB":{"type":"column","disabled":true,"settings":{"title":"Mild Chicken Curry","title_size":"h2","text":"","link_label":"","link":""}},"column_JY9AAC":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/3_248a3815-0b93-48d5-a72a-896d1b316c4e.png","title":"Cheesy Veg Bites","title_size":"h2","text":"<p>Add a pop of extra colour and to your 5-a-day by dunking into a tomato salsa dip.<\/p>","link_label":"","link":""}},"column_KTdPac":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/1_9300face-913d-4a60-bb75-a5a478249f5c.png","title":"Apple & Cinnamon Mini Muffins","title_size":"h2","text":"<p>Serve warm with a side of frozen yoghurt or low sugar custard, or a side of grated apple.<\/p>","link_label":"","link":""}},"column_G4FT6C":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/31.png","title":"Courgette & Sweetcorn Bites","title_size":"h2","text":"<p>Dip in garlic yoghurt, or make it a meal and serve in a wrap with avocado and grated veggies.<\/p>","link_label":"","link":""}},"column_TjqcY8":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/4_6a9a8678-202a-4990-8fc0-cfe32f5ccfd6.png","title":"Mini Blueberry Muffins","title_size":"h2","text":"<p>Nudge up the nutrients by slicing in half and spreading with almond or peanut butter; both contain fibre and fats.<\/p>","link_label":"","link":""}},"column_3EMbGA":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/2_eace4661-44d1-4ff3-9e95-cb5c9ef16871.png","title":"Mini Apple Pancakes","title_size":"h2","text":"<p>Combine ground seeds with a little cinnamon and spinkle on top for some extra crunch (and fibre!).<\/p>","link_label":"","link":""}},"column_KJnkbX":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-14.png","title":"Apple & Cinnamon Oat Bites","title_size":"h2","text":"<p>Serve with yoghurt and a drizzle of nut butter, or crumbled over some mashed fruit.<\/p>","link_label":"","link":""}},"column_UKVmEx":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/32.png","title":"Apricot & Carrot Oat Bites","title_size":"h2","text":"<p>Add some extra fat by spreading on a little smooth peanut butter, almond butter or tahini.<\/p>","link_label":"","link":""}},"column_tYdTeV":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-9.png","title":"Mini Banana Pancakes","title_size":"h2","text":"<p>Team with yoghurt and a drizzle of peanut butter, chia jam, or sprinkle of ground seeds. <\/p>","link_label":"","link":""}},"column_Becwxk":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-4.png","title":"Broccoli Tots","title_size":"h2","text":"<p>Pair with hummus or cream cheese for extra protein. Or make it a meal with potato wedges and veggies.<\/p>","link_label":"","link":""}},"column_xwiyqw":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-5.png","title":"Classic Tomato Sauce","title_size":"h2","text":"<p>The possibilities are endless. Use in pasta, baked eggs, for pizza toppings or even poured over chicken or fish.<\/p>","link_label":"","link":""}},"column_CbccYQ":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/25.png","title":"Simple Chicken Korma","title_size":"h2","text":"<p>Serve with a dollop of yoghurt (contains Vitamin C!), or even some strips of naan bread for dipping!<\/p>","link_label":"","link":""}},"column_FrRhrj":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-13.png","title":"Simple Fish Pie","title_size":"h2","text":"<p>Help build exposure to veggies and textures by including some peas on the side.<\/p>","link_label":"","link":""}},"column_qBLdn7":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Serving_Suggestions_-_Website-11.png","title":"Simple Pasta Bolognese","title_size":"h2","text":"<p>Team with a sprinkle of cheese and some broccoli on the side!<\/p>","link_label":"","link":""}},"column_mgPfdJ":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/23.png","title":"Simple Med Veg Orzo","title_size":"h2","text":"<p>Add some leftover roasted chicken to this dish for an extra source of protein.<\/p>","link_label":"","link":""}}},"block_order":["column_pURBhE","column_48ypXC","column_wpQzRW","column_TMDEpg","column_X4mkNY","column_DdjxzT","column_8Xf9yn","column_WpheET","column_c4dHb7","column_iwqqNH","column_HAncTp","column_ibq7KM","column_myYPFB","column_JY9AAC","column_KTdPac","column_G4FT6C","column_TjqcY8","column_3EMbGA","column_KJnkbX","column_UKVmEx","column_tYdTeV","column_Becwxk","column_xwiyqw","column_CbccYQ","column_FrRhrj","column_qBLdn7","column_mgPfdJ"],"settings":{"title":"","heading_size":"h1","text":"","image_width":"full","image_ratio":"adapt","columns_desktop":3,"column_alignment":"left","background_style":"primary","button_label":"ORDER YOUR MEALS","button_link":"shopify:\/\/collections\/build-your-box","color_scheme":"","columns_mobile":"2","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}}},"order":["main","image_with_text_JGiH46","custom_image_with_text_9nUKWR","custom_multicolumn_DLcnct"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_JGiH46": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_w4iap7": {
+          "type": "heading",
+          "settings": {
+            "heading": "Serving suggestions",
+            "heading_size": "h1"
+          }
+        },
+        "text_DJe6fL": {
+          "type": "text",
+          "settings": {
+            "text": "<p>For little ones with larger appetites or for those over 5 years old, we suggest serving an additional side with our meals. For some inspiration, Lucy Upton shares a range of nutritious and tasty serving suggestions below!<\/p><p><br\/><\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_DcX6Bz": {
+          "type": "button",
+          "settings": {
+            "button_label": "ORDER YOUR MEALS",
+            "button_link": "https:\/\/potsfortots.co.uk\/collections\/build-your-box",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_w4iap7",
+        "text_DJe6fL",
+        "button_DcX6Bz"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_image_with_text_9nUKWR": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "heading_cEigtk": {
+          "type": "heading",
+          "settings": {
+            "heading": "Serving suggestions",
+            "heading_size": "h1"
+          }
+        },
+        "text_Lw6C3T": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Children's Dietitian has shared a selection of serving suggestions for our meals.  <\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cEigtk",
+        "text_Lw6C3T"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png",
+        "height": "small",
+        "desktop_image_width": "large",
+        "image_heading": "",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_multicolumn_DLcnct": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_pURBhE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Chilli_Con_Carne_ea0ef1c7-00a4-4fa8-975e-2cf4955e4252.png",
+            "title": "Chilli con Carne",
+            "title_size": "h2",
+            "text": "<p>Team with mashed or sliced avocado for a dose of extra fats. Don't forget the tortilla crisps for dunking!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_48ypXC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Mac_Cheese.png",
+            "title": "Mac & Cheese",
+            "title_size": "h2",
+            "text": "<p>Level up this meal with extra sprinkles; spring onions, shredded chicken, herbs or crushed sunflower seeds.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wpQzRW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Fish_Pie_8097657e-de5e-4efa-932a-ef3facde6327.png",
+            "title": "Fish Pie",
+            "title_size": "h2",
+            "text": "<p>Add extra fibre to this fish dish with a side of juicy corn on the cob.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TMDEpg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website_65c624bb-50ae-48aa-b3f2-1b763b2d8291.png",
+            "title": "Pasta Primavera",
+            "title_size": "h2",
+            "text": "<p>Pair with a side of fresh tomato slices covered in olive oil to add some extra fats.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_X4mkNY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-6.png",
+            "title": "Creamy Chicken & Leek Pie",
+            "title_size": "h2",
+            "text": "<p>Team with green peas and a dollop of mint sauce, for extra veggies and Vitamin C.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_DdjxzT": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/19.png",
+            "title": "Mediterranean Veg Orzo",
+            "title_size": "h2",
+            "text": "<p>Elevate the protein content with a side of leftover roast chicken, stir fried prawns or tofu.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8Xf9yn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-7.png",
+            "title": "Mild Chicken Korma",
+            "title_size": "h2",
+            "text": "<p>Serve with a dollop of yoghurt (contains Vitamin C!) and grated cucumber (our quick take on raita!).<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_WpheET": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-3.png",
+            "title": "Lentil Bolognese",
+            "title_size": "h2",
+            "text": "<p>Super sides include cheese (or plant based alternative) or even cheesy garlic toast fingers.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_c4dHb7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/17.png",
+            "title": "Coconut Fish Curry",
+            "title_size": "h2",
+            "text": "<p>Serve with flatbreads for dipping, or stir fried green beans for some extra fibre and folate.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iwqqNH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-2_31ff38a2-3dad-43ee-8b4e-ebfd057f4b5e.png",
+            "title": "Sweet Potato Curry",
+            "title_size": "h2",
+            "text": "<p>Pair with some fresh mango or pineapple fingers to cut through the spices and provide Vitamins A and C.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_HAncTp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-8.png",
+            "title": "Pasta Bolognese",
+            "title_size": "h2",
+            "text": "<p>Add a side of garlic bread, or nudge up the vegetables even more with some cucumber and carrot sticks.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_ibq7KM": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Veggie Korma",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_myYPFB": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "Mild Chicken Curry",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JY9AAC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_248a3815-0b93-48d5-a72a-896d1b316c4e.png",
+            "title": "Cheesy Veg Bites",
+            "title_size": "h2",
+            "text": "<p>Add a pop of extra colour and to your 5-a-day by dunking into a tomato salsa dip.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KTdPac": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_9300face-913d-4a60-bb75-a5a478249f5c.png",
+            "title": "Apple & Cinnamon Mini Muffins",
+            "title_size": "h2",
+            "text": "<p>Serve warm with a side of frozen yoghurt or low sugar custard, or a side of grated apple.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G4FT6C": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/31.png",
+            "title": "Courgette & Sweetcorn Bites",
+            "title_size": "h2",
+            "text": "<p>Dip in garlic yoghurt, or make it a meal and serve in a wrap with avocado and grated veggies.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_TjqcY8": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_6a9a8678-202a-4990-8fc0-cfe32f5ccfd6.png",
+            "title": "Mini Blueberry Muffins",
+            "title_size": "h2",
+            "text": "<p>Nudge up the nutrients by slicing in half and spreading with almond or peanut butter; both contain fibre and fats.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3EMbGA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_eace4661-44d1-4ff3-9e95-cb5c9ef16871.png",
+            "title": "Mini Apple Pancakes",
+            "title_size": "h2",
+            "text": "<p>Combine ground seeds with a little cinnamon and spinkle on top for some extra crunch (and fibre!).<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_KJnkbX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-14.png",
+            "title": "Apple & Cinnamon Oat Bites",
+            "title_size": "h2",
+            "text": "<p>Serve with yoghurt and a drizzle of nut butter, or crumbled over some mashed fruit.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_UKVmEx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/32.png",
+            "title": "Apricot & Carrot Oat Bites",
+            "title_size": "h2",
+            "text": "<p>Add some extra fat by spreading on a little smooth peanut butter, almond butter or tahini.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tYdTeV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-9.png",
+            "title": "Mini Banana Pancakes",
+            "title_size": "h2",
+            "text": "<p>Team with yoghurt and a drizzle of peanut butter, chia jam, or sprinkle of ground seeds. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Becwxk": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-4.png",
+            "title": "Broccoli Tots",
+            "title_size": "h2",
+            "text": "<p>Pair with hummus or cream cheese for extra protein. Or make it a meal with potato wedges and veggies.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xwiyqw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-5.png",
+            "title": "Classic Tomato Sauce",
+            "title_size": "h2",
+            "text": "<p>The possibilities are endless. Use in pasta, baked eggs, for pizza toppings or even poured over chicken or fish.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_CbccYQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/25.png",
+            "title": "Simple Chicken Korma",
+            "title_size": "h2",
+            "text": "<p>Serve with a dollop of yoghurt (contains Vitamin C!), or even some strips of naan bread for dipping!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FrRhrj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-13.png",
+            "title": "Simple Fish Pie",
+            "title_size": "h2",
+            "text": "<p>Help build exposure to veggies and textures by including some peas on the side.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_qBLdn7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Serving_Suggestions_-_Website-11.png",
+            "title": "Simple Pasta Bolognese",
+            "title_size": "h2",
+            "text": "<p>Team with a sprinkle of cheese and some broccoli on the side!<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_mgPfdJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/23.png",
+            "title": "Simple Med Veg Orzo",
+            "title_size": "h2",
+            "text": "<p>Add some leftover roasted chicken to this dish for an extra source of protein.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_pURBhE",
+        "column_48ypXC",
+        "column_wpQzRW",
+        "column_TMDEpg",
+        "column_X4mkNY",
+        "column_DdjxzT",
+        "column_8Xf9yn",
+        "column_WpheET",
+        "column_c4dHb7",
+        "column_iwqqNH",
+        "column_HAncTp",
+        "column_ibq7KM",
+        "column_myYPFB",
+        "column_JY9AAC",
+        "column_KTdPac",
+        "column_G4FT6C",
+        "column_TjqcY8",
+        "column_3EMbGA",
+        "column_KJnkbX",
+        "column_UKVmEx",
+        "column_tYdTeV",
+        "column_Becwxk",
+        "column_xwiyqw",
+        "column_CbccYQ",
+        "column_FrRhrj",
+        "column_qBLdn7",
+        "column_mgPfdJ"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "text": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "ORDER YOUR MEALS",
+        "button_link": "shopify:\/\/collections\/build-your-box",
+        "color_scheme": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_JGiH46",
+    "custom_image_with_text_9nUKWR",
+    "custom_multicolumn_DLcnct"
+  ]
+}
