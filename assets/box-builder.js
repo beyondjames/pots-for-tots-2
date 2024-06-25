@@ -110,16 +110,28 @@ let subscription = {
               });
             }
 
-            // Add products to array
-            productList.push({
-              id: element.dataset.index,
-              quantity: element.value,
-              price: element.dataset.price,
-              title: element.dataset.title,
-              variantTitle: element.dataset.variantTitle,
-              sellingPlans: plans,
-              imageURL: element.dataset.imageUrl,
-            });
+            if (element.dataset.imageUrl) {
+              // Add products to array
+              productList.push({
+                id: element.dataset.index,
+                quantity: element.value,
+                price: element.dataset.price,
+                title: element.dataset.title,
+                variantTitle: element.dataset.variantTitle,
+                sellingPlans: plans,
+                imageURL: element.dataset.imageUrl,
+              });
+            } else {
+              // Add products to array
+              productList.push({
+                id: element.dataset.index,
+                quantity: element.value,
+                price: element.dataset.price,
+                title: element.dataset.title,
+                variantTitle: element.dataset.variantTitle,
+                sellingPlans: plans,
+              });
+            }
           });
         }
       });
@@ -261,8 +273,10 @@ let subscription = {
         let amount;
         if (type == 'subscription') {
           // Calculate price for subscription products
-          if (product.sellingPlans) {
+          if (product.sellingPlans.length > 0) {
             amount = ((product.sellingPlans[0].price * product.quantity) / 100).toFixed(2);
+          } else {
+            amount = ((product.price * product.quantity) / 100).toFixed(2);
           }
         } else {
           // Calculate price for one-time products
@@ -307,7 +321,6 @@ let subscription = {
   },
 
   calculateTotals: function () {
-    console.log('Calculating totals');
     let productCount = 0;
     let productTotalCost = 0;
     let productSubscriptionTotalCost = 0;
@@ -320,10 +333,12 @@ let subscription = {
     productJson.forEach(function (product) {
       let lineTotal = product.price * parseInt(product.quantity);
       let productSubScriptionLineTotal = 0;
-      if (product.sellingPlans) {
+
+      if (product.sellingPlans.length > 0) {
         productSubScriptionLineTotal = product.sellingPlans[0].price * parseInt(product.quantity);
+      } else {
+        productSubScriptionLineTotal = product.price * parseInt(product.quantity);
       }
-      // console.log(productSubScriptionLineTotal);
 
       productTotalCost += lineTotal;
       productSubscriptionTotalCost += productSubScriptionLineTotal;
@@ -643,8 +658,6 @@ let subscription = {
 
   // Function to reset the product selection state
   reset: function () {
-    console.log('Resetting');
-
     // Clear session storage items related to product selection
     sessionStorage.removeItem('potsProductList');
     sessionStorage.removeItem('potsType');
