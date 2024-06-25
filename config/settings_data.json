@@ -212,7 +212,7 @@
           "rating_without_brackets": false,
           "format_review_count": false,
           "show_popup": true,
-          "anchor_to_reviews_widget": false,
+          "anchor_to_reviews_widget": true,
           "show_empty_stars": false
         }
       }
