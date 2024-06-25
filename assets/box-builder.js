@@ -110,8 +110,6 @@ let subscription = {
               });
             }
 
-            console.log(element.dataset.imageUrl);
-
             if (element.dataset.imageUrl) {
               // Add products to array
               productList.push({
@@ -323,7 +321,6 @@ let subscription = {
   },
 
   calculateTotals: function () {
-    console.log('Calculating totals');
     let productCount = 0;
     let productTotalCost = 0;
     let productSubscriptionTotalCost = 0;
@@ -337,13 +334,11 @@ let subscription = {
       let lineTotal = product.price * parseInt(product.quantity);
       let productSubScriptionLineTotal = 0;
 
-      console.log(product.sellingPlans.length > 0);
       if (product.sellingPlans.length > 0) {
         productSubScriptionLineTotal = product.sellingPlans[0].price * parseInt(product.quantity);
       } else {
         productSubScriptionLineTotal = product.price * parseInt(product.quantity);
       }
-      // console.log(productSubScriptionLineTotal);
 
       productTotalCost += lineTotal;
       productSubscriptionTotalCost += productSubScriptionLineTotal;
@@ -663,8 +658,6 @@ let subscription = {
 
   // Function to reset the product selection state
   reset: function () {
-    console.log('Resetting');
-
     // Clear session storage items related to product selection
     sessionStorage.removeItem('potsProductList');
     sessionStorage.removeItem('potsType');
