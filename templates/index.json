@@ -923,7 +923,7 @@
     "custom_liquid_ztgKqN": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script src=\"https:\/\/widget.reviews.io\/badge-ribbon\/dist.js\"><\/script>\n<div id=\"badge-ribbon\"><\/div>\n<script>\n    reviewsBadgeRibbon(\"badge-ribbon\", {\n        store: \"www.potsfortots.co.uk\",\n        size: \"medium\",\n        \n        \n    });\n<\/script>\n\n<styles>\n#badge-ribbon {\n}\n<\/styles>",
+        "custom_liquid": "<script src=\"https:\/\/widget.reviews.io\/badge-ribbon\/dist.js\"><\/script>\n<div id=\"badge-ribbon\"><\/div>\n<script>\n    reviewsBadgeRibbon(\"badge-ribbon\", {\n        store: \"www.potsfortots.co.uk\",\n        size: \"medium\",\n        \n        \n    });\n<\/script>\n\n<style>\n#badge-ribbon {\n}\n<\/style>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
