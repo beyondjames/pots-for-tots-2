@@ -34,6 +34,7 @@ let subscription = {
     reviewBoxModalQuantity: '[data-modal-product-quantity]', // Element displaying product quantity in the review box
     totalPrice: '[data-modal-total-price]', // Element displaying total price in the review box
     spaceRemaining: '[data-remaining]',
+    datePicker: '#delivery',
   },
 
   // Function to initialize product state and UI elements
@@ -410,7 +411,6 @@ let subscription = {
       goal2indicator.classList.remove('progress-bar__goal-reached');
       goal3indicator.classList.remove('progress-bar__goal-reached');
       space = goal1 - currentItemCount;
-      console.log(space);
 
       if (space == 1) {
         labelText = 'Add ' + space + ' more meal and delivery is £5.99';
@@ -438,7 +438,6 @@ let subscription = {
     } else if (combinedTotal < goal3) {
       // Goal 3 messaging
       space = goal3 - combinedTotal;
-      console.log(space);
 
       if (space == 1) {
         labelText = 'Checkout or add ' + space + ' more meal and delivery is';
@@ -496,8 +495,6 @@ let subscription = {
 
   // Generate the products to send to cart
   generateProductArray: function () {
-    console.log('Generating Product List');
-
     // Create an empty array to hold the formatted product items
     let items = [];
 
@@ -542,18 +539,29 @@ let subscription = {
     });
 
     // Handle delivery date logic
-    const DeliveryDate = this.handleDeliveryDate();
+    const datePicker = document.getElementById(this.selector.datePicker);
+    let DeliveryDate = null;
+
+    if (datePicker) {
+      DeliveryDate = this.handleDeliveryDate();
+    } else {
+      DeliveryDate = this.generateDeliveryDate();
+    }
+    console.log('delivery date: ' + DeliveryDate);
 
     // Construct the final object to be returned
-    return {
-      // The formatted array of products
-      items: items,
-      // Additional attributes
-      attributes: {
-        // Include the calculated delivery date
-        'Delivery Date': DeliveryDate,
-      },
-    };
+    if (DeliveryDate) {
+      return {
+        items: items,
+        attributes: {
+          'Delivery Date': DeliveryDate,
+        },
+      };
+    } else {
+      return {
+        items: items,
+      };
+    }
   },
 
   // Function to format a price with currency symbol and two decimal places
@@ -611,7 +619,7 @@ let subscription = {
       });
   },
 
-  handleDeliveryDate: function () {
+  generateDeliveryDate: function () {
     // Get the current date
     var today = new Date();
 
@@ -654,6 +662,15 @@ let subscription = {
       '/' +
       deliveryDate.getFullYear()
     );
+  },
+
+  handleDeliveryDate: function () {
+    const date = document.getElementById('delivery');
+    if (!date || date.value == '') {
+      return null;
+    } else {
+      return date.value;
+    }
   },
 
   // Function to reset the product selection state
@@ -862,8 +879,17 @@ class handleCheckoutButton extends HTMLElement {
 
     // Add an event listener to the button
     button.addEventListener('click', async () => {
-      let products = subscription.generateProductArray();
-      const addNewProducts = await updateCart(products);
+      const date = document.getElementById('delivery');
+
+      // Check for the date picker
+      if (date && date.value == '') {
+        const message = document.getElementById('date_picker__message');
+        message.innerHTML = 'Please enter date to proceed';
+        message.classList.remove('hidden');
+      } else {
+        let products = subscription.generateProductArray();
+        const addNewProducts = await updateCart(products);
+      }
     });
   }
 }
@@ -963,9 +989,6 @@ customElements.define('product--info-modal-opener', ProductInfoModalOpener);
 
 // Cookie helper functions
 function setCookie(cname, cvalue, exdays) {
-  console.log('Setting Cookie: ' + cname);
-  console.log('Setting Cookie: ' + cvalue);
-
   const d = new Date();
   d.setTime(d.getTime() + 1 * 3600 * 1000);
   let expires = 'expires=' + d.toUTCString();
