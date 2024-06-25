@@ -33,6 +33,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
+        "show_date_picker": true,
         "enable_quick_add": true,
         "enable_filtering": true,
         "filter_type": "horizontal",
