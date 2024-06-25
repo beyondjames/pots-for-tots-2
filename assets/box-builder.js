@@ -34,6 +34,7 @@ let subscription = {
     reviewBoxModalQuantity: '[data-modal-product-quantity]', // Element displaying product quantity in the review box
     totalPrice: '[data-modal-total-price]', // Element displaying total price in the review box
     spaceRemaining: '[data-remaining]',
+    datePicker: '#delivery',
   },
 
   // Function to initialize product state and UI elements
@@ -496,8 +497,6 @@ let subscription = {
 
   // Generate the products to send to cart
   generateProductArray: function () {
-    console.log('Generating Product List');
-
     // Create an empty array to hold the formatted product items
     let items = [];
 
@@ -545,15 +544,18 @@ let subscription = {
     const DeliveryDate = this.handleDeliveryDate();
 
     // Construct the final object to be returned
-    return {
-      // The formatted array of products
-      items: items,
-      // Additional attributes
-      attributes: {
-        // Include the calculated delivery date
-        'Delivery Date': DeliveryDate,
-      },
-    };
+    if (DeliveryDate) {
+      return {
+        items: items,
+        attributes: {
+          'Delivery Date': DeliveryDate,
+        },
+      };
+    } else {
+      return {
+        items: items,
+      };
+    }
   },
 
   // Function to format a price with currency symbol and two decimal places
@@ -612,48 +614,12 @@ let subscription = {
   },
 
   handleDeliveryDate: function () {
-    // Get the current date
-    var today = new Date();
-
-    // Helper function to get the next upcoming Thursday from a given date
-    function getThursday(orderDate) {
-      orderDate = orderDate || new Date(); // Use current date if not provided
-      if (!(orderDate instanceof Date)) {
-        throw 'Invalid date';
-      }
-
-      // Calculate the date of the previous Thursday
-      let lastThursday = new Date(orderDate);
-      lastThursday.setDate(lastThursday.getDate() - lastThursday.getDay() + 4);
-
-      // Adjust for delivery rules:
-      // - If order date is before Monday noon, deliver this week's Thursday.
-      // - Otherwise, deliver next Thursday.
-      if (orderDate.getDay() < 1 || (orderDate.getDay() === 1 && orderDate.getHours() < 24)) {
-        lastThursday.setDate(lastThursday.getDate());
-      } else {
-        lastThursday.setDate(lastThursday.getDate() + 7);
-      }
-
-      return lastThursday;
+    const date = document.getElementById('delivery');
+    if (!date || date.value == '') {
+      return null;
+    } else {
+      return date.value;
     }
-
-    // Get the Thursday for delivery based on the current order date
-    const deliveryDate = getThursday(today);
-
-    // Helper function to format a date component to two digits
-    function date2digits(date) {
-      return (date < 10 ? '0' : '') + date; // Add leading zero if needed
-    }
-
-    // Format and return the delivery date as DD/MM/YYYY
-    return (
-      date2digits(deliveryDate.getDate()) +
-      '/' +
-      date2digits(deliveryDate.getMonth() + 1) +
-      '/' +
-      deliveryDate.getFullYear()
-    );
   },
 
   // Function to reset the product selection state
@@ -862,8 +828,22 @@ class handleCheckoutButton extends HTMLElement {
 
     // Add an event listener to the button
     button.addEventListener('click', async () => {
-      let products = subscription.generateProductArray();
-      const addNewProducts = await updateCart(products);
+      const date = document.getElementById('delivery');
+
+      // Check for the date picker
+      if (date) {
+        if (date.value == '') {
+          const message = document.getElementById('date_picker__message');
+          message.innerHTML = 'Please enter date to proceed';
+          message.classList.remove('hidden');
+        } else {
+          let products = subscription.generateProductArray();
+          const addNewProducts = await updateCart(products);
+        }
+      } else {
+        let products = subscription.generateProductArray();
+        const addNewProducts = await updateCart(products);
+      }
     });
   }
 }

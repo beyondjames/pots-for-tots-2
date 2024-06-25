@@ -105,7 +105,12 @@
   margin-top: 0.5rem;
   font-size: 1.4rem;
   letter-spacing: 0.1rem;
+}
+
+#date_picker__message {
   color: red;
+  font-size: 1.3rem;
+  padding-top: 0.5rem;
 }
 
 .order-type__icon {
