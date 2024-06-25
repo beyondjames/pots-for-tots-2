@@ -52,6 +52,7 @@
     },
     "custom_image_banner_no_text_8JgQy4": {
       "type": "custom-image-banner-no-text",
+      "disabled": true,
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/trustpilot-average-rating-banner.jpg",
         "image_width": "400",
@@ -930,6 +931,24 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "171934271223d59424": {
+      "type": "apps",
+      "blocks": {
+        "reviews_io_reviewsio_rating_bar_z3NxAU": {
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-bar\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "disabled": true,
+          "settings": {
+            "widget_id": ""
+          }
+        }
+      },
+      "block_order": [
+        "reviews_io_reviewsio_rating_bar_z3NxAU"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
@@ -953,6 +972,7 @@
     "custom_image_banner_no_text_L4xAtn",
     "image_banner_zBhAPC",
     "1719331689a4fcf305",
-    "custom_liquid_ztgKqN"
+    "custom_liquid_ztgKqN",
+    "171934271223d59424"
   ]
 }
