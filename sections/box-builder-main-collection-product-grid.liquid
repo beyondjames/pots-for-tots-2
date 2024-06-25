@@ -364,17 +364,18 @@
 
 <script>
   const date = document.querySelector("#delivery");
-  {% comment %} const defaultDate; {% endcomment %}
-  const fp = flatpickr(date, {
-    dateFormat: 'd/m/Y',
-    minDate: 'today',
-    allowInput: true,
-    disable: [
-      // Disable weekends
-      function(date) {
-        return (date.getDay() === 0 || date.getDay() === 2 || date.getDay() === 3 || date.getDay() === 5 || date.getDay() === 6 );
-      }],
-  });
+  if (date) {
+    const fp = flatpickr(date, {
+      dateFormat: 'd/m/Y',
+      minDate: 'today',
+      allowInput: true,
+      disable: [
+        // Disable weekends
+        function(date) {
+          return (date.getDay() === 0 || date.getDay() === 2 || date.getDay() === 3 || date.getDay() === 5 || date.getDay() === 6 );
+        }],
+    });
+  }
 </script>
 
 <style>
