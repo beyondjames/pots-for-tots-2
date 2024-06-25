@@ -114,3 +114,10 @@
     margin-top: 4rem;
   }
 }
+
+.homepage-badge {
+  max-width:230px;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
