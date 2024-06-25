@@ -12,6 +12,17 @@
 -%}
 
 <div class="image-banner-text image-with-text__media--{{ image_height }} color-{{ color_scheme }}">
+
+  <script src="https://widget.reviews.io/badge-modern/dist.js"></script>
+<div id="badge-230" style="max-width:230px;"></div>
+<script>
+    reviewsBadgeModern('badge-230', {
+    store: 'www.potsfortots.co.uk',
+    primaryClr: '#4f7765',
+    starsClr: '#4f7765'
+    });
+</script>
+  
   {%- if image_url != blank -%}
     <div class="image-banner-text__desktop{% if image_mobile_url != blank %} image-banner-text__desktop--has-mobile-image{% endif %}">
       <img
