@@ -56,6 +56,10 @@
   height: 100%;
 }
 
+.homepage-badge {
+  display: none;
+}
+
 @media screen and (min-width: 750px) {
   .image-banner-text__desktop--has-mobile-image {
     display: block;
@@ -88,6 +92,14 @@
   .image-banner-text__title--large {
     font-size: calc(var(--font-heading-scale) * 10rem);
   }
+
+  .homepage-badge {
+    display: block;
+    max-width:230px;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -113,11 +125,4 @@
   .image-banner-text__content .banner__buttons {
     margin-top: 4rem;
   }
-}
-
-.homepage-badge {
-  max-width:230px;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
 }
