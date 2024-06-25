@@ -411,7 +411,6 @@ let subscription = {
       goal2indicator.classList.remove('progress-bar__goal-reached');
       goal3indicator.classList.remove('progress-bar__goal-reached');
       space = goal1 - currentItemCount;
-      console.log(space);
 
       if (space == 1) {
         labelText = 'Add ' + space + ' more meal and delivery is £5.99';
@@ -439,7 +438,6 @@ let subscription = {
     } else if (combinedTotal < goal3) {
       // Goal 3 messaging
       space = goal3 - combinedTotal;
-      console.log(space);
 
       if (space == 1) {
         labelText = 'Checkout or add ' + space + ' more meal and delivery is';
@@ -541,7 +539,15 @@ let subscription = {
     });
 
     // Handle delivery date logic
-    const DeliveryDate = this.handleDeliveryDate();
+    const datePicker = document.getElementById(this.selector.datePicker);
+    let DeliveryDate = null;
+
+    if (datePicker) {
+      DeliveryDate = this.handleDeliveryDate();
+    } else {
+      DeliveryDate = this.generateDeliveryDate();
+    }
+    console.log('delivery date: ' + DeliveryDate);
 
     // Construct the final object to be returned
     if (DeliveryDate) {
@@ -611,6 +617,51 @@ let subscription = {
       .catch((err) => {
         console.error(err); // Log any errors
       });
+  },
+
+  generateDeliveryDate: function () {
+    // Get the current date
+    var today = new Date();
+
+    // Helper function to get the next upcoming Thursday from a given date
+    function getThursday(orderDate) {
+      orderDate = orderDate || new Date(); // Use current date if not provided
+      if (!(orderDate instanceof Date)) {
+        throw 'Invalid date';
+      }
+
+      // Calculate the date of the previous Thursday
+      let lastThursday = new Date(orderDate);
+      lastThursday.setDate(lastThursday.getDate() - lastThursday.getDay() + 4);
+
+      // Adjust for delivery rules:
+      // - If order date is before Monday noon, deliver this week's Thursday.
+      // - Otherwise, deliver next Thursday.
+      if (orderDate.getDay() < 1 || (orderDate.getDay() === 1 && orderDate.getHours() < 24)) {
+        lastThursday.setDate(lastThursday.getDate());
+      } else {
+        lastThursday.setDate(lastThursday.getDate() + 7);
+      }
+
+      return lastThursday;
+    }
+
+    // Get the Thursday for delivery based on the current order date
+    const deliveryDate = getThursday(today);
+
+    // Helper function to format a date component to two digits
+    function date2digits(date) {
+      return (date < 10 ? '0' : '') + date; // Add leading zero if needed
+    }
+
+    // Format and return the delivery date as DD/MM/YYYY
+    return (
+      date2digits(deliveryDate.getDate()) +
+      '/' +
+      date2digits(deliveryDate.getMonth() + 1) +
+      '/' +
+      deliveryDate.getFullYear()
+    );
   },
 
   handleDeliveryDate: function () {
@@ -831,15 +882,10 @@ class handleCheckoutButton extends HTMLElement {
       const date = document.getElementById('delivery');
 
       // Check for the date picker
-      if (date) {
-        if (date.value == '') {
-          const message = document.getElementById('date_picker__message');
-          message.innerHTML = 'Please enter date to proceed';
-          message.classList.remove('hidden');
-        } else {
-          let products = subscription.generateProductArray();
-          const addNewProducts = await updateCart(products);
-        }
+      if (date && date.value == '') {
+        const message = document.getElementById('date_picker__message');
+        message.innerHTML = 'Please enter date to proceed';
+        message.classList.remove('hidden');
       } else {
         let products = subscription.generateProductArray();
         const addNewProducts = await updateCart(products);
@@ -943,9 +989,6 @@ customElements.define('product--info-modal-opener', ProductInfoModalOpener);
 
 // Cookie helper functions
 function setCookie(cname, cvalue, exdays) {
-  console.log('Setting Cookie: ' + cname);
-  console.log('Setting Cookie: ' + cvalue);
-
   const d = new Date();
   d.setTime(d.getTime() + 1 * 3600 * 1000);
   let expires = 'expires=' + d.toUTCString();
