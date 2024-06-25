@@ -155,14 +155,6 @@
         "settings": {
         }
       },
-      "10830403595879607806": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
-        "settings": {
-          "url_key": "REVIEWS.io",
-          "lang": "auto"
-        }
-      },
       "2498716461440425698": {
         "type": "shopify:\/\/apps\/influence-io-loyalty-rewards\/blocks\/popup-widget\/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
         "disabled": false,
@@ -213,6 +205,15 @@
           "show_popup": true,
           "anchor_to_reviews_widget": false,
           "show_empty_stars": false
+        }
+      },
+      "10830403595879607806": {
+        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "url_key": "www.potsfortots.co.uk",
+          "lang": "auto",
+          "enable_syndication": false
         }
       }
     },
