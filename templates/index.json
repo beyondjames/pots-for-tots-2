@@ -708,6 +708,7 @@
       "block_order": [
         "reviews_io_reviewsio_card_carousel_pACh9W"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -813,7 +814,6 @@
         "testimonial_CGNprB",
         "testimonial_EGzHHC"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4",
         "full_width": false,
