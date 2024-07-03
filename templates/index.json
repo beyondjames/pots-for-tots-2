@@ -9,6 +9,50 @@
 */
 {
   "sections": {
+    "image_banner_FUfBNH": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_YnHzXV": {
+          "type": "heading",
+          "settings": {
+            "heading": "New meals and bundles!",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true
+          }
+        },
+        "buttons_bmUpB4": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Build A Box",
+            "button_link_1": "shopify:\/\/collections\/build-your-box",
+            "button_style_secondary_1": false,
+            "button_label_2": "Bundles",
+            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_YnHzXV",
+        "buttons_bmUpB4"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Website_homepage_hero_landscape.png",
+        "image_3": "shopify:\/\/shop_images\/Hero_group_shot.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "badge_embed": "<script src=\"https:\/\/widget.reviews.io\/badge-modern\/dist.js\"><\/script>\n<div id=\"badge-200\"><\/div>\n<script>\n    reviewsBadgeModern('badge-200', {\n    store: 'www.potsfortots.co.uk',\n    primaryClr: '#4f7765',\n    starsClr: '#4f7765'\n    });\n<\/script>",
+        "badge_padding": 2,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": false
+      }
+    },
     "custom_image_banner_text_ehtMaq": {
       "type": "custom-image-banner-text",
       "blocks": {
@@ -27,6 +71,7 @@
       "block_order": [
         "buttons_jft8ea"
       ],
+      "disabled": true,
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/Website_homepage_hero_landscape.png",
         "image_height": "large",
@@ -880,7 +925,8 @@
           "type": "heading",
           "settings": {
             "heading": "New meals on the menu!",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "show_heading_shadow": false
           }
         },
         "text_rHbxL4": {
@@ -916,6 +962,8 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-1",
+        "badge_embed": "",
+        "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -952,6 +1000,7 @@
     }
   },
   "order": [
+    "image_banner_FUfBNH",
     "custom_image_banner_text_ehtMaq",
     "custom_image_banner_text_QpjWfY",
     "custom_image_banner_no_text_8JgQy4",
