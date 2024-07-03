@@ -84,3 +84,15 @@
 .rich-text__blocks.right .rich-text__buttons {
   justify-content: flex-end;
 }
+
+.rich-text__image-wrapper,
+.rich-text__badge-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.rich-text__image-wrapper .rich-text__image-image,
+.rich-text__image-wrapper .placeholder-svg {
+  width: 100%;
+  height: auto;
+}
