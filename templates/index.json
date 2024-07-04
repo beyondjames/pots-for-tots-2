@@ -46,7 +46,7 @@
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-4",
         "badge_embed": "<script src=\"https:\/\/widget.reviews.io\/badge-modern\/dist.js\"><\/script>\n<div id=\"badge-200\"><\/div>\n<script>\n    reviewsBadgeModern('badge-200', {\n    store: 'www.potsfortots.co.uk',\n    primaryClr: '#4f7765',\n    starsClr: '#4f7765'\n    });\n<\/script>",
-        "badge_padding": 3,
+        "badge_padding": 2,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
