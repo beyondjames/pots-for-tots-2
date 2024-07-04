@@ -60,7 +60,7 @@
           "type": "badge",
           "settings": {
             "badge_embed": "<script src=\"https:\/\/widget.reviews.io\/badge-ribbon\/dist.js\"><\/script>\n<div id=\"badge-ribbon\"><\/div>\n<script>\n    reviewsBadgeRibbon(\"badge-ribbon\", {\n        store: \"www.potsfortots.co.uk\",\n        size: \"medium\",\n        \n        mono: true,\n    });\n<\/script>",
-            "badge_width": 380
+            "badge_width": 240
           }
         }
       },
