@@ -71,9 +71,9 @@
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 20
+        "full_width": false,
+        "padding_top": 12,
+        "padding_bottom": 12
       }
     },
     "custom_image_banner_text_ehtMaq": {
