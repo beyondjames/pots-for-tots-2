@@ -864,8 +864,8 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 20,
+        "padding_bottom": 20
       }
     },
     "custom_testimonials_pXPcd6": {
@@ -922,6 +922,7 @@
         "testimonial_CGNprB",
         "testimonial_EGzHHC"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4",
         "full_width": false,
