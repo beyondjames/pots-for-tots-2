@@ -95,9 +95,10 @@
         "row_7K3xaE": {
           "type": "row",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Hero_box_shot_square.png",
             "caption": "",
             "heading": "The best for your tot...",
-            "text": "<p>At Pots for Tots, we take the health of our future generations very seriously, and only partner with other children’s food brands who share our values...<\/p><p>That's why this Summer, we’re delighted to team up with our friends at <strong>Pip Organic<\/strong>- between one of our meals and one of their juice boxes, your little one could hit up to 5 of their 5-a-day in just one mealtime!<\/p>",
+            "text": "<p>At Pots for Tots, we take the health of our future generations very seriously, and only partner with other children’s food brands who share our values...<\/p><p>That's why this Summer, we’re delighted to team up with our friends at Pip Organic - between one of our meals and one of their juice boxes, your little one could hit up to 5 of their 5-a-day in just one mealtime! 🌱<\/p>",
             "button_label": "DISCOVER PIP ORGANIC",
             "button_link": ""
           }
@@ -108,7 +109,7 @@
             "image": "shopify:\/\/shop_images\/Pip.png",
             "caption": "",
             "heading": "Fancy a FREE juice?",
-            "text": "<p>Place a Pots for Tots order for delivery this July or August, and we'll pop a FREE Pip Organic Cloudy Apple Juice in your next box!**<\/p>",
+            "text": "<p>Place a Pots for Tots order (subscription or one-off) for delivery this July or August, and we'll pop a FREE Pip Organic Cloudy Apple Juice in your next box!** 🍎🍏<\/p>",
             "button_label": "ORDER YOUR BOX",
             "button_link": ""
           }
