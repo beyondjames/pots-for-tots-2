@@ -12,10 +12,10 @@
     "custom_image_banner_text_KQUQkp": {
       "type": "custom-image-banner-text",
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/NEWSLETTER_desktop_8.png",
+        "image_desktop": "shopify:\/\/shop_images\/Untitled_design_29300c96-14a2-4da5-bd09-f91eba4d2dbc.png",
         "image_height": "small",
         "image_mobile": "shopify:\/\/shop_images\/IMG_6802.jpg",
-        "title": "WIN A FREEZER STASH!",
+        "title": "WIN!",
         "title_size": "large",
         "link_url": "",
         "section_color_scheme": ""
@@ -106,7 +106,7 @@
         "row_mtW9qc": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Pip.png",
+            "image": "shopify:\/\/shop_images\/Pip-2.png",
             "caption": "",
             "heading": "Fancy a FREE juice?",
             "text": "<p>Place a Pots for Tots order (subscription or one-off) for delivery this July or August, and we'll pop a FREE Pip Organic Cloudy Apple Juice in your next box!** 🍎🍏<\/p>",
@@ -117,6 +117,7 @@
         "row_TfqyaU": {
           "type": "row",
           "settings": {
+            "image": "shopify:\/\/shop_images\/snacks_mobile_header.png",
             "caption": "",
             "heading": "High 5-a-day!",
             "text": "<p>\"It's well recognised that children in the UK are falling short of their 5-a-day fruit and vegetable intake recommendations, so team a Pip Organic fruit juice with one of our veggie-packed pots for a balanced meal, or alongside our trusted snack options for a quick playtime bite\" <strong>- Lucy Upton, our Children's Dietitian<\/strong><\/p>",
@@ -139,8 +140,8 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "image_layout": "alternate-left",
-        "section_color_scheme": "",
-        "row_color_scheme": "",
+        "section_color_scheme": "scheme-3",
+        "row_color_scheme": "scheme-1",
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
