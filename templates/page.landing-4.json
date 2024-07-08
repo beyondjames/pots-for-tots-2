@@ -42,7 +42,7 @@
         "text_DXDngb": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up for your chance to WIN an £150 bundle of nutritionally balanced Pots for Tots meals and snack-tastic bites, plus a range of organic fruit juices, snacks and yummy ice lollies from Pip Organic!<\/p>"
+            "text": "<p>Sign up for your chance to WIN an £150 bundle of nutritionally balanced Pots for Tots meals and snack-tastic bites, plus a range of organic fruit juices, snacks and yummy ice lollies from Pip Organic!*<\/p>"
           }
         },
         "button_GebReX": {
@@ -107,7 +107,7 @@
           "settings": {
             "caption": "",
             "heading": "Fancy a FREE juice?",
-            "text": "<p>Place a Pots for Tots order for delivery this July or August, and we'll pop a FREE Pip Organic Cloudy Apple Juice in your next box!*<\/p>",
+            "text": "<p>Place a Pots for Tots order for delivery this July or August, and we'll pop a FREE Pip Organic Cloudy Apple Juice in your next box!**<\/p>",
             "button_label": "ORDER YOUR BOX",
             "button_link": ""
           }
