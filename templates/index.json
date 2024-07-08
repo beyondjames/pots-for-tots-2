@@ -777,6 +777,7 @@
       "block_order": [
         "reviews_io_reviewsio_card_carousel_pACh9W"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
