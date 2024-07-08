@@ -42,7 +42,7 @@
         "text_DXDngb": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up for your chance to WIN an £150 bundle of nutritionally balanced Pots for Tots meals and snack-tastic bites, plus a range of organic fruit juices, snacks and yummy ice lollies from Pip Organic!*<\/p>"
+            "text": "<p>Sign up for your chance to WIN an £150 bundle of nutritionally balanced Pots for Tots meals and snack-tastic bites, plus a range of organic fruit juices, snacks and yummy ice lollies from Pip Organic. This competition ends on Monday 5th August - good luck!*<\/p>"
           }
         },
         "button_GebReX": {
@@ -100,7 +100,7 @@
             "heading": "The best for your tot...",
             "text": "<p>At Pots for Tots, we take the health of our future generations very seriously, and only partner with other children’s food brands who share our values...<\/p><p>That's why this Summer, we’re delighted to team up with our friends at Pip Organic - between one of our meals and one of their juice boxes, your little one could hit up to 5 of their 5-a-day in just one mealtime! 🌱<\/p>",
             "button_label": "DISCOVER PIP ORGANIC",
-            "button_link": ""
+            "button_link": "https:\/\/piporganic.com"
           }
         },
         "row_mtW9qc": {
@@ -111,7 +111,7 @@
             "heading": "Fancy a FREE juice?",
             "text": "<p>Place a Pots for Tots order (subscription or one-off) for delivery this July or August, and we'll pop a FREE Pip Organic Cloudy Apple Juice in your next box!** 🍎🍏<\/p>",
             "button_label": "ORDER YOUR BOX",
-            "button_link": ""
+            "button_link": "https:\/\/potsfortots.co.uk"
           }
         },
         "row_TfqyaU": {
@@ -121,8 +121,8 @@
             "caption": "",
             "heading": "High 5-a-day!",
             "text": "<p>\"It's well recognised that children in the UK are falling short of their 5-a-day fruit and vegetable intake recommendations, so team a Pip Organic fruit juice with one of our veggie-packed pots for a balanced meal, or alongside our trusted snack options for a quick playtime bite\" <strong>- Lucy Upton, our Children's Dietitian<\/strong><\/p>",
-            "button_label": "DISCOVER OUR MENU",
-            "button_link": ""
+            "button_label": "tuck in!",
+            "button_link": "https:\/\/potsfortots.co.uk"
           }
         }
       },
@@ -145,50 +145,6 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "rich_text_kGtmxz": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_jrccAY": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_L7xEK6": {
-          "type": "text",
-          "settings": {
-            "text": "<h6>T&Cs - enter your email address for the chance to win. One winner will be notified no later than Monday 20th May. No cash alternative available. <\/h6>"
-          }
-        },
-        "button_VVQQp3": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_jrccAY",
-        "text_L7xEK6",
-        "button_VVQQp3"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
       }
     },
     "3c6d46a2-4522-49d1-b370-0fa7b02f0979": {
@@ -300,6 +256,50 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "rich_text_kGtmxz": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_jrccAY": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_L7xEK6": {
+          "type": "text",
+          "settings": {
+            "text": "<h5><strong>*Summer stash competition terms and conditions: <\/strong>Sign up with your email address to be automatically entered into our prize draw. This competition ends on Monday 5th August 2024. Once winner will be chosen at random, and contacted by the Pots for Tots team via email. One winner will receive £75 worth of Pots for Tots meals and snacks of their choice, plus a bundle of Pip Organic drinks, snacks and ice lollies. By checking 'Pots for Tots', you will be added to our email mailing list. By checking 'Pip Organic', you will be added to the Pip Organic email mailing list. This competition is open to UK residents over the age of 18. Good luck!<\/h5><h5><\/h5><h5><\/h5><h5><strong>**Free Cloudy Apple Juice terms and conditions: <\/strong>We will include 1x Pip Organic Cloudy Apple Juice carton in Pots for Tots orders delivered from Thursday 18th July 2024. This offer will run until the end of August, while stocks last. Please stay tuned to our social media and newsletters to be informed if this offer is still running. There may be some instances in which we cannot include a carton in your delivery - this may be due to the lack of space in the box when packing. If you receive your order without a juice, please accept our apologies. We reserve the right to change or end this offer at any time.<\/h5>"
+          }
+        },
+        "button_VVQQp3": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_jrccAY",
+        "text_L7xEK6",
+        "button_VVQQp3"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -308,9 +308,9 @@
     "rich_text_7ceGE9",
     "1715696691a1ffa870",
     "multirow_Gk44iN",
-    "rich_text_kGtmxz",
     "3c6d46a2-4522-49d1-b370-0fa7b02f0979",
     "rich_text_7ebLzY",
-    "custom_testimonials_xbKydM"
+    "custom_testimonials_xbKydM",
+    "rich_text_kGtmxz"
   ]
 }
