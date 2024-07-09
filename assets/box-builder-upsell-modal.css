@@ -1,0 +1,202 @@
+/*
+|--------------------------------------------------------------------------
+| Upsell Modal
+|--------------------------------------------------------------------------
+| @namespace: upsell-modal
+|
+*/
+
+.upsell-modal {
+  box-sizing: border-box;
+  opacity: 0;
+  position: fixed;
+  visibility: hidden;
+  z-index: -1;
+  margin: 0 auto;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  background: rgba(var(--color-foreground), 0.2);
+  height: 100%;
+}
+
+.upsell-modal[open] {
+  opacity: 1;
+  visibility: visible;
+  z-index: 101;
+}
+
+.upsell-modal__content {
+  border-radius: var(--popup-corner-radius);
+  background-color: rgb(var(--color-background));
+  overflow: auto;
+  height: auto;
+  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 5rem;
+  width: 92%;
+  max-width: 1200px;
+  position: absolute;
+  top: 0;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
+  border-style: solid;
+  border-width: var(--popup-border-width);
+  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--popup-shadow-opacity));
+}
+
+.upsell-modal__content.focused {
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3),
+    var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+      rgba(var(--color-shadow), var(--popup-shadow-opacity));
+}
+
+.upsell-modal__content:focus-visible {
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3),
+    var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+      rgba(var(--color-shadow), var(--popup-shadow-opacity));
+}
+
+@media screen and (min-width: 750px) {
+  .upsell-modal__content {
+    margin-top: 10rem;
+    width: 70%;
+    padding: 0 3rem 3rem;
+  }
+
+  .product-media-modal__dialog .global-media-settings--no-shadow {
+    overflow: visible !important;
+  }
+}
+
+.upsell-modal__content img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 749px) {
+  .upsell-modal__content table {
+    display: block;
+    max-width: fit-content;
+    overflow-x: auto;
+    white-space: nowrap;
+    margin: 0;
+  }
+
+  .product-media-modal__dialog .global-media-settings,
+  .product-media-modal__dialog .global-media-settings video,
+  .product-media-modal__dialog .global-media-settings model-viewer,
+  .product-media-modal__dialog .global-media-settings iframe,
+  .product-media-modal__dialog .global-media-settings img {
+    border: none;
+    border-radius: 0;
+  }
+}
+
+.upsell-modal__opener {
+  display: inline-block;
+}
+
+.upsell-modal__button {
+  font-size: 1.6rem;
+  padding-right: 1.3rem;
+  padding-left: 0;
+  height: 4.4rem;
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.1rem;
+  transition: text-decoration-thickness var(--duration-short) ease;
+}
+
+.upsell-modal__button:hover {
+  text-decoration-thickness: 0.2rem;
+}
+
+.upsell-modal__content-info {
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.upsell-modal__content-info > * {
+  height: auto;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 749px) {
+  .upsell-modal__content-info > * {
+    max-height: 100%;
+  }
+}
+
+.upsell-modal__content-grid {
+  padding-bottom: 2rem;
+}
+
+.upsell-modal__header {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 0 1.5rem;
+  border-bottom: 1px solid rgba(var(--color-foreground), var(--popup-border-opacity));
+}
+
+.upsell-modal__body {
+  flex: 1;
+  padding: 1rem 1.5rem 2rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+}
+
+@media screen and (min-width: 750px) {
+  .upsell-modal__body {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.upsell-modal__footer {
+  padding: 2rem 1.5rem 1.5rem;
+  box-shadow: 0 -10px 20px #0003;
+}
+
+@media screen and (min-width: 750px) {
+  .upsell-modal__footer {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
+
+.upsell-modal__close {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  color: rgb(var(--color-foreground));
+  cursor: pointer;
+}
+
+.upsell-modal__toggle {
+  background-color: rgb(var(--color-background));
+  border: 0.1rem solid rgba(var(--color-foreground), 0.1);
+  border-radius: 50%;
+  color: rgba(var(--color-foreground), 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: sticky;
+  padding: 1.2rem;
+  z-index: 2;
+  top: 1.5rem;
+  width: 4rem;
+  margin: 0 0 0 auto;
+}

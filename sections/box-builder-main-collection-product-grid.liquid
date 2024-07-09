@@ -1,11 +1,14 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'box-builder-upsell-modal.css' | asset_url | stylesheet_tag }}
 
 {%- if section.settings.enable_quick_add -%}
   {{ 'box-builder-quick-add.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
+
+<script src="{{ 'upsell-modal.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}
   .section-collection {
@@ -235,92 +238,6 @@
 
 <modal-dialog class="product-popup-modal box-drawer" id="reviewBox">
   <div class="box-drawer__inner">
-    {% comment %} DESKTOP UPSELLS {% endcomment %}
-    <div class="box-drawer__outer">
-      <upsell-card>
-        <h3 class="box-drawer__outer-heading">
-          You may also like
-        </h3>
-
-        {%- for product in section.settings.upsell_collection.products -%}
-          {%- for variant in product.variants -%}
-            <div id="upsells" class="box-drawer__products__upsell" data-id="{{ variant.id }}">
-              <table class="box-drawer__table">
-                <tbody>
-                  <tr class="box-drawer__table-row">
-                    <td class="box-drawer__table-data box-drawer__product-image summary-image">
-                      <img
-                        src="{{ product.featured_image | image_url: width: 200 }}"
-                        alt="{{ product.featured_image.alt }}"
-                        width="200"
-                        height="auto"
-                      >
-                    </td>
-
-                    <td class="box-drawer__table-data box-drawer__product-title summary-title">
-                      <div class="box-drawer__product-title-text summary-product">
-                        {{- product.title -}}
-                      </div>
-
-                      <div class="box-drawer__product-variant summary-variant">
-                        {{- variant.selling_plan_allocations[0].price | money -}}
-                      </div>
-
-                      <div class="card__variants-variant" id="{{ variant.id }}" data-variant>
-                        <ul class="upsell__card__variant-selling-plans hidden">
-                          {%- for allocation in variant.selling_plan_allocations -%}
-                            {%- for option in allocation.selling_plan.options -%}
-                              {%- assign frequency = option.value | remove: 'Week(s)' | strip -%}
-                              <li
-                                value="{{ frequency }}"
-                                data-selling-plan-id="{{ allocation.selling_plan.id }}"
-                                data-selling-plan-price="{{ allocation.price }}"
-                              >
-                                {{- allocation.selling_plan.name -}}
-                              </li>
-                            {%- endfor -%}
-                          {%- endfor -%}
-                        </ul>
-
-                        <div class="card__variants-quantity">
-                          <div class="cart-item__quantity">
-                            <upsell-product-button id="Upsell-Button-{{ variant.id }}">
-                              <button
-                                class="quick-add__submit card__variants-button{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
-                                name="add"
-                              >
-                                {{- 'products.product.add' | t -}}
-                              </button>
-                            </upsell-product-button>
-
-                            <input
-                              class="quantity__input hidden"
-                              data-upsell-product-quantity
-                              type="number"
-                              name="updates[]"
-                              value="0"
-                              min="0"
-                              aria-label="{{ 'products.product.quantity.input_label' | t: product: product.title | escape }}"
-                              id="Upsell-Quantity-{{ variant.id }}"
-                              data-index="{{ variant.id }}"
-                              data-price="{{ variant.price }}"
-                              data-title="{{ product.title }}"
-                              data-variant-title="{{ variant.title }}"
-                              data-image-url="{{ product.featured_media | image_url: width: 150 }}"
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          {%- endfor -%}
-        {%- endfor -%}
-      </upsell-card>
-    </div>
-
     <div class="box-drawer__content" role="dialog" aria-label="Box drawer" aria-modal="true" tabindex="-1">
       <div class="box-drawer__content-info">
         <header class="product-popup-modal__header">
@@ -346,90 +263,6 @@
         </div>
 
         <footer class="product-popup-modal__footer">
-          {% comment %} MOBILE UPSELLS {% endcomment %}
-          <div id="mobileUpsells" class="box-drawer-upells-mobile">
-            <upsell-card>
-              <h2 class="box-drawer-upells-mobile__heading">
-                You may also like
-              </h2>
-
-              <div class="box-drawer-upells-mobile__scroll">
-                <div class="box-drawer-upells-mobile__cards">
-                  {%- for product in section.settings.upsell_collection.products -%}
-                    {%- for variant in product.variants -%}
-                      <div class="box-drawer-upells-mobile__card" data-id="{{ variant.id }}">
-                        <div class="box-drawer-upells-mobile__image summary-image">
-                          <img
-                            src="{{ product.featured_image | image_url: width: 180 }}"
-                            alt="{{ product.featured_image.alt }}"
-                            width="180"
-                            height="auto"
-                          >
-                        </div>
-
-                        <div class="box-drawer-upells-mobile__title summary-title">
-                          <div class="box-drawer-upells-mobile__title-text summary-product">
-                            {{- product.title -}}
-                          </div>
-
-                          <div class="box-drawer-upells-mobile__variant summary-variant">
-                            {{- variant.selling_plan_allocations[0].price | money -}}
-                          </div>
-
-                          <div class="card__variants-variant" id="{{ variant.id }}" data-variant>
-                            <ul class="upsell__card__variant-selling-plans hidden">
-                              {%- for allocation in variant.selling_plan_allocations -%}
-                                {%- for option in allocation.selling_plan.options -%}
-                                  {%- assign frequency = option.value | remove: 'Week(s)' | strip -%}
-                                  <li
-                                    value="{{ frequency }}"
-                                    data-selling-plan-id="{{ allocation.selling_plan.id }}"
-                                    data-selling-plan-price="{{ allocation.price }}"
-                                  >
-                                    {{- allocation.selling_plan.name -}}
-                                  </li>
-                                {%- endfor -%}
-                              {%- endfor -%}
-                            </ul>
-
-                            <div class="card__variants-quantity">
-                              <div class="cart-item__quantity">
-                                <upsell-product-button id="Upsell-Button-{{ variant.id }}">
-                                  <button
-                                    class="quick-add__submit card__variants-button{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
-                                    name="add"
-                                  >
-                                    {{- 'products.product.add' | t -}}
-                                  </button>
-                                </upsell-product-button>
-
-                                <input
-                                  class="quantity__input hidden"
-                                  data-upsell-product-quantity
-                                  type="number"
-                                  name="updates[]"
-                                  value="0"
-                                  min="0"
-                                  aria-label="{{ 'products.product.quantity.input_label' | t: product: product.title | escape }}"
-                                  id="Upsell-Quantity-{{ variant.id }}"
-                                  data-index="{{ variant.id }}"
-                                  data-price="{{ variant.price }}"
-                                  data-title="{{ product.title }}"
-                                  data-variant-title="{{ variant.title }}"
-                                  data-image-url="{{ product.featured_media | image_url: width: 150 }}"
-                                >
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    {%- endfor -%}
-                  {%- endfor -%}
-                </div>
-              </div>
-            </upsell-card>
-          </div>
-
           <subscription-type class="order-type__buttons">
             <button class="order-type__button active" id="subscription" type="button">
               <span class="order-type__inline">
@@ -492,12 +325,12 @@
             <div class="box-drawer__total-cost" data-modal-total-price>£0.00</div>
           </div>
 
-          <checkout-button>
+          <modal-opener data-modal="#UpsellModal-{{ section.id }}" {{ section.shopify_attributes }} >
             <p class="box-drawer__minimum hidden" id="productCount">
               You need to have a least 8 items to proceed
             </p>
 
-            <button class="button button--full-width button--primary" id="checkoutButton">
+            <button class="modal-checkout-button button button--full-width button--primary" id="UpsellPopup-{{ section.id }}" type="button" aria-haspopup="dialog">
               Checkout
             </button>
 
@@ -506,12 +339,15 @@
               Due to the nature of our production facility and our supply chain there is a possibility our food may
               contain any of the 14 allergens.
             </p>
-          </checkout-button>
+          </modal-opener>
         </footer>
       </div>
     </div>
   </div>
 </modal-dialog>
+
+{% comment %} Upsell Modal {% endcomment %}
+{% render 'box-builder-upsell-modal' collection: section.settings.upsell_collection %}
 
 {% schema %}
 {

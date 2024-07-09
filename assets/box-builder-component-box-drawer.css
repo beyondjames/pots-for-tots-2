@@ -16,7 +16,7 @@
 }
 
 .box-drawer[open] {
-  z-index: 10000000000;
+  /* z-index: 10000000000; */
 }
 
 .box-drawer .box-drawer__content {
@@ -160,15 +160,6 @@
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* UPSELLS */
 
 .box-drawer__outer-heading {
@@ -241,7 +232,6 @@
     display: none;
   }
 }
-
 
 /* UPSELLS - MOBILE */
 

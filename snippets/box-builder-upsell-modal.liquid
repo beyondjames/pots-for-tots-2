@@ -1,0 +1,44 @@
+{% comment %}
+  Renders a product media modal. Also see 'product-media-gallery'
+
+  Accepts:
+  - collection: {Object} Collection liquid object
+  
+  Usage: {% render 'box-builder-upsell-modal'
+%} {% endcomment %}
+
+<upsell-modal id="UpsellModal-{{ section.id }}" class="upsell-modal">
+  <div role="dialog" aria-label="{{ block.settings.text }}" aria-modal="true" class="upsell-modal__content" tabindex="-1">
+    <button
+      id="ModalClose-{{ section.id }}"
+      type="button"
+      class="upsell-modal__toggle"
+      aria-label="{{ 'accessibility.close' | t }}"
+    >
+      {% render 'icon-close' %}
+    </button>
+
+    <div
+      class="upsell-modal__content-info color-{{ section.settings.color_scheme }} gradient"
+      role="document"
+      aria-label="{{ 'products.modal.label' | t }}"
+      tabindex="0"
+    >
+      <h2 class="upsell-modal__header">You may also like</h2>
+
+      <ul id="upsells-grid" class="grid upsell-modal__content-grid grid--2-col-tablet-down grid--3-col-desktop grid--4-col-desktop">  
+        {% for product in collection.products %}
+          <li class="grid__item">
+            {%  render 'upsell-product' card_product: product, show_quick_add: true %}
+          </li>
+        {% endfor %}
+      </ul>
+
+      <checkout-button>
+        <button class="button button--full-width button--primary" id="checkoutButton">
+          Continue
+        </button>
+      </checkout-button>
+    </div>
+  </div>
+</upsell-modal>
