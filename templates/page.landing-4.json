@@ -42,7 +42,7 @@
         "text_DXDngb": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up for your chance to WIN an £150 bundle of nutritionally balanced Pots for Tots meals and snack-tastic bites, plus a range of organic fruit juices, snacks and yummy ice lollies from Pip Organic. This competition ends on Monday 5th August - good luck!*<\/p>"
+            "text": "<p>Sign up for your chance to WIN an £150 bundle of nutritionally balanced Pots for Tots meals and snack-tastic bites, plus a range of organic fruit juices and snacks from Pip Organic. This competition ends on Monday 5th August - good luck!*<\/p>"
           }
         },
         "button_GebReX": {
@@ -145,6 +145,48 @@
         "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
+      }
+    },
+    "rich_text_36p7NP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_mNKbCp": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get 20% off your first Pip Organic order on their website with code 'pipfortots20'",
+            "heading_size": "h1"
+          }
+        },
+        "text_UMzzDa": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "button_atGUBK": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "https:\/\/piporganic.com",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_mNKbCp",
+        "text_UMzzDa",
+        "button_atGUBK"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "3c6d46a2-4522-49d1-b370-0fa7b02f0979": {
@@ -271,7 +313,7 @@
         "text_L7xEK6": {
           "type": "text",
           "settings": {
-            "text": "<h5><strong>*Summer stash competition terms and conditions: <\/strong>Sign up with your email address to be automatically entered into our prize draw. This competition ends on Monday 5th August 2024. Once winner will be chosen at random, and contacted by the Pots for Tots team via email. One winner will receive £75 worth of Pots for Tots meals and snacks of their choice, plus a £75 bundle of Pip Organic drinks, snacks and ice lollies. By checking 'Pots for Tots', you will be added to our email mailing list. By checking 'Pip Organic', you will be added to the Pip Organic email mailing list. This competition is open to UK residents over the age of 18. Good luck!<\/h5><h5><\/h5><h5><\/h5><h5><strong>**Free Cloudy Apple Juice terms and conditions: <\/strong>We will include 1x Pip Organic Cloudy Apple Juice carton in Pots for Tots orders delivered from Thursday 18th July 2024. This offer will run until the end of August, while stocks last. Please stay tuned to our social media and newsletters to be informed if this offer is still running. There may be some instances in which we cannot include a carton in your delivery - this may be due to the lack of space in the box when packing. If you receive your order without a juice, please accept our apologies. We reserve the right to change or end this offer at any time.<\/h5>"
+            "text": "<h5><strong>*Summer stash competition terms and conditions: <\/strong>Sign up with your email address to be automatically entered into our prize draw. This competition ends on Monday 5th August 2024. Once winner will be chosen at random, and contacted by the Pots for Tots team via email. One winner will receive £75 worth of Pots for Tots meals and snacks of their choice, plus a £75 bundle of Pip Organic drinks, and snacks. By checking 'Pots for Tots', you will be added to our email mailing list. By checking 'Pip Organic', you will be added to the Pip Organic email mailing list. This competition is open to UK residents over the age of 18. Good luck!<\/h5><h5><\/h5><h5><\/h5><h5><strong>**Free Cloudy Apple Juice terms and conditions: <\/strong>We will include 1x Pip Organic Cloudy Apple Juice carton in Pots for Tots orders delivered from Thursday 18th July 2024. This offer will run until the end of August, or while stocks last. Please stay tuned to our social media and newsletters to be informed if this offer is still running. There may be some instances in which we cannot include a carton in your delivery - this may be due to the lack of space in the box when packing. If you receive your order without a juice, please accept our apologies. We reserve the right to change or end this offer at any time.<\/h5>"
           }
         },
         "button_VVQQp3": {
@@ -308,6 +350,7 @@
     "rich_text_7ceGE9",
     "1715696691a1ffa870",
     "multirow_Gk44iN",
+    "rich_text_36p7NP",
     "3c6d46a2-4522-49d1-b370-0fa7b02f0979",
     "rich_text_7ebLzY",
     "custom_testimonials_xbKydM",
