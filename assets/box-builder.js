@@ -23,7 +23,7 @@ let subscription = {
     productsGrid: '#product-grid', // Grid containing product cards
     variants: '#card__variants', // Elements for product variant selection
     minimumProducts: '#productCount', // Element displaying minimum product count warning
-    checkoutButton: '.modal-checkout-button', // Checkout button
+    checkoutButton: '#checkoutButton', // Checkout button
     cardModal: '#cardModal', // Modal for displaying product details
     frequencySection: '.frequency__selector', // Section for selecting subscription frequency
     progressBar: '#progress-bar-indicator', // Progress bar element
@@ -44,7 +44,13 @@ let subscription = {
     const variants = productWrapper.querySelectorAll(this.selector.variants);
 
     const upsellWrapper = document.querySelector(this.selector.upsellsGrid);
-    const upsellVariants = upsellWrapper.querySelectorAll(this.selector.variants);
+    let upsellVariants = null;
+    if (upsellWrapper != null) {
+      console.log('Setting upsell Variants');
+      upsellVariants = upsellWrapper.querySelectorAll(this.selector.variants);
+    }
+
+    console.log('Upsell Variants', upsellVariants);
 
     let productList = [];
     let upsellList = [];
@@ -125,10 +131,12 @@ let subscription = {
       this.updateProgressBar();
     }
 
+    console.log('Upsell Wrapper', upsellWrapper);
+
     // Check for saved upsell list in session storage
     if (getCookie('potsUpsells') == 'true' && sessionStorage.getItem('potsUpsellsList') !== null) {
       this.handleUIElements();
-    } else {
+    } else if (upsellWrapper != null) {
       // Build product list from initial product variants
       upsellVariants.forEach(function (item) {
         let quantity = item.querySelectorAll('[data-product-quantity]');
@@ -183,20 +191,22 @@ let subscription = {
     let upsellList = JSON.parse(sessionStorage.getItem('potsUpsellList'));
 
     // Update UI elements based on saved product list
-    upsellList.forEach((item) => {
-      // Code to update UI elements for each saved product
-      const btnId = 'Button-' + item.id;
-      const qtyId = 'Quantity-' + item.id;
-      const qtyBtnWrap = document.getElementById(btnId);
-      const qtySelector = document.getElementById(qtyId);
+    if (upsellList != null) {
+      upsellList.forEach((item) => {
+        // Code to update UI elements for each saved product
+        const btnId = 'Button-' + item.id;
+        const qtyId = 'Quantity-' + item.id;
+        const qtyBtnWrap = document.getElementById(btnId);
+        const qtySelector = document.getElementById(qtyId);
 
-      if (qtySelector && item.quantity > 0) {
-        const qtyBtn = qtyBtnWrap.querySelector('button');
-        qtyBtn.classList.add('hidden');
-        qtySelector.parentElement.parentElement.classList.remove('hidden');
-        qtySelector.value = item.quantity;
-      }
-    });
+        if (qtySelector && item.quantity > 0) {
+          const qtyBtn = qtyBtnWrap.querySelector('button');
+          qtyBtn.classList.add('hidden');
+          qtySelector.parentElement.parentElement.classList.remove('hidden');
+          qtySelector.value = item.quantity;
+        }
+      });
+    }
   },
 
   handleProductQuantityChange: function () {
@@ -620,7 +630,10 @@ let subscription = {
 
     // Retrieve the upsell list from session storage
     let upsellList = sessionStorage.getItem('potsUpsellList');
-    let upsellJson = JSON.parse(upsellList);
+    let upsellJson = null;
+    if (upsellList != null) {
+      upsellJson = JSON.parse(upsellList);
+    }
 
     // Get the subscription frequency and type from session storage
     let freq = sessionStorage.getItem('potsFreq');
@@ -658,20 +671,22 @@ let subscription = {
       }
     });
 
-    console.log('Upsell JSON', upsellJson);
+    //console.log('Upsell JSON', upsellJson);
 
     // Process each upsell in the list
-    upsellJson.forEach(function (product) {
-      // Add the product without a selling plan
-      if (product.quantity > 0) {
-        items.push({
-          id: product.id,
-          quantity: parseInt(product.quantity),
-        });
-      }
-    });
+    if (upsellList != null) {
+      upsellJson.forEach(function (product) {
+        // Add the product without a selling plan
+        if (product.quantity > 0) {
+          items.push({
+            id: product.id,
+            quantity: parseInt(product.quantity),
+          });
+        }
+      });
+    }
 
-    console.log('Products inc upsells', items);
+    //console.log('Products inc upsells', items);
 
     // Handle delivery date logic
     const DeliveryDate = this.handleDeliveryDate();

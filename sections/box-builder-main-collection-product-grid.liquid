@@ -325,21 +325,38 @@
             <div class="box-drawer__total-cost" data-modal-total-price>£0.00</div>
           </div>
 
-          <modal-opener data-modal="#UpsellModal-{{ section.id }}" {{ section.shopify_attributes }} >
-            <p class="box-drawer__minimum hidden" id="productCount">
-              You need to have a least 8 items to proceed
-            </p>
+          {% if section.settings.show_upsells %}
+            <modal-opener data-modal="#UpsellModal-{{ section.id }}" {{ section.shopify_attributes }} >
+              <p class="box-drawer__minimum hidden" id="productCount">
+                You need to have a least 8 items to proceed
+              </p>
 
-            <button class="modal-checkout-button button button--full-width button--primary" id="UpsellPopup-{{ section.id }}" type="button" aria-haspopup="dialog">
-              Checkout
-            </button>
+              <button class="modal-checkout-button button button--full-width button--primary" id="UpsellPopup-{{ section.id }}" type="button" aria-haspopup="dialog">
+                Checkout
+              </button>
 
-            <p class="box-drawer__small-print">
-              <strong>Please don't order our meals if your child has a serious allergy.</strong>
-              Due to the nature of our production facility and our supply chain there is a possibility our food may
-              contain any of the 14 allergens.
-            </p>
-          </modal-opener>
+              <p class="box-drawer__small-print">
+                <strong>Please don't order our meals if your child has a serious allergy.</strong>
+                Due to the nature of our production facility and our supply chain there is a possibility our food may
+                contain any of the 14 allergens.
+              </p>
+            </modal-opener>
+          {% else %}
+            <checkout-button>
+              <p class="box-drawer__minimum hidden" id="productCount">
+                You need to have a least 8 items to proceed
+              </p>
+
+              <button class="button button--full-width button--primary" id="checkoutButton">
+                Checkout
+              </button>
+
+              <p class="box-drawer__small-print">
+                <strong>Please don't order our meals if your child has a serious allergy.</strong>
+                Due to the nature of our production facility and our supply chain there is a possibility our food may contain any of the 14 allergens.
+              </p>
+            </checkout-button>
+          {% endif %}
         </footer>
       </div>
     </div>
@@ -347,7 +364,15 @@
 </modal-dialog>
 
 {% comment %} Upsell Modal {% endcomment %}
-{% render 'box-builder-upsell-modal' collection: section.settings.upsell_collection %}
+{% if section.settings.show_upsells %}
+  {% render 'box-builder-upsell-modal'
+    collection: section.settings.upsell_collection,
+    heading: section.settings.upsell_heading,
+    description: section.settings.upsell_description,
+    button: section.settings.upsell_button,
+    skip_button: section.settings.upsell_skip_button
+  %}
+{% endif %}
 
 {% schema %}
 {
@@ -373,16 +398,49 @@
       "label": "t:sections.main-collection-product-grid.settings.columns_desktop.label"
     },
     {
-      "type": "collection",
-      "id": "upsell_collection",
-      "label": "Upsell collection"
-    },
-    {
       "type": "color_scheme",
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Product Upsells"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_upsells",
+      "label": "Show upsells modal",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "upsell_heading",
+      "label": "Upsell Heading",
+      "default": "You may also like"
+    },
+    {
+      "type": "richtext",
+      "id": "upsell_description",
+      "label": "Upsell description"
+    },
+    {
+      "type": "collection",
+      "id": "upsell_collection",
+      "label": "Upsells collection"
+    },
+    {
+      "type": "text",
+      "id": "upsell_button",
+      "label": "Upsell Button Label",
+      "default": "Continue"
+    },
+    {
+      "type": "text",
+      "id": "upsell_skip_button",
+      "label": "Upsell Button Label",
+      "default": "Skip and Continue"
     },
     {
       "type": "header",

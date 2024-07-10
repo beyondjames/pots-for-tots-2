@@ -143,8 +143,10 @@
   align-items: center;
   justify-content: space-between;
   display: flex;
-  padding: 0 0 1.5rem;
-  border-bottom: 1px solid rgba(var(--color-foreground), var(--popup-border-opacity));
+}
+
+.upsell-modal__description {
+  padding-bottom: 1rem;
 }
 
 .upsell-modal__body {

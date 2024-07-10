@@ -3,6 +3,10 @@
 
   Accepts:
   - collection: {Object} Collection liquid object
+  - heading: {String} The heading of the modal
+  - description: {String} The description of the modal
+  - button: {String} The button text of the modal
+  - skip_button: {String} The skip button text of the modal
   
   Usage: {% render 'box-builder-upsell-modal'
 %} {% endcomment %}
@@ -24,19 +28,29 @@
       aria-label="{{ 'products.modal.label' | t }}"
       tabindex="0"
     >
-      <h2 class="upsell-modal__header">You may also like</h2>
+      {% if heading %}
+        <h2 class="upsell-modal__header">{{ heading }}</h2>
+      {% endif %}
+
+      {% if description %}
+        <p class="upsell-modal__description">{{ description }}</p>
+      {% endif %}
 
       <ul id="upsells-grid" class="grid upsell-modal__content-grid grid--2-col-tablet-down grid--3-col-desktop grid--4-col-desktop">  
         {% for product in collection.products %}
           <li class="grid__item">
-            {%  render 'upsell-product' card_product: product, show_quick_add: true %}
+            {%  render 'upsell-product'
+              card_product: product, show_quick_add: true %}
           </li>
         {% endfor %}
       </ul>
 
       <checkout-button>
         <button class="button button--full-width button--primary" id="checkoutButton">
-          Continue
+          {{ button }}
+        </button>
+        <button class="button button--full-width button--tertiary" id="checkoutButton">
+          {{ skip_button}}
         </button>
       </checkout-button>
     </div>
