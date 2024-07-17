@@ -23,7 +23,7 @@
         "heading_bCrjgg": {
           "type": "heading",
           "settings": {
-            "heading": "colouring download",
+            "heading": "FREE fruit & veggies colouring in sheets!",
             "heading_size": "h1",
             "show_heading_shadow": false
           }
@@ -71,13 +71,13 @@
         "text_kbXY6F": {
           "type": "text",
           "settings": {
-            "text": "<p>Download our colouring sheet here.<\/p>"
+            "text": "<p>Let your tots get creative and learn about the benefits of fruits and veggies with our FREE colouring in sheets. Perfect for keeping them entertained while you cook dinner (or sit down with a well deserved cuppa!).<\/p>"
           }
         },
         "button_Cg8XkB": {
           "type": "button",
           "settings": {
-            "button_label": "DOWNLOAD",
+            "button_label": "DOWNLOAD HERE",
             "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0557\/7827\/9590\/files\/Pots_for_Tots_Colouring_Pack.pdf?v=1721215903",
             "button_style_secondary": false,
             "button_label_2": "",
