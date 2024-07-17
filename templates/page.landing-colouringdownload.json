@@ -23,8 +23,9 @@
         "heading_bCrjgg": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% off your first 3 subscription orders",
-            "heading_size": "h1"
+            "heading": "colouring download",
+            "heading_size": "h1",
+            "show_heading_shadow": false
           }
         },
         "text_BGFg3G": {
@@ -48,6 +49,8 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
