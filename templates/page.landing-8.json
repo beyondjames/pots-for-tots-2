@@ -107,17 +107,6 @@
     "custom_multicolumn_DLcnct": {
       "type": "custom-multicolumn",
       "blocks": {
-        "column_TMDEpg": {
-          "type": "column",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Pasta_Primavera_045b511e-bb9c-4369-82f2-c220619d9063.png",
-            "title": "Pasta Primavera",
-            "title_size": "h2",
-            "text": "<p>Pair with a side of fresh tomato slices covered in olive oil to add some extra fats.<\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_pURBhE": {
           "type": "column",
           "settings": {
@@ -407,7 +396,6 @@
         }
       },
       "block_order": [
-        "column_TMDEpg",
         "column_pURBhE",
         "column_48ypXC",
         "column_KTdPac",
