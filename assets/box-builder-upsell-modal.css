@@ -1,12 +1,12 @@
 /*
 |--------------------------------------------------------------------------
-| Product Popup Modal
+| Upsell Modal
 |--------------------------------------------------------------------------
-| @namespace: product-popup-modal
+| @namespace: upsell-modal
 |
 */
 
-.product-popup-modal {
+.upsell-modal {
   box-sizing: border-box;
   opacity: 0;
   position: fixed;
@@ -21,13 +21,13 @@
   height: 100%;
 }
 
-.product-popup-modal[open] {
+.upsell-modal[open] {
   opacity: 1;
   visibility: visible;
   z-index: 101;
 }
 
-.product-popup-modal__content {
+.upsell-modal__content {
   border-radius: var(--popup-corner-radius);
   background-color: rgb(var(--color-background));
   overflow: auto;
@@ -44,23 +44,24 @@
   border-color: rgba(var(--color-foreground), var(--popup-border-opacity));
   border-style: solid;
   border-width: var(--popup-border-width);
-  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+  box-shadow: var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+    rgba(var(--color-shadow), var(--popup-shadow-opacity));
 }
 
-.product-popup-modal__content.focused {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3),
-    var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+.upsell-modal__content.focused {
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3),
+    var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+      rgba(var(--color-shadow), var(--popup-shadow-opacity));
 }
 
-.product-popup-modal__content:focus-visible {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
-    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3),
-    var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius) rgba(var(--color-shadow), var(--popup-shadow-opacity));
+.upsell-modal__content:focus-visible {
+  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3),
+    var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
+      rgba(var(--color-shadow), var(--popup-shadow-opacity));
 }
 
 @media screen and (min-width: 750px) {
-  .product-popup-modal__content {
+  .upsell-modal__content {
     margin-top: 10rem;
     width: 70%;
     padding: 0 3rem 3rem;
@@ -71,14 +72,14 @@
   }
 }
 
-.product-popup-modal__content img {
+.upsell-modal__content img {
   max-width: 100%;
   width: 100%;
   height: auto;
 }
 
 @media screen and (max-width: 749px) {
-  .product-popup-modal__content table {
+  .upsell-modal__content table {
     display: block;
     max-width: fit-content;
     overflow-x: auto;
@@ -96,11 +97,11 @@
   }
 }
 
-.product-popup-modal__opener {
+.upsell-modal__opener {
   display: inline-block;
 }
 
-.product-popup-modal__button {
+.upsell-modal__button {
   font-size: 1.6rem;
   padding-right: 1.3rem;
   padding-left: 0;
@@ -110,18 +111,18 @@
   transition: text-decoration-thickness var(--duration-short) ease;
 }
 
-.product-popup-modal__button:hover {
+.upsell-modal__button:hover {
   text-decoration-thickness: 0.2rem;
 }
 
-.product-popup-modal__content-info {
+.upsell-modal__content-info {
   position: relative;
   flex-direction: column;
   display: flex;
   height: 100%;
 }
 
-.product-popup-modal__content-info > * {
+.upsell-modal__content-info > * {
   height: auto;
   margin: 0 auto;
   max-width: 100%;
@@ -129,27 +130,26 @@
 }
 
 @media screen and (max-width: 749px) {
-  .product-popup-modal__content-info > * {
+  .upsell-modal__content-info > * {
     max-height: 100%;
   }
 }
 
-.product-popup-modal__header {
+.upsell-modal__content-grid {
+  padding-bottom: 2rem;
+}
+
+.upsell-modal__header {
   align-items: center;
   justify-content: space-between;
   display: flex;
-  padding: 1.5rem;
-  border-bottom: 1px solid rgba(var(--color-foreground), var(--popup-border-opacity));
 }
 
-@media screen and (min-width: 750px) {
-  .product-popup-modal__header {
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
+.upsell-modal__description {
+  padding-bottom: 1rem;
 }
 
-.product-popup-modal__body {
+.upsell-modal__body {
   flex: 1;
   padding: 1rem 1.5rem 2rem;
   overflow: hidden;
@@ -158,25 +158,25 @@
 }
 
 @media screen and (min-width: 750px) {
-  .product-popup-modal__body {
+  .upsell-modal__body {
     padding-right: 2rem;
     padding-left: 2rem;
   }
 }
 
-.product-popup-modal__footer {
+.upsell-modal__footer {
   padding: 2rem 1.5rem 1.5rem;
   box-shadow: 0 -10px 20px #0003;
 }
 
 @media screen and (min-width: 750px) {
-  .product-popup-modal__footer {
+  .upsell-modal__footer {
     padding-right: 2rem;
     padding-left: 2rem;
   }
 }
 
-.product-popup-modal__close {
+.upsell-modal__close {
   width: 20px;
   height: 20px;
   padding: 0;
@@ -186,7 +186,7 @@
   cursor: pointer;
 }
 
-.product-popup-modal__toggle {
+.upsell-modal__toggle {
   background-color: rgb(var(--color-background));
   border: 0.1rem solid rgba(var(--color-foreground), 0.1);
   border-radius: 50%;

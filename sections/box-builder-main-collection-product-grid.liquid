@@ -1,5 +1,6 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'box-builder-upsell-modal.css' | asset_url | stylesheet_tag }}
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
@@ -9,6 +10,8 @@
   <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
+
+<script src="{{ 'upsell-modal.js' | asset_url }}" defer="defer"></script>
 
 {%- style -%}
   .section-collection {
@@ -87,6 +90,7 @@
               <h2 class="facet-filters__label caption-large text-body">
                 <label for="SortBy">{{ 'products.facets.sort_by_label' | t }}</label>
               </h2>
+
               <div class="select">
                 {%- assign sort_by = collection.sort_by | default: collection.default_sort_by -%}
                 <select
@@ -106,9 +110,11 @@
                     </option>
                   {%- endfor -%}
                 </select>
+
                 {% render 'icon-caret' %}
               </div>
             </div>
+
             <noscript>
               <button type="submit" class="facets__button-no-js button button--secondary">
                 {{ 'products.facets.sort_button' | t }}
@@ -178,7 +184,11 @@
           <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}">
             <div class="loading-overlay gradient"></div>
 
-            <ul class="grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop grid--4-col-desktop" id="product-grid" data-id="{{ section.id }}">
+            <ul
+              class="grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down grid--{{ section.settings.columns_desktop }}-col-desktop grid--4-col-desktop"
+              id="product-grid"
+              data-id="{{ section.id }}"
+            >
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
@@ -202,10 +212,7 @@
             </ul>
 
             {%- if paginate.pages > 1 -%}
-              {%- render 'pagination',
-                paginate: paginate,
-                anchor: ''
-              -%}
+              {%- render 'pagination', paginate: paginate, anchor: '' -%}
             {%- endif -%}
           </div>
         {%- endif -%}
@@ -217,7 +224,11 @@
 <div class="collection-quick-links">
   <div class="page-width">
     <footer-buttons class="collection-quick-links__buttons">
-      <button class="collection-quick-links__button collection-quick-links__button--reset button button--primary" id="cart-reset" type="button">
+      <button
+        class="collection-quick-links__button collection-quick-links__button--reset button button--primary"
+        id="cart-reset"
+        type="button"
+      >
         Reset
       </button>
 
@@ -237,18 +248,20 @@
             <span data-modal-product-quantity>0</span> meals in your box
           </h2>
 
-          <button class="product-popup-modal__close" id="ModalClose-reviewBoxClose" aria-label="{{ 'accessibility.close' | t }}">
+          <button
+            class="product-popup-modal__close"
+            id="ModalClose-reviewBoxClose"
+            aria-label="{{ 'accessibility.close' | t }}"
+          >
             {%- render 'icon-close' -%}
           </button>
         </header>
 
         <div class="product-popup-modal__body">
-          <p class="box-drawer__minimum hidden" id="productCount">
-            You need to have a least 8 items to proceed
-          </p>
-
-          <div class="box-drawer__products" data-modal-product-list>
-            No meals added
+          <div class="products">
+            <div class="box-drawer__products" data-modal-product-list>
+              No meals added
+            </div>
           </div>
         </div>
 
@@ -271,9 +284,7 @@
                 <div class="order-type__circle"></div>
 
                 <div class="order-type__stack">
-                  <p class="order-type__text">
-                    One time purchase
-                  </p>
+                  <p class="order-type__text">One time purchase</p>
                 </div>
               </span>
             </button>
@@ -286,13 +297,9 @@
                   Save 10% off retail price on all orders
                 </li>-->
 
-                <li class="order-type__item">
-                  Skip, pause or cancel anytime
-                </li>
+                <li class="order-type__item">Skip, pause or cancel anytime</li>
 
-                <li class="order-type__item">
-                  Edit your meal or snack choices as often as you want
-                </li>
+                <li class="order-type__item">Edit your meal or snack choices as often as you want</li>
               </ul>
 
               <div class="order-type__frequency frequency__selector">
@@ -332,35 +339,64 @@
             {% endif %}
           </div>
 
-          <div class="box-drawer__total h2">
+          <div class="box-drawer__total h3">
             <div class="box-drawer__total-label">
               Subtotal
 
-              <span class="box-drawer__total-label-text">
-                (excludes delivery)
-              </span>
+              <span class="box-drawer__total-label-text"> (excludes delivery) </span>
             </div>
 
-            <div class="box-drawer__total-cost" data-modal-total-price>
-              £0.00
-            </div>
+            <div class="box-drawer__total-cost" data-modal-total-price>£0.00</div>
           </div>
 
-          <checkout-button>
-            <button class="button button--full-width button--primary" id="checkoutButton">
-              Checkout
-            </button>
+          {% if section.settings.show_upsells %}
+            <modal-opener data-modal="#UpsellModal-{{ section.id }}" {{ section.shopify_attributes }} >
+              <p class="box-drawer__minimum hidden" id="productCount">
+                You need to have a least 8 items to proceed
+              </p>
 
-            <p class="box-drawer__small-print">
-              <strong>Please don't order our meals if your child has a serious allergy.</strong>
-              Due to the nature of our production facility and our supply chain there is a possibility our food may contain any of the 14 allergens.
-            </p>
-          </checkout-button>
+              <button class="modal-checkout-button button button--full-width button--primary" id="UpsellPopup-{{ section.id }}" type="button" aria-haspopup="dialog">
+                Checkout
+              </button>
+
+              <p class="box-drawer__small-print">
+                <strong>Please don't order our meals if your child has a serious allergy.</strong>
+                Due to the nature of our production facility and our supply chain there is a possibility our food may
+                contain any of the 14 allergens.
+              </p>
+            </modal-opener>
+          {% else %}
+            <checkout-button>
+              <p class="box-drawer__minimum hidden" id="productCount">
+                You need to have a least 8 items to proceed
+              </p>
+
+              <button class="button button--full-width button--primary" id="checkoutButton">
+                Checkout
+              </button>
+
+              <p class="box-drawer__small-print">
+                <strong>Please don't order our meals if your child has a serious allergy.</strong>
+                Due to the nature of our production facility and our supply chain there is a possibility our food may contain any of the 14 allergens.
+              </p>
+            </checkout-button>
+          {% endif %}
         </footer>
       </div>
     </div>
   </div>
 </modal-dialog>
+
+{% comment %} Upsell Modal {% endcomment %}
+{% if section.settings.show_upsells %}
+  {% render 'box-builder-upsell-modal'
+    collection: section.settings.upsell_collection,
+    heading: section.settings.upsell_heading,
+    description: section.settings.upsell_description,
+    button: section.settings.upsell_button,
+    skip_button: section.settings.upsell_skip_button
+  %}
+{% endif %}
 
 <script>
   const date = document.querySelector("#delivery");
@@ -442,6 +478,44 @@
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Product Upsells"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_upsells",
+      "label": "Show upsells modal",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "upsell_heading",
+      "label": "Upsell Heading",
+      "default": "You may also like"
+    },
+    {
+      "type": "richtext",
+      "id": "upsell_description",
+      "label": "Upsell description"
+    },
+    {
+      "type": "collection",
+      "id": "upsell_collection",
+      "label": "Upsells collection"
+    },
+    {
+      "type": "text",
+      "id": "upsell_button",
+      "label": "Upsell Button Label",
+      "default": "Continue"
+    },
+    {
+      "type": "text",
+      "id": "upsell_skip_button",
+      "label": "Upsell Button Label",
+      "default": "Skip and Continue"
     },
     {
       "type": "header",

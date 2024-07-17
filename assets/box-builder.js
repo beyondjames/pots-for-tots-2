@@ -34,6 +34,7 @@ let subscription = {
     reviewBoxModalQuantity: '[data-modal-product-quantity]', // Element displaying product quantity in the review box
     totalPrice: '[data-modal-total-price]', // Element displaying total price in the review box
     spaceRemaining: '[data-remaining]',
+    upsellsGrid: '#upsells-grid', // Grid containing upsell cards
     datePicker: '#delivery',
   },
 
@@ -42,7 +43,18 @@ let subscription = {
     // Get references to product-related elements
     const productWrapper = document.querySelector(this.selector.productsGrid);
     const variants = productWrapper.querySelectorAll(this.selector.variants);
+
+    const upsellWrapper = document.querySelector(this.selector.upsellsGrid);
+    let upsellVariants = null;
+    if (upsellWrapper != null) {
+      console.log('Setting upsell Variants');
+      upsellVariants = upsellWrapper.querySelectorAll(this.selector.variants);
+    }
+
+    console.log('Upsell Variants', upsellVariants);
+
     let productList = [];
+    let upsellList = [];
 
     // Handle subscription frequency settings
     if (getCookie('potsFreq') !== '') {
@@ -68,27 +80,10 @@ let subscription = {
 
     // Check for saved product list in session storage
     if (getCookie('potsProducts') == 'true' && sessionStorage.getItem('potsProductList') !== null) {
-      // Retrieve saved product list from session storage
-      let productList = JSON.parse(sessionStorage.getItem('potsProductList'));
-
       // Set session storage item for subscription type
       sessionStorage.setItem('potsType', this.state.subscriptionType);
 
-      // Update UI elements based on saved product list
-      productList.forEach((item) => {
-        // Code to update UI elements for each saved product
-        const btnId = 'Button-' + item.id;
-        const qtyId = 'Quantity-' + item.id;
-        const qtyBtnWrap = document.getElementById(btnId);
-        const qtySelector = document.getElementById(qtyId);
-
-        if (qtySelector && item.quantity > 0) {
-          const qtyBtn = qtyBtnWrap.querySelector('button');
-          qtyBtn.classList.add('hidden');
-          qtySelector.parentElement.parentElement.classList.remove('hidden');
-          qtySelector.value = item.quantity;
-        }
-      });
+      this.handleUIElements();
     } else {
       // Build product list from initial product variants
       variants.forEach(function (item) {
@@ -146,6 +141,83 @@ let subscription = {
       // Perform calculations and updates
       this.calculateTotals();
       this.updateProgressBar();
+    }
+
+    console.log('Upsell Wrapper', upsellWrapper);
+
+    // Check for saved upsell list in session storage
+    if (getCookie('potsUpsells') == 'true' && sessionStorage.getItem('potsUpsellsList') !== null) {
+      this.handleUIElements();
+    } else if (upsellWrapper != null) {
+      // Build product list from initial product variants
+      upsellVariants.forEach(function (item) {
+        let quantity = item.querySelectorAll('[data-product-quantity]');
+        if (quantity) {
+          quantity.forEach(function (element) {
+            // Add products to array
+            upsellList.push({
+              id: element.dataset.index,
+              quantity: element.value,
+              price: element.dataset.price,
+              title: element.dataset.title,
+              variantTitle: element.dataset.variantTitle,
+              imageURL: element.dataset.imageUrl,
+            });
+          });
+        }
+      });
+
+      // Save product list and settings
+      setCookie('potsUpsells', true, 1);
+      sessionStorage.setItem('potsUpsellList', JSON.stringify(upsellList));
+
+      sessionStorage.setItem('potsType', this.state.subscriptionType);
+      sessionStorage.setItem('potsFreq', this.state.subscriptionFrequency);
+
+      // Perform calculations and updates
+      this.calculateTotals();
+      this.updateProgressBar();
+    }
+  },
+  handleUIElements: function () {
+    // Retrieve saved product list from session storage
+    let productList = JSON.parse(sessionStorage.getItem('potsProductList'));
+
+    // Update UI elements based on saved product list
+    productList.forEach((item) => {
+      // Code to update UI elements for each saved product
+      const btnId = 'Button-' + item.id;
+      const qtyId = 'Quantity-' + item.id;
+      const qtyBtnWrap = document.getElementById(btnId);
+      const qtySelector = document.getElementById(qtyId);
+
+      if (qtySelector && item.quantity > 0) {
+        const qtyBtn = qtyBtnWrap.querySelector('button');
+        qtyBtn.classList.add('hidden');
+        qtySelector.parentElement.parentElement.classList.remove('hidden');
+        qtySelector.value = item.quantity;
+      }
+    });
+
+    // Retrieve saved product list from session storage
+    let upsellList = JSON.parse(sessionStorage.getItem('potsUpsellList'));
+
+    // Update UI elements based on saved product list
+    if (upsellList != null) {
+      upsellList.forEach((item) => {
+        // Code to update UI elements for each saved product
+        const btnId = 'Button-' + item.id;
+        const qtyId = 'Quantity-' + item.id;
+        const qtyBtnWrap = document.getElementById(btnId);
+        const qtySelector = document.getElementById(qtyId);
+
+        if (qtySelector && item.quantity > 0) {
+          const qtyBtn = qtyBtnWrap.querySelector('button');
+          qtyBtn.classList.add('hidden');
+          qtySelector.parentElement.parentElement.classList.remove('hidden');
+          qtySelector.value = item.quantity;
+        }
+      });
     }
   },
 
@@ -212,6 +284,69 @@ let subscription = {
     });
   },
 
+  handleUpsellProductQuantityChange: function () {
+    // Get a reference to the product wrapper element
+    const upsellsWrapper = document.querySelector(this.selector.upsellsGrid);
+
+    // Add an event listener to the wrapper
+    upsellsWrapper.addEventListener('change', (event) => {
+      // Check if the changed element is an input
+      const isInput = event.target.nodeName === 'INPUT';
+
+      if (!isInput) {
+        return;
+      }
+
+      // Get product variant ID and quantity from the input
+      const productVariant = event.target.getAttribute('data-index');
+      const quantity = event.target.value;
+
+      // Handle quantity zero: hide quantity selector, show add button
+      const parent = event.target.parentNode;
+      const qtySelector = parent.parentNode;
+      const wrapper = qtySelector.parentNode;
+      const button = wrapper.querySelector('.card__variants-button');
+
+      if (quantity == 0) {
+        qtySelector.classList.add('hidden');
+        button.classList.remove('hidden');
+      }
+
+      // Retrieve product list from session storage
+      let upsellList = sessionStorage.getItem('potsUpsellList');
+      let upsellJson = JSON.parse(upsellList);
+
+      // Find and update the quantity in the product list
+      let found = false;
+
+      upsellJson.forEach(function (product) {
+        if (product.id == productVariant) {
+          product.quantity = quantity;
+          found = true;
+        }
+      });
+
+      // If product not found, add it to the list
+      if (found == false) {
+        upsellJson.push({
+          id: element.dataset.index,
+          quantity: element.value,
+          price: element.dataset.price,
+          title: element.dataset.title,
+          variantTitle: element.dataset.variantTitle,
+          imageURL: element.dataset.imageUrl,
+        });
+      }
+
+      // Update session storage and trigger related actions
+      setCookie('potsUpsells', true, 1); // Set a cookie indicating product selection
+      sessionStorage.setItem('potsUpsellList', JSON.stringify(upsellJson));
+      //this.calculateTotals(); // Recalculate totals
+      //this.updateReviewBoxModal(); // Update the review box modal
+      //this.updateProgressBar(); // Update any progress bars
+    });
+  },
+
   handleReviewBox: function () {
     // Get a reference to the check cart button
     const checkButton = document.querySelector(this.selector.reviewBoxButton);
@@ -270,6 +405,7 @@ let subscription = {
     let productListContents = '<table class="box-drawer__table"><tbody>';
 
     productJson.forEach(function (product) {
+      console.log('Product', product);
       if (product.quantity > 0) {
         let amount;
         if (type == 'subscription') {
@@ -320,7 +456,6 @@ let subscription = {
     // Update the modal list content with the generated HTML
     modalList.innerHTML = productListContents;
   },
-
   calculateTotals: function () {
     let productCount = 0;
     let productTotalCost = 0;
@@ -502,6 +637,13 @@ let subscription = {
     let productList = sessionStorage.getItem('potsProductList');
     let productJson = JSON.parse(productList);
 
+    // Retrieve the upsell list from session storage
+    let upsellList = sessionStorage.getItem('potsUpsellList');
+    let upsellJson = null;
+    if (upsellList != null) {
+      upsellJson = JSON.parse(upsellList);
+    }
+
     // Get the subscription frequency and type from session storage
     let freq = sessionStorage.getItem('potsFreq');
     let type = sessionStorage.getItem('potsType');
@@ -537,6 +679,23 @@ let subscription = {
         });
       }
     });
+
+    //console.log('Upsell JSON', upsellJson);
+
+    // Process each upsell in the list
+    if (upsellList != null) {
+      upsellJson.forEach(function (product) {
+        // Add the product without a selling plan
+        if (product.quantity > 0) {
+          items.push({
+            id: product.id,
+            quantity: parseInt(product.quantity),
+          });
+        }
+      });
+    }
+
+    //console.log('Products inc upsells', items);
 
     // Handle delivery date logic
     const datePicker = document.getElementById(this.selector.datePicker);
@@ -677,6 +836,7 @@ let subscription = {
   reset: function () {
     // Clear session storage items related to product selection
     sessionStorage.removeItem('potsProductList');
+    sessionStorage.removeItem('potsUpsellList');
     sessionStorage.removeItem('potsType');
     sessionStorage.removeItem('potsFreq');
 
@@ -720,9 +880,16 @@ class BoxQuantityInput extends HTMLElement {
 
     // Add an event listener to the input for change events
     this.input.addEventListener('change', () => {
+      console.log('Quantity change triggered');
       // Call an external function to handle product quantity changes
-      subscription.handleProductQuantityChange();
-      subscription.updateReviewBoxModal();
+      if (this.dataset.upsell) {
+        console.log('upsell quantity change');
+        subscription.handleUpsellProductQuantityChange();
+      } else {
+        console.log('product quantity change');
+        subscription.handleProductQuantityChange();
+        subscription.updateReviewBoxModal();
+      }
     });
   }
 
@@ -769,42 +936,77 @@ class ProductButton extends HTMLElement {
         const input = selector.querySelector('[data-product-quantity]');
         input.value = 1;
 
-        // Manage product list in session storage
-        let productList = sessionStorage.getItem('potsProductList');
-        let productJson = JSON.parse(productList);
+        if (this.dataset.upsell) {
+          console.log('upsell button clicked');
+          // Manage product list in session storage
+          let upsellList = sessionStorage.getItem('potsUpsellList');
+          let upsellJson = JSON.parse(upsellList);
 
-        // Find the product in the list and update its quantity
-        let found = false;
-        const id = buttonId.substring(7); // Extract product ID from button ID
+          // Find the product in the list and update its quantity
+          let found = false;
+          const id = buttonId.substring(7); // Extract product ID from button ID
 
-        productJson.forEach(function (product) {
-          if (product.id == id) {
-            product.quantity = 1;
-            found = true;
-          }
-        });
-
-        // If the product is not in the list, add it
-        if (!found) {
-          let img = input.dataset.imageUrl;
-
-          productJson.push({
-            id: input.dataset.index,
-            quantity: input.value,
-            price: input.dataset.price,
-            title: input.dataset.title,
-            variantTitle: input.dataset.variantTitle,
-            imageURL: img,
+          upsellJson.forEach(function (product) {
+            if (product.id == id) {
+              product.quantity = 1;
+              found = true;
+            }
           });
+
+          // If the product is not in the list, add it
+          if (!found) {
+            let img = input.dataset.imageUrl;
+
+            productJson.push({
+              id: input.dataset.index,
+              quantity: input.value,
+              price: input.dataset.price,
+              title: input.dataset.title,
+              variantTitle: input.dataset.variantTitle,
+              imageURL: img,
+            });
+          }
+
+          // Update the product list in session storage
+          sessionStorage.setItem('potsUpsellList', JSON.stringify(upsellJson));
+        } else {
+          // Manage product list in session storage
+          let productList = sessionStorage.getItem('potsProductList');
+          let productJson = JSON.parse(productList);
+
+          // Find the product in the list and update its quantity
+          let found = false;
+          const id = buttonId.substring(7); // Extract product ID from button ID
+
+          productJson.forEach(function (product) {
+            if (product.id == id) {
+              product.quantity = 1;
+              found = true;
+            }
+          });
+
+          // If the product is not in the list, add it
+          if (!found) {
+            let img = input.dataset.imageUrl;
+
+            productJson.push({
+              id: input.dataset.index,
+              quantity: input.value,
+              price: input.dataset.price,
+              title: input.dataset.title,
+              variantTitle: input.dataset.variantTitle,
+              imageURL: img,
+            });
+          }
+
+          // Update the product list in session storage
+          sessionStorage.setItem('potsProductList', JSON.stringify(productJson));
+
+          // Trigger external functions for calculations and updates
+          subscription.calculateTotals();
+          subscription.updateProgressBar();
+          subscription.updateReviewBoxModal();
         }
-
-        // Update the product list in session storage
-        sessionStorage.setItem('potsProductList', JSON.stringify(productJson));
-
-        // Trigger external functions for calculations and updates
-        subscription.calculateTotals();
-        subscription.updateProgressBar();
-        subscription.updateReviewBoxModal();
       });
     }
   }
