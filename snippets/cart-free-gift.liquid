@@ -146,7 +146,7 @@
 
       productJson.forEach(function (product) {
         if (product.quantity > 0) {
-          if (product.sellingPlans) {
+          if (product.sellingPlans.length > 0) {
             product.sellingPlans.forEach(function (plan) {
               if (String(plan.id) == currentProduct) {
                 freq = plan.frequency;

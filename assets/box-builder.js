@@ -12,7 +12,7 @@ let subscription = {
     totalPrice: 0,
 
     // Subscription frequency (e.g., every 4 weeks)
-    subscriptionFrequency: 4,
+    subscriptionFrequency: 1,
 
     // Subscription type (one-time or recurring)
     subscriptionType: 'subscription',
@@ -35,6 +35,7 @@ let subscription = {
     totalPrice: '[data-modal-total-price]', // Element displaying total price in the review box
     spaceRemaining: '[data-remaining]',
     upsellsGrid: '#upsells-grid', // Grid containing upsell cards
+    datePicker: '#delivery',
   },
 
   // Function to initialize product state and UI elements
@@ -105,16 +106,28 @@ let subscription = {
               });
             }
 
-            // Add products to array
-            productList.push({
-              id: element.dataset.index,
-              quantity: element.value,
-              price: element.dataset.price,
-              title: element.dataset.title,
-              variantTitle: element.dataset.variantTitle,
-              sellingPlans: plans,
-              imageURL: element.dataset.imageUrl,
-            });
+            if (element.dataset.imageUrl) {
+              // Add products to array
+              productList.push({
+                id: element.dataset.index,
+                quantity: element.value,
+                price: element.dataset.price,
+                title: element.dataset.title,
+                variantTitle: element.dataset.variantTitle,
+                sellingPlans: plans,
+                imageURL: element.dataset.imageUrl,
+              });
+            } else {
+              // Add products to array
+              productList.push({
+                id: element.dataset.index,
+                quantity: element.value,
+                price: element.dataset.price,
+                title: element.dataset.title,
+                variantTitle: element.dataset.variantTitle,
+                sellingPlans: plans,
+              });
+            }
           });
         }
       });
@@ -122,7 +135,6 @@ let subscription = {
       // Save product list and settings
       setCookie('potsProducts', true, 1);
       sessionStorage.setItem('potsProductList', JSON.stringify(productList));
-
       sessionStorage.setItem('potsType', this.state.subscriptionType);
       sessionStorage.setItem('potsFreq', this.state.subscriptionFrequency);
 
@@ -383,7 +395,7 @@ let subscription = {
       button.disabled = false;
     } else {
       // Display the warning message with the required count
-      countWarning.textContent = `Minimum order of 8 meals, please add ${count} more`;
+      countWarning.textContent = `Must add a minimum of 8 meals, please add ${count} more`;
       countWarning.classList.remove('hidden');
       // Disable the checkout button
       button.disabled = true;
@@ -398,15 +410,15 @@ let subscription = {
         let amount;
         if (type == 'subscription') {
           // Calculate price for subscription products
-          if (product.sellingPlans) {
+          if (product.sellingPlans.length > 0) {
             amount = ((product.sellingPlans[0].price * product.quantity) / 100).toFixed(2);
+          } else {
+            amount = ((product.price * product.quantity) / 100).toFixed(2);
           }
         } else {
           // Calculate price for one-time products
           amount = ((product.price * product.quantity) / 100).toFixed(2);
         }
-
-        console.log('Amount', amount);
 
         let currency = '£' + amount;
         let item = '<tr class="box-drawer__table-row">';
@@ -423,7 +435,7 @@ let subscription = {
         }
 
         item +=
-          '<td class="box-drawer__table-data box-drawer__product-title summary-title"><div class="box-drawer__product-title-text summary-product">' +
+          '<td class="box-drawer__table-data box-drawer__product-title summary-title"><div class="summary-product">' +
           product.title +
           '</div><div class="box-drawer__product-variant summary-variant">' +
           product.variantTitle +
@@ -445,7 +457,6 @@ let subscription = {
     modalList.innerHTML = productListContents;
   },
   calculateTotals: function () {
-    //console.log('Calculating totals');
     let productCount = 0;
     let productTotalCost = 0;
     let productSubscriptionTotalCost = 0;
@@ -458,10 +469,12 @@ let subscription = {
     productJson.forEach(function (product) {
       let lineTotal = product.price * parseInt(product.quantity);
       let productSubScriptionLineTotal = 0;
-      if (product.sellingPlans) {
+
+      if (product.sellingPlans.length > 0) {
         productSubScriptionLineTotal = product.sellingPlans[0].price * parseInt(product.quantity);
+      } else {
+        productSubScriptionLineTotal = product.price * parseInt(product.quantity);
       }
-      // console.log(productSubScriptionLineTotal);
 
       productTotalCost += lineTotal;
       productSubscriptionTotalCost += productSubScriptionLineTotal;
@@ -533,7 +546,6 @@ let subscription = {
       goal2indicator.classList.remove('progress-bar__goal-reached');
       goal3indicator.classList.remove('progress-bar__goal-reached');
       space = goal1 - currentItemCount;
-      //console.log(space);
 
       if (space == 1) {
         labelText = 'Add ' + space + ' more meal and delivery is £5.99';
@@ -561,7 +573,6 @@ let subscription = {
     } else if (combinedTotal < goal3) {
       // Goal 3 messaging
       space = goal3 - combinedTotal;
-      //console.log(space);
 
       if (space == 1) {
         labelText = 'Checkout or add ' + space + ' more meal and delivery is';
@@ -619,8 +630,6 @@ let subscription = {
 
   // Generate the products to send to cart
   generateProductArray: function () {
-    console.log('Generating Product List');
-
     // Create an empty array to hold the formatted product items
     let items = [];
 
@@ -689,18 +698,29 @@ let subscription = {
     //console.log('Products inc upsells', items);
 
     // Handle delivery date logic
-    const DeliveryDate = this.handleDeliveryDate();
+    const datePicker = document.getElementById(this.selector.datePicker);
+    let DeliveryDate = null;
+
+    if (datePicker) {
+      DeliveryDate = this.handleDeliveryDate();
+    } else {
+      DeliveryDate = this.generateDeliveryDate();
+    }
+    console.log('delivery date: ' + DeliveryDate);
 
     // Construct the final object to be returned
-    return {
-      // The formatted array of products
-      items: items,
-      // Additional attributes
-      attributes: {
-        // Include the calculated delivery date
-        'Delivery Date': DeliveryDate,
-      },
-    };
+    if (DeliveryDate) {
+      return {
+        items: items,
+        attributes: {
+          'Delivery Date': DeliveryDate,
+        },
+      };
+    } else {
+      return {
+        items: items,
+      };
+    }
   },
 
   // Function to format a price with currency symbol and two decimal places
@@ -758,7 +778,7 @@ let subscription = {
       });
   },
 
-  handleDeliveryDate: function () {
+  generateDeliveryDate: function () {
     // Get the current date
     var today = new Date();
 
@@ -803,10 +823,17 @@ let subscription = {
     );
   },
 
+  handleDeliveryDate: function () {
+    const date = document.getElementById('delivery');
+    if (!date || date.value == '') {
+      return null;
+    } else {
+      return date.value;
+    }
+  },
+
   // Function to reset the product selection state
   reset: function () {
-    console.log('Resetting');
-
     // Clear session storage items related to product selection
     sessionStorage.removeItem('potsProductList');
     sessionStorage.removeItem('potsUpsellList');
@@ -1054,8 +1081,17 @@ class handleCheckoutButton extends HTMLElement {
 
     // Add an event listener to the button
     button.addEventListener('click', async () => {
-      let products = subscription.generateProductArray();
-      const addNewProducts = await updateCart(products);
+      const date = document.getElementById('delivery');
+
+      // Check for the date picker
+      if (date && date.value == '') {
+        const message = document.getElementById('date_picker__message');
+        message.innerHTML = 'Please enter date to proceed';
+        message.classList.remove('hidden');
+      } else {
+        let products = subscription.generateProductArray();
+        const addNewProducts = await updateCart(products);
+      }
     });
   }
 }
@@ -1155,9 +1191,6 @@ customElements.define('product--info-modal-opener', ProductInfoModalOpener);
 
 // Cookie helper functions
 function setCookie(cname, cvalue, exdays) {
-  console.log('Setting Cookie: ' + cname);
-  console.log('Setting Cookie: ' + cvalue);
-
   const d = new Date();
   d.setTime(d.getTime() + 1 * 3600 * 1000);
   let expires = 'expires=' + d.toUTCString();

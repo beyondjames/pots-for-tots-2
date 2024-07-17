@@ -2,6 +2,9 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'box-builder-upsell-modal.css' | asset_url | stylesheet_tag }}
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
 {%- if section.settings.enable_quick_add -%}
   {{ 'box-builder-quick-add.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
@@ -269,7 +272,9 @@
                 <div class="order-type__circle"></div>
 
                 <div class="order-type__stack">
-                  <p class="order-type__text">Subscribe &amp; save</p>
+                  <p class="order-type__text">
+                    Subscribe
+                  </p>
                 </div>
               </span>
             </button>
@@ -288,7 +293,9 @@
           <div id="orderType">
             <div id="subscriptionContent">
               <ul class="order-type__items">
-                <li class="order-type__item">Save 10% off retail price on all orders</li>
+                <!--<li class="order-type__item">
+                  Save 10% off retail price on all orders
+                </li>-->
 
                 <li class="order-type__item">Skip, pause or cancel anytime</li>
 
@@ -298,9 +305,9 @@
               <div class="order-type__frequency frequency__selector">
                 <frequency-selector>
                   <select class="order-type__select" id="subscription-frequency" name="frequency">
-                    <option value="1">Delivery every 1 week</option>
+                    <option value="1" selected>Delivery every 1 week</option>
                     <option value="2">Delivery every 2 weeks</option>
-                    <option value="4" selected>Delivery every 4 weeks</option>
+                    <option value="4">Delivery every 4 weeks</option>
                     <option value="6">Delivery every 6 weeks</option>
                     <option value="8">Delivery every 8 weeks</option>
                   </select>
@@ -310,9 +317,26 @@
 
             <div class="hidden" id="oneTimeContent">
               <ul class="order-type__items order-type__items--border">
-                <li class="order-type__item">Switch to subscribe & save for 10% off</li>
+                <!--<li class="order-type__item">
+                  Switch to subscribe & save for 10% off
+                </li>-->
               </ul>
             </div>
+
+            {% if section.settings.show_date_picker %}
+            <div class="order-type__frequency order-type__frequency--calendar frequency__selector">
+              <input class="order-type__select" id="delivery" type="text" name="deliveryDate" placeholder="Select delivery date" required>
+
+              <span class="order-type__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.447 36.447">
+                  <path fill="#40250a" d="M30.224 3.948h-1.098V2.75c0-1.517-1.197-2.75-2.67-2.75-1.474 0-2.67 1.233-2.67 2.75v1.197h-2.74V2.75c0-1.517-1.197-2.75-2.67-2.75-1.473 0-2.67 1.233-2.67 2.75v1.197h-2.74V2.75c0-1.517-1.197-2.75-2.67-2.75-1.473 0-2.67 1.233-2.67 2.75v1.197H6.224c-2.343 0-4.25 1.907-4.25 4.25v24c0 2.343 1.907 4.25 4.25 4.25h24c2.344 0 4.25-1.907 4.25-4.25v-24c0-2.342-1.907-4.249-4.25-4.249zM25.286 2.75c0-.689.525-1.25 1.17-1.25.646 0 1.17.561 1.17 1.25v4.896c0 .689-.524 1.25-1.17 1.25-.645 0-1.17-.561-1.17-1.25V2.75zm-8.08 0c0-.689.525-1.25 1.17-1.25s1.17.561 1.17 1.25v4.896c0 .689-.525 1.25-1.17 1.25s-1.17-.561-1.17-1.25V2.75zm-8.081 0c0-.689.525-1.25 1.17-1.25s1.17.561 1.17 1.25v4.896c0 .689-.525 1.25-1.17 1.25s-1.17-.561-1.17-1.25V2.75zm22.849 29.448c0 .965-.785 1.75-1.75 1.75h-24c-.965 0-1.75-.785-1.75-1.75v-22h27.5v22z"></path>
+                  <path fill="#40250a" d="M6.724 14.626h4.595v4.089H6.724zM12.857 14.626h4.596v4.089h-4.596zM18.995 14.626h4.595v4.089h-4.595zM25.128 14.626h4.596v4.089h-4.596zM6.724 20.084h4.595v4.086H6.724zM12.857 20.084h4.596v4.086h-4.596zM18.995 20.084h4.595v4.086h-4.595zM25.128 20.084h4.596v4.086h-4.596zM6.724 25.54h4.595v4.086H6.724zM12.857 25.54h4.596v4.086h-4.596zM18.995 25.54h4.595v4.086h-4.595zM25.128 25.54h4.596v4.086h-4.596z"></path>
+                </svg>
+              </span>
+
+              </div>
+            <div id="date_picker__message" class="hidden"></div>
+            {% endif %}
           </div>
 
           <div class="box-drawer__total h3">
@@ -373,6 +397,57 @@
     skip_button: section.settings.upsell_skip_button
   %}
 {% endif %}
+
+<script>
+  const date = document.querySelector("#delivery");
+  if (date) {
+    const fp = flatpickr(date, {
+      dateFormat: 'd/m/Y',
+      minDate: 'today',
+      allowInput: true,
+      disable: [
+        // Disable weekends
+        function(date) {
+          return (date.getDay() === 0 || date.getDay() === 1 || date.getDay() === 2 || date.getDay() === 3 || date.getDay() === 5 || date.getDay() === 6 );
+        }],
+    });
+  }
+</script>
+
+<style>
+  .flatpickr-day {
+    background-color: #c4d9cd;
+    border-radius: 0;
+    color: rgba(var(--color-foreground), 0.75);
+  }
+
+  .flatpickr-day:hover {
+    background-color: #5c8972;
+    border-color: #5c8972;
+    color: #fff;
+  }
+
+  .flatpickr-day.selected {
+    background-color: #5c8972;
+    border-color: #5c8972;
+    color: #fff;
+  }
+
+  .flatpickr-day.selected:hover,
+  .flatpickr-day.selected:focus {
+    background-color: #5c8972;
+    border-color: #5c8972;
+    color: #fff;
+  }
+
+  .flatpickr-input {
+    cursor: pointer;
+  }
+
+  .flatpickr-input::placeholder {
+    color: rgb(var(--color-foreground));
+  }
+</style>
 
 {% schema %}
 {
@@ -525,6 +600,13 @@
       "default": false,
       "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
       "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_date_picker",
+      "default": false,
+      "label": "Show date picker",
+      "info": "Enable a date picker which shows the available delivery dates for the subscription"
     },
     {
       "type": "checkbox",

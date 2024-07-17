@@ -9,7 +9,11 @@
         {%- endif -%}
 
         <div class="price">
+          {% if variant.selling_plan_allocations.length > 0 %}
           {{ variant.selling_plan_allocations[0].price | money }}
+          {% else %}
+          {{ variant.price | money }}
+          {% endif %}
 
           {%- if card_variant_title == true -%}
             <span class="price__variant">
@@ -88,7 +92,9 @@
                     data-price="{{ variant.price }}"
                     data-title="{{ card_product.title }}"
                     data-variant-title="{{ variant.title }}"
-                    data-image-url="{{ card_product.featured_media | image_url: width: 150 }}"
+                    {% if card_product.featured_media %}
+                      data-image-url="{{ card_product.featured_media | image_url: width: 150 }}"
+                    {% endif %}
                   >
 
                   <button class="quantity__button no-js-hidden" name="plus" type="button">

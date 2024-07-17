@@ -1,1 +1,544 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"padding_top":60,"padding_bottom":60}},"image_banner_qGFk8P":{"type":"image-banner","blocks":{"heading_Qjty8B":{"type":"heading","settings":{"heading":"We're here to make children's mealtimes easy.","heading_size":"h1"}},"text_zJ4pVT":{"type":"text","settings":{"text":"Dietitian-approved REAL food for little ones, handmade by our chefs, frozen and delivered to your door. Meals ready in minutes. The convenience you need, without the compromise.","text_style":"body"}},"buttons_iFD7YV":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_Qjty8B","text_zJ4pVT","buttons_iFD7YV"],"settings":{"image":"shopify:\/\/shop_images\/PFT_Pattern_Background_copy.jpg","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"scheme-2","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"rich_text_PcW3HN":{"type":"rich-text","blocks":{"heading_3Utd4x":{"type":"heading","settings":{"heading":"Who are we?","heading_size":"h1"}},"text_AhT4aE":{"type":"text","disabled":true,"settings":{"text":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"}},"button_CYFTkb":{"type":"button","disabled":true,"settings":{"button_label":"Button label","button_link":"","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_3Utd4x","text_AhT4aE","button_CYFTkb"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":8}},"multirow_GMHCyC":{"type":"multirow","blocks":{"row_tmiQpL":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/image00017_VSCO.jpg","caption":"we are","heading":"Responsible","text":"<p>We think children deserve to eat REAL food, whether that’s at home or on the go. We have a responsibility to provide nutritious food for the future health of our children. We are the change we’d like to see.<\/p>","button_label":"","button_link":""}},"row_WD8QBm":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/IMG_1826_2.jpg","caption":"we are","heading":"Honest","text":"<p>We pride ourselves on being an honest food business, from what’s in our food to what our daily lives look like. Forget misleading food labels or marketing messaging. Forget \"perfect parent” social posts - we’re here to show the realities - both the joy and struggles of being a parent.<\/p>","button_label":"","button_link":""}},"row_JJxeUU":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg","caption":"we are","heading":"Supportive","text":"<p>We are parents supporting parents. When it comes to raising a child, it’s hard to figure out what’s best and when. We’ve gathered all the information to cut through the noise so parents can come to us when they need a little help<\/p>","button_label":"","button_link":""}},"row_eenibp":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/Snacks_copy.jpg","caption":"we are","heading":"Sustainable","text":"<p>We always look at the impact our business has on the environment in every aspect of our brand and product, from the packaging and delivery, to the ingredients, cooking processes and food waste.<\/p>","button_label":"","button_link":""}},"row_LxU9aH":{"type":"row","settings":{"image":"shopify:\/\/shop_images\/image00022_VSCO.jpg","caption":"We Are","heading":"Trailblazing","text":"<p>We’re here to make an impact in the children’s food space. We’re not afraid to call out big brands, who use misleading marketing messages and we will always be an advocate for the health of our children and yours.<\/p>","button_label":"","button_link":""}}},"block_order":["row_tmiQpL","row_WD8QBm","row_JJxeUU","row_eenibp","row_LxU9aH"],"settings":{"image_height":"medium","desktop_image_width":"medium","heading_size":"h1","text_style":"body","button_style":"secondary","desktop_content_position":"middle","desktop_content_alignment":"left","image_layout":"alternate-left","section_color_scheme":"","row_color_scheme":"scheme-2","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"image_with_text_NaHfeY":{"type":"image-with-text","blocks":{"heading_RqhY9g":{"type":"heading","settings":{"heading":"In partnership with...","heading_size":"h1"}},"text_aFxhDg":{"type":"text","settings":{"text":"<p>Lucy is our resident dietitian and has been providing practical nutritional advice and support for babies, children and their families for over 10 years<br\/><br\/>\"I’m a registered Specialist Paediatric Dietitian and I love it! I’m really proud to work with Pots for Tots to help parents feed their children nutritious food - even when they're short on time.\"<\/p>","text_style":"body"}},"button_LBxLCF":{"type":"button","settings":{"button_label":"More from lucy","button_link":"shopify:\/\/blogs\/toddlers\/your-foodie-questions-answered-by-our-children-s-dietician-1","button_style_secondary":false}}},"block_order":["heading_RqhY9g","text_aFxhDg","button_LBxLCF"],"settings":{"image":"shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png","height":"adapt","desktop_image_width":"medium","layout":"image_first","desktop_content_position":"top","desktop_content_alignment":"center","content_layout":"overlap","section_color_scheme":"","color_scheme":"scheme-7ddf882d-e898-48ca-8e67-2f252577c727","image_behavior":"none","mobile_content_alignment":"left","padding_top":36,"padding_bottom":36}},"custom_image_with_text_FEpgip":{"type":"custom-image-with-text","blocks":{"heading_dFMX87":{"type":"heading","settings":{"heading":"Dietitian approved!","heading_size":"h1"}},"text_QCKF34":{"type":"text","settings":{"text":"<p>Lucy is our resident dietitian and has been providing practical nutritional advice and support for babies, children and their families for over 10 years<br\/><br\/>\"I’m a registered Specialist Paediatric Dietitian and I love it! I’m really proud to work with Pots for Tots to help parents feed their children nutritious food - even when they're short on time.\"<\/p>","text_style":"body"}},"button_x6zx7T":{"type":"button","settings":{"button_label":"More from Lucy","button_link":"shopify:\/\/blogs\/toddlers","button_style_secondary":false}}},"block_order":["heading_dFMX87","text_QCKF34","button_x6zx7T"],"disabled":true,"settings":{"image":"shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png","height":"adapt","desktop_image_width":"medium","image_heading":"","layout":"text_first","desktop_content_position":"top","desktop_content_alignment":"left","content_layout":"overlap","section_color_scheme":"scheme-7ddf882d-e898-48ca-8e67-2f252577c727","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","padding_top":32,"padding_bottom":32}},"multicolumn_THQAtb":{"type":"multicolumn","blocks":{"column_tVy4UN":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/6_b70380f0-7dba-4a56-b884-16c21b91789a.png","title":"Cherrelle","text":"<p>Founder\/CEO<\/p>","link_label":"","link":""}},"column_MWBjKx":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/3_8e4e8022-0e16-429a-a8eb-02fa6aee7325.png","title":"Lucy","text":"<p>Children's Dietitian<\/p>","link_label":"","link":""}},"column_hCNqJr":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/10_e1e5e224-f80d-4077-9c6f-62c563173a73.png","title":"Lizzy","text":"<p>Head of Product<\/p>","link_label":"","link":""}},"column_Umf9FC":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/7_5d10fdda-96bb-4535-aace-6432c9b25b8b.png","title":"Verity","text":"<p>Head of Creative<\/p>","link_label":"","link":""}},"column_wr8xAB":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/5_b6e4c880-ad7d-434a-bbc4-16eb540c1843.png","title":"Flora","text":"<p>Head of Growth<\/p>","link_label":"","link":""}},"column_gY8UJg":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/Team_images_11.png","title":"Jamie","text":"<p>Head of Operations<\/p>","link_label":"","link":""}},"column_rzfYa3":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/4_313e96ac-4e5f-4f85-90de-1388f3c8f7c9.png","title":"Katie","text":"<p>Head of Digital<\/p>","link_label":"","link":""}},"column_tbfNTB":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/8_f80e4c0c-245a-42a2-8698-0b5746584595.png","title":"Jade","text":"<p>Business Operations<\/p>","link_label":"","link":""}},"column_FPAqt3":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/9_18506f77-740f-4dfb-92f3-fb41ff98d3cf.png","title":"Jazz","text":"<p>Content Manager<\/p>","link_label":"","link":""}},"column_H9GVPC":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/1_b5b819d3-4fa4-45de-bea5-3c28b2ba12a5.png","title":"Ali","text":"<p>Head Chef<\/p>","link_label":"","link":""}},"column_iTBGCA":{"type":"column","settings":{"image":"shopify:\/\/shop_images\/2_2fe45570-ff55-41fc-a5c7-fc4831f0c2dc.png","title":"Yulduz","text":"<p>Chef<\/p>","link_label":"","link":""}}},"block_order":["column_tVy4UN","column_MWBjKx","column_hCNqJr","column_Umf9FC","column_wr8xAB","column_gY8UJg","column_rzfYa3","column_tbfNTB","column_FPAqt3","column_H9GVPC","column_iTBGCA"],"settings":{"title":"Meet the team","heading_size":"h1","text":"","image_width":"full","image_ratio":"adapt","columns_desktop":4,"column_alignment":"center","background_style":"primary","button_label":"","button_link":"","color_scheme":"scheme-2","columns_mobile":"1","swipe_on_mobile":true,"padding_top":36,"padding_bottom":36}},"custom_newsletter_qHtfeA":{"type":"custom-newsletter","blocks":{"heading_c3qypM":{"type":"heading","settings":{"heading":"Join our journey","heading_size":"h1"}},"paragraph_LCEMAT":{"type":"paragraph","settings":{"text":"<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!<\/p>"}},"email_form_Vn7BeL":{"type":"email_form","disabled":true,"settings":{}},"smallprint_jbypam":{"type":"smallprint","disabled":true,"settings":{"smallprint":"We don't bombard you with marketing emails. We respect your privacy."}},"klaviyo_email_marketing_sms_form_embed_block_FNzXK3":{"type":"shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507","settings":{"formId":"XDcips"}}},"block_order":["heading_c3qypM","paragraph_LCEMAT","email_form_Vn7BeL","smallprint_jbypam","klaviyo_email_marketing_sms_form_embed_block_FNzXK3"],"settings":{"color_scheme":"","image":"shopify:\/\/shop_images\/Recycled_background_medium_res.png","full_width":true,"content_alignment":"center","padding_top":40,"padding_bottom":52}}},"order":["main","image_banner_qGFk8P","rich_text_PcW3HN","multirow_GMHCyC","image_with_text_NaHfeY","custom_image_with_text_FEpgip","multicolumn_THQAtb","custom_newsletter_qHtfeA"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_banner_qGFk8P": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Qjty8B": {
+          "type": "heading",
+          "settings": {
+            "heading": "We're here to make children's mealtimes easy.",
+            "heading_size": "h1"
+          }
+        },
+        "text_zJ4pVT": {
+          "type": "text",
+          "settings": {
+            "text": "Dietitian-approved REAL food for little ones, handmade by our chefs, frozen and delivered to your door. Meals ready in minutes. The convenience you need, without the compromise.",
+            "text_style": "body"
+          }
+        },
+        "buttons_iFD7YV": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Build a box",
+            "button_link_1": "shopify:\/\/collections\/build-your-box",
+            "button_style_secondary_1": false,
+            "button_label_2": "Bundles",
+            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Qjty8B",
+        "text_zJ4pVT",
+        "buttons_iFD7YV"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/PFT_Pattern_Background_copy.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_PcW3HN": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3Utd4x": {
+          "type": "heading",
+          "settings": {
+            "heading": "Who are we?",
+            "heading_size": "h1"
+          }
+        },
+        "text_AhT4aE": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button_CYFTkb": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_3Utd4x",
+        "text_AhT4aE",
+        "button_CYFTkb"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 8
+      }
+    },
+    "multirow_GMHCyC": {
+      "type": "multirow",
+      "blocks": {
+        "row_tmiQpL": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Lentil_bol_square.png",
+            "caption": "we are",
+            "heading": "Responsible",
+            "text": "<p>We think children deserve to eat REAL food, whether that’s at home or on the go. We have a responsibility to provide nutritious food for the future health of our children. We are the change we’d like to see.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_WD8QBm": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_1826_2.jpg",
+            "caption": "we are",
+            "heading": "Honest",
+            "text": "<p>We pride ourselves on being an honest food business, from what’s in our food to what our daily lives look like. Forget misleading food labels or marketing messaging. Forget \"perfect parent” social posts - we’re here to show the realities - both the joy and struggles of being a parent.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_JJxeUU": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
+            "caption": "we are",
+            "heading": "Supportive",
+            "text": "<p>We are parents supporting parents. When it comes to raising a child, it’s hard to figure out what’s best and when. We’ve gathered all the information to cut through the noise so parents can come to us when they need a little help<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_eenibp": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Snacks_copy.jpg",
+            "caption": "we are",
+            "heading": "Sustainable",
+            "text": "<p>We always look at the impact our business has on the environment in every aspect of our brand and product, from the packaging and delivery, to the ingredients, cooking processes and food waste.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_LxU9aH": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Cottage_pie_square.png",
+            "caption": "We Are",
+            "heading": "Trailblazing",
+            "text": "<p>We’re here to make an impact in the children’s food space. We’re not afraid to call out big brands, who use misleading marketing messages and we will always be an advocate for the health of our children and yours.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_tmiQpL",
+        "row_WD8QBm",
+        "row_JJxeUU",
+        "row_eenibp",
+        "row_LxU9aH"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_y6X7Wg": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gUGXiV": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_TygPaX": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "button_XhCH6G": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP ALL",
+            "button_link": "shopify:\/\/collections\/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "SHOP BUNDLES",
+            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gUGXiV",
+        "text_TygPaX",
+        "button_XhCH6G"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_NaHfeY": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_RqhY9g": {
+          "type": "heading",
+          "settings": {
+            "heading": "In partnership with...",
+            "heading_size": "h1"
+          }
+        },
+        "text_aFxhDg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lucy is our resident dietitian and has been providing practical nutritional advice and support for babies, children and their families for over 10 years<br\/><br\/>\"I’m a registered Specialist Paediatric Dietitian and I love it! I’m really proud to work with Pots for Tots to help parents feed their children nutritious food - even when they're short on time.\"<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_LBxLCF": {
+          "type": "button",
+          "settings": {
+            "button_label": "More from lucy",
+            "button_link": "shopify:\/\/blogs\/toddlers\/your-foodie-questions-answered-by-our-children-s-dietician-1",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RqhY9g",
+        "text_aFxhDg",
+        "button_LBxLCF"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_image_with_text_FEpgip": {
+      "type": "custom-image-with-text",
+      "blocks": {
+        "heading_dFMX87": {
+          "type": "heading",
+          "settings": {
+            "heading": "Dietitian approved!",
+            "heading_size": "h1"
+          }
+        },
+        "text_QCKF34": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lucy is our resident dietitian and has been providing practical nutritional advice and support for babies, children and their families for over 10 years<br\/><br\/>\"I’m a registered Specialist Paediatric Dietitian and I love it! I’m really proud to work with Pots for Tots to help parents feed their children nutritious food - even when they're short on time.\"<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_x6zx7T": {
+          "type": "button",
+          "settings": {
+            "button_label": "More from Lucy",
+            "button_link": "shopify:\/\/blogs\/toddlers",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_dFMX87",
+        "text_QCKF34",
+        "button_x6zx7T"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "image_heading": "",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 32,
+        "padding_bottom": 32
+      }
+    },
+    "multicolumn_THQAtb": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_tVy4UN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6_b70380f0-7dba-4a56-b884-16c21b91789a.png",
+            "title": "Cherrelle",
+            "text": "<p>Founder\/CEO<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_MWBjKx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/3_8e4e8022-0e16-429a-a8eb-02fa6aee7325.png",
+            "title": "Lucy",
+            "text": "<p>Children's Dietitian<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hCNqJr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10_e1e5e224-f80d-4077-9c6f-62c563173a73.png",
+            "title": "Lizzy",
+            "text": "<p>Head of Product<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Umf9FC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7_5d10fdda-96bb-4535-aace-6432c9b25b8b.png",
+            "title": "Verity",
+            "text": "<p>Head of Creative<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wr8xAB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/5_b6e4c880-ad7d-434a-bbc4-16eb540c1843.png",
+            "title": "Flora",
+            "text": "<p>Head of Growth<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_gY8UJg": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Team_images_11.png",
+            "title": "Jamie",
+            "text": "<p>Head of Operations<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rzfYa3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/4_313e96ac-4e5f-4f85-90de-1388f3c8f7c9.png",
+            "title": "Katie",
+            "text": "<p>Head of Digital<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_tbfNTB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8_f80e4c0c-245a-42a2-8698-0b5746584595.png",
+            "title": "Jade",
+            "text": "<p>Business Operations<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FPAqt3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9_18506f77-740f-4dfb-92f3-fb41ff98d3cf.png",
+            "title": "Jazz",
+            "text": "<p>Content Manager<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_H9GVPC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_b5b819d3-4fa4-45de-bea5-3c28b2ba12a5.png",
+            "title": "Ali",
+            "text": "<p>Head Chef<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iTBGCA": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/2_2fe45570-ff55-41fc-a5c7-fc4831f0c2dc.png",
+            "title": "Yulduz",
+            "text": "<p>Chef<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_tVy4UN",
+        "column_MWBjKx",
+        "column_hCNqJr",
+        "column_Umf9FC",
+        "column_wr8xAB",
+        "column_gY8UJg",
+        "column_rzfYa3",
+        "column_tbfNTB",
+        "column_FPAqt3",
+        "column_H9GVPC",
+        "column_iTBGCA"
+      ],
+      "settings": {
+        "title": "Meet the team",
+        "heading_size": "h1",
+        "text": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 5,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_newsletter_qHtfeA": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "heading_c3qypM": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join our journey",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_LCEMAT": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!<\/p>"
+          }
+        },
+        "email_form_Vn7BeL": {
+          "type": "email_form",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "smallprint_jbypam": {
+          "type": "smallprint",
+          "disabled": true,
+          "settings": {
+            "smallprint": "We don't bombard you with marketing emails. We respect your privacy."
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_FNzXK3": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "XDcips"
+          }
+        }
+      },
+      "block_order": [
+        "heading_c3qypM",
+        "paragraph_LCEMAT",
+        "email_form_Vn7BeL",
+        "smallprint_jbypam",
+        "klaviyo_email_marketing_sms_form_embed_block_FNzXK3"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
+        "full_width": true,
+        "content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_qGFk8P",
+    "rich_text_PcW3HN",
+    "multirow_GMHCyC",
+    "rich_text_y6X7Wg",
+    "image_with_text_NaHfeY",
+    "custom_image_with_text_FEpgip",
+    "multicolumn_THQAtb",
+    "custom_newsletter_qHtfeA"
+  ]
+}

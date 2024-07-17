@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -14,8 +23,9 @@
         "heading_bCrjgg": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% off your first 3 subscription orders",
-            "heading_size": "h1"
+            "heading": "colouring download",
+            "heading_size": "h1",
+            "show_heading_shadow": false
           }
         },
         "text_BGFg3G": {
@@ -39,6 +49,8 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -59,15 +71,14 @@
         "text_kbXY6F": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up to our newsletter for 20% off your first three subscription orders as well as exclusive tips from our Children's Dietitian and more!<\/p>"
+            "text": "<p>Download our colouring sheet here.<\/p>"
           }
         },
         "button_Cg8XkB": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "DOWNLOAD",
+            "button_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/0557\/7827\/9590\/files\/Pots_for_Tots_Colouring_Pack.pdf?v=1721215903",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -87,23 +98,6 @@
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
-      }
-    },
-    "1718703387fe01fff7": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_rhNXU3": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "XDcips"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_rhNXU3"
-      ],
-      "settings": {
-        "include_margins": true
       }
     },
     "featured_collection_Fgf9ic": {
@@ -139,7 +133,6 @@
     "main",
     "image_banner_QzQ7yb",
     "rich_text_nbdicX",
-    "1718703387fe01fff7",
     "featured_collection_Fgf9ic"
   ]
 }

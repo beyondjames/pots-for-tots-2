@@ -87,6 +87,52 @@
                   </a>
                 {%- endif -%}
               </div>
+            {%- when 'image' %}
+              {%- style -%}
+                .rich-text__image-wrapper-{{ block.id }} {
+                  max-width: {{ block.settings.image_width }}px;
+                }
+              {%- endstyle -%}
+
+              <div class="rich-text__image-wrapper rich-text__image-wrapper-{{ block.id }}">
+                {%- if block.settings.image != blank -%}
+                  {%- liquid
+                    assign widths = '165, 360, 535, 750, 800'
+                    assign fetch_priority = 'auto'
+    
+                    if section.index == 1
+                      assign fetch_priority = 'high'
+                    endif
+                  -%}
+    
+                  {%- capture sizes -%}
+                    (min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px,
+                    (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)
+                  {%- endcapture -%}
+    
+                  {{
+                    block.settings.image
+                    | image_url: width: 800
+                    | image_tag:
+                      sizes: sizes,
+                      widths: widths,
+                      fetchpriority: fetch_priority,
+                      class: 'rich-text__image-image'
+                  }}
+                {%- else -%}
+                  {{ 'detailed-apparel-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                {%- endif -%}
+              </div>
+            {%- when 'badge' -%}
+              {%- style -%}
+                .rich-text__badge-wrapper-{{ block.id }} {
+                  max-width: {{ block.settings.badge_width }}px;
+                }
+              {%- endstyle -%}
+
+              <div class="rich-text__badge-wrapper rich-text__badge-wrapper-{{ block.id }}">
+                {{ block.settings.badge_embed }}
+              </div>
           {%- endcase -%}
         {%- endfor -%}
       </div>
@@ -320,6 +366,50 @@
           "id": "button_style_secondary_2",
           "default": false,
           "label": "t:sections.rich-text.blocks.buttons.settings.button_style_secondary_2.label"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "range",
+          "id": "image_width",
+          "min": 50,
+          "max": 780,
+          "step": 10,
+          "unit": "px",
+          "label": "Image width",
+          "default": 780
+        }
+      ]
+    },
+    {
+      "type": "badge",
+      "name": "Badge",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "html",
+          "id": "badge_embed",
+          "label": "Badge embed"
+        },
+        {
+          "type": "range",
+          "id": "badge_width",
+          "min": 50,
+          "max": 780,
+          "step": 10,
+          "unit": "px",
+          "label": "Image width",
+          "default": 780
         }
       ]
     }

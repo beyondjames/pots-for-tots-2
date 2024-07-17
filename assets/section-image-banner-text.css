@@ -6,6 +6,10 @@
 |
 */
 
+:root {
+  --badge-padding: 1rem;
+}
+
 .image-banner-text {
   position: relative;
   overflow: hidden;
@@ -40,8 +44,9 @@
   text-shadow: 0 0 2.4rem #40250a;
 }
 
-.image-banner-text__button {
+.image-banner-text__content .banner__buttons {
   margin-top: 2rem;
+  justify-content: center;
 }
 
 .image-banner-text__link {
@@ -53,6 +58,66 @@
   z-index: 1;
   width: 100%;
   height: 100%;
+}
+
+.image-banner-action__award {
+  position: absolute;
+}
+
+.image-banner-action__award--left.image-banner-action__award--middle {
+  top: 50%;
+  left: 20px;
+  transform: translate(0, -50%);
+}
+
+.image-banner-action__award--centre.image-banner-action__award--middle {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.image-banner-action__award--right.image-banner-action__award--middle {
+  top: 50%;
+  right: 20px;
+  transform: translate(0, -50%);
+}
+
+.image-banner-action__award--left.image-banner-action__award--top {
+  top: 20px;
+  left: 20px;
+}
+
+.image-banner-action__award--centre.image-banner-action__award--top {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-banner-action__award--right.image-banner-action__award--top {
+  top: 20px;
+  right: 20px;
+}
+
+.image-banner-action__award--left.image-banner-action__award--bottom {
+  bottom: 20px;
+  left: 20px;
+}
+
+.image-banner-action__award--centre.image-banner-action__award--bottom {
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.image-banner-action__award--right.image-banner-action__award--bottom {
+  bottom: 20px;
+  right: 20px;
+}
+
+.image-banner-action__award-image {
+  display: block;
+  width: auto;
+  height: auto;
 }
 
 @media screen and (min-width: 750px) {
@@ -87,6 +152,42 @@
   .image-banner-text__title--large {
     font-size: calc(var(--font-heading-scale) * 10rem);
   }
+
+  .image-banner-action__award--left.image-banner-action__award--middle {
+    left: var(--badge-padding);
+  }
+
+  .image-banner-action__award--right.image-banner-action__award--middle {
+    right: var(--badge-padding);
+  }
+
+  .image-banner-action__award--left.image-banner-action__award--top {
+    top: var(--badge-padding);
+    left: var(--badge-padding);
+  }
+
+  .image-banner-action__award--centre.image-banner-action__award--top {
+    top: var(--badge-padding);
+  }
+
+  .image-banner-action__award--right.image-banner-action__award--top {
+    top: var(--badge-padding);
+    right: var(--badge-padding);
+  }
+
+  .image-banner-action__award--left.image-banner-action__award--bottom {
+    bottom: var(--badge-padding);
+    left: var(--badge-padding);
+  }
+
+  .image-banner-action__award--centre.image-banner-action__award--bottom {
+    bottom: var(--badge-padding);
+  }
+
+  .image-banner-action__award--right.image-banner-action__award--bottom {
+    bottom: var(--badge-padding);
+    right: var(--badge-padding);
+  }
 }
 
 @media screen and (min-width: 990px) {
@@ -109,7 +210,7 @@
     font-size: calc(var(--font-heading-scale) * 14rem);
   }
 
-  .image-banner-text__button {
+  .image-banner-text__content .banner__buttons {
     margin-top: 4rem;
   }
 }

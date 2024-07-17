@@ -10,6 +10,21 @@
   text-align: center;
 }
 
+.banner__badge {
+  display: none;
+  max-width: 230px;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (min-width: 1200px) {
+  .banner__badge {
+    display: block;
+  }
+}
+
 /* Needed for gradient continuity with or without animation, the transform scopes the gradient to its container which happens already when animation are turned on */
 .banner__box.gradient {
   transform: perspective(0);
@@ -184,6 +199,20 @@
 .banner__media-half.animate--zoom-in:nth-child(2) > img {
   left: 50%;
   width: 50%;
+}
+
+.banner__media.desktop-only {
+  display: none;
+}
+
+@media screen and (min-width: 749px) {
+  .banner__media.mobile-only {
+    display: none;
+  }
+
+  .banner__media.desktop-only {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 749px) {
@@ -418,6 +447,12 @@
   }
 }
 
+@media screen and (min-width: 900px) {
+  .banner--medium.banner--desktop-transparent .banner__box {
+    max-width: 92rem;
+  }
+}
+
 @media screen and (min-width: 1400px) {
   .banner__box {
     max-width: 90rem;
@@ -430,6 +465,10 @@
 
 .banner__box .banner__heading + * {
   margin-top: 1rem;
+}
+
+.banner__heading.text_shadow {
+  text-shadow: 0 0 2.4rem #40250a;
 }
 
 .banner__buttons {
