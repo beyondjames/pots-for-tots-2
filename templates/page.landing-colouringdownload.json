@@ -43,12 +43,13 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Colouring_in.png",
+        "image_3": "shopify:\/\/shop_images\/NEWSLETTER_mobile-13.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "badge_embed": "",
         "badge_padding": 1,
         "image_behavior": "none",
@@ -94,16 +95,73 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
       }
     },
+    "multicolumn_WLtRWQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_WULtFf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile-14.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_wkK7KU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/15_bd9f13c9-62ec-4ac9-a0d2-3aeeceb7d596.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Agegbt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/16.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_WULtFf",
+        "column_wkK7KU",
+        "column_Agegbt"
+      ],
+      "settings": {
+        "title": "Get creative with our boxes too!",
+        "heading_size": "h1",
+        "text": "",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify:\/\/collections\/build-your-box",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "featured_collection_Fgf9ic": {
       "type": "featured-collection",
       "settings": {
-        "title": "Shop our bestsellers!",
+        "title": "Check out our bestsellers!",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -115,7 +173,7 @@
         "show_view_all": true,
         "view_all_style": "solid",
         "enable_desktop_slider": false,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "image_ratio": "adapt",
         "image_shape": "default",
         "show_secondary_image": false,
@@ -133,6 +191,7 @@
     "main",
     "image_banner_QzQ7yb",
     "rich_text_nbdicX",
+    "multicolumn_WLtRWQ",
     "featured_collection_Fgf9ic"
   ]
 }
