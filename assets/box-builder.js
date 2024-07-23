@@ -1120,7 +1120,7 @@ class handleCheckoutButton extends HTMLElement {
       } else {
         let products = subscription.generateProductArray();
         console.log('Products', products);
-        //const addNewProducts = await updateCart(products);
+        const addNewProducts = await updateCart(products);
       }
     });
   }
