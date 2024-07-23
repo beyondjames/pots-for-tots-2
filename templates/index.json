@@ -370,8 +370,8 @@
         "column_QDQrVz": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lamb_tagine.png",
-            "title": "NEW! Lamb Tagine",
+            "image": "shopify:\/\/shop_images\/Italian_chicken_pasta.png",
+            "title": "NEW! Italian-Style Chicken & Tomato Pasta",
             "title_size": "h2",
             "text": "<p>£4.65<\/p>",
             "link_label": "Create a box",
@@ -381,8 +381,8 @@
         "column_XgNy9B": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Banana_pancakes_square.png",
-            "title": "Banana Pancakes",
+            "image": "shopify:\/\/shop_images\/Blueberry_Mini_Muffins_dab9b707-1c2a-4502-9474-9de742296d71.png",
+            "title": "Blueberry Mini Muffins",
             "title_size": "h2",
             "text": "<p>£3.99<\/p>",
             "link_label": "Create a box",
@@ -392,8 +392,8 @@
         "column_FNaUJd": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Pasta_primavera_16fb99c7-0e29-46ad-ba1c-2a4cdb5069a2.png",
-            "title": "Limited Edition Pasta Primavera",
+            "image": "shopify:\/\/shop_images\/Chicken_Korma_19b454c2-4f54-42ff-b410-86630652dffb.png",
+            "title": "Mild Chicken Korma",
             "title_size": "h2",
             "text": "<p>£4.60<\/p>",
             "link_label": "Create a box",
@@ -403,8 +403,8 @@
         "column_Yc6brM": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Broc_tots_square.png",
-            "title": "Broccoli Tots",
+            "image": "shopify:\/\/shop_images\/Cheesy_veg_bites_4582b641-5974-41dc-9de3-1fefad5c4434.png",
+            "title": "NEW! Cheesy Veg Bites",
             "title_size": "h2",
             "text": "<p>£3.99<\/p>",
             "link_label": "Create a box",
