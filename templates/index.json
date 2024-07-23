@@ -15,7 +15,7 @@
         "heading_YnHzXV": {
           "type": "heading",
           "settings": {
-            "heading": "New meals and bundles!",
+            "heading": "Stacks of snacks",
             "heading_size": "hxxl",
             "show_heading_shadow": true
           }
@@ -37,8 +37,8 @@
         "buttons_bmUpB4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Website_homepage_hero_landscape.png",
-        "image_3": "shopify:\/\/shop_images\/Hero_group_shot.png",
+        "image": "shopify:\/\/shop_images\/Snacks_desktop_header.png",
+        "image_3": "shopify:\/\/shop_images\/snacks_mobile_header.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
