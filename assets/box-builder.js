@@ -154,6 +154,22 @@ let subscription = {
         let quantity = item.querySelectorAll('[data-product-quantity]');
         if (quantity) {
           quantity.forEach(function (element) {
+            // Get selling plans list
+            let sellingPlans = item.querySelectorAll('.card__variant-selling-plans li');
+
+            // Define selling plans array
+            let plans = [];
+
+            if (sellingPlans) {
+              sellingPlans.forEach(function (sellingPlan) {
+                plans.push({
+                  id: sellingPlan.dataset.sellingPlanId,
+                  frequency: sellingPlan.value,
+                  price: sellingPlan.dataset.sellingPlanPrice,
+                });
+              });
+            }
+
             // Add products to array
             upsellList.push({
               id: element.dataset.index,
@@ -161,6 +177,7 @@ let subscription = {
               price: element.dataset.price,
               title: element.dataset.title,
               variantTitle: element.dataset.variantTitle,
+              sellingPlans: plans,
               imageURL: element.dataset.imageUrl,
             });
           });
@@ -685,8 +702,31 @@ let subscription = {
     // Process each upsell in the list
     if (upsellList != null) {
       upsellJson.forEach(function (product) {
-        // Add the product without a selling plan
-        if (product.quantity > 0) {
+        // Initialize a variable to hold the selling plan ID (if applicable)
+        let planId = null;
+
+        // If the product has selling plans and it's a subscription type
+        if (product.sellingPlans && type == 'subscription') {
+          // Find the selling plan with the matching frequency
+          product.sellingPlans.forEach(function (plan) {
+            if (String(plan.frequency) == freq) {
+              planId = plan.id;
+            }
+          });
+        }
+
+        console.log('Plan ID', planId);
+
+        // Add the product to the formatted array based on conditions
+        if (product.quantity > 0 && planId != null && type == 'subscription') {
+          // Add the product with its selling plan ID
+          items.push({
+            id: product.id,
+            quantity: parseInt(product.quantity),
+            selling_plan: planId,
+          });
+        } else if (product.quantity > 0) {
+          // Add the product without a selling plan
           items.push({
             id: product.id,
             quantity: parseInt(product.quantity),
@@ -695,7 +735,7 @@ let subscription = {
       });
     }
 
-    //console.log('Products inc upsells', items);
+    console.log('Products inc upsells', items);
 
     // Handle delivery date logic
     const datePicker = document.getElementById(this.selector.datePicker);
@@ -1090,6 +1130,7 @@ class handleCheckoutButton extends HTMLElement {
         message.classList.remove('hidden');
       } else {
         let products = subscription.generateProductArray();
+        console.log('Products', products);
         const addNewProducts = await updateCart(products);
       }
     });
