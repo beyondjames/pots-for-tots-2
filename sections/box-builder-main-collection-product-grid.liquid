@@ -80,6 +80,9 @@
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
+  {% comment %} Add field to store upsells preference {% endcomment %}
+  <input type="hidden" id="upsell-subscription" value="{{ section.settings.allow_upsell_subscriptions }}">
+
   {%- paginate collection.products by section.settings.products_per_page -%}
     {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
@@ -488,6 +491,12 @@
       "id": "show_upsells",
       "label": "Show upsells modal",
       "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "allow_upsell_subscriptions",
+      "label": "Allow upsell subscriptions",
+      "default": false
     },
     {
       "type": "text",

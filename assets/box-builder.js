@@ -47,11 +47,8 @@ let subscription = {
     const upsellWrapper = document.querySelector(this.selector.upsellsGrid);
     let upsellVariants = null;
     if (upsellWrapper != null) {
-      console.log('Setting upsell Variants');
       upsellVariants = upsellWrapper.querySelectorAll(this.selector.variants);
     }
-
-    console.log('Upsell Variants', upsellVariants);
 
     let productList = [];
     let upsellList = [];
@@ -143,8 +140,6 @@ let subscription = {
       this.updateProgressBar();
     }
 
-    console.log('Upsell Wrapper', upsellWrapper);
-
     // Check for saved upsell list in session storage
     if (getCookie('potsUpsells') == 'true' && sessionStorage.getItem('potsUpsellsList') !== null) {
       this.handleUIElements();
@@ -154,6 +149,22 @@ let subscription = {
         let quantity = item.querySelectorAll('[data-product-quantity]');
         if (quantity) {
           quantity.forEach(function (element) {
+            // Get selling plans list
+            let sellingPlans = item.querySelectorAll('.card__variant-selling-plans li');
+
+            // Define selling plans array
+            let plans = [];
+
+            if (sellingPlans) {
+              sellingPlans.forEach(function (sellingPlan) {
+                plans.push({
+                  id: sellingPlan.dataset.sellingPlanId,
+                  frequency: sellingPlan.value,
+                  price: sellingPlan.dataset.sellingPlanPrice,
+                });
+              });
+            }
+
             // Add products to array
             upsellList.push({
               id: element.dataset.index,
@@ -161,6 +172,7 @@ let subscription = {
               price: element.dataset.price,
               title: element.dataset.title,
               variantTitle: element.dataset.variantTitle,
+              sellingPlans: plans,
               imageURL: element.dataset.imageUrl,
             });
           });
@@ -405,7 +417,6 @@ let subscription = {
     let productListContents = '<table class="box-drawer__table"><tbody>';
 
     productJson.forEach(function (product) {
-      console.log('Product', product);
       if (product.quantity > 0) {
         let amount;
         if (type == 'subscription') {
@@ -680,13 +691,34 @@ let subscription = {
       }
     });
 
-    //console.log('Upsell JSON', upsellJson);
-
     // Process each upsell in the list
     if (upsellList != null) {
       upsellJson.forEach(function (product) {
-        // Add the product without a selling plan
-        if (product.quantity > 0) {
+        // Initialize a variable to hold the selling plan ID (if applicable)
+        let planId = null;
+
+        // If the product has selling plans and it's a subscription type
+        if (product.sellingPlans && type == 'subscription') {
+          // Find the selling plan with the matching frequency
+          product.sellingPlans.forEach(function (plan) {
+            if (String(plan.frequency) == freq) {
+              planId = plan.id;
+            }
+          });
+        }
+
+        const upsellSubscription = document.querySelector('#upsell-subscription').value;
+
+        // Add the product to the formatted array based on conditions
+        if (product.quantity > 0 && planId != null && upsellSubscription == 'true') {
+          // Add the product with its selling plan ID
+          items.push({
+            id: product.id,
+            quantity: parseInt(product.quantity),
+            selling_plan: planId,
+          });
+        } else if (product.quantity > 0) {
+          // Add the product without a selling plan
           items.push({
             id: product.id,
             quantity: parseInt(product.quantity),
@@ -694,8 +726,6 @@ let subscription = {
         }
       });
     }
-
-    //console.log('Products inc upsells', items);
 
     // Handle delivery date logic
     const datePicker = document.getElementById(this.selector.datePicker);
@@ -706,7 +736,7 @@ let subscription = {
     } else {
       DeliveryDate = this.generateDeliveryDate();
     }
-    console.log('delivery date: ' + DeliveryDate);
+    console.log('Delivery date: ' + DeliveryDate);
 
     // Construct the final object to be returned
     if (DeliveryDate) {
@@ -937,7 +967,6 @@ class ProductButton extends HTMLElement {
         input.value = 1;
 
         if (this.dataset.upsell) {
-          console.log('upsell button clicked');
           // Manage product list in session storage
           let upsellList = sessionStorage.getItem('potsUpsellList');
           let upsellJson = JSON.parse(upsellList);
@@ -1090,7 +1119,8 @@ class handleCheckoutButton extends HTMLElement {
         message.classList.remove('hidden');
       } else {
         let products = subscription.generateProductArray();
-        const addNewProducts = await updateCart(products);
+        console.log('Products', products);
+        //const addNewProducts = await updateCart(products);
       }
     });
   }
