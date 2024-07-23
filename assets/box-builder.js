@@ -47,11 +47,8 @@ let subscription = {
     const upsellWrapper = document.querySelector(this.selector.upsellsGrid);
     let upsellVariants = null;
     if (upsellWrapper != null) {
-      console.log('Setting upsell Variants');
       upsellVariants = upsellWrapper.querySelectorAll(this.selector.variants);
     }
-
-    console.log('Upsell Variants', upsellVariants);
 
     let productList = [];
     let upsellList = [];
@@ -142,8 +139,6 @@ let subscription = {
       this.calculateTotals();
       this.updateProgressBar();
     }
-
-    console.log('Upsell Wrapper', upsellWrapper);
 
     // Check for saved upsell list in session storage
     if (getCookie('potsUpsells') == 'true' && sessionStorage.getItem('potsUpsellsList') !== null) {
@@ -422,7 +417,6 @@ let subscription = {
     let productListContents = '<table class="box-drawer__table"><tbody>';
 
     productJson.forEach(function (product) {
-      console.log('Product', product);
       if (product.quantity > 0) {
         let amount;
         if (type == 'subscription') {
@@ -697,8 +691,6 @@ let subscription = {
       }
     });
 
-    //console.log('Upsell JSON', upsellJson);
-
     // Process each upsell in the list
     if (upsellList != null) {
       upsellJson.forEach(function (product) {
@@ -715,10 +707,10 @@ let subscription = {
           });
         }
 
-        console.log('Plan ID', planId);
+        const upsellSubscription = document.querySelector('#upsell-subscription').value;
 
         // Add the product to the formatted array based on conditions
-        if (product.quantity > 0 && planId != null && type == 'subscription') {
+        if (product.quantity > 0 && planId != null && upsellSubscription == 'true') {
           // Add the product with its selling plan ID
           items.push({
             id: product.id,
@@ -735,8 +727,6 @@ let subscription = {
       });
     }
 
-    console.log('Products inc upsells', items);
-
     // Handle delivery date logic
     const datePicker = document.getElementById(this.selector.datePicker);
     let DeliveryDate = null;
@@ -746,7 +736,7 @@ let subscription = {
     } else {
       DeliveryDate = this.generateDeliveryDate();
     }
-    console.log('delivery date: ' + DeliveryDate);
+    console.log('Delivery date: ' + DeliveryDate);
 
     // Construct the final object to be returned
     if (DeliveryDate) {
@@ -977,7 +967,6 @@ class ProductButton extends HTMLElement {
         input.value = 1;
 
         if (this.dataset.upsell) {
-          console.log('upsell button clicked');
           // Manage product list in session storage
           let upsellList = sessionStorage.getItem('potsUpsellList');
           let upsellJson = JSON.parse(upsellList);
@@ -1131,7 +1120,7 @@ class handleCheckoutButton extends HTMLElement {
       } else {
         let products = subscription.generateProductArray();
         console.log('Products', products);
-        const addNewProducts = await updateCart(products);
+        //const addNewProducts = await updateCart(products);
       }
     });
   }
