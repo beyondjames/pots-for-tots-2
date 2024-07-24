@@ -1103,25 +1103,27 @@ class handleCheckoutButton extends HTMLElement {
     super();
 
     // Get a reference to the button within the element
-    const button = this.querySelector('button');
+    const buttons = this.querySelectorAll('button');
 
     // If no button is found, exit early
-    if (!button) return;
+    if (!buttons) return;
 
     // Add an event listener to the button
-    button.addEventListener('click', async () => {
-      const date = document.getElementById('delivery');
+    buttons.forEach((button) => {
+      button.addEventListener('click', async () => {
+        const date = document.getElementById('delivery');
 
-      // Check for the date picker
-      if (date && date.value == '') {
-        const message = document.getElementById('date_picker__message');
-        message.innerHTML = 'Please enter date to proceed';
-        message.classList.remove('hidden');
-      } else {
-        let products = subscription.generateProductArray();
-        console.log('Products', products);
-        const addNewProducts = await updateCart(products);
-      }
+        // Check for the date picker
+        if (date && date.value == '') {
+          const message = document.getElementById('date_picker__message');
+          message.innerHTML = 'Please enter date to proceed';
+          message.classList.remove('hidden');
+        } else {
+          let products = subscription.generateProductArray();
+          console.log('Products', products);
+          const addNewProducts = await updateCart(products);
+        }
+      });
     });
   }
 }
