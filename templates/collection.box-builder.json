@@ -28,7 +28,7 @@
         "products_per_page": 48,
         "columns_desktop": 3,
         "color_scheme": "",
-        "show_upsells": true,
+        "show_upsells": false,
         "allow_upsell_subscriptions": false,
         "upsell_heading": "You may also like",
         "upsell_description": "",
