@@ -973,16 +973,6 @@
         "padding_bottom": 60
       }
     },
-    "custom_image_banner_no_text_L4xAtn": {
-      "type": "custom-image-banner-no-text",
-      "disabled": true,
-      "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/Website_homepage_1.gif",
-        "image_width": "",
-        "title": "",
-        "link_url": ""
-      }
-    },
     "image_banner_zBhAPC": {
       "type": "image-banner",
       "blocks": {
@@ -1035,16 +1025,6 @@
         "show_text_below": true
       }
     },
-    "custom_liquid_ztgKqN": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<script src=\"https:\/\/widget.reviews.io\/badge-ribbon\/dist.js\"><\/script>\n<div class=\"centered-badge\">\n<div id=\"badge-ribbon\"><\/div>\n<\/div>\n<script>\n    reviewsBadgeRibbon(\"badge-ribbon\", {\n        store: \"www.potsfortots.co.uk\",\n        size: \"medium\",\n        \n        \n    });\n<\/script>\n\n<style>\n.centered-badge {\n}\n<\/style>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
     "171934271223d59424": {
       "type": "apps",
       "blocks": {
@@ -1086,9 +1066,7 @@
     "rich_text_KUiyN6",
     "custom_testimonials_pXPcd6",
     "custom_newsletter_titGVp",
-    "custom_image_banner_no_text_L4xAtn",
     "image_banner_zBhAPC",
-    "custom_liquid_ztgKqN",
     "171934271223d59424"
   ]
 }
