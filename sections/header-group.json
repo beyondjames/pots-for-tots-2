@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "name": "t:sections.header.name",
   "type": "header",
@@ -8,13 +17,21 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Sign up for 20% off your first 3 subscription orders",
-            "link": "https:\/\/potsfortots.co.uk\/pages\/sign-up"
+            "text": "Get 20% off your first 3 subscription orders:<strong> TOTS20 <\/strong>",
+            "link": "shopify:\/\/collections\/build-your-box"
+          }
+        },
+        "announcement_YyVH6J": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_YyVH6J"
       ],
       "settings": {
         "color_scheme": "",
