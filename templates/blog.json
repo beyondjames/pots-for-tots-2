@@ -1,1 +1,181 @@
-{"sections":{"image_banner_RUpzta":{"type":"image-banner","blocks":{"heading_Wajiif":{"type":"heading","settings":{"heading":"The Parent Hub","heading_size":"h0"}},"text_BQ8bAi":{"type":"text","settings":{"text":"We're here to guide you through the nutritional noise with expert advice from our Children’s Dietitian, plus we share some of our favourite recipes as well as support to make mealtimes that little bit easier.","text_style":"body"}},"buttons_Khh7Re":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_Wajiif","text_BQ8bAi","buttons_Khh7Re"],"settings":{"image":"shopify:\/\/shop_images\/PFT_Pattern_Background.png","image_overlay_opacity":0,"image_height":"medium","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"main":{"type":"main-blog","settings":{"layout":"grid","show_image":true,"image_height":"large","show_date":true,"show_author":false,"padding_top":60,"padding_bottom":60}}},"order":["image_banner_RUpzta","main"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "image_banner_WQ8aJM": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_edC7cr": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Parent Hub",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true
+          }
+        },
+        "text_d7Ttgy": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_hy3Kgn": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_edC7cr",
+        "text_d7Ttgy",
+        "buttons_hy3Kgn"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Mealtime_hacks.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_kKwKhn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_rxeBVd": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "We're here to guide you through the nutritional noise with expert advice from our Children’s Dietitian, plus we share some of our favourite recipes as well as support to make mealtimes that little bit easier.",
+            "heading_size": "h1"
+          }
+        },
+        "text_JwrcYU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're here to guide you through the nutritional noise with expert advice from our Children’s Dietitian, plus we share some of our favourite recipes as well as support to make mealtimes that little bit easier.<\/p>"
+          }
+        },
+        "button_phF6WN": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rxeBVd",
+        "text_JwrcYU",
+        "button_phF6WN"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "image_banner_RUpzta": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Wajiif": {
+          "type": "heading",
+          "settings": {
+            "heading": "The Parent Hub",
+            "heading_size": "h0",
+            "show_heading_shadow": false
+          }
+        },
+        "text_BQ8bAi": {
+          "type": "text",
+          "settings": {
+            "text": "We're here to guide you through the nutritional noise with expert advice from our Children’s Dietitian, plus we share some of our favourite recipes as well as support to make mealtimes that little bit easier.",
+            "text_style": "body"
+          }
+        },
+        "buttons_Khh7Re": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Wajiif",
+        "text_BQ8bAi",
+        "buttons_Khh7Re"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/PFT_Pattern_Background.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "large",
+        "show_date": true,
+        "show_author": false,
+        "padding_top": 8,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "image_banner_WQ8aJM",
+    "rich_text_kKwKhn",
+    "image_banner_RUpzta",
+    "main"
+  ]
+}
