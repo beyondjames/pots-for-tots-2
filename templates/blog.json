@@ -48,6 +48,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Mealtime_hacks.png",
+        "image_3": "shopify:\/\/shop_images\/box_at_door_1.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -59,7 +60,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": true
+        "show_text_below": false
       }
     },
     "rich_text_kKwKhn": {
