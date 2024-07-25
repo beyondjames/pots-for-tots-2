@@ -27,11 +27,19 @@
             "text": "FREE Shipping with 24+ meals 🚚",
             "link": ""
           }
+        },
+        "announcement_XckcmE": {
+          "type": "announcement",
+          "settings": {
+            "text": "Up to 15% off NEW bundles!",
+            "link": "shopify:\/\/collections\/bundles"
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
-        "announcement_YyVH6J"
+        "announcement_YyVH6J",
+        "announcement_XckcmE"
       ],
       "settings": {
         "color_scheme": "",
