@@ -17,14 +17,14 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Get 20% off your first 3 subscription orders:<strong> TOTS20 <\/strong>",
+            "text": "Get 20% off your first 3 subscription orders: TOTS20",
             "link": "shopify:\/\/collections\/build-your-box"
           }
         },
         "announcement_YyVH6J": {
           "type": "announcement",
           "settings": {
-            "text": "Welcome to our store",
+            "text": "FREE Shipping with 24+ meals 🚚",
             "link": ""
           }
         }
@@ -38,7 +38,7 @@
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": false,
-        "change_slides_speed": 5,
+        "change_slides_speed": 3,
         "enable_country_selector": false,
         "enable_language_selector": false
       }
