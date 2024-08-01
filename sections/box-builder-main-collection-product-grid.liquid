@@ -193,6 +193,7 @@
               data-id="{{ section.id }}"
             >
               {%- for product in collection.products -%}
+                {% capture wlm_check %}{% include 'wlm-product' with product %}{% endcapture %}{% unless wlm_check contains "Liquid error" %}{% include 'wlm-product' with product %}{% endunless %}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
                   {%- assign lazy_load = true -%}
