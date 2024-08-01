@@ -36,8 +36,7 @@
       <script src="{{ 'animations.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
 
-    {% unless request.design_mode %}{% include 'wlm-head' %}{% endunless %}
-{{ content_for_header }}
+    {{ content_for_header }}
 
     {%- liquid
       assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
@@ -307,7 +306,7 @@
     {%- sections 'header-group' -%}
 
     <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
-      {% comment %}{{ content_for_layout }}{% endcomment %}{% include 'wlm-body' %}
+      {{ content_for_layout }}
     </main>
 
     {%- sections 'footer-group' -%}
