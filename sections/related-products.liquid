@@ -34,7 +34,7 @@
         role="list"
       >
         {% for recommendation in recommendations.products %}
-          {% capture wlm_check %}{% include 'wlm-product' with product %}{% endcapture %}{% unless wlm_check contains "Liquid error" %}{% include 'wlm-product' with product %}{% endunless %}
+          {% capture wlm_check %}{% include 'wlm-product' with recommendation %}{% endcapture %}{% unless wlm_check contains "Liquid error" %}{% include 'wlm-product' with recommendation %}{% endunless %}
           <li class="grid__item">
             {% render 'card-product',
               card_product: recommendation,
