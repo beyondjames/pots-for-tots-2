@@ -1,13 +1,7 @@
 {%- assign w_continue = 'no' -%}
-{% assign wlmHideItem_Product = false %}{% assign wlmLockedTags253999 = false %}
-{% for tag in customer.tags %}
-{% if tag == 'WLMTest' %}{% assign wlmLockedTags253999 = true %}{% endif %}
-{% endfor %}
-
-{% if wlm-product.id == 6822687277222 %} 
+{% assign wlmHideItem_Product = false %}{% if wlm-product.id == 6822687277222 %} 
 {% if customer %}
-{% if wlmLockedTags253999 %}{% assign  wlmHideItem_Product = true %}{% else %}{% assign wlmHideItem_Product = false %}{% endif %}
-{% endif %}
+{% assign  wlmHideItem_Product = true %}{% endif %}
 {% endif %}
 
 

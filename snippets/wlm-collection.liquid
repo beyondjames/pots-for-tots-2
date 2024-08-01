@@ -1,13 +1,5 @@
 {%- assign w_continue = 'no' -%}
-{% assign wlmHideItem_Collection = false %}{% assign wlmLockedTags253999 = false %}
-
-
-{% assign wlmLockedTags253999 = false %}
-{% for tag in customer.tags %}
-{% if tag == 'WLMTest' %}{% assign wlmLockedTags253999 = true %}{% endif %}
-{% endfor %}
-
-
+{% assign wlmHideItem_Collection = false %}
 
 {% if wlmHideItem_Collection == true %}{% continue %}{% endif %}
 
