@@ -1,1 +1,18 @@
 {% assign wlmHideLinks=false %}
+{% assign wlmHideLinks=false %}
+{% if customer %}
+{% if wlmLockedTags253999 %}{% assign wlmHideLinks = true %}
+{% else %}{% assign wlmHideLinks = false %}
+{% endif %}
+{% if wlmHideLinks %}
+<script type='text/javascript'>
+wlm.arrHideLinks.push('a[href$="/products/pasta-bolognese"],a[href*="/products/pasta-bolognese/"],a[href*="/products/pasta-bolognese?"],a[href*="/products/pasta-bolognese#"]');
+</script><style type='text/css' class='wlm-auto-hl-styles'>a[href$="/products/pasta-bolognese"],a[href*="/products/pasta-bolognese/"],a[href*="/products/pasta-bolognese?"],a[href*="/products/pasta-bolognese#"]{ display: none !important; }</style>{% endif %}
+{% endif %}
+{% if wlmHideLinks %}
+<script type='text/javascript'>
+wlm.arrHideLinks.push('a[href$="/products/pasta-bolognese"],a[href*="/products/pasta-bolognese/"],a[href*="/products/pasta-bolognese?"],a[href*="/products/pasta-bolognese#"]');
+</script><style type='text/css' class='wlm-auto-hl-styles'>a[href$="/products/pasta-bolognese"],a[href*="/products/pasta-bolognese/"],a[href*="/products/pasta-bolognese?"],a[href*="/products/pasta-bolognese#"]{ display: none !important; }</style>
+{% endif %}
+
+
