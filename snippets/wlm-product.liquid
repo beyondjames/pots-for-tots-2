@@ -1,5 +1,10 @@
 {%- assign w_continue = 'no' -%}
-{% assign wlmHideItem_Product = false %}
+{% assign wlmHideItem_Product = false %}{% assign wlmLockedTags254617 = false %}
+{% for tag in customer.tags %}
+{% if tag == 'wholesale' %}{% assign wlmLockedTags254617 = true %}{% endif %}
+{% endfor %}
+
+
 
 {% if wlmHideItem_Product == true %}{% continue %}{% endif %}
 
