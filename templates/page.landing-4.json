@@ -42,7 +42,7 @@
         "text_DXDngb": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up for your chance to WIN an £150 bundle of nutritionally balanced Pots for Tots meals and snack-tastic bites, plus a range of organic fruit juices and snacks from Pip Organic. This competition ends on Monday 5th August - good luck!*<\/p>"
+            "text": "<p>Sign up for your chance to WIN an £150 bundle of nutritionally balanced Pots for Tots meals and snack-tastic bites, plus a range of organic fruit juices and snacks from Pip Organic. This competition ends on Monday 5th August - good luck!*<\/p><p><strong>This competition has now closed and a winner has been chosen.<\/strong><\/p>"
           }
         },
         "button_GebReX": {
@@ -85,6 +85,7 @@
       "block_order": [
         "klaviyo_email_marketing_sms_form_embed_block_FY7pAr"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
