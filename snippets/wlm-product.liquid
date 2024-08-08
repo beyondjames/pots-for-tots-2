@@ -1,7 +1,7 @@
 {%- assign w_continue = 'no' -%}
-{% assign wlmHideItem_Product = false %}{% assign wlmLockedTags255425 = false %}
+{% assign wlmHideItem_Product = false %}{% assign wlmLockedTags255426 = false %}
 {% for tag in customer.tags %}
-{% if tag == 'wholesale' %}{% assign wlmLockedTags255425 = true %}{% endif %}
+{% if tag == 'wholesale' %}{% assign wlmLockedTags255426 = true %}{% endif %}
 {% endfor %}
 
 
@@ -10,7 +10,7 @@
                             {% for c in wlm-product.collections %}
 {% if c.id == 427974492418 or c.id == 424203256066 %} 
 {% if customer %}
-{% if wlmLockedTags255425 %}{% assign  wlmHideItem_Product = true %}{% else %}{% assign wlmHideItem_Product = false %}{% endif %}
+{% if wlmLockedTags255426 %}{% assign  wlmHideItem_Product = true %}{% else %}{% assign wlmHideItem_Product = false %}{% endif %}
 {% endif %}
 
 {% endif %}
