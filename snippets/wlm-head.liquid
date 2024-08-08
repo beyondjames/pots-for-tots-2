@@ -17,9 +17,9 @@
 {% if wlmEnabled %}
 <style type="text/css">.wlm-message-pnf{text-align:center;}#wlm-pwd-form {padding: 30px 0;text-align: center}#wlm-wrapper,.wlm-form-holder {display: inline-block}#wlm-pwd-error {display: none;color: #fb8077;text-align: left}#wlm-pwd-error.wlm-error {border: 1px solid #fb8077}#wlm-pwd-form-button {display: inline-block!important;height: auto!important;padding: 8px 15px!important;background: #777;border-radius: 3px!important;color: #fff!important;text-decoration: none!important;vertical-align: top}.wlm-instantclick-fix,.wlm-item-selector {position: absolute;z-index: -999;display: none;height: 0;width: 0;font-size: 0;line-height: 0}</style>
 
-{% assign wlmLockedTags255424 = false %}
+{% assign wlmLockedTags255425 = false %}
 {% for tag in customer.tags %}
-{% if tag == 'wholesale' %}{% assign wlmLockedTags255424 = true %}{% endif %}
+{% if tag == 'wholesale' %}{% assign wlmLockedTags255425 = true %}{% endif %}
 {% endfor %}
 
 {% unless wlmLockON or wlmSuperPage or template == 'customers/register' %}
@@ -42,7 +42,7 @@
 {% endif %}
 {% if wlmLockedContent %}
 {% if customer %}
-{% if wlmLockedTags255424 %}{% assign wlmLockON = true %}{% else %}{% assign wlmLockON = false %}{% endif %}
+{% if wlmLockedTags255425 %}{% assign wlmLockON = true %}{% else %}{% assign wlmLockON = false %}{% endif %}
 {% if wlmLockON %}
 {% capture wlmPnfHead %}Page not found{% endcapture %}
 {% capture wlmPnfMsg %}<p>Sorry, we couldn't find this page.</p>{% endcapture %}

@@ -1,0 +1,22 @@
+{%- assign w_continue = 'no' -%}
+{% assign wlmHideItem_Collection = false %}{% assign wlmLockedTags255425 = false %}
+
+
+{% assign wlmLockedTags255425 = false %}
+{% for tag in customer.tags %}
+{% if tag == 'wholesale' %}{% assign wlmLockedTags255425 = true %}{% endif %}
+{% endfor %}
+
+
+{% if wlm-collection.id == 427974492418 or wlm-collection.id == 424203256066  %}
+{% if customer %}
+{% if wlmLockedTags255425 %}{% assign wlmHideItem_Collection = true %} {% else %} {% assign wlmHideItem_Collection = false %} 
+{% endif %}
+{% endif %}
+{% endif %}
+
+
+
+{% if wlmHideItem_Collection == true %}{% continue %}{% endif %}
+
+{%- if wlm_is_render == 'yes' -%}{{- w_continue -}}{%-endif-%}
