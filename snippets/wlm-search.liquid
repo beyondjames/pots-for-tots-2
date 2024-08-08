@@ -1,7 +1,7 @@
 {%- assign w_continue = 'no' -%}
-{% assign wlmHideItem_Search = false %}{% assign wlmLockedTags254618 = false %}
+{% assign wlmHideItem_Search = false %}{% assign wlmLockedTags255421 = false %}
 {% for tag in customer.tags %}
-{% if tag == 'wholesale' %}{% assign wlmLockedTags254618 = true %}{% endif %}
+{% if tag == 'wholesale' %}{% assign wlmLockedTags255421 = true %}{% endif %}
 {% endfor %}
 
 
@@ -11,7 +11,7 @@
 
     {% if c.id == 427974492418 or c.id == 424203256066 %}
 {% if customer %}
-{% if wlmLockedTags254618 %}{% assign wlmHideItem_Search = true %}
+{% if wlmLockedTags255421 %}{% assign wlmHideItem_Search = true %}
 {% else %}{% assign wlmHideItem_Search = false %}
 {% endif %}
 {% endif %}
