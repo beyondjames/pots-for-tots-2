@@ -24,6 +24,7 @@ let subscription = {
     variants: '#card__variants', // Elements for product variant selection
     minimumProducts: '#productCount', // Element displaying minimum product count warning
     checkoutButton: '#checkoutButton', // Checkout button
+    modalCheckoutButton: '.modal-checkout-button', // modal trigger Checkout button
     cardModal: '#cardModal', // Modal for displaying product details
     frequencySection: '.frequency__selector', // Section for selecting subscription frequency
     progressBar: '#progress-bar-indicator', // Progress bar element
@@ -379,6 +380,7 @@ let subscription = {
     // Get references to elements within the review box modal
     const modalList = document.querySelector(this.selector.productModalList);
     const button = document.querySelector(this.selector.checkoutButton);
+    const modalButton = document.querySelector(this.selector.modalCheckoutButton);
     const countWarning = document.querySelector(this.selector.minimumProducts);
 
     // Retrieve product data from session storage
@@ -405,12 +407,19 @@ let subscription = {
       }
       // Enable the checkout button
       button.disabled = false;
+      // Enable the modal checkout button if it exists
+      if (modalButton) {
+        modalButton.disabled = false;
+      }
     } else {
       // Display the warning message with the required count
       countWarning.textContent = `Must add a minimum of 8 meals, please add ${count} more`;
       countWarning.classList.remove('hidden');
       // Disable the checkout button
       button.disabled = true;
+      // Disable the modal checkout button if it exists
+      if (modalButton) {
+        modalButton.disabled = true
     }
 
     // Build the product list HTML
