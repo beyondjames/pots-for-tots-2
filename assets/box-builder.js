@@ -419,7 +419,8 @@ let subscription = {
       button.disabled = true;
       // Disable the modal checkout button if it exists
       if (modalButton) {
-        modalButton.disabled = true
+        modalButton.disabled = true;
+      }
     }
 
     // Build the product list HTML
