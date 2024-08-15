@@ -1,3 +1,23 @@
+// Testing the ReCharge JavaScript SDK
+async function getReChargeSettings() {
+  const settings = await recharge.cdn.getCDNStoreSettings();
+  console.log('ReCharge Settings', settings);
+}
+
+async function getReChargeProducts() {
+  const products = await recharge.cdn.getCDNProducts();
+  console.log('ReCharge Products', products);
+}
+
+async function getReChargeProduct(externalProductId) {
+  const product = await recharge.cdn.getCDNProduct(externalProductId);
+  console.log('ReCharge Product', product);
+}
+
+// getReChargeSettings();
+// getReChargeProducts();
+// getReChargeProduct('8617321988354');
+
 let subscription = {
   state: {
     // Minimum and maximum allowed items in the box
@@ -108,6 +128,7 @@ let subscription = {
               // Add products to array
               productList.push({
                 id: element.dataset.index,
+                productId: element.dataset.productId,
                 quantity: element.value,
                 price: element.dataset.price,
                 title: element.dataset.title,
@@ -119,6 +140,7 @@ let subscription = {
               // Add products to array
               productList.push({
                 id: element.dataset.index,
+                productId: element.dataset.productId,
                 quantity: element.value,
                 price: element.dataset.price,
                 title: element.dataset.title,
@@ -169,6 +191,7 @@ let subscription = {
             // Add products to array
             upsellList.push({
               id: element.dataset.index,
+              productId: element.dataset.productId,
               quantity: element.value,
               price: element.dataset.price,
               title: element.dataset.title,
@@ -651,6 +674,7 @@ let subscription = {
 
   // Generate the products to send to cart
   generateProductArray: function () {
+    console.log('Generating product array');
     // Create an empty array to hold the formatted product items
     let items = [];
 
@@ -688,20 +712,24 @@ let subscription = {
       if (product.quantity > 0 && planId != null && type == 'subscription') {
         // Add the product with its selling plan ID
         items.push({
-          id: product.id,
+          collectionId: '268279972006',
+          externalProductId: product.productId,
+          externalVariantId: product.id,
           quantity: parseInt(product.quantity),
-          selling_plan: planId,
+          sellingPlan: planId,
         });
       } else if (product.quantity > 0) {
         // Add the product without a selling plan
         items.push({
-          id: product.id,
+          collectionId: '268279972006',
+          externalProductId: product.productId,
+          externalVariantId: product.id,
           quantity: parseInt(product.quantity),
         });
       }
     });
 
-    // Process each upsell in the list
+    // Process upsell subscriptions
     if (upsellList != null) {
       upsellJson.forEach(function (product) {
         // Initialize a variable to hold the selling plan ID (if applicable)
@@ -723,43 +751,73 @@ let subscription = {
         if (product.quantity > 0 && planId != null && upsellSubscription == 'true') {
           // Add the product with its selling plan ID
           items.push({
-            id: product.id,
+            collectionId: '268279972006',
+            externalProductId: product.productId,
+            externalVariantId: product.id,
             quantity: parseInt(product.quantity),
-            selling_plan: planId,
-          });
-        } else if (product.quantity > 0) {
-          // Add the product without a selling plan
-          items.push({
-            id: product.id,
-            quantity: parseInt(product.quantity),
+            sellingPlan: planId,
           });
         }
       });
     }
 
-    // Handle delivery date logic
-    const datePicker = document.getElementById(this.selector.datePicker);
-    let DeliveryDate = null;
+    const bundle = {
+      externalProductId: '8771506143490',
+      externalVariantId: '45411490791682',
+      selections: items,
+    };
 
-    if (datePicker) {
-      DeliveryDate = this.handleDeliveryDate();
-    } else {
-      DeliveryDate = this.generateDeliveryDate();
-    }
-    console.log('Delivery date: ' + DeliveryDate);
+    // Check to see if the bundle is valid
+    const isValid = recharge.bundle.validateDynamicBundle(bundle);
 
-    // Construct the final object to be returned
-    if (DeliveryDate) {
-      return {
-        items: items,
-        attributes: {
-          'Delivery Date': DeliveryDate,
-        },
-      };
+    if (isValid === true) {
+      // Do on valid
+      const bundleItems = recharge.bundle.getDynamicBundleItems(bundle, 'dynamic-box-test');
+      console.log('Bundle Items:', bundleItems);
+
+      // Process one time upsells
+      if (upsellList != null) {
+        upsellJson.forEach(function (product) {
+          const upsellSubscription = document.querySelector('#upsell-subscription').value;
+
+          // Add the product to the formatted array based on conditions
+          if (product.quantity > 0 && upsellSubscription == 'false') {
+            // Add the product without a selling plan
+            bundleItems.push({
+              id: product.id,
+              quantity: parseInt(product.quantity),
+            });
+          }
+        });
+      }
+
+      // Handle delivery date logic
+      const datePicker = document.getElementById(this.selector.datePicker);
+      let DeliveryDate = null;
+
+      if (datePicker) {
+        DeliveryDate = this.handleDeliveryDate();
+      } else {
+        DeliveryDate = this.generateDeliveryDate();
+      }
+      console.log('Delivery date: ' + DeliveryDate);
+
+      // Construct the final object to be returned
+      if (DeliveryDate) {
+        return {
+          items: bundleItems,
+          attributes: {
+            'Delivery Date': DeliveryDate,
+          },
+        };
+      } else {
+        return {
+          items: bundleItems,
+        };
+      }
     } else {
-      return {
-        items: items,
-      };
+      console.log('Bundle is invalid:', isValid);
+      // Do something with the error
     }
   },
 

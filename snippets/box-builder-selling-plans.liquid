@@ -89,6 +89,7 @@
                     aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
                     id="Quantity-{{ variant.id }}"
                     data-index="{{ variant.id }}"
+                    data-product-id="{{ card_product.id }}"
                     data-price="{{ variant.price }}"
                     data-title="{{ card_product.title }}"
                     data-variant-title="{{ variant.title }}"
