@@ -769,7 +769,7 @@
             "item_shadow_size": "10px",
             "item_shadow_colour": "#b6b6b6",
             "enable_rich_snippets": true,
-            "disable_same_customer": false,
+            "disable_same_customer": true,
             "logo_colour": "var(--logo-inverted)"
           }
         }
