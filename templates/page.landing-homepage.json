@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "image_banner_FUfBNH": {
@@ -15,18 +24,21 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Build A Box",
-            "button_link_1": "shopify://collections/build-your-box",
+            "button_link_1": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary_1": false,
             "button_label_2": "Bundles",
-            "button_link_2": "shopify://collections/bundles",
+            "button_link_2": "shopify:\/\/collections\/bundles",
             "button_style_secondary_2": false
           }
         }
       },
-      "block_order": ["heading_YnHzXV", "buttons_bmUpB4"],
+      "block_order": [
+        "heading_YnHzXV",
+        "buttons_bmUpB4"
+      ],
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2024-06-13_at_12.34.57.png",
-        "image_3": "shopify://shop_images/Group_hero_meals_only_square.png",
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-06-13_at_12.34.57.png",
+        "image_3": "shopify:\/\/shop_images\/Group_hero_meals_only_square.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -47,12 +59,14 @@
         "badge_L86zaM": {
           "type": "badge",
           "settings": {
-            "badge_embed": "<script src=\"https://widget.reviews.io/badge-ribbon/dist.js\"></script>\n<div id=\"badge-ribbon\"></div>\n<script>\n    reviewsBadgeRibbon(\"badge-ribbon\", {\n        store: \"www.potsfortots.co.uk\",\n        size: \"medium\",\n        \n        mono: true,\n    });\n</script>",
+            "badge_embed": "<script src=\"https:\/\/widget.reviews.io\/badge-ribbon\/dist.js\"><\/script>\n<div id=\"badge-ribbon\"><\/div>\n<script>\n    reviewsBadgeRibbon(\"badge-ribbon\", {\n        store: \"www.potsfortots.co.uk\",\n        size: \"medium\",\n        \n        mono: true,\n    });\n<\/script>",
             "badge_width": 240
           }
         }
       },
-      "block_order": ["badge_L86zaM"],
+      "block_order": [
+        "badge_L86zaM"
+      ],
       "disabled": true,
       "settings": {
         "desktop_content_position": "center",
@@ -70,20 +84,22 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Build a box",
-            "button_link_1": "shopify://collections/build-your-box",
+            "button_link_1": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary_1": false,
             "button_label_2": "Bundles",
-            "button_link_2": "shopify://collections/bundles",
+            "button_link_2": "shopify:\/\/collections\/bundles",
             "button_style_secondary_2": false
           }
         }
       },
-      "block_order": ["buttons_jft8ea"],
+      "block_order": [
+        "buttons_jft8ea"
+      ],
       "disabled": true,
       "settings": {
-        "image_desktop": "shopify://shop_images/Website_homepage_hero_landscape.png",
+        "image_desktop": "shopify:\/\/shop_images\/Website_homepage_hero_landscape.png",
         "image_height": "large",
-        "image_mobile": "shopify://shop_images/Hero_group_shot.png",
+        "image_mobile": "shopify:\/\/shop_images\/Hero_group_shot.png",
         "title": "New meals and bundles!",
         "title_size": "large",
         "link_url": "",
@@ -94,12 +110,12 @@
       "type": "custom-image-banner-text",
       "disabled": true,
       "settings": {
-        "image_desktop": "shopify://shop_images/PotsforTots0358_1.jpg",
+        "image_desktop": "shopify:\/\/shop_images\/PotsforTots0358_1.jpg",
         "image_height": "medium",
-        "image_mobile": "shopify://shop_images/PotsforTots0358_1_b4086c7e-abc7-4116-9941-5d997f6fdc45.jpg",
+        "image_mobile": "shopify:\/\/shop_images\/PotsforTots0358_1_b4086c7e-abc7-4116-9941-5d997f6fdc45.jpg",
         "title": "Mealtimes made easy",
         "title_size": "medium",
-        "link_url": "shopify://collections/build-your-box",
+        "link_url": "shopify:\/\/collections\/build-your-box",
         "section_color_scheme": "scheme-4"
       }
     },
@@ -107,7 +123,7 @@
       "type": "custom-image-banner-no-text",
       "disabled": true,
       "settings": {
-        "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
+        "image_desktop": "shopify:\/\/shop_images\/trustpilot-average-rating-banner.jpg",
         "image_width": "400",
         "title": "Trustpilot",
         "link_url": ""
@@ -119,7 +135,7 @@
         "text_djgTQN": {
           "type": "text",
           "settings": {
-            "text": "<p>Dietitian-approved nutritious meals, handmade by our chefs and delivered to your door. The convenience you need, without the compromise.</p>",
+            "text": "<p>Dietitian-approved nutritious meals, handmade by our chefs and delivered to your door. The convenience you need, without the compromise.<\/p>",
             "text_style": "subtitle"
           }
         },
@@ -127,15 +143,18 @@
           "type": "button",
           "settings": {
             "button_label": "Shop now",
-            "button_link": "shopify://collections/build-your-box",
+            "button_link": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary": false
           }
         }
       },
-      "block_order": ["text_djgTQN", "button_XjJAU8"],
+      "block_order": [
+        "text_djgTQN",
+        "button_XjJAU8"
+      ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/New_meals_-_email_assets.png",
+        "image": "shopify:\/\/shop_images\/New_meals_-_email_assets.png",
         "height": "medium",
         "desktop_image_width": "large",
         "image_heading": "Meal times made easy!",
@@ -164,7 +183,7 @@
         "text_nd9aRh": {
           "type": "text",
           "settings": {
-            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.</p>",
+            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.<\/p>",
             "text_style": "body"
           }
         },
@@ -172,15 +191,19 @@
           "type": "button",
           "settings": {
             "button_label": "GET STARTED",
-            "button_link": "shopify://collections/build-your-box",
+            "button_link": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary": false
           }
         }
       },
-      "block_order": ["heading_eTFYPt", "text_nd9aRh", "button_Qr6PMP"],
+      "block_order": [
+        "heading_eTFYPt",
+        "text_nd9aRh",
+        "button_Qr6PMP"
+      ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/IMG_1826_2.jpg",
+        "image": "shopify:\/\/shop_images\/IMG_1826_2.jpg",
         "height": "adapt",
         "desktop_image_width": "large",
         "image_heading": "How it works",
@@ -202,12 +225,12 @@
         "slide_ypEX3j": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Meals_in_freezer.jpg",
+            "image": "shopify:\/\/shop_images\/Meals_in_freezer.jpg",
             "heading": "Convenience without compromise",
             "heading_size": "h1",
             "subheading": "Handmade, dietitian-aproved, REAL children's food delivered to your door. Ready to eat in minutes.",
             "button_label": "GET STARTED",
-            "link": "shopify://collections/build-your-box",
+            "link": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary": false,
             "box_align": "middle-center",
             "show_text_box": true,
@@ -223,12 +246,12 @@
         "slide_AmtVPH": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/6B9A1B4B-8D11-451B-B284-904B320B809E_251ca6b1-fa04-4f04-bd80-b7fa5b23d2d4.jpg",
+            "image": "shopify:\/\/shop_images\/6B9A1B4B-8D11-451B-B284-904B320B809E_251ca6b1-fa04-4f04-bd80-b7fa5b23d2d4.jpg",
             "heading": "\"Just like the meals I cook\"",
             "heading_size": "h1",
             "subheading": "'A lifesaver to know I have some in the freezer when I need them - I have zero guilt serving them up to my girls!'",
             "button_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box",
+            "link": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary": false,
             "box_align": "bottom-right",
             "show_text_box": true,
@@ -244,12 +267,12 @@
         "slide_nMjUpw": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/PotsforTots0281_copy.jpg",
+            "image": "shopify:\/\/shop_images\/PotsforTots0281_copy.jpg",
             "heading": "Mealtimes made easy!",
             "heading_size": "h1",
             "subheading": "Dietitian-approved, nutritious children's meals, handmade by our chefs and delivered to your door. The convenience you need, without the compromise.",
             "button_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box",
+            "link": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary": false,
             "box_align": "bottom-left",
             "show_text_box": true,
@@ -257,7 +280,7 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-2",
             "text_alignment_mobile": "center",
-            "image_badge": "shopify://shop_images/M_B_and_LBP_Awards.png",
+            "image_badge": "shopify:\/\/shop_images\/M_B_and_LBP_Awards.png",
             "image_badge_width": "200",
             "image_badge_vertical_position": "bottom",
             "image_badge_horizontal_position": "right"
@@ -267,12 +290,12 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Homepage_header_1500.png",
+            "image": "shopify:\/\/shop_images\/Homepage_header_1500.png",
             "heading": "Try our new Simple Range",
             "heading_size": "h1",
             "subheading": "Perfect for those toddlers who are going through a fussy eating stage or babies who need an extra step to move on from purées.",
             "button_label": "SHOP NOW",
-            "link": "shopify://products/simple-meals-fussy-eating-e-book",
+            "link": "shopify:\/\/products\/simple-meals-fussy-eating-e-book",
             "button_style_secondary": false,
             "box_align": "middle-right",
             "show_text_box": true,
@@ -286,7 +309,12 @@
           }
         }
       },
-      "block_order": ["slide_ypEX3j", "slide_AmtVPH", "slide_nMjUpw", "slide_aLnmxy"],
+      "block_order": [
+        "slide_ypEX3j",
+        "slide_AmtVPH",
+        "slide_nMjUpw",
+        "slide_aLnmxy"
+      ],
       "disabled": true,
       "settings": {
         "layout": "full_bleed",
@@ -307,13 +335,15 @@
           "settings": {
             "title": "How it works",
             "title_size": "h1",
-            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.</p>",
+            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.<\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": ["column_PcF4ba"],
+      "block_order": [
+        "column_PcF4ba"
+      ],
       "disabled": true,
       "settings": {
         "title": "",
@@ -327,7 +357,7 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "",
-        "image": "shopify://shop_images/PFT_Pattern_Background.png",
+        "image": "shopify:\/\/shop_images\/PFT_Pattern_Background.png",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -340,63 +370,68 @@
         "column_QDQrVz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Italian_chicken_pasta.png",
+            "image": "shopify:\/\/shop_images\/Italian_chicken_pasta.png",
             "title": "NEW! Italian-Style Chicken & Tomato Pasta",
             "title_size": "h2",
-            "text": "<p>£4.65</p>",
+            "text": "<p>£4.65<\/p>",
             "link_label": "Create a box",
-            "link": "shopify://collections/build-your-box"
+            "link": "shopify:\/\/collections\/build-your-box"
           }
         },
         "column_XgNy9B": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Autumnal_Squash_and_Potato_Bake_1.png",
+            "image": "shopify:\/\/shop_images\/Autumnal_Squash_and_Potato_Bake_1.png",
             "title": "Autumnal Squash and Potato Bake",
             "title_size": "h2",
-            "text": "<p>£4.60</p>",
+            "text": "<p>£4.60<\/p>",
             "link_label": "Create a box",
-            "link": "shopify://collections/build-your-box"
+            "link": "shopify:\/\/collections\/build-your-box"
           }
         },
         "column_FNaUJd": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Chicken_Korma_19b454c2-4f54-42ff-b410-86630652dffb.png",
+            "image": "shopify:\/\/shop_images\/Chicken_Korma_19b454c2-4f54-42ff-b410-86630652dffb.png",
             "title": "Mild Chicken Korma",
             "title_size": "h2",
-            "text": "<p>£4.65</p>",
+            "text": "<p>£4.65<\/p>",
             "link_label": "Create a box",
-            "link": "shopify://collections/build-your-box"
+            "link": "shopify:\/\/collections\/build-your-box"
           }
         },
         "column_Yc6brM": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Cheesy_veg_bite.png",
+            "image": "shopify:\/\/shop_images\/Cheesy_veg_bite.png",
             "title": "Cheesy Veg Bites",
             "title_size": "h2",
-            "text": "<p>£5.29</p>",
+            "text": "<p>£5.29<\/p>",
             "link_label": "Create a box",
-            "link": "shopify://collections/build-your-box"
+            "link": "shopify:\/\/collections\/build-your-box"
           }
         }
       },
-      "block_order": ["column_QDQrVz", "column_XgNy9B", "column_FNaUJd", "column_Yc6brM"],
+      "block_order": [
+        "column_QDQrVz",
+        "column_XgNy9B",
+        "column_FNaUJd",
+        "column_Yc6brM"
+      ],
       "settings": {
         "title": "Meals and snacks made for your little ones",
         "heading_size": "h1",
-        "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, REAL children's meals. Frozen and ready to eat.</p>",
+        "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, REAL children's meals. Frozen and ready to eat.<\/p>",
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "CREATE A BOX",
-        "button_link": "shopify://collections/build-your-box",
+        "button_link": "shopify:\/\/collections\/build-your-box",
         "color_scheme": "scheme-1",
-        "image": "shopify://shop_images/Recycled_background_medium_res.png",
-        "image_mobile": "shopify://shop_images/Recycled_background_600px.png",
+        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
+        "image_mobile": "shopify:\/\/shop_images\/Recycled_background_600px.png",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 60,
@@ -417,7 +452,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>\"Our child testers really enjoyed these meals - especially the tomato-y Bolognese with star pasta, and the fish pie - they really did lick the bowl.\"</p><p><strong>Evening Standard</strong></p>"
+            "text": "<p>\"Our child testers really enjoyed these meals - especially the tomato-y Bolognese with star pasta, and the fish pie - they really did lick the bowl.\"<\/p><p><strong>Evening Standard<\/strong><\/p>"
           }
         },
         "button_4yjM8i": {
@@ -433,7 +468,11 @@
           }
         }
       },
-      "block_order": ["heading_KWUAiH", "text_khDxDM", "button_4yjM8i"],
+      "block_order": [
+        "heading_KWUAiH",
+        "text_khDxDM",
+        "button_4yjM8i"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -449,49 +488,49 @@
         "brand_gqPMCQ": {
           "type": "brand",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2023-02-16_at_09.51.29_779547c2-7d20-426c-822b-337c42d554aa.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2023-02-16_at_09.51.29_779547c2-7d20-426c-822b-337c42d554aa.png",
             "title": "Vogue"
           }
         },
         "brand_Rjye8N": {
           "type": "brand",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2022-03-14_at_10.40.53.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2022-03-14_at_10.40.53.png",
             "title": "Baby"
           }
         },
         "brand_VM8Qce": {
           "type": "brand",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2022-02-21_at_21.04.21.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2022-02-21_at_21.04.21.png",
             "title": "London Evening Standard"
           }
         },
         "brand_RHKbwy": {
           "type": "brand",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2022-01-28_at_12.59.54.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2022-01-28_at_12.59.54.png",
             "title": "Absolutely Mama"
           }
         },
         "brand_qqBDnD": {
           "type": "brand",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2022-01-28_at_12.58.31.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2022-01-28_at_12.58.31.png",
             "title": "Fabulous"
           }
         },
         "brand_w8dcaP": {
           "type": "brand",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2022-01-28_at_12.54.35.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2022-01-28_at_12.54.35.png",
             "title": "Sheerluxe"
           }
         },
         "brand_JzaxTa": {
           "type": "brand",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2022-01-28_at_12.57.19.png",
+            "image": "shopify:\/\/shop_images\/Screenshot_2022-01-28_at_12.57.19.png",
             "title": "MyBaba"
           }
         }
@@ -519,13 +558,15 @@
           "settings": {
             "title": "Subscribe today and save 10% on EVERY order!",
             "title_size": "h2",
-            "text": "<p>Our Pots for Tots members get 10% off for life. So sign up for a subscription today and enjoy 10% off every order. You can choose to have your frozen meals delivered weekly, fortnightly or monthly and you can skip, pause or cancel anytime. You're in control!</p>",
+            "text": "<p>Our Pots for Tots members get 10% off for life. So sign up for a subscription today and enjoy 10% off every order. You can choose to have your frozen meals delivered weekly, fortnightly or monthly and you can skip, pause or cancel anytime. You're in control!<\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
-      "block_order": ["column_heFfGf"],
+      "block_order": [
+        "column_heFfGf"
+      ],
       "disabled": true,
       "settings": {
         "title": "",
@@ -537,9 +578,9 @@
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/build-your-box",
+        "button_link": "shopify:\/\/collections\/build-your-box",
         "color_scheme": "",
-        "image": "shopify://shop_images/PFT_Pattern_Background.png",
+        "image": "shopify:\/\/shop_images\/PFT_Pattern_Background.png",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -552,38 +593,42 @@
         "row_mKmVfb": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/image00031_VSCO.jpg",
+            "image": "shopify:\/\/shop_images\/image00031_VSCO.jpg",
             "caption": "",
             "heading": "How it works",
-            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can pause, skip or switch meals in every order. Alternatively choose a one-off delivery. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.</p>",
+            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can pause, skip or switch meals in every order. Alternatively choose a one-off delivery. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.<\/p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://collections/build-your-box"
+            "button_link": "shopify:\/\/collections\/build-your-box"
           }
         },
         "row_qTXNyd": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
+            "image": "shopify:\/\/shop_images\/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
             "caption": "",
             "heading": "Our mission",
-            "text": "<p>We want to make children's mealtimes easy and convenient, as well as ensuring young children grow up eating nutritious food for every meal. Our aim is to liberate busy parents like you - we'll do the cooking, giving you precious time back to spend with their family and friends.</p>",
+            "text": "<p>We want to make children's mealtimes easy and convenient, as well as ensuring young children grow up eating nutritious food for every meal. Our aim is to liberate busy parents like you - we'll do the cooking, giving you precious time back to spend with their family and friends.<\/p>",
             "button_label": "LEARN MORE",
-            "button_link": "shopify://pages/about-us"
+            "button_link": "shopify:\/\/pages\/about-us"
           }
         },
         "row_dyBTqK": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Hero_box_shot_square.png",
+            "image": "shopify:\/\/shop_images\/Hero_box_shot_square.png",
             "caption": "",
             "heading": "Ingredients",
-            "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Not only that but you won’t find any hard to pronounce ingredients in our products as we buy exactly the same as you would at home.</p><p>We buy free-range & grass-fed meat directly from our local butchers each week. We buy fresh, sustainable fish, dairy and great quality fresh vegetables. </p>",
+            "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Not only that but you won’t find any hard to pronounce ingredients in our products as we buy exactly the same as you would at home.<\/p><p>We buy free-range & grass-fed meat directly from our local butchers each week. We buy fresh, sustainable fish, dairy and great quality fresh vegetables. <\/p>",
             "button_label": "LEARN MORE",
-            "button_link": "shopify://pages/our-food"
+            "button_link": "shopify:\/\/pages\/our-food"
           }
         }
       },
-      "block_order": ["row_mKmVfb", "row_qTXNyd", "row_dyBTqK"],
+      "block_order": [
+        "row_mKmVfb",
+        "row_qTXNyd",
+        "row_dyBTqK"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -606,27 +651,30 @@
         "column_bjwyRq": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Simple_Range_in_Freezer.png",
+            "image": "shopify:\/\/shop_images\/Simple_Range_in_Freezer.png",
             "title": "How it works",
             "title_size": "h1",
-            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.</p>",
+            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.<\/p>",
             "link_label": "LEARN MORE",
-            "link": "shopify://pages/how-it-works"
+            "link": "shopify:\/\/pages\/how-it-works"
           }
         },
         "column_zCVMVV": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Josephine_elaine_mum_and_child.png",
+            "image": "shopify:\/\/shop_images\/Josephine_elaine_mum_and_child.png",
             "title": "Our mission",
             "title_size": "h1",
-            "text": "<p>We want to make children's meal times easy and convenient, as well as ensuring young children grow up eating nutritious food for every meal. Our aim is to liberate busy parents like you - we'll do the cooking, giving you precious time back to spend with their family and friends. </p>",
+            "text": "<p>We want to make children's meal times easy and convenient, as well as ensuring young children grow up eating nutritious food for every meal. Our aim is to liberate busy parents like you - we'll do the cooking, giving you precious time back to spend with their family and friends. <\/p>",
             "link_label": "LEARN MORE",
-            "link": "shopify://pages/about-us"
+            "link": "shopify:\/\/pages\/about-us"
           }
         }
       },
-      "block_order": ["column_bjwyRq", "column_zCVMVV"],
+      "block_order": [
+        "column_bjwyRq",
+        "column_zCVMVV"
+      ],
       "disabled": true,
       "settings": {
         "title": "",
@@ -640,8 +688,8 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "",
-        "image": "shopify://shop_images/PFT_Pattern_Background.png",
-        "image_mobile": "shopify://shop_images/PFT_Pattern_Background.png",
+        "image": "shopify:\/\/shop_images\/PFT_Pattern_Background.png",
+        "image_mobile": "shopify:\/\/shop_images\/PFT_Pattern_Background.png",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 60,
@@ -656,9 +704,9 @@
           "settings": {
             "title": "British & Free-range",
             "title_size": "h1",
-            "text": "<p>Sourcing the right ingredients is very important to us. We get all our meat from <a href=\"http://www.buntingmeat.co.uk\" target=\"_blank\" title=\"W. Bunting\">W. Bunting</a> traditional family butchers. It is free-range/grass-fed and responsibly sourced from British farms.</p>",
+            "text": "<p>Sourcing the right ingredients is very important to us. We get all our meat from <a href=\"http:\/\/www.buntingmeat.co.uk\" target=\"_blank\" title=\"W. Bunting\">W. Bunting<\/a> traditional family butchers. It is free-range\/grass-fed and responsibly sourced from British farms.<\/p>",
             "link_label": "LEARN MORE",
-            "link": "shopify://pages/our-suppliers"
+            "link": "shopify:\/\/pages\/our-suppliers"
           }
         },
         "column_cTrbdU": {
@@ -666,13 +714,16 @@
           "settings": {
             "title": "Sustainable packaging",
             "title_size": "h1",
-            "text": "<p>All our packaging is recyclable! Our pots are made from Kraft paper, our sleeves are made from card, we use  recycled denim liners, cardboard boxes, and even the dry ice sachets can go in the recycling bin.</p>",
+            "text": "<p>All our packaging is recyclable! Our pots are made from Kraft paper, our sleeves are made from card, we use  recycled denim liners, cardboard boxes, and even the dry ice sachets can go in the recycling bin.<\/p>",
             "link_label": "LEARN MORE",
-            "link": "shopify://pages/our-suppliers"
+            "link": "shopify:\/\/pages\/our-suppliers"
           }
         }
       },
-      "block_order": ["column_8yHzYr", "column_cTrbdU"],
+      "block_order": [
+        "column_8yHzYr",
+        "column_cTrbdU"
+      ],
       "disabled": true,
       "settings": {
         "title": "",
@@ -686,7 +737,7 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "",
-        "image": "shopify://shop_images/Recycled_background_medium_res.png",
+        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 80,
@@ -706,7 +757,7 @@
         "template--16755842351362__7e794788-fc62-4baf-b008-d2d8ed71fd6c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We've worked with our Children’s Dietitian, Lucy Upton to adapt four of your existing favourites slightly for little ones who may be going through a 'fussy eating' stage and need their meals to taste, look and feel a little more familiar in our NEW Simple range.</p>",
+            "text": "<p>We've worked with our Children’s Dietitian, Lucy Upton to adapt four of your existing favourites slightly for little ones who may be going through a 'fussy eating' stage and need their meals to taste, look and feel a little more familiar in our NEW Simple range.<\/p>",
             "text_style": "body"
           }
         },
@@ -714,7 +765,7 @@
           "type": "button",
           "settings": {
             "button_label": "FIND OUT MORE",
-            "button_link": "shopify://pages/new-simple-range-for-fussy-eaters",
+            "button_link": "shopify:\/\/pages\/new-simple-range-for-fussy-eaters",
             "button_style_secondary": false
           }
         }
@@ -725,7 +776,7 @@
         "template--16755842351362__7e794788-fc62-4baf-b008-d2d8ed71fd6c-button-1"
       ],
       "settings": {
-        "image": "shopify://shop_images/Simple_Orzo_square.png",
+        "image": "shopify:\/\/shop_images\/Simple_Orzo_square.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -755,18 +806,22 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
           }
         },
         "badge_XaDinC": {
           "type": "badge",
           "settings": {
-            "badge_embed": "<script src=\"https://widget.reviews.io/carousel-inline-iframeless/dist.js?_t=2024070412\"></script>\n<link rel=\"stylesheet\" href=\"https://assets.reviews.io/css/widgets/carousel-widget.css?_t=2024070412\">\n<link rel=\"stylesheet\" href=\"https://assets.reviews.io/iconfont/reviewsio-icons/style.css?_t=2024070412\">\n<div id=\"reviewsio-carousel-widget\"></div>\n<script>\n\nnew carouselInlineWidget('reviewsio-carousel-widget',{\n      /*Your REVIEWS.io account ID:*/\n      store: 'www.potsfortots.co.uk',\n      sku: '',\n      lang: 'en',\n      carousel_type: 'default',\n      styles_carousel: 'CarouselWidget--sideHeader--withcards',\n\n      /*Widget settings:*/\n      options:{\n        general:{\n          /*What reviews should the widget display? Available options: company, product, third_party. You can choose one type or multiple separated by comma.*/\n          review_type: 'company',\n          /*Minimum number of reviews required for widget to be displayed*/\n          min_reviews: '1',\n          /*Maximum number of reviews to include in the carousel widget.*/\n          max_reviews: '20',\n          address_format: 'CITY, COUNTRY',\n          /*Carousel auto-scrolling speed. 3000 = 3 seconds. If you want to disable auto-scroll, set this value to false.*/\n          enable_auto_scroll: 10000,\n        },\n        header:{\n          /*Show overall rating stars*/\n          enable_overall_stars: true,\n          rating_decimal_places: 2,\n        },\n        reviews: {\n          /*Show customer name*/\n          enable_customer_name: true,\n          /*Show customer location*/\n          enable_customer_location: false,\n          /*Show \"verified review\" badge*/\n          enable_verified_badge: true,\n          /*Show \"verified subscriber\" badge*/\n          enable_subscriber_badge: true,\n          /*Show \"I recommend this product\" badge (Only for product reviews)*/\n          enable_recommends_badge: true,\n          /*Show photos attached to reviews*/\n          enable_photos: true,\n          /*Show videos attached to reviews*/\n          enable_videos: true,\n          /*Show when review was written*/\n          enable_review_date: true,\n          /*Hide reviews written by the same customer (This may occur when customer reviews multiple products)*/\n          disable_same_customer: true,\n          /*Minimum star rating*/\n          min_review_percent: 4,\n          /*Show 3rd party review source*/\n          third_party_source: true,\n          /*Hide reviews without comments (still shows if review has a photo)*/\n          hide_empty_reviews: true,\n          /*Show product name*/\n          enable_product_name: true,\n          /*Show only reviews which have specific tags (multiple semicolon separated tags allowed i.e tag1;tag2)*/\n          tags: \"homepage\",\n          /*Show branch, only one input*/\n          branch: \"\",\n          enable_branch_name: false,\n        },\n        popups: {\n          /*Make review items clickable (When they are clicked, a popup appears with more information about a customer and review)*/\n          enable_review_popups:  true,\n          /*Show \"was this review helpful\" buttons*/\n          enable_helpful_buttons: true,\n          /*Show how many times review was upvoted as helpful*/\n          enable_helpful_count: true,\n          /*Show share buttons*/\n          enable_share_buttons: true,\n        },\n    },\n    translations: {\n      verified_customer:  \"Verified Customer\",\n    },\n    styles:{\n      /*Base font size is a reference size for all text elements. When base value gets changed, all TextHeading and TexBody elements get proportionally adjusted.*/\n      '--base-font-size': '16px',\n      '--base-maxwidth':'100%',\n\n      /*Logo styles:*/\n      '--reviewsio-logo-style':'var(--logo-inverted)',\n\n      /*Star styles:*/\n      '--common-star-color':'#4F7765',\n      '--common-star-disabled-color':' rgba(0,0,0,0.25)',\n      '--medium-star-size':' 22px',\n      '--small-star-size':'19px', /*Modal*/\n      '--x-small-star-size':'16px',\n      '--x-small-star-display':'inline-flex',\n\n      /*Header styles:*/\n      '--header-order':'1',\n      '--header-width':'280px',\n      '--header-bg-start-color':'#4F7765',\n      '--header-bg-end-color':'#4F7765',\n      '--header-gradient-direction':'135deg',\n      '--header-padding':'1.5em',\n      '--header-border-width':'0px',\n      '--header-border-color':'rgba(0,0,0,0.1)',\n      '--header-border-radius':'0px',\n      '--header-shadow-size':'10px',\n      '--header-shadow-color':'rgba(0, 0, 0, 0.05)',\n\n      /*Header content styles:*/\n      '--header-star-color':'#ffffff',\n      '--header-disabled-star-color':'inherit',\n      '--header-heading-text-color':'#ffffff',\n      '--header-heading-font-size':'inherit',\n      '--header-heading-font-weight':'inherit',\n      '--header-heading-line-height':'inherit',\n      '--header-heading-text-transform':'inherit',\n      '--header-subheading-text-color':'#ffffff',\n      '--header-subheading-font-size':'inherit',\n      '--header-subheading-font-weight':'300',\n      '--header-subheading-line-height':'inherit',\n      '--header-subheading-text-transform':'inherit',\n\n      /*Review item styles:*/\n      '--item-maximum-columns':'5',/*Must be 3 or larger*/\n      '--item-background-start-color':'#ffffff',\n      '--item-background-end-color':'#ffffff',\n      '--item-gradient-direction':'0deg',\n      '--item-padding':'1.5em',\n      '--item-border-width':'0px',\n      '--item-border-color':'rgba(0,0,0,0.1)',\n      '--item-border-radius':'0px',\n      '--item-shadow-size':'10px',\n      '--item-shadow-color':'rgba(0,0,0,0.05)',\n\n      /*Heading styles:*/\n      '--heading-text-color':'#40250A',\n      '--heading-text-font-weight':' 600',\n      '--heading-text-font-family':' inherit',\n      '--heading-text-line-height':' 1.4',\n      '--heading-text-letter-spacing':'0',\n      '--heading-text-transform':'none',\n\n      /*Body text styles:*/\n      '--body-text-color':'#40250A',\n      '--body-text-font-weight':'400',\n      '--body-text-font-family':' inherit',\n      '--body-text-line-height':' 1.4',\n      '--body-text-letter-spacing':'0',\n      '--body-text-transform':'none',\n\n      /*Scroll button styles:*/\n      '--scroll-button-icon-color':'#0E1311',\n      '--scroll-button-icon-size':'24px',\n      '--scroll-button-bg-color':'transparent',\n\n      '--scroll-button-border-width':'0px',\n      '--scroll-button-border-color':'rgba(0,0,0,0.1)',\n\n      '--scroll-button-border-radius':'60px',\n      '--scroll-button-shadow-size':'0px',\n      '--scroll-button-shadow-color':'rgba(0,0,0,0.1)',\n      '--scroll-button-horizontal-position':'3px',\n      '--scroll-button-vertical-position':'0px',\n\n      /*Badge styles:*/\n      '--badge-icon-color':'#40250A',\n      '--badge-icon-font-size':'15px',\n      '--badge-text-color':'#40250A',\n      '--badge-text-font-size':'inherit',\n      '--badge-text-letter-spacing':'inherit',\n      '--badge-text-transform':'inherit',\n\n      /*Author styles:*/\n      '--author-font-size':'inherit',\n      '--author-font-weight':'inherit',\n      '--author-text-transform':'inherit',\n\n      /*Product photo or review photo styles:*/\n      '--photo-video-thumbnail-size':'60px',\n      '--photo-video-thumbnail-border-radius':'0px',\n\n      /*Popup styles:*/\n      '--popup-backdrop-color':'rgba(0,0,0,0.75)',\n      '--popup-color':'#ffffff',\n      '--popup-star-color':'inherit',\n      '--popup-disabled-star-color':'inherit',\n      '--popup-heading-text-color':'inherit',\n      '--popup-body-text-color':'inherit',\n      '--popup-badge-icon-color':'inherit',\n      '--popup-badge-icon-font-size':'19px',\n      '--popup-badge-text-color':'inherit',\n      '--popup-badge-text-font-size':'14px',\n      '--popup-border-width':'0px',\n      '--popup-border-color':'rgba(0,0,0,0.1)',\n      '--popup-border-radius':'0px',\n      '--popup-shadow-size':'0px',\n      '--popup-shadow-color':'rgba(0,0,0,0.1)',\n      '--popup-icon-color':'#0E1311',\n\n      /*Tooltip styles:*/\n      '--tooltip-bg-color':'#0E1311',\n      '--tooltip-text-color':'#ffffff',\n    },\n});\n\n</script>",
+            "badge_embed": "<script src=\"https:\/\/widget.reviews.io\/carousel-inline-iframeless\/dist.js?_t=2024070412\"><\/script>\n<link rel=\"stylesheet\" href=\"https:\/\/assets.reviews.io\/css\/widgets\/carousel-widget.css?_t=2024070412\">\n<link rel=\"stylesheet\" href=\"https:\/\/assets.reviews.io\/iconfont\/reviewsio-icons\/style.css?_t=2024070412\">\n<div id=\"reviewsio-carousel-widget\"><\/div>\n<script>\n\nnew carouselInlineWidget('reviewsio-carousel-widget',{\n      \/*Your REVIEWS.io account ID:*\/\n      store: 'www.potsfortots.co.uk',\n      sku: '',\n      lang: 'en',\n      carousel_type: 'default',\n      styles_carousel: 'CarouselWidget--sideHeader--withcards',\n\n      \/*Widget settings:*\/\n      options:{\n        general:{\n          \/*What reviews should the widget display? Available options: company, product, third_party. You can choose one type or multiple separated by comma.*\/\n          review_type: 'company',\n          \/*Minimum number of reviews required for widget to be displayed*\/\n          min_reviews: '1',\n          \/*Maximum number of reviews to include in the carousel widget.*\/\n          max_reviews: '20',\n          address_format: 'CITY, COUNTRY',\n          \/*Carousel auto-scrolling speed. 3000 = 3 seconds. If you want to disable auto-scroll, set this value to false.*\/\n          enable_auto_scroll: 10000,\n        },\n        header:{\n          \/*Show overall rating stars*\/\n          enable_overall_stars: true,\n          rating_decimal_places: 2,\n        },\n        reviews: {\n          \/*Show customer name*\/\n          enable_customer_name: true,\n          \/*Show customer location*\/\n          enable_customer_location: false,\n          \/*Show \"verified review\" badge*\/\n          enable_verified_badge: true,\n          \/*Show \"verified subscriber\" badge*\/\n          enable_subscriber_badge: true,\n          \/*Show \"I recommend this product\" badge (Only for product reviews)*\/\n          enable_recommends_badge: true,\n          \/*Show photos attached to reviews*\/\n          enable_photos: true,\n          \/*Show videos attached to reviews*\/\n          enable_videos: true,\n          \/*Show when review was written*\/\n          enable_review_date: true,\n          \/*Hide reviews written by the same customer (This may occur when customer reviews multiple products)*\/\n          disable_same_customer: true,\n          \/*Minimum star rating*\/\n          min_review_percent: 4,\n          \/*Show 3rd party review source*\/\n          third_party_source: true,\n          \/*Hide reviews without comments (still shows if review has a photo)*\/\n          hide_empty_reviews: true,\n          \/*Show product name*\/\n          enable_product_name: true,\n          \/*Show only reviews which have specific tags (multiple semicolon separated tags allowed i.e tag1;tag2)*\/\n          tags: \"homepage\",\n          \/*Show branch, only one input*\/\n          branch: \"\",\n          enable_branch_name: false,\n        },\n        popups: {\n          \/*Make review items clickable (When they are clicked, a popup appears with more information about a customer and review)*\/\n          enable_review_popups:  true,\n          \/*Show \"was this review helpful\" buttons*\/\n          enable_helpful_buttons: true,\n          \/*Show how many times review was upvoted as helpful*\/\n          enable_helpful_count: true,\n          \/*Show share buttons*\/\n          enable_share_buttons: true,\n        },\n    },\n    translations: {\n      verified_customer:  \"Verified Customer\",\n    },\n    styles:{\n      \/*Base font size is a reference size for all text elements. When base value gets changed, all TextHeading and TexBody elements get proportionally adjusted.*\/\n      '--base-font-size': '16px',\n      '--base-maxwidth':'100%',\n\n      \/*Logo styles:*\/\n      '--reviewsio-logo-style':'var(--logo-inverted)',\n\n      \/*Star styles:*\/\n      '--common-star-color':'#4F7765',\n      '--common-star-disabled-color':' rgba(0,0,0,0.25)',\n      '--medium-star-size':' 22px',\n      '--small-star-size':'19px', \/*Modal*\/\n      '--x-small-star-size':'16px',\n      '--x-small-star-display':'inline-flex',\n\n      \/*Header styles:*\/\n      '--header-order':'1',\n      '--header-width':'280px',\n      '--header-bg-start-color':'#4F7765',\n      '--header-bg-end-color':'#4F7765',\n      '--header-gradient-direction':'135deg',\n      '--header-padding':'1.5em',\n      '--header-border-width':'0px',\n      '--header-border-color':'rgba(0,0,0,0.1)',\n      '--header-border-radius':'0px',\n      '--header-shadow-size':'10px',\n      '--header-shadow-color':'rgba(0, 0, 0, 0.05)',\n\n      \/*Header content styles:*\/\n      '--header-star-color':'#ffffff',\n      '--header-disabled-star-color':'inherit',\n      '--header-heading-text-color':'#ffffff',\n      '--header-heading-font-size':'inherit',\n      '--header-heading-font-weight':'inherit',\n      '--header-heading-line-height':'inherit',\n      '--header-heading-text-transform':'inherit',\n      '--header-subheading-text-color':'#ffffff',\n      '--header-subheading-font-size':'inherit',\n      '--header-subheading-font-weight':'300',\n      '--header-subheading-line-height':'inherit',\n      '--header-subheading-text-transform':'inherit',\n\n      \/*Review item styles:*\/\n      '--item-maximum-columns':'5',\/*Must be 3 or larger*\/\n      '--item-background-start-color':'#ffffff',\n      '--item-background-end-color':'#ffffff',\n      '--item-gradient-direction':'0deg',\n      '--item-padding':'1.5em',\n      '--item-border-width':'0px',\n      '--item-border-color':'rgba(0,0,0,0.1)',\n      '--item-border-radius':'0px',\n      '--item-shadow-size':'10px',\n      '--item-shadow-color':'rgba(0,0,0,0.05)',\n\n      \/*Heading styles:*\/\n      '--heading-text-color':'#40250A',\n      '--heading-text-font-weight':' 600',\n      '--heading-text-font-family':' inherit',\n      '--heading-text-line-height':' 1.4',\n      '--heading-text-letter-spacing':'0',\n      '--heading-text-transform':'none',\n\n      \/*Body text styles:*\/\n      '--body-text-color':'#40250A',\n      '--body-text-font-weight':'400',\n      '--body-text-font-family':' inherit',\n      '--body-text-line-height':' 1.4',\n      '--body-text-letter-spacing':'0',\n      '--body-text-transform':'none',\n\n      \/*Scroll button styles:*\/\n      '--scroll-button-icon-color':'#0E1311',\n      '--scroll-button-icon-size':'24px',\n      '--scroll-button-bg-color':'transparent',\n\n      '--scroll-button-border-width':'0px',\n      '--scroll-button-border-color':'rgba(0,0,0,0.1)',\n\n      '--scroll-button-border-radius':'60px',\n      '--scroll-button-shadow-size':'0px',\n      '--scroll-button-shadow-color':'rgba(0,0,0,0.1)',\n      '--scroll-button-horizontal-position':'3px',\n      '--scroll-button-vertical-position':'0px',\n\n      \/*Badge styles:*\/\n      '--badge-icon-color':'#40250A',\n      '--badge-icon-font-size':'15px',\n      '--badge-text-color':'#40250A',\n      '--badge-text-font-size':'inherit',\n      '--badge-text-letter-spacing':'inherit',\n      '--badge-text-transform':'inherit',\n\n      \/*Author styles:*\/\n      '--author-font-size':'inherit',\n      '--author-font-weight':'inherit',\n      '--author-text-transform':'inherit',\n\n      \/*Product photo or review photo styles:*\/\n      '--photo-video-thumbnail-size':'60px',\n      '--photo-video-thumbnail-border-radius':'0px',\n\n      \/*Popup styles:*\/\n      '--popup-backdrop-color':'rgba(0,0,0,0.75)',\n      '--popup-color':'#ffffff',\n      '--popup-star-color':'inherit',\n      '--popup-disabled-star-color':'inherit',\n      '--popup-heading-text-color':'inherit',\n      '--popup-body-text-color':'inherit',\n      '--popup-badge-icon-color':'inherit',\n      '--popup-badge-icon-font-size':'19px',\n      '--popup-badge-text-color':'inherit',\n      '--popup-badge-text-font-size':'14px',\n      '--popup-border-width':'0px',\n      '--popup-border-color':'rgba(0,0,0,0.1)',\n      '--popup-border-radius':'0px',\n      '--popup-shadow-size':'0px',\n      '--popup-shadow-color':'rgba(0,0,0,0.1)',\n      '--popup-icon-color':'#0E1311',\n\n      \/*Tooltip styles:*\/\n      '--tooltip-bg-color':'#0E1311',\n      '--tooltip-text-color':'#ffffff',\n    },\n});\n\n<\/script>",
             "badge_width": 780
           }
         }
       },
-      "block_order": ["heading_wX3iH3", "text_3apY4H", "badge_XaDinC"],
+      "block_order": [
+        "heading_wX3iH3",
+        "text_3apY4H",
+        "badge_XaDinC"
+      ],
       "disabled": true,
       "settings": {
         "desktop_content_position": "center",
@@ -781,7 +836,7 @@
       "type": "apps",
       "blocks": {
         "reviews_io_reviewsio_card_carousel_pACh9W": {
-          "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-card-carousel\/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
             "star": "{{ shop.brand.colors.primary[0].background }}",
             "review_type": "company, product",
@@ -807,7 +862,9 @@
           }
         }
       },
-      "block_order": ["reviews_io_reviewsio_card_carousel_pACh9W"],
+      "block_order": [
+        "reviews_io_reviewsio_card_carousel_pACh9W"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -819,42 +876,42 @@
           "type": "testimonial",
           "settings": {
             "title": "Lucy Dunnett",
-            "text": "<p>Such good value! These toddler meals are amazing. Feels so good knowing my little ones have just eaten a full healthy meal stuffed with veggies.</p>"
+            "text": "<p>Such good value! These toddler meals are amazing. Feels so good knowing my little ones have just eaten a full healthy meal stuffed with veggies.<\/p>"
           }
         },
         "testimonial_zcfTKE": {
           "type": "testimonial",
           "settings": {
             "title": "Bonie Torbet",
-            "text": "<p>I love that I have some home cooked healthy and nutritious meals I can grab at the last minute. So far my girls have enjoyed every one they’ve had.</p>"
+            "text": "<p>I love that I have some home cooked healthy and nutritious meals I can grab at the last minute. So far my girls have enjoyed every one they’ve had.<\/p>"
           }
         },
         "testimonial_8d8cPL": {
           "type": "testimonial",
           "settings": {
             "title": "Marnie Wills",
-            "text": "<p>This couldn’t of come at a better time for us! My 3yr old was being very fussy and I was struggling to get her to eat anything else besides pasta.</p>"
+            "text": "<p>This couldn’t of come at a better time for us! My 3yr old was being very fussy and I was struggling to get her to eat anything else besides pasta.<\/p>"
           }
         },
         "testimonial_UPRnJn": {
           "type": "testimonial",
           "settings": {
             "title": "Kiri Wroe",
-            "text": "<p>My tot absolutely loves your pots, even does a yummy dance with constant yummy noises when she's eating your seasonal risotto!</p>"
+            "text": "<p>My tot absolutely loves your pots, even does a yummy dance with constant yummy noises when she's eating your seasonal risotto!<\/p>"
           }
         },
         "testimonial_CGNprB": {
           "type": "testimonial",
           "settings": {
             "title": "Laura Taylor",
-            "text": "<p>I ordered some of your pots for my fussy toddler and I've never seen him devour food like it, thank you so much!</p>"
+            "text": "<p>I ordered some of your pots for my fussy toddler and I've never seen him devour food like it, thank you so much!<\/p>"
           }
         },
         "testimonial_EGzHHC": {
           "type": "testimonial",
           "settings": {
             "title": "Lily Williamson",
-            "text": "<p>They are great to have when I don't have time to cook and it's so nice to know what's in them so I don't get supermarket pouch guilt.</p>"
+            "text": "<p>They are great to have when I don't have time to cook and it's so nice to know what's in them so I don't get supermarket pouch guilt.<\/p>"
           }
         }
       },
@@ -908,21 +965,25 @@
         "paragraph_kYYWPA": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!</p>"
+            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!<\/p>"
           }
         },
         "klaviyo_email_marketing_sms_form_embed_block_PbjPkF": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
             "formId": "XDcips"
           }
         }
       },
-      "block_order": ["heading_N3NP9V", "paragraph_kYYWPA", "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"],
+      "block_order": [
+        "heading_N3NP9V",
+        "paragraph_kYYWPA",
+        "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
-        "image": "shopify://shop_images/Recycled_background_medium_res.png",
-        "image_mobile": "shopify://shop_images/Recycled_background_600px.png",
+        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
+        "image_mobile": "shopify:\/\/shop_images\/Recycled_background_600px.png",
         "full_width": true,
         "content_alignment": "center",
         "padding_top": 60,
@@ -951,18 +1012,22 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Build a box",
-            "button_link_1": "shopify://collections/build-your-box",
+            "button_link_1": "shopify:\/\/collections\/build-your-box",
             "button_style_secondary_1": false,
             "button_label_2": "Bundles",
-            "button_link_2": "shopify://collections/bundles",
+            "button_link_2": "shopify:\/\/collections\/bundles",
             "button_style_secondary_2": false
           }
         }
       },
-      "block_order": ["heading_7H6YJX", "text_rHbxL4", "buttons_CM6QmT"],
+      "block_order": [
+        "heading_7H6YJX",
+        "text_rHbxL4",
+        "buttons_CM6QmT"
+      ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2024-06-13_at_12.34.57.png",
+        "image": "shopify:\/\/shop_images\/Screenshot_2024-06-13_at_12.34.57.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",

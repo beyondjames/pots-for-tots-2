@@ -492,6 +492,12 @@
             "title": "Vogue"
           }
         },
+        "brand_J7U9pc": {
+          "type": "brand",
+          "settings": {
+            "title": ""
+          }
+        },
         "brand_Rjye8N": {
           "type": "brand",
           "settings": {
@@ -537,6 +543,7 @@
       },
       "block_order": [
         "brand_gqPMCQ",
+        "brand_J7U9pc",
         "brand_Rjye8N",
         "brand_VM8Qce",
         "brand_RHKbwy",
