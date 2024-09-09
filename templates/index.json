@@ -419,9 +419,9 @@
         "column_Yc6brM"
       ],
       "settings": {
-        "title": "Meals and snacks made for your little ones",
+        "title": "Meals and snacks made for toddlers",
         "heading_size": "h1",
-        "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, REAL children's meals. Frozen and ready to eat.<\/p>",
+        "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your toddler is getting the very best. Handmade, dietitian-approved, REAL toddler meals. Frozen and ready to eat.<\/p>",
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 4,
@@ -764,7 +764,7 @@
         "template--16755842351362__7e794788-fc62-4baf-b008-d2d8ed71fd6c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We've worked with our Children’s Dietitian, Lucy Upton to adapt four of your existing favourites slightly for little ones who may be going through a 'fussy eating' stage and need their meals to taste, look and feel a little more familiar in our NEW Simple range.<\/p>",
+            "text": "<p>We've worked with our Children’s Dietitian, Lucy Upton to adapt four of your existing favourites slightly for toddlers who may be going through a 'fussy eating' stage and need their meals to taste, look and feel a little more familiar in our NEW Simple range.<\/p>",
             "text_style": "body"
           }
         },
