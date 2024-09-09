@@ -1,0 +1,502 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_banner_tdtBKL": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_LpdG8b": {
+          "type": "heading",
+          "settings": {
+            "heading": "We're here to make children's mealtimes easy.",
+            "heading_size": "h1"
+          }
+        },
+        "text_K7zeAF": {
+          "type": "text",
+          "settings": {
+            "text": "REAL food for little ones, handmade by our chefs, developed with our Children's Dietitian, frozen and delivered to your door. Meals ready in minutes. The convenience you need, without the compromise.",
+            "text_style": "body"
+          }
+        },
+        "buttons_9gbU69": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify:\/\/collections\/build-your-box",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LpdG8b",
+        "text_K7zeAF",
+        "buttons_9gbU69"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/PFT_Pattern_Background_copy.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_ppBiEd": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_bVUDmr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get £5 off your first order using the code WELCOME5",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bVUDmr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_multicolumn_TVFpBK": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_CDXzhN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/PotsforTots0281_mob.jpg",
+            "title": "Pasta Bolognese",
+            "title_size": "h2",
+            "text": "<p>From £4.19<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_x3gGVA": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/New_meals_-_email_assets.png",
+            "title": "Chicken Korma",
+            "title_size": "h2",
+            "text": "<p>From £4.19<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FkyJEy": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Pots_For_Tots_Chilli.png",
+            "title": "Chilli Con Carne",
+            "title_size": "h2",
+            "text": "<p>From £4.19<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_rbzR4a": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Banana_Pancakes.png",
+            "title": "Banana Pancakes",
+            "title_size": "h2",
+            "text": "<p>From £3.59<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CDXzhN",
+        "column_x3gGVA",
+        "column_FkyJEy",
+        "column_rbzR4a"
+      ],
+      "settings": {
+        "title": "Made for your little ones",
+        "heading_size": "h1",
+        "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, REAL children's meals. Frozen and ready to eat.<\/p>",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Get started",
+        "button_link": "shopify:\/\/collections\/build-your-box",
+        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_MpiRtX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_H4NyXc": {
+          "type": "heading",
+          "settings": {
+            "heading": "How it works",
+            "heading_size": "h1"
+          }
+        },
+        "text_CBetYP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. Alternatively choose a one-off delivery. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_PeckeK": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get started",
+            "button_link": "shopify:\/\/collections\/build-your-box",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_H4NyXc",
+        "text_CBetYP",
+        "button_PeckeK"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile_8.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_nPwA7e": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3zDbqm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Who are we?",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3zDbqm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 12,
+        "padding_bottom": 8
+      }
+    },
+    "multirow_4qhraV": {
+      "type": "multirow",
+      "blocks": {
+        "row_JCFfxp": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image00017.jpg",
+            "caption": "We are",
+            "heading": "Responsible",
+            "text": "<p>We think children deserve to eat REAL food, whether that’s at home or on the go. We have a responsibility to provide nutritious food for the future health of our children. We are the change we’d like to see.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_8Lc36T": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_1826_2.jpg",
+            "caption": "We are",
+            "heading": "Honest",
+            "text": "<p>We pride ourselves on being an honest food business, from what’s in our food to what our daily lives look like. Forget misleading food labels or marketing messaging. Forget \"perfect parent” social posts - we’re here to show the realities - both the joy and struggles of being a parent.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_mdQP7J": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
+            "caption": "We are",
+            "heading": "Supportive",
+            "text": "<p>We are parents supporting parents. When it comes to raising a child, it’s hard to figure out what’s best and when. We’ve gathered all the information to cut through the noise so parents can come to us when they need a little help<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_Hq6nPq": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6.png",
+            "caption": "We are",
+            "heading": "Sustainable",
+            "text": "<p>We always look at the impact our business has on the environment in every aspect of our brand and product, from the packaging and delivery, to the ingredients, cooking processes and food waste.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "row_qcqbYU": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/image00022_VSCO.jpg",
+            "caption": "We are",
+            "heading": "Trailblazing",
+            "text": "<p>We’re here to make an impact in the children’s food space. We’re not afraid to call out big brands, who use misleading marketing messages and we will always be an advocate for the health of our children and yours.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_JCFfxp",
+        "row_8Lc36T",
+        "row_mdQP7J",
+        "row_Hq6nPq",
+        "row_qcqbYU"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_pHgYWd": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_cqJmnV": {
+          "type": "heading",
+          "settings": {
+            "heading": "In partnership with...",
+            "heading_size": "h1"
+          }
+        },
+        "text_9pdGLt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Lucy is our resident dietitian and has been providing practical nutritional advice and support for babies, children and their families for over 10 years<br\/><br\/>\"I’m a registered Specialist Paediatric Dietitian and I love it! I’m really proud to work with Pots for Tots to help parents feed their children nutritious food - even when they're short on time.\"<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_8EGNUc": {
+          "type": "button",
+          "settings": {
+            "button_label": "More from Lucy",
+            "button_link": "shopify:\/\/blogs\/toddlers\/your-foodie-questions-answered-by-our-children-s-dietician-1",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_cqJmnV",
+        "text_9pdGLt",
+        "button_8EGNUc"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_testimonials_NiFnAk": {
+      "type": "custom-testimonials",
+      "blocks": {
+        "testimonial_pCxWTp": {
+          "type": "testimonial",
+          "settings": {
+            "title": "April",
+            "text": "<p>My little girl has finished every single meal so far. Makes me feel at ease knowing she is having lots of veg in her meals. Thank you so much!<\/p>"
+          }
+        },
+        "testimonial_bGBqiK": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Kiaya",
+            "text": "<p>My daughter absolutely loves Pots for Tots. Particularly the Fish Pie and Courgette Bites. The meals are that tasty, I enjoy finishing whatever is left too!<\/p>"
+          }
+        },
+        "testimonial_zCihyH": {
+          "type": "testimonial",
+          "settings": {
+            "title": "Grianne",
+            "text": "<p>My fussy two and a half year old has lapped up these meals. From a chicken nugget loving boy to eating a lentil bolognese in just one week I could not believe how quickly and easily he got stuck into these meals. If investing in your child's health and nutrition is important to you then these will not disappoint.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_pCxWTp",
+        "testimonial_bGBqiK",
+        "testimonial_zCihyH"
+      ],
+      "settings": {
+        "color_scheme": "scheme-2",
+        "full_width": true,
+        "custom_text_title": "Loved by you!",
+        "custom_text_body": "",
+        "custom_alignment": "center",
+        "speed": 2400,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_image_banner_no_text_iwrnkp": {
+      "type": "custom-image-banner-no-text",
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/trustpilot-average-rating-banner.jpg",
+        "image_width": "400",
+        "title": "",
+        "link_url": ""
+      }
+    },
+    "custom_newsletter_brqVLX": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "heading_BLCNrf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join our journey",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_B9ExBb": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!<\/p>"
+          }
+        },
+        "email_form_ATLccq": {
+          "type": "email_form",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "smallprint_EJ63nE": {
+          "type": "smallprint",
+          "disabled": true,
+          "settings": {
+            "smallprint": "We don't bombard you with marketing emails. We respect your privacy."
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_aB7Fyk": {
+          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "XDcips"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BLCNrf",
+        "paragraph_B9ExBb",
+        "email_form_ATLccq",
+        "smallprint_EJ63nE",
+        "klaviyo_email_marketing_sms_form_embed_block_aB7Fyk"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
+        "full_width": true,
+        "content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "rich_text_RU43G7": {
+      "type": "rich-text",
+      "blocks": {
+        "text_hprtDb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>T&Cs - Offer applies to first-time customers only. One use per customer. Valid for use on one-time orders or subscription. Discount limited to first box in subscription. Discount cannot be used in conjunction with any other offer.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_hprtDb"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_tdtBKL",
+    "rich_text_ppBiEd",
+    "custom_multicolumn_TVFpBK",
+    "image_with_text_MpiRtX",
+    "rich_text_nPwA7e",
+    "multirow_4qhraV",
+    "image_with_text_pHgYWd",
+    "custom_testimonials_NiFnAk",
+    "custom_image_banner_no_text_iwrnkp",
+    "custom_newsletter_brqVLX",
+    "rich_text_RU43G7"
+  ]
+}
