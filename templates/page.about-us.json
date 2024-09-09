@@ -24,7 +24,8 @@
           "type": "heading",
           "settings": {
             "heading": "We're here to make children's mealtimes easy.",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "show_heading_shadow": false
           }
         },
         "text_zJ4pVT": {
@@ -59,6 +60,8 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-2",
+        "badge_embed": "",
+        "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -235,6 +238,54 @@
         "padding_bottom": 52
       }
     },
+    "image_with_text_m3fg7U": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GF9bwB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Meet the founder",
+            "heading_size": "h1"
+          }
+        },
+        "text_3H9fJK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cherrelle Beckitt is the founder of our umbrella brand The Family Food Co. and CEO of Pots for Tots. <\/p><p>The Family Food Co. was born out of her own feeding journey with her son, Louie who had multiple allergies growing up - she quickly saw a gap in the market to create a guilt-free, convenient solution for parents.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_TMNyLy": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_GF9bwB",
+        "text_3H9fJK",
+        "button_TMNyLy"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Cherrelle_and_Louie.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_NaHfeY": {
       "type": "image-with-text",
       "blocks": {
@@ -270,12 +321,12 @@
         "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "image_first",
+        "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "center",
         "content_layout": "overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-2",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 36,
@@ -536,6 +587,7 @@
     "rich_text_PcW3HN",
     "multirow_GMHCyC",
     "rich_text_y6X7Wg",
+    "image_with_text_m3fg7U",
     "image_with_text_NaHfeY",
     "custom_image_with_text_FEpgip",
     "multicolumn_THQAtb",
