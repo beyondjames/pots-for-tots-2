@@ -27,6 +27,12 @@
           "settings": {
           }
         },
+        "recharge_subscriptions_subscription_widget_8Lg9gC": {
+          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "settings": {
+            "product": "{{product}}"
+          }
+        },
         "custom_liquid_7WXxdt": {
           "type": "custom_liquid",
           "settings": {
@@ -43,22 +49,16 @@
           "settings": {
             "share_label": "Share"
           }
-        },
-        "recharge_subscriptions_subscription_widget_8Lg9gC": {
-          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
-          "settings": {
-            "product": "{{product}}"
-          }
         }
       },
       "block_order": [
         "title",
         "reviews_io_reviewsio_rating_output_pEd8EK",
         "price",
+        "recharge_subscriptions_subscription_widget_8Lg9gC",
         "custom_liquid_7WXxdt",
         "description",
-        "share",
-        "recharge_subscriptions_subscription_widget_8Lg9gC"
+        "share"
       ],
       "settings": {
         "enable_sticky_info": true,
