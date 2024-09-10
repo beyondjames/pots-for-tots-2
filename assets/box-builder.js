@@ -762,8 +762,8 @@ let subscription = {
     }
 
     const bundle = {
-      externalProductId: '8771506143490',
-      externalVariantId: '45411490791682',
+      externalProductId: '8797895819522',
+      externalVariantId: '45485919338754',
       selections: items,
     };
 
