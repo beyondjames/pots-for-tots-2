@@ -557,6 +557,34 @@
         "padding_bottom": 36
       }
     },
+    "featured_collection_nrDTFe": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Save with bundles!",
+        "heading_size": "h1",
+        "description": "<p>Save time by selecting from our carefully curated ready-to-order bundles with up to 15% off.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bundles",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_multicolumn_j7HJGk": {
       "type": "custom-multicolumn",
       "blocks": {
@@ -1063,6 +1091,7 @@
     "custom_multicolumn_adV6Gn",
     "rich_text_zCM7wX",
     "custom_brands_qTTbhF",
+    "featured_collection_nrDTFe",
     "custom_multicolumn_j7HJGk",
     "multirow_CfPLt7",
     "custom_multicolumn_iJTwb7",
