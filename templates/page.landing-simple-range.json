@@ -50,7 +50,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Simple_fussy_eating_korma_1.jpg",
-        "height": "small",
+        "height": "medium",
         "desktop_image_width": "medium",
         "image_heading": "",
         "layout": "image_first",
@@ -60,7 +60,7 @@
         "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
-        "mobile_content_alignment": "left",
+        "mobile_content_alignment": "center",
         "padding_top": 0,
         "padding_bottom": 0
       }
