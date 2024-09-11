@@ -118,6 +118,24 @@
         "padding_bottom": 32
       }
     },
+    "image_banner_tj9piX": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/SImple_meals_freezer.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "rich_text_zt8NKA": {
       "type": "rich-text",
       "blocks": {
@@ -295,7 +313,7 @@
         "template--16800295387394__79267f8c-0bbd-4ac0-93fc-af1d412e197c-button-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Fussy_Meals_Stacked.jpg",
+        "image": "shopify:\/\/shop_images\/IMG_0998_VSCO.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -614,7 +632,7 @@
       "settings": {
         "color_scheme": "scheme-3",
         "full_width": true,
-        "content_alignment": "left",
+        "content_alignment": "center",
         "padding_top": 60,
         "padding_bottom": 60
       }
@@ -737,6 +755,7 @@
     "custom_image_with_text_7mPYQD",
     "custom_image_banner_no_text_X4Lbiy",
     "db750422-fd4e-41ac-8d5a-3b9cf2f6c28a",
+    "image_banner_tj9piX",
     "rich_text_zt8NKA",
     "custom_image_banner_no_text_7jUTVU",
     "multirow_LLBaQn",
