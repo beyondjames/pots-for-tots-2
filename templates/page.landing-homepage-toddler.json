@@ -15,7 +15,7 @@
         "heading_YnHzXV": {
           "type": "heading",
           "settings": {
-            "heading": "Mealtimes made easy!",
+            "heading": "Toddler mealtimes, sorted!",
             "heading_size": "hxxl",
             "show_heading_shadow": true
           }
@@ -37,8 +37,8 @@
         "buttons_bmUpB4"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Screenshot_2024-06-13_at_12.34.57.png",
-        "image_3": "shopify:\/\/shop_images\/Group_hero_meals_only_square.png",
+        "image": "shopify:\/\/shop_images\/Website_homepage_1.png",
+        "image_3": "shopify:\/\/shop_images\/Josephine_Elaine_Homepage.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -604,7 +604,7 @@
         "row_qTXNyd": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
+            "image": "shopify:\/\/shop_images\/Josephine_Elaine_toddler.png",
             "caption": "",
             "heading": "Our mission",
             "text": "<p>We want to make children's mealtimes easy and convenient, as well as ensuring young children grow up eating nutritious food for every meal. Our aim is to liberate busy parents like you - we'll do the cooking, giving you precious time back to spend with their family and friends.<\/p>",
