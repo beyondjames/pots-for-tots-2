@@ -54,10 +54,10 @@
         "desktop_image_width": "medium",
         "image_heading": "",
         "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-3",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-2",
         "color_scheme": "scheme-3",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
@@ -539,7 +539,8 @@
           "type": "heading",
           "settings": {
             "heading": "Have a question about this range?",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "show_heading_shadow": false
           }
         },
         "text_AE8E6q": {
@@ -574,6 +575,8 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-2",
+        "badge_embed": "",
+        "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -611,6 +614,7 @@
       "settings": {
         "color_scheme": "scheme-3",
         "full_width": true,
+        "content_alignment": "left",
         "padding_top": 60,
         "padding_bottom": 60
       }
