@@ -24,7 +24,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Build A Box",
-            "button_link_1": "shopify:\/\/collections\/build-your-box",
+            "button_link_1": "https:\/\/potsfortots.co.uk\/discount\/POTS20?redirect=%2Fcollections%2Fbuild-your-box",
             "button_style_secondary_1": false,
             "button_label_2": "Bundles",
             "button_link_2": "shopify:\/\/collections\/bundles",
@@ -598,7 +598,7 @@
             "heading": "How it works",
             "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can pause, skip or switch meals in every order. Alternatively choose a one-off delivery. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.<\/p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/build-your-box"
+            "button_link": ""
           }
         },
         "row_qTXNyd": {
