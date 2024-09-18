@@ -1,12 +1,12 @@
 /*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "layout": "box-builder",
   "sections": {
@@ -17,7 +17,7 @@
         "show_collection_image": false,
         "color_scheme": "scheme-1",
         "collection_title": "Build your box",
-        "collection_text": "<p>Choose a minimum of 8 meals or extras to get started. You can then choose whether you want to auto-replenish or just purchase as a one-off.</p><p>Our meal ranges are suitable from 9 months to 5 years. More info on our sizing <a href=\"/pages/our-toddlermeals\" title=\"Our Toddler Meals\">here</a>.</p>",
+        "collection_text": "<p>Choose a minimum of 8 meals or extras to get started. You can then choose whether you want to auto-replenish or just purchase as a one-off.<\/p><p>Our meal ranges are suitable from 9 months to 5 years. More info on our sizing <a href=\"\/pages\/our-toddlermeals\" title=\"Our Toddler Meals\">here<\/a>.<\/p>",
         "padding_top": 48,
         "padding_bottom": 0
       }
@@ -29,7 +29,7 @@
         "columns_desktop": 3,
         "color_scheme": "",
         "show_upsells": true,
-        "allow_upsell_subscriptions": false,
+        "allow_upsell_subscriptions": true,
         "upsell_heading": "You may also like",
         "upsell_description": "",
         "upsell_collection": "upsells",
@@ -51,5 +51,8 @@
       }
     }
   },
-  "order": ["banner", "product-grid"]
+  "order": [
+    "banner",
+    "product-grid"
+  ]
 }
