@@ -108,6 +108,7 @@ let subscription = {
               // Add products to array
               productList.push({
                 id: element.dataset.index,
+                productId: element.dataset.productId,
                 quantity: element.value,
                 price: element.dataset.price,
                 title: element.dataset.title,
@@ -119,6 +120,7 @@ let subscription = {
               // Add products to array
               productList.push({
                 id: element.dataset.index,
+                productId: element.dataset.productId,
                 quantity: element.value,
                 price: element.dataset.price,
                 title: element.dataset.title,
@@ -169,6 +171,7 @@ let subscription = {
             // Add products to array
             upsellList.push({
               id: element.dataset.index,
+              productId: element.dataset.productId,
               quantity: element.value,
               price: element.dataset.price,
               title: element.dataset.title,
@@ -688,20 +691,24 @@ let subscription = {
       if (product.quantity > 0 && planId != null && type == 'subscription') {
         // Add the product with its selling plan ID
         items.push({
-          id: product.id,
+          collectionId: '268279972006',
+          externalProductId: product.productId,
+          externalVariantId: product.id,
           quantity: parseInt(product.quantity),
-          selling_plan: planId,
+          sellingPlan: planId,
         });
       } else if (product.quantity > 0) {
         // Add the product without a selling plan
         items.push({
-          id: product.id,
+          collectionId: '268279972006',
+          externalProductId: product.productId,
+          externalVariantId: product.id,
           quantity: parseInt(product.quantity),
         });
       }
     });
 
-    // Process each upsell in the list
+    // Process upsell subscriptions
     if (upsellList != null) {
       upsellJson.forEach(function (product) {
         // Initialize a variable to hold the selling plan ID (if applicable)
@@ -723,43 +730,71 @@ let subscription = {
         if (product.quantity > 0 && planId != null && upsellSubscription == 'true') {
           // Add the product with its selling plan ID
           items.push({
-            id: product.id,
+            collectionId: '268279972006',
+            externalProductId: product.productId,
+            externalVariantId: product.id,
             quantity: parseInt(product.quantity),
-            selling_plan: planId,
-          });
-        } else if (product.quantity > 0) {
-          // Add the product without a selling plan
-          items.push({
-            id: product.id,
-            quantity: parseInt(product.quantity),
+            sellingPlan: planId,
           });
         }
       });
     }
 
-    // Handle delivery date logic
-    const datePicker = document.getElementById(this.selector.datePicker);
-    let DeliveryDate = null;
+    const bundle = {
+      externalProductId: '8797895819522',
+      externalVariantId: '45485919338754',
+      selections: items,
+    };
 
-    if (datePicker) {
-      DeliveryDate = this.handleDeliveryDate();
-    } else {
-      DeliveryDate = this.generateDeliveryDate();
-    }
-    console.log('Delivery date: ' + DeliveryDate);
+    // Check to see if the bundle is valid
+    const isValid = recharge.bundle.validateDynamicBundle(bundle);
 
-    // Construct the final object to be returned
-    if (DeliveryDate) {
-      return {
-        items: items,
-        attributes: {
-          'Delivery Date': DeliveryDate,
-        },
-      };
+    if (isValid === true) {
+      // Do on valid
+      const bundleItems = recharge.bundle.getDynamicBundleItems(bundle, 'build-a-box-bundle');
+
+      // Process one time upsells
+      if (upsellList != null) {
+        upsellJson.forEach(function (product) {
+          const upsellSubscription = document.querySelector('#upsell-subscription').value;
+
+          // Add the product to the formatted array based on conditions
+          if (product.quantity > 0 && upsellSubscription == 'false') {
+            // Add the product without a selling plan
+            bundleItems.push({
+              id: product.id,
+              quantity: parseInt(product.quantity),
+            });
+          }
+        });
+      }
+
+      // Handle delivery date logic
+      const datePicker = document.getElementById(this.selector.datePicker);
+      let DeliveryDate = null;
+
+      if (datePicker) {
+        DeliveryDate = this.handleDeliveryDate();
+      } else {
+        DeliveryDate = this.generateDeliveryDate();
+      }
+
+      // Construct the final object to be returned
+      if (DeliveryDate) {
+        return {
+          items: bundleItems,
+          attributes: {
+            'Delivery Date': DeliveryDate,
+          },
+        };
+      } else {
+        return {
+          items: bundleItems,
+        };
+      }
     } else {
-      return {
-        items: items,
-      };
+      console.log('Bundle is invalid:', isValid);
+      // Do something with the error
     }
   },
 
@@ -920,13 +955,10 @@ class BoxQuantityInput extends HTMLElement {
 
     // Add an event listener to the input for change events
     this.input.addEventListener('change', () => {
-      console.log('Quantity change triggered');
       // Call an external function to handle product quantity changes
       if (this.dataset.upsell) {
-        console.log('upsell quantity change');
         subscription.handleUpsellProductQuantityChange();
       } else {
-        console.log('product quantity change');
         subscription.handleProductQuantityChange();
         subscription.updateReviewBoxModal();
       }
@@ -1130,7 +1162,6 @@ class handleCheckoutButton extends HTMLElement {
           message.classList.remove('hidden');
         } else {
           let products = subscription.generateProductArray();
-          console.log('Products', products);
           const addNewProducts = await updateCart(products);
         }
       });
