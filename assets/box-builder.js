@@ -751,7 +751,7 @@ let subscription = {
 
     if (isValid === true) {
       // Do on valid
-      const bundleItems = recharge.bundle.getDynamicBundleItems(bundle, 'dynamic-box-test');
+      const bundleItems = recharge.bundle.getDynamicBundleItems(bundle, 'build-a-box-bundle');
 
       // Process one time upsells
       if (upsellList != null) {
