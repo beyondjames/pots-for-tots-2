@@ -1,23 +1,3 @@
-// Testing the ReCharge JavaScript SDK
-async function getReChargeSettings() {
-  const settings = await recharge.cdn.getCDNStoreSettings();
-  console.log('ReCharge Settings', settings);
-}
-
-async function getReChargeProducts() {
-  const products = await recharge.cdn.getCDNProducts();
-  console.log('ReCharge Products', products);
-}
-
-async function getReChargeProduct(externalProductId) {
-  const product = await recharge.cdn.getCDNProduct(externalProductId);
-  console.log('ReCharge Product', product);
-}
-
-// getReChargeSettings();
-// getReChargeProducts();
-// getReChargeProduct('8617321988354');
-
 let subscription = {
   state: {
     // Minimum and maximum allowed items in the box
@@ -674,7 +654,6 @@ let subscription = {
 
   // Generate the products to send to cart
   generateProductArray: function () {
-    console.log('Generating product array');
     // Create an empty array to hold the formatted product items
     let items = [];
 
@@ -773,7 +752,6 @@ let subscription = {
     if (isValid === true) {
       // Do on valid
       const bundleItems = recharge.bundle.getDynamicBundleItems(bundle, 'dynamic-box-test');
-      console.log('Bundle Items:', bundleItems);
 
       // Process one time upsells
       if (upsellList != null) {
@@ -800,7 +778,6 @@ let subscription = {
       } else {
         DeliveryDate = this.generateDeliveryDate();
       }
-      console.log('Delivery date: ' + DeliveryDate);
 
       // Construct the final object to be returned
       if (DeliveryDate) {
@@ -978,13 +955,10 @@ class BoxQuantityInput extends HTMLElement {
 
     // Add an event listener to the input for change events
     this.input.addEventListener('change', () => {
-      console.log('Quantity change triggered');
       // Call an external function to handle product quantity changes
       if (this.dataset.upsell) {
-        console.log('upsell quantity change');
         subscription.handleUpsellProductQuantityChange();
       } else {
-        console.log('product quantity change');
         subscription.handleProductQuantityChange();
         subscription.updateReviewBoxModal();
       }
@@ -1188,7 +1162,6 @@ class handleCheckoutButton extends HTMLElement {
           message.classList.remove('hidden');
         } else {
           let products = subscription.generateProductArray();
-          console.log('Products', products);
           const addNewProducts = await updateCart(products);
         }
       });
