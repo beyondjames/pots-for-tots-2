@@ -874,7 +874,7 @@
           "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
             "star": "{{ shop.brand.colors.primary[0].background }}",
-            "review_type": "company, product",
+            "review_type": "company",
             "reviews_shown": 20,
             "header_bg_colour": "#4f7765",
             "header_colour": "#ffffff",
