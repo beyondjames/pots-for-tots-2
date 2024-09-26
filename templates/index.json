@@ -392,10 +392,10 @@
         "column_FNaUJd": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Chicken_Korma_19b454c2-4f54-42ff-b410-86630652dffb.png",
-            "title": "Mild Chicken Korma",
+            "image": "shopify://shop_images/Mini_Apple_Pancakes_a5c673fb-b6ec-4c3d-bc9e-6199a9512339.png",
+            "title": "Mini Apple Pancakes",
             "title_size": "h2",
-            "text": "<p>£4.65</p>",
+            "text": "<p>£5.29</p>",
             "link_label": "Create a box",
             "link": "shopify://collections/build-your-box"
           }
