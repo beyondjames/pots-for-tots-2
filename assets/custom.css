@@ -1,7 +1,6 @@
 @font-face {
   font-family: 'Nadira Pro Bold';
-  src: url('font-nadira-pro-bold.woff2') format('woff2'),
-       url('font-nadira-pro-bold.woff') format('woff');
+  src: url('font-nadira-pro-bold.woff2') format('woff2'), url('font-nadira-pro-bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,19 +8,22 @@
 
 @font-face {
   font-family: 'Clear Sans';
-  src: url('font-clear-sans.woff2') format('woff2'),
-       url('font-clear-sans.woff') format('woff');
+  src: url('font-clear-sans.woff2') format('woff2'), url('font-clear-sans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
   font-family: 'Nadira Pro Bold' !important;
-	outline: none !important;
+  outline: none !important;
 }
 
 body {
@@ -102,4 +104,16 @@ button.shopify-payment-button__button--unbranded,
 
 .footer__payment {
   display: none !important;
+}
+
+/* Slideshow banner */
+@media screen and (max-width: 749px) {
+  .slideshow__text.banner__box {
+    max-width: 100% !important;
+  }
+}
+
+.banner__buttons.banner__buttons--multiple > * {
+  flex-grow: 1;
+  min-width: 22rem;
 }

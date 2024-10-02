@@ -9,10 +9,10 @@
 */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/pots-for-tots-logo-green.svg",
+    "logo": "shopify://shop_images/pots-for-tots-logo-green.svg",
     "logo_width": 220,
     "box_builder_logo_width": 140,
-    "favicon": "shopify:\/\/shop_images\/PFT_FAVICON_P.png",
+    "favicon": "shopify://shop_images/PFT_FAVICON_P.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -106,8 +106,8 @@
     "badge_corner_radius": 40,
     "sale_badge_color_scheme": "scheme-4",
     "sold_out_badge_color_scheme": "scheme-1",
-    "social_facebook_link": "https:\/\/www.facebook.com\/potsfortots.co.uk",
-    "social_instagram_link": "https:\/\/www.instagram.com\/pots_for_tots",
+    "social_facebook_link": "https://www.facebook.com/potsfortots.co.uk",
+    "social_instagram_link": "https://www.instagram.com/pots_for_tots",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
@@ -123,7 +123,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "checkout_logo_image": "shopify:\/\/shop_images\/pots-for-tots-logo-green.svg",
+    "checkout_logo_image": "shopify://shop_images/pots-for-tots-logo-green.svg",
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
     "checkout_body_background_color": "#f3f3f3",
@@ -164,7 +164,7 @@
           "ba10929b-9fff-4f31-8999-ce74f7475e6f": {
             "type": "text_block",
             "settings": {
-              "text_input": "Tax ID\/ABN\/VAT Number",
+              "text_input": "Tax ID/ABN/VAT Number",
               "isRequired": false
             }
           },
@@ -192,25 +192,25 @@
     ],
     "blocks": {
       "855628211100114053": {
-        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {
         }
       },
       "2498716461440425698": {
-        "type": "shopify:\/\/apps\/influence-io-loyalty-rewards\/blocks\/popup-widget\/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
+        "type": "shopify://apps/influence-io-loyalty-rewards/blocks/popup-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
         "disabled": false,
         "settings": {
         }
       },
       "6251270934270006384": {
-        "type": "shopify:\/\/apps\/stape-server-gtm\/blocks\/gtm\/7e13c847-7971-409d-8fe0-29ec14d5f048",
+        "type": "shopify://apps/stape-server-gtm/blocks/gtm/7e13c847-7971-409d-8fe0-29ec14d5f048",
         "disabled": false,
         "settings": {
         }
       },
       "17151115064775110295": {
-        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
+        "type": "shopify://apps/recharge-subscriptions/blocks/recharge-theme/371eed76-0b44-4869-9813-730372ea378e",
         "disabled": false,
         "settings": {
           "color_brand": "#467C99",
@@ -226,14 +226,14 @@
         }
       },
       "5149645339031002760": {
-        "type": "shopify:\/\/apps\/order-limits-minmaxify\/blocks\/app-embed-block\/3acfba32-89f3-4377-ae20-cbb9abc48475",
+        "type": "shopify://apps/order-limits-minmaxify/blocks/app-embed-block/3acfba32-89f3-4377-ae20-cbb9abc48475",
         "disabled": false,
         "settings": {
           "async": false
         }
       },
       "10830403595879607806": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-core\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-core/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
         "settings": {
           "url_key": "www.potsfortots.co.uk",
@@ -242,7 +242,7 @@
         }
       },
       "15316669992541710076": {
-        "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-snippet\/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
         "disabled": false,
         "settings": {
           "star": "#5c8972",
