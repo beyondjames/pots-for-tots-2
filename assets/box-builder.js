@@ -23,8 +23,9 @@ let subscription = {
     productsGrid: '#product-grid', // Grid containing product cards
     variants: '#card__variants', // Elements for product variant selection
     minimumProducts: '#productCount', // Element displaying minimum product count warning
-    checkoutButton: '#checkoutButton', // Checkout button
-    modalCheckoutButton: '.modal-checkout-button', // modal trigger Checkout button
+    checkoutButton: '.checkout-button', // Checkout button
+    modalCheckoutButton: '#modal-checkout-button', // modal trigger Checkout button
+    modalSkipButton: '#modal-skip-button', // modal trigger Checkout button
     cardModal: '#cardModal', // Modal for displaying product details
     frequencySection: '.frequency__selector', // Section for selecting subscription frequency
     progressBar: '#progress-bar-indicator', // Progress bar element
@@ -384,6 +385,7 @@ let subscription = {
     const modalList = document.querySelector(this.selector.productModalList);
     const button = document.querySelector(this.selector.checkoutButton);
     const modalButton = document.querySelector(this.selector.modalCheckoutButton);
+    const modalSkipButton = document.querySelector(this.selector.modalSkipButton);
     const countWarning = document.querySelector(this.selector.minimumProducts);
 
     // Retrieve product data from session storage
@@ -409,10 +411,15 @@ let subscription = {
         countWarning.classList.add('hidden');
       }
       // Enable the checkout button
+      console.log(button);
       button.disabled = false;
       // Enable the modal checkout button if it exists
       if (modalButton) {
         modalButton.disabled = false;
+      }
+      // Enable the modal skip button if it exists
+      if (modalSkipButton) {
+        modalSkipButton.disabled = false;
       }
     } else {
       // Display the warning message with the required count
@@ -423,6 +430,10 @@ let subscription = {
       // Disable the modal checkout button if it exists
       if (modalButton) {
         modalButton.disabled = true;
+      }
+      // Disable the modal skip button if it exists
+      if (modalSkipButton) {
+        modalSkipButton.disabled = true;
       }
     }
 
