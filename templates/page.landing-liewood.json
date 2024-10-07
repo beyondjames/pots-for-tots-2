@@ -85,6 +85,7 @@
         "row_pR4dEw": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/3_8532fc7e-360f-4c37-ad88-f9a5a2998f4c.png",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
@@ -95,6 +96,7 @@
         "row_VpcYdV": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/2_57f57a23-98ea-421e-8c92-7478bbc478b2.png",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
@@ -105,6 +107,7 @@
         "row_UzEVcz": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/4_b0e61116-0bbb-48eb-9a04-dbbecf85a048.png",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
@@ -115,6 +118,7 @@
         "row_yDyyr3": {
           "type": "row",
           "settings": {
+            "image": "shopify://shop_images/5_a3cd025a-b23d-4772-a67c-ca81c693e26c.png",
             "caption": "Caption",
             "heading": "Row",
             "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
