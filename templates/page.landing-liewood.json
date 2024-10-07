@@ -54,12 +54,13 @@
         "buttons_4ch6Ez"
       ],
       "settings": {
+        "image": "shopify://shop_images/Liewood_Essentials_August_230199.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "badge_embed": "",
         "badge_padding": 1,
         "image_behavior": "none",
@@ -204,6 +205,44 @@
         "padding_top": 0,
         "padding_bottom": 52
       }
+    },
+    "custom_newsletter_BMmYj9": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "heading_wT8NwW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join our journey",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_N7Bb9K": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!</p>"
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_fUi8Gc": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "XDcips"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wT8NwW",
+        "paragraph_N7Bb9K",
+        "klaviyo_email_marketing_sms_form_embed_block_fUi8Gc"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/Recycled_background_medium_res.png",
+        "image_mobile": "shopify://shop_images/Recycled_background_medium_res.png",
+        "full_width": true,
+        "content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -211,6 +250,7 @@
     "image_banner_GVmUkf",
     "multirow_nyEeCi",
     "featured_collection_BQBza9",
-    "rich_text_nejX4T"
+    "rich_text_nejX4T",
+    "custom_newsletter_BMmYj9"
   ]
 }
