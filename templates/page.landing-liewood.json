@@ -131,11 +131,11 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/3_8532fc7e-360f-4c37-ad88-f9a5a2998f4c.png",
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "caption": "LIEWOOD",
+            "heading": "Tove All Together Cutlery Set",
+            "text": "<p>Bring a touch of fun to mealtimes with the Tove Cutlery Set. Made from stainless steel and with 3D silicone handles for extra grip, this durable cutlery is perfect for little hands to hold and a playful tool for encouragement.</p>",
+            "button_label": "GET STARTED",
+            "button_link": "shopify://collections/build-your-box"
           }
         },
         "row_VpcYdV": {
