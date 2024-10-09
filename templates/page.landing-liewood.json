@@ -120,11 +120,11 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/1_791c09c8-9295-43d4-a67b-e6993e1aa366.png",
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "caption": "LIEWOOD",
+            "heading": "Vivi Silicone Set",
+            "text": "<p>Liewood's best tableware products in silicone - all in one convenient set. A great non-breakable alternative to plastic and porcelain.</p>",
+            "button_label": "Get started",
+            "button_link": "shopify://collections/build-your-box"
           }
         },
         "row_pR4dEw": {
