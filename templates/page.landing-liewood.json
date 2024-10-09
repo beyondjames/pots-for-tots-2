@@ -24,7 +24,7 @@
           "type": "heading",
           "settings": {
             "heading": "Pots for Tots x Liewood",
-            "heading_size": "h1",
+            "heading_size": "h0",
             "show_heading_shadow": false
           }
         },
@@ -54,7 +54,8 @@
         "buttons_4ch6Ez"
       ],
       "settings": {
-        "image": "shopify://shop_images/Liewood_Essentials_August_230199.jpg",
+        "image": "shopify://shop_images/Liewood_web_banner_1.png",
+        "image_3": "shopify://shop_images/1_9ad90ad4-71f3-43b0-ad37-5d978b579fb5.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
