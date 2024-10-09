@@ -30,19 +30,19 @@
         },
         "text_MbxqGN": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "Here is our landing page for the Liewood partnership. We need to add more copy about it!",
+            "text": "We're excited to announce that we've partnered up with Danish homeware designer Liewood to bring you a capsule collection of their mealtime favourites. You can add these onto any Pots for Tots orders.",
             "text_style": "body"
           }
         },
         "buttons_4ch6Ez": {
           "type": "buttons",
-          "disabled": true,
           "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections/build-your-box",
             "button_style_secondary_1": false,
-            "button_label_2": "Button label",
+            "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
           }
@@ -68,6 +68,49 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "rich_text_PLmmAh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Dex6F3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_cTnm67": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're excited to announce that we've collaborated with Danish designer Liewood to bring you a capsule collection of lifestyle products to bring more joy to every mealtime. <br/><br/>Create a box of Pots for Tots meals and add your Liewood favourites to it.</p>"
+          }
+        },
+        "button_Q3FHeH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get started",
+            "button_link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Dex6F3",
+        "text_cTnm67",
+        "button_Q3FHeH"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "multirow_nyEeCi": {
@@ -249,6 +292,7 @@
   "order": [
     "main",
     "image_banner_GVmUkf",
+    "rich_text_PLmmAh",
     "multirow_nyEeCi",
     "featured_collection_BQBza9",
     "rich_text_nejX4T",
