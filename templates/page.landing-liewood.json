@@ -22,7 +22,6 @@
       "blocks": {
         "heading_pfn3KB": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Pots for Tots x Liewood",
             "heading_size": "h0",
@@ -74,7 +73,7 @@
     "custom_image_banner_no_text_RpKxyp": {
       "type": "custom-image-banner-no-text",
       "settings": {
-        "image_desktop": "shopify://shop_images/PFT_x_Liewood_banner.png",
+        "image_desktop": "shopify://shop_images/Liewood_logo_banner.png",
         "image_width": "",
         "title": "",
         "link_url": ""
