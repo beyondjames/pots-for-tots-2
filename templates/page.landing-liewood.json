@@ -22,6 +22,7 @@
       "blocks": {
         "heading_pfn3KB": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Pots for Tots x Liewood",
             "heading_size": "h0",
@@ -54,10 +55,10 @@
         "buttons_4ch6Ez"
       ],
       "settings": {
-        "image": "shopify://shop_images/Liewood_web_banner.png",
+        "image": "shopify://shop_images/Liewood_Essentials_August_230199.jpg",
         "image_3": "shopify://shop_images/1_9ad90ad4-71f3-43b0-ad37-5d978b579fb5.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -68,6 +69,15 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "custom_image_banner_no_text_RpKxyp": {
+      "type": "custom-image-banner-no-text",
+      "settings": {
+        "image_desktop": "shopify://shop_images/PFT_x_Liewood_banner.png",
+        "image_width": "",
+        "title": "",
+        "link_url": ""
       }
     },
     "rich_text_PLmmAh": {
@@ -292,6 +302,7 @@
   "order": [
     "main",
     "image_banner_GVmUkf",
+    "custom_image_banner_no_text_RpKxyp",
     "rich_text_PLmmAh",
     "multirow_nyEeCi",
     "featured_collection_BQBza9",
