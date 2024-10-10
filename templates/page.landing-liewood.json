@@ -173,11 +173,11 @@
           "type": "row",
           "settings": {
             "image": "shopify://shop_images/5_a3cd025a-b23d-4772-a67c-ca81c693e26c.png",
-            "caption": "Caption",
-            "heading": "Row",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
-            "button_label": "Button label",
-            "button_link": ""
+            "caption": "LIEWOOD",
+            "heading": "Liewood Falk Water Bottle",
+            "text": "<p>A premium steel water bottle, made from 80% recycled stainless steel. Designed to be easy for little hands to hold. It is leakproof and features a built-in pop-up straw lid as well as a loop handle for convenient carrying when on the go.</p>",
+            "button_label": "GET STARTED",
+            "button_link": "shopify://collections/build-your-box"
           }
         }
       },
