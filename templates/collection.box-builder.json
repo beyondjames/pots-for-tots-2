@@ -32,7 +32,7 @@
         "allow_upsell_subscriptions": true,
         "upsell_heading": "You may also like",
         "upsell_description": "",
-        "upsell_collection": "liewood",
+        "upsell_collection": "upsells",
         "upsell_button": "Continue",
         "upsell_skip_button": "Skip and Continue",
         "image_ratio": "adapt",
