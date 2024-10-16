@@ -43,7 +43,12 @@ class CartItems extends HTMLElement {
   }
 
   onChange(event) {
-    this.updateQuantity(event.target.dataset.index, event.target.value, document.activeElement.getAttribute('name'), event.target.dataset.quantityVariantId);
+    this.updateQuantity(
+      event.target.dataset.index,
+      event.target.value,
+      document.activeElement.getAttribute('name'),
+      event.target.dataset.quantityVariantId
+    );
   }
 
   onCartUpdate() {
@@ -180,6 +185,7 @@ class CartItems extends HTMLElement {
   }
 
   updateLiveRegions(line, message) {
+    window.location.reload(); // CUSTOM - Added to handle cart logic refresh
     const lineItemError =
       document.getElementById(`Line-item-error-${line}`) || document.getElementById(`CartDrawer-LineItemError-${line}`);
     if (lineItemError) lineItemError.querySelector('.cart-item__error-text').innerHTML = message;
