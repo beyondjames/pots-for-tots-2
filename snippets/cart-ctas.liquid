@@ -1,0 +1,64 @@
+{% comment %} Check cart is valid {% endcomment %}
+{% assign invalid_cart = false %}
+{% assign cart_error_message = '' %}
+
+{% comment %} Liewood collection ID {% endcomment %}
+{% assign liewood_collection_id = 433416012034 %}
+{% assign liewood_in_cart = 0 %}
+
+{% comment %} Build your box collection ID {% endcomment %}
+{% assign byb_collection_id = 268279972006 %}
+{% assign byb_in_cart = 0 %}
+
+{% comment %} Find products in cart {% endcomment %}
+{% for item in cart.items %}
+  {% assign product = item.product %}
+  {% assign product_collections = product.collections %}
+  {% for collection in product_collections %}
+    {% if collection.id == liewood_collection_id %}
+      {% assign liewood_in_cart  = liewood_in_cart | plus: item.quantity %}
+    {% endif %}
+    {% if collection.id == byb_collection_id %}
+      {% assign byb_in_cart = byb_in_cart | plus: item.quantity %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% comment %} Check if cart is valid {% endcomment %}
+{% if byb_in_cart > 0 and byb_in_cart < 8 %}
+  {% assign invalid_cart = true %}
+  {% assign cart_error_message = 'Please ensure you have at least 8 meals PLUS your Liewood item(s)' %}
+{%  elsif liewood_in_cart > 0 and byb_in_cart == 0  %}
+  {% comment %} Check cart value {% endcomment %}
+  {% if cart.total_price < 3500  %}
+    {% assign invalid_cart = true %}
+    {% assign cart_error_message = 'Please ensure you have a minimum basket value of £35 of Liewood products' %}
+  {% endif %}
+{% endif %}
+
+{% comment %} Cart error message {% endcomment %}
+{% if cart_error_message != '' %}
+  <small class="tax-note caption-large rte">{{ cart_error_message }}</small>
+{% endif %}
+
+<div class="cart__ctas" {{ block.shopify_attributes }}>
+  <noscript>
+    <button type="submit" class="cart__update-button button button--secondary" form="cart">
+      {{ 'sections.cart.update' | t }}
+    </button>
+  </noscript>
+
+  <button type="submit" class="cart__checkout-button button" name="checkout"{% if cart == empty or invalid_cart %} disabled{% endif %} form="cart">
+  {% if cart == empty or invalid_cart %}Incomplete Cart{% else %}{{ 'sections.cart.checkout' | t }}{% endif %}
+  </button>
+</div>
+
+<div class="cart__small-print">
+  <p><strong>Please don't order our meals if your child has a serious allergy.</strong> Due to the nature of our production facility and our supply chain there is a possibility our food may contain any of the 14 allergens.</p>
+</div>
+
+{% comment %} {%- if additional_checkout_buttons -%}
+  <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
+    {{ content_for_additional_checkout_buttons }}
+  </div>
+{%- endif -%} {% endcomment %}

@@ -77,28 +77,7 @@
                 </small>
               </div>
             {%- else -%}
-              <div class="cart__ctas" {{ block.shopify_attributes }}>
-                <noscript>
-                  <button type="submit" class="cart__update-button button button--secondary" form="cart">
-                    {{ 'sections.cart.update' | t }}
-                  </button>
-                </noscript>
-
-                <button type="submit" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
-                  {{ 'sections.cart.checkout' | t }}
-                </button>
-              </div>
-
-              <div class="cart__small-print">
-                <p><strong>Please don't order our meals if your child has a serious allergy.</strong> Due to the nature of our production facility and our supply chain there is a possibility our food may contain any of the 14 allergens.</p>
-              </div>
-
-              {% comment %} {%- if additional_checkout_buttons -%}
-                <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
-                  {{ content_for_additional_checkout_buttons }}
-                </div>
-              {%- endif -%} {% endcomment %}
-
+              {% render 'cart-ctas' %}
           {%- endcase -%}
         {% endfor %}
 
