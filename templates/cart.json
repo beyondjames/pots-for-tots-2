@@ -44,7 +44,7 @@
       "settings": {
         "color_scheme": "",
         "liewood_error_message": "Please ensure you have at least 8 meals PLUS your Liewood item(s)",
-        "byb_error_message": "Please ensure you have a minimum basket value of £35 of Liewood products",
+        "byb_error_message": "Please ensure you have a minimum basket value of £35 of Liewood products or 8 meals/snacks + any Liewood item(s)",
         "padding_top": 20,
         "padding_bottom": 60
       }
