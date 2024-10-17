@@ -102,7 +102,7 @@
           "type": "button",
           "settings": {
             "button_label": "Get started",
-            "button_link": "shopify://collections/build-your-box",
+            "button_link": "shopify://collections/liewood",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
