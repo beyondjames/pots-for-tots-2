@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "layout": "box-builder",
   "sections": {
@@ -32,7 +32,7 @@
         "allow_upsell_subscriptions": true,
         "upsell_heading": "You may also like",
         "upsell_description": "",
-        "upsell_collection": "upsells",
+        "upsell_collection": "liewood",
         "upsell_button": "Continue",
         "upsell_skip_button": "Skip and Continue",
         "image_ratio": "adapt",
