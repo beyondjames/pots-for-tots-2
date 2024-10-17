@@ -1,1 +1,64 @@
-{"sections":{"cart-items":{"type":"main-cart-items","settings":{"free_gift_enable":false,"free_gift_count":8,"free_gift_product":"","free_gift_text":"You have %count% or more meals, snacks and extras in your cart. Claim your %product% below!","free_gift_button_text":"Claim your free pot","color_scheme":"","show_vendor":false,"padding_top":60,"padding_bottom":20}},"cart-footer":{"type":"main-cart-footer","blocks":{"in_cart_upsell_cross_sell_cart_app_block_cB8qw3":{"type":"shopify:\/\/apps\/in-cart-upsell-cross-sell\/blocks\/cart_app_block\/6a252f23-8726-4893-8b3b-1ae15957efc3","settings":{}},"subtotal":{"type":"subtotal","settings":{}},"buttons":{"type":"buttons","settings":{}}},"block_order":["in_cart_upsell_cross_sell_cart_app_block_cB8qw3","subtotal","buttons"],"settings":{"color_scheme":"","padding_top":20,"padding_bottom":60}},"1713282915e24915f8":{"type":"apps","blocks":{"in_cart_upsell_cross_sell_cart_app_block_VRDFPm":{"type":"shopify:\/\/apps\/in-cart-upsell-cross-sell\/blocks\/cart_app_block\/6a252f23-8726-4893-8b3b-1ae15957efc3","settings":{}}},"block_order":["in_cart_upsell_cross_sell_cart_app_block_VRDFPm"],"settings":{"include_margins":true}}},"order":["cart-items","cart-footer","1713282915e24915f8"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "free_gift_enable": false,
+        "free_gift_count": 8,
+        "free_gift_product": "",
+        "free_gift_text": "You have %count% or more meals, snacks and extras in your cart. Claim your %product% below!",
+        "free_gift_button_text": "Claim your free pot",
+        "color_scheme": "",
+        "show_vendor": false,
+        "padding_top": 60,
+        "padding_bottom": 20
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {
+          }
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "liewood_error_message": "Please ensure you have at least 8 meals PLUS your Liewood item(s)",
+        "byb_error_message": "Please ensure you have a minimum basket value of £35 of Liewood products",
+        "padding_top": 20,
+        "padding_bottom": 60
+      }
+    },
+    "1713282915e24915f8": {
+      "type": "apps",
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "1713282915e24915f8"
+  ]
+}
