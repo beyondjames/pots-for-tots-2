@@ -39,6 +39,7 @@
         },
         "buttons_4ch6Ez": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "SHOP NOW",
             "button_link_1": "shopify://collections/build-your-box",
@@ -55,7 +56,7 @@
         "buttons_4ch6Ez"
       ],
       "settings": {
-        "image": "shopify://shop_images/Liewood_Essentials_August_230199.jpg",
+        "image": "shopify://shop_images/NEWSLETTER_desktop_13.png",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
@@ -72,6 +73,7 @@
     },
     "custom_image_banner_no_text_RpKxyp": {
       "type": "custom-image-banner-no-text",
+      "disabled": true,
       "settings": {
         "image_desktop": "shopify://shop_images/Liewood_logo_banner_2d9e7eae-f4ff-40b0-9673-41375f670fc8.png",
         "image_width": "",
