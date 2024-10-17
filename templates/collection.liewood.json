@@ -48,7 +48,6 @@
       ],
       "settings": {
         "image": "shopify://shop_images/NEWSLETTER_desktop_13.png",
-        "image_3": "shopify://shop_images/team_tots_2.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
