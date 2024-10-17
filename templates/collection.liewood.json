@@ -14,13 +14,16 @@
       "blocks": {
         "heading_iCCBfe": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Save up to 15% with bundles!",
-            "heading_size": "h0"
+            "heading_size": "h0",
+            "show_heading_shadow": false
           }
         },
         "text_yWxYkr": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Save time by selecting from our carefully curated ready-to-order bundles.",
             "text_style": "body"
@@ -44,13 +47,16 @@
         "buttons_yxPGGR"
       ],
       "settings": {
-        "image": "shopify://shop_images/Hero_group_shot.png",
+        "image": "shopify://shop_images/NEWSLETTER_desktop_13.png",
+        "image_3": "shopify://shop_images/team_tots_2.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -85,11 +91,34 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "rich_text_PC3EtE": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ywaqme": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Liewood collection is available to purchase individually or as part of your meal order. A minimum purchase value of £35 applies if you are purchasing <strong>only</strong> Liewood products (i.e not with meals). Discount codes are not applicable to any Liewood products. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ywaqme"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "image_banner_eAPqEm",
     "banner",
-    "product-grid"
+    "product-grid",
+    "rich_text_PC3EtE"
   ]
 }
