@@ -181,6 +181,16 @@
             "button_label": "SHOP NOW",
             "button_link": "shopify://products/liewood-falk-water-bottle-350-ml-bunny-sandy"
           }
+        },
+        "row_ThrWzc": {
+          "type": "row",
+          "settings": {
+            "caption": "LIEWOOD",
+            "heading": "Liewood Nadja Food Jar",
+            "text": "<p>The practical food jar has double stainless-steel walls making it ideal for bringing porridge or snacks on an outing.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/liewood-nadja-food-jar-peach-sea-shell-mix"
+          }
         }
       },
       "block_order": [
@@ -188,7 +198,8 @@
         "row_pR4dEw",
         "row_VpcYdV",
         "row_UzEVcz",
-        "row_yDyyr3"
+        "row_yDyyr3",
+        "row_ThrWzc"
       ],
       "settings": {
         "image_height": "adapt",
