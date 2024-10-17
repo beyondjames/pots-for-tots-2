@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow_tRxFr3": {
@@ -38,20 +38,45 @@
             "image_badge_horizontal_position": "centre"
           }
         },
+        "slide_PJnnYE": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/NEWSLETTER_desktop_13.png",
+            "heading": "",
+            "heading_size": "h1",
+            "show_heading_shadow": false,
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
+        },
         "slide_c6rpWy": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Website_homepage_3.png",
             "mobile_image": "shopify://shop_images/Cherrelle_-15.jpg",
-            "heading": "Up to 4 of their 5 a day!",
+            "heading": "Super quick snacks!",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
-            "subheading": "Tell your brand's story through images",
-            "button_label": "Button label",
-            "link": "",
+            "subheading": "",
+            "button_label": "BUILD A BOX",
+            "link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
+            "button_label_2": "BUNDLES",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -67,9 +92,9 @@
       },
       "block_order": [
         "slide_hgbCiy",
+        "slide_PJnnYE",
         "slide_c6rpWy"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
