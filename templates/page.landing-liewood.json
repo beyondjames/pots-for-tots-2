@@ -184,7 +184,9 @@
         },
         "row_ThrWzc": {
           "type": "row",
+          "disabled": true,
           "settings": {
+            "image": "shopify://shop_images/Nadja_Food_Jar_LW20223_1111_Safari_sandy_mix_2.jpg",
             "caption": "LIEWOOD",
             "heading": "Liewood Nadja Food Jar",
             "text": "<p>The practical food jar has double stainless-steel walls making it ideal for bringing porridge or snacks on an outing.</p>",
