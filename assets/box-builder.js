@@ -1164,6 +1164,9 @@ class handleCheckoutButton extends HTMLElement {
     // Add an event listener to the button
     buttons.forEach((button) => {
       button.addEventListener('click', async () => {
+        // Send GA4 event
+        sendEvent(button.id, 'Box Builder', 'Checkout Button Click');
+
         const date = document.getElementById('delivery');
 
         // Check for the date picker
@@ -1322,4 +1325,14 @@ async function updateCart(data) {
     .catch((err) => {
       console.error(err); // Log any errors
     });
+}
+
+// Function to send GA4 event
+function sendEvent(action, category, label) {
+  // Send GA4 event
+  gtag('event', action, {
+    event_category: category,
+    event_label: label,
+    debug_mode: true,
+  });
 }
