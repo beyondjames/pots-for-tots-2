@@ -440,21 +440,6 @@
                 </div>
               {%- endfor -%}
             </div>
-
-            {% comment %} Nutritional Badges {% endcomment %}
-            <div class="card__modal-nutritional-badges">
-              {%- if card_product.metafields.my_fields.vegetarian -%}
-                {%- render 'icon-vegetarian' -%}
-              {%- endif -%}
-
-              {%- if card_product.metafields.my_fields.dairy_free -%}
-                {%- render 'icon-dairy-free' -%}
-              {%- endif -%}
-
-              {%- if card_product.metafields.custom.contains_nuts -%}
-                {%- render 'icon-nuts' -%}
-              {%- endif -%}
-            </div>
           </div>
 
           {% comment %} Product Description {% endcomment %}
