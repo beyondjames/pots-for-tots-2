@@ -12,7 +12,7 @@ let subscription = {
     totalPrice: 0,
 
     // Subscription frequency (e.g., every 4 weeks)
-    subscriptionFrequency: 1,
+    subscriptionFrequency: 4,
 
     // Subscription type (one-time or recurring)
     subscriptionType: 'subscription',
