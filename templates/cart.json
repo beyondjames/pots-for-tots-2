@@ -28,23 +28,18 @@
       "blocks": {
         "subtotal": {
           "type": "subtotal",
-          "settings": {
-          }
+          "settings": {}
         },
         "buttons": {
           "type": "buttons",
-          "settings": {
-          }
+          "settings": {}
         }
       },
-      "block_order": [
-        "subtotal",
-        "buttons"
-      ],
+      "block_order": ["subtotal", "buttons"],
       "settings": {
         "color_scheme": "",
-        "liewood_error_message": "Please ensure you have at least 8 meals PLUS your Liewood item(s)",
-        "byb_error_message": "Please ensure you have a minimum basket value of £35 of Liewood products or 8 meals/snacks + any Liewood item(s)",
+        "liewood_error_message": "Please ensure you have a minimum basket value of £35 of Liewood products or 8 meals/snacks + any Liewood item(s)",
+        "byb_error_message": "Please ensure you have at least 8 meals PLUS your Liewood item(s)",
         "padding_top": 20,
         "padding_bottom": 60
       }
@@ -56,9 +51,5 @@
       }
     }
   },
-  "order": [
-    "cart-items",
-    "cart-footer",
-    "1713282915e24915f8"
-  ]
+  "order": ["cart-items", "cart-footer", "1713282915e24915f8"]
 }

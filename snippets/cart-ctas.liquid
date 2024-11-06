@@ -27,12 +27,12 @@
 {% comment %} Check if cart is valid {% endcomment %}
 {% if byb_in_cart > 0 and byb_in_cart < 8 %}
   {% assign invalid_cart = true %}
-  {% assign cart_error_message = section.settings.liewood_error_message %}
+  {% assign cart_error_message = section.settings.byb_error_message %}
 {%  elsif liewood_in_cart > 0 and byb_in_cart == 0  %}
   {% comment %} Check cart value {% endcomment %}
   {% if cart.total_price < 3500  %}
     {% assign invalid_cart = true %}
-    {% assign cart_error_message = section.settings.byb_error_message %}
+    {% assign cart_error_message = section.settings.liewood_error_message %}
   {% endif %}
 {% endif %}
 
