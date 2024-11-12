@@ -176,48 +176,6 @@
         "padding_bottom": 12
       }
     },
-    "custom_image_banner_text_ehtMaq": {
-      "type": "custom-image-banner-text",
-      "blocks": {
-        "buttons_jft8ea": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Build a box",
-            "button_link_1": "shopify://collections/build-your-box",
-            "button_style_secondary_1": false,
-            "button_label_2": "Bundles",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "buttons_jft8ea"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_desktop": "shopify://shop_images/Website_homepage_hero_landscape.png",
-        "image_height": "large",
-        "image_mobile": "shopify://shop_images/Hero_group_shot.png",
-        "title": "New meals and bundles!",
-        "title_size": "large",
-        "link_url": "",
-        "section_color_scheme": "scheme-4"
-      }
-    },
-    "custom_image_banner_text_QpjWfY": {
-      "type": "custom-image-banner-text",
-      "disabled": true,
-      "settings": {
-        "image_desktop": "shopify://shop_images/PotsforTots0358_1.jpg",
-        "image_height": "medium",
-        "image_mobile": "shopify://shop_images/PotsforTots0358_1_b4086c7e-abc7-4116-9941-5d997f6fdc45.jpg",
-        "title": "Mealtimes made easy",
-        "title_size": "medium",
-        "link_url": "shopify://collections/build-your-box",
-        "section_color_scheme": "scheme-4"
-      }
-    },
     "custom_image_banner_no_text_8JgQy4": {
       "type": "custom-image-banner-no-text",
       "disabled": true,
@@ -226,241 +184,6 @@
         "image_width": "400",
         "title": "Trustpilot",
         "link_url": ""
-      }
-    },
-    "custom_image_with_text_X3mUq6": {
-      "type": "custom-image-with-text",
-      "blocks": {
-        "text_djgTQN": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Dietitian-approved nutritious meals, handmade by our chefs and delivered to your door. The convenience you need, without the compromise.</p>",
-            "text_style": "subtitle"
-          }
-        },
-        "button_XjJAU8": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop now",
-            "button_link": "shopify://collections/build-your-box",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "text_djgTQN",
-        "button_XjJAU8"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/New_meals_-_email_assets.png",
-        "height": "medium",
-        "desktop_image_width": "large",
-        "image_heading": "Meal times made easy!",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-1",
-        "color_scheme": "scheme-3",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "custom_image_with_text_hBLziT": {
-      "type": "custom-image-with-text",
-      "blocks": {
-        "heading_eTFYPt": {
-          "type": "heading",
-          "settings": {
-            "heading": "",
-            "heading_size": "h1"
-          }
-        },
-        "text_nd9aRh": {
-          "type": "text",
-          "settings": {
-            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_Qr6PMP": {
-          "type": "button",
-          "settings": {
-            "button_label": "GET STARTED",
-            "button_link": "shopify://collections/build-your-box",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_eTFYPt",
-        "text_nd9aRh",
-        "button_Qr6PMP"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/IMG_1826_2.jpg",
-        "height": "adapt",
-        "desktop_image_width": "large",
-        "image_heading": "How it works",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "scheme-2",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "custom_slideshow_fx7hzm": {
-      "type": "custom-slideshow",
-      "blocks": {
-        "slide_ypEX3j": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Meals_in_freezer.jpg",
-            "heading": "Convenience without compromise",
-            "heading_size": "h1",
-            "subheading": "Handmade, dietitian-aproved, REAL children's food delivered to your door. Ready to eat in minutes.",
-            "button_label": "GET STARTED",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "box_align": "middle-center",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
-          }
-        },
-        "slide_AmtVPH": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/6B9A1B4B-8D11-451B-B284-904B320B809E_251ca6b1-fa04-4f04-bd80-b7fa5b23d2d4.jpg",
-            "heading": "\"Just like the meals I cook\"",
-            "heading_size": "h1",
-            "subheading": "'A lifesaver to know I have some in the freezer when I need them - I have zero guilt serving them up to my girls!'",
-            "button_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "box_align": "bottom-right",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
-          }
-        },
-        "slide_nMjUpw": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/PotsforTots0281_copy.jpg",
-            "heading": "Mealtimes made easy!",
-            "heading_size": "h1",
-            "subheading": "Dietitian-approved, nutritious children's meals, handmade by our chefs and delivered to your door. The convenience you need, without the compromise.",
-            "button_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "box_align": "bottom-left",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "text_alignment_mobile": "center",
-            "image_badge": "shopify://shop_images/M_B_and_LBP_Awards.png",
-            "image_badge_width": "200",
-            "image_badge_vertical_position": "bottom",
-            "image_badge_horizontal_position": "right"
-          }
-        },
-        "slide_aLnmxy": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Homepage_header_1500.png",
-            "heading": "Try our new Simple Range",
-            "heading_size": "h1",
-            "subheading": "Perfect for those toddlers who are going through a fussy eating stage or babies who need an extra step to move on from purées.",
-            "button_label": "SHOP NOW",
-            "link": "shopify://products/simple-meals-fussy-eating-e-book",
-            "button_style_secondary": false,
-            "box_align": "middle-right",
-            "show_text_box": true,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
-          }
-        }
-      },
-      "block_order": [
-        "slide_ypEX3j",
-        "slide_AmtVPH",
-        "slide_nMjUpw",
-        "slide_aLnmxy"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "full_bleed",
-        "slide_height": "large",
-        "slider_visual": "dots",
-        "auto_rotate": true,
-        "change_slides_speed": 9,
-        "image_behavior": "none",
-        "show_text_below": true,
-        "accessibility_info": "Slideshow about our brand"
-      }
-    },
-    "custom_multicolumn_QWpCGA": {
-      "type": "custom-multicolumn",
-      "blocks": {
-        "column_PcF4ba": {
-          "type": "column",
-          "settings": {
-            "title": "How it works",
-            "title_size": "h1",
-            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_PcF4ba"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "text": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "image": "shopify://shop_images/PFT_Pattern_Background.png",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "custom_multicolumn_adV6Gn": {
@@ -656,65 +379,61 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection_nrDTFe": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Save with bundles!",
-        "heading_size": "h1",
-        "description": "<p>Save time by selecting from our carefully curated ready-to-order bundles with up to 15% off.</p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "bundles",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-2",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "custom_multicolumn_j7HJGk": {
+    "custom_multicolumn_BGLfTF": {
       "type": "custom-multicolumn",
       "blocks": {
-        "column_heFfGf": {
+        "column_tcxbfE": {
           "type": "column",
           "settings": {
-            "title": "Subscribe today and save 10% on EVERY order!",
+            "image": "shopify://shop_images/3_8532fc7e-360f-4c37-ad88-f9a5a2998f4c.png",
+            "title": "Liewood Cutlery Set",
             "title_size": "h2",
-            "text": "<p>Our Pots for Tots members get 10% off for life. So sign up for a subscription today and enjoy 10% off every order. You can choose to have your frozen meals delivered weekly, fortnightly or monthly and you can skip, pause or cancel anytime. You're in control!</p>",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_G6myYx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/1_791c09c8-9295-43d4-a67b-e6993e1aa366.png",
+            "title": "Liewood Tableware Set",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GCHJHf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/5_a3cd025a-b23d-4772-a67c-ca81c693e26c.png",
+            "title": "Liewood Water Bottle",
+            "title_size": "h2",
+            "text": "",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_heFfGf"
+        "column_tcxbfE",
+        "column_G6myYx",
+        "column_GCHJHf"
       ],
-      "disabled": true,
       "settings": {
-        "title": "",
+        "title": "Pots for Tots x Liewood",
         "heading_size": "h1",
-        "text": "",
+        "text": "<p>We're delighted to be partnering with Danish designer Liewood to bring you a capsule collection of lifestyle products to bring more joy to every mealtime.</p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/build-your-box",
-        "color_scheme": "",
-        "image": "shopify://shop_images/PFT_Pattern_Background.png",
+        "button_link": "shopify://collections/liewood",
+        "color_scheme": "scheme-2",
+        "image": "shopify://shop_images/Recycled_background_medium_res.png",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -779,55 +498,32 @@
         "padding_bottom": 36
       }
     },
-    "custom_multicolumn_iJTwb7": {
-      "type": "custom-multicolumn",
-      "blocks": {
-        "column_bjwyRq": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Simple_Range_in_Freezer.png",
-            "title": "How it works",
-            "title_size": "h1",
-            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can save 10% on every order. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.</p>",
-            "link_label": "LEARN MORE",
-            "link": "shopify://pages/how-it-works"
-          }
-        },
-        "column_zCVMVV": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Josephine_elaine_mum_and_child.png",
-            "title": "Our mission",
-            "title_size": "h1",
-            "text": "<p>We want to make children's meal times easy and convenient, as well as ensuring young children grow up eating nutritious food for every meal. Our aim is to liberate busy parents like you - we'll do the cooking, giving you precious time back to spend with their family and friends. </p>",
-            "link_label": "LEARN MORE",
-            "link": "shopify://pages/about-us"
-          }
-        }
-      },
-      "block_order": [
-        "column_bjwyRq",
-        "column_zCVMVV"
-      ],
-      "disabled": true,
+    "featured_collection_nrDTFe": {
+      "type": "featured-collection",
       "settings": {
-        "title": "",
+        "title": "Save with bundles!",
         "heading_size": "h1",
-        "text": "",
-        "image_width": "full",
+        "description": "<p>Save time by selecting from our carefully curated ready-to-order bundles with up to 15% off.</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bundles",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
         "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "image": "shopify://shop_images/PFT_Pattern_Background.png",
-        "image_mobile": "shopify://shop_images/PFT_Pattern_Background.png",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_multicolumn_aYbTXC": {
@@ -923,47 +619,6 @@
         "mobile_content_alignment": "left",
         "padding_top": 44,
         "padding_bottom": 16
-      }
-    },
-    "rich_text_KUiyN6": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_wX3iH3": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_3apY4H": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "badge_XaDinC": {
-          "type": "badge",
-          "settings": {
-            "badge_embed": "<script src=\"https://widget.reviews.io/carousel-inline-iframeless/dist.js?_t=2024070412\"></script>\n<link rel=\"stylesheet\" href=\"https://assets.reviews.io/css/widgets/carousel-widget.css?_t=2024070412\">\n<link rel=\"stylesheet\" href=\"https://assets.reviews.io/iconfont/reviewsio-icons/style.css?_t=2024070412\">\n<div id=\"reviewsio-carousel-widget\"></div>\n<script>\n\nnew carouselInlineWidget('reviewsio-carousel-widget',{\n      /*Your REVIEWS.io account ID:*/\n      store: 'www.potsfortots.co.uk',\n      sku: '',\n      lang: 'en',\n      carousel_type: 'default',\n      styles_carousel: 'CarouselWidget--sideHeader--withcards',\n\n      /*Widget settings:*/\n      options:{\n        general:{\n          /*What reviews should the widget display? Available options: company, product, third_party. You can choose one type or multiple separated by comma.*/\n          review_type: 'company',\n          /*Minimum number of reviews required for widget to be displayed*/\n          min_reviews: '1',\n          /*Maximum number of reviews to include in the carousel widget.*/\n          max_reviews: '20',\n          address_format: 'CITY, COUNTRY',\n          /*Carousel auto-scrolling speed. 3000 = 3 seconds. If you want to disable auto-scroll, set this value to false.*/\n          enable_auto_scroll: 10000,\n        },\n        header:{\n          /*Show overall rating stars*/\n          enable_overall_stars: true,\n          rating_decimal_places: 2,\n        },\n        reviews: {\n          /*Show customer name*/\n          enable_customer_name: true,\n          /*Show customer location*/\n          enable_customer_location: false,\n          /*Show \"verified review\" badge*/\n          enable_verified_badge: true,\n          /*Show \"verified subscriber\" badge*/\n          enable_subscriber_badge: true,\n          /*Show \"I recommend this product\" badge (Only for product reviews)*/\n          enable_recommends_badge: true,\n          /*Show photos attached to reviews*/\n          enable_photos: true,\n          /*Show videos attached to reviews*/\n          enable_videos: true,\n          /*Show when review was written*/\n          enable_review_date: true,\n          /*Hide reviews written by the same customer (This may occur when customer reviews multiple products)*/\n          disable_same_customer: true,\n          /*Minimum star rating*/\n          min_review_percent: 4,\n          /*Show 3rd party review source*/\n          third_party_source: true,\n          /*Hide reviews without comments (still shows if review has a photo)*/\n          hide_empty_reviews: true,\n          /*Show product name*/\n          enable_product_name: true,\n          /*Show only reviews which have specific tags (multiple semicolon separated tags allowed i.e tag1;tag2)*/\n          tags: \"homepage\",\n          /*Show branch, only one input*/\n          branch: \"\",\n          enable_branch_name: false,\n        },\n        popups: {\n          /*Make review items clickable (When they are clicked, a popup appears with more information about a customer and review)*/\n          enable_review_popups:  true,\n          /*Show \"was this review helpful\" buttons*/\n          enable_helpful_buttons: true,\n          /*Show how many times review was upvoted as helpful*/\n          enable_helpful_count: true,\n          /*Show share buttons*/\n          enable_share_buttons: true,\n        },\n    },\n    translations: {\n      verified_customer:  \"Verified Customer\",\n    },\n    styles:{\n      /*Base font size is a reference size for all text elements. When base value gets changed, all TextHeading and TexBody elements get proportionally adjusted.*/\n      '--base-font-size': '16px',\n      '--base-maxwidth':'100%',\n\n      /*Logo styles:*/\n      '--reviewsio-logo-style':'var(--logo-inverted)',\n\n      /*Star styles:*/\n      '--common-star-color':'#4F7765',\n      '--common-star-disabled-color':' rgba(0,0,0,0.25)',\n      '--medium-star-size':' 22px',\n      '--small-star-size':'19px', /*Modal*/\n      '--x-small-star-size':'16px',\n      '--x-small-star-display':'inline-flex',\n\n      /*Header styles:*/\n      '--header-order':'1',\n      '--header-width':'280px',\n      '--header-bg-start-color':'#4F7765',\n      '--header-bg-end-color':'#4F7765',\n      '--header-gradient-direction':'135deg',\n      '--header-padding':'1.5em',\n      '--header-border-width':'0px',\n      '--header-border-color':'rgba(0,0,0,0.1)',\n      '--header-border-radius':'0px',\n      '--header-shadow-size':'10px',\n      '--header-shadow-color':'rgba(0, 0, 0, 0.05)',\n\n      /*Header content styles:*/\n      '--header-star-color':'#ffffff',\n      '--header-disabled-star-color':'inherit',\n      '--header-heading-text-color':'#ffffff',\n      '--header-heading-font-size':'inherit',\n      '--header-heading-font-weight':'inherit',\n      '--header-heading-line-height':'inherit',\n      '--header-heading-text-transform':'inherit',\n      '--header-subheading-text-color':'#ffffff',\n      '--header-subheading-font-size':'inherit',\n      '--header-subheading-font-weight':'300',\n      '--header-subheading-line-height':'inherit',\n      '--header-subheading-text-transform':'inherit',\n\n      /*Review item styles:*/\n      '--item-maximum-columns':'5',/*Must be 3 or larger*/\n      '--item-background-start-color':'#ffffff',\n      '--item-background-end-color':'#ffffff',\n      '--item-gradient-direction':'0deg',\n      '--item-padding':'1.5em',\n      '--item-border-width':'0px',\n      '--item-border-color':'rgba(0,0,0,0.1)',\n      '--item-border-radius':'0px',\n      '--item-shadow-size':'10px',\n      '--item-shadow-color':'rgba(0,0,0,0.05)',\n\n      /*Heading styles:*/\n      '--heading-text-color':'#40250A',\n      '--heading-text-font-weight':' 600',\n      '--heading-text-font-family':' inherit',\n      '--heading-text-line-height':' 1.4',\n      '--heading-text-letter-spacing':'0',\n      '--heading-text-transform':'none',\n\n      /*Body text styles:*/\n      '--body-text-color':'#40250A',\n      '--body-text-font-weight':'400',\n      '--body-text-font-family':' inherit',\n      '--body-text-line-height':' 1.4',\n      '--body-text-letter-spacing':'0',\n      '--body-text-transform':'none',\n\n      /*Scroll button styles:*/\n      '--scroll-button-icon-color':'#0E1311',\n      '--scroll-button-icon-size':'24px',\n      '--scroll-button-bg-color':'transparent',\n\n      '--scroll-button-border-width':'0px',\n      '--scroll-button-border-color':'rgba(0,0,0,0.1)',\n\n      '--scroll-button-border-radius':'60px',\n      '--scroll-button-shadow-size':'0px',\n      '--scroll-button-shadow-color':'rgba(0,0,0,0.1)',\n      '--scroll-button-horizontal-position':'3px',\n      '--scroll-button-vertical-position':'0px',\n\n      /*Badge styles:*/\n      '--badge-icon-color':'#40250A',\n      '--badge-icon-font-size':'15px',\n      '--badge-text-color':'#40250A',\n      '--badge-text-font-size':'inherit',\n      '--badge-text-letter-spacing':'inherit',\n      '--badge-text-transform':'inherit',\n\n      /*Author styles:*/\n      '--author-font-size':'inherit',\n      '--author-font-weight':'inherit',\n      '--author-text-transform':'inherit',\n\n      /*Product photo or review photo styles:*/\n      '--photo-video-thumbnail-size':'60px',\n      '--photo-video-thumbnail-border-radius':'0px',\n\n      /*Popup styles:*/\n      '--popup-backdrop-color':'rgba(0,0,0,0.75)',\n      '--popup-color':'#ffffff',\n      '--popup-star-color':'inherit',\n      '--popup-disabled-star-color':'inherit',\n      '--popup-heading-text-color':'inherit',\n      '--popup-body-text-color':'inherit',\n      '--popup-badge-icon-color':'inherit',\n      '--popup-badge-icon-font-size':'19px',\n      '--popup-badge-text-color':'inherit',\n      '--popup-badge-text-font-size':'14px',\n      '--popup-border-width':'0px',\n      '--popup-border-color':'rgba(0,0,0,0.1)',\n      '--popup-border-radius':'0px',\n      '--popup-shadow-size':'0px',\n      '--popup-shadow-color':'rgba(0,0,0,0.1)',\n      '--popup-icon-color':'#0E1311',\n\n      /*Tooltip styles:*/\n      '--tooltip-bg-color':'#0E1311',\n      '--tooltip-text-color':'#ffffff',\n    },\n});\n\n</script>",
-            "badge_width": 780
-          }
-        }
-      },
-      "block_order": [
-        "heading_wX3iH3",
-        "text_3apY4H",
-        "badge_XaDinC"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 20
       }
     },
     "1719331689a4fcf305": {
@@ -1181,23 +836,15 @@
     "slideshow_tRxFr3",
     "image_banner_FUfBNH",
     "rich_text_DVTNxj",
-    "custom_image_banner_text_ehtMaq",
-    "custom_image_banner_text_QpjWfY",
     "custom_image_banner_no_text_8JgQy4",
-    "custom_image_with_text_X3mUq6",
-    "custom_image_with_text_hBLziT",
-    "custom_slideshow_fx7hzm",
-    "custom_multicolumn_QWpCGA",
     "custom_multicolumn_adV6Gn",
     "rich_text_zCM7wX",
     "custom_brands_qTTbhF",
-    "featured_collection_nrDTFe",
-    "custom_multicolumn_j7HJGk",
+    "custom_multicolumn_BGLfTF",
     "multirow_CfPLt7",
-    "custom_multicolumn_iJTwb7",
+    "featured_collection_nrDTFe",
     "custom_multicolumn_aYbTXC",
     "7e794788-fc62-4baf-b008-d2d8ed71fd6c",
-    "rich_text_KUiyN6",
     "1719331689a4fcf305",
     "custom_testimonials_pXPcd6",
     "featured_blog_aGFxAU",

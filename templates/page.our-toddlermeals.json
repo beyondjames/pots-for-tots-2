@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -31,7 +31,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_wxTynD": {
@@ -67,56 +67,56 @@
         "row_GnbiMR": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hero_box_shot_square.png",
+            "image": "shopify://shop_images/Hero_box_shot_square.png",
             "caption": "",
             "heading": "Ingredients",
-            "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Not only that but you won’t find any hard to pronounce ingredients in our products as we buy exactly the same as you would at home.<\/p><p>We buy free-range & grass-fed meat directly from our local butchers each week. We buy fresh, sustainable fish, dairy and great quality fresh vegetables. <\/p>",
+            "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Not only that but you won’t find any hard to pronounce ingredients in our products as we buy exactly the same as you would at home.</p><p>We buy free-range & grass-fed meat directly from our local butchers each week. We buy fresh, sustainable fish, dairy and great quality fresh vegetables. </p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/build-your-box"
+            "button_link": "shopify://collections/build-your-box"
           }
         },
         "row_PWeJdB": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hero_group_shot.png",
+            "image": "shopify://shop_images/Hero_group_shot.png",
             "caption": "",
             "heading": "Meal Size",
-            "text": "<p>We recognise that there are growth and developmental differences between infants under 12 months and those over 12 months: Babies have very high nutritional requirements, and as these start to slow considerably from 18-24 months, it means that our 200g portion size can be suitable for both a one-year-old and also a five-year-old <strong>- this is approved by our Children's Dietitian. <\/strong>However, this can vary based on your little one's appetite - you know your tot better than anyone, so you might find that for those with larger appetites, you may benefit from adding an additional side or portion of veg with the meal.<\/p><p>Our <a href=\"\/products\/simple-meals-fussy-eating-e-book\" title=\"Simple Meals Bundle + FREE Digital Fussy Eating Guide\"><strong>Simple Range<\/strong><\/a> is suitable from 9 months+ due to the smoother texture of the meals.<\/p>",
+            "text": "<p>We recognise that there are growth and developmental differences between infants under 12 months and those over 12 months: Babies have very high nutritional requirements, and as these start to slow considerably from 18-24 months, it means that our 200g portion size can be suitable for both a one-year-old and also a five-year-old <strong>- this is approved by our Children's Dietitian. </strong>However, this can vary based on your little one's appetite - you know your tot better than anyone, so you might find that for those with larger appetites, you may benefit from adding an additional side or portion of veg with the meal.</p><p>Our <a href=\"/products/simple-meals-fussy-eating-e-book\" title=\"Simple Meals Bundle + FREE Digital Fussy Eating Guide\"><strong>Simple Range</strong></a> is suitable from 9 months+ due to the smoother texture of the meals.</p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/build-your-box"
+            "button_link": "shopify://collections/build-your-box"
           }
         },
         "row_X6RJMK": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Meals_in_freezer.jpg",
+            "image": "shopify://shop_images/Meals_in_freezer.jpg",
             "caption": "",
             "heading": "Packaging",
-            "text": "<p>We wanted to make sure the pots, boxes, cards and even the dry ice sachets are recyclable, so we are not contributing to plastic waste and so you never have to feel guilty about ordering over and over again. As well, our pots are microwaveable, freezer-friendly, BPA-free and your baby can eat straight from the pot. <\/p>",
+            "text": "<p>We wanted to make sure the pots, boxes, cards and even the dry ice sachets are recyclable, so we are not contributing to plastic waste and so you never have to feel guilty about ordering over and over again. As well, our pots are microwaveable, freezer-friendly, BPA-free and your baby can eat straight from the pot. </p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/build-your-box"
+            "button_link": "shopify://collections/build-your-box"
           }
         },
         "row_nJzfTY": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_d56a8e82-17b0-4d39-9f0a-55a6b5fd1fb6.png",
+            "image": "shopify://shop_images/3_d56a8e82-17b0-4d39-9f0a-55a6b5fd1fb6.png",
             "caption": "",
             "heading": "Allergens",
-            "text": "<p>Some of our meals are made without allergens but all may contain traces of celery, crustaceans, eggs, fish, gluten, lupin, milk, molluscs, mustard, nuts, peanuts, sesame, soy and sulphites, due to these ingredients being handled in our kitchen for other meals.<\/p><p>We have a wide variety of made-without meals which you can filter by on the 'Build your Box' page. Allergens are listed in <strong>bold<\/strong> on our ingredients list which can be found on the product information page, and on the product packaging.<\/p><p>Please don't order our meals if your child has a serious allergy. Due to the nature of our production facility and our supply chain there is a possibility our food may contain any of the 14 allergens.<\/p><p>From time to time, we may need to make changes to our recipes during production. Therefore please always refer to the product ingredients on the product packaging for the most accurate ingredient and nutritional information.<\/p>",
+            "text": "<p>Some of our meals are made without allergens but all may contain traces of celery, crustaceans, eggs, fish, gluten, lupin, milk, molluscs, mustard, nuts, peanuts, sesame, soy and sulphites, due to these ingredients being handled in our kitchen for other meals.</p><p>We have a wide variety of made-without meals which you can filter by on the 'Build your Box' page. Allergens are listed in <strong>bold</strong> on our ingredients list which can be found on the product information page, and on the product packaging.</p><p>Please don't order our meals if your child has a serious allergy. Due to the nature of our production facility and our supply chain there is a possibility our food may contain any of the 14 allergens.</p><p>From time to time, we may need to make changes to our recipes during production. Therefore please always refer to the product ingredients on the product packaging for the most accurate ingredient and nutritional information.</p>",
             "button_label": "Find out more",
-            "button_link": "shopify:\/\/pages\/faq"
+            "button_link": "shopify://pages/faq"
           }
         },
         "row_hqyyr8": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_70fb3bc1-c060-4470-a1aa-52b95aa244f1.png",
+            "image": "shopify://shop_images/1_70fb3bc1-c060-4470-a1aa-52b95aa244f1.png",
             "caption": "",
             "heading": "Our Suppliers",
-            "text": "<p>We always look at the impact our business has on the environment in every aspect of our brand and product, from the packaging and delivery, to the ingredients, cooking processes and food waste. We’re really passionate about quality, responsibly-sourced ingredients. <\/p><p>All of our meat is from family owned business, W. Bunting Butchers who source their meat from leading free range and organic farmers across the south east.  Our milk, cream and oat milk comes from Morgans Dairy. We source our cheese and butter from Longmans Dairy in Somerset and all of our fish comes from Direct Seafoods.<br\/><\/p>",
+            "text": "<p>We always look at the impact our business has on the environment in every aspect of our brand and product, from the packaging and delivery to the ingredients, cooking processes, and waste. We're really passionate about quality, responsibly sourced ingredients.</p><p><br/>All of our meat comes from a local family-owned butcher, W. Bunting, who sources products from their own farms in Norfolk and carefully selected partner farmers across the South East. Our fish supplier, Direct Seafoods, is based a short distance from our kitchen and provides us with high-quality, responsibly sourced salmon and haddock. Our dairy ingredients are delivered fresh from a local supplier, and our eggs are always free-range.</p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/build-your-box"
+            "button_link": "shopify://collections/build-your-box"
           }
         }
       },
@@ -149,10 +149,10 @@
         "column_4w4c6V": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Hidden_Veg_Pasta_Sauce_BLOG.png",
+            "image": "shopify://shop_images/Hidden_Veg_Pasta_Sauce_BLOG.png",
             "title": "Ingredients",
             "title_size": "h1",
-            "text": "<p>We make sure all our toddler meals are made with the best ingredients and are packed full of all the nutrients your child will need. Our meat is always free-range\/ grass-fed and delivered from the butchers every week. We buy fresh sustainable fish, dairy and great quality fresh vegetables.<\/p>",
+            "text": "<p>We make sure all our toddler meals are made with the best ingredients and are packed full of all the nutrients your child will need. Our meat is always free-range/ grass-fed and delivered from the butchers every week. We buy fresh sustainable fish, dairy and great quality fresh vegetables.</p>",
             "link_label": "",
             "link": ""
           }
@@ -160,10 +160,10 @@
         "column_4xUeFG": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Chickpea_Tagine_pot_and_dish.jpg",
+            "image": "shopify://shop_images/Chickpea_Tagine_pot_and_dish.jpg",
             "title": "Size",
             "title_size": "h1",
-            "text": "<p>We offer our meals in a Small or Medium pot to cater for different ages and appetites. Our Small pots are 190g - 250g and our Medium pots are 250g - 300g, depending on recipe. We generally recommend a Small pot for little ones aged 8 months to 2 years and a Medium pot for toddlers and children aged 2 years to 5 years, as a guide. Both sizes are the same product (texture and ingredients); the only difference is the amount of food!<\/p>",
+            "text": "<p>We offer our meals in a Small or Medium pot to cater for different ages and appetites. Our Small pots are 190g - 250g and our Medium pots are 250g - 300g, depending on recipe. We generally recommend a Small pot for little ones aged 8 months to 2 years and a Medium pot for toddlers and children aged 2 years to 5 years, as a guide. Both sizes are the same product (texture and ingredients); the only difference is the amount of food!</p>",
             "link_label": "",
             "link": ""
           }
@@ -184,10 +184,10 @@
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "SHOP NOW",
-        "button_link": "shopify:\/\/collections\/build-your-box",
+        "button_link": "shopify://collections/build-your-box",
         "color_scheme": "",
-        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
-        "image_mobile": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
+        "image": "shopify://shop_images/Recycled_background_medium_res.png",
+        "image_mobile": "shopify://shop_images/Recycled_background_medium_res.png",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 60,
@@ -216,10 +216,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Build a box",
-            "button_link_1": "shopify:\/\/collections\/build-your-box",
+            "button_link_1": "shopify://collections/build-your-box",
             "button_style_secondary_1": false,
             "button_label_2": "bundles",
-            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false
           }
         }
@@ -230,7 +230,7 @@
         "buttons_VV9MN3"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/PFT_Pattern_Background_copy.jpg",
+        "image": "shopify://shop_images/PFT_Pattern_Background_copy.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -258,17 +258,17 @@
         "16496797794197e084-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We pride ourselves on using a minimum of three different vegetables in every meal. We also make sure we include a range of meat dishes, fish dishes and vegetable dishes. We add meals to our range frequently to make sure your child is getting a good variety.<\/p><p>We make some meals without milk, however they <strong>may contain<\/strong> <strong>traces<\/strong> of milk as we work in a small kitchen and with small suppliers. <\/p><p>However, it is better to avoid ordering any of our meals if your child has a serious allergy. <\/p>"
+            "text": "<p>We pride ourselves on using a minimum of three different vegetables in every meal. We also make sure we include a range of meat dishes, fish dishes and vegetable dishes. We add meals to our range frequently to make sure your child is getting a good variety.</p><p>We make some meals without milk, however they <strong>may contain</strong> <strong>traces</strong> of milk as we work in a small kitchen and with small suppliers. </p><p>However, it is better to avoid ordering any of our meals if your child has a serious allergy. </p>"
           }
         },
         "button_PLx6P9": {
           "type": "button",
           "settings": {
             "button_label": "Build a box",
-            "button_link": "shopify:\/\/collections\/build-your-box",
+            "button_link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
             "button_label_2": "Bundles",
-            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false
           }
         }
@@ -301,7 +301,7 @@
         "1661523620bf2b27f5-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Our packaging has been chosen carefully to make sure it suits every need. It is microwaveable, freezer-friendly, bpa free and your baby can eat straight from the pot.<\/p><p>However even more importantly we wanted to make sure the pots, boxes, cards and even the dry ice sachets are recyclable, so we are not contributing to plastic waste and so you never have to feel guilty about ordering over and over again.<\/p>",
+            "text": "<p>Our packaging has been chosen carefully to make sure it suits every need. It is microwaveable, freezer-friendly, bpa free and your baby can eat straight from the pot.</p><p>However even more importantly we wanted to make sure the pots, boxes, cards and even the dry ice sachets are recyclable, so we are not contributing to plastic waste and so you never have to feel guilty about ordering over and over again.</p>",
             "text_style": "body"
           }
         },
@@ -309,7 +309,7 @@
           "type": "button",
           "settings": {
             "button_label": "Try them OuT",
-            "button_link": "https:\/\/potsfortots.co.uk\/collections\/build-your-box",
+            "button_link": "https://potsfortots.co.uk/collections/build-your-box",
             "button_style_secondary": false
           }
         }
@@ -321,7 +321,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Meals_in_freezer.jpg",
+        "image": "shopify://shop_images/Meals_in_freezer.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -342,7 +342,7 @@
         "column_EWGAGB": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Pots_for_Tots_Mar_fsh_pie_2.7.jpg",
+            "image": "shopify://shop_images/Pots_for_Tots_Mar_fsh_pie_2.7.jpg",
             "title": "",
             "title_size": "h1",
             "text": "",
@@ -358,17 +358,17 @@
       "settings": {
         "title": "Subscribe today and save 10% on EVERY order!",
         "heading_size": "h1",
-        "text": "<p>Our Pots for Tots members get 10% off for life. So sign up for a subscription today and enjoy 10% off every order. You can choose to have your meals delivered weekly, fortnightly or monthly and you can skip, pause or cancel anytime. You're in control!<\/p>",
+        "text": "<p>Our Pots for Tots members get 10% off for life. So sign up for a subscription today and enjoy 10% off every order. You can choose to have your meals delivered weekly, fortnightly or monthly and you can skip, pause or cancel anytime. You're in control!</p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "GET STARTED",
-        "button_link": "shopify:\/\/collections\/build-your-box",
+        "button_link": "shopify://collections/build-your-box",
         "color_scheme": "",
-        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
-        "image_mobile": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
+        "image": "shopify://shop_images/Recycled_background_medium_res.png",
+        "image_mobile": "shopify://shop_images/Recycled_background_medium_res.png",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 60,
