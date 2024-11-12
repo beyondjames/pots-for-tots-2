@@ -432,7 +432,7 @@
         "background_style": "primary",
         "button_label": "SHOP NOW",
         "button_link": "shopify://collections/liewood",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "image": "shopify://shop_images/Recycled_background_medium_res.png",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
