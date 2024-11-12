@@ -1176,7 +1176,7 @@ class handleCheckoutButton extends HTMLElement {
           message.classList.remove('hidden');
         } else {
           let products = subscription.generateProductArray();
-          const addNewProducts = await subscription.handleAddToCart(products);
+          const addNewProducts = await updateCart(products);
         }
       });
     });
