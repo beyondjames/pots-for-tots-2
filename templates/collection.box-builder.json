@@ -28,7 +28,7 @@
         "products_per_page": 48,
         "columns_desktop": 3,
         "color_scheme": "",
-        "show_upsells": false,
+        "show_upsells": true,
         "allow_upsell_subscriptions": true,
         "upsell_heading": "Why not add a Liewood product to bring more joy to every mealtime!",
         "upsell_description": "",
