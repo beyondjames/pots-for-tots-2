@@ -23,8 +23,9 @@
         "heading_bCrjgg": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% off your first 3 subscription orders",
-            "heading_size": "h1"
+            "heading": "Sign up for exclusive Black Friday sale access!",
+            "heading_size": "h1",
+            "show_heading_shadow": false
           }
         },
         "text_BGFg3G": {
@@ -41,13 +42,15 @@
         "text_BGFg3G"
       ],
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2024-06-13_at_12.34.57.png",
+        "image": "shopify://shop_images/PFT_Pattern_Background_copy.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -61,14 +64,8 @@
           "type": "heading",
           "disabled": true,
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Enter your email address below for early access to our Black Friday sale as well as first look at new recipes and more!",
             "heading_size": "h1"
-          }
-        },
-        "text_kbXY6F": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Sign up to our newsletter for 20% off your first three subscription orders as well as exclusive tips from our Children's Dietitian and more!</p>"
           }
         },
         "button_Cg8XkB": {
@@ -82,12 +79,18 @@
             "button_link_2": "",
             "button_style_secondary_2": false
           }
+        },
+        "text_MtGczg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Enter your email address below for early access to our Black Friday sale as well as first look at new recipes and more!</p>"
+          }
         }
       },
       "block_order": [
         "heading_VHXLGt",
-        "text_kbXY6F",
-        "button_Cg8XkB"
+        "button_Cg8XkB",
+        "text_MtGczg"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -104,7 +107,7 @@
         "klaviyo_email_marketing_sms_form_embed_block_rhNXU3": {
           "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
-            "formId": "XDcips"
+            "formId": "SrjwBi"
           }
         }
       },
@@ -117,6 +120,7 @@
     },
     "featured_collection_Fgf9ic": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Shop our bestsellers!",
         "heading_size": "h1",
