@@ -89,12 +89,38 @@
             "image_badge_vertical_position": "middle",
             "image_badge_horizontal_position": "centre"
           }
+        },
+        "slide_6mcVhA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Black_Friday_Banner_1.gif",
+            "heading": "",
+            "heading_size": "h1",
+            "show_heading_shadow": false,
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
         }
       },
       "block_order": [
         "slide_hgbCiy",
         "slide_PJnnYE",
-        "slide_c6rpWy"
+        "slide_c6rpWy",
+        "slide_6mcVhA"
       ],
       "settings": {
         "layout": "full_bleed",
