@@ -92,7 +92,6 @@
         },
         "slide_6mcVhA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Feel_good_friday_homepage.png",
             "mobile_image": "shopify://shop_images/BF-DEAL-BANNER.png",
@@ -100,13 +99,13 @@
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
-            "button_label": "",
+            "button_label": "SHOP NOW",
             "link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "box_align": "middle-center",
+            "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
