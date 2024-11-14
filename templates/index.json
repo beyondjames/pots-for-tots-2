@@ -92,9 +92,8 @@
         },
         "slide_6mcVhA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Black_Friday_Banner_1.gif",
+            "image": "shopify://shop_images/Black_Friday_Banner_1.png",
             "heading": "",
             "heading_size": "h1",
             "show_heading_shadow": false,
