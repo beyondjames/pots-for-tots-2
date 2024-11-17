@@ -12,6 +12,32 @@
     "slideshow_tRxFr3": {
       "type": "slideshow",
       "blocks": {
+        "slide_6mcVhA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Black_Friday_Banner.png",
+            "mobile_image": "shopify://shop_images/BF-DEAL-AD-1-1_2.png",
+            "heading": "",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-2",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
+        },
         "slide_hgbCiy": {
           "type": "slide",
           "settings": {
@@ -89,39 +115,13 @@
             "image_badge_vertical_position": "middle",
             "image_badge_horizontal_position": "centre"
           }
-        },
-        "slide_6mcVhA": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Black_Friday_Banner.png",
-            "mobile_image": "shopify://shop_images/BF-DEAL-AD-1-1_1.png",
-            "heading": "",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-2",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
-          }
         }
       },
       "block_order": [
+        "slide_6mcVhA",
         "slide_hgbCiy",
         "slide_PJnnYE",
-        "slide_c6rpWy",
-        "slide_6mcVhA"
+        "slide_c6rpWy"
       ],
       "settings": {
         "layout": "full_bleed",
