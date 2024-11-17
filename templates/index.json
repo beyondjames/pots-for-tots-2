@@ -92,10 +92,9 @@
         },
         "slide_6mcVhA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Feel_good_friday_homepage.png",
-            "mobile_image": "shopify://shop_images/BF-DEAL-BANNER.png",
+            "image": "shopify://shop_images/Black_Friday_Banner.png",
+            "mobile_image": "shopify://shop_images/BF-DEAL-AD-1-1_1.png",
             "heading": "",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
