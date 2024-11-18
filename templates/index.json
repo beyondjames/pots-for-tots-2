@@ -857,6 +857,50 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "rich_text_PtUUF9": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_PVhmtJ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_Dxmqwi": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>T&Cs: Enter code FEELGOOD30 at checkout. You'll receive 30% off orders over £50 made between 14th-30th November. Offer applies to both one off and subscription orders. Code can be used on Liewood range, but excludes bundles. If used on a subscription order, Please use the code on each valid order between 14th-30th November. We reserve to change or end this offer at any time.<br/></h6>"
+          }
+        },
+        "button_8eGP4a": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_PVhmtJ",
+        "text_Dxmqwi",
+        "button_8eGP4a"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -876,6 +920,7 @@
     "custom_testimonials_pXPcd6",
     "featured_blog_aGFxAU",
     "custom_newsletter_titGVp",
-    "image_banner_zBhAPC"
+    "image_banner_zBhAPC",
+    "rich_text_PtUUF9"
   ]
 }
