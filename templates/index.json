@@ -219,19 +219,8 @@
         "column_QDQrVz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Italian_chicken_pasta.png",
-            "title": "NEW! Italian-Style Chicken & Tomato Pasta",
-            "title_size": "h2",
-            "text": "<p>£4.65</p>",
-            "link_label": "Create a box",
-            "link": "shopify://collections/build-your-box"
-          }
-        },
-        "column_XgNy9B": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Fruity_Lamb_Tagine.png",
-            "title": "Fruity Lamb Tagine",
+            "image": "shopify://shop_images/Festive_chicken_hotpot_Website_homepage_product_images_11_1.png",
+            "title": "NEW! Festive Chicken Hot Pot",
             "title_size": "h2",
             "text": "<p>£4.65</p>",
             "link_label": "Create a box",
@@ -245,6 +234,17 @@
             "title": "Mini Apple Pancakes",
             "title_size": "h2",
             "text": "<p>£5.29</p>",
+            "link_label": "Create a box",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
+        "column_XgNy9B": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Fruity_Lamb_Tagine.png",
+            "title": "Fruity Lamb Tagine",
+            "title_size": "h2",
+            "text": "<p>£4.65</p>",
             "link_label": "Create a box",
             "link": "shopify://collections/build-your-box"
           }
@@ -263,8 +263,8 @@
       },
       "block_order": [
         "column_QDQrVz",
-        "column_XgNy9B",
         "column_FNaUJd",
+        "column_XgNy9B",
         "column_Yc6brM"
       ],
       "settings": {
