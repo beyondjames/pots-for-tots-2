@@ -38,11 +38,36 @@
             "image_badge_horizontal_position": "centre"
           }
         },
+        "slide_c6rpWy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Festive_Chicken_Hotpot_homepage.png",
+            "mobile_image": "shopify://shop_images/Festive_chicken_hotpot_Website_homepage_product_images_11_1.png",
+            "heading": "Ho Ho Hot Pot!",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "SHOP NOW",
+            "link": "shopify://products/snacks-bundle",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
+        },
         "slide_hgbCiy": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Screenshot_2024-06-13_at_12.34.57.png",
-            "mobile_image": "shopify://shop_images/Group_hero_meals_only_square.png",
+            "image": "shopify://shop_images/Group_meals_and_snacks_homepage_e1377ac6-bf08-4e68-be1c-13e9c9c656d3.png",
             "heading": "Mealtimes made easy!",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
@@ -89,39 +114,13 @@
             "image_badge_vertical_position": "middle",
             "image_badge_horizontal_position": "centre"
           }
-        },
-        "slide_c6rpWy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Festive_Chicken_Hotpot_homepage.png",
-            "mobile_image": "shopify://shop_images/Festive_chicken_hotpot_Website_homepage_product_images_11_1.png",
-            "heading": "Ho Ho Hot Pot!",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "SHOP NOW",
-            "link": "shopify://products/snacks-bundle",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
-          }
         }
       },
       "block_order": [
         "slide_6mcVhA",
+        "slide_c6rpWy",
         "slide_hgbCiy",
-        "slide_PJnnYE",
-        "slide_c6rpWy"
+        "slide_PJnnYE"
       ],
       "settings": {
         "layout": "full_bleed",
