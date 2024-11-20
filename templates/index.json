@@ -68,6 +68,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Group_meals_and_snacks_homepage_e1377ac6-bf08-4e68-be1c-13e9c9c656d3.png",
+            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_1.png",
             "heading": "Mealtimes made easy!",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
@@ -92,8 +93,8 @@
         "slide_PJnnYE": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/NEWSLETTER_desktop_13.png",
-            "mobile_image": "shopify://shop_images/Liewood_homepage_mobile.png",
+            "image": "shopify://shop_images/Website_homepage_Liewood.png",
+            "mobile_image": "shopify://shop_images/Website_homepage_product_images_liewood.png",
             "heading": "",
             "heading_size": "h1",
             "show_heading_shadow": false,
@@ -104,7 +105,7 @@
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "box_align": "bottom-center",
+            "box_align": "bottom-right",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
