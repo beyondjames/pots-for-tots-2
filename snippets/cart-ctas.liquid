@@ -10,6 +10,10 @@
 {% assign byb_collection_id = 268279972006 %}
 {% assign byb_in_cart = 0 %}
 
+{% comment %} Baking set {% endcomment %}
+{% assign baking_set_collection_id = 14854878429569 %}
+{% assign baking_set_in_cart = 0 %}
+
 {% comment %} Find products in cart {% endcomment %}
 {% for item in cart.items %}
   {% assign product = item.product %}
@@ -22,6 +26,9 @@
       {% assign byb_in_cart = byb_in_cart | plus: item.quantity %}
     {% endif %}
   {% endfor %}
+  {% if product.id == baking_set_collection_id %}
+    {% assign baking_set_in_cart = baking_set_in_cart | plus: item.quantity %}
+  {% endif %}
 {% endfor %}
 
 {% comment %} Check if cart is valid {% endcomment %}
@@ -34,6 +41,9 @@
     {% assign invalid_cart = true %}
     {% assign cart_error_message = section.settings.liewood_error_message %}
   {% endif %}
+{% elsif baking_set_in_cart > 0 and byb_in_cart == 0 %}
+  {% assign invalid_cart = true %}
+  {% assign cart_error_message = section.settings.bakingset_error_message %}
 {% endif %}
 
 {% comment %} Cart error message {% endcomment %}
