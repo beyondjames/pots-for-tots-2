@@ -55,6 +55,9 @@ let subscription = {
     let productList = [];
     let upsellList = [];
 
+    const subTypeWrapper = document.querySelector('subscription-type');
+    console.log(subTypeWrapper);
+
     // Handle subscription frequency settings
     if (getCookie('potsFreq') !== '') {
       // Use frequency from cookie if available
@@ -71,10 +74,19 @@ let subscription = {
       // Use frequency from cookie if available
       this.state.subscriptionType = getCookie('potsType');
       sessionStorage.setItem('potsType', this.state.subscriptionType);
+      console.log('Found Subscription Type: ' + this.state.subscriptionType);
     } else {
       // Set default frequency in cookie
       setCookie('potsType', this.state.subscriptionType, 1);
       sessionStorage.setItem('potsType', this.state.subscriptionType);
+      console.log('Set Subscription Type: ' + this.state.subscriptionType);
+    }
+
+    // Set subscription type based on user selection
+    if (this.state.subscriptionType == 'subscription') {
+      subTypeWrapper.querySelector('#subscription').classList.add('active');
+    } else {
+      subTypeWrapper.querySelector('#onetime').classList.add('active');
     }
 
     // Check for saved product list in session storage
