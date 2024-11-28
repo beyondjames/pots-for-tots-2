@@ -1,0 +1,326 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_banner_GVmUkf": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_pfn3KB": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Pots for Tots x Liewood",
+            "heading_size": "h0",
+            "show_heading_shadow": false
+          }
+        },
+        "text_MbxqGN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "We're excited to announce that we've partnered up with Danish homeware designer Liewood to bring you a capsule collection of their mealtime favourites. You can add these onto any Pots for Tots orders.",
+            "text_style": "body"
+          }
+        },
+        "buttons_4ch6Ez": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections/build-your-box",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_pfn3KB",
+        "text_MbxqGN",
+        "buttons_4ch6Ez"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/NEWSLETTER_desktop_13.png",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "custom_image_banner_no_text_RpKxyp": {
+      "type": "custom-image-banner-no-text",
+      "disabled": true,
+      "settings": {
+        "image_desktop": "shopify://shop_images/Liewood_logo_banner_2d9e7eae-f4ff-40b0-9673-41375f670fc8.png",
+        "image_width": "",
+        "title": "",
+        "link_url": ""
+      }
+    },
+    "rich_text_PLmmAh": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Dex6F3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_cTnm67": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>We're delighted to be partnering with Danish designer Liewood to bring you a capsule collection of lifestyle products to bring more joy to every mealtime. </strong><br/><br/><em>\"At Liewood, we believe in creating beautiful products to ease and inspire the everyday lives of families. We're thrilled to partner with Pots for Tots who create thoughtfully designed meal boxes that make mealtime fun, nutritious, and easy for families. Together, we aim to support in fostering healthy habits while adding a touch of Scandinavian style to everyday routines.\"</em> - Sophie Mohammadi, Liewood</p>"
+          }
+        },
+        "button_Q3FHeH": {
+          "type": "button",
+          "settings": {
+            "button_label": "Get started",
+            "button_link": "shopify://collections/liewood",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Dex6F3",
+        "text_cTnm67",
+        "button_Q3FHeH"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "multirow_nyEeCi": {
+      "type": "multirow",
+      "blocks": {
+        "row_cNWbrW": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/1_791c09c8-9295-43d4-a67b-e6993e1aa366.png",
+            "caption": "LIEWOOD",
+            "heading": "Vivi Silicone Set",
+            "text": "<p>Liewood's best tableware products in silicone - all in one convenient set. A great non-breakable alternative to plastic and porcelain.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/liewood-vivi-silicone-set-cat-dark-rose"
+          }
+        },
+        "row_pR4dEw": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/3_8532fc7e-360f-4c37-ad88-f9a5a2998f4c.png",
+            "caption": "LIEWOOD",
+            "heading": "Tove All Together Cutlery Set",
+            "text": "<p>Bring a touch of fun to mealtimes with the Tove Cutlery Set. Made from stainless steel and with 3D silicone handles for extra grip, this durable cutlery is perfect for little hands to hold and a playful tool for encouragement.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/liewood-tove-all-together-cutlery-set-golden-caramel-mix"
+          }
+        },
+        "row_VpcYdV": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/2_57f57a23-98ea-421e-8c92-7478bbc478b2.png",
+            "caption": "LIEWOOD",
+            "heading": "Tilda Printed Bib 2-Pack",
+            "text": "<p>An essential for your changing bag this practical bib helps making mealtimes a little less messy. </p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/liewood-tilda-printed-bib-2-pack-leopard-multi-mix"
+          }
+        },
+        "row_UzEVcz": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/4_b0e61116-0bbb-48eb-9a04-dbbecf85a048.png",
+            "caption": "LIEWOOD",
+            "heading": "Neil Sippy Cup",
+            "text": "<p>Perfect for mastering the skill of drinking, the Neil Cup has a removable lid with a small spout and a smooth, tactile feel. The handles ensure a firm grip and allow the child to practice holding and tilting, as well as preparing for the use of an open cup.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/liewood-neil-sippy-cup-peach-sea-shell-mix"
+          }
+        },
+        "row_yDyyr3": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/5_a3cd025a-b23d-4772-a67c-ca81c693e26c.png",
+            "caption": "LIEWOOD",
+            "heading": "Falk Water Bottle",
+            "text": "<p>A premium steel water bottle, made from 80% recycled stainless steel. Designed to be easy for little hands to hold. It is leakproof and features a built-in pop-up straw lid as well as a loop handle for convenient carrying when on the go.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/liewood-falk-water-bottle-350-ml-bunny-sandy"
+          }
+        },
+        "row_ThrWzc": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Nadja_Food_Jar_LW20223_1111_Safari_sandy_mix_2.jpg",
+            "caption": "LIEWOOD",
+            "heading": "Liewood Nadja Food Jar",
+            "text": "<p>The practical food jar has double stainless-steel walls making it ideal for bringing porridge or snacks on an outing.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://products/liewood-nadja-food-jar-peach-sea-shell-mix"
+          }
+        }
+      },
+      "block_order": [
+        "row_cNWbrW",
+        "row_pR4dEw",
+        "row_VpcYdV",
+        "row_UzEVcz",
+        "row_yDyyr3",
+        "row_ThrWzc"
+      ],
+      "settings": {
+        "image_height": "adapt",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "scheme-2",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_BQBza9": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Get started with our family favourites",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_nejX4T": {
+      "type": "rich-text",
+      "blocks": {
+        "button_HzpJ8X": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "button_HzpJ8X"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "custom_newsletter_BMmYj9": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "heading_wT8NwW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join our journey",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_N7Bb9K": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!</p>"
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_fUi8Gc": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "XDcips"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wT8NwW",
+        "paragraph_N7Bb9K",
+        "klaviyo_email_marketing_sms_form_embed_block_fUi8Gc"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/Recycled_background_medium_res.png",
+        "image_mobile": "shopify://shop_images/Recycled_background_medium_res.png",
+        "full_width": true,
+        "content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_GVmUkf",
+    "custom_image_banner_no_text_RpKxyp",
+    "rich_text_PLmmAh",
+    "multirow_nyEeCi",
+    "featured_collection_BQBza9",
+    "rich_text_nejX4T",
+    "custom_newsletter_BMmYj9"
+  ]
+}
