@@ -16,6 +16,7 @@
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Feel Good Friday! 30% off orders over £50 | Code: FEELGOOD30",
             "link": "shopify://collections/build-your-box"
