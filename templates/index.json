@@ -115,13 +115,41 @@
             "image_badge_vertical_position": "middle",
             "image_badge_horizontal_position": "centre"
           }
+        },
+        "slide_EFdemU": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_4.png",
+            "mobile_image": "shopify://shop_images/xmas.png",
+            "heading": "",
+            "heading_size": "h1",
+            "show_heading_shadow": false,
+            "subheading": "",
+            "button_label": "",
+            "link": "shopify://products/rudolph-friends-bake-and-craft-kit",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
         }
       },
       "block_order": [
         "slide_6mcVhA",
         "slide_c6rpWy",
         "slide_hgbCiy",
-        "slide_PJnnYE"
+        "slide_PJnnYE",
+        "slide_EFdemU"
       ],
       "settings": {
         "layout": "full_bleed",
