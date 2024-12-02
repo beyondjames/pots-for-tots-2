@@ -14,10 +14,9 @@
       "blocks": {
         "slide_6mcVhA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Black_Friday_Banner_6.png",
-            "mobile_image": "shopify://shop_images/BF-DEAL-AD-1-1_7.png",
+            "image": "shopify://shop_images/Black_Friday_Banner_7.png",
+            "mobile_image": "shopify://shop_images/BF-DEAL-AD-1-1_8.png",
             "heading": "",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
@@ -872,9 +871,8 @@
         },
         "text_Dxmqwi": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<h6>T&Cs: Enter code FEELGOOD30 at checkout. You'll receive 30% off orders over £50 made between 14th-30th November. Offer applies to both one off and subscription orders. Code can be used on Liewood range, but excludes bundles. If used on a subscription order, Please use the code on each valid order between 14th-30th November. We reserve to change or end this offer at any time.<br/></h6>"
+            "text": "<h6>T&Cs: Enter code FEELGOOD30 at checkout. You'll receive 30% off orders over £50 made between 14th-30th November. Offer applies to both one off and subscription orders. Code can be used on Liewood range, but excludes bundles. If used on a subscription order, Please use the code on each valid order between 14th-2nd December. We reserve to change or end this offer at any time.<br/></h6>"
           }
         },
         "button_8eGP4a": {
