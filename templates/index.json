@@ -118,9 +118,8 @@
         },
         "slide_EFdemU": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_4.png",
+            "image": "shopify://shop_images/Website_homepage_6.png",
             "mobile_image": "shopify://shop_images/xmas.png",
             "heading": "",
             "heading_size": "h1",
