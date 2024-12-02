@@ -14,6 +14,7 @@
       "blocks": {
         "slide_6mcVhA": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Black_Friday_Banner_6.png",
             "mobile_image": "shopify://shop_images/BF-DEAL-AD-1-1_7.png",
