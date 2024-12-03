@@ -899,6 +899,7 @@
         },
         "text_Dxmqwi": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h6>T&Cs: Enter code FEELGOOD30 at checkout. You'll receive 30% off orders over £50 made between 14th-30th November. Offer applies to both one off and subscription orders. Code can be used on Liewood range, but excludes bundles. If used on a subscription order, Please use the code on each valid order between 14th-2nd December. We reserve to change or end this offer at any time.<br/></h6>"
           }
