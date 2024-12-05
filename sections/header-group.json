@@ -35,12 +35,20 @@
             "text": "Up to 15% off NEW bundles!",
             "link": "shopify://collections/bundles"
           }
+        },
+        "announcement_cYPTa7": {
+          "type": "announcement",
+          "settings": {
+            "text": "Get 20% off your first 3 subscriptions | code TOTS20",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
         "announcement_YyVH6J",
-        "announcement_XckcmE"
+        "announcement_XckcmE",
+        "announcement_cYPTa7"
       ],
       "settings": {
         "color_scheme": "",
