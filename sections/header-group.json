@@ -14,12 +14,11 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement-bar-0": {
+        "announcement_cYPTa7": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Feel Good Friday! 30% off orders over £50 | Code: FEELGOOD30",
-            "link": "shopify://collections/build-your-box"
+            "text": "Get 20% off your first 3 subscriptions | code TOTS20",
+            "link": ""
           }
         },
         "announcement_YyVH6J": {
@@ -32,23 +31,23 @@
         "announcement_XckcmE": {
           "type": "announcement",
           "settings": {
-            "text": "Up to 15% off NEW bundles!",
+            "text": "Up to 15% off with bundles!",
             "link": "shopify://collections/bundles"
           }
         },
-        "announcement_cYPTa7": {
+        "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Get 20% off your first 3 subscriptions | code TOTS20",
-            "link": ""
+            "text": "Order by midnight on 16th Dec for Christmas delivery",
+            "link": "shopify://collections/build-your-box"
           }
         }
       },
       "block_order": [
-        "announcement-bar-0",
+        "announcement_cYPTa7",
         "announcement_YyVH6J",
         "announcement_XckcmE",
-        "announcement_cYPTa7"
+        "announcement-bar-0"
       ],
       "settings": {
         "color_scheme": "",
