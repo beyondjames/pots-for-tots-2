@@ -50,7 +50,13 @@
 
 .upsell-modal-narrow .upsell-modal__content {
   width: 340px;
-  padding: 0 4rem 2rem;
+  padding: 2rem 4rem;
+}
+
+.upsell-modal-narrow .upsell-modal__toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .upsell-modal__content.focused {
