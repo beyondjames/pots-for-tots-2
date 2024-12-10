@@ -5,6 +5,10 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
+  .collection-hero__description--delivery-date p {
+    margin: 0;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}px;
@@ -65,10 +69,14 @@
         <div class="collection-hero__description rte">
           {{- section.settings.collection_text -}}
 
-          <p>
-            <strong>Our next delivery date will be:</strong><br />
-            {{ weekday_date_month }}
-          </p>
+          <div class="collection-hero__description--delivery-date">
+            <p><strong>Our next delivery date will be:</strong></p>
+            {% if section.settings.delivery_date_message != "" %}
+              {{- section.settings.delivery_date_message -}}
+            {% else %}
+              {{ weekday_date_month }}
+            {% endif %}
+          </div>
         </div>
       {%- else -%}
         {%- if section.settings.show_collection_description -%}
@@ -142,7 +150,12 @@
     {
       "type": "richtext",
       "id": "collection_text",
-      "label": "Text"
+      "label": "Description"
+    },
+    {
+      "type": "richtext",
+      "id": "delivery_date_message",
+      "label": "Delivery Date Message",
     },
     {
       "type": "header",
