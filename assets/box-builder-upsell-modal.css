@@ -48,6 +48,11 @@
     rgba(var(--color-shadow), var(--popup-shadow-opacity));
 }
 
+.upsell-modal-narrow .upsell-modal__content {
+  width: 340px;
+  padding: 0 4rem 2rem;
+}
+
 .upsell-modal__content.focused {
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3),
     var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)
@@ -143,6 +148,7 @@
   align-items: center;
   justify-content: space-between;
   display: flex;
+  padding-bottom: 1rem;
 }
 
 .upsell-modal__description {
