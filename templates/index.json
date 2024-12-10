@@ -796,6 +796,53 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_fYTReL": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_LMDJpd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Delivery over Christmas",
+            "heading_size": "h1"
+          }
+        },
+        "text_h8pnWa": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our final date for a pre-Christmas delivery is Midnight on <strong>Monday 16th December </strong>for delivery on <strong>Thursday 19th December. </strong>To help you plan ahead, check out our adjusted delivery schedule and order cut-off dates over the festive period.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_x4Ufnk": {
+          "type": "button",
+          "settings": {
+            "button_label": "FIND OUT MORE",
+            "button_link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_LMDJpd",
+        "text_h8pnWa",
+        "button_x4Ufnk"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/FestiveChickenhotpotlifestyle.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_newsletter_titGVp": {
       "type": "custom-newsletter",
       "blocks": {
@@ -885,98 +932,6 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "rich_text_PtUUF9": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_PVhmtJ": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_Dxmqwi": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<h6>T&Cs: Enter code FEELGOOD30 at checkout. You'll receive 30% off orders over £50 made between 14th-30th November. Offer applies to both one off and subscription orders. Code can be used on Liewood range, but excludes bundles. If used on a subscription order, Please use the code on each valid order between 14th-2nd December. We reserve to change or end this offer at any time.<br/></h6>"
-          }
-        },
-        "button_8eGP4a": {
-          "type": "button",
-          "disabled": true,
-          "settings": {
-            "button_label": "Button label",
-            "button_link": "",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_PVhmtJ",
-        "text_Dxmqwi",
-        "button_8eGP4a"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "image_with_text_fYTReL": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_LMDJpd": {
-          "type": "heading",
-          "settings": {
-            "heading": "Delivery over Christmas",
-            "heading_size": "h1"
-          }
-        },
-        "text_h8pnWa": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Our final date for a pre-Christmas delivery is Midnight on <strong>Monday 16th December </strong>for delivery on <strong>Thursday 19th December. </strong>To help you plan ahead, check out our adjusted delivery schedule and order cut-off dates over the festive period.</p>",
-            "text_style": "body"
-          }
-        },
-        "button_x4Ufnk": {
-          "type": "button",
-          "settings": {
-            "button_label": "FIND OUT MORE",
-            "button_link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LMDJpd",
-        "text_h8pnWa",
-        "button_x4Ufnk"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/FestiveChickenhotpotlifestyle.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -995,9 +950,8 @@
     "1719331689a4fcf305",
     "custom_testimonials_pXPcd6",
     "featured_blog_aGFxAU",
+    "image_with_text_fYTReL",
     "custom_newsletter_titGVp",
-    "image_banner_zBhAPC",
-    "rich_text_PtUUF9",
-    "image_with_text_fYTReL"
+    "image_banner_zBhAPC"
   ]
 }
