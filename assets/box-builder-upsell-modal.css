@@ -59,6 +59,14 @@
   right: 1rem;
 }
 
+.upsell-modal-twoup .upsell-modal__content {
+  width: 612px;
+}
+
+.upsell-modal-threeup .upsell-modal__content {
+  width: 904px;
+}
+
 .upsell-modal__content.focused {
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3),
     var(--popup-shadow-horizontal-offset) var(--popup-shadow-vertical-offset) var(--popup-shadow-blur-radius)

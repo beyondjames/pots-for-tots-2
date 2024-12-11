@@ -11,7 +11,7 @@
   Usage: {% render 'box-builder-upsell-modal'
 %} {% endcomment %}
 
-<upsell-modal id="UpsellModal-{{ section.id }}" class="upsell-modal {% if collection.products.size == 1 %}upsell-modal-narrow{% endif %}">
+<upsell-modal id="UpsellModal-{{ section.id }}" class="upsell-modal {% if collection.products.size == 1 %}upsell-modal-narrow{% endif %}{% if collection.products.size == 2 %}upsell-modal-twoup{% endif %}{% if collection.products.size == 3 %}upsell-modal-threeup{% endif %}">
   <div role="dialog" aria-label="{{ block.settings.text }}" aria-modal="true" class="upsell-modal__content" tabindex="-1">
     <button
       id="ModalClose-{{ section.id }}"
