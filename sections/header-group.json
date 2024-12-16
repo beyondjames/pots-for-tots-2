@@ -28,26 +28,26 @@
             "link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271"
           }
         },
-        "announcement_YyVH6J": {
-          "type": "announcement",
-          "settings": {
-            "text": "FREE Shipping with 24+ meals 🚚",
-            "link": ""
-          }
-        },
         "announcement_XckcmE": {
           "type": "announcement",
           "settings": {
             "text": "DOUBLE POINTS ON ALL ORDERS THROUGHOUT DECEMBER",
             "link": "shopify://collections/bundles"
           }
+        },
+        "announcement_YyVH6J": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE Shipping with 24+ meals 🚚",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement_cYPTa7",
         "announcement-bar-0",
-        "announcement_YyVH6J",
-        "announcement_XckcmE"
+        "announcement_XckcmE",
+        "announcement_YyVH6J"
       ],
       "settings": {
         "color_scheme": "",
