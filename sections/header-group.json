@@ -21,6 +21,13 @@
             "link": ""
           }
         },
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Order by midnight on 16th Dec for Christmas delivery",
+            "link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271"
+          }
+        },
         "announcement_YyVH6J": {
           "type": "announcement",
           "settings": {
@@ -31,23 +38,16 @@
         "announcement_XckcmE": {
           "type": "announcement",
           "settings": {
-            "text": "Up to 15% off with bundles!",
+            "text": "DOUBLE POINTS ON ALL ORDERS THROUGHOUT DECEMBER",
             "link": "shopify://collections/bundles"
-          }
-        },
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "Order by midnight on 16th Dec for Christmas delivery",
-            "link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271"
           }
         }
       },
       "block_order": [
         "announcement_cYPTa7",
+        "announcement-bar-0",
         "announcement_YyVH6J",
-        "announcement_XckcmE",
-        "announcement-bar-0"
+        "announcement_XckcmE"
       ],
       "settings": {
         "color_scheme": "",
