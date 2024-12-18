@@ -60,9 +60,10 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-4",
             "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
+            "image_badge": "shopify://shop_images/logo_colour_small_7ecacb67-0aa6-46e7-b608-9d9e0a86b8a6.png",
+            "image_badge_width": "100",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
           }
         },
         "slide_EFdemU": {

@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -39,10 +39,10 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "Build a box",
-            "button_link_1": "shopify:\/\/collections\/build-your-box",
+            "button_link_1": "shopify://collections/build-your-box",
             "button_style_secondary_1": false,
             "button_label_2": "Bundles",
-            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false
           }
         }
@@ -53,7 +53,7 @@
         "buttons_iFD7YV"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/PFT_Pattern_Background_copy.jpg",
+        "image": "shopify://shop_images/PFT_Pattern_Background_copy.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -82,7 +82,7 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_CYFTkb": {
@@ -118,10 +118,10 @@
         "row_tmiQpL": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Lentil_bol_square.png",
+            "image": "shopify://shop_images/Lentil_bol_square.png",
             "caption": "we are",
             "heading": "Responsible",
-            "text": "<p>We think children deserve to eat REAL food, whether that’s at home or on the go. We have a responsibility to provide nutritious food for the future health of our children. We are the change we’d like to see.<\/p>",
+            "text": "<p>We think children deserve to eat REAL food, whether that’s at home or on the go. We have a responsibility to provide nutritious food for the future health of our children. We are the change we’d like to see.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -129,10 +129,10 @@
         "row_WD8QBm": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_1826_2.jpg",
+            "image": "shopify://shop_images/IMG_1826_2.jpg",
             "caption": "we are",
             "heading": "Honest",
-            "text": "<p>We pride ourselves on being an honest food business, from what’s in our food to what our daily lives look like. Forget misleading food labels or marketing messaging. Forget \"perfect parent” social posts - we’re here to show the realities - both the joy and struggles of being a parent.<\/p>",
+            "text": "<p>We pride ourselves on being an honest food business, from what’s in our food to what our daily lives look like. Forget misleading food labels or marketing messaging. Forget \"perfect parent” social posts - we’re here to show the realities - both the joy and struggles of being a parent.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -140,10 +140,10 @@
         "row_JJxeUU": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
+            "image": "shopify://shop_images/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
             "caption": "we are",
             "heading": "Supportive",
-            "text": "<p>We are parents supporting parents. When it comes to raising a child, it’s hard to figure out what’s best and when. We’ve gathered all the information to cut through the noise so parents can come to us when they need a little help<\/p>",
+            "text": "<p>We are parents supporting parents. When it comes to raising a child, it’s hard to figure out what’s best and when. We’ve gathered all the information to cut through the noise so parents can come to us when they need a little help</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -151,10 +151,10 @@
         "row_eenibp": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Snacks_copy.jpg",
+            "image": "shopify://shop_images/Snacks_copy.jpg",
             "caption": "we are",
             "heading": "Sustainable",
-            "text": "<p>We always look at the impact our business has on the environment in every aspect of our brand and product, from the packaging and delivery, to the ingredients, cooking processes and food waste.<\/p>",
+            "text": "<p>We always look at the impact our business has on the environment in every aspect of our brand and product, from the packaging and delivery, to the ingredients, cooking processes and food waste.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -162,10 +162,10 @@
         "row_LxU9aH": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Cottage_pie_square.png",
+            "image": "shopify://shop_images/Cottage_pie_square.png",
             "caption": "We Are",
             "heading": "Trailblazing",
-            "text": "<p>We’re here to make an impact in the children’s food space. We’re not afraid to call out big brands, who use misleading marketing messages and we will always be an advocate for the health of our children and yours.<\/p>",
+            "text": "<p>We’re here to make an impact in the children’s food space. We’re not afraid to call out big brands, who use misleading marketing messages and we will always be an advocate for the health of our children and yours.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -209,17 +209,17 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_XhCH6G": {
           "type": "button",
           "settings": {
             "button_label": "SHOP ALL",
-            "button_link": "shopify:\/\/collections\/build-your-box",
+            "button_link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
             "button_label_2": "SHOP BUNDLES",
-            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false
           }
         }
@@ -251,7 +251,7 @@
         "text_3H9fJK": {
           "type": "text",
           "settings": {
-            "text": "<p>Cherrelle Beckitt is the founder of The Family Food Co. and CEO of Pots for Tots. <\/p><p>The company was born out of her own feeding journey with her son, Louie who had multiple allergies growing up - she quickly saw a gap in the market to create a guilt-free, convenient solution for parents.<\/p>",
+            "text": "<p>Cherrelle Beckitt is the founder of The Family Food Co. and CEO of Pots for Tots. </p><p>The company was born out of her own feeding journey with her son, Louie who had multiple allergies growing up - she quickly saw a gap in the market to create a guilt-free, convenient solution for parents.</p>",
             "text_style": "body"
           }
         },
@@ -271,7 +271,7 @@
         "button_TMNyLy"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Cherrelle_and_Louie.png",
+        "image": "shopify://shop_images/Cherrelle_and_Louie.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -299,7 +299,7 @@
         "text_aFxhDg": {
           "type": "text",
           "settings": {
-            "text": "<p>Lucy is our resident dietitian and has been providing practical nutritional advice and support for babies, children and their families for over 10 years<br\/><br\/>\"I’m a registered Specialist Paediatric Dietitian and I love it! I’m really proud to work with Pots for Tots to help parents feed their children nutritious food - even when they're short on time.\"<\/p>",
+            "text": "<p>Lucy is our resident dietitian and has been providing practical nutritional advice and support for babies, children and their families for over 10 years<br/><br/>\"I’m a registered Specialist Paediatric Dietitian and I love it! I’m really proud to work with Pots for Tots to help parents feed their children nutritious food - even when they're short on time.\"</p>",
             "text_style": "body"
           }
         },
@@ -307,7 +307,7 @@
           "type": "button",
           "settings": {
             "button_label": "More from lucy",
-            "button_link": "shopify:\/\/blogs\/toddlers\/your-foodie-questions-answered-by-our-children-s-dietician-1",
+            "button_link": "shopify://blogs/toddlers/your-foodie-questions-answered-by-our-children-s-dietician-1",
             "button_style_secondary": false
           }
         }
@@ -318,7 +318,7 @@
         "button_LBxLCF"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png",
+        "image": "shopify://shop_images/NEWSLETTER_mobile_6.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -346,7 +346,7 @@
         "text_QCKF34": {
           "type": "text",
           "settings": {
-            "text": "<p>Lucy is our resident dietitian and has been providing practical nutritional advice and support for babies, children and their families for over 10 years<br\/><br\/>\"I’m a registered Specialist Paediatric Dietitian and I love it! I’m really proud to work with Pots for Tots to help parents feed their children nutritious food - even when they're short on time.\"<\/p>",
+            "text": "<p>Lucy is our resident dietitian and has been providing practical nutritional advice and support for babies, children and their families for over 10 years<br/><br/>\"I’m a registered Specialist Paediatric Dietitian and I love it! I’m really proud to work with Pots for Tots to help parents feed their children nutritious food - even when they're short on time.\"</p>",
             "text_style": "body"
           }
         },
@@ -354,7 +354,7 @@
           "type": "button",
           "settings": {
             "button_label": "More from Lucy",
-            "button_link": "shopify:\/\/blogs\/toddlers",
+            "button_link": "shopify://blogs/toddlers",
             "button_style_secondary": false
           }
         }
@@ -366,7 +366,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/NEWSLETTER_mobile_6.png",
+        "image": "shopify://shop_images/NEWSLETTER_mobile_6.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "image_heading": "",
@@ -388,9 +388,9 @@
         "column_tVy4UN": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/6_b70380f0-7dba-4a56-b884-16c21b91789a.png",
+            "image": "shopify://shop_images/6_b70380f0-7dba-4a56-b884-16c21b91789a.png",
             "title": "Cherrelle",
-            "text": "<p>Founder\/CEO<\/p>",
+            "text": "<p>Founder/CEO</p>",
             "link_label": "",
             "link": ""
           }
@@ -398,9 +398,9 @@
         "column_MWBjKx": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_8e4e8022-0e16-429a-a8eb-02fa6aee7325.png",
+            "image": "shopify://shop_images/3_8e4e8022-0e16-429a-a8eb-02fa6aee7325.png",
             "title": "Lucy",
-            "text": "<p>Children's Dietitian<\/p>",
+            "text": "<p>Children's Dietitian</p>",
             "link_label": "",
             "link": ""
           }
@@ -408,9 +408,9 @@
         "column_hCNqJr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/10_e1e5e224-f80d-4077-9c6f-62c563173a73.png",
+            "image": "shopify://shop_images/10_e1e5e224-f80d-4077-9c6f-62c563173a73.png",
             "title": "Lizzy",
-            "text": "<p>Head of Product<\/p>",
+            "text": "<p>Head of Product</p>",
             "link_label": "",
             "link": ""
           }
@@ -418,19 +418,20 @@
         "column_Umf9FC": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/7_5d10fdda-96bb-4535-aace-6432c9b25b8b.png",
+            "image": "shopify://shop_images/7_5d10fdda-96bb-4535-aace-6432c9b25b8b.png",
             "title": "Verity",
-            "text": "<p>Head of Creative<\/p>",
+            "text": "<p>Head of Creative</p>",
             "link_label": "",
             "link": ""
           }
         },
         "column_wr8xAB": {
           "type": "column",
+          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/5_b6e4c880-ad7d-434a-bbc4-16eb540c1843.png",
+            "image": "shopify://shop_images/5_b6e4c880-ad7d-434a-bbc4-16eb540c1843.png",
             "title": "Flora",
-            "text": "<p>Head of Growth<\/p>",
+            "text": "<p>Head of Growth</p>",
             "link_label": "",
             "link": ""
           }
@@ -438,9 +439,9 @@
         "column_gY8UJg": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Team_images_11.png",
+            "image": "shopify://shop_images/Team_images_11.png",
             "title": "Jamie",
-            "text": "<p>Head of Operations<\/p>",
+            "text": "<p>Head of Operations</p>",
             "link_label": "",
             "link": ""
           }
@@ -448,9 +449,9 @@
         "column_rzfYa3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/4_313e96ac-4e5f-4f85-90de-1388f3c8f7c9.png",
+            "image": "shopify://shop_images/4_313e96ac-4e5f-4f85-90de-1388f3c8f7c9.png",
             "title": "Katie",
-            "text": "<p>Head of Digital<\/p>",
+            "text": "<p>Head of Digital</p>",
             "link_label": "",
             "link": ""
           }
@@ -458,9 +459,9 @@
         "column_tbfNTB": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/8_f80e4c0c-245a-42a2-8698-0b5746584595.png",
+            "image": "shopify://shop_images/8_f80e4c0c-245a-42a2-8698-0b5746584595.png",
             "title": "Jade",
-            "text": "<p>Business Operations<\/p>",
+            "text": "<p>Business Operations</p>",
             "link_label": "",
             "link": ""
           }
@@ -468,9 +469,9 @@
         "column_FPAqt3": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/9_18506f77-740f-4dfb-92f3-fb41ff98d3cf.png",
+            "image": "shopify://shop_images/9_18506f77-740f-4dfb-92f3-fb41ff98d3cf.png",
             "title": "Jazz",
-            "text": "<p>Content Manager<\/p>",
+            "text": "<p>Content Manager</p>",
             "link_label": "",
             "link": ""
           }
@@ -478,9 +479,9 @@
         "column_H9GVPC": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_b5b819d3-4fa4-45de-bea5-3c28b2ba12a5.png",
+            "image": "shopify://shop_images/1_b5b819d3-4fa4-45de-bea5-3c28b2ba12a5.png",
             "title": "Ali",
-            "text": "<p>Head Chef<\/p>",
+            "text": "<p>Head Chef</p>",
             "link_label": "",
             "link": ""
           }
@@ -489,9 +490,9 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_2fe45570-ff55-41fc-a5c7-fc4831f0c2dc.png",
+            "image": "shopify://shop_images/2_2fe45570-ff55-41fc-a5c7-fc4831f0c2dc.png",
             "title": "Yulduz",
-            "text": "<p>Chef<\/p>",
+            "text": "<p>Chef</p>",
             "link_label": "",
             "link": ""
           }
@@ -522,7 +523,7 @@
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-2",
-        "columns_mobile": "1",
+        "columns_mobile": "2",
         "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
@@ -541,14 +542,13 @@
         "paragraph_LCEMAT": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!<\/p>"
+            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!</p>"
           }
         },
         "email_form_Vn7BeL": {
           "type": "email_form",
           "disabled": true,
-          "settings": {
-          }
+          "settings": {}
         },
         "smallprint_jbypam": {
           "type": "smallprint",
@@ -558,7 +558,7 @@
           }
         },
         "klaviyo_email_marketing_sms_form_embed_block_FNzXK3": {
-          "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
           "settings": {
             "formId": "XDcips"
           }
@@ -573,7 +573,7 @@
       ],
       "settings": {
         "color_scheme": "",
-        "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
+        "image": "shopify://shop_images/Recycled_background_medium_res.png",
         "full_width": true,
         "content_alignment": "center",
         "padding_top": 40,
