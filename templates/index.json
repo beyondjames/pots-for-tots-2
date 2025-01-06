@@ -250,10 +250,10 @@
         "column_QDQrVz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Festive_chicken_hotpot_Website_homepage_product_images_11_1.png",
-            "title": "NEW! Festive Chicken Hot Pot",
+            "image": "shopify://shop_images/Veggie_chilli_square.png",
+            "title": "NEW! Veggie Chilli",
             "title_size": "h2",
-            "text": "<p>£4.65</p>",
+            "text": "<p>£4.60</p>",
             "link_label": "Create a box",
             "link": "shopify://collections/build-your-box"
           }
