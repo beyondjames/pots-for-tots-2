@@ -23,6 +23,7 @@
         },
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Order by midnight on 16th Dec for Christmas delivery",
             "link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271"
@@ -30,6 +31,7 @@
         },
         "announcement_XckcmE": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "DOUBLE POINTS ON ALL ORDERS THROUGHOUT DECEMBER",
             "link": "shopify://collections/bundles"

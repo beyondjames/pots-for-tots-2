@@ -12,6 +12,32 @@
     "slideshow_tRxFr3": {
       "type": "slideshow",
       "blocks": {
+        "slide_hgbCiy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Group_meals_and_snacks_homepage_e1377ac6-bf08-4e68-be1c-13e9c9c656d3.png",
+            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_1.png",
+            "heading": "Mealtimes made easy!",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "Build A Box",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "Bundles",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
+        },
         "slide_6mcVhA": {
           "type": "slide",
           "disabled": true,
@@ -41,6 +67,7 @@
         },
         "slide_c6rpWy": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Festive_Chicken_Hotpot_homepage_9a28d07b-465a-481f-909a-15fdde8e741b.png",
             "mobile_image": "shopify://shop_images/1_abc59978-7eb6-4b9e-81c6-3e4c0c637e33.png",
@@ -68,6 +95,7 @@
         },
         "slide_EFdemU": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Website_homepage_6.png",
             "mobile_image": "shopify://shop_images/xmas_1.png",
@@ -86,32 +114,6 @@
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
-          }
-        },
-        "slide_hgbCiy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Group_meals_and_snacks_homepage_e1377ac6-bf08-4e68-be1c-13e9c9c656d3.png",
-            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_1.png",
-            "heading": "Mealtimes made easy!",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "Build A Box",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "Bundles",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
             "text_alignment_mobile": "center",
             "image_badge_width": "",
             "image_badge_vertical_position": "middle",
@@ -146,10 +148,10 @@
         }
       },
       "block_order": [
+        "slide_hgbCiy",
         "slide_6mcVhA",
         "slide_c6rpWy",
         "slide_EFdemU",
-        "slide_hgbCiy",
         "slide_PJnnYE"
       ],
       "settings": {
@@ -828,6 +830,7 @@
         "text_h8pnWa",
         "button_x4Ufnk"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/FestiveChickenhotpotlifestyle.png",
         "height": "adapt",
