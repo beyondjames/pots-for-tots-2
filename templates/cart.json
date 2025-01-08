@@ -26,6 +26,20 @@
     "cart-footer": {
       "type": "main-cart-footer",
       "blocks": {
+        "date_picker_LCHryJ": {
+          "type": "date-picker",
+          "settings": {
+            "datepicker_message": "We deliver on Mondays and Thursdays, when would you like to receive your first subscription order?",
+            "enable_sunday": false,
+            "enable_monday": true,
+            "enable_tuesday": false,
+            "enable_wednesday": false,
+            "enable_thursday": true,
+            "enable_friday": false,
+            "enable_saturday": false,
+            "disabled_dates": "2024-12-24:2024-12-31,2025-01-14"
+          }
+        },
         "subtotal": {
           "type": "subtotal",
           "settings": {}
@@ -35,10 +49,15 @@
           "settings": {}
         }
       },
-      "block_order": ["subtotal", "buttons"],
+      "block_order": [
+        "date_picker_LCHryJ",
+        "subtotal",
+        "buttons"
+      ],
       "settings": {
         "color_scheme": "",
         "liewood_error_message": "Please ensure you have a minimum basket value of £35 of Liewood products or 8 meals/snacks + any Liewood item(s)",
+        "bakingset_error_message": "This product cannot be purchased seperately",
         "byb_error_message": "Please ensure you have at least 8 meals PLUS your Liewood item(s)",
         "padding_top": 20,
         "padding_bottom": 60
@@ -51,5 +70,9 @@
       }
     }
   },
-  "order": ["cart-items", "cart-footer", "1713282915e24915f8"]
+  "order": [
+    "cart-items",
+    "cart-footer",
+    "1713282915e24915f8"
+  ]
 }
