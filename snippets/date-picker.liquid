@@ -1,3 +1,13 @@
+{% comment %}
+  Renders a date picker
+
+  Accepts:
+  - settings: {Object} Block settings Liquid object (optional)
+
+  Usage:
+  {% render 'date-picker', settings: block.settings %}
+{% endcomment %}
+
 <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js"></script>
 
@@ -7,11 +17,26 @@
   .slot-picker-loader {
     display: none;
   }
+
+  #calendar {
+    margin-bottom: 15px;
+    border: 1px solid #e5e5e5;
+  }
+
+  [data-vc-date-btn],
+  [data-vc-week-day],
+  [data-vc=month], [data-vc=year] {
+    font-size: 1.5rem;
+  }
+
+  [data-vc-date-btn] {
+    padding: 0.75rem;
+  }
 </style>
 
 <date-picker>
-  <p>{{ block.settings.datepicker_message }}</p>
-  <div id="calendar" style="margin-bottom: 15px;"></div>
+  <p>{{ settings.datepicker_message }}</p>
+  <div id="calendar"></div>
   {% comment %} <button type="button" class="btn get_cart">
     Get Cart
   </button> {% endcomment %}
@@ -37,22 +62,22 @@
     
       // Create an array of disabled weekdays based on Liquid settings
       const disabledDays = [
-        {% unless block.settings.enable_sunday %}0,{% endunless %}
-        {% unless block.settings.enable_monday %}1,{% endunless %}
-        {% unless block.settings.enable_tuesday %}2,{% endunless %}
-        {% unless block.settings.enable_wednesday %}3,{% endunless %}
-        {% unless block.settings.enable_thursday %}4,{% endunless %}
-        {% unless block.settings.enable_friday %}5,{% endunless %}
-        {% unless block.settings.enable_saturday %}6{% endunless %}
+        {% unless settings.enable_sunday %}0,{% endunless %}
+        {% unless settings.enable_monday %}1,{% endunless %}
+        {% unless settings.enable_tuesday %}2,{% endunless %}
+        {% unless settings.enable_wednesday %}3,{% endunless %}
+        {% unless settings.enable_thursday %}4,{% endunless %}
+        {% unless settings.enable_friday %}5,{% endunless %}
+        {% unless settings.enable_saturday %}6{% endunless %}
       ];
     
       // Create an array of disabled dates
-      const disabledDates = '{{ block.settings.disabled_dates }}';
+      const disabledDates = '{{ settings.disabled_dates }}';
       const disabledDatesArray = disabledDates.split(',');
     
       // Create options for calendar
       const options = {
-        dateMin: new Date(new Date().setDate(new Date().getDate() + 1)),
+        dateMin: new Date(new Date().setDate(new Date().getDate() + 3)),
         dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
         disableDates: disabledDatesArray,
         disableWeekdays: disabledDays,
@@ -74,7 +99,7 @@
           updateCart({ attributes: attributes });
     
           // Enable the cart checkout button
-          document.querySelector('.cart__checkout').removeAttribute('disabled');
+          document.querySelector('.cart__checkout-button').removeAttribute('disabled');
         }
       };
     

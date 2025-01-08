@@ -44,7 +44,8 @@
             {%- when '@app' -%}
               {% render block %}
             {%- when 'date-picker' %}
-              {%  render 'date-picker' %}
+              {% assign datepicker = true %}
+              {% render 'date-picker', settings: block.settings %}
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div>
@@ -79,7 +80,7 @@
                 </small>
               </div>
             {%- else -%}
-              {% render 'cart-ctas' %}
+              {% render 'cart-ctas', datepicker: datepicker %}
           {%- endcase -%}
         {% endfor %}
 
