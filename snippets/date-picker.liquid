@@ -1,0 +1,127 @@
+<link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js"></script>
+
+{% comment %} Temporarily hide the old date picker app {% endcomment %}
+<style>
+  .cart__checkout-wrapper .order-slots,
+  .slot-picker-loader {
+    display: none;
+  }
+</style>
+
+<date-picker>
+  <p>{{ block.settings.datepicker_message }}</p>
+  <div id="calendar" style="margin-bottom: 15px;"></div>
+  {% comment %} <button type="button" class="btn get_cart">
+    Get Cart
+  </button> {% endcomment %}
+</date-picker>
+
+<script>
+  class DatePicker extends HTMLElement {
+    constructor() {
+      super();
+    }
+
+    connectedCallback() {
+      console.log('Date picker connected');
+      this.initialiseCalendar();
+
+      // Render buttons for testing
+      // const getCartButton = this.querySelector('.get_cart');
+      // getCartButton.addEventListener('click', this.getCart);
+    }
+
+    initialiseCalendar() {
+      const { Calendar } = window.VanillaCalendarPro;
+    
+      // Create an array of disabled weekdays based on Liquid settings
+      const disabledDays = [
+        {% unless block.settings.enable_sunday %}0,{% endunless %}
+        {% unless block.settings.enable_monday %}1,{% endunless %}
+        {% unless block.settings.enable_tuesday %}2,{% endunless %}
+        {% unless block.settings.enable_wednesday %}3,{% endunless %}
+        {% unless block.settings.enable_thursday %}4,{% endunless %}
+        {% unless block.settings.enable_friday %}5,{% endunless %}
+        {% unless block.settings.enable_saturday %}6{% endunless %}
+      ];
+    
+      // Create an array of disabled dates
+      const disabledDates = '{{ block.settings.disabled_dates }}';
+      const disabledDatesArray = disabledDates.split(',');
+    
+      // Create options for calendar
+      const options = {
+        dateMin: new Date(new Date().setDate(new Date().getDate() + 1)),
+        dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
+        disableDates: disabledDatesArray,
+        disableWeekdays: disabledDays,
+        onClickDate(self, event) {
+          console.log('Date selected');
+          const parentElement = event.target.closest('[data-vc-date]');
+          if (!parentElement) return;
+          
+          const date = parentElement.dataset.vcDate;
+          const dayNumber = parentElement.dataset.vcDateWeekDay;
+          const dayText = '';
+          var dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    
+          // Update the cart with the selected date
+          const attributes = {
+            _preferred_day: dayOfWeek[dayNumber],
+            _first_delivery_date: formatDate(date)
+          };
+          updateCart({ attributes: attributes });
+    
+          // Enable the cart checkout button
+          document.querySelector('.cart__checkout').removeAttribute('disabled');
+        }
+      };
+    
+      // Create a calendar instance and initialize it.
+      const calendar = new Calendar('#calendar', options);
+      calendar.init();
+    }
+  
+    // Function to get cart object for testing inside the custom element
+    async getCart() {
+      const response = await fetch('/cart.js');
+      const data = await response.json();
+      console.log('Cart:', data);
+      return data.items;
+    }
+  }
+
+  customElements.define('date-picker', DatePicker);  
+
+  /**
+   *  Global function to be accessed by vanilla-calendar-pro onClickDate event
+   */
+
+  // Function to format date
+  function formatDate(dateString) {
+    const options = { year: "numeric", month: "short", day: "2-digit" };
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-GB", options);
+  }
+
+  // Function to get cart object for testing
+  async function getCart() {
+    const response = await fetch('/cart.js');
+    const data = await response.json();
+    return data.items;
+  }
+
+  // Function to the cart delivery properties
+  async function updateCart(updates) {
+    const response = await fetch(`/cart/update.js`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(updates),
+    });
+    const data = await response.json();
+    return data;
+  }
+</script>
