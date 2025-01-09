@@ -124,8 +124,8 @@
         "slide_PJnnYE": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_Liewood.png",
-            "mobile_image": "shopify://shop_images/Website_homepage_product_images_liewood.png",
+            "image": "shopify://shop_images/Website_homepage_8.png",
+            "mobile_image": "shopify://shop_images/7_28835245-c371-4830-9e11-634d500112f2.png",
             "heading": "",
             "heading_size": "h1",
             "show_heading_shadow": false,
@@ -142,9 +142,9 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-4",
             "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
+            "image_badge_width": "200",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
           }
         }
       },
