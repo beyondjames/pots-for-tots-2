@@ -1179,6 +1179,11 @@ class handleCheckoutButton extends HTMLElement {
         // Send GA4 event
         sendEvent(button.id, 'Box Builder', 'Checkout Button Click');
 
+        // Set button loading state
+        button.classList.add('loading');
+        const loading = button.querySelector('.loading__spinner');
+        loading.classList.remove('hidden');
+
         const date = document.getElementById('delivery');
 
         // Check for the date picker

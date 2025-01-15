@@ -28,6 +28,7 @@
       aria-label="{{ 'products.modal.label' | t }}"
       tabindex="0"
     >
+    
       {% if heading %}
         <h2 class="upsell-modal__header">{{ heading }}</h2>
       {% endif %}
@@ -56,9 +57,11 @@
       <checkout-button>
         <button class="button button--full-width button--primary" id="modal-checkout-button">
           {{ button }}
+          {%- render 'loading-spinner' -%}
         </button>
         <button class="button button--full-width button--tertiary" id="modal-skip-button">
           {{ skip_button}}
+          {%- render 'loading-spinner' -%}
         </button>
       </checkout-button>
     </div>
