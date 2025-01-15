@@ -361,6 +361,7 @@
 
               <button class="checkout-button button button--full-width button--primary" id="UpsellPopup-{{ section.id }}" type="button" aria-haspopup="dialog">
                 Checkout
+                {%- render 'loading-spinner' -%}
               </button>
 
               <p class="box-drawer__small-print">
@@ -377,6 +378,7 @@
 
               <button class="button button--full-width button--primary" id="checkoutButton">
                 Checkout
+                {%- render 'loading-spinner' -%}
               </button>
 
               <p class="box-drawer__small-print">
@@ -491,7 +493,7 @@
       "type": "checkbox",
       "id": "show_upsells",
       "label": "Show upsells modal",
-      "default": false
+      "default": true
     },
     {
       "type": "checkbox",
