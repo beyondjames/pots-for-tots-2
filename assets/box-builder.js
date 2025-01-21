@@ -869,7 +869,7 @@ let subscription = {
       })
       .then((json) => {
         // Redirect to the checkout page after successful addition
-        window.location.href = '/checkout';
+        window.location.href = '/cart';
       })
       .catch((err) => {
         console.error(err); // Log any errors
