@@ -23,14 +23,50 @@
     border: 1px solid #e5e5e5;
   }
 
+  [data-vc=header] {
+   padding-bottom: 2rem;
+  }
+  
+  [data-vc-month] {
+    font-size: 20px;
+  }
+
+  [data-vc-date-btn] {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+  }
+
+  [data-vc-date][data-vc-date-hover]:has(+[data-vc-date-disabled]) [data-vc-date-btn],
+  [data-vc-date][data-vc-date-selected]:has(+[data-vc-date-disabled]) [data-vc-date-btn] {
+    border-radius: 50%;
+  }
+
+  [data-vc-theme=light] .vc-months__month[data-vc-months-month-selected],
+  [data-vc-theme=light] .vc-years__year[data-vc-years-year-selected],
+  [data-vc-theme=light] .vc-date[data-vc-date-selected] .vc-date__btn {
+    background-color: rgb(92, 137, 114);;
+  }
+
+  [data-vc-theme=light] .vc-date[data-vc-date-today] .vc-date__btn {
+    background-color: rgb(92, 137, 114);
+    opacity: 0.5;
+  }
+
   [data-vc-date-btn],
   [data-vc-week-day],
-  [data-vc=month], [data-vc=year] {
-    font-size: 1.5rem;
+  [data-vc=year],
+  [data-vc-theme=light] .vc-months__month[data-vc-months-month] {
+    font-size: 1.7rem;
   }
 
   [data-vc-date-btn] {
     padding: 0.75rem;
+  }
+
+  [data-vc-theme=light] .vc-week__day[data-vc-week-day],
+  [data-vc-theme=light] .vc-week__day[data-vc-week-day-off] {
+    color: rgb(37,37,37);
   }
 </style>
 
@@ -77,6 +113,8 @@
     
       // Create options for calendar
       const options = {
+        selectedTheme: 'light',
+        firstWeekday: 0,
         dateMin: new Date(new Date().setDate(new Date().getDate() + 3)),
         dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
         disableDates: disabledDatesArray,
