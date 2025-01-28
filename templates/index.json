@@ -250,10 +250,10 @@
         "column_FNaUJd": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mini_Apple_Pancakes_a5c673fb-b6ec-4c3d-bc9e-6199a9512339.png",
-            "title": "Mini Apple Pancakes",
+            "image": "shopify://shop_images/13_b85bb989-da86-4836-b2e4-733fe155270e.png",
+            "title": "Mexican-Style Burrito Bowl",
             "title_size": "h2",
-            "text": "<p>£5.29</p>",
+            "text": "<p>£4.65</p>",
             "link_label": "Create a box",
             "link": "shopify://collections/build-your-box"
           }
@@ -261,8 +261,8 @@
         "column_XgNy9B": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/10_9d610235-8a08-4ee5-bcb5-4c5774875dec.png",
-            "title": "Sweet Potato Curry",
+            "image": "shopify://shop_images/14.png",
+            "title": "Cheesy Veg Pasta Bake",
             "title_size": "h2",
             "text": "<p>£4.60</p>",
             "link_label": "Create a box",
