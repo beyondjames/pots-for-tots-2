@@ -39,6 +39,33 @@
             "image_badge_horizontal_position": "right"
           }
         },
+        "slide_EFdemU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_9.png",
+            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_5.png",
+            "heading": "Ready in minutes!",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "Build a Box",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "Bundles",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "bottom-left",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
+            "text_alignment_mobile": "center",
+            "image_badge": "shopify://shop_images/M_B_and_LBP_Awards.png",
+            "image_badge_width": "200",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
+          }
+        },
         "slide_6mcVhA": {
           "type": "slide",
           "settings": {
@@ -93,33 +120,6 @@
             "image_badge_horizontal_position": "right"
           }
         },
-        "slide_EFdemU": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Website_homepage_9.png",
-            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_5.png",
-            "heading": "Ready in minutes!",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://products/rudolph-friends-bake-and-craft-kit",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "box_align": "bottom-left",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
-            "text_alignment_mobile": "center",
-            "image_badge": "shopify://shop_images/M_B_and_LBP_Awards.png",
-            "image_badge_width": "200",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "right"
-          }
-        },
         "slide_PJnnYE": {
           "type": "slide",
           "settings": {
@@ -149,9 +149,9 @@
       },
       "block_order": [
         "slide_hgbCiy",
+        "slide_EFdemU",
         "slide_6mcVhA",
         "slide_c6rpWy",
-        "slide_EFdemU",
         "slide_PJnnYE"
       ],
       "settings": {
