@@ -95,13 +95,12 @@
         },
         "slide_EFdemU": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_6.png",
-            "mobile_image": "shopify://shop_images/xmas_1.png",
-            "heading": "",
-            "heading_size": "h1",
-            "show_heading_shadow": false,
+            "image": "shopify://shop_images/Website_homepage_9.png",
+            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_5.png",
+            "heading": "Ready in minutes!",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
             "subheading": "",
             "button_label": "",
             "link": "shopify://products/rudolph-friends-bake-and-craft-kit",
@@ -115,9 +114,10 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
             "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
+            "image_badge": "shopify://shop_images/M_B_and_LBP_Awards.png",
+            "image_badge_width": "200",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
           }
         },
         "slide_PJnnYE": {
@@ -247,17 +247,6 @@
     "custom_multicolumn_adV6Gn": {
       "type": "custom-multicolumn",
       "blocks": {
-        "column_QDQrVz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/11_124e2609-0e36-4500-bdd7-ec6622d683e1.png",
-            "title": "NEW! Veggie Chilli",
-            "title_size": "h2",
-            "text": "<p>£4.60</p>",
-            "link_label": "Create a box",
-            "link": "shopify://collections/build-your-box"
-          }
-        },
         "column_FNaUJd": {
           "type": "column",
           "settings": {
@@ -280,6 +269,17 @@
             "link": "shopify://collections/build-your-box"
           }
         },
+        "column_QDQrVz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/11_124e2609-0e36-4500-bdd7-ec6622d683e1.png",
+            "title": "NEW! Veggie Chilli",
+            "title_size": "h2",
+            "text": "<p>£4.60</p>",
+            "link_label": "Create a box",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
         "column_Yc6brM": {
           "type": "column",
           "settings": {
@@ -293,9 +293,9 @@
         }
       },
       "block_order": [
-        "column_QDQrVz",
         "column_FNaUJd",
         "column_XgNy9B",
+        "column_QDQrVz",
         "column_Yc6brM"
       ],
       "settings": {
