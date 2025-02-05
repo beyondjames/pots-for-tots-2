@@ -110,15 +110,21 @@
       // Create an array of disabled dates
       const disabledDates = '{{ settings.disabled_dates }}';
       const disabledDatesArray = disabledDates.split(',');
+
+      // dateMin should be offset of 3 days from today unless it is a friday, in which case it sohuld be an offset of 4 days
+      const dateMin = new Date(new Date().setDate(new Date().getDate() + 3));
+      if (dateMin.getDay() === 5) {
+        dateMin.setDate(dateMin.getDate() + 1);
+      }
     
       // Create options for calendar
       const options = {
         selectedTheme: 'light',
         firstWeekday: 0,
-        dateMin: new Date(new Date().setDate(new Date().getDate() + 3)),
+        dateMin: dateMin,
         dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
         disableDates: disabledDatesArray,
-        disableWeekdays: disabledDays,
+        // disableWeekdays: disabledDays,
         onClickDate(self, event) {
           console.log('Date selected');
           const parentElement = event.target.closest('[data-vc-date]');
