@@ -124,7 +124,7 @@
         dateMin: dateMin,
         dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
         disableDates: disabledDatesArray,
-        // disableWeekdays: disabledDays,
+        disableWeekdays: disabledDays,
         onClickDate(self, event) {
           console.log('Date selected');
           const parentElement = event.target.closest('[data-vc-date]');
