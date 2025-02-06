@@ -440,7 +440,8 @@
     "image_banner_bWMPQb": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/Website_homepage_why_PFT.png",
+        "image": "shopify://shop_images/Why_choose.png",
+        "image_2": "shopify://shop_images/why_choose_mob.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -509,6 +510,7 @@
         "button_label": "SHOP NOW",
         "button_link": "shopify://collections/liewood",
         "color_scheme": "scheme-2",
+        "image": "shopify://shop_images/Recycled_background_medium_res.png",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
