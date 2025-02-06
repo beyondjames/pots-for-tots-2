@@ -936,6 +936,24 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
+    },
+    "image_banner_bWMPQb": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Website_homepage_why_PFT.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -946,6 +964,7 @@
     "custom_multicolumn_adV6Gn",
     "rich_text_zCM7wX",
     "custom_brands_qTTbhF",
+    "image_banner_bWMPQb",
     "custom_multicolumn_BGLfTF",
     "multirow_CfPLt7",
     "featured_collection_nrDTFe",
