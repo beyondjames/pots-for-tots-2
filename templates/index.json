@@ -54,7 +54,7 @@
             "button_label_2": "Bundles",
             "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false,
-            "box_align": "bottom-left",
+            "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
