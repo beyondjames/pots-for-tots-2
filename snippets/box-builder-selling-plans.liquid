@@ -8,23 +8,54 @@
           </div>
         {%- endif -%}
 
-        <div class="price">
-          {% if variant.selling_plan_allocations.length > 0 %}
-          {{ variant.selling_plan_allocations[0].price | money }}
-          {% else %}
-          {{ variant.price | money }}
-          {% endif %}
-
-          {%- if card_variant_title == true -%}
-            <span class="price__variant">
-              {% if variant.title == 'Small' %}
-                ({{ variant.title | downcase }})
-              {% elsif variant.title == 'Medium' %}
-                ({{ variant.title | downcase }})
+        {% if section.settings.subscription_discount > 0 %}
+          {% assign discount_decimal = section.settings.subscription_discount | divided_by: 100.00 %}
+          {% assign discount_rate = 1 | minus: discount_decimal %}
+          {% assign discounted_price = variant.price | times: discount_rate %}
+  
+          <div class="price">
+            <s class="price-item price-item--regular variant-item__old-price">
+              {% if variant.selling_plan_allocations.length > 0 %}
+              {{ variant.selling_plan_allocations[0].price | money }}
+              {% else %}
+              {{ variant.price | money }}
               {% endif %}
+            </s>
+
+            <span class="price-item price-item--regular">
+              {{ discounted_price | money }}
             </span>
-          {%- endif -%}
-        </div>
+
+            {%- if card_variant_title == true -%}
+              <span class="price__variant">
+                {% if variant.title == 'Small' %}
+                  ({{ variant.title | downcase }})
+                {% elsif variant.title == 'Medium' %}
+                  ({{ variant.title | downcase }})
+                {% endif %}
+              </span>
+            {%- endif -%}
+          </div>
+
+          {% else %}
+            <div class="price">
+              {% if variant.selling_plan_allocations.length > 0 %}
+              {{ variant.selling_plan_allocations[0].price | money }}
+              {% else %}
+              {{ variant.price | money }}
+              {% endif %}
+    
+              {%- if card_variant_title == true -%}
+                <span class="price__variant">
+                  {% if variant.title == 'Small' %}
+                    ({{ variant.title | downcase }})
+                  {% elsif variant.title == 'Medium' %}
+                    ({{ variant.title | downcase }})
+                  {% endif %}
+                </span>
+              {%- endif -%}
+            </div>
+        {% endif %}
       </div>
 
       {%- if variant.available == true -%}
