@@ -441,7 +441,6 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify://shop_images/Why_choose.png",
-        "image_3": "shopify://shop_images/why_choose_mob.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -452,7 +451,7 @@
         "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "stack_images_on_mobile": false,
+        "stack_images_on_mobile": true,
         "show_text_below": true
       }
     },
