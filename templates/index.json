@@ -437,6 +437,24 @@
         "padding_bottom": 36
       }
     },
+    "image_banner_bWMPQb": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Website_homepage_why_PFT.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "custom_multicolumn_BGLfTF": {
       "type": "custom-multicolumn",
       "blocks": {
@@ -490,8 +508,7 @@
         "background_style": "primary",
         "button_label": "SHOP NOW",
         "button_link": "shopify://collections/liewood",
-        "color_scheme": "scheme-1",
-        "image": "shopify://shop_images/Recycled_background_medium_res.png",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
         "padding_top": 36,
@@ -929,24 +946,6 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-1",
-        "badge_embed": "",
-        "badge_padding": 1,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
-    "image_banner_bWMPQb": {
-      "type": "image-banner",
-      "settings": {
-        "image": "shopify://shop_images/Website_homepage_why_PFT.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
         "badge_embed": "",
         "badge_padding": 1,
         "image_behavior": "none",
