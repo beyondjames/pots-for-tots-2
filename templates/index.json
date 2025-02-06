@@ -122,6 +122,7 @@
         },
         "slide_PJnnYE": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Website_homepage_8.png",
             "mobile_image": "shopify://shop_images/7_28835245-c371-4830-9e11-634d500112f2.png",
