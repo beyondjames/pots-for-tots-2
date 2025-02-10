@@ -164,6 +164,50 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "rich_text_zNjyc8": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_f39wbC": {
+          "type": "heading",
+          "settings": {
+            "heading": "9 out of 10 parents love how nutritious Pots for Tots is for their little ones",
+            "heading_size": "h2"
+          }
+        },
+        "text_jPwXEN": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_hNydzb": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_f39wbC",
+        "text_jPwXEN",
+        "button_hNydzb"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 8,
+        "padding_bottom": 12
+      }
+    },
     "image_banner_FUfBNH": {
       "type": "image-banner",
       "blocks": {
@@ -958,6 +1002,7 @@
   },
   "order": [
     "slideshow_tRxFr3",
+    "rich_text_zNjyc8",
     "image_banner_FUfBNH",
     "rich_text_DVTNxj",
     "custom_image_banner_no_text_8JgQy4",
