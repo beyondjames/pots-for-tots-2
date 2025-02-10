@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner_eAPqEm": {
@@ -15,14 +15,15 @@
         "heading_iCCBfe": {
           "type": "heading",
           "settings": {
-            "heading": "Save up to 15% with bundles!",
-            "heading_size": "h0"
+            "heading": "Save with bundles!",
+            "heading_size": "h0",
+            "show_heading_shadow": false
           }
         },
         "text_yWxYkr": {
           "type": "text",
           "settings": {
-            "text": "Save time by selecting from our carefully curated ready-to-order bundles.",
+            "text": "Save time (and money!) by selecting from our carefully curated ready-to-order bundles.",
             "text_style": "body"
           }
         },
@@ -44,13 +45,15 @@
         "buttons_yxPGGR"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Hero_group_shot.png",
+        "image": "shopify://shop_images/Hero_group_shot.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
