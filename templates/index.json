@@ -208,78 +208,8 @@
         "padding_bottom": 12
       }
     },
-    "image_banner_FUfBNH": {
-      "type": "image-banner",
-      "blocks": {
-        "heading_YnHzXV": {
-          "type": "heading",
-          "settings": {
-            "heading": "Mealtimes made easy!",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true
-          }
-        },
-        "buttons_bmUpB4": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "Build A Box",
-            "button_link_1": "shopify://collections/build-your-box",
-            "button_style_secondary_1": false,
-            "button_label_2": "Bundles",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_YnHzXV",
-        "buttons_bmUpB4"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Screenshot_2024-06-13_at_12.34.57.png",
-        "image_3": "shopify://shop_images/Group_hero_meals_only_square.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "badge_embed": "",
-        "badge_padding": 2,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "rich_text_DVTNxj": {
-      "type": "rich-text",
-      "blocks": {
-        "badge_L86zaM": {
-          "type": "badge",
-          "settings": {
-            "badge_embed": "<script src=\"https://widget.reviews.io/badge-ribbon/dist.js\"></script>\n<div id=\"badge-ribbon\"></div>\n<script>\n    reviewsBadgeRibbon(\"badge-ribbon\", {\n        store: \"www.potsfortots.co.uk\",\n        size: \"medium\",\n        \n        mono: true,\n    });\n</script>",
-            "badge_width": 240
-          }
-        }
-      },
-      "block_order": [
-        "badge_L86zaM"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": false,
-        "padding_top": 12,
-        "padding_bottom": 12
-      }
-    },
     "custom_image_banner_no_text_8JgQy4": {
       "type": "custom-image-banner-no-text",
-      "disabled": true,
       "settings": {
         "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
         "image_width": "400",
@@ -1003,8 +933,6 @@
   "order": [
     "slideshow_tRxFr3",
     "rich_text_zNjyc8",
-    "image_banner_FUfBNH",
-    "rich_text_DVTNxj",
     "custom_image_banner_no_text_8JgQy4",
     "custom_multicolumn_adV6Gn",
     "rich_text_zCM7wX",
