@@ -13,6 +13,7 @@
           {% assign discount_rate = 1 | minus: discount_decimal %}
           {% assign discounted_price = variant.price | times: discount_rate %}
   
+          <div class="subscription-price__label">Subscription price</div>
           <div class="price">
             <s class="price-item price-item--regular variant-item__old-price">
               {% if variant.selling_plan_allocations.length > 0 %}
