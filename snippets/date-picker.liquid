@@ -169,9 +169,9 @@
 
   // Function to format date
   function formatDate(dateString) {
-    // const options = { year: "numeric", month: "short", day: "2-digit" };
+    const options = { year: "numeric", month: "short", day: "2-digit" };
     const date = new Date(dateString);
-    return date.toLocaleDateString("en-GB");
+    return date.toLocaleDateString("en-GB", options);
   }
 
   // Function to get cart object for testing
