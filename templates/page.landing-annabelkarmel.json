@@ -85,13 +85,14 @@
         "button_HdfARb"
       ],
       "settings": {
+        "image": "shopify://shop_images/1_2b17ea7a-00c2-4e9f-89b3-04100b1bad33.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "overlap",
-        "section_color_scheme": "",
+        "section_color_scheme": "scheme-2",
         "color_scheme": "",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
