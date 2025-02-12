@@ -59,7 +59,6 @@ let subscription = {
     let upsellList = [];
 
     const subTypeWrapper = document.querySelector('subscription-type');
-    console.log(subTypeWrapper);
 
     // Get the discount from the page
     this.state.discount = parseFloat(document.querySelector('#discount').value);
@@ -81,12 +80,10 @@ let subscription = {
       // Use frequency from cookie if available
       this.state.subscriptionType = getCookie('potsType');
       sessionStorage.setItem('potsType', this.state.subscriptionType);
-      console.log('Found Subscription Type: ' + this.state.subscriptionType);
     } else {
       // Set default frequency in cookie
       setCookie('potsType', this.state.subscriptionType, 1);
       sessionStorage.setItem('potsType', this.state.subscriptionType);
-      console.log('Set Subscription Type: ' + this.state.subscriptionType);
     }
 
     // Set subscription type based on user selection
@@ -424,21 +421,12 @@ let subscription = {
     const minimum = this.state.minItems; // Minimum required products
     const count = Math.abs(minimum - productCount); // Number of products needed to reach minimum
 
-    console.log('Here');
-
-    console.log('Product Count: ' + productCount);
-    console.log('Minimum: ' + minimum);
-    console.log('Count: ' + count);
-
-    console.log('Button: ' + button);
-
     if (productCount >= minimum) {
       // Hide the minimum product count warning if visible
       if (!countWarning.classList.contains('hidden')) {
         countWarning.classList.add('hidden');
       }
       // Enable the checkout button
-      console.log(button);
       button.disabled = false;
       // Enable the modal checkout button if it exists
       if (modalButton) {
@@ -504,9 +492,12 @@ let subscription = {
             '"></td>';
         }
 
+        // Get discounted products
+        const discounted_products = document.querySelector('#discounted_products').value;
+
         // Generation price for product
         let rendered_price;
-        if (discount > 0 && discount < 1 && type == 'subscription') {
+        if (discount > 0 && discount < 1 && type == 'subscription' && discounted_products.includes(product.productId)) {
           rendered_price = '<s>£' + amount + '</s>' + '<span>£' + discount_amount + '</span>';
         } else {
           rendered_price = '<span>£' + amount + '</span>';
@@ -567,9 +558,7 @@ let subscription = {
     let discount = 1 - this.state.discount / 100;
 
     // apply discount if needed
-    console.log('Subscriptions: ' + subtype);
     if (discount > 0 && subtype == 'subscription') {
-      console.log('Discount total: ' + discount);
       productTotalCost = productTotalCost * discount;
       productSubscriptionTotalCost = productSubscriptionTotalCost * discount;
     }

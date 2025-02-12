@@ -8,7 +8,13 @@
           </div>
         {%- endif -%}
 
-        {% if section.settings.subscription_discount > 0 %}
+        {% comment %} Render list of discounted products {% endcomment %}
+        {% assign discounted_products_list = '' %}
+        {% for product in section.settings.discounted_products %}
+          {% assign discounted_products_list = discounted_products_list | append: product.id | append: ',' %}
+        {% endfor %}
+
+        {% if section.settings.subscription_discount > 0 and discounted_products_list contains card_product.id %} 
           {% assign discount_decimal = section.settings.subscription_discount | divided_by: 100.00 %}
           {% assign discount_rate = 1 | minus: discount_decimal %}
           {% assign discounted_price = variant.price | times: discount_rate %}
