@@ -20,25 +20,9 @@
     "image_banner_GVmUkf": {
       "type": "image-banner",
       "blocks": {
-        "heading_pfn3KB": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Pots for Tots x Liewood",
-            "heading_size": "h0",
-            "show_heading_shadow": false
-          }
-        },
-        "text_MbxqGN": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "We're excited to announce that we've partnered up with Danish homeware designer Liewood to bring you a capsule collection of their mealtime favourites. You can add these onto any Pots for Tots orders.",
-            "text_style": "body"
-          }
-        },
         "buttons_4ch6Ez": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "SHOP NOW",
             "button_link_1": "shopify://collections/build-your-box",
@@ -50,14 +34,13 @@
         }
       },
       "block_order": [
-        "heading_pfn3KB",
-        "text_MbxqGN",
         "buttons_4ch6Ez"
       ],
       "settings": {
-        "image": "shopify://shop_images/Website_homepage_AK_landing.png",
+        "image": "shopify://shop_images/Website_homepage_5_1.png",
+        "image_3": "shopify://shop_images/AK_website_mobile.png",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "large",
         "desktop_content_position": "bottom-right",
         "show_text_box": false,
         "desktop_content_alignment": "right",
@@ -68,16 +51,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "custom_image_banner_no_text_RpKxyp": {
-      "type": "custom-image-banner-no-text",
-      "disabled": true,
-      "settings": {
-        "image_desktop": "shopify://shop_images/Liewood_logo_banner_2d9e7eae-f4ff-40b0-9673-41375f670fc8.png",
-        "image_width": "",
-        "title": "",
-        "link_url": ""
       }
     },
     "rich_text_PLmmAh": {
@@ -315,7 +288,6 @@
   "order": [
     "main",
     "image_banner_GVmUkf",
-    "custom_image_banner_no_text_RpKxyp",
     "rich_text_PLmmAh",
     "featured_collection_BQBza9",
     "multirow_nyEeCi",
