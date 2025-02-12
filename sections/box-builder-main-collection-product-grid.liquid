@@ -87,7 +87,7 @@
 {% for product in section.settings.discounted_products %}
   {% assign discounted_products_list = discounted_products_list | append: product.id | append: ',' %}
 {% endfor %}
-<input type="text" id="discounted_products" value="{{ discounted_products_list }}">
+<input type="hidden" id="discounted_products" value="{{ discounted_products_list }}">
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {% comment %} Add field to store upsells preference {% endcomment %}
