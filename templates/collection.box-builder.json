@@ -27,6 +27,36 @@
       "type": "box-builder-main-collection-product-grid",
       "settings": {
         "subscription_discount": 0,
+        "discounted_products": [
+          "fish-curry",
+          "mediterranean-vegetable-orzo",
+          "pasta-bolognese",
+          "fish-option-classic-fish-pie",
+          "chicken-korma",
+          "carrot-and-apricot-oat-bites",
+          "broccoli-and-cheese-tots",
+          "sweet-potato-cottage-pie",
+          "courgette-and-sweetcorn-bites",
+          "mini-banana-pancakes",
+          "chicken-leek-pie",
+          "chilli-con-carne",
+          "mac-cheese",
+          "simple-fish-pie",
+          "simple-mediterranean-veg-orzo",
+          "simple-pasta-bolognese",
+          "simple-chicken-korma",
+          "lentil-bolognese",
+          "italian-style-chicken-tomato-pasta-small",
+          "fruity-lamb-tagine",
+          "sweet-potato-curry",
+          "apple-cinnamon-mini-muffins",
+          "mini-apple-pancakes",
+          "blueberry-mini-muffins",
+          "cheesy-veg-bites",
+          "mexican-style-pork-bean-burrito-bowl",
+          "cheesy-veg-pasta-bake",
+          "veggie-chilli"
+        ],
         "products_per_page": 48,
         "columns_desktop": 3,
         "color_scheme": "",
@@ -53,5 +83,8 @@
       }
     }
   },
-  "order": ["banner", "product-grid"]
+  "order": [
+    "banner",
+    "product-grid"
+  ]
 }
