@@ -100,6 +100,63 @@
         "padding_bottom": 36
       }
     },
+    "multicolumn_P6zQg9": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JV9eLD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AKFishPieBites_3.png",
+            "title": "Fish Pie Bites",
+            "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xq4HYH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AKChicken_VegBites_3.png",
+            "title": "Chicken & Veggie Bites",
+            "text": "<p>Bake mini bites with chicken, sweet potato and broccoli.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jmAhTN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AKVeggieFrittatas_3.png",
+            "title": "Cheese and Veggie Frittatas",
+            "text": "<p>Mini baked fritattas made with egg, potato, red pepper, peas and onions. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JV9eLD",
+        "column_xq4HYH",
+        "column_jmAhTN"
+      ],
+      "settings": {
+        "title": "Little Bites",
+        "heading_size": "h1",
+        "text": "<p>These little bites developed with Annabel Karmel are ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Shop the range",
+        "button_link": "shopify://collections/build-your-box",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 24
+      }
+    },
     "rich_text_PLmmAh": {
       "type": "rich-text",
       "blocks": {
@@ -209,72 +266,15 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "multicolumn_P6zQg9": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_JV9eLD": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AKFishPieBites_3.png",
-            "title": "Fish Pie Bites",
-            "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_xq4HYH": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AKChicken_VegBites_3.png",
-            "title": "Chicken & Veggie Bites",
-            "text": "<p>Bake mini bites with chicken, sweet potato and broccoli.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_jmAhTN": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AKVeggieFrittatas_3.png",
-            "title": "Cheese and Veggie Frittatas",
-            "text": "<p>Mini baked fritattas made with egg, potato, red pepper, peas and onions. </p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_JV9eLD",
-        "column_xq4HYH",
-        "column_jmAhTN"
-      ],
-      "settings": {
-        "title": "Little Bites",
-        "heading_size": "h1",
-        "text": "<p>These little bites developed with Annabel Karmel are ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 20,
-        "padding_bottom": 24
-      }
     }
   },
   "order": [
     "main",
     "image_banner_GVmUkf",
     "image_with_text_KyC4ar",
+    "multicolumn_P6zQg9",
     "rich_text_PLmmAh",
     "featured_collection_BQBza9",
-    "custom_newsletter_BMmYj9",
-    "multicolumn_P6zQg9"
+    "custom_newsletter_BMmYj9"
   ]
 }
