@@ -58,7 +58,7 @@
     </button>
   </noscript>
 
-  <button type="submit" class="cart__checkout-button button" name="checkout"{% if cart == empty or invalid_cart %} disabled{% endif %} form="cart">
+  <button type="submit" class="cart__checkout-button button" name="checkout"{% if cart == empty or invalid_cart or datepicker %} disabled{% endif %} form="cart">
   {% if cart == empty or invalid_cart %}Incomplete Cart{% else %}{{ 'sections.cart.checkout' | t }}{% endif %}
   </button>
 </div>
