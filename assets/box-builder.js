@@ -19,7 +19,6 @@ let subscription = {
 
     // Discount
     discount: 0,
-    discount_code: '',
   },
 
   selector: {
@@ -64,7 +63,7 @@ let subscription = {
 
     // Get the discount from the page
     this.state.discount = parseFloat(document.querySelector('#discount').value);
-    this.state.discount_code = document.querySelector('#discount-code').value;
+    console.log('Discount: ' + this.state.discount);
 
     // Handle subscription frequency settings
     if (getCookie('potsFreq') !== '') {
@@ -507,7 +506,7 @@ let subscription = {
 
         // Generation price for product
         let rendered_price;
-        if (discount > 0 && type == 'subscription') {
+        if (discount > 0 && discount < 1 && type == 'subscription') {
           rendered_price = '<s>£' + amount + '</s>' + '<span>£' + discount_amount + '</span>';
         } else {
           rendered_price = '<span>£' + amount + '</span>';
