@@ -230,7 +230,7 @@
                   aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                   data-product-url="{{ card_product.url }}"
                 >
-                  View Details
+                  Shop Now
                   {%- if horizontal_quick_add -%}
                     <span class="icon-wrap">{% render 'icon-arrow' %}</span>
                   {%- endif -%}
@@ -309,7 +309,7 @@
         {%- endif -%}
         {%- if show_product_button -%}
           <div class="quick-add no-js-hidden">
-            <a href="{{ card_product.url }}" class="quick-add__submit button button--full-width button--secondary">View Details</a>
+            <a href="{{ card_product.url }}" class="quick-add__submit button button--full-width button--secondary">Shop Now</a>
           </div>
         {%- endif -%}
         <div class="card__badge {{ settings.badge_position }}">

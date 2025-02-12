@@ -23,7 +23,7 @@ let subscription = {
     productsGrid: '#product-grid', // Grid containing product cards
     variants: '#card__variants', // Elements for product variant selection
     minimumProducts: '#productCount', // Element displaying minimum product count warning
-    checkoutButton: '.checkout-button', // Checkout button
+    checkoutButton: '#checkoutButton', // Checkout button
     modalCheckoutButton: '#modal-checkout-button', // modal trigger Checkout button
     modalSkipButton: '#modal-skip-button', // modal trigger Checkout button
     cardModal: '#cardModal', // Modal for displaying product details
@@ -416,6 +416,14 @@ let subscription = {
     // Manage minimum product count requirements
     const minimum = this.state.minItems; // Minimum required products
     const count = Math.abs(minimum - productCount); // Number of products needed to reach minimum
+
+    console.log('Here');
+
+    console.log('Product Count: ' + productCount);
+    console.log('Minimum: ' + minimum);
+    console.log('Count: ' + count);
+
+    console.log('Button: ' + button);
 
     if (productCount >= minimum) {
       // Hide the minimum product count warning if visible
