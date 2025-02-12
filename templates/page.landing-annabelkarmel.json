@@ -152,7 +152,7 @@
         "button_link": "shopify://collections/build-your-box",
         "color_scheme": "",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 20,
         "padding_bottom": 24
       }
@@ -264,7 +264,7 @@
         "button_link": "shopify://collections/build-your-box",
         "color_scheme": "",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
