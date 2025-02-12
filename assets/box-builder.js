@@ -16,6 +16,10 @@ let subscription = {
 
     // Subscription type (one-time or recurring)
     subscriptionType: 'subscription',
+
+    // Discount
+    discount: 0,
+    discount_code: '',
   },
 
   selector: {
@@ -57,6 +61,10 @@ let subscription = {
 
     const subTypeWrapper = document.querySelector('subscription-type');
     console.log(subTypeWrapper);
+
+    // Get the discount from the page
+    this.state.discount = parseFloat(document.querySelector('#discount').value);
+    this.state.discount_code = document.querySelector('#discount-code').value;
 
     // Handle subscription frequency settings
     if (getCookie('potsFreq') !== '') {
@@ -460,22 +468,30 @@ let subscription = {
     // Build the product list HTML
     let productListContents = '<table class="box-drawer__table"><tbody>';
 
+    // Get the discount from state
+    let discount = 1 - this.state.discount / 100;
+    console.log('Discount', discount);
+
     productJson.forEach(function (product) {
       if (product.quantity > 0) {
         let amount;
+        let discount_amount;
         if (type == 'subscription') {
           // Calculate price for subscription products
           if (product.sellingPlans.length > 0) {
             amount = ((product.sellingPlans[0].price * product.quantity) / 100).toFixed(2);
+            discount_amount = ((product.sellingPlans[0].price * product.quantity * discount) / 100).toFixed(2);
           } else {
             amount = ((product.price * product.quantity) / 100).toFixed(2);
+            discount_amount = ((product.price * product.quantity * discount) / 100).toFixed(2);
           }
         } else {
           // Calculate price for one-time products
           amount = ((product.price * product.quantity) / 100).toFixed(2);
+          discount_amount = ((product.price * product.quantity * discount) / 100).toFixed(2);
         }
 
-        let currency = '£' + amount;
+        // let currency = '£' + amount;
         let item = '<tr class="box-drawer__table-row">';
 
         if (product.imageURL) {
@@ -489,6 +505,14 @@ let subscription = {
             '"></td>';
         }
 
+        // Generation price for product
+        let rendered_price;
+        if (discount > 0 && type == 'subscription') {
+          rendered_price = '<s>£' + amount + '</s>' + '<span>£' + discount_amount + '</span>';
+        } else {
+          rendered_price = '<span>£' + amount + '</span>';
+        }
+
         item +=
           '<td class="box-drawer__table-data box-drawer__product-title summary-title"><div class="summary-product">' +
           product.title +
@@ -499,7 +523,8 @@ let subscription = {
           '<td class="box-drawer__table-data box-drawer__product-quantity summary-quantity">' +
           product.quantity +
           '</td>';
-        item += '<td class="box-drawer__table-data box-drawer__product-price summary-price">' + currency + '</td>';
+        item +=
+          '<td class="box-drawer__table-data box-drawer__product-price summary-price">' + rendered_price + '</td>';
         item += '</tr>';
 
         productListContents += item;
@@ -511,11 +536,14 @@ let subscription = {
     // Update the modal list content with the generated HTML
     modalList.innerHTML = productListContents;
   },
+
   calculateTotals: function () {
     let productCount = 0;
     let productTotalCost = 0;
     let productSubscriptionTotalCost = 0;
     let productJson;
+
+    let subtype = this.state.subscriptionType;
 
     // Get the product array
     let productList = sessionStorage.getItem('potsProductList');
@@ -535,6 +563,17 @@ let subscription = {
       productSubscriptionTotalCost += productSubScriptionLineTotal;
       productCount += parseInt(product.quantity);
     });
+
+    // Get the discount from state
+    let discount = 1 - this.state.discount / 100;
+
+    // apply discount if needed
+    console.log('Subscriptions: ' + subtype);
+    if (discount > 0 && subtype == 'subscription') {
+      console.log('Discount total: ' + discount);
+      productTotalCost = productTotalCost * discount;
+      productSubscriptionTotalCost = productSubscriptionTotalCost * discount;
+    }
 
     this.state.selectedItemCount = productCount;
 
@@ -842,6 +881,10 @@ let subscription = {
 
   // Function to handle adding products to the cart
   handleAddToCart: async function (data) {
+    let redirect_url = '/cart';
+
+    console.log('Redirect URL: ' + redirect_url);
+
     // Send a POST request to the cart endpoint to add products
     fetch('/cart/add.js', {
       body: JSON.stringify(data), // Pass the product data as JSON
@@ -857,7 +900,7 @@ let subscription = {
       })
       .then((json) => {
         // Redirect to the checkout page after successful addition
-        window.location.href = '/cart';
+        window.location.href = redirect_url;
       })
       .catch((err) => {
         console.error(err); // Log any errors
@@ -1214,11 +1257,13 @@ class subscriptionType extends HTMLElement {
           if (button.id === 'onetime') {
             setCookie('potsType', 'onetime', 1); // Set cookie and session storage
             sessionStorage.setItem('potsType', 'onetime');
+            subscription.state.subscriptionType = 'onetime';
             oneTimeContent.classList.remove('hidden');
             subscriptionContent.classList.add('hidden');
           } else {
             setCookie('potsType', 'subscription', 1); // Set cookie and session storage
             sessionStorage.setItem('potsType', 'subscription');
+            subscription.state.subscriptionType = 'subscription';
             subscriptionContent.classList.remove('hidden');
             oneTimeContent.classList.add('hidden');
           }

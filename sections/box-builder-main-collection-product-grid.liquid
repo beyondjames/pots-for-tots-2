@@ -79,6 +79,12 @@
   }
 {%- endstyle -%}
 
+{% comment %} Render discount on the page {% endcomment %}
+<input type="hidden" id="discount" value="{{ section.settings.subscription_discount }}">
+
+{% comment %} Render discount code on the page {% endcomment %}
+<input type="hidden" id="discount-code" value="{{ section.settings.subscription_discount_code }}">
+
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {% comment %} Add field to store upsells preference {% endcomment %}
   <input type="hidden" id="upsell-subscription" value="{{ section.settings.allow_upsell_subscriptions }}">
@@ -460,6 +466,22 @@
   "name": "Product grid (BB)",
   "class": "section section-collection",
   "settings": [
+    {
+      "type": "range",
+      "id": "subscription_discount",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Subscription discount",
+      "default": 20
+    },
+    {
+      "type": "text",
+      "id": "subscription_discount_code",
+      "label": "Heading",
+      "default": "TESTCODE12345"
+    },
     {
       "type": "range",
       "id": "products_per_page",

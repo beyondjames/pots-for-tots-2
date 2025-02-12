@@ -98,6 +98,8 @@
 
 .box-drawer__products .box-drawer__product-price {
   font-weight: 700;
+  display: flex;
+  flex-direction: column;
 }
 
 .box-drawer__product-title-text {
