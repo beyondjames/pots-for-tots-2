@@ -12,46 +12,19 @@
     "slideshow_tRxFr3": {
       "type": "slideshow",
       "blocks": {
-        "slide_hgbCiy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Group_meals_and_snacks_homepage_e1377ac6-bf08-4e68-be1c-13e9c9c656d3.png",
-            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_1.png",
-            "heading": "Nutrition meets convenience",
-            "heading_size": "h0",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "Build A Box",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "Bundles",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center",
-            "image_badge": "shopify://shop_images/M_B_and_LBP_Awards.png",
-            "image_badge_width": "150",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "right"
-          }
-        },
         "slide_EFdemU": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_9.png",
-            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_5.png",
+            "image": "shopify://shop_images/Website_homepage_11.png",
+            "mobile_image": "shopify://shop_images/Website_mobile_3.png",
             "heading": "Ready in minutes!",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
-            "button_label": "Build a Box",
+            "button_label": "Build Your Box",
             "link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
-            "button_label_2": "Bundles",
+            "button_label_2": "Shop Bundles",
             "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false,
             "box_align": "middle-center",
@@ -60,8 +33,33 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
             "text_alignment_mobile": "center",
-            "image_badge": "shopify://shop_images/M_B_and_LBP_Awards.png",
             "image_badge_width": "200",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
+          }
+        },
+        "slide_hgbCiy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Group_meals_and_snacks_homepage_2.png",
+            "mobile_image": "shopify://shop_images/Website_mobile_1.png",
+            "heading": "Nutrition meets convenience",
+            "heading_size": "h0",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "Build Your Box",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "Shop Bundles",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "150",
             "image_badge_vertical_position": "top",
             "image_badge_horizontal_position": "right"
           }
@@ -75,10 +73,10 @@
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
-            "button_label": "BUILD A BOX",
+            "button_label": "BUILD Your BOX",
             "link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
-            "button_label_2": "Bundles",
+            "button_label_2": "Shop Bundles",
             "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false,
             "box_align": "bottom-center",
@@ -149,15 +147,15 @@
         }
       },
       "block_order": [
-        "slide_hgbCiy",
         "slide_EFdemU",
+        "slide_hgbCiy",
         "slide_6mcVhA",
         "slide_c6rpWy",
         "slide_PJnnYE"
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "medium",
+        "slide_height": "large",
         "slider_visual": "dots",
         "auto_rotate": true,
         "change_slides_speed": 5,
@@ -166,78 +164,52 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "image_banner_FUfBNH": {
-      "type": "image-banner",
+    "rich_text_zNjyc8": {
+      "type": "rich-text",
       "blocks": {
-        "heading_YnHzXV": {
+        "heading_f39wbC": {
           "type": "heading",
           "settings": {
-            "heading": "Mealtimes made easy!",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true
+            "heading": "9 out of 10 parents love how nutritious Pots for Tots meals are for their little ones",
+            "heading_size": "h2"
           }
         },
-        "buttons_bmUpB4": {
-          "type": "buttons",
+        "text_jPwXEN": {
+          "type": "text",
+          "disabled": true,
           "settings": {
-            "button_label_1": "Build A Box",
-            "button_link_1": "shopify://collections/build-your-box",
-            "button_style_secondary_1": false,
-            "button_label_2": "Bundles",
-            "button_link_2": "shopify://collections/bundles",
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_hNydzb": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
             "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
-        "heading_YnHzXV",
-        "buttons_bmUpB4"
+        "heading_f39wbC",
+        "text_jPwXEN",
+        "button_hNydzb"
       ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Screenshot_2024-06-13_at_12.34.57.png",
-        "image_3": "shopify://shop_images/Group_hero_meals_only_square.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": false,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
-        "badge_embed": "",
-        "badge_padding": 2,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": false
-      }
-    },
-    "rich_text_DVTNxj": {
-      "type": "rich-text",
-      "blocks": {
-        "badge_L86zaM": {
-          "type": "badge",
-          "settings": {
-            "badge_embed": "<script src=\"https://widget.reviews.io/badge-ribbon/dist.js\"></script>\n<div id=\"badge-ribbon\"></div>\n<script>\n    reviewsBadgeRibbon(\"badge-ribbon\", {\n        store: \"www.potsfortots.co.uk\",\n        size: \"medium\",\n        \n        mono: true,\n    });\n</script>",
-            "badge_width": 240
-          }
-        }
-      },
-      "block_order": [
-        "badge_L86zaM"
-      ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": false,
-        "padding_top": 12,
+        "color_scheme": "scheme-4",
+        "full_width": true,
+        "padding_top": 8,
         "padding_bottom": 12
       }
     },
     "custom_image_banner_no_text_8JgQy4": {
       "type": "custom-image-banner-no-text",
-      "disabled": true,
       "settings": {
         "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
         "image_width": "400",
@@ -442,8 +414,9 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify://shop_images/Why_choose.png",
+        "image_3": "shopify://shop_images/why_choose_mob.png",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -959,8 +932,7 @@
   },
   "order": [
     "slideshow_tRxFr3",
-    "image_banner_FUfBNH",
-    "rich_text_DVTNxj",
+    "rich_text_zNjyc8",
     "custom_image_banner_no_text_8JgQy4",
     "custom_multicolumn_adV6Gn",
     "rich_text_zCM7wX",

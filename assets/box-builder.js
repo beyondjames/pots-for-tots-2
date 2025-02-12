@@ -839,29 +839,9 @@ let subscription = {
         });
       }
 
-      // Handle delivery date logic
-      const datePicker = document.getElementById(this.selector.datePicker);
-      let DeliveryDate = null;
-
-      if (datePicker) {
-        DeliveryDate = this.handleDeliveryDate();
-      } else {
-        DeliveryDate = this.generateDeliveryDate();
-      }
-
-      // Construct the final object to be returned
-      if (DeliveryDate) {
-        return {
-          items: bundleItems,
-          attributes: {
-            'Delivery Date': DeliveryDate,
-          },
-        };
-      } else {
-        return {
-          items: bundleItems,
-        };
-      }
+      return {
+        items: bundleItems,
+      };
     } else {
       console.log('Bundle is invalid:', isValid);
       // Do something with the error
@@ -901,11 +881,7 @@ let subscription = {
 
   // Function to handle adding products to the cart
   handleAddToCart: async function (data) {
-    let redirect_url = '/checkout/';
-    // const discountCode = this.state.discount_code;
-    // if (discountCode != '') {
-    //   redirect_url = '/discount/' + discountCode + '?redirect=checkout';
-    // }
+    let redirect_url = '/cart';
 
     console.log('Redirect URL: ' + redirect_url);
 
@@ -1233,11 +1209,6 @@ class handleCheckoutButton extends HTMLElement {
       button.addEventListener('click', async () => {
         // Send GA4 event
         // sendEvent(button.id, 'Box Builder', 'Checkout Button Click');
-
-        // Set button loading state
-        button.classList.add('loading');
-        const loading = button.querySelector('.loading__spinner');
-        loading.classList.remove('hidden');
 
         const date = document.getElementById('delivery');
 

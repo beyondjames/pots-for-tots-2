@@ -20,25 +20,9 @@
     "image_banner_GVmUkf": {
       "type": "image-banner",
       "blocks": {
-        "heading_pfn3KB": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Pots for Tots x Liewood",
-            "heading_size": "h0",
-            "show_heading_shadow": false
-          }
-        },
-        "text_MbxqGN": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "We're excited to announce that we've partnered up with Danish homeware designer Liewood to bring you a capsule collection of their mealtime favourites. You can add these onto any Pots for Tots orders.",
-            "text_style": "body"
-          }
-        },
         "buttons_4ch6Ez": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "SHOP NOW",
             "button_link_1": "shopify://collections/build-your-box",
@@ -50,17 +34,16 @@
         }
       },
       "block_order": [
-        "heading_pfn3KB",
-        "text_MbxqGN",
         "buttons_4ch6Ez"
       ],
       "settings": {
-        "image": "shopify://shop_images/Website_homepage_AK_landing.png",
+        "image": "shopify://shop_images/Website_homepage_5_1.png",
+        "image_3": "shopify://shop_images/AK_website_mobile.png",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "large",
         "desktop_content_position": "bottom-right",
         "show_text_box": false,
-        "desktop_content_alignment": "right",
+        "desktop_content_alignment": "left",
         "color_scheme": "scheme-4",
         "badge_embed": "",
         "badge_padding": 1,
@@ -70,14 +53,51 @@
         "show_text_below": true
       }
     },
-    "custom_image_banner_no_text_RpKxyp": {
-      "type": "custom-image-banner-no-text",
-      "disabled": true,
+    "image_with_text_KyC4ar": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rBFniF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Expert recipes delivered to your door!",
+            "heading_size": "h1"
+          }
+        },
+        "text_CMCwj3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're delighted to partner with the UK's No. 1 Children's Cookery author to bring your our nourishing, delicious range of handmade bites and meals. They're a freezer saviour for when you need a healthy meal without the prep.<br/>Simply heat, serve, and enjoy more time with your tot</p>",
+            "text_style": "body"
+          }
+        },
+        "button_HdfARb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rBFniF",
+        "text_CMCwj3",
+        "button_HdfARb"
+      ],
       "settings": {
-        "image_desktop": "shopify://shop_images/Liewood_logo_banner_2d9e7eae-f4ff-40b0-9673-41375f670fc8.png",
-        "image_width": "",
-        "title": "",
-        "link_url": ""
+        "image": "shopify://shop_images/2_4020a03f-40c1-4451-95db-5fb8de03220a.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "rich_text_PLmmAh": {
@@ -94,7 +114,7 @@
         "text_cTnm67": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>We're delighted to be partnering with Danish designer Liewood to bring you a capsule collection of lifestyle products to bring more joy to every mealtime. </strong><br/><br/><em>\"At Liewood, we believe in creating beautiful products to ease and inspire the everyday lives of families. We're thrilled to partner with Pots for Tots who create thoughtfully designed meal boxes that make mealtime fun, nutritious, and easy for families. Together, we aim to support in fostering healthy habits while adding a touch of Scandinavian style to everyday routines.\"</em> - Sophie Mohammadi, Liewood</p>"
+            "text": "<p>We're delighted to partner with the UK's No. 1 Children's Cookery author to bring your our nourishing, delicious range of handmade bites and meals. They're a freezer saviour for when you need a healthy meal without the prep.<br/>Simply heat, serve, and enjoy more time with your tot</p>"
           }
         },
         "button_Q3FHeH": {
@@ -125,6 +145,7 @@
     },
     "featured_collection_BQBza9": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -149,128 +170,6 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36
-      }
-    },
-    "multirow_nyEeCi": {
-      "type": "multirow",
-      "blocks": {
-        "row_cNWbrW": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/1_791c09c8-9295-43d4-a67b-e6993e1aa366.png",
-            "caption": "LIEWOOD",
-            "heading": "Vivi Silicone Set",
-            "text": "<p>Liewood's best tableware products in silicone - all in one convenient set. A great non-breakable alternative to plastic and porcelain.</p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-vivi-silicone-set-cat-dark-rose"
-          }
-        },
-        "row_pR4dEw": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/3_8532fc7e-360f-4c37-ad88-f9a5a2998f4c.png",
-            "caption": "LIEWOOD",
-            "heading": "Tove All Together Cutlery Set",
-            "text": "<p>Bring a touch of fun to mealtimes with the Tove Cutlery Set. Made from stainless steel and with 3D silicone handles for extra grip, this durable cutlery is perfect for little hands to hold and a playful tool for encouragement.</p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-tove-all-together-cutlery-set-golden-caramel-mix"
-          }
-        },
-        "row_VpcYdV": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/2_57f57a23-98ea-421e-8c92-7478bbc478b2.png",
-            "caption": "LIEWOOD",
-            "heading": "Tilda Printed Bib 2-Pack",
-            "text": "<p>An essential for your changing bag this practical bib helps making mealtimes a little less messy. </p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-tilda-printed-bib-2-pack-leopard-multi-mix"
-          }
-        },
-        "row_UzEVcz": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/4_b0e61116-0bbb-48eb-9a04-dbbecf85a048.png",
-            "caption": "LIEWOOD",
-            "heading": "Neil Sippy Cup",
-            "text": "<p>Perfect for mastering the skill of drinking, the Neil Cup has a removable lid with a small spout and a smooth, tactile feel. The handles ensure a firm grip and allow the child to practice holding and tilting, as well as preparing for the use of an open cup.</p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-neil-sippy-cup-peach-sea-shell-mix"
-          }
-        },
-        "row_yDyyr3": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/5_a3cd025a-b23d-4772-a67c-ca81c693e26c.png",
-            "caption": "LIEWOOD",
-            "heading": "Falk Water Bottle",
-            "text": "<p>A premium steel water bottle, made from 80% recycled stainless steel. Designed to be easy for little hands to hold. It is leakproof and features a built-in pop-up straw lid as well as a loop handle for convenient carrying when on the go.</p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-falk-water-bottle-350-ml-bunny-sandy"
-          }
-        },
-        "row_ThrWzc": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Nadja_Food_Jar_LW20223_1111_Safari_sandy_mix_2.jpg",
-            "caption": "LIEWOOD",
-            "heading": "Liewood Nadja Food Jar",
-            "text": "<p>The practical food jar has double stainless-steel walls making it ideal for bringing porridge or snacks on an outing.</p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-nadja-food-jar-peach-sea-shell-mix"
-          }
-        }
-      },
-      "block_order": [
-        "row_cNWbrW",
-        "row_pR4dEw",
-        "row_VpcYdV",
-        "row_UzEVcz",
-        "row_yDyyr3",
-        "row_ThrWzc"
-      ],
-      "settings": {
-        "image_height": "adapt",
-        "desktop_image_width": "medium",
-        "heading_size": "h1",
-        "text_style": "body",
-        "button_style": "secondary",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "image_layout": "alternate-left",
-        "section_color_scheme": "scheme-2",
-        "row_color_scheme": "scheme-2",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "rich_text_nejX4T": {
-      "type": "rich-text",
-      "blocks": {
-        "button_HzpJ8X": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "button_HzpJ8X"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 52
       }
     },
     "custom_newsletter_BMmYj9": {
@@ -310,16 +209,72 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "multicolumn_P6zQg9": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JV9eLD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AKFishPieBites_3.png",
+            "title": "Fish Pie Bites",
+            "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_xq4HYH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AKChicken_VegBites_3.png",
+            "title": "Chicken & Veggie Bites",
+            "text": "<p>Bake mini bites with chicken, sweet potato and broccoli.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_jmAhTN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AKVeggieFrittatas_3.png",
+            "title": "Cheese and Veggie Frittatas",
+            "text": "<p>Mini baked fritattas made with egg, potato, red pepper, peas and onions. </p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_JV9eLD",
+        "column_xq4HYH",
+        "column_jmAhTN"
+      ],
+      "settings": {
+        "title": "Little Bites",
+        "heading_size": "h1",
+        "text": "<p>These little bites developed with Annabel Karmel are ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 24
+      }
     }
   },
   "order": [
     "main",
     "image_banner_GVmUkf",
-    "custom_image_banner_no_text_RpKxyp",
+    "image_with_text_KyC4ar",
     "rich_text_PLmmAh",
     "featured_collection_BQBza9",
-    "multirow_nyEeCi",
-    "rich_text_nejX4T",
-    "custom_newsletter_BMmYj9"
+    "custom_newsletter_BMmYj9",
+    "multicolumn_P6zQg9"
   ]
 }
