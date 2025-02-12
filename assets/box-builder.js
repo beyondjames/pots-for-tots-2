@@ -61,8 +61,7 @@ let subscription = {
     const subTypeWrapper = document.querySelector('subscription-type');
 
     // Get the discount from the page
-    this.state.discount = parseFloat(document.querySelector('#discount').value);
-    console.log('Discount: ' + this.state.discount);
+    this.state.discount = 1 - parseFloat(document.querySelector('#discount').value) / 100;
 
     // Handle subscription frequency settings
     if (getCookie('potsFreq') !== '') {
@@ -455,9 +454,7 @@ let subscription = {
     // Build the product list HTML
     let productListContents = '<table class="box-drawer__table"><tbody>';
 
-    // Get the discount from state
-    let discount = 1 - this.state.discount / 100;
-    console.log('Discount', discount);
+    const discount = this.state.discount;
 
     productJson.forEach(function (product) {
       if (product.quantity > 0) {
@@ -535,6 +532,9 @@ let subscription = {
 
     let subtype = this.state.subscriptionType;
 
+    let discount2 = this.state.discount;
+    let discounted_products = document.querySelector('#discounted_products').value;
+
     // Get the product array
     let productList = sessionStorage.getItem('potsProductList');
     productJson = JSON.parse(productList);
@@ -543,25 +543,24 @@ let subscription = {
       let lineTotal = product.price * parseInt(product.quantity);
       let productSubScriptionLineTotal = 0;
 
-      if (product.sellingPlans.length > 0) {
-        productSubScriptionLineTotal = product.sellingPlans[0].price * parseInt(product.quantity);
+      if (discounted_products.includes(product.productId)) {
+        if (product.sellingPlans.length > 0) {
+          productSubScriptionLineTotal = product.sellingPlans[0].price * parseInt(product.quantity) * discount2;
+        } else {
+          productSubScriptionLineTotal = product.price * parseInt(product.quantity) * discount2;
+        }
       } else {
-        productSubScriptionLineTotal = product.price * parseInt(product.quantity);
+        if (product.sellingPlans.length > 0) {
+          productSubScriptionLineTotal = product.sellingPlans[0].price * parseInt(product.quantity);
+        } else {
+          productSubScriptionLineTotal = product.price * parseInt(product.quantity);
+        }
       }
 
       productTotalCost += lineTotal;
       productSubscriptionTotalCost += productSubScriptionLineTotal;
       productCount += parseInt(product.quantity);
     });
-
-    // Get the discount from state
-    let discount = 1 - this.state.discount / 100;
-
-    // apply discount if needed
-    if (discount > 0 && subtype == 'subscription') {
-      productTotalCost = productTotalCost * discount;
-      productSubscriptionTotalCost = productSubscriptionTotalCost * discount;
-    }
 
     this.state.selectedItemCount = productCount;
 
