@@ -252,7 +252,7 @@
       "settings": {
         "title": "Little Bites",
         "heading_size": "h1",
-        "text": "<p>These little bites developed with Annabel Karmel are ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up!</p>",
+        "text": "<p>These little bites developed with Annabel Karmel are ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -263,8 +263,8 @@
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 20,
+        "padding_bottom": 24
       }
     }
   },
