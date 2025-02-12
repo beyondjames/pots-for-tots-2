@@ -46,7 +46,7 @@
         "image": "shopify://shop_images/Website_homepage_13.png",
         "image_3": "shopify://shop_images/teaser_AK_website_mobile_1.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
