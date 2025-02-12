@@ -1,0 +1,156 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_eAPqEm": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_iCCBfe": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Save up to 15% with bundles!",
+            "heading_size": "h0",
+            "show_heading_shadow": false
+          }
+        },
+        "text_yWxYkr": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Save time by selecting from our carefully curated ready-to-order bundles.",
+            "text_style": "body"
+          }
+        },
+        "buttons_yxPGGR": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_iCCBfe",
+        "text_yWxYkr",
+        "buttons_yxPGGR"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/NEWSLETTER_desktop_13.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "rich_text_xrjLBD": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_qdENnt": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_fJ7p9P": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>We're delighted to be partnering with Danish designer Liewood to bring you a capsule collection of lifestyle products to bring more joy to every mealtime.</strong></p><p><em>\"At Liewood, we believe in creating beautiful products to ease and inspire the everyday lives of families. We're thrilled to partner with Pots for Tots who create thoughtfully designed meal boxes that make mealtime fun, nutritious, and easy for families. Together, we aim to support in fostering healthy habits while adding a touch of Scandinavian style to everyday routines.\"</em>- Sophie Mohammadi, Liewood</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qdENnt",
+        "text_fJ7p9P"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "enable_product_button": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": false,
+        "columns_mobile": "2",
+        "padding_top": 16,
+        "padding_bottom": 36
+      }
+    },
+    "rich_text_PC3EtE": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ywaqme": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Liewood collection is available to purchase individually or as part of your meal order. A minimum purchase value of £35 applies if you are purchasing <strong>only</strong> Liewood products (i.e not with meals). </p><p>If purchased in addition to your subscription, it will be added as a one-time purchase and won't be included in your recurring order. When purchased with any of our meals, Liewood products will be packed separately but will arrive on the same day as your food delivery (we deliver every Thursday).</p><p>Introductory discount codes are not applicable to any Liewood products. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ywaqme"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner_eAPqEm",
+    "banner",
+    "rich_text_xrjLBD",
+    "product-grid",
+    "rich_text_PC3EtE"
+  ]
+}
