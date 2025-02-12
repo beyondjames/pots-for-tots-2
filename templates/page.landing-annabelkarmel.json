@@ -67,7 +67,7 @@
         "text_cTnm67": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>We're delighted to be partnering with Danish designer Liewood to bring you a capsule collection of lifestyle products to bring more joy to every mealtime. </strong><br/><br/><em>\"At Liewood, we believe in creating beautiful products to ease and inspire the everyday lives of families. We're thrilled to partner with Pots for Tots who create thoughtfully designed meal boxes that make mealtime fun, nutritious, and easy for families. Together, we aim to support in fostering healthy habits while adding a touch of Scandinavian style to everyday routines.\"</em> - Sophie Mohammadi, Liewood</p>"
+            "text": "<p>We're delighted to partner with the UK's No. 1 Children's Cookery author to bring your our nourishing, delicious range of handmade bites and meals. They're a freezer saviour for when you need a healthy meal without the prep.<br/>Simply heat, serve, and enjoy more time with your tot</p>"
           }
         },
         "button_Q3FHeH": {
@@ -283,6 +283,52 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_KyC4ar": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rBFniF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Expert recipes delivered to your door!",
+            "heading_size": "h1"
+          }
+        },
+        "text_CMCwj3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We're delighted to partner with the UK's No. 1 Children's Cookery author to bring your our nourishing, delicious range of handmade bites and meals. They're a freezer saviour for when you need a healthy meal without the prep.<br/>Simply heat, serve, and enjoy more time with your tot</p>",
+            "text_style": "body"
+          }
+        },
+        "button_HdfARb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rBFniF",
+        "text_CMCwj3",
+        "button_HdfARb"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -292,6 +338,7 @@
     "featured_collection_BQBza9",
     "multirow_nyEeCi",
     "rich_text_nejX4T",
-    "custom_newsletter_BMmYj9"
+    "custom_newsletter_BMmYj9",
+    "image_with_text_KyC4ar"
   ]
 }
