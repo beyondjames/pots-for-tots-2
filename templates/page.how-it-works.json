@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -23,10 +23,10 @@
         "column_XU4XBm": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_b010f6c2-1b78-408c-a52a-4488a88ab0f0.png",
+            "image": "shopify://shop_images/1_b010f6c2-1b78-408c-a52a-4488a88ab0f0.png",
             "title": "",
             "title_size": "h2",
-            "text": "<p>Choose from our selection of dietitian-approved, nutritious meals and snacks for your little one. Make sure you have at least 8 meals in your box to get started.<\/p>",
+            "text": "<p>Choose from our selection of dietitian-approved, nutritious meals and snacks for your little one. Make sure you have at least 8 meals in your box to get started.</p>",
             "link_label": "",
             "link": ""
           }
@@ -34,10 +34,10 @@
         "column_FkLG7W": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/2_5ec22475-6ec9-44b6-9b0e-bbc44ab13d17.png",
+            "image": "shopify://shop_images/2_5ec22475-6ec9-44b6-9b0e-bbc44ab13d17.png",
             "title": "",
             "title_size": "h2",
-            "text": "<p>Choose your delivery frequency. Our subscriptions are flexible so you can order as often as you want and you can pause your subscription at any time.<\/p>",
+            "text": "<p>Choose your delivery frequency. Our subscriptions are flexible so you can order as often as you want and you can pause your subscription at any time.</p>",
             "link_label": "",
             "link": ""
           }
@@ -45,10 +45,10 @@
         "column_tQxbQT": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/3_455d08d7-1511-4737-9c19-e93b2c791951.png",
+            "image": "shopify://shop_images/3_455d08d7-1511-4737-9c19-e93b2c791951.png",
             "title": "",
             "title_size": "h2",
-            "text": "<p>Pop in the freezer ready for when you need them. Our meals heat up in minutes ready for your little one to enjoy!<\/p>",
+            "text": "<p>Pop in the freezer ready for when you need them. Our meals heat up in minutes ready for your little one to enjoy!</p>",
             "link_label": "",
             "link": ""
           }
@@ -92,17 +92,17 @@
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
           }
         },
         "button_cWLHwz": {
           "type": "button",
           "settings": {
             "button_label": "Build a box",
-            "button_link": "shopify:\/\/collections\/build-your-box",
+            "button_link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
             "button_label_2": "Bundles",
-            "button_link_2": "shopify:\/\/collections\/bundles",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false
           }
         }
@@ -134,7 +134,7 @@
         "text_QKWpJC": {
           "type": "text",
           "settings": {
-            "text": "<p>Our flexible subscriptions mean you can choose to have your meals delivered as frequently as you like and you can pause or cancel anytime. You can also change the meals you get in every order so you can explore our entire menu of meals. <\/p><p>Alternatively, you can order a one-time purchase as and when you need. No ties.<\/p>",
+            "text": "<p>Our flexible subscriptions mean you can choose to have your meals delivered as frequently as you like and you can pause or cancel anytime. You can also change the meals you get in every order so you can explore our entire menu of meals. </p><p>Alternatively, you can order a one-time purchase as and when you need. No ties.</p>",
             "text_style": "body"
           }
         },
@@ -142,7 +142,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP NOW",
-            "button_link": "shopify:\/\/collections\/build-your-box",
+            "button_link": "shopify://collections/build-your-box",
             "button_style_secondary": false
           }
         }
@@ -153,7 +153,7 @@
         "button_nEcc8b"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_1826_2.jpg",
+        "image": "shopify://shop_images/IMG_1826_2.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "image_heading": "",
@@ -175,10 +175,10 @@
         "column_iAPAtQ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_1826_2.jpg",
+            "image": "shopify://shop_images/IMG_1826_2.jpg",
             "title": "Subscribe and save",
             "title_size": "h1",
-            "text": "<p>Our flexible subscription means you can choose to have your meals delivered every week, every 2 weeks, every month, every 6 weeks or every 2 months. You can pause or cancel your delivery at any time. You can also change which meals you get in every order. PLUS you'll get 10% off the retail price on every order.<\/p>",
+            "text": "<p>Our flexible subscription means you can choose to have your meals delivered every week, every 2 weeks, every month, every 6 weeks or every 2 months. You can pause or cancel your delivery at any time. You can also change which meals you get in every order. PLUS you'll get 10% off the retail price on every order.</p>",
             "link_label": "",
             "link": ""
           }
@@ -186,10 +186,10 @@
         "column_L4AhNC": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/DSC06920_2_2.jpg",
+            "image": "shopify://shop_images/DSC06920_2_2.jpg",
             "title": "One-time purchase",
             "title_size": "h1",
-            "text": "<p>You can order a box as a one-off as and when you need. Simply order order 8 meals as a minimum.  You can also order a one-off box as an add on to your regular subscription - choose from our delicious menu of meals and snacks. Alternatively, take out a regular subscription and you'll save 10% on every order.<\/p>",
+            "text": "<p>You can order a box as a one-off as and when you need. Simply order order 8 meals as a minimum.  You can also order a one-off box as an add on to your regular subscription - choose from our delicious menu of meals and snacks. Alternatively, take out a regular subscription and you'll save 10% on every order.</p>",
             "link_label": "",
             "link": ""
           }
@@ -210,7 +210,7 @@
         "column_alignment": "center",
         "background_style": "none",
         "button_label": "CREATE A BOX",
-        "button_link": "shopify:\/\/collections\/build-your-box",
+        "button_link": "shopify://collections/build-your-box",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -231,7 +231,7 @@
         "1649681341795e34ba-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We currently deliver our meals each week on Thursdays. Make sure you get your orders in by <strong>midnight on Monday<\/strong> to get a delivery that week. Any orders placed after this will be delivered the following week. If you have a regular subscription, your order will be processed at 5am on a Monday so please ensure to make any changes before then.<\/p>"
+            "text": "<p>We currently deliver our meals each week on Mondays and Thursdays. Make sure you get your orders in by <strong>midnight on Monday for delivery on a Thursday, or midnight on Thursday for a delivery on Monday</strong>. If you have a regular subscription, you can check the status of your next delivery date in your <a href=\"https://potsfortots.co.uk/account/login\" target=\"_blank\" title=\"https://potsfortots.co.uk/account/login\">account</a>.</p>"
           }
         }
       },
@@ -251,7 +251,7 @@
     "1649681382709b2f84": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/box_at_door.png",
+        "image": "shopify://shop_images/box_at_door.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -279,7 +279,7 @@
         "text_q9ydGB": {
           "type": "text",
           "settings": {
-            "text": "<p>Our orders are delivered by DHL (who are committed to making sure their deliveries are carbon-neutral). Their existing carbon reducing strategy includes using electric aeroplanes, vehicles and green energy. They also offer carbon offset for every parcel sent.<\/p><p>You can expect a 1-hour delivery window, from DHL on the morning of your delivery, so you'll know exactly when to expect your box. <\/p><p>Don't worry if you're not in to receive your order - DHL will leave it in a safe space or with a neighbour. Our boxes are well insulated with dry ice so should stay frozen until you return home. <\/p>"
+            "text": "<p>Our orders are delivered by DHL (who are committed to making sure their deliveries are carbon-neutral). Their existing carbon reducing strategy includes using electric aeroplanes, vehicles and green energy. They also offer carbon offset for every parcel sent.</p><p>You can expect a 1-hour delivery window, from DHL on the morning of your delivery, so you'll know exactly when to expect your box. </p><p>Don't worry if you're not in to receive your order - DHL will leave it in a safe space or with a neighbour. Our boxes are well insulated with dry ice so should stay frozen until you return home. </p>"
           }
         },
         "heading_prV7UF": {
@@ -292,7 +292,7 @@
         "16496814660daf22ed-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We deliver to <strong>England<\/strong>, <strong>Wales<\/strong> and <strong>Scotland (Mainland)<\/strong>. At the moment there is no delivery to the Channel Islands, Isle of Man, Northern Ireland & some of the Scottish Highlands.<\/p><p>We do not deliver to the following postcodes: <\/p><p>HS1 - HS9 Outer Hebrides, Scotland <br\/>IV1 - IV56 Inverness, Scotland<br\/>IV63 - Inverness, Scotland<br\/>KA27 - KA28\tKilmarnock, Scotland<br\/>PA20 - PA38 Paisley, Scotland<br\/>PA41 - PA49\tPaisley, Scotland<br\/>PA60 - PA78\tPaisley, Scotland<br\/>ZE1 - ZE3 Shetland Islands, Scotland <br\/>AB31 - AB38, Aberdeen, Scotland<br\/>AB40 - AB56, Aberdeen, Scotland<br\/>KW1 - KW17 Kirkwall, Scotland<br\/>PH40 - PH44 Perth, Scotland<br\/>PH49 - PH50 Perth, Scotland<br\/>All - Isle of Man <br\/>All - Jersey<br\/>All - Guernsey <br\/>All - Northern Ireland <br\/><br\/>If you are unsure on whether we can deliver to your postcode please email hello@potsfortots.co.uk<\/p>"
+            "text": "<p>We deliver to <strong>England</strong>, <strong>Wales</strong> and <strong>Scotland (Mainland)</strong>. At the moment there is no delivery to the Channel Islands, Isle of Man, Northern Ireland & some of the Scottish Highlands.</p><p>We do not deliver to the following postcodes: </p><p>HS1 - HS9 Outer Hebrides, Scotland <br/>IV1 - IV56 Inverness, Scotland<br/>IV63 - Inverness, Scotland<br/>KA27 - KA28\tKilmarnock, Scotland<br/>PA20 - PA38 Paisley, Scotland<br/>PA41 - PA49\tPaisley, Scotland<br/>PA60 - PA78\tPaisley, Scotland<br/>ZE1 - ZE3 Shetland Islands, Scotland <br/>AB31 - AB38, Aberdeen, Scotland<br/>AB40 - AB56, Aberdeen, Scotland<br/>KW1 - KW17 Kirkwall, Scotland<br/>PH40 - PH44 Perth, Scotland<br/>PH49 - PH50 Perth, Scotland<br/>All - Isle of Man <br/>All - Jersey<br/>All - Guernsey <br/>All - Northern Ireland <br/><br/>If you are unsure on whether we can deliver to your postcode please email hello@potsfortots.co.uk</p>"
           }
         }
       },
@@ -324,7 +324,7 @@
         "1655419730c3125db7-1": {
           "type": "text",
           "settings": {
-            "text": "<p>All our meals are designed to be stored and heated from frozen, therefore we will always recommend the ‘from frozen’ instruction as this will give the best results. <br\/><br\/>Heating instructions can be found on the packaging, and also on the product information section when in the 'Build your Box' page. We advise using particular appliances, i.e. microwave, oven, or hob, depending on the meal, as this can affect the quality and cook process. However, these are guidelines only, and the most important thing is that the internal temperature of the food reaches 70°C for 2 minutes, regardless of the meal or cook method. <\/p><p>Always allow to cool sufficiently before serving to your child.<\/p><p>Cooking instructions vary per meal so please check the packaging or product pages <a href=\"\/collections\/build-your-box\" target=\"_blank\" title=\"Build Your Box\">here<\/a> for accurate cooking instructions. <\/p>",
+            "text": "<p>All our meals are designed to be stored and heated from frozen, therefore we will always recommend the ‘from frozen’ instruction as this will give the best results. <br/><br/>Heating instructions can be found on the packaging, and also on the product information section when in the 'Build your Box' page. We advise using particular appliances, i.e. microwave, oven, or hob, depending on the meal, as this can affect the quality and cook process. However, these are guidelines only, and the most important thing is that the internal temperature of the food reaches 70°C for 2 minutes, regardless of the meal or cook method. </p><p>Always allow to cool sufficiently before serving to your child.</p><p>Cooking instructions vary per meal so please check the packaging or product pages <a href=\"/collections/build-your-box\" target=\"_blank\" title=\"Build Your Box\">here</a> for accurate cooking instructions. </p>",
             "text_style": "body"
           }
         },
@@ -332,7 +332,7 @@
           "type": "button",
           "settings": {
             "button_label": "Frequently Asked Questions",
-            "button_link": "shopify:\/\/pages\/faq",
+            "button_link": "shopify://pages/faq",
             "button_style_secondary": false
           }
         }
@@ -343,7 +343,7 @@
         "1655419730c3125db7-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Pasta_bolognese_20f3c5ee-a17e-4d37-97ff-5a4e87185702.png",
+        "image": "shopify://shop_images/Pasta_bolognese_20f3c5ee-a17e-4d37-97ff-5a4e87185702.png",
         "height": "medium",
         "desktop_image_width": "medium",
         "layout": "text_first",
