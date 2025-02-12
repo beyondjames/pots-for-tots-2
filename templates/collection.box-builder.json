@@ -26,8 +26,8 @@
     "product-grid": {
       "type": "box-builder-main-collection-product-grid",
       "settings": {
-        "subscription_discount": 30,
-        "subscription_discount_code": "TESTCODE12345",
+        "subscription_discount": 0,
+        "subscription_discount_code": "",
         "products_per_page": 48,
         "columns_desktop": 3,
         "color_scheme": "",
