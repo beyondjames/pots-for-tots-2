@@ -23,9 +23,8 @@
         },
         "announcement-bar-0": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
-            "text": "Order by midnight on 16th Dec for Christmas delivery",
+            "text": "We now deliver on Mondays AND Thursdays!",
             "link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271"
           }
         },
