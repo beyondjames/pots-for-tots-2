@@ -157,47 +157,61 @@
         "padding_bottom": 24
       }
     },
-    "rich_text_PLmmAh": {
-      "type": "rich-text",
+    "multicolumn_bHDhwQ": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_Dex6F3": {
-          "type": "heading",
-          "disabled": true,
+        "column_HLbK8x": {
+          "type": "column",
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "image": "shopify://shop_images/AKChickenTikka_3.png",
+            "title": "Mild Chicken Tikka",
+            "text": "<p>A fruity and mild chicken tikka mixed with fluffy rice.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "text_cTnm67": {
-          "type": "text",
+        "column_pEnUkF": {
+          "type": "column",
           "settings": {
-            "text": "<p>We're delighted to partner with the UK's No. 1 Children's Cookery author to bring your our nourishing, delicious range of handmade bites and meals. They're a freezer saviour for when you need a healthy meal without the prep.<br/>Simply heat, serve, and enjoy more time with your tot</p>"
+            "image": "shopify://shop_images/AKChicken_VegOrzo_3.png",
+            "title": "Chicken & Veggie Orzo",
+            "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
+            "link_label": "",
+            "link": ""
           }
         },
-        "button_Q3FHeH": {
-          "type": "button",
+        "column_fPgrN7": {
+          "type": "column",
           "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://collections/liewood",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/AK_Bundle.png",
+            "title": "AK x PFT Bundle",
+            "text": "<p>Save 10% when you buy the full bundle + Annabel Karmel's new Finger Foods book. </p>",
+            "link_label": "",
+            "link": ""
           }
         }
       },
       "block_order": [
-        "heading_Dex6F3",
-        "text_cTnm67",
-        "button_Q3FHeH"
+        "column_HLbK8x",
+        "column_pEnUkF",
+        "column_fPgrN7"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
+        "title": "Little Pots",
+        "heading_size": "h1",
+        "text": "<p>Packed with natural goodness, these delicious meals have been developed with Annabel Karmel to bring you the perfect midweek meal for your tot.</p>",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify://collections/build-your-box",
         "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "featured_collection_BQBza9": {
@@ -266,52 +280,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "multicolumn_bHDhwQ": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_HLbK8x": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AKChickenTikka_3.png",
-            "title": "Mild Chicken Tikka",
-            "text": "<p>A fruity and mild chicken tikka mixed with fluffy rice.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_pEnUkF": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AKChicken_VegOrzo_3.png",
-            "title": "Chicken & Veggie Orzo",
-            "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "column_HLbK8x",
-        "column_pEnUkF"
-      ],
-      "settings": {
-        "title": "Little Pots",
-        "heading_size": "h1",
-        "text": "<p>Packed with natural goodness, these delicious meals have been developed with Annabel Karmel to bring you the perfect midweek meal for your tot.</p>",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Button label",
-        "button_link": "",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -319,9 +287,8 @@
     "image_banner_GVmUkf",
     "image_with_text_KyC4ar",
     "multicolumn_P6zQg9",
-    "rich_text_PLmmAh",
+    "multicolumn_bHDhwQ",
     "featured_collection_BQBza9",
-    "custom_newsletter_BMmYj9",
-    "multicolumn_bHDhwQ"
+    "custom_newsletter_BMmYj9"
   ]
 }
