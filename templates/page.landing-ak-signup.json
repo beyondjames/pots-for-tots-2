@@ -22,9 +22,11 @@
       "blocks": {
         "heading_bCrjgg": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "Get 20% off your first 3 subscription orders",
-            "heading_size": "h1"
+            "heading_size": "h1",
+            "show_heading_shadow": false
           }
         },
         "text_BGFg3G": {
@@ -41,13 +43,16 @@
         "text_BGFg3G"
       ],
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2024-06-13_at_12.34.57.png",
+        "image": "shopify://shop_images/teaser_Website_homepage_7.png",
+        "image_3": "shopify://shop_images/teaser_AK_website_mobile_1.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
@@ -117,6 +122,7 @@
     },
     "featured_collection_Fgf9ic": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Shop our bestsellers!",
         "heading_size": "h1",
@@ -142,6 +148,23 @@
         "padding_top": 72,
         "padding_bottom": 36
       }
+    },
+    "featured_blog_RtECUM": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Check out the latest on our Parent Hub",
+        "heading_size": "h1",
+        "blog": "toddlers",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -149,6 +172,7 @@
     "image_banner_QzQ7yb",
     "rich_text_nbdicX",
     "1718703387fe01fff7",
-    "featured_collection_Fgf9ic"
+    "featured_collection_Fgf9ic",
+    "featured_blog_RtECUM"
   ]
 }
