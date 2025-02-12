@@ -37,7 +37,8 @@
         "buttons_4ch6Ez"
       ],
       "settings": {
-        "image": "shopify://shop_images/Website_homepage_5_1.png",
+        "image": "shopify://shop_images/AK_main_banner_2.png",
+        "image_2": "shopify://shop_images/AK_main_banner.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "bottom-right",
