@@ -10,6 +10,19 @@
 {
   "layout": "box-builder",
   "sections": {
+    "banner": {
+      "type": "box-builder-main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1",
+        "collection_title": "Build your box",
+        "collection_text": "<p>Choose a minimum of 8 meals or snacks to get started. <strong>Save 20% when you subscribe</strong> and choose your order frequency, alternatively you can just create a one-off box. </p><p>Our meal ranges are suitable from 9 months to 5 years. More info on our sizing <a href=\"/pages/our-toddlermeals\" title=\"Our Toddler Meals\">here</a>.</p>",
+        "delivery_date_message": "<p>Monday 17th February</p>",
+        "padding_top": 48,
+        "padding_bottom": 0
+      }
+    },
     "product-grid": {
       "type": "box-builder-main-collection-product-grid",
       "settings": {
@@ -68,23 +81,10 @@
         "padding_top": 48,
         "padding_bottom": 48
       }
-    },
-    "banner": {
-      "type": "box-builder-main-collection-banner",
-      "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "color_scheme": "scheme-1",
-        "collection_title": "Build your box",
-        "collection_text": "<p>Choose a minimum of 8 meals or extras to get started. You can then choose whether you want to auto-replenish or just purchase as a one-off.</p><p>Our meal ranges are suitable from 9 months to 5 years. More info on our sizing <a href=\"/pages/our-toddlermeals\" title=\"Our Toddler Meals\">here</a>.</p>",
-        "delivery_date_message": "<p>Monday 17th February</p>",
-        "padding_top": 48,
-        "padding_bottom": 0
-      }
     }
   },
   "order": [
-    "product-grid",
-    "banner"
+    "banner",
+    "product-grid"
   ]
 }
