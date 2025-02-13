@@ -122,9 +122,8 @@
     },
     "featured_collection_Fgf9ic": {
       "type": "featured-collection",
-      "disabled": true,
       "settings": {
-        "title": "Shop our bestsellers!",
+        "title": "Can't wait until then? Discover our bestsellers!",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
