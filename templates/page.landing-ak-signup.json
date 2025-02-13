@@ -46,7 +46,7 @@
         "image": "shopify://shop_images/Website_homepage_13.png",
         "image_3": "shopify://shop_images/AK_website_mobile_533_x_434_px.png",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -73,7 +73,7 @@
         "text_kbXY6F": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up to our newsletter for 20% off your first three subscription orders as well as exclusive tips from our Children's Dietitian and more!</p>"
+            "text": "<p>Sign up to be the first to hear about our exclusive new recipes developed with the UK's no. 1 children's cookery author.</p>"
           }
         },
         "button_Cg8XkB": {
