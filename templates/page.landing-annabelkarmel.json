@@ -86,10 +86,10 @@
         "button_HdfARb"
       ],
       "settings": {
-        "image": "shopify://shop_images/2_4020a03f-40c1-4451-95db-5fb8de03220a.png",
+        "image": "shopify://shop_images/AK_website_mobile_2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
-        "layout": "text_first",
+        "layout": "image_first",
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
