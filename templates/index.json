@@ -227,7 +227,7 @@
             "title": "Mexican-Style Burrito Bowl",
             "title_size": "h2",
             "text": "",
-            "link_label": "Create a box",
+            "link_label": "SHOP NOW",
             "link": "shopify://collections/build-your-box"
           }
         },
@@ -238,7 +238,7 @@
             "title": "Cheesy Veg Pasta Bake",
             "title_size": "h2",
             "text": "",
-            "link_label": "Create a box",
+            "link_label": "SHOP NOW",
             "link": "shopify://collections/build-your-box"
           }
         },
@@ -249,7 +249,7 @@
             "title": "NEW! Veggie Chilli",
             "title_size": "h2",
             "text": "",
-            "link_label": "Create a box",
+            "link_label": "SHOP NOW",
             "link": "shopify://collections/build-your-box"
           }
         },
@@ -260,7 +260,7 @@
             "title": "Cheesy Veg Bites",
             "title_size": "h2",
             "text": "",
-            "link_label": "Create a box",
+            "link_label": "SHOP NOW",
             "link": "shopify://collections/build-your-box"
           }
         }
@@ -280,7 +280,7 @@
         "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "CREATE A BOX",
+        "button_label": "SHOP NOW",
         "button_link": "shopify://collections/build-your-box",
         "color_scheme": "scheme-1",
         "image": "shopify://shop_images/Recycled_background_medium_res.png",
