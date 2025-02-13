@@ -110,8 +110,8 @@
             "image": "shopify://shop_images/AKFishPieBites_3.png",
             "title": "Fish Pie Bites",
             "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist. </p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
           }
         },
         "column_xq4HYH": {
@@ -120,8 +120,8 @@
             "image": "shopify://shop_images/AKChicken_VegBites_3.png",
             "title": "Chicken & Veggie Bites",
             "text": "<p>Bake mini bites with chicken, sweet potato and broccoli.</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
           }
         },
         "column_jmAhTN": {
@@ -130,8 +130,8 @@
             "image": "shopify://shop_images/AKVeggieFrittatas_3.png",
             "title": "Cheese and Veggie Frittatas",
             "text": "<p>Mini baked fritattas made with egg, potato, red pepper, peas and onions. </p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
           }
         }
       },
@@ -222,8 +222,8 @@
             "image": "shopify://shop_images/AKChickenTikka_3.png",
             "title": "Mild Chicken Tikka",
             "text": "<p>A fruity and mild chicken tikka mixed with fluffy rice.</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
           }
         },
         "column_pEnUkF": {
@@ -232,8 +232,8 @@
             "image": "shopify://shop_images/AKChicken_VegOrzo_3.png",
             "title": "Chicken & Veggie Orzo",
             "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
           }
         },
         "column_fPgrN7": {
@@ -242,8 +242,8 @@
             "image": "shopify://shop_images/AK_Bundle.png",
             "title": "AK x PFT Bundle",
             "text": "<p>Save 10% when you buy the full bundle + Annabel Karmel's new Finger Foods book. </p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
           }
         }
       },
