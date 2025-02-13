@@ -13,7 +13,7 @@
     "product-grid": {
       "type": "box-builder-main-collection-product-grid",
       "settings": {
-        "subscription_discount": 20,
+        "subscription_discount": 0,
         "discounted_products": [
           "fish-curry",
           "mediterranean-vegetable-orzo",
