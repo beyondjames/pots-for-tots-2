@@ -82,6 +82,9 @@
 {% comment %} Render discount on the page {% endcomment %}
 <input type="hidden" id="discount" value="{{ section.settings.subscription_discount }}">
 
+{% comment %} Render default subscription type on page {% endcomment %}
+<input type="hidden" id="subscription_type" value="{{ section.settings.default_subscription_type }}">
+
 {% comment %} Render list of discounted products {% endcomment %}
 {% assign discounted_products_list = '' %}
 {% for product in section.settings.discounted_products %}
@@ -306,15 +309,9 @@
 
           <div id="orderType">
             <div id="subscriptionContent">
-              <ul class="order-type__items">
-                <!--<li class="order-type__item">
-                  Save 10% off retail price on all orders
-                </li>-->
-                <li class="order-type__item">20% off your first 3 subscription orders</li>
-                <li class="order-type__item">Skip, pause or cancel your subscription anytime</li>
-
-                <li class="order-type__item">Edit your meal or snack choices as often as you want</li>
-              </ul>
+              {% if section.settings.subscription_text %}
+                {{ section.settings.subscription_text }}
+              {% endif %}
 
               <div class="order-type__frequency frequency__selector">
                 <frequency-selector>
@@ -330,13 +327,9 @@
             </div>
 
             <div id="oneTimeContent">
-              <ul class="order-type__items order-type__items--border">
-                <li class="order-type__item">Switch to subscribe to save 20%</li>
-              
-                <!--<li class="order-type__item">
-                  Switch to subscribe & save for 10% off
-                </li>-->
-              </ul>
+              {% if section.settings.onetime_text %}
+                {{ section.settings.onetime_text }}
+              {% endif %}
             </div>
 
             {% if section.settings.show_date_picker %}
@@ -512,6 +505,38 @@
       "label": "t:sections.all.colors.label",
       "info": "t:sections.all.colors.has_cards_info",
       "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "Drawer"
+    },
+    {
+      "type": "select",
+      "id": "default_subscription_type",
+      "label": "Default Subscription type",
+      "options": [
+        {
+          "value": "onetime",
+          "label": "Onetime"
+        },
+        {
+          "value": "subscription",
+          "label": "Subscription"
+        }
+      ],
+      "default": "subscription"
+    },
+    {
+      "type": "richtext",
+      "id": "subscription_text",
+      "label": "Subscription text",
+      "default": "<ul><li>20% off your first 3 subscription orders</li><li>Skip, pause or cancel your subscription anytime</li><li>Edit your meal or snack choices as often as you want</li></ul>"
+    },
+    {
+      "type": "richtext",
+      "id": "onetime_text",
+      "label": "Onetime text",
+      "default": "<p>Switch to subscribe to save 20%</p>"
     },
     {
       "type": "header",

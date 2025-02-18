@@ -15,7 +15,7 @@ let subscription = {
     subscriptionFrequency: 4,
 
     // Subscription type (one-time or recurring)
-    subscriptionType: 'subscription',
+    subscriptionType: '',
 
     // Discount
     discount: 0,
@@ -59,6 +59,8 @@ let subscription = {
     let upsellList = [];
 
     const subTypeWrapper = document.querySelector('subscription-type');
+    const orderTypeWrapper = document.querySelector('#orderType');
+    const defaultSubType = document.querySelector('#subscription_type').value;
 
     // Get the discount from the page
     this.state.discount = 1 - parseFloat(document.querySelector('#discount').value) / 100;
@@ -81,6 +83,7 @@ let subscription = {
       sessionStorage.setItem('potsType', this.state.subscriptionType);
     } else {
       // Set default frequency in cookie
+      this.state.subscriptionType = defaultSubType;
       setCookie('potsType', this.state.subscriptionType, 1);
       sessionStorage.setItem('potsType', this.state.subscriptionType);
     }
@@ -88,8 +91,10 @@ let subscription = {
     // Set subscription type based on user selection
     if (this.state.subscriptionType == 'subscription') {
       subTypeWrapper.querySelector('#subscription').classList.add('active');
+      orderTypeWrapper.querySelector('#oneTimeContent').classList.add('hidden');
     } else {
       subTypeWrapper.querySelector('#onetime').classList.add('active');
+      orderTypeWrapper.querySelector('#subscriptionContent').classList.add('hidden');
     }
 
     // Check for saved product list in session storage
