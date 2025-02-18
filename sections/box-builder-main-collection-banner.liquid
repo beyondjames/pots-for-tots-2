@@ -25,32 +25,33 @@
 
 {%- capture weekday_date_month -%}
   {%- assign today = "now" | date: "%s" -%}
-  {%- assign weekday = "now" | date: "%A" -%}
-  {%- assign hour = "now" | date: "%H" -%}
-  {%- assign hour_cutoff = "24" -%}
 
-  {%- if weekday == "Tuesday" -%}
-    {%- assign days_later = 9 | times: 86400 -%}
-  {%- elsif weekday == "Wednesday" -%}
-    {%- assign days_later = 8 | times: 86400 -%}
-    {%- elsif weekday == "Thursday" -%}
-    {%- assign days_later = 7 | times: 86400 -%}
-    {%- elsif weekday == "Friday" -%}
-    {%- assign days_later = 6 | times: 86400 -%}
-  {%- elsif weekday == "Saturday" -%}
-    {%- assign days_later = 5 | times: 86400 -%}
-  {%- elsif weekday == "Sunday" -%}
-    {%- assign days_later = 4 | times: 86400 -%}
-  {%- else -%}
-    {%- if hour_cutoff > hour -%}
-      {%- assign days_later = 3 | times: 86400 -%}
-    {%- else -%}
-      {%- assign days_later = 10 | times: 86400 -%}
-    {%- endif -%}
-  {%- endif -%}
+  {%- assign single_day = 86400 -%}
+  {%- assign offset = 4 | times: single_day %}
+  {%- assign minimum_date = today | plus: offset | date: "%s" -%}
+  {%- assign minimum_day = minimum_date | date: "%A" -%}
 
-  {{ today | plus: days_later | date: "%A" }}
-  {{ today | plus: days_later | date: "%d %B" }}
+  {%- assign days_later = 0 -%}
+
+  {%- case minimum_day -%}
+    {%- when "Friday" -%}
+      {%- assign days_later = 3 | times: single_day -%}
+    {%- when "Saturday" -%}
+      {%- assign days_later = 2 | times: single_day -%}
+    {%- when "Sunday" -%}
+      {%- assign days_later = 1 | times: single_day -%}
+    {%- when "Monday" -%}
+      {%- assign days_later = 0 | times: single_day -%}
+    {%- when "Tuesday" -%}
+      {%- assign days_later = 2 | times: single_day -%}
+    {%- when "Wednesday" -%}
+      {%- assign days_later = 1 | times: single_day -%}
+    {%- when "Thursday" -%}
+      {%- assign days_later = 0 | times: single_day -%}
+  {%- endcase -%}
+
+  {{ minimum_date | plus: days_later | date: "%A" }}
+  {{ minimum_date | plus: days_later | date: "%d %B" }}
 {%- endcapture -%}
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} section-{{ section.id }}-padding color-{{ section.settings.color_scheme }} gradient">
