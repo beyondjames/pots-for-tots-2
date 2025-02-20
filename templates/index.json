@@ -455,6 +455,64 @@
         "show_text_below": true
       }
     },
+    "multicolumn_wWtjbc": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_mEPE9q": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Bites.png",
+            "title": "Chicken and Veggie Bites",
+            "text": "<p>Baked mini bites with chicken, sweet potato and broccoli.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://products/ak-chicken-veggie-bites"
+          }
+        },
+        "column_tx4PAN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Orzo.png",
+            "title": "Chicken and Veggie Orzo",
+            "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://products/ak-chicken-veggie-orzo"
+          }
+        },
+        "column_RaWPKf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AK_Fish_Pie_Bites.png",
+            "title": "Fish Pie Bites",
+            "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://products/ak-fish-pie-bites"
+          }
+        }
+      },
+      "block_order": [
+        "column_mEPE9q",
+        "column_tx4PAN",
+        "column_RaWPKf"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "PFT x Annabel Karmel",
+        "heading_size": "h1",
+        "text": "<p>Discover our exclusive range in partnership with the UK's No. 1 children's cookery author, Annabel Karmel.</p>",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "EXPLORE AK X PFT",
+        "button_link": "shopify://collections/pots-for-tots-x-annabel-karmel",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_multicolumn_BGLfTF": {
       "type": "custom-multicolumn",
       "blocks": {
@@ -806,63 +864,6 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "multicolumn_wWtjbc": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_mEPE9q": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Bites.png",
-            "title": "Chicken and Veggie Bites",
-            "text": "<p>Baked mini bites with chicken, sweet potato and broccoli.</p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://products/ak-chicken-veggie-bites"
-          }
-        },
-        "column_tx4PAN": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Orzo.png",
-            "title": "Chicken and Veggie Orzo",
-            "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://products/ak-chicken-veggie-orzo"
-          }
-        },
-        "column_RaWPKf": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AK_Fish_Pie_Bites.png",
-            "title": "Fish Pie Bites",
-            "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist.</p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://products/ak-fish-pie-bites"
-          }
-        }
-      },
-      "block_order": [
-        "column_mEPE9q",
-        "column_tx4PAN",
-        "column_RaWPKf"
-      ],
-      "settings": {
-        "title": "PFT x Annabel Karmel",
-        "heading_size": "h1",
-        "text": "<p>Discover our exclusive range in partnership with the UK's No. 1 children's cookery author, Annabel Karmel.</p>",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "EXPLORE AK X PFT",
-        "button_link": "shopify://collections/pots-for-tots-x-annabel-karmel",
-        "color_scheme": "scheme-2",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -874,6 +875,7 @@
     "rich_text_zCM7wX",
     "custom_brands_qTTbhF",
     "image_banner_bWMPQb",
+    "multicolumn_wWtjbc",
     "custom_multicolumn_BGLfTF",
     "multirow_CfPLt7",
     "featured_collection_nrDTFe",
@@ -881,7 +883,6 @@
     "1719331689a4fcf305",
     "custom_testimonials_pXPcd6",
     "featured_blog_aGFxAU",
-    "custom_newsletter_titGVp",
-    "multicolumn_wWtjbc"
+    "custom_newsletter_titGVp"
   ]
 }
