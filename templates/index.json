@@ -190,15 +190,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "custom_image_banner_no_text_8JgQy4": {
-      "type": "custom-image-banner-no-text",
-      "settings": {
-        "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
-        "image_width": "400",
-        "title": "Trustpilot",
-        "link_url": ""
-      }
-    },
     "rich_text_zNjyc8": {
       "type": "rich-text",
       "blocks": {
@@ -241,6 +232,15 @@
         "full_width": true,
         "padding_top": 8,
         "padding_bottom": 12
+      }
+    },
+    "custom_image_banner_no_text_8JgQy4": {
+      "type": "custom-image-banner-no-text",
+      "settings": {
+        "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
+        "image_width": "400",
+        "title": "Trustpilot",
+        "link_url": ""
       }
     },
     "custom_multicolumn_adV6Gn": {
@@ -602,54 +602,6 @@
         "padding_bottom": 36
       }
     },
-    "custom_multicolumn_aYbTXC": {
-      "type": "custom-multicolumn",
-      "blocks": {
-        "column_8yHzYr": {
-          "type": "column",
-          "settings": {
-            "title": "British & Free-range",
-            "title_size": "h1",
-            "text": "<p>Sourcing the right ingredients is very important to us. We get all our meat from <a href=\"http://www.buntingmeat.co.uk\" target=\"_blank\" title=\"W. Bunting\">W. Bunting</a> traditional family butchers. It is free-range/grass-fed and responsibly sourced from British farms.</p>",
-            "link_label": "LEARN MORE",
-            "link": "shopify://pages/our-suppliers"
-          }
-        },
-        "column_cTrbdU": {
-          "type": "column",
-          "settings": {
-            "title": "Sustainable packaging",
-            "title_size": "h1",
-            "text": "<p>All our packaging is recyclable! Our pots are made from Kraft paper, our sleeves are made from card, we use  recycled denim liners, cardboard boxes, and even the dry ice sachets can go in the recycling bin.</p>",
-            "link_label": "LEARN MORE",
-            "link": "shopify://pages/our-suppliers"
-          }
-        }
-      },
-      "block_order": [
-        "column_8yHzYr",
-        "column_cTrbdU"
-      ],
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "text": "",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 2,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "",
-        "button_link": "",
-        "color_scheme": "",
-        "image": "shopify://shop_images/Recycled_background_medium_res.png",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 80,
-        "padding_bottom": 80
-      }
-    },
     "7e794788-fc62-4baf-b008-d2d8ed71fd6c": {
       "type": "image-with-text",
       "blocks": {
@@ -817,54 +769,6 @@
         "padding_bottom": 36
       }
     },
-    "image_with_text_fYTReL": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_LMDJpd": {
-          "type": "heading",
-          "settings": {
-            "heading": "Delivery over Christmas and New Year",
-            "heading_size": "h1"
-          }
-        },
-        "text_h8pnWa": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We've adjusted our delivery schedule over the festive period and therefore our next delivery date will be <strong>9th January 2025</strong>. Find out more about updated delivery schedule and cut off dates over Christmas and New Year below.<br/>You can also head to one of our <a href=\"/pages/become-a-retailer\" title=\"Retail partners\">retailers</a> in person if you can't wait that long! </p>",
-            "text_style": "body"
-          }
-        },
-        "button_x4Ufnk": {
-          "type": "button",
-          "settings": {
-            "button_label": "FIND OUT MORE",
-            "button_link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_LMDJpd",
-        "text_h8pnWa",
-        "button_x4Ufnk"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/FestiveChickenhotpotlifestyle.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "scheme-2",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "custom_newsletter_titGVp": {
       "type": "custom-newsletter",
       "blocks": {
@@ -903,56 +807,61 @@
         "padding_bottom": 60
       }
     },
-    "image_banner_zBhAPC": {
-      "type": "image-banner",
+    "multicolumn_wWtjbc": {
+      "type": "multicolumn",
       "blocks": {
-        "heading_7H6YJX": {
-          "type": "heading",
+        "column_mEPE9q": {
+          "type": "column",
           "settings": {
-            "heading": "New meals on the menu!",
-            "heading_size": "h1",
-            "show_heading_shadow": false
+            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Bites.png",
+            "title": "Chicken and Veggie Bites",
+            "text": "<p>Baked mini bites with chicken, sweet potato and broccoli.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://products/ak-chicken-veggie-bites"
           }
         },
-        "text_rHbxL4": {
-          "type": "text",
+        "column_tx4PAN": {
+          "type": "column",
           "settings": {
-            "text": "Build your own box or save up to 15% with our ready-made bundles!",
-            "text_style": "body"
+            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Orzo.png",
+            "title": "Chicken and Veggie Orzo",
+            "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://products/ak-chicken-veggie-orzo"
           }
         },
-        "buttons_CM6QmT": {
-          "type": "buttons",
+        "column_RaWPKf": {
+          "type": "column",
           "settings": {
-            "button_label_1": "Build a box",
-            "button_link_1": "shopify://collections/build-your-box",
-            "button_style_secondary_1": false,
-            "button_label_2": "Bundles",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false
+            "image": "shopify://shop_images/AK_Fish_Pie_Bites.png",
+            "title": "Fish Pie Bites",
+            "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://products/ak-fish-pie-bites"
           }
         }
       },
       "block_order": [
-        "heading_7H6YJX",
-        "text_rHbxL4",
-        "buttons_CM6QmT"
+        "column_mEPE9q",
+        "column_tx4PAN",
+        "column_RaWPKf"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2024-06-13_at_12.34.57.png",
-        "image_overlay_opacity": 0,
-        "image_height": "medium",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "scheme-1",
-        "badge_embed": "",
-        "badge_padding": 1,
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "title": "PFT x Annabel Karmel",
+        "heading_size": "h1",
+        "text": "<p>Discover our exclusive range in partnership with the UK's No. 1 children's cookery author, Annabel Karmel.</p>",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "EXPLORE AK X PFT",
+        "button_link": "shopify://collections/pots-for-tots-x-annabel-karmel",
+        "color_scheme": "scheme-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
@@ -968,13 +877,11 @@
     "custom_multicolumn_BGLfTF",
     "multirow_CfPLt7",
     "featured_collection_nrDTFe",
-    "custom_multicolumn_aYbTXC",
     "7e794788-fc62-4baf-b008-d2d8ed71fd6c",
     "1719331689a4fcf305",
     "custom_testimonials_pXPcd6",
     "featured_blog_aGFxAU",
-    "image_with_text_fYTReL",
     "custom_newsletter_titGVp",
-    "image_banner_zBhAPC"
+    "multicolumn_wWtjbc"
   ]
 }
