@@ -9,6 +9,61 @@
  */
 {
   "sections": {
+    "image_banner_Q7nyc4": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_i8TbaJ": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "show_heading_shadow": false
+          }
+        },
+        "text_khPEhw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_mJDLgt": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "BUILD YOUR BOX",
+            "button_link_1": "shopify://pages/pots-for-tots-x-annabel-karmel",
+            "button_style_secondary_1": false,
+            "button_label_2": "Explore AK  x PFT",
+            "button_link_2": "shopify://pages/pots-for-tots-x-annabel-karmel",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_i8TbaJ",
+        "text_khPEhw",
+        "buttons_mJDLgt"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Website_homepage_AK_2.jpg",
+        "image_3": "shopify://shop_images/Introducing_AK_mobile.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-4",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "slideshow_tRxFr3": {
       "type": "slideshow",
       "blocks": {
@@ -94,53 +149,25 @@
           "type": "slide",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Festive_Chicken_Hotpot_homepage_9a28d07b-465a-481f-909a-15fdde8e741b.png",
-            "mobile_image": "shopify://shop_images/1_abc59978-7eb6-4b9e-81c6-3e4c0c637e33.png",
-            "heading": "Ho Ho Hot Pot!",
+            "image": "shopify://shop_images/Website_homepage_AK_2.jpg",
+            "mobile_image": "shopify://shop_images/Introducing_AK_mobile.png",
+            "heading": "",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
-            "button_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box",
+            "button_label": "",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false,
-            "box_align": "middle-center",
+            "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-4",
             "text_alignment_mobile": "center",
-            "image_badge": "shopify://shop_images/logo_colour_small_7ecacb67-0aa6-46e7-b608-9d9e0a86b8a6.png",
             "image_badge_width": "100",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "right"
-          }
-        },
-        "slide_PJnnYE": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Website_homepage_8.png",
-            "mobile_image": "shopify://shop_images/7_28835245-c371-4830-9e11-634d500112f2.png",
-            "heading": "",
-            "heading_size": "h1",
-            "show_heading_shadow": false,
-            "subheading": "",
-            "button_label": "SHOP NOW",
-            "link": "shopify://pages/pots-for-tots-x-liewood",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "box_align": "bottom-right",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "200",
             "image_badge_vertical_position": "top",
             "image_badge_horizontal_position": "right"
           }
@@ -150,9 +177,9 @@
         "slide_EFdemU",
         "slide_hgbCiy",
         "slide_6mcVhA",
-        "slide_c6rpWy",
-        "slide_PJnnYE"
+        "slide_c6rpWy"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
@@ -162,6 +189,15 @@
         "image_behavior": "none",
         "show_text_below": false,
         "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "custom_image_banner_no_text_8JgQy4": {
+      "type": "custom-image-banner-no-text",
+      "settings": {
+        "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
+        "image_width": "400",
+        "title": "Trustpilot",
+        "link_url": ""
       }
     },
     "rich_text_zNjyc8": {
@@ -206,15 +242,6 @@
         "full_width": true,
         "padding_top": 8,
         "padding_bottom": 12
-      }
-    },
-    "custom_image_banner_no_text_8JgQy4": {
-      "type": "custom-image-banner-no-text",
-      "settings": {
-        "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
-        "image_width": "400",
-        "title": "Trustpilot",
-        "link_url": ""
       }
     },
     "custom_multicolumn_adV6Gn": {
@@ -931,9 +958,10 @@
     }
   },
   "order": [
+    "image_banner_Q7nyc4",
     "slideshow_tRxFr3",
-    "rich_text_zNjyc8",
     "custom_image_banner_no_text_8JgQy4",
+    "rich_text_zNjyc8",
     "custom_multicolumn_adV6Gn",
     "rich_text_zCM7wX",
     "custom_brands_qTTbhF",
