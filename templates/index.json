@@ -179,7 +179,6 @@
         "slide_6mcVhA",
         "slide_c6rpWy"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
@@ -960,8 +959,8 @@
   "order": [
     "image_banner_Q7nyc4",
     "slideshow_tRxFr3",
-    "custom_image_banner_no_text_8JgQy4",
     "rich_text_zNjyc8",
+    "custom_image_banner_no_text_8JgQy4",
     "custom_multicolumn_adV6Gn",
     "rich_text_zCM7wX",
     "custom_brands_qTTbhF",
