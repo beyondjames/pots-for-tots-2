@@ -50,7 +50,7 @@
         "image": "shopify://shop_images/Website_homepage_AK_2.jpg",
         "image_3": "shopify://shop_images/Introducing_AK_mobile.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
