@@ -46,7 +46,6 @@
         "text_khPEhw",
         "buttons_mJDLgt"
       ],
-      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Website_homepage_AK_2.jpg",
         "image_3": "shopify://shop_images/Introducing_AK_mobile.png",
@@ -179,6 +178,7 @@
         "slide_6mcVhA",
         "slide_c6rpWy"
       ],
+      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
@@ -494,7 +494,6 @@
         "column_tx4PAN",
         "column_RaWPKf"
       ],
-      "disabled": true,
       "settings": {
         "title": "PFT x Annabel Karmel",
         "heading_size": "h1",
@@ -555,6 +554,7 @@
         "column_G6myYx",
         "column_GCHJHf"
       ],
+      "disabled": true,
       "settings": {
         "title": "Pots for Tots x Liewood",
         "heading_size": "h1",
