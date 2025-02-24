@@ -55,11 +55,19 @@
           "cheesy-veg-bites",
           "mexican-style-pork-bean-burrito-bowl",
           "cheesy-veg-pasta-bake",
-          "veggie-chilli"
+          "veggie-chilli",
+          "ak-cheese-veggie-frittatas",
+          "ak-chicken-veggie-bites",
+          "ak-chicken-veggie-orzo",
+          "ak-fish-pie-bites",
+          "ak-mild-chicken-tikka"
         ],
         "products_per_page": 48,
         "columns_desktop": 3,
         "color_scheme": "",
+        "default_subscription_type": "subscription",
+        "subscription_text": "<ul><li>20% off your first 3 subscription orders</li><li>Skip, pause or cancel your subscription anytime</li><li>Edit your meal or snack choices as often as you want</li></ul>",
+        "onetime_text": "<p>Switch to subscribe to save 20%</p>",
         "show_upsells": false,
         "allow_upsell_subscriptions": false,
         "upsell_heading": "Fancy a little extra?",
@@ -83,5 +91,8 @@
       }
     }
   },
-  "order": ["banner", "product-grid"]
+  "order": [
+    "banner",
+    "product-grid"
+  ]
 }
