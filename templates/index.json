@@ -33,7 +33,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "BUILD YOUR BOX",
-            "button_link_1": "shopify://pages/pots-for-tots-x-annabel-karmel",
+            "button_link_1": "shopify://collections/build-your-box",
             "button_style_secondary_1": false,
             "button_label_2": "Explore AK  x PFT",
             "button_link_2": "shopify://pages/pots-for-tots-x-annabel-karmel",
