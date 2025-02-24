@@ -190,6 +190,15 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "custom_image_banner_no_text_8JgQy4": {
+      "type": "custom-image-banner-no-text",
+      "settings": {
+        "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
+        "image_width": "400",
+        "title": "Trustpilot",
+        "link_url": ""
+      }
+    },
     "rich_text_zNjyc8": {
       "type": "rich-text",
       "blocks": {
@@ -232,15 +241,6 @@
         "full_width": true,
         "padding_top": 8,
         "padding_bottom": 12
-      }
-    },
-    "custom_image_banner_no_text_8JgQy4": {
-      "type": "custom-image-banner-no-text",
-      "settings": {
-        "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
-        "image_width": "400",
-        "title": "Trustpilot",
-        "link_url": ""
       }
     },
     "custom_multicolumn_adV6Gn": {
@@ -869,8 +869,8 @@
   "order": [
     "image_banner_Q7nyc4",
     "slideshow_tRxFr3",
-    "rich_text_zNjyc8",
     "custom_image_banner_no_text_8JgQy4",
+    "rich_text_zNjyc8",
     "custom_multicolumn_adV6Gn",
     "rich_text_zCM7wX",
     "custom_brands_qTTbhF",
