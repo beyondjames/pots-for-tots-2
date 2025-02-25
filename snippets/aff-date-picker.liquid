@@ -26,8 +26,28 @@
 
 
         console.log("Event detail", event.detail);
-        event.preventDefault();
+        {% comment %} event.preventDefault(); {% endcomment %}
         alert(alertMessage);
       }
     );
-    </script>
+</script>
+
+<script> 
+window.RechargeExtensions.reschedule = { 
+  disableQuickOptions: false, 
+  disableCalendar: false, 
+  quickOptions: [ 
+    { 
+      frequency: 2, 
+      unit: 'week'
+    },
+    { 
+      frequency: 4, 
+      unit: 'week'
+    }  
+  ], 
+  calendar: { 
+    enableDaysOfWeek: ['mon', 'thu'],
+  } 
+};
+</script>
