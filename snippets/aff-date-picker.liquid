@@ -8,7 +8,7 @@
         if (event.detail.name === "header" && event.detail.pathname === "/overview") {
             // Initialize my app
             const sidebarWidget = document.getElementById("aff-date-picker");
-            sidebarWidget.innerHTML = "<p>Date picker widget</p>";
+            sidebarWidget.innerHTML = "<p>Sidebar widget</p>";
         }
     });
 </script>
@@ -23,7 +23,6 @@
       (event) => {
         const subscriptionId = event.detail.payload.subscriptionId;
         console.log("Subscription ID", subscriptionId);
-
 
         console.log("Event detail", event.detail);
         {% comment %} event.preventDefault(); {% endcomment %}
