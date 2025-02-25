@@ -1,3 +1,13 @@
 <script type="text/html" data-recharge-slot="overview.header">
-    <p>Delivery date widget</p>
+    <div id="aff-delivery-date"></div>
+</script>
+
+<script>
+    document.addEventListener("Recharge::slot::mounted", (event) => {
+        if (event.detail.name === "header" && event.detail.pathname === "/overview") {
+            // Initialize my app
+            const sidebarWidget = document.getElementById("aff-delivery-date");
+            sidebarWidget.innerHTML = "<p>Delivery date widget</p>";
+        }
+    });
 </script>
