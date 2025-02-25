@@ -3,3 +3,18 @@
 {% render 'aff-delivery-date' %}
 {% render 'aff-date-picker' %}
 {% render 'aff-bundle-widget' %}
+
+<script>
+    window.RechargeExtensions {
+        orderNow: {
+            disabledForNextOrder: true
+        },
+        reschedule: {
+            disableQuickOptions: false,
+            disableCalendar: false,
+            calendar: {
+                enableDaysOfWeek: ['mon', 'thu']
+            }
+        }
+    }
+</script>
