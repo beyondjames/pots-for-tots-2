@@ -1,3 +1,17 @@
 <script type="text/html" data-recharge-slot="overview.header">
     <p>Datepicker widget</p>
 </script>
+
+<script type="text/html" data-recharge-slot="overview.sidebar">
+    <div id="placeholder-for-my-app"></div>
+</script>
+
+<script>
+    document.addEventListener("Recharge::slot::mounted", (event) => {
+        if (event.detail.name === "header" && event.detail.pathname === "/overview") {
+            // Initialize my app
+            const sidebarWidget = document.getElementById("placeholder-for-my-app");
+            sidebarWidget.innerHTML = "<p>My app</p>";
+        }
+    });
+</script>
