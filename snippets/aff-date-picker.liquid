@@ -24,8 +24,9 @@
     document.addEventListener(
       "Recharge::click::reschedule",
       (event) => {
+        console.log("Event detail", event.detail);
         event.preventDefault();
-        alert(event.detail);
+        alert(alertMessage);
       }
     );
     </script>
