@@ -27,7 +27,7 @@
   {%- assign today = "now" | date: "%s" -%}
 
   {%- assign single_day = 86400 -%}
-  {%- assign offset = 4 | times: single_day %}
+  {%- assign offset = 3 | times: single_day %}
   {%- assign minimum_date = today | plus: offset | date: "%s" -%}
   {%- assign minimum_day = minimum_date | date: "%A" -%}
 
