@@ -4,6 +4,7 @@
 
 <script>
     document.addEventListener("Recharge::slot::mounted", (event) => {
+        console.log("Event detail", event.detail);
         if (event.detail.name === "header" && event.detail.pathname === "/overview") {
             // Initialize my app
             const sidebarWidget = document.getElementById("aff-date-picker");
