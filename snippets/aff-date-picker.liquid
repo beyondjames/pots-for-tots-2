@@ -16,10 +16,16 @@
     });
 </script>
 
-<script>
-    document.addEventListener("Recharge::order::openRescheduleModal", (event) => {
-        //Refresh your slot custom content
+<script>   
+    // Customize the message to guide customers to contact you
+    const alertMessage = "This is the alert message.";
+    
+    // Listen for the cancellation flow event
+    document.addEventListener(
+      "Recharge::click::reschedule",
+      (event) => {
         event.preventDefault();
-        alert('Reschedule event');
-    });
-</script>
+        alert(event.detail);
+      }
+    );
+    </script>
