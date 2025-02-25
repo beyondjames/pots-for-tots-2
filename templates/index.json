@@ -192,6 +192,7 @@
     },
     "custom_image_banner_no_text_8JgQy4": {
       "type": "custom-image-banner-no-text",
+      "disabled": true,
       "settings": {
         "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
         "image_width": "400",
