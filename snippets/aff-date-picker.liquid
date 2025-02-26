@@ -32,6 +32,7 @@
 
     // Listen for the reschedule flow event and then update the billing date
     document.addEventListener("Recharge::action::reschedule", (event) => {
+        event.preventDefault();
         console.log("Event detail", event);
         const subscriptionId = event.detail.payload.subscriptionId;
         console.log("Subscription ID billing date update", subscriptionId);
