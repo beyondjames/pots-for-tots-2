@@ -1,3 +1,35 @@
-html {
-    background-color: red;
-}
+
+  .aff-card {
+    background: var(--recharge-cards-background);
+    border: 1px solid var(--recharge-cards-border-color);
+    border-radius: var(--recharge-corners-radius);
+    padding: 20px;
+    line-height: 1.4;
+  }
+  .aff-button {
+    background-color: var(--recharge-button-brand);
+    border: 2px solid var(--recharge-button-brand);
+    border-radius: var(--recharge-button-border-radius);
+    color: var(--recharge-button-color) !important;
+    font-size: var(--recharge-typography-size-5);
+    font-weight: 600;
+    line-height: 150%;
+    padding: 10px 16px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+  }
+  .aff-button[disabled='true'] {
+    opacity: 0.6;
+  }
+  .aff-h3 {
+    font-size: var(--recharge-typography-size-3);
+    font-weight: bold;
+    line-height: 123%;
+  }
+  .t-mb2 {
+    margin-bottom: 8px;
+  }
+  .t-mb3 {
+    margin-bottom: 16px;
+  }

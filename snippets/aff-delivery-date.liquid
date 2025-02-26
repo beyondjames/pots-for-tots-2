@@ -1,13 +1,122 @@
 <script type="text/html" data-recharge-slot="overview.header">
-    <div id="aff-delivery-date"></div>
+  <div id="affinity-delivery-date-section" class="aff-card t-mb3" style="display:none;">
+    <span class="aff-h3 t-mb2">Delivery Date</span>
+    <div id="affinity-delivery-date-widget" class="affinity-delivery-date-widget">
+      <div id="charge-date"></div>
+      <div id="upcoming-delivery-date"></div>
+      <button id="reschedule-next-order">Reschedule</button>
+      <button id="skip-next-order">Skip</button>
+    </div>
+  </div>
 </script>
 
 <script>
-    document.addEventListener("Recharge::slot::mounted", (event) => {
-        if (event.detail.name === "header" && event.detail.pathname === "/overview") {
-            // Initialize my app
-            const sidebarWidget = document.getElementById("aff-delivery-date");
-            sidebarWidget.innerHTML = "<p>Your next delivery will arrive on XX/XX/XX</p>";
-        }
-    });
+  const deliveryDateWidgetManager = {
+    wrapperContainerId: 'affinity-delivery-date-section',
+    targetContainerId: 'affinitt-delivery-date-widget',
+    chargeContainerId: 'charge-date',
+    upcomingContainerID: 'upcoming-delivery-date',
+    offset: 3,
+
+    async getCharge() {
+      const charges = await rechargeAPI.fetchCharges();
+      return charges.find((charge) => charge.status == 'queued');
+    },
+
+    mountWidget(charge) {
+      window.BoxConfig = {
+        containerId: this.targetContainerId,
+        chargeConfig: { charge },
+      };
+      this.renderUpcomingDeliveryDate(charge);
+      this.handleDeliveryDateUpdate();
+      this.handleSkipButtonClick();
+      this.handleRescheduleButtonClick();
+      this.showWrapperSection();
+    },
+
+    renderUpcomingDeliveryDate(charge) {
+      const chargeDate = document.getElementById(this.chargeContainerId);
+      const upcomingDeliveryDate = document.getElementById(this.upcomingContainerID);
+      const deliveryDate = this.calcuateDeliveryDate(charge);
+      chargeDate.innerHTML = `<p>Charge date - ${this.formatDate(charge.scheduled_at)}</p>`;
+      upcomingDeliveryDate.innerHTML = `<p>Upcoming delivery date - ${deliveryDate}</p>`;
+    },
+
+    calcuateDeliveryDate(charge) {
+      const deliveryDate = new Date(charge.scheduled_at);
+      deliveryDate.setDate(deliveryDate.getDate() + this.offset);
+      return this.formatDate(deliveryDate);
+    },
+
+    formatDate(dateString) {
+      const options = { year: 'numeric', month: 'short', day: '2-digit' };
+      const date = new Date(dateString);
+      return date.toLocaleDateString('en-GB', options);
+    },
+
+    showWrapperSection() {
+      document.getElementById(this.wrapperContainerId).style.display = 'block';
+    },
+
+    handleDeliveryDateUpdate() {
+      document.addEventListener(deliveryDateWidgetstateManager.widgetEventsToHandle.subscriptionRescheduled, () => {
+        deliveryDateWidgetstateManager.refreshDeliveryDateWidget();
+      });
+    },
+
+    handleSkipButtonClick() {
+      document.getElementById('skip-next-order').addEventListener('click', () => {
+        deliveryDateWidgetstateManager.openSkipModal();
+      });
+    },
+
+    handleRescheduleButtonClick() {
+      document.getElementById('reschedule-next-order').addEventListener('click', () => {
+        deliveryDateWidgetstateManager.openRescheduleModal();
+      });
+    },
+
+    async init() {
+      try {
+        await rechargeAPI.authenticate();
+        const charge = await this.getCharge();
+        if (charge) this.mountWidget(charge);
+      } catch (error) {
+        console.error('Initialization failed:', error);
+      }
+    },
+  };
+
+  const deliveryDateWidgetstateManager = {
+    widgetEventsToHandle: {
+      subscriptionRescheduled: 'Recharge::action::reschedule',
+    },
+    widgetEventsToTrigger: {
+      reschedule: 'Recharge::order::openRescheduleModal',
+      skip: 'Recharge::order::openSkipModal',
+    },
+
+    dispatchEvent(eventName) {
+      document.dispatchEvent(new CustomEvent(eventName));
+    },
+
+    refreshDeliveryDateWidget() {
+      deliveryDateWidgetManager.init();
+    },
+
+    openSkipModal() {
+      this.dispatchEvent(this.widgetEventsToTrigger.skip);
+    },
+
+    openRescheduleModal() {
+      this.dispatchEvent(this.widgetEventsToTrigger.reschedule);
+    },
+  };
+
+  document.addEventListener('Recharge::slot::mounted', (event) => {
+    if (event.detail.name === 'header' && event.detail.pathname === '/overview') {
+      deliveryDateWidgetManager.init();
+    }
+  });
 </script>
