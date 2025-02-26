@@ -4,6 +4,11 @@
   "author": "James Cartwright",
   "private": true,
   "scripts": {
-    "dev": "shopify theme dev --store=pots-for-tots-food.myshopify.com"
+    "dev": "shopify theme dev --store=pots-for-tots-food.myshopify.com",
+    "prettier": "prettier"
+  },
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.8.2",
+    "prettier": "^3.5.2"
   }
 }
