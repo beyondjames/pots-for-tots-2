@@ -5,7 +5,7 @@
   - settings: {Object} Block settings Liquid object (optional)
 
   Usage:
-  {% render 'date-picker', settings: block.settings %}
+  {% render 'date-picker', settings: block.settings, disabled: false %}
 {% endcomment %}
 
 <link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
@@ -70,6 +70,7 @@
   }
 </style>
 
+{% unless disabled %}
 <date-picker>
   <p>{{ settings.datepicker_message }}</p>
   <div id="calendar"></div>
@@ -203,3 +204,4 @@
     return data;
   }
 </script>
+{%  endunless %}
