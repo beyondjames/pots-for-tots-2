@@ -25,9 +25,15 @@
 
 {%- capture weekday_date_month -%}
   {%- assign today = "now" | date: "%s" -%}
+  {%- assign today = '28/02/2025' | date: "%s" -%}
 
   {%- assign single_day = 86400 -%}
   {%- assign offset = 3 | times: single_day %}
+  {%- assign today_day = today | date: "%A" -%}
+  {%- if today_day == "Friday" -%}
+    {%- assign offset = 4 | times: single_day -%}
+  {%- endif -%}
+
   {%- assign minimum_date = today | plus: offset | date: "%s" -%}
   {%- assign minimum_day = minimum_date | date: "%A" -%}
 
