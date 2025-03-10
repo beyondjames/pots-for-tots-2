@@ -15,7 +15,7 @@
         "heading_iCCBfe": {
           "type": "heading",
           "settings": {
-            "heading": "Save with bundles!",
+            "heading": "Our bestsellers",
             "heading_size": "h0",
             "show_heading_shadow": false
           }
@@ -23,7 +23,7 @@
         "text_yWxYkr": {
           "type": "text",
           "settings": {
-            "text": "Save time (and money!) by selecting from our carefully curated ready-to-order bundles.",
+            "text": "Parents can’t get enough of these fam-favorite meals! Our bestsellers make mealtime easy, nutritious, and stress-free.",
             "text_style": "body"
           }
         },
@@ -45,7 +45,7 @@
         "buttons_yxPGGR"
       ],
       "settings": {
-        "image": "shopify://shop_images/Hero_group_shot.png",
+        "image": "shopify://shop_images/Group_meals_and_snacks_homepage_e1377ac6-bf08-4e68-be1c-13e9c9c656d3.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
