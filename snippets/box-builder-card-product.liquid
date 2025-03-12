@@ -422,10 +422,15 @@
           <h2 class="card__modal-title">
             {{- card_product.title -}}
           </h2>
+          
+          {% comment %} Product Description {% endcomment %}
+          <div class="card__modal-description caption-large light">
+            {{- card_product.metafields.my_fields.short_description -}}
+          </div>
 
           <div class="card__modal-icons">
             {% comment %} Product Variants {% endcomment %}
-            <div class="card__modal-variants">
+            {% comment %} <div class="card__modal-variants">
               {%- for variant in card_product.variants -%}
                 <div class="card__variants-variant-modal">
                   <div class="card__variants-title">
@@ -439,12 +444,12 @@
                   </div>
                 </div>
               {%- endfor -%}
+            </div> {% endcomment %}
+            <div class="card__modal-ingredients">
+              {%  for ingredient in card_product.metafields.custom.ingredients_list.value %}
+                {{ ingredient.icon | image_url: width: 50, height: 50 | image_tag: alt: ingredient.name }}
+              {%  endfor %}
             </div>
-          </div>
-
-          {% comment %} Product Description {% endcomment %}
-          <div class="card__modal-description caption-large light">
-            {{- card_product.description -}}
           </div>
 
           {% comment %} Nutritional Information & Cooking Instructions {% endcomment %}
@@ -452,6 +457,24 @@
             <div class="collapsible-content__wrapper section-padding gradient">
               <div class="collapsible-content-wrapper-narrow">
                 <div class="accordion">
+                  {%- if card_product.metafields.custom.ingredients -%}
+                    <details>
+                      <summary>
+                        <h3 class="accordion__title inline-richtext">
+                          Ingredients
+                        </h3>
+
+                        {%- render 'icon-caret' -%}
+                      </summary>
+
+                      <div class="accordion__content rte" role="region">
+                        <div class="card__modal-nutritional-information">
+                          {{ card_product.metafields.custom.ingredients | metafield_tag }}
+                        </div>
+                      </div>
+                    </details>
+                  {%- endif -%}
+
                   {%- if card_product.metafields.my_fields.nutritional_information -%}
                     <details>
                       <summary>

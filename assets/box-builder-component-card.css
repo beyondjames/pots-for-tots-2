@@ -354,12 +354,16 @@
 }
 
 .card__heading a:focus:after {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  box-shadow:
+    0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
 }
 
 .card__heading a:focus-visible:after {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  box-shadow:
+    0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
 }
 
@@ -620,7 +624,17 @@
 }
 
 .card__modal-icons {
-  display: none;
+  /* display: none; */
+}
+
+.card__modal-ingredients {
+  display: flex;
+  column-gap: 1rem;
+  padding-bottom: 1rem;
+}
+
+.product-popup-modal__content .card__modal-ingredients img {
+  width: 50px;
 }
 
 .card__modal-nutritional-badges {
@@ -634,6 +648,7 @@
 
 .card__modal-description {
   line-height: 1.6rem;
+  padding-bottom: 1rem;
 }
 
 .card__modal-description p {
