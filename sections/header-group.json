@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_cYPTa7": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Get 20% off your first 3 boxes when you subscribe!",
             "link": ""
@@ -23,6 +24,7 @@
         },
         "announcement-bar-0": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "We now deliver on Mondays AND Thursdays!",
             "link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271"
@@ -38,6 +40,7 @@
         },
         "announcement_YyVH6J": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "FREE Shipping with 24+ meals 🚚",
             "link": ""
