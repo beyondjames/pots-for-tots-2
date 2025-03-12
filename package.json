@@ -4,6 +4,6 @@
   "author": "James Cartwright",
   "private": true,
   "scripts": {
-    "dev": "shopify theme dev --store=pots-for-tots-food.myshopify.com"
+    "dev": "shopify theme dev --store=pots-for-tots-uae.myshopify.com"
   }
 }
