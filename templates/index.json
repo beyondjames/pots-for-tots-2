@@ -41,11 +41,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_i8TbaJ",
-        "text_khPEhw",
-        "buttons_mJDLgt"
-      ],
+      "block_order": ["heading_i8TbaJ", "text_khPEhw", "buttons_mJDLgt"],
       "settings": {
         "image": "shopify://shop_images/Website_homepage_19.png",
         "image_3": "shopify://shop_images/Introducing_AK_mobile.png",
@@ -72,7 +68,7 @@
             "image": "shopify://shop_images/Ak_collection_banner_desktop.png",
             "mobile_image": "shopify://shop_images/AK_website_mobile_533_x_434_px_2.png",
             "heading": ".",
-            "heading_size": "hxxl",
+            "heading_size": "hxxxl",
             "show_heading_shadow": true,
             "subheading": "..",
             "button_label": "Build Your Box",
@@ -98,7 +94,7 @@
             "image": "shopify://shop_images/Website_homepage_19.png",
             "mobile_image": "shopify://shop_images/Introducing_AK_mobile.png",
             "heading": ".",
-            "heading_size": "hxxl",
+            "heading_size": "hxxxl",
             "show_heading_shadow": true,
             "subheading": ".",
             "button_label": "BUILD YOUR BOX",
@@ -124,7 +120,7 @@
             "image": "shopify://shop_images/Website_homepage_11.png",
             "mobile_image": "shopify://shop_images/Website_mobile_3.png",
             "heading": "Ready in minutes!",
-            "heading_size": "hxxl",
+            "heading_size": "hxxxl",
             "show_heading_shadow": true,
             "subheading": "",
             "button_label": "Build Your Box",
@@ -150,7 +146,7 @@
             "image": "shopify://shop_images/Veggie_Chilli_5.png",
             "mobile_image": "shopify://shop_images/Veggie_Chilli_mobile.png",
             "heading": "Plant Power!",
-            "heading_size": "hxxl",
+            "heading_size": "hxxxl",
             "show_heading_shadow": true,
             "subheading": "",
             "button_label": "BUILD Your BOX",
@@ -171,12 +167,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_hgbCiy",
-        "slide_c6rpWy",
-        "slide_EFdemU",
-        "slide_6mcVhA"
-      ],
+      "block_order": ["slide_hgbCiy", "slide_c6rpWy", "slide_EFdemU", "slide_6mcVhA"],
       "disabled": true,
       "settings": {
         "layout": "full_bleed",
@@ -229,11 +220,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_f39wbC",
-        "text_jPwXEN",
-        "button_hNydzb"
-      ],
+      "block_order": ["heading_f39wbC", "text_jPwXEN", "button_hNydzb"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -291,12 +278,7 @@
           }
         }
       },
-      "block_order": [
-        "column_FNaUJd",
-        "column_XgNy9B",
-        "column_QDQrVz",
-        "column_Yc6brM"
-      ],
+      "block_order": ["column_FNaUJd", "column_XgNy9B", "column_QDQrVz", "column_Yc6brM"],
       "settings": {
         "title": "Meals and snacks made for your little ones",
         "heading_size": "h1",
@@ -347,11 +329,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_KWUAiH",
-        "text_khDxDM",
-        "button_4yjM8i"
-      ],
+      "block_order": ["heading_KWUAiH", "text_khDxDM", "button_4yjM8i"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -489,11 +467,7 @@
           }
         }
       },
-      "block_order": [
-        "column_mEPE9q",
-        "column_tx4PAN",
-        "column_RaWPKf"
-      ],
+      "block_order": ["column_mEPE9q", "column_tx4PAN", "column_RaWPKf"],
       "settings": {
         "title": "PFT x Annabel Karmel",
         "heading_size": "h1",
@@ -549,11 +523,7 @@
           }
         }
       },
-      "block_order": [
-        "column_tcxbfE",
-        "column_G6myYx",
-        "column_GCHJHf"
-      ],
+      "block_order": ["column_tcxbfE", "column_G6myYx", "column_GCHJHf"],
       "disabled": true,
       "settings": {
         "title": "Pots for Tots x Liewood",
@@ -611,11 +581,7 @@
           }
         }
       },
-      "block_order": [
-        "row_mKmVfb",
-        "row_qTXNyd",
-        "row_dyBTqK"
-      ],
+      "block_order": ["row_mKmVfb", "row_qTXNyd", "row_dyBTqK"],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -737,9 +703,7 @@
           }
         }
       },
-      "block_order": [
-        "reviews_io_reviewsio_card_carousel_pACh9W"
-      ],
+      "block_order": ["reviews_io_reviewsio_card_carousel_pACh9W"],
       "settings": {
         "include_margins": true
       }
@@ -850,11 +814,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_N3NP9V",
-        "paragraph_kYYWPA",
-        "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"
-      ],
+      "block_order": ["heading_N3NP9V", "paragraph_kYYWPA", "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"],
       "settings": {
         "color_scheme": "scheme-1",
         "image": "shopify://shop_images/Recycled_background_medium_res.png",

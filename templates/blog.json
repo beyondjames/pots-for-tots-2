@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner_WQ8aJM": {
@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "The Parent Hub",
-            "heading_size": "hxxl",
+            "heading_size": "hxxxl",
             "show_heading_shadow": true
           }
         },
@@ -41,11 +41,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_edC7cr",
-        "text_d7Ttgy",
-        "buttons_hy3Kgn"
-      ],
+      "block_order": ["heading_edC7cr", "text_d7Ttgy", "buttons_hy3Kgn"],
       "settings": {
         "image": "shopify:\/\/shop_images\/Mealtime_hacks.png",
         "image_3": "shopify:\/\/shop_images\/box_at_door_1.png",
@@ -93,11 +89,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_rxeBVd",
-        "text_JwrcYU",
-        "button_phF6WN"
-      ],
+      "block_order": ["heading_rxeBVd", "text_JwrcYU", "button_phF6WN"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -138,11 +130,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_Wajiif",
-        "text_BQ8bAi",
-        "buttons_Khh7Re"
-      ],
+      "block_order": ["heading_Wajiif", "text_BQ8bAi", "buttons_Khh7Re"],
       "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/PFT_Pattern_Background.png",
@@ -173,10 +161,5 @@
       }
     }
   },
-  "order": [
-    "image_banner_WQ8aJM",
-    "rich_text_kKwKhn",
-    "image_banner_RUpzta",
-    "main"
-  ]
+  "order": ["image_banner_WQ8aJM", "rich_text_kKwKhn", "image_banner_RUpzta", "main"]
 }
