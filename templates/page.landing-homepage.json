@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner_FUfBNH": {
@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "Mealtimes made easy!",
-            "heading_size": "hxxl",
+            "heading_size": "hxxxl",
             "show_heading_shadow": true
           }
         },
@@ -32,10 +32,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_YnHzXV",
-        "buttons_bmUpB4"
-      ],
+      "block_order": ["heading_YnHzXV", "buttons_bmUpB4"],
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2024-06-13_at_12.34.57.png",
         "image_3": "shopify:\/\/shop_images\/Group_hero_meals_only_square.png",
@@ -64,9 +61,7 @@
           }
         }
       },
-      "block_order": [
-        "badge_L86zaM"
-      ],
+      "block_order": ["badge_L86zaM"],
       "disabled": true,
       "settings": {
         "desktop_content_position": "center",
@@ -92,9 +87,7 @@
           }
         }
       },
-      "block_order": [
-        "buttons_jft8ea"
-      ],
+      "block_order": ["buttons_jft8ea"],
       "disabled": true,
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/Website_homepage_hero_landscape.png",
@@ -148,10 +141,7 @@
           }
         }
       },
-      "block_order": [
-        "text_djgTQN",
-        "button_XjJAU8"
-      ],
+      "block_order": ["text_djgTQN", "button_XjJAU8"],
       "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/New_meals_-_email_assets.png",
@@ -196,11 +186,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_eTFYPt",
-        "text_nd9aRh",
-        "button_Qr6PMP"
-      ],
+      "block_order": ["heading_eTFYPt", "text_nd9aRh", "button_Qr6PMP"],
       "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/IMG_1826_2.jpg",
@@ -309,12 +295,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_ypEX3j",
-        "slide_AmtVPH",
-        "slide_nMjUpw",
-        "slide_aLnmxy"
-      ],
+      "block_order": ["slide_ypEX3j", "slide_AmtVPH", "slide_nMjUpw", "slide_aLnmxy"],
       "disabled": true,
       "settings": {
         "layout": "full_bleed",
@@ -341,9 +322,7 @@
           }
         }
       },
-      "block_order": [
-        "column_PcF4ba"
-      ],
+      "block_order": ["column_PcF4ba"],
       "disabled": true,
       "settings": {
         "title": "",
@@ -412,12 +391,7 @@
           }
         }
       },
-      "block_order": [
-        "column_QDQrVz",
-        "column_XgNy9B",
-        "column_FNaUJd",
-        "column_Yc6brM"
-      ],
+      "block_order": ["column_QDQrVz", "column_XgNy9B", "column_FNaUJd", "column_Yc6brM"],
       "settings": {
         "title": "Meals and snacks made for your little ones",
         "heading_size": "h1",
@@ -468,11 +442,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_KWUAiH",
-        "text_khDxDM",
-        "button_4yjM8i"
-      ],
+      "block_order": ["heading_KWUAiH", "text_khDxDM", "button_4yjM8i"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -564,9 +534,7 @@
           }
         }
       },
-      "block_order": [
-        "column_heFfGf"
-      ],
+      "block_order": ["column_heFfGf"],
       "disabled": true,
       "settings": {
         "title": "",
@@ -624,11 +592,7 @@
           }
         }
       },
-      "block_order": [
-        "row_mKmVfb",
-        "row_qTXNyd",
-        "row_dyBTqK"
-      ],
+      "block_order": ["row_mKmVfb", "row_qTXNyd", "row_dyBTqK"],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -671,10 +635,7 @@
           }
         }
       },
-      "block_order": [
-        "column_bjwyRq",
-        "column_zCVMVV"
-      ],
+      "block_order": ["column_bjwyRq", "column_zCVMVV"],
       "disabled": true,
       "settings": {
         "title": "",
@@ -720,10 +681,7 @@
           }
         }
       },
-      "block_order": [
-        "column_8yHzYr",
-        "column_cTrbdU"
-      ],
+      "block_order": ["column_8yHzYr", "column_cTrbdU"],
       "disabled": true,
       "settings": {
         "title": "",
@@ -817,11 +775,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_wX3iH3",
-        "text_3apY4H",
-        "badge_XaDinC"
-      ],
+      "block_order": ["heading_wX3iH3", "text_3apY4H", "badge_XaDinC"],
       "disabled": true,
       "settings": {
         "desktop_content_position": "center",
@@ -862,9 +816,7 @@
           }
         }
       },
-      "block_order": [
-        "reviews_io_reviewsio_card_carousel_pACh9W"
-      ],
+      "block_order": ["reviews_io_reviewsio_card_carousel_pACh9W"],
       "settings": {
         "include_margins": true
       }
@@ -975,11 +927,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_N3NP9V",
-        "paragraph_kYYWPA",
-        "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"
-      ],
+      "block_order": ["heading_N3NP9V", "paragraph_kYYWPA", "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"],
       "settings": {
         "color_scheme": "scheme-1",
         "image": "shopify:\/\/shop_images\/Recycled_background_medium_res.png",
@@ -1020,11 +968,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_7H6YJX",
-        "text_rHbxL4",
-        "buttons_CM6QmT"
-      ],
+      "block_order": ["heading_7H6YJX", "text_rHbxL4", "buttons_CM6QmT"],
       "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Screenshot_2024-06-13_at_12.34.57.png",
