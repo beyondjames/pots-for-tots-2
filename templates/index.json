@@ -41,7 +41,11 @@
           }
         }
       },
-      "block_order": ["heading_i8TbaJ", "text_khPEhw", "buttons_mJDLgt"],
+      "block_order": [
+        "heading_i8TbaJ",
+        "text_khPEhw",
+        "buttons_mJDLgt"
+      ],
       "settings": {
         "image": "shopify://shop_images/Website_homepage_19.png",
         "image_3": "shopify://shop_images/Introducing_AK_mobile.png",
@@ -167,7 +171,12 @@
           }
         }
       },
-      "block_order": ["slide_hgbCiy", "slide_c6rpWy", "slide_EFdemU", "slide_6mcVhA"],
+      "block_order": [
+        "slide_hgbCiy",
+        "slide_c6rpWy",
+        "slide_EFdemU",
+        "slide_6mcVhA"
+      ],
       "disabled": true,
       "settings": {
         "layout": "full_bleed",
@@ -220,7 +229,11 @@
           }
         }
       },
-      "block_order": ["heading_f39wbC", "text_jPwXEN", "button_hNydzb"],
+      "block_order": [
+        "heading_f39wbC",
+        "text_jPwXEN",
+        "button_hNydzb"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -278,7 +291,12 @@
           }
         }
       },
-      "block_order": ["column_FNaUJd", "column_XgNy9B", "column_QDQrVz", "column_Yc6brM"],
+      "block_order": [
+        "column_FNaUJd",
+        "column_XgNy9B",
+        "column_QDQrVz",
+        "column_Yc6brM"
+      ],
       "settings": {
         "title": "Meals and snacks made for your little ones",
         "heading_size": "h1",
@@ -329,7 +347,11 @@
           }
         }
       },
-      "block_order": ["heading_KWUAiH", "text_khDxDM", "button_4yjM8i"],
+      "block_order": [
+        "heading_KWUAiH",
+        "text_khDxDM",
+        "button_4yjM8i"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -467,7 +489,11 @@
           }
         }
       },
-      "block_order": ["column_mEPE9q", "column_tx4PAN", "column_RaWPKf"],
+      "block_order": [
+        "column_mEPE9q",
+        "column_tx4PAN",
+        "column_RaWPKf"
+      ],
       "settings": {
         "title": "PFT x Annabel Karmel",
         "heading_size": "h1",
@@ -523,7 +549,11 @@
           }
         }
       },
-      "block_order": ["column_tcxbfE", "column_G6myYx", "column_GCHJHf"],
+      "block_order": [
+        "column_tcxbfE",
+        "column_G6myYx",
+        "column_GCHJHf"
+      ],
       "disabled": true,
       "settings": {
         "title": "Pots for Tots x Liewood",
@@ -564,7 +594,7 @@
             "image": "shopify://shop_images/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
             "caption": "",
             "heading": "Our mission",
-            "text": "<p>We want to make children's mealtimes easy and convenient, as well as ensuring young children grow up eating nutritious food for every meal. Our aim is to liberate busy parents like you - we'll do the cooking, giving you precious time back to spend with their family and friends.</p>",
+            "text": "<p>We make children's mealtimes easy with nutritious and convenient meals for little ones. Let us handle the cooking and give you precious time back to spend with family and friends.</p>",
             "button_label": "LEARN MORE",
             "button_link": "shopify://pages/about-us"
           }
@@ -581,7 +611,11 @@
           }
         }
       },
-      "block_order": ["row_mKmVfb", "row_qTXNyd", "row_dyBTqK"],
+      "block_order": [
+        "row_mKmVfb",
+        "row_qTXNyd",
+        "row_dyBTqK"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -639,7 +673,7 @@
         "template--16755842351362__7e794788-fc62-4baf-b008-d2d8ed71fd6c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We've worked with our Children’s Dietitian, Lucy Upton to adapt four of your existing favourites slightly for little ones who may be going through a 'fussy eating' stage and need their meals to taste, look and feel a little more familiar in our NEW Simple range.</p>",
+            "text": "<p>With our Children’s Dietitian, Lucy Upton, we’ve adapted four favorites into our NEW Simple range—perfect for fussy eaters who need familiar tastes and textures.</p>",
             "text_style": "body"
           }
         },
@@ -703,7 +737,9 @@
           }
         }
       },
-      "block_order": ["reviews_io_reviewsio_card_carousel_pACh9W"],
+      "block_order": [
+        "reviews_io_reviewsio_card_carousel_pACh9W"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -814,7 +850,11 @@
           }
         }
       },
-      "block_order": ["heading_N3NP9V", "paragraph_kYYWPA", "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"],
+      "block_order": [
+        "heading_N3NP9V",
+        "paragraph_kYYWPA",
+        "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "image": "shopify://shop_images/Recycled_background_medium_res.png",
