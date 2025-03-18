@@ -246,17 +246,6 @@
     "custom_multicolumn_adV6Gn": {
       "type": "custom-multicolumn",
       "blocks": {
-        "column_FNaUJd": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/13_b85bb989-da86-4836-b2e4-733fe155270e.png",
-            "title": "Mexican-Style Burrito Bowl",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
-        },
         "column_XgNy9B": {
           "type": "column",
           "settings": {
@@ -279,6 +268,17 @@
             "link": "shopify://collections/build-your-box"
           }
         },
+        "column_FNaUJd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/13_b85bb989-da86-4836-b2e4-733fe155270e.png",
+            "title": "Mexican-Style Burrito Bowl",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
         "column_Yc6brM": {
           "type": "column",
           "settings": {
@@ -292,9 +292,9 @@
         }
       },
       "block_order": [
-        "column_FNaUJd",
         "column_XgNy9B",
         "column_QDQrVz",
+        "column_FNaUJd",
         "column_Yc6brM"
       ],
       "settings": {
