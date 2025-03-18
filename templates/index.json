@@ -35,8 +35,8 @@
             "button_label_1": "BUILD YOUR BOX",
             "button_link_1": "shopify://collections/build-your-box",
             "button_style_secondary_1": false,
-            "button_label_2": "Explore AK  x PFT",
-            "button_link_2": "shopify://pages/pots-for-tots-x-annabel-karmel",
+            "button_label_2": "BUNDLES",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false
           }
         }
@@ -54,7 +54,7 @@
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-3",
         "badge_embed": "",
         "badge_padding": 1,
         "image_behavior": "none",
@@ -66,6 +66,58 @@
     "slideshow_tRxFr3": {
       "type": "slideshow",
       "blocks": {
+        "slide_hgbCiy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Ak_collection_banner_desktop.png",
+            "mobile_image": "shopify://shop_images/AK_website_mobile_533_x_434_px_2.png",
+            "heading": "",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "Build Your Box",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "Shop Bundles",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "150",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
+          }
+        },
+        "slide_c6rpWy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_19.png",
+            "mobile_image": "shopify://shop_images/Introducing_AK_mobile.png",
+            "heading": "",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "BUILD YOUR BOX",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "BUNDLES",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "100",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
+          }
+        },
         "slide_EFdemU": {
           "type": "slide",
           "settings": {
@@ -88,32 +140,6 @@
             "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
             "text_alignment_mobile": "center",
             "image_badge_width": "200",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "right"
-          }
-        },
-        "slide_hgbCiy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Group_meals_and_snacks_homepage_2.png",
-            "mobile_image": "shopify://shop_images/Website_mobile_1.png",
-            "heading": "Nutrition meets convenience",
-            "heading_size": "h0",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "Build Your Box",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "Shop Bundles",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "150",
             "image_badge_vertical_position": "top",
             "image_badge_horizontal_position": "right"
           }
@@ -143,40 +169,13 @@
             "image_badge_vertical_position": "top",
             "image_badge_horizontal_position": "left"
           }
-        },
-        "slide_c6rpWy": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Website_homepage_AK_2.jpg",
-            "mobile_image": "shopify://shop_images/Introducing_AK_mobile.png",
-            "heading": "",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "100",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "right"
-          }
         }
       },
       "block_order": [
-        "slide_EFdemU",
         "slide_hgbCiy",
-        "slide_6mcVhA",
-        "slide_c6rpWy"
+        "slide_c6rpWy",
+        "slide_EFdemU",
+        "slide_6mcVhA"
       ],
       "disabled": true,
       "settings": {
