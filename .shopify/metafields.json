@@ -33,7 +33,7 @@
     {
       "key": "ingredients",
       "namespace": "my_fields",
-      "name": "Ingredients",
+      "name": "Ingredients (OLD)",
       "description": "",
       "type": {
         "name": "multi_line_text_field",
@@ -165,6 +165,26 @@
       "namespace": "shopify",
       "name": "Food product form",
       "description": "Specifies the form in which the food product is presented, such as dried or frozen",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "ingredients",
+      "namespace": "custom",
+      "name": "Ingredients",
+      "description": "",
+      "type": {
+        "name": "rich_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "ingredients_list",
+      "namespace": "custom",
+      "name": "Ingredients List",
+      "description": "",
       "type": {
         "name": "list.metaobject_reference",
         "category": "REFERENCE"
