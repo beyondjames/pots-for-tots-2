@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "Get 20% off your first 3 boxes when you subscribe!",
-            "link": ""
+            "link": "shopify://collections/build-your-box"
           }
         },
         "announcement-bar-0": {
