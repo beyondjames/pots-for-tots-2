@@ -46,6 +46,7 @@
         "text_khPEhw",
         "buttons_mJDLgt"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Website_homepage_19.png",
         "image_3": "shopify://shop_images/Introducing_AK_mobile.png",
@@ -70,10 +71,10 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Ak_collection_banner_desktop.png",
-            "mobile_image": "shopify://shop_images/AK_website_mobile_533_x_434_px_2.png",
+            "mobile_image": "shopify://shop_images/AK_Mobile_banner.png",
             "heading": ".",
             "heading_size": "hxxxl",
-            "show_heading_shadow": true,
+            "show_heading_shadow": false,
             "subheading": "..",
             "button_label": "Build Your Box",
             "link": "shopify://collections/build-your-box",
@@ -94,6 +95,7 @@
         },
         "slide_c6rpWy": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Website_homepage_19.png",
             "mobile_image": "shopify://shop_images/Introducing_AK_mobile.png",
@@ -177,7 +179,6 @@
         "slide_EFdemU",
         "slide_6mcVhA"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
