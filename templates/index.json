@@ -258,6 +258,17 @@
             "link": "shopify://collections/build-your-box"
           }
         },
+        "column_Yc6brM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Orzo.png",
+            "title": "Chicken and Veggie Orzo",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
         "column_QDQrVz": {
           "type": "column",
           "settings": {
@@ -279,24 +290,13 @@
             "link_label": "SHOP NOW",
             "link": "shopify://collections/build-your-box"
           }
-        },
-        "column_Yc6brM": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Cheesy_veg_bite.png",
-            "title": "Cheesy Veg Bites",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
         }
       },
       "block_order": [
         "column_XgNy9B",
+        "column_Yc6brM",
         "column_QDQrVz",
-        "column_FNaUJd",
-        "column_Yc6brM"
+        "column_FNaUJd"
       ],
       "settings": {
         "title": "Meals and snacks made for your little ones",
