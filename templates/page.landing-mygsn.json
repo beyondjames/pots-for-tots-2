@@ -17,15 +17,29 @@
         "padding_bottom": 60
       }
     },
-    "image_banner_GVmUkf": {
+    "image_banner_a7Y6K4": {
       "type": "image-banner",
       "blocks": {
-        "buttons_4ch6Ez": {
-          "type": "buttons",
-          "disabled": true,
+        "heading_3WPrww": {
+          "type": "heading",
           "settings": {
-            "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify://collections/build-your-box",
+            "heading": "Fuel your family",
+            "heading_size": "h1",
+            "show_heading_shadow": false
+          }
+        },
+        "text_EGBMHM": {
+          "type": "text",
+          "settings": {
+            "text": "A limited collaboration between Pots For Tots & Gold Standard Nutrition.",
+            "text_style": "body"
+          }
+        },
+        "buttons_3MKNFh": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "FIND OUT MORE",
+            "button_link_1": "https://www.mygsn.co.uk/pots-for-tots-bundle/",
             "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
@@ -34,18 +48,19 @@
         }
       },
       "block_order": [
-        "buttons_4ch6Ez"
+        "heading_3WPrww",
+        "text_EGBMHM",
+        "buttons_3MKNFh"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/AK_main_banner_2.png",
-        "image_2": "shopify://shop_images/AK_main_banner.png",
+        "image": "shopify://shop_images/GSN_Banner.png",
+        "image_3": "shopify://shop_images/GSN_Mobile.png",
         "image_overlay_opacity": 0,
-        "image_height": "large",
-        "desktop_content_position": "bottom-right",
-        "show_text_box": false,
+        "image_height": "medium",
+        "desktop_content_position": "bottom-left",
+        "show_text_box": true,
         "desktop_content_alignment": "left",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-2",
         "badge_embed": "",
         "badge_padding": 1,
         "image_behavior": "none",
@@ -60,14 +75,14 @@
         "heading_rBFniF": {
           "type": "heading",
           "settings": {
-            "heading": "Expert recipes delivered to your door!",
+            "heading": "Fuel up, stress less!",
             "heading_size": "h1"
           }
         },
         "text_CMCwj3": {
           "type": "text",
           "settings": {
-            "text": "<p>We're delighted to partner with the UK's No. 1 children's cookery author, Annabel Karmel to bring you our nourishing, delicious range of handmade bites and meals. They're a freezer saviour for when you need a healthy meal without the prep.<br/>Simply heat, serve, and enjoy more time with your tot!</p>",
+            "text": "<p>This limited-edition box, available exclusively online through both brands, features 8 Pots for Tots meals, 8 GSN Pots O’ Gold, and a bag of GSN Chicken Bites—all for just £70.</p><p>That’s wholesome, nutritious food for you and your child, ready in minutes and always on hand when needed. </p>",
             "text_style": "body"
           }
         },
@@ -75,7 +90,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop now",
-            "button_link": "shopify://collections/build-your-box",
+            "button_link": "https://www.mygsn.co.uk/pots-for-tots-bundle/",
             "button_style_secondary": false
           }
         }
@@ -86,7 +101,7 @@
         "button_HdfARb"
       ],
       "settings": {
-        "image": "shopify://shop_images/AK_website_mobile_2.png",
+        "image": "shopify://shop_images/PFT_x_MyGSN_bundle.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -403,7 +418,7 @@
   },
   "order": [
     "main",
-    "image_banner_GVmUkf",
+    "image_banner_a7Y6K4",
     "image_with_text_KyC4ar",
     "multicolumn_P6zQg9",
     "image_banner_xPHYJm",
