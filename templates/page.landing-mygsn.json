@@ -24,6 +24,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/GSN_Banner_3.png",
+            "mobile_image": "shopify://shop_images/GSN_banner_mobile_16.png",
             "heading": "Fuel your family",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
