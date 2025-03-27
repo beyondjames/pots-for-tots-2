@@ -69,20 +69,64 @@
         "show_text_below": true
       }
     },
+    "rich_text_3rqdFa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_T4QKh3": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Fuel up, family style",
+            "heading_size": "h1"
+          }
+        },
+        "text_fNxUEw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We've teamed up with MyGSN (Gold Standard Nutrition) to make family mealtimes simpler, healthier, and stress-free. TheFamily Fuel Bundle is a game-changer—delivering nutritious, high-quality meals for both parents and little onesin one easy package. No more cooking separate dishes, just quick, delicious, and balanced meals for the whole family.</p>"
+          }
+        },
+        "button_TpFGdG": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_T4QKh3",
+        "text_fNxUEw",
+        "button_TpFGdG"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_KyC4ar": {
       "type": "image-with-text",
       "blocks": {
         "heading_rBFniF": {
           "type": "heading",
           "settings": {
-            "heading": "Fuel up, stress less!",
+            "heading": "Fuel up, family style!",
             "heading_size": "h1"
           }
         },
         "text_CMCwj3": {
           "type": "text",
           "settings": {
-            "text": "<p>This limited-edition box, available exclusively online through both brands, features 8 Pots for Tots meals, 8 GSN Pots O’ Gold, and a bag of GSN Chicken Bites—all for just £70.</p><p>That’s wholesome, nutritious food for you and your child, ready in minutes and always on hand when needed. </p>",
+            "text": "<p>MyGSN are leaders in providing high-quality meals designed to fuel active lifestyles with nutritious, protein-packed convenience.</p><p>This <strong>limited-edition box</strong>, available exclusively online through both brands, features 8 Pots for Tots meals, 8 GSN Pots O’ Gold, and a bag of GSN Chicken Bites—all for just £70.</p>",
             "text_style": "body"
           }
         },
@@ -116,84 +160,85 @@
         "padding_bottom": 36
       }
     },
-    "multicolumn_P6zQg9": {
-      "type": "multicolumn",
+    "multirow_TWrNmd": {
+      "type": "multirow",
       "blocks": {
-        "column_JV9eLD": {
-          "type": "column",
+        "row_6A6dGp": {
+          "type": "row",
           "settings": {
-            "image": "shopify://shop_images/AKFishPieBites_3.png",
-            "title": "Fish Pie Bites",
-            "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist. </p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "image": "shopify://shop_images/DOUBLE_BOL.jpg",
+            "caption": "",
+            "heading": "Rich & Hearty Pasta Bolognese Duo",
+            "text": "<p>Our hearty Pasta Bolognese is made with grass-fed British beef mince and served with mini pasta tubes and contains two of their five a day! </p><p>It's perfectly paired with MyGSN's nutritionally optimised classic which combines a ragu of lean beef mince and chorizo pork with durum wheat semolina fusilli and a blend of authentic Italian herbs.</p>",
+            "button_label": "",
+            "button_link": ""
           }
         },
-        "column_xq4HYH": {
-          "type": "column",
+        "row_fnXYx7": {
+          "type": "row",
           "settings": {
-            "image": "shopify://shop_images/AKChicken_VegBites_3.png",
-            "title": "Chicken & Veggie Bites",
-            "text": "<p>Baked mini bites with chicken, sweet potato and broccoli.</p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "image": "shopify://shop_images/DOUBLE_CURRY.jpg",
+            "caption": "",
+            "heading": "Chicken Curry with Special Fried Rice & Mild Chicken Korma",
+            "text": "<p>Discover MyGSN's healthy steamed chicken breast marinated in a 15-ingredient curry sauce and served with a scintillating side of special fried rice with char siu pork.</p><p>And for the young curry conoseuir: free-range chicken and chickpeas in a thick, creamy korma sauce served with white rice. It contains two of their five a day.</p>",
+            "button_label": "",
+            "button_link": ""
           }
         },
-        "column_jmAhTN": {
-          "type": "column",
+        "row_AGWUKQ": {
+          "type": "row",
           "settings": {
-            "image": "shopify://shop_images/AKVeggieFrittatas_3.png",
-            "title": "Cheese and Veggie Frittatas",
-            "text": "<p>Mini baked fritattas made with egg, potato, red pepper, peas and onions. </p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "image": "shopify://shop_images/NOODLES_and_MAC.jpg",
+            "caption": "",
+            "heading": "Salt & Pepper Noodles & Mac & Cheese",
+            "text": "<p>Two family favourites in one. For parents, we've gone for a meal you might usually class as an indulgent treat, kept the traditional taste, and reinvigorated the dish with a phenomenal sweet chilli sauce made with healthy pea protein.</p><p>For little ones, our Mac and Cheese is always a winner. Ours packs a punch with two of their 5 a day. </p>",
+            "button_label": "",
+            "button_link": ""
           }
         }
       },
       "block_order": [
-        "column_JV9eLD",
-        "column_xq4HYH",
-        "column_jmAhTN"
+        "row_6A6dGp",
+        "row_fnXYx7",
+        "row_AGWUKQ"
       ],
       "settings": {
-        "title": "Little Bites",
+        "image_height": "medium",
+        "desktop_image_width": "medium",
         "heading_size": "h1",
-        "text": "<p>These little bites developed with Annabel Karmel are ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "Shop the range",
-        "button_link": "shopify://collections/build-your-box",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 20,
-        "padding_bottom": 24
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-right",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
-    "image_banner_xPHYJm": {
+    "image_banner_bVQpHX": {
       "type": "image-banner",
       "blocks": {
-        "heading_Y6RpAM": {
+        "heading_7VAnnH": {
           "type": "heading",
           "disabled": true,
           "settings": {
-            "heading": "",
+            "heading": "Image banner",
             "heading_size": "h1",
             "show_heading_shadow": false
           }
         },
-        "text_F6yTeh": {
+        "text_eWABzT": {
           "type": "text",
           "disabled": true,
           "settings": {
-            "text": "",
+            "text": "Give customers details about the banner image(s) or content on the template.",
             "text_style": "body"
           }
         },
-        "buttons_BqNRtY": {
+        "buttons_iBpnRD": {
           "type": "buttons",
           "disabled": true,
           "settings": {
@@ -207,17 +252,16 @@
         }
       },
       "block_order": [
-        "heading_Y6RpAM",
-        "text_F6yTeh",
-        "buttons_BqNRtY"
+        "heading_7VAnnH",
+        "text_eWABzT",
+        "buttons_iBpnRD"
       ],
       "settings": {
-        "image": "shopify://shop_images/Website_homepage_18.png",
-        "image_2": "shopify://shop_images/Website_homepage_14.png",
+        "image": "shopify://shop_images/GSN_Banner_2.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
-        "show_text_box": false,
+        "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
         "badge_embed": "",
@@ -226,155 +270,6 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
-      }
-    },
-    "multicolumn_bHDhwQ": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_HLbK8x": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AKChickenTikka_3.png",
-            "title": "Mild Chicken Tikka",
-            "text": "<p>A fruity and mild chicken tikka mixed with fluffy rice.</p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
-          }
-        },
-        "column_pEnUkF": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AKChicken_VegOrzo_3.png",
-            "title": "Chicken & Veggie Orzo",
-            "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
-          }
-        },
-        "column_fPgrN7": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/AK_Bundle.png",
-            "title": "AK x PFT Bundle",
-            "text": "<p>Save 10% when you buy the full bundle + Annabel Karmel's new Finger Foods book. </p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
-          }
-        }
-      },
-      "block_order": [
-        "column_HLbK8x",
-        "column_pEnUkF",
-        "column_fPgrN7"
-      ],
-      "settings": {
-        "title": "Little Pots",
-        "heading_size": "h1",
-        "text": "<p>Packed with natural goodness, these delicious meals have been developed with Annabel Karmel to bring you the perfect midweek meal for your tot. Suitable from 1-5 years.</p>",
-        "image_width": "full",
-        "image_ratio": "adapt",
-        "columns_desktop": 3,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/build-your-box",
-        "color_scheme": "",
-        "columns_mobile": "1",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "video_bFAqHA": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/Launch ad.MP4",
-        "video_url": "",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_fFiT9m": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_XkkjRB": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_PPCiQq": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Whether you’re feeding your baby, toddler, or the entire family, Annabel’s recipe app keeps mealtimes fresh and easy. With simple recipes for every age, stage and occasion – and new dishes added every week – it’s no wonder parents call Annabel’s app their essential kitchen companion!</p>",
-            "text_style": "body"
-          }
-        },
-        "button_L9qQQC": {
-          "type": "button",
-          "settings": {
-            "button_label": "DOWNLOAD",
-            "button_link": "https://www.annabelkarmel.com/the-ultimate-baby-toddler-recipe-app/",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_XkkjRB",
-        "text_PPCiQq",
-        "button_L9qQQC"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/App_ad.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "featured_collection_BQBza9": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "pots-for-tots-x-annabel-karmel",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "link",
-        "enable_desktop_slider": true,
-        "color_scheme": "",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 36,
-        "padding_bottom": 36
       }
     },
     "custom_newsletter_BMmYj9": {
@@ -419,13 +314,10 @@
   "order": [
     "main",
     "image_banner_a7Y6K4",
+    "rich_text_3rqdFa",
     "image_with_text_KyC4ar",
-    "multicolumn_P6zQg9",
-    "image_banner_xPHYJm",
-    "multicolumn_bHDhwQ",
-    "video_bFAqHA",
-    "image_with_text_fFiT9m",
-    "featured_collection_BQBza9",
+    "multirow_TWrNmd",
+    "image_banner_bVQpHX",
     "custom_newsletter_BMmYj9"
   ]
 }
