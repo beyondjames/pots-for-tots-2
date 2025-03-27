@@ -17,6 +17,75 @@
         "padding_bottom": 60
       }
     },
+    "slideshow_daDcrw": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_EQa8ma": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/GSN_Banner_2.png",
+            "heading": "Fuel your family",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "Find out more",
+            "link": "https://www.mygsn.co.uk/pots-for-tots-bundle/",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
+        },
+        "slide_DCWJbW": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "heading": "Image slide",
+            "heading_size": "h1",
+            "show_heading_shadow": false,
+            "subheading": "Tell your brand's story through images",
+            "button_label": "Button label",
+            "link": "",
+            "button_style_secondary": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
+        }
+      },
+      "block_order": [
+        "slide_EQa8ma",
+        "slide_DCWJbW"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "medium",
+        "slider_visual": "counter",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
     "image_banner_a7Y6K4": {
       "type": "image-banner",
       "blocks": {
@@ -52,6 +121,7 @@
         "text_EGBMHM",
         "buttons_3MKNFh"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/GSN_Banner.png",
         "image_3": "shopify://shop_images/GSN_Mobile.png",
@@ -83,7 +153,7 @@
         "text_fNxUEw": {
           "type": "text",
           "settings": {
-            "text": "<p>We've teamed up with MyGSN (Gold Standard Nutrition) to make family mealtimes simpler, healthier, and stress-free. TheFamily Fuel Bundle is a game-changer—delivering nutritious, high-quality meals for both parents and little onesin one easy package. No more cooking separate dishes, just quick, delicious, and balanced meals for the whole family.</p>"
+            "text": "<p>We've teamed up with GSN (Gold Standard Nutrition) to make family mealtimes simpler, healthier, and stress-free. TheFamily Fuel Bundle is a game-changer—delivering nutritious, high-quality meals for both parents and little onesin one easy package. No more cooking separate dishes, just quick, delicious, and balanced meals for the whole family.</p>"
           }
         },
         "button_TpFGdG": {
@@ -126,7 +196,7 @@
         "text_CMCwj3": {
           "type": "text",
           "settings": {
-            "text": "<p>MyGSN are leaders in providing high-quality meals designed to fuel active lifestyles with nutritious, protein-packed convenience.</p><p>This <strong>limited-edition box</strong>, available exclusively online through both brands, features 8 Pots for Tots meals, 8 GSN Pots O’ Gold, and a bag of GSN Chicken Bites—all for just £70.</p>",
+            "text": "<p>GSN are leaders in providing high-quality meals designed to fuel active lifestyles with nutritious, protein-packed convenience.</p><p>This <strong>limited-edition box</strong>, available exclusively online through both brands, features 8 Pots for Tots meals, 8 GSN Pots O’ Gold, and a bag of GSN Chicken Bites—all for just £70.</p>",
             "text_style": "body"
           }
         },
@@ -313,6 +383,7 @@
   },
   "order": [
     "main",
+    "slideshow_daDcrw",
     "image_banner_a7Y6K4",
     "rich_text_3rqdFa",
     "image_with_text_KyC4ar",
