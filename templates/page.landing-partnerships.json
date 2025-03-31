@@ -173,17 +173,6 @@
             "link": "shopify://pages/pots-for-tots-x-mygsn"
           }
         },
-        "column_48ypXC": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Website_homepage_product_images_liewood.png",
-            "title": "Pots for Tots x Liewood",
-            "title_size": "h2",
-            "text": "<p>We've partnered with Danish designer Liewood to bring you a capsule collection of lifestyle products to bring more joy to every mealtime.</p>",
-            "link_label": "Find out more",
-            "link": "shopify://pages/pots-for-tots-x-liewood"
-          }
-        },
         "column_CbccYQ": {
           "type": "column",
           "settings": {
@@ -194,12 +183,23 @@
             "link_label": "Find out more",
             "link": "shopify://pages/pots-for-tots-x-annabel-karmel"
           }
+        },
+        "column_48ypXC": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_product_images_liewood.png",
+            "title": "Pots for Tots x Liewood",
+            "title_size": "h2",
+            "text": "<p>We've collaborated with Danish designer Liewood to create a capsule collection of lifestyle products designed to bring more joy to every mealtime.</p>",
+            "link_label": "Find out more",
+            "link": "shopify://pages/pots-for-tots-x-liewood"
+          }
         }
       },
       "block_order": [
         "column_pURBhE",
-        "column_48ypXC",
-        "column_CbccYQ"
+        "column_CbccYQ",
+        "column_48ypXC"
       ],
       "settings": {
         "title": "Explore our brand partnerships",
