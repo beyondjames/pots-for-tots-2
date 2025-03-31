@@ -314,6 +314,7 @@
       "block_order": [
         "reviews_io_reviewsio_rating_bar_QkrzqB"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
