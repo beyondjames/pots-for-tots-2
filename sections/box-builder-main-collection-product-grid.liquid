@@ -2,8 +2,8 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'box-builder-upsell-modal.css' | asset_url | stylesheet_tag }}
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+{% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> {% endcomment %}
+{% comment %} <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> {% endcomment %}
 
 {%- if section.settings.enable_quick_add -%}
   {{ 'box-builder-quick-add.css' | asset_url | stylesheet_tag }}
@@ -12,6 +12,10 @@
 {%- endif -%}
 
 <script src="{{ 'upsell-modal.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
+{{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
+{{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-collection {
@@ -409,7 +413,7 @@
   %}
 {% endif %}
 
-<script>
+{% comment %} <script>
   const date = document.querySelector("#delivery");
   if (date) {
     const fp = flatpickr(date, {
@@ -423,8 +427,8 @@
         }],
     });
   }
-</script>
-
+</script> {% endcomment %}
+{% comment %} 
 <style>
   .flatpickr-day {
     background-color: #c4d9cd;
@@ -458,7 +462,7 @@
   .flatpickr-input::placeholder {
     color: rgb(var(--color-foreground));
   }
-</style>
+</style> {% endcomment %}
 
 {% schema %}
 {
@@ -646,6 +650,51 @@
       "default": "default",
       "label": "t:sections.all.image_shape.label",
       "info": "t:sections.all.image_shape.info"
+    },
+    {
+      "type": "select",
+      "id": "media_size",
+      "options": [
+        {
+          "value": "small",
+          "label": "t:sections.main-product.settings.media_size.options__1.label"
+        },
+        {
+          "value": "medium",
+          "label": "t:sections.main-product.settings.media_size.options__2.label"
+        },
+        {
+          "value": "large",
+          "label": "t:sections.main-product.settings.media_size.options__3.label"
+        }
+      ],
+      "default": "large",
+      "label": "t:sections.main-product.settings.media_size.label",
+      "info": "t:sections.main-product.settings.media_size.info"
+    },
+    {
+      "type": "select",
+      "id": "gallery_layout",
+      "options": [
+        {
+          "value": "stacked",
+          "label": "t:sections.main-product.settings.gallery_layout.options__1.label"
+        },
+        {
+          "value": "columns",
+          "label": "t:sections.main-product.settings.gallery_layout.options__2.label"
+        },
+        {
+          "value": "thumbnail",
+          "label": "t:sections.main-product.settings.gallery_layout.options__3.label"
+        },
+        {
+          "value": "thumbnail_slider",
+          "label": "t:sections.main-product.settings.gallery_layout.options__4.label"
+        }
+      ],
+      "default": "thumbnail_slider",
+      "label": "t:sections.main-product.settings.gallery_layout.label"
     },
     {
       "type": "checkbox",

@@ -610,6 +610,10 @@
   }
 }
 
+.product-popup-modal__content-info .grid__item.slider__slide {
+  max-width: 100%;
+}
+
 .card__modal-title {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -621,10 +625,6 @@
 
 .card__modal-variants .card__variants-variant {
   margin-bottom: 0;
-}
-
-.card__modal-icons {
-  /* display: none; */
 }
 
 .card__modal-ingredients {
