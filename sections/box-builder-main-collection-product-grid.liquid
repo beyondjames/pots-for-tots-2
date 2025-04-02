@@ -1,3 +1,4 @@
+{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'box-builder-upsell-modal.css' | asset_url | stylesheet_tag }}
@@ -14,7 +15,6 @@
 <script src="{{ 'upsell-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
-{{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
@@ -695,6 +695,26 @@
       ],
       "default": "thumbnail_slider",
       "label": "t:sections.main-product.settings.gallery_layout.label"
+    },
+    {
+      "type": "select",
+      "id": "mobile_thumbnails",
+      "options": [
+        {
+          "value": "columns",
+          "label": "t:sections.main-product.settings.mobile_thumbnails.options__1.label"
+        },
+        {
+          "value": "show",
+          "label": "t:sections.main-product.settings.mobile_thumbnails.options__2.label"
+        },
+        {
+          "value": "hide",
+          "label": "t:sections.main-product.settings.mobile_thumbnails.options__3.label"
+        }
+      ],
+      "default": "show",
+      "label": "t:sections.main-product.settings.mobile_thumbnails.label"
     },
     {
       "type": "checkbox",

@@ -592,6 +592,18 @@
 }
 
 /* Custom Product Modal */
+.product-popup-modal__content {
+  height: auto !important;
+  padding-bottom: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.product__modal-opener .product__media-icon,
+.product__modal-opener:hover .product__media-icon,
+.product__modal-opener:focus .product__media-icon {
+  opacity: 0 !important;
+}
+
 .modal-grid {
   display: grid;
   grid-template-columns: 1fr;

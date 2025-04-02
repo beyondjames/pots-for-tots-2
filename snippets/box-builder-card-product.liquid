@@ -365,7 +365,7 @@
     </button>
 
     <div class="product product-popup-modal__content-info">
-      <div class="grid product--{{ section.settings.gallery_layout }}">
+      <div class="grid grid--1-col-tablet-down product--{{ section.settings.gallery_layout }}">
         <div class="product--mobile-hide grid__item grid-left">
           {% assign variant_images = card_product.images | where: 'attached_to_variant?', true | map: 'src' %}
           {% render 'product-media-gallery', product: card_product, variant_images: variant_images, is_duplicate: true %}
