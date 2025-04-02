@@ -633,8 +633,20 @@
   padding-bottom: 1rem;
 }
 
+.card__modal-ingredient {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card__modal-ingredient-title {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
 .product-popup-modal__content .card__modal-ingredients img {
-  width: 50px;
+  width: 70px;
 }
 
 .card__modal-nutritional-badges {
@@ -651,6 +663,7 @@
   padding-bottom: 1rem;
 }
 
+.card__modal-description,
 .card__modal-description p {
   font-size: 1.5rem;
   line-height: 2rem;

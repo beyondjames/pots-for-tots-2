@@ -428,29 +428,20 @@
             {{- card_product.metafields.my_fields.short_description -}}
           </div>
 
+          {%-  if card_product.metafields.custom.ingredients_list -%}
           <div class="card__modal-icons">
-            {% comment %} Product Variants {% endcomment %}
-            {% comment %} <div class="card__modal-variants">
-              {%- for variant in card_product.variants -%}
-                <div class="card__variants-variant-modal">
-                  <div class="card__variants-title">
-                    <p>
-                      {%- if variant.title == 'Default Title' -%}
-                        Single Item
-                      {%- else -%}
-                        {{- variant.title -}}
-                      {%- endif -%}
-                    </p>
-                  </div>
-                </div>
-              {%- endfor -%}
-            </div> {% endcomment %}
             <div class="card__modal-ingredients">
               {%  for ingredient in card_product.metafields.custom.ingredients_list.value %}
-                {{ ingredient.icon | image_url: width: 50, height: 50 | image_tag: alt: ingredient.name }}
+                <div class="card__modal-ingredient">
+                  {{ ingredient.icon | image_url: width: 70, height: 70 | image_tag: alt: ingredient.title }}
+                  <div class="card__modal-ingredient-title">
+                    {{ ingredient.title }}
+                  </div>
+                </div>
               {%  endfor %}
             </div>
           </div>
+        {%- endif -%}
 
           {% comment %} Nutritional Information & Cooking Instructions {% endcomment %}
           <div class="collapsible-content collapsible--layout isolate">
