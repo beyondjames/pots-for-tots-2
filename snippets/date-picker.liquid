@@ -112,6 +112,10 @@
       const disabledDates = '{{ settings.disabled_dates }}';
       const disabledDatesArray = disabledDates.split(',');
 
+      // Create an array of enabled dates
+      const enabledDates = '{{ settings.enabled_dates }}';
+      const enabledDatesArray = enabledDates.split(',');
+      
       // Get today's date
       const today = new Date();
       console.log("Today", today.getDay());
@@ -134,6 +138,7 @@
         dateMin: dateMin,
         dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
         disableDates: disabledDatesArray,
+        enableDates: enabledDatesArray,
         disableWeekdays: disabledDays,
         onClickDate(self, event) {
           console.log('Date selected');
