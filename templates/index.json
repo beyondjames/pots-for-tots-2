@@ -122,6 +122,7 @@
         },
         "slide_EFdemU": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Website_homepage_21.png",
             "mobile_image": "shopify://shop_images/Website_mobile_3.png",
