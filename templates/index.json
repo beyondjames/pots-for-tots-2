@@ -865,16 +865,6 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
-    },
-    "custom_liquid_KX8fmH": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script src=\"https://widget.reviews.io/badge-ribbon/dist.js\"></script>\n<div id=\"badge-ribbon\"></div>\n<script>\n    reviewsBadgeRibbon(\"badge-ribbon\", {\n        store: \"www.potsfortots.co.uk\",\n        size: \"medium\",\n        whiteLogo: true,\n        mono: true,\n    });\n</script>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
@@ -894,7 +884,6 @@
     "1719331689a4fcf305",
     "custom_testimonials_pXPcd6",
     "featured_blog_aGFxAU",
-    "custom_newsletter_titGVp",
-    "custom_liquid_KX8fmH"
+    "custom_newsletter_titGVp"
   ]
 }
