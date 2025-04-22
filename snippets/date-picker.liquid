@@ -126,8 +126,12 @@
       
       if (today.getDay() == 5) {
         console.log("It is a friday")
+        dateMin.setDate(dateMin.getDate() + 2);
+      } else if (today.getDay() == 6) {
+        console.log("It is a saturday")
         dateMin.setDate(dateMin.getDate() + 1);
       }
+      
 
       console.log("Date Min",dateMin);
     
