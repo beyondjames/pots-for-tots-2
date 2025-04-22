@@ -1,11 +1,45 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.footer.name",
   "type": "footer",
   "sections": {
     "footer": {
       "type": "footer",
-      "blocks": { "footer-0": { "type": "link_list", "settings": { "heading": "", "menu": "footer" } } },
-      "block_order": ["footer-0"],
+      "blocks": {
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
+          }
+        },
+        "logo_jAgVba": {
+          "type": "logo",
+          "settings": {
+            "logo_height": 100
+          }
+        },
+        "logo_Vex9yQ": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/logo_colour_small_7ecacb67-0aa6-46e7-b608-9d9e0a86b8a6.png",
+            "logo_height": 100
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "logo_jAgVba",
+        "logo_Vex9yQ"
+      ],
       "settings": {
         "color_scheme": "scheme-3",
         "newsletter_enable": false,
@@ -22,5 +56,7 @@
       }
     }
   },
-  "order": ["footer"]
+  "order": [
+    "footer"
+  ]
 }
