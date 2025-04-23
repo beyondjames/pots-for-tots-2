@@ -17,6 +17,11 @@
     align-items: center;
   }
 
+  .footer__logo-grid-heading {
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .footer__logo {
     min-width: 100px;
   }
@@ -260,22 +265,44 @@
   {%- endif -%}
 
   {% comment %} Logo Section {% endcomment %}
-  <div class="footer__content-middle page-width">
-    <div class="footer__logo-grid">
-      {%- for block in section.blocks -%}
-        {%- case block.type -%}
-          {%- when 'logo' -%}
-            <div class="footer__logo">
-              {% if block.settings.logo != null %}
-                {{ block.settings.logo | image_url: height: block.settings.logo_height | image_tag: loading: 'lazy' }}
-              {%  else %}
-                {{ 'collection-1' | placeholder_svg_tag }}
-              {% endif %}
+  {%- if section.settings.show_logo_grid -%}
+    <div class="footer__content-middle page-width">
+      {%- unless section.settings.logo_grid_heading == blank -%}
+        <div class="footer__logo-grid-heading title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin title-wrapper-with-link--center center">
+          <h2 class="title inline-richtext {{ section.settings.logo_grid_heading_size }}">
+            {{ section.settings.logo_grid_heading }}
+          </h2>
+  
+          {%- if section.settings.logo_grid_description != blank -%}
+            <div class="rte">
+              {{- section.settings.logo_grid_description -}}
             </div>
-        {%-  endcase -%}
-      {%- endfor -%}
+          {%- endif -%}
+  
+          {%- if section.settings.button_label != blank and show_mobile_slider -%}
+            <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
+              {{- section.settings.button_label | escape -}}
+            </a>
+          {%- endif -%}
+        </div>
+      {%- endunless -%}
+
+      <div class="footer__logo-grid">
+        {%- for block in section.blocks -%}
+          {%- case block.type -%}
+            {%- when 'logo' -%}
+              <div class="footer__logo">
+                {% if block.settings.logo != null %}
+                  {{ block.settings.logo | image_url: height: block.settings.logo_height | image_tag: loading: 'lazy' }}
+                {%  else %}
+                  {{ 'collection-1' | placeholder_svg_tag }}
+                {% endif %}
+              </div>
+          {%-  endcase -%}
+        {%- endfor -%}
+      </div>
     </div>
-  </div>
+  {%- endif -%}
 
   <div
     class="footer__content-bottom{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
@@ -576,6 +603,48 @@
       "id": "show_social",
       "default": true,
       "label": "t:sections.footer.settings.show_social.label"
+    },
+    {
+      "type": "header",
+      "content": "Logo grid",
+    },
+    {
+      "type": "checkbox",
+      "id": "show_logo_grid",
+      "default": true,
+      "label": "Show logo grid"
+    },
+    {
+      "type": "text",
+      "id": "logo_grid_heading",
+      "label": "Logo grid heading",
+      "default": "Logo grid",
+    },
+    {
+      "type": "select",
+      "id": "logo_grid_heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "richtext",
+      "id": "logo_grid_description",
+      "label": "Description",
+      "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem vel est fringilla vestibulum.</p>",
     },
     {
       "type": "header",
