@@ -387,7 +387,7 @@
             <div class="card__modal-ingredients">
               {%  for ingredient in card_product.metafields.custom.ingredients_list.value %}
                 <div class="card__modal-ingredient">
-                  {{ ingredient.icon | image_url: width: 70, height: 70 | image_tag: alt: ingredient.title }}
+                  {{ ingredient.icon | image_url: width: 70 | image_tag: alt: ingredient.title }}
                   {% comment %} <div class="card__modal-ingredient-title">
                     {{ ingredient.title }}
                   </div> {% endcomment %}
