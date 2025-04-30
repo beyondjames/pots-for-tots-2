@@ -59,16 +59,17 @@
       "blocks": {
         "heading_rBFniF": {
           "type": "heading",
+          "disabled": true,
           "settings": {
-            "heading": "Expert recipes delivered to your door!",
+            "heading": "Nutritious baby meals",
             "heading_size": "h1"
           }
         },
         "text_CMCwj3": {
           "type": "text",
           "settings": {
-            "text": "<p>We're delighted to partner with the UK's No. 1 children's cookery author, Annabel Karmel to bring you our nourishing, delicious range of handmade bites and meals. They're a freezer saviour for when you need a healthy meal without the prep.<br/>Simply heat, serve, and enjoy more time with your tot!</p>",
-            "text_style": "body"
+            "text": "<p>Is your baby ready to move on from purées, or are you looking for alternatives to baby food pouches? Our Simple Range has been developed in partnership with our Children's Dietitian Lucy Upton to bring you nutritionally balanced meals, packed with veggies, but with smoother textures, and slightly less herbs and spices.</p>",
+            "text_style": "subtitle"
           }
         },
         "button_HdfARb": {
@@ -86,7 +87,7 @@
         "button_HdfARb"
       ],
       "settings": {
-        "image": "shopify://shop_images/AK_website_mobile_2.png",
+        "image": "shopify://shop_images/my_first_meals.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -107,29 +108,29 @@
         "column_JV9eLD": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AKFishPieBites_3.png",
-            "title": "Fish Pie Bites",
-            "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist. </p>",
+            "image": "shopify://shop_images/SIMPLEPastaBolognese_2.png",
+            "title": "Simple Pasta Bolognese",
+            "text": "<p>British beef mince in a vegetable and tomato sauce with wheat pasta.</p>",
             "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "link": "shopify://products/my-first-meals-bundle-8-meals"
           }
         },
         "column_xq4HYH": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AKChicken_VegBites_3.png",
-            "title": "Chicken & Veggie Bites",
-            "text": "<p>Baked mini bites with chicken, sweet potato and broccoli.</p>",
+            "image": "shopify://shop_images/SIMPLEChickenKorma_2_1.png",
+            "title": "Simple Mild Chicken Korma",
+            "text": "<p>Free range British chicken pieces in a mild coconut curry sauce with white rice.</p>",
             "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "link": "shopify://products/my-first-meals-bundle-8-meals"
           }
         },
         "column_jmAhTN": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AKVeggieFrittatas_3.png",
-            "title": "Cheese and Veggie Frittatas",
-            "text": "<p>Mini baked fritattas made with egg, potato, red pepper, peas and onions. </p>",
+            "image": "shopify://shop_images/SIMPLEMedVegOrzo_2.png",
+            "title": "Simple Mediterranean Veg Orzo",
+            "text": "<p>Orzo pasta with a vegetable and tomato cream sauce.</p>",
             "link_label": "SHOP NOW",
             "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
           }
@@ -141,16 +142,16 @@
         "column_jmAhTN"
       ],
       "settings": {
-        "title": "Little Bites",
+        "title": "Nutritionally balanced meals",
         "heading_size": "h1",
-        "text": "<p>These little bites developed with Annabel Karmel are ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
+        "text": "<p>These adapted versions of our popular main meals are low in salt, low in sugar, and packed with hidden veggies for a quick, easy, and stress-free mealtime.</p><p>Suitable from 9 months +</p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "Shop the range",
-        "button_link": "shopify://collections/build-your-box",
+        "button_link": "shopify://products/my-first-meals-bundle-8-meals",
         "color_scheme": "",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -252,6 +253,7 @@
         "column_pEnUkF",
         "column_fPgrN7"
       ],
+      "disabled": true,
       "settings": {
         "title": "Little Pots",
         "heading_size": "h1",
@@ -270,65 +272,73 @@
         "padding_bottom": 36
       }
     },
-    "video_bFAqHA": {
-      "type": "video",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "enable_video_looping": false,
-        "video": "shopify://files/videos/Launch ad.MP4",
-        "video_url": "",
-        "description": "",
-        "full_width": false,
-        "color_scheme": "",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "image_with_text_fFiT9m": {
-      "type": "image-with-text",
+    "featured_product_D7CjKB": {
+      "type": "featured-product",
       "blocks": {
-        "heading_XkkjRB": {
-          "type": "heading",
+        "text_Adj3U7": {
+          "type": "text",
           "disabled": true,
           "settings": {
-            "heading": "Image with text",
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_fcxBdV": {
+          "type": "title",
+          "settings": {
             "heading_size": "h1"
           }
         },
-        "text_PPCiQq": {
-          "type": "text",
+        "price_BgAeT7": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_WcYqQp": {
+          "type": "variant_picker",
           "settings": {
-            "text": "<p>Whether you’re feeding your baby, toddler, or the entire family, Annabel’s recipe app keeps mealtimes fresh and easy. With simple recipes for every age, stage and occasion – and new dishes added every week – it’s no wonder parents call Annabel’s app their essential kitchen companion!</p>",
-            "text_style": "body"
+            "picker_type": "button",
+            "swatch_shape": "circle"
           }
         },
-        "button_L9qQQC": {
-          "type": "button",
+        "quantity_selector_TLMCpd": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_azpYWc": {
+          "type": "buy_buttons",
           "settings": {
-            "button_label": "DOWNLOAD",
-            "button_link": "https://www.annabelkarmel.com/the-ultimate-baby-toddler-recipe-app/",
-            "button_style_secondary": false
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_tfLzAf": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
           }
         }
       },
       "block_order": [
-        "heading_XkkjRB",
-        "text_PPCiQq",
-        "button_L9qQQC"
+        "text_Adj3U7",
+        "title_fcxBdV",
+        "price_BgAeT7",
+        "variant_picker_WcYqQp",
+        "quantity_selector_TLMCpd",
+        "buy_buttons_azpYWc",
+        "share_tfLzAf"
       ],
+      "name": "t:sections.featured-product.presets.name",
       "settings": {
-        "image": "shopify://shop_images/App_ad.jpg",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
+        "product": "my-first-meals-bundle-8-meals",
         "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -399,6 +409,54 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_aiDaEi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4yJBpf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_hGWWWJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_4QTLUF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4yJBpf",
+        "text_hGWWWJ",
+        "button_4QTLUF"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -408,9 +466,9 @@
     "multicolumn_P6zQg9",
     "image_banner_xPHYJm",
     "multicolumn_bHDhwQ",
-    "video_bFAqHA",
-    "image_with_text_fFiT9m",
+    "featured_product_D7CjKB",
     "featured_collection_BQBza9",
-    "custom_newsletter_BMmYj9"
+    "custom_newsletter_BMmYj9",
+    "image_with_text_aiDaEi"
   ]
 }
