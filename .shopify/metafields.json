@@ -11,29 +11,9 @@
   "page": [],
   "product": [
     {
-      "key": "nutritional_information",
-      "namespace": "my_fields",
-      "name": "Nutritional Information",
-      "description": "",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "instructions",
-      "namespace": "my_fields",
-      "name": "Instructions",
-      "description": "",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "ingredients",
-      "namespace": "my_fields",
-      "name": "Ingredients (OLD)",
+      "key": "description",
+      "namespace": "custom",
+      "name": "Description",
       "description": "",
       "type": {
         "name": "multi_line_text_field",
@@ -41,9 +21,9 @@
       }
     },
     {
-      "key": "health_benefits",
-      "namespace": "my_fields",
-      "name": "Health Benefits",
+      "key": "what_s_inside_bundle_product",
+      "namespace": "custom",
+      "name": "What's Inside Bundle Product",
       "description": "",
       "type": {
         "name": "multi_line_text_field",
@@ -51,23 +31,193 @@
       }
     },
     {
-      "key": "short_description",
-      "namespace": "my_fields",
-      "name": "Short Description",
-      "description": "A short description for the box builder products page",
+      "key": "warning",
+      "namespace": "custom",
+      "name": "Warning",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "rating",
+      "namespace": "reviews",
+      "name": "Product rating",
+      "description": "Average rating from customers",
+      "type": {
+        "name": "rating",
+        "category": "RATING"
+      }
+    },
+    {
+      "key": "product_grid_item_tag_text",
+      "namespace": "custom",
+      "name": "Product Grid Item Tag Text New",
+      "description": "",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "extras",
-      "namespace": "my_fields",
-      "name": "Extras",
+      "key": "product_grid_item_icon_image",
+      "namespace": "custom",
+      "name": "Product Grid Item Icon Image New",
       "description": "",
       "type": {
-        "name": "boolean",
-        "category": "TRUE_FALSE"
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_ingredients_allergens_new",
+      "namespace": "custom",
+      "name": "Product Ingredients Allergens New",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_ingredients_items_new",
+      "namespace": "custom",
+      "name": "Product Ingredients Items New",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_mobile_banner_image_new",
+      "namespace": "custom",
+      "name": "Product Mobile Banner Image New",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_desktop_banner_image_new",
+      "namespace": "custom",
+      "name": "Product Desktop Banner Image New",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_reviews_right_information_new",
+      "namespace": "custom",
+      "name": "Product Reviews Right Information New",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_reviews_left_information_new",
+      "namespace": "custom",
+      "name": "Product Reviews Left Information New",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_oven_cook_information_new",
+      "namespace": "custom",
+      "name": "Product Oven Cook Information New",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_oven_cook_heading_new",
+      "namespace": "custom",
+      "name": "Product Oven Cook Heading New",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_microwave_cook_information_new",
+      "namespace": "custom",
+      "name": "Product Microwave Cook Information New",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_microwave_cook_heading_new",
+      "namespace": "custom",
+      "name": "Product Microwave Cook Heading New",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_cooking_times_image_new",
+      "namespace": "custom",
+      "name": "Product Cooking Times Image New",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_nutrition_highlight_popup_image_new",
+      "namespace": "custom",
+      "name": "Product Nutrition Highlight Popup Image New",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_meta_oven_cook_times_new",
+      "namespace": "custom",
+      "name": "Product Meta Oven Cook Times New",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "product_meta_microwave_cook_times_new",
+      "namespace": "custom",
+      "name": "Product Meta Microwave Cook Times New",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "mains",
+      "namespace": "custom",
+      "name": "Mains",
+      "description": "",
+      "type": {
+        "name": "list.single_line_text_field",
+        "category": "TEXT"
       }
     },
     {
@@ -111,23 +261,33 @@
       }
     },
     {
-      "key": "hide_from_box_builder",
+      "key": "main_description_new",
       "namespace": "custom",
-      "name": "Hide from box builder",
+      "name": "main-description-new",
       "description": "",
       "type": {
-        "name": "boolean",
-        "category": "TRUE_FALSE"
+        "name": "multi_line_text_field",
+        "category": "TEXT"
       }
     },
     {
-      "key": "box_builder_filters",
+      "key": "product_meta_bundle_whats_inside",
       "namespace": "custom",
-      "name": "Box builder filters",
+      "name": "Product Meta Bundle Whats Inside New",
       "description": "",
       "type": {
-        "name": "list.single_line_text_field",
+        "name": "multi_line_text_field",
         "category": "TEXT"
+      }
+    },
+    {
+      "key": "rating_count",
+      "namespace": "reviews",
+      "name": "Product rating count",
+      "description": "Total number of ratings from customers",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
       }
     },
     {
@@ -141,6 +301,26 @@
       }
     },
     {
+      "key": "instruction_guide",
+      "namespace": "custom",
+      "name": "Instruction guide",
+      "description": "",
+      "type": {
+        "name": "multi_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "sides",
+      "namespace": "custom",
+      "name": "sides",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
       "key": "allergen-information",
       "namespace": "shopify",
       "name": "Allergen information",
@@ -151,57 +331,17 @@
       }
     },
     {
-      "key": "dietary-preferences",
-      "namespace": "shopify",
-      "name": "Dietary preferences",
-      "description": "Helps identify products suitable for specific diets, e.g. vegan, nut free",
-      "type": {
-        "name": "list.metaobject_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "food-product-form",
-      "namespace": "shopify",
-      "name": "Food product form",
-      "description": "Specifies the form in which the food product is presented, such as dried or frozen",
-      "type": {
-        "name": "list.metaobject_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "ingredients",
+      "key": "short_description",
       "namespace": "custom",
-      "name": "Ingredients",
+      "name": "Short description",
       "description": "",
       "type": {
-        "name": "rich_text_field",
+        "name": "multi_line_text_field",
         "category": "TEXT"
-      }
-    },
-    {
-      "key": "ingredients_list",
-      "namespace": "custom",
-      "name": "Ingredients List",
-      "description": "",
-      "type": {
-        "name": "list.metaobject_reference",
-        "category": "REFERENCE"
       }
     }
   ],
   "variant": [
-    {
-      "key": "hide_from_box_builder",
-      "namespace": "custom",
-      "name": "Hide from box builder",
-      "description": "",
-      "type": {
-        "name": "boolean",
-        "category": "TRUE_FALSE"
-      }
-    },
     {
       "key": "custom_label_4",
       "namespace": "mm-google-shopping",
@@ -307,6 +447,16 @@
       "namespace": "mm-google-shopping",
       "name": "Google: Age Group",
       "description": "The demographic for which your product is intended.",
+      "type": {
+        "name": "single_line_text_field",
+        "category": "TEXT"
+      }
+    },
+    {
+      "key": "weights",
+      "namespace": "custom",
+      "name": "Weights",
+      "description": "Weights for collection page",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
