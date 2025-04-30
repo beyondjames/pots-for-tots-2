@@ -18,13 +18,13 @@
           "type": "announcement",
           "settings": {
             "text": "Get 20% off your first 3 boxes when you subscribe!",
-            "link": ""
+            "link": "shopify://collections/build-your-box"
           }
         },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "We now deliver on Mondays AND Thursdays!",
+            "text": "Bank Holiday Delivery Schedule Update",
             "link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271"
           }
         },

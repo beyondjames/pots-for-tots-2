@@ -43,8 +43,8 @@
       },
       "block_order": ["heading_edC7cr", "text_d7Ttgy", "buttons_hy3Kgn"],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Mealtime_hacks.png",
-        "image_3": "shopify:\/\/shop_images\/box_at_door_1.png",
+        "image": "shopify://shop_images/Mealtime_hacks.png",
+        "image_3": "shopify://shop_images/box_at_door_1.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -73,7 +73,7 @@
         "text_JwrcYU": {
           "type": "text",
           "settings": {
-            "text": "<p>We're here to guide you through the nutritional noise with expert advice from our Children’s Dietitian, plus we share some of our favourite recipes as well as support to make mealtimes that little bit easier.<\/p>"
+            "text": "<p>We're here to guide you through the nutritional noise with expert advice from our Children’s Dietitian, plus we share some of our favourite recipes as well as support to make mealtimes that little bit easier.</p>"
           }
         },
         "button_phF6WN": {
@@ -133,7 +133,7 @@
       "block_order": ["heading_Wajiif", "text_BQ8bAi", "buttons_Khh7Re"],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/PFT_Pattern_Background.png",
+        "image": "shopify://shop_images/PFT_Pattern_Background.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -154,7 +154,7 @@
         "layout": "grid",
         "show_image": true,
         "image_height": "large",
-        "show_date": true,
+        "show_date": false,
         "show_author": false,
         "padding_top": 8,
         "padding_bottom": 60
