@@ -144,7 +144,7 @@
       "settings": {
         "title": "Nutritionally balanced meals",
         "heading_size": "h1",
-        "text": "<p>These adapted versions of our popular main meals are low in salt, low in sugar, and packed with hidden veggies for a quick, easy, and stress-free mealtime.</p><p>Suitable from 9 months +</p>",
+        "text": "<p>These adapted versions of our popular main meals are low in salt, low in sugar, and packed with hidden veggies for a quick, easy, and stress-free mealtime.  Stock your freezer so you've always have a healthy option ready to go.</p><p>Suitable from 9 months +</p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -372,6 +372,24 @@
         "padding_bottom": 36
       }
     },
+    "featured_blog_tCM9wY": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "The Parent Hub",
+        "heading_size": "h1",
+        "blog": "toddlers",
+        "post_limit": 2,
+        "columns_desktop": 2,
+        "color_scheme": "scheme-2",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_newsletter_BMmYj9": {
       "type": "custom-newsletter",
       "blocks": {
@@ -468,6 +486,7 @@
     "multicolumn_bHDhwQ",
     "featured_product_D7CjKB",
     "featured_collection_BQBza9",
+    "featured_blog_tCM9wY",
     "custom_newsletter_BMmYj9",
     "image_with_text_aiDaEi"
   ]
