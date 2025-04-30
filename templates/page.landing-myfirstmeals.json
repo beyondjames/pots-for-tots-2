@@ -475,6 +475,61 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "image_banner_dxeXA4": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Ui8EKt": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "show_heading_shadow": false
+          }
+        },
+        "text_Qd7gNq": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_JtaG6U": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ui8EKt",
+        "text_Qd7gNq",
+        "buttons_JtaG6U"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2_e276b8ee-9ff9-46f9-8ecb-29a7dc7b4bc8.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
@@ -488,6 +543,7 @@
     "featured_collection_BQBza9",
     "featured_blog_tCM9wY",
     "custom_newsletter_BMmYj9",
-    "image_with_text_aiDaEi"
+    "image_with_text_aiDaEi",
+    "image_banner_dxeXA4"
   ]
 }
