@@ -364,57 +364,11 @@
       {%- render 'icon-close' -%}
     </button>
 
-    <div class="product-popup-modal__content-info">
-      <div class="grid grid--1-col-tablet-down grid--2-col-desktop">
-        <div class="grid__item grid-left">
-          {% comment %} Product Image {% endcomment %}
-          <div class="card card--standard card--media">
-            {%- if card_product.featured_media -%}
-              <div class="modal-image">
-                <img
-                  srcset="
-                    {%- if card_product.featured_media.width >= 165 -%}{{ card_product.featured_media | image_url: width: 165 }} 165w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 360 -%}{{ card_product.featured_media | image_url: width: 360 }} 360w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 533 -%}{{ card_product.featured_media | image_url: width: 533 }} 533w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 720 -%}{{ card_product.featured_media | image_url: width: 720 }} 720w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 940 -%}{{ card_product.featured_media | image_url: width: 940 }} 940w,{%- endif -%}
-                    {%- if card_product.featured_media.width >= 1066 -%}{{ card_product.featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
-                    {{ card_product.featured_media | image_url }} {{ card_product.featured_media.width }}w
-                  "
-                  src="{{ card_product.featured_media | image_url: width: 533 }}"
-                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                  alt="{{ card_product.featured_media.alt | escape }}"
-                  class="motion-reduce"
-                  {% unless lazy_load == false %}
-                    loading="lazy"
-                  {% endunless %}
-                  width="{{ card_product.featured_media.width }}"
-                  height="{{ card_product.featured_media.height }}"
-                >
-
-                {%- if card_product.media[1] != null and show_secondary_image -%}
-                  <img
-                    srcset="
-                      {%- if card_product.media[1].width >= 165 -%}{{ card_product.media[1] | image_url: width: 165 }} 165w,{%- endif -%}
-                      {%- if card_product.media[1].width >= 360 -%}{{ card_product.media[1] | image_url: width: 360 }} 360w,{%- endif -%}
-                      {%- if card_product.media[1].width >= 533 -%}{{ card_product.media[1] | image_url: width: 533 }} 533w,{%- endif -%}
-                      {%- if card_product.media[1].width >= 720 -%}{{ card_product.media[1] | image_url: width: 720 }} 720w,{%- endif -%}
-                      {%- if card_product.media[1].width >= 940 -%}{{ card_product.media[1] | image_url: width: 940 }} 940w,{%- endif -%}
-                      {%- if card_product.media[1].width >= 1066 -%}{{ card_product.media[1] | image_url: width: 1066 }} 1066w,{%- endif -%}
-                      {{ card_product.media[1] | image_url }} {{ card_product.media[1].width }}w
-                    "
-                    src="{{ card_product.media[1] | image_url: width: 533 }}"
-                    sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
-                    alt=""
-                    class="motion-reduce"
-                    loading="lazy"
-                    width="{{ card_product.media[1].width }}"
-                    height="{{ card_product.media[1].height }}"
-                  >
-                {%- endif -%}
-              </div>
-            {%- endif -%}
-          </div>
+    <div class="product product-popup-modal__content-info">
+      <div class="grid grid--1-col-tablet-down product--{{ section.settings.gallery_layout }}">
+        <div class="product--mobile-hide grid__item grid-left">
+          {% assign variant_images = card_product.images | where: 'attached_to_variant?', true | map: 'src' %}
+          {% render 'product-media-gallery', product: card_product, variant_images: variant_images, is_duplicate: true %}
         </div>
 
         <div class="grid__item grid-right">
@@ -422,36 +376,50 @@
           <h2 class="card__modal-title">
             {{- card_product.title -}}
           </h2>
-
-          <div class="card__modal-icons">
-            {% comment %} Product Variants {% endcomment %}
-            <div class="card__modal-variants">
-              {%- for variant in card_product.variants -%}
-                <div class="card__variants-variant-modal">
-                  <div class="card__variants-title">
-                    <p>
-                      {%- if variant.title == 'Default Title' -%}
-                        Single Item
-                      {%- else -%}
-                        {{- variant.title -}}
-                      {%- endif -%}
-                    </p>
-                  </div>
-                </div>
-              {%- endfor -%}
-            </div>
-          </div>
-
+          
           {% comment %} Product Description {% endcomment %}
           <div class="card__modal-description caption-large light">
-            {{- card_product.description -}}
+            {{- card_product.metafields.my_fields.short_description -}}
           </div>
+
+          {%-  if card_product.metafields.custom.ingredients_list -%}
+          <div class="card__modal-icons">
+            <div class="card__modal-ingredients">
+              {%  for ingredient in card_product.metafields.custom.ingredients_list.value %}
+                <div class="card__modal-ingredient">
+                  {{ ingredient.icon | image_url: width: 70 | image_tag: alt: ingredient.title }}
+                  {% comment %} <div class="card__modal-ingredient-title">
+                    {{ ingredient.title }}
+                  </div> {% endcomment %}
+                </div>
+              {%  endfor %}
+            </div>
+          </div>
+        {%- endif -%}
 
           {% comment %} Nutritional Information & Cooking Instructions {% endcomment %}
           <div class="collapsible-content collapsible--layout isolate">
             <div class="collapsible-content__wrapper section-padding gradient">
               <div class="collapsible-content-wrapper-narrow">
                 <div class="accordion">
+                  {%- if card_product.metafields.custom.ingredients -%}
+                    <details>
+                      <summary>
+                        <h3 class="accordion__title inline-richtext">
+                          Ingredients
+                        </h3>
+
+                        {%- render 'icon-caret' -%}
+                      </summary>
+
+                      <div class="accordion__content rte" role="region">
+                        <div class="card__modal-nutritional-information">
+                          {{ card_product.metafields.custom.ingredients | metafield_tag }}
+                        </div>
+                      </div>
+                    </details>
+                  {%- endif -%}
+
                   {%- if card_product.metafields.my_fields.nutritional_information -%}
                     <details>
                       <summary>
