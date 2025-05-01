@@ -230,7 +230,11 @@
           }
         }
       },
-      "block_order": ["heading_f39wbC", "text_jPwXEN", "button_hNydzb"],
+      "block_order": [
+        "heading_f39wbC",
+        "text_jPwXEN",
+        "button_hNydzb"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -257,8 +261,8 @@
         "column_Yc6brM": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Orzo.png",
-            "title": "Chicken and Veggie Orzo",
+            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Bites.png",
+            "title": "AK Chicken and Veggie Bites",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
@@ -344,7 +348,11 @@
           }
         }
       },
-      "block_order": ["heading_KWUAiH", "text_khDxDM", "button_4yjM8i"],
+      "block_order": [
+        "heading_KWUAiH",
+        "text_khDxDM",
+        "button_4yjM8i"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -482,7 +490,11 @@
           }
         }
       },
-      "block_order": ["column_mEPE9q", "column_tx4PAN", "column_RaWPKf"],
+      "block_order": [
+        "column_mEPE9q",
+        "column_tx4PAN",
+        "column_RaWPKf"
+      ],
       "settings": {
         "title": "PFT x Annabel Karmel",
         "heading_size": "h1",
@@ -538,7 +550,11 @@
           }
         }
       },
-      "block_order": ["column_tcxbfE", "column_G6myYx", "column_GCHJHf"],
+      "block_order": [
+        "column_tcxbfE",
+        "column_G6myYx",
+        "column_GCHJHf"
+      ],
       "disabled": true,
       "settings": {
         "title": "Pots for Tots x Liewood",
@@ -596,7 +612,11 @@
           }
         }
       },
-      "block_order": ["row_mKmVfb", "row_qTXNyd", "row_dyBTqK"],
+      "block_order": [
+        "row_mKmVfb",
+        "row_qTXNyd",
+        "row_dyBTqK"
+      ],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -718,7 +738,9 @@
           }
         }
       },
-      "block_order": ["reviews_io_reviewsio_card_carousel_pACh9W"],
+      "block_order": [
+        "reviews_io_reviewsio_card_carousel_pACh9W"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -829,7 +851,11 @@
           }
         }
       },
-      "block_order": ["heading_N3NP9V", "paragraph_kYYWPA", "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"],
+      "block_order": [
+        "heading_N3NP9V",
+        "paragraph_kYYWPA",
+        "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"
+      ],
       "settings": {
         "color_scheme": "scheme-1",
         "image": "shopify://shop_images/Recycled_background_medium_res.png",
