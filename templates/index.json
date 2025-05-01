@@ -638,7 +638,7 @@
       "settings": {
         "title": "Save with bundles!",
         "heading_size": "h1",
-        "description": "<p>Save time by selecting from our carefully curated ready-to-order bundles with up to 15% off.</p>",
+        "description": "<p>Make mealtimes easier and save time by selecting from our carefully curated ready-to-order bundles with up to 15% off.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "bundles",
