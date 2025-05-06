@@ -41,11 +41,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_i8TbaJ",
-        "text_khPEhw",
-        "buttons_mJDLgt"
-      ],
+      "block_order": ["heading_i8TbaJ", "text_khPEhw", "buttons_mJDLgt"],
       "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Website_homepage_19.png",
@@ -173,12 +169,7 @@
           }
         }
       },
-      "block_order": [
-        "slide_hgbCiy",
-        "slide_c6rpWy",
-        "slide_EFdemU",
-        "slide_6mcVhA"
-      ],
+      "block_order": ["slide_hgbCiy", "slide_c6rpWy", "slide_EFdemU", "slide_6mcVhA"],
       "settings": {
         "layout": "full_bleed",
         "slide_height": "medium",
@@ -230,11 +221,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_f39wbC",
-        "text_jPwXEN",
-        "button_hNydzb"
-      ],
+      "block_order": ["heading_f39wbC", "text_jPwXEN", "button_hNydzb"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -292,12 +279,7 @@
           }
         }
       },
-      "block_order": [
-        "column_XgNy9B",
-        "column_Yc6brM",
-        "column_QDQrVz",
-        "column_FNaUJd"
-      ],
+      "block_order": ["column_XgNy9B", "column_Yc6brM", "column_QDQrVz", "column_FNaUJd"],
       "settings": {
         "title": "Meals and snacks made for your little ones",
         "heading_size": "h1",
@@ -348,11 +330,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_KWUAiH",
-        "text_khDxDM",
-        "button_4yjM8i"
-      ],
+      "block_order": ["heading_KWUAiH", "text_khDxDM", "button_4yjM8i"],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -490,11 +468,7 @@
           }
         }
       },
-      "block_order": [
-        "column_mEPE9q",
-        "column_tx4PAN",
-        "column_RaWPKf"
-      ],
+      "block_order": ["column_mEPE9q", "column_tx4PAN", "column_RaWPKf"],
       "settings": {
         "title": "PFT x Annabel Karmel",
         "heading_size": "h1",
@@ -550,11 +524,7 @@
           }
         }
       },
-      "block_order": [
-        "column_tcxbfE",
-        "column_G6myYx",
-        "column_GCHJHf"
-      ],
+      "block_order": ["column_tcxbfE", "column_G6myYx", "column_GCHJHf"],
       "disabled": true,
       "settings": {
         "title": "Pots for Tots x Liewood",
@@ -612,11 +582,7 @@
           }
         }
       },
-      "block_order": [
-        "row_mKmVfb",
-        "row_qTXNyd",
-        "row_dyBTqK"
-      ],
+      "block_order": ["row_mKmVfb", "row_qTXNyd", "row_dyBTqK"],
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -738,9 +704,7 @@
           }
         }
       },
-      "block_order": [
-        "reviews_io_reviewsio_card_carousel_pACh9W"
-      ],
+      "block_order": ["reviews_io_reviewsio_card_carousel_pACh9W"],
       "settings": {
         "include_margins": true
       }
@@ -851,11 +815,7 @@
           }
         }
       },
-      "block_order": [
-        "heading_N3NP9V",
-        "paragraph_kYYWPA",
-        "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"
-      ],
+      "block_order": ["heading_N3NP9V", "paragraph_kYYWPA", "klaviyo_email_marketing_sms_form_embed_block_PbjPkF"],
       "settings": {
         "color_scheme": "scheme-1",
         "image": "shopify://shop_images/Recycled_background_medium_res.png",
@@ -864,6 +824,36 @@
         "content_alignment": "center",
         "padding_top": 60,
         "padding_bottom": 60
+      }
+    },
+    "logo_bar_P9wDiF": {
+      "type": "logo-bar",
+      "blocks": {
+        "logo_NB6fQr": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/KFDCBadge.png",
+            "logo_height": 130
+          }
+        },
+        "logo_YzhQx8": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/logo_colour_small_0d7b57d9-d61c-4c0c-879c-90a3c5b8605d.png",
+            "logo_height": 100
+          }
+        }
+      },
+      "block_order": ["logo_NB6fQr", "logo_YzhQx8"],
+      "name": "Logo bar",
+      "disabled": true,
+      "settings": {
+        "title": "We are proudly  part of:",
+        "heading_size": "h2",
+        "description": "",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 12
       }
     }
   },
@@ -884,6 +874,7 @@
     "1719331689a4fcf305",
     "custom_testimonials_pXPcd6",
     "featured_blog_aGFxAU",
-    "custom_newsletter_titGVp"
+    "custom_newsletter_titGVp",
+    "logo_bar_P9wDiF"
   ]
 }
