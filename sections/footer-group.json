@@ -20,10 +20,26 @@
             "heading": "",
             "menu": "footer"
           }
+        },
+        "logo_dHfyhr": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/logo_colour_small_0d7b57d9-d61c-4c0c-879c-90a3c5b8605d.png",
+            "logo_height": 100
+          }
+        },
+        "logo_iYdMKN": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/KFDCBadge.png",
+            "logo_height": 130
+          }
         }
       },
       "block_order": [
-        "footer-0"
+        "footer-0",
+        "logo_dHfyhr",
+        "logo_iYdMKN"
       ],
       "settings": {
         "color_scheme": "scheme-3",
