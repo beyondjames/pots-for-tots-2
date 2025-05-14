@@ -118,22 +118,31 @@
       
       // Get today's date
       const today = new Date();
-      console.log("Today", today.getDay());
+      {% comment %} console.log("Today", today.getDay()); {% endcomment %}
 
-      // dateMin should be offset of 3 days from today unless it is a friday, in which case it sohuld be an offset of 4 days
+      // dateMin should be offset of 3 days from today unless it is a friday, in which case it should be an offset of 4 days
       let dateMin = new Date();
       dateMin.setDate(today.getDate() + 3);
+
+      // get the current time
+      const currentTime = new Date();
+      const currentHour = currentTime.getHours();
+      {% comment %} console.log("Current Hour", currentHour); {% endcomment %}
       
-      if (today.getDay() == 5) {
-        console.log("It is a friday")
+      // If today is Friday and the current time is before 12:00 PM, set dateMin to 2 days from today
+      if (today.getDay() == 5 && currentHour < 7) {
+        console.log("It is early friday")
         dateMin.setDate(dateMin.getDate() + 2);
+      } else if (today.getDay() == 5 && currentHour > 7) {
+        console.log("It is late friday")
+        dateMin.setDate(dateMin.getDate() + 4);
+      // If today is Saturday, set dateMin to 1 day from today
       } else if (today.getDay() == 6) {
-        console.log("It is a saturday")
+        console.log("It is a Saturday")
         dateMin.setDate(dateMin.getDate() + 1);
       }
-      
 
-      console.log("Date Min",dateMin);
+      {% comment %} console.log("Date Min",dateMin); {% endcomment %}
     
       // Create options for calendar
       const options = {
