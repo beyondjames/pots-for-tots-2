@@ -128,22 +128,18 @@
       const currentHour = currentTime.getHours();
       {% comment %} console.log("Current Hour", currentHour); {% endcomment %}
       
-      // If today is Friday and the current time is before 12:00 PM, set dateMin to 2 days from today
-      if (today.getDay() == 5 && currentHour < 7) {
-        console.log("It is early friday")
-        dateMin.setDate(dateMin.getDate() + 2);
-      } else if (today.getDay() == 5 && currentHour > 7) {
-        console.log("It is late friday")
+      // If today is Friday and the current time is after 7:00 AM, set dateMin to 4 days from today
+      if (today.getDay() == 5 && currentHour > 7) {
         dateMin.setDate(dateMin.getDate() + 4);
-      // If today is Saturday, set dateMin to 1 day from today
+      // If today is Saturday, set dateMin to 3 day from today
       } else if (today.getDay() == 6) {
         console.log("It is a Saturday")
-        dateMin.setDate(dateMin.getDate() + 1);
+        dateMin.setDate(dateMin.getDate() + 3);
       } else {
         dateMin.setDate(today.getDate() + 3);
       }
 
-      {% comment %} console.log("Date Min",dateMin); {% endcomment %}
+      console.log("Date Min",dateMin);
     
       // Create options for calendar
       const options = {
