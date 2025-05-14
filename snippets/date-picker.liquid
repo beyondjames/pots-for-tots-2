@@ -122,7 +122,6 @@
 
       // dateMin should be offset of 3 days from today unless it is a friday, in which case it should be an offset of 4 days
       let dateMin = new Date();
-      dateMin.setDate(today.getDate() + 3);
 
       // get the current time
       const currentTime = new Date();
@@ -140,6 +139,8 @@
       } else if (today.getDay() == 6) {
         console.log("It is a Saturday")
         dateMin.setDate(dateMin.getDate() + 1);
+      } else {
+        dateMin.setDate(today.getDate() + 3);
       }
 
       {% comment %} console.log("Date Min",dateMin); {% endcomment %}
