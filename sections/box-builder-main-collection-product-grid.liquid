@@ -3,9 +3,6 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'box-builder-upsell-modal.css' | asset_url | stylesheet_tag }}
 
-{% comment %} <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> {% endcomment %}
-{% comment %} <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script> {% endcomment %}
-
 {%- if section.settings.enable_quick_add -%}
   {{ 'box-builder-quick-add.css' | asset_url | stylesheet_tag }}
   <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
@@ -16,6 +13,9 @@
 <script src="{{ 'media-gallery.js' | asset_url }}" defer="defer"></script>
 {{ 'component-deferred-media.css' | asset_url | stylesheet_tag }}
 {{ 'component-slider.css' | asset_url | stylesheet_tag }}
+
+<script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+{{ 'embla-gallery.css' | asset_url | stylesheet_tag }}
 
 {%- style -%}
   .section-collection {
@@ -413,56 +413,7 @@
   %}
 {% endif %}
 
-{% comment %} <script>
-  const date = document.querySelector("#delivery");
-  if (date) {
-    const fp = flatpickr(date, {
-      dateFormat: 'd/m/Y',
-      minDate: 'today',
-      allowInput: true,
-      disable: [
-        // Disable weekends
-        function(date) {
-          return (date.getDay() === 0 || date.getDay() === 1 || date.getDay() === 2 || date.getDay() === 3 || date.getDay() === 5 || date.getDay() === 6 );
-        }],
-    });
-  }
-</script> {% endcomment %}
-{% comment %} 
-<style>
-  .flatpickr-day {
-    background-color: #c4d9cd;
-    border-radius: 0;
-    color: rgba(var(--color-foreground), 0.75);
-  }
-
-  .flatpickr-day:hover {
-    background-color: #5c8972;
-    border-color: #5c8972;
-    color: #fff;
-  }
-
-  .flatpickr-day.selected {
-    background-color: #5c8972;
-    border-color: #5c8972;
-    color: #fff;
-  }
-
-  .flatpickr-day.selected:hover,
-  .flatpickr-day.selected:focus {
-    background-color: #5c8972;
-    border-color: #5c8972;
-    color: #fff;
-  }
-
-  .flatpickr-input {
-    cursor: pointer;
-  }
-
-  .flatpickr-input::placeholder {
-    color: rgb(var(--color-foreground));
-  }
-</style> {% endcomment %}
+<script src="{{ 'embla.js' |  asset_url }}"></script>
 
 {% schema %}
 {
