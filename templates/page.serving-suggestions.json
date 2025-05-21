@@ -350,6 +350,17 @@
             "link": ""
           }
         },
+        "column_mgPfdJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Simple_Med_Veg_Orzo_7f681638-3f67-4fab-9a41-c784697e49e5.png",
+            "title": "Simple Med Veg Orzo",
+            "title_size": "h2",
+            "text": "<p>Add some leftover roasted chicken to this dish for an extra source of protein.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_iRF9cw": {
           "type": "column",
           "settings": {
@@ -376,20 +387,9 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Fish_Pie_Bites.png",
-            "title": "Fish Pie Bites",
+            "title": "AK Fish Pie Bites",
             "title_size": "h2",
             "text": "<p>Make it into a flavourful meal by adding sides like broccoli which is high in Vitamin C or adding a dip like cream cheese or hummus.</p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
-        "column_mgPfdJ": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Simple_Med_Veg_Orzo_7f681638-3f67-4fab-9a41-c784697e49e5.png",
-            "title": "Simple Med Veg Orzo",
-            "title_size": "h2",
-            "text": "<p>Add some leftover roasted chicken to this dish for an extra source of protein.</p>",
             "link_label": "",
             "link": ""
           }
@@ -418,10 +418,10 @@
         "column_CbccYQ",
         "column_FrRhrj",
         "column_qBLdn7",
+        "column_mgPfdJ",
         "column_iRF9cw",
         "column_m3Aqjz",
-        "column_kYExrL",
-        "column_mgPfdJ"
+        "column_kYExrL"
       ],
       "settings": {
         "title": "",
