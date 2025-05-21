@@ -298,7 +298,7 @@
         "column_tYdTeV": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Banana_Pancakes_bda102c3-80dd-48e7-975a-4fa17c608b63.png",
+            "image": "shopify://shop_images/Banana_Pancakes_645ec50e-0242-457c-9c8e-1e4d513742c7.png",
             "title": "Mini Banana Pancakes",
             "title_size": "h2",
             "text": "<p>Team with yoghurt and a drizzle of peanut butter, chia jam, or sprinkle of ground seeds. </p>",
@@ -308,7 +308,6 @@
         },
         "column_xwiyqw": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/AK_Frittatas.png",
             "title": "AK Cheese and Veggie Frittatas",
@@ -351,6 +350,39 @@
             "link": ""
           }
         },
+        "column_iRF9cw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Veggie_Chilli_9efee066-1c1a-4976-a422-8086af841014.png",
+            "title": "Veggie Chilli",
+            "title_size": "h2",
+            "text": "<p>Add a spoonful of sour cream or yoghurt (dairy free if needed) or a quick salsa made with grated cucumber and sweetcorn (or pineapple!).  An easy win for some extra colour and fibre.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_m3Aqjz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Cheesy_pasta_bake_Pie_Bites.png",
+            "title": "Cheesy Veg Pasta Bake",
+            "title_size": "h2",
+            "text": "<p>For extra Vitamin C and folate, you can add  a side of fresh or frozen greens like green beans, mange tout or sugar snap peas.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kYExrL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Fish_Pie_Bites.png",
+            "title": "Fish Pie Bites",
+            "title_size": "h2",
+            "text": "<p>Make it into a flavourful meal by adding sides like broccoli which is high in Vitamin C or adding a dip like cream cheese or hummus.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_mgPfdJ": {
           "type": "column",
           "settings": {
@@ -386,6 +418,9 @@
         "column_CbccYQ",
         "column_FrRhrj",
         "column_qBLdn7",
+        "column_iRF9cw",
+        "column_m3Aqjz",
+        "column_kYExrL",
         "column_mgPfdJ"
       ],
       "settings": {
