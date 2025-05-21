@@ -393,6 +393,17 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_xYjd8e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Italian_Pasta.png",
+            "title": "Italian-Style Chicken & Tomato Pasta",
+            "title_size": "h2",
+            "text": "<p>Serve with some some extra veggies - thinly sliced cucumber, peppers, avocado fingers or quartered cherry tomatoes. The more variety, the more different nutrients!</p>",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
@@ -421,7 +432,8 @@
         "column_mgPfdJ",
         "column_iRF9cw",
         "column_m3Aqjz",
-        "column_kYExrL"
+        "column_kYExrL",
+        "column_xYjd8e"
       ],
       "settings": {
         "title": "",
