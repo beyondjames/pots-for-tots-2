@@ -290,13 +290,26 @@
             "link_label": "SHOP NOW",
             "link": "shopify://collections/build-your-box"
           }
+        },
+        "column_rLFxpX": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Salmon_pasta_homepage_square_new.png",
+            "title": "Creamy Salmon Pasta",
+            "title_size": "h2",
+            "text": "<p>A tasty pasta dish with responsibly sourced salmon and haddock, mixed veggies in a creamy tomato sauce.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
         }
       },
       "block_order": [
         "column_XgNy9B",
         "column_Yc6brM",
         "column_QDQrVz",
-        "column_FNaUJd"
+        "column_FNaUJd",
+        "column_rLFxpX"
       ],
       "settings": {
         "title": "Meals and snacks made for your little ones",
