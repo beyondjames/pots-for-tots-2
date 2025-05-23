@@ -249,6 +249,7 @@
       "blocks": {
         "column_rLFxpX": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Salmon_pasta_homepage_square_new.png",
             "title": "Creamy Salmon Pasta",
@@ -294,6 +295,7 @@
         },
         "column_FNaUJd": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/13_b85bb989-da86-4836-b2e4-733fe155270e.png",
             "title": "Mexican-Style Burrito Bowl",
