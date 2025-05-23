@@ -247,6 +247,17 @@
     "custom_multicolumn_adV6Gn": {
       "type": "custom-multicolumn",
       "blocks": {
+        "column_rLFxpX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Salmon_pasta_homepage_square_new.png",
+            "title": "Creamy Salmon Pasta",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
         "column_XgNy9B": {
           "type": "column",
           "settings": {
@@ -271,6 +282,7 @@
         },
         "column_QDQrVz": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/11_124e2609-0e36-4500-bdd7-ec6622d683e1.png",
             "title": "NEW! Veggie Chilli",
@@ -290,26 +302,14 @@
             "link_label": "SHOP NOW",
             "link": "shopify://collections/build-your-box"
           }
-        },
-        "column_rLFxpX": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Salmon_pasta_homepage_square_new.png",
-            "title": "Creamy Salmon Pasta",
-            "title_size": "h2",
-            "text": "<p>A tasty pasta dish with responsibly sourced salmon and haddock, mixed veggies in a creamy tomato sauce.</p>",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
         }
       },
       "block_order": [
+        "column_rLFxpX",
         "column_XgNy9B",
         "column_Yc6brM",
         "column_QDQrVz",
-        "column_FNaUJd",
-        "column_rLFxpX"
+        "column_FNaUJd"
       ],
       "settings": {
         "title": "Meals and snacks made for your little ones",
