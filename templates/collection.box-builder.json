@@ -60,7 +60,8 @@
           "ak-chicken-veggie-bites",
           "ak-chicken-veggie-orzo",
           "ak-fish-pie-bites",
-          "ak-mild-chicken-tikka"
+          "ak-mild-chicken-tikka",
+          "creamy-salmon-tomato-pasta"
         ],
         "products_per_page": 48,
         "columns_desktop": 3,
@@ -77,6 +78,9 @@
         "upsell_skip_button": "Skip and Continue",
         "image_ratio": "adapt",
         "image_shape": "default",
+        "media_size": "large",
+        "gallery_layout": "thumbnail_slider",
+        "mobile_thumbnails": "show",
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
