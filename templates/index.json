@@ -283,7 +283,6 @@
         },
         "column_QDQrVz": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/11_124e2609-0e36-4500-bdd7-ec6622d683e1.png",
             "title": "NEW! Veggie Chilli",
@@ -295,7 +294,6 @@
         },
         "column_FNaUJd": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/13_b85bb989-da86-4836-b2e4-733fe155270e.png",
             "title": "Mexican-Style Burrito Bowl",
