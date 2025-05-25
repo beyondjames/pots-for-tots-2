@@ -249,7 +249,6 @@
       "blocks": {
         "column_rLFxpX": {
           "type": "column",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Salmon_pasta_homepage_square_new.png",
             "title": "Creamy Salmon Pasta",
@@ -285,7 +284,7 @@
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/11_124e2609-0e36-4500-bdd7-ec6622d683e1.png",
-            "title": "NEW! Veggie Chilli",
+            "title": "Veggie Chilli",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
@@ -294,6 +293,7 @@
         },
         "column_FNaUJd": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/13_b85bb989-da86-4836-b2e4-733fe155270e.png",
             "title": "Mexican-Style Burrito Bowl",
