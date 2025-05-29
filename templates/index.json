@@ -76,10 +76,10 @@
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
-            "button_label": "BUILD YOUR BOX",
+            "button_label": "BUILD YOUR own BOX",
             "link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
-            "button_label_2": "",
+            "button_label_2": "SHOP Bundles",
             "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false,
             "box_align": "bottom-center",
@@ -902,7 +902,6 @@
         "logo_YzhQx8"
       ],
       "disabled": true,
-      "name": "Logo bar",
       "settings": {
         "title": "We are proudly  part of:",
         "heading_size": "h2",
