@@ -38,7 +38,44 @@
         },
         "description": {
           "type": "description",
+          "disabled": true,
           "settings": {}
+        },
+        "text_UGDA4n": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.metafields.my_fields.short_description.value }}",
+            "text_style": "body"
+          }
+        },
+        "collapsible_tab_4CQyYG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.my_fields.ingredients | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_Q4rjHn": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Nutritional Information",
+            "icon": "none",
+            "content": "",
+            "make_collapsible_row": false,
+            "page": ""
+          }
+        },
+        "collapsible_tab_VhhxGD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Cooking Instructions",
+            "icon": "none",
+            "content": "",
+            "make_collapsible_row": false,
+            "page": ""
+          }
         },
         "share": {
           "type": "share",
@@ -54,6 +91,10 @@
         "recharge_subscriptions_subscription_widget_8Lg9gC",
         "custom_liquid_7WXxdt",
         "description",
+        "text_UGDA4n",
+        "collapsible_tab_4CQyYG",
+        "collapsible_tab_Q4rjHn",
+        "collapsible_tab_VhhxGD",
         "share"
       ],
       "settings": {
@@ -72,6 +113,43 @@
         "padding_bottom": 60
       }
     },
+    "1746629390d6341737": {
+      "type": "apps",
+      "blocks": {
+        "reviews_io_reviewsio_card_carousel_WWKP8f": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#000000",
+            "review_type": "product",
+            "reviews_shown": 20,
+            "header_bg_colour": "#5c8972",
+            "header_colour": "#ffffff",
+            "header_star_colour": "#ffffff",
+            "heading_text_colour": "#0e1311",
+            "heading_font": "helvetica_n4",
+            "body_text_colour": "#0e1311",
+            "badge_icon_colour": "#0e1311",
+            "badge_text_colour": "#0e1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "0px",
+            "item_border_colour": "#f2f2f2",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "#f2f2f2",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-inverted)"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_io_reviewsio_card_carousel_WWKP8f"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -88,43 +166,6 @@
         "columns_mobile": "2",
         "padding_top": 60,
         "padding_bottom": 60
-      }
-    },
-    "1746629390d6341737": {
-      "type": "apps",
-      "blocks": {
-        "reviews_io_reviewsio_card_carousel_WWKP8f": {
-          "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-            "star": "#000",
-            "review_type": "product",
-            "reviews_shown": 20,
-            "header_bg_colour": "#5c8972",
-            "header_colour": "#fff",
-            "header_star_colour": "#fff",
-            "heading_text_colour": "#0E1311",
-            "heading_font": "helvetica_n4",
-            "body_text_colour": "#0E1311",
-            "badge_icon_colour": "#0E1311",
-            "badge_text_colour": "#0E1311",
-            "bg_start_colour": "#ffffff",
-            "bg_end_colour": "#ffffff",
-            "item_border_width": "0px",
-            "item_border_colour": "#F2F2F2",
-            "item_border_radius": "0px",
-            "item_shadow_size": "10px",
-            "item_shadow_colour": "#F2F2F2",
-            "enable_rich_snippets": false,
-            "disable_same_customer": false,
-            "logo_colour": "var(--logo-inverted)"
-          }
-        }
-      },
-      "block_order": [
-        "reviews_io_reviewsio_card_carousel_WWKP8f"
-      ],
-      "settings": {
-        "include_margins": true
       }
     }
   },
