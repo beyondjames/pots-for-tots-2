@@ -215,7 +215,17 @@
                 </details>
               </div>
             {%-  when 'ingredients' -%}
-              <div>Ingredients icons</div>
+              {%-  if product.metafields.custom.ingredients_list -%}
+                <div class="card__modal-icons">
+                  <div class="card__modal-ingredients">
+                    {%  for ingredient in product.metafields.custom.ingredients_list.value %}
+                      <div class="card__modal-ingredient">
+                        {{ ingredient.icon | image_url: width: 70 | image_tag: alt: ingredient.title }}
+                      </div>
+                    {%  endfor %}
+                  </div>
+                </div>
+              {%- endif -%}
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
