@@ -48,6 +48,10 @@
             "text_style": "body"
           }
         },
+        "ingredients_4knwqb": {
+          "type": "ingredients",
+          "settings": {}
+        },
         "collapsible_tab_4CQyYG": {
           "type": "collapsible_tab",
           "settings": {
@@ -64,7 +68,6 @@
             "icon": "none",
             "content": "",
             "image": "{{ product.metafields.my_fields.nutritional_information.value }}",
-            "make_collapsible_row": false,
             "page": ""
           }
         },
@@ -75,7 +78,6 @@
             "icon": "none",
             "content": "",
             "image": "{{ product.metafields.my_fields.instructions.value }}",
-            "make_collapsible_row": false,
             "page": ""
           }
         },
@@ -94,6 +96,7 @@
         "custom_liquid_7WXxdt",
         "description",
         "text_UGDA4n",
+        "ingredients_4knwqb",
         "collapsible_tab_4CQyYG",
         "collapsible_tab_Q4rjHn",
         "collapsible_tab_VhhxGD",
