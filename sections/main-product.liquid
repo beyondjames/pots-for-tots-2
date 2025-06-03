@@ -214,6 +214,8 @@
                   </div>
                 </details>
               </div>
+            {%-  when 'ingredients' -%}
+              <div>Ingredients icons</div>
             {%- when 'quantity_selector' -%}
               <div
                 id="Quantity-Form-{{ section.id }}"
@@ -1117,6 +1119,11 @@
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.page.label"
         }
       ]
+    },
+    {
+      "type": "ingredients",
+      "name": "Ingredients icons",
+      "settings": []
     },
     {
       "type": "popup",
