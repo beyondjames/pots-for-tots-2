@@ -1,6 +1,8 @@
 @font-face {
   font-family: 'Nadira Pro Bold';
-  src: url('font-nadira-pro-bold.woff2') format('woff2'), url('font-nadira-pro-bold.woff') format('woff');
+  src:
+    url('font-nadira-pro-bold.woff2') format('woff2'),
+    url('font-nadira-pro-bold.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -8,7 +10,9 @@
 
 @font-face {
   font-family: 'Clear Sans';
-  src: url('font-clear-sans.woff2') format('woff2'), url('font-clear-sans.woff') format('woff');
+  src:
+    url('font-clear-sans.woff2') format('woff2'),
+    url('font-clear-sans.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -116,4 +120,9 @@ button.shopify-payment-button__button--unbranded,
 .banner__buttons.banner__buttons--multiple > * {
   flex-grow: 1;
   min-width: 22rem;
+}
+
+/* Product page */
+.product .product__accordion .accordion__content {
+  padding: 0;
 }
