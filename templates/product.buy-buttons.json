@@ -16,10 +16,6 @@
           "type": "title",
           "settings": {}
         },
-        "reviews_io_reviewsio_rating_output_FBDj38": {
-          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -48,6 +44,10 @@
             "show_gift_card_recipient": true
           }
         },
+        "reviews_io_reviewsio_rating_output_FBDj38": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {}
+        },
         "description": {
           "type": "description",
           "settings": {}
@@ -61,12 +61,12 @@
       },
       "block_order": [
         "title",
-        "reviews_io_reviewsio_rating_output_FBDj38",
         "price",
         "variant_picker",
         "quantity_selector",
         "recharge_subscriptions_subscription_widget_XKfhUq",
         "buy_buttons",
+        "reviews_io_reviewsio_rating_output_FBDj38",
         "description",
         "share"
       ],
