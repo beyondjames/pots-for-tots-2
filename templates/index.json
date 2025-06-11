@@ -67,6 +67,32 @@
     "slideshow_tRxFr3": {
       "type": "slideshow",
       "blocks": {
+        "slide_EFdemU": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/salmon_desktop_banner.png",
+            "mobile_image": "shopify://shop_images/salmon_mobile_banner.png",
+            "heading": "A fresh new dish!",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "Build Your Box",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "200",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
+          }
+        },
         "slide_c6rpWy": {
           "type": "slide",
           "settings": {
@@ -119,32 +145,6 @@
             "image_badge_horizontal_position": "right"
           }
         },
-        "slide_EFdemU": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/salmon_desktop_banner.png",
-            "mobile_image": "shopify://shop_images/salmon_mobile_banner.png",
-            "heading": "A fresh new dish!",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "Build Your Box",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "200",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "right"
-          }
-        },
         "slide_6mcVhA": {
           "type": "slide",
           "settings": {
@@ -173,9 +173,9 @@
         }
       },
       "block_order": [
+        "slide_EFdemU",
         "slide_c6rpWy",
         "slide_hgbCiy",
-        "slide_EFdemU",
         "slide_6mcVhA"
       ],
       "settings": {
