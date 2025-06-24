@@ -1,5 +1,15 @@
 import { Description, Dialog, DialogPanel, DialogTitle, DialogBackdrop, CloseButton } from '@headlessui/react';
 import { useState } from 'react';
+import { Alert } from './Alert';
+import VanillaCalendar from './VanillaCalendar';
+
+const content = {
+  title: 'When would you like your next order?',
+  notice: 'Schedule changes will apply to all future orders.',
+  description: 'Please select a new date and time for your appointment.',
+  cancelButton: 'Cancel',
+  rescheduleButton: 'Save changes',
+};
 
 export function RescheduleModal() {
   let [isOpen, setIsOpen] = useState(false);
@@ -29,12 +39,13 @@ export function RescheduleModal() {
               </CloseButton>
             </div>
             <div className="mt-[-32px]">
-              <DialogTitle className="font-bold mt-0">Deactivate account</DialogTitle>
-              <Description>This will permanently deactivate your account</Description>
-              <p>Are you sure you want to deactivate your account? All of your data will be permanently removed.</p>
+              <DialogTitle className="font-bold mt-0">{content.title}</DialogTitle>
+              <Alert />
+              <Description>{content.description}</Description>
+              <VanillaCalendar />
               <div className="flex gap-4">
-                <button onClick={() => setIsOpen(false)}>Cancel</button>
-                <button onClick={() => setIsOpen(false)}>Deactivate</button>
+                <button onClick={() => setIsOpen(false)}>{content.rescheduleButton}</button>
+                <button onClick={() => setIsOpen(false)}>{content.cancelButton}</button>
               </div>
             </div>
           </DialogPanel>

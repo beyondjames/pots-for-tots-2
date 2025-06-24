@@ -4,7 +4,7 @@
   "author": "James Cartwright",
   "private": true,
   "scripts": {
-    "dev": "shopify theme dev --store=pots-for-tots-food.myshopify.com",
+    "dev": "shopify theme dev --store=pots-for-tots-food.myshopify.com && vite dev",
     "prettier": "prettier",
     "watch": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./assets/affinity-customisations.css --watch",
     "build": "tsc -b && vite build",
@@ -33,6 +33,7 @@
     "@tailwindcss/cli": "^4.1.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.8"
+    "tailwindcss": "^4.1.8",
+    "vanilla-calendar-pro": "^3.0.4"
   }
 }
