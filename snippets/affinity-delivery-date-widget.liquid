@@ -1,6 +1,6 @@
 <script type="text/html" data-recharge-slot="overview.header">
   <div id="affinity-delivery-date-section" class="aff-card t-mb3" style="display:none;">
-    <span class="aff-h3 t-mb2">Delivery Date</span>
+    <span class="aff-h3 t-mb2">Delivery Date Widget</span>
     <div id="affinity-delivery-date-widget" class="affinity-delivery-date-widget">
       <div id="charge-date"></div>
       <div id="upcoming-delivery-date"></div>
@@ -110,6 +110,7 @@
     },
 
     openRescheduleModal() {
+      console.log('Reschedule button clicked in widet');
       this.dispatchEvent(this.widgetEventsToTrigger.reschedule);
     },
   };

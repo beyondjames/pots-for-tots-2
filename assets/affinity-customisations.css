@@ -61,17 +61,8 @@
   .mt-0 {
     margin-top: calc(var(--spacing) * 0);
   }
-  .mt-\[-32\] {
-    margin-top: -32;
-  }
   .mt-\[-32px\] {
     margin-top: -32px;
-  }
-  .mt-\[-40px\] {
-    margin-top: -40px;
-  }
-  .mt-\[40px\] {
-    margin-top: 40px;
   }
   .mb-0 {
     margin-bottom: calc(var(--spacing) * 0);
@@ -211,9 +202,23 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .duration-300 {
+    --tw-duration: 300ms;
+    transition-duration: 300ms;
+  }
+  .duration-600 {
+    --tw-duration: 600ms;
+    transition-duration: 600ms;
+  }
   .data-\[closed\]\:translate-y-4 {
     &[data-closed] {
       --tw-translate-y: calc(var(--spacing) * 4);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+  .data-\[closed\]\:translate-y-5 {
+    &[data-closed] {
+      --tw-translate-y: calc(var(--spacing) * 5);
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
@@ -462,6 +467,10 @@ div.affinity-modal-overlay:empty {
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -516,6 +525,7 @@ div.affinity-modal-overlay:empty {
       --tw-drop-shadow-color: initial;
       --tw-drop-shadow-alpha: 100%;
       --tw-drop-shadow-size: initial;
+      --tw-duration: initial;
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;

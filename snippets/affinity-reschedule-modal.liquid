@@ -1,0 +1,118 @@
+<script type="text/html" data-recharge-slot="overview.footer">
+  <div id="affinity-reschedule-modal-section" class="aff-card t-mb3" style="display:none;">
+    <span class="aff-h3 t-mb2">Reschedule modal</span>
+    <div id="affinity-delivery-date-widget" class="affinity-reschedule-modal-widget">
+    </div>
+  </div>
+</script>
+
+<script>
+    const rescheduleModalManager = {
+    wrapperContainerId: 'affinity-reschedule-modal-section',
+    targetContainerId: 'affinity-reschedule-modal-widget',
+    {% comment %} chargeContainerId: 'charge-date', {% endcomment %}
+    {% comment %} upcomingContainerID: 'upcoming-delivery-date', {% endcomment %}
+    offset: 3,
+
+    async getCharge() {
+      const charges = await rechargeAPI.fetchCharges();
+      return charges.find((charge) => charge.status == 'queued');
+    },
+
+    mountWidget(charge) {
+      console.log('Mounting reschedule modal with charge:', charge);
+      window.BoxConfig = {
+        containerId: this.targetContainerId,
+        chargeConfig: { charge },
+      };
+      {% comment %} this.renderUpcomingDeliveryDate(charge); {% endcomment %}
+      {% comment %} this.handleDeliveryDateUpdate(); {% endcomment %}
+      {% comment %} this.handleSkipButtonClick(); {% endcomment %}
+      {% comment %} this.handleRescheduleButtonClick(); {% endcomment %}
+      this.showWrapperSection();
+    },
+
+    {% comment %} renderUpcomingDeliveryDate(charge) {
+      const chargeDate = document.getElementById(this.chargeContainerId);
+      const upcomingDeliveryDate = document.getElementById(this.upcomingContainerID);
+      const deliveryDate = this.calcuateDeliveryDate(charge);
+      chargeDate.innerHTML = `<p>Charge date - ${this.formatDate(charge.scheduled_at)}</p>`;
+      upcomingDeliveryDate.innerHTML = `<p>Upcoming delivery date - ${deliveryDate}</p>`;
+    }, {% endcomment %}
+
+    {% comment %} calcuateDeliveryDate(charge) {
+      const deliveryDate = new Date(charge.scheduled_at);
+      deliveryDate.setDate(deliveryDate.getDate() + this.offset);
+      return this.formatDate(deliveryDate);
+    }, {% endcomment %}
+
+    {% comment %} formatDate(dateString) {
+      const options = { year: 'numeric', month: 'short', day: '2-digit' };
+      const date = new Date(dateString);
+      return date.toLocaleDateString('en-GB', options);
+    }, {% endcomment %}
+
+    showWrapperSection() {
+      document.getElementById(this.wrapperContainerId).style.display = 'block';
+    },
+
+    {% comment %} handleDeliveryDateUpdate() {
+      document.addEventListener(deliveryDateWidgetstateManager.widgetEventsToHandle.subscriptionRescheduled, () => {
+        deliveryDateWidgetstateManager.refreshDeliveryDateWidget();
+      });
+    }, {% endcomment %}
+
+    {% comment %} handleSkipButtonClick() {
+      document.getElementById('skip-next-order').addEventListener('click', () => {
+        deliveryDateWidgetstateManager.openSkipModal();
+      });
+    }, {% endcomment %}
+
+    {% comment %} handleRescheduleButtonClick() {
+      document.getElementById('reschedule-next-order').addEventListener('click', () => {
+        deliveryDateWidgetstateManager.openRescheduleModal();
+      });
+    }, {% endcomment %}
+
+    async init() {
+      console.log('Initializing reschedule modal...');
+      try {
+        await rechargeAPI.authenticate();
+        const charge = await this.getCharge();
+        console.log('Charge fetched:', charge);
+        if (charge) this.mountWidget(charge);
+        console.log('Reschedule modal initialized successfully.');  
+      } catch (error) {
+        console.error('Initialization failed:', error);
+      }
+    },
+  };
+
+  // Customize the message to guide customers to contact you
+  const alertMessage = 'This is the alert message.';
+
+  // Listen for the reschedule button click event
+  document.addEventListener('Recharge::click::reschedule', (event) => {
+    console.log('Reschedule button clicked:', event);
+    event.preventDefault();
+
+    const affinityModal = document.createElement('affinity-modal');
+    // Add the newly created element and its content into the DOM
+    document.body.appendChild(affinityModal);
+    console.log('Affinity modal created:', affinityModal);
+    affinityModal.open();
+  });
+
+  // Listen for the reschedule flow event and then update the billing date
+  {% comment %} document.addEventListener('Recharge::action::reschedule', (event) => {
+    event.preventDefault();
+    const subscriptionId = event.detail.payload.subscriptionId;
+    alert('Run a script here to update the date for subscription ID: ' + subscriptionId);
+  }); {% endcomment %}
+
+  document.addEventListener('Recharge::slot::mounted', (event) => {
+    if (event.detail.name === 'footer' && event.detail.pathname === '/overview') {
+      rescheduleModalManager.init();
+    }
+  });
+</script>
