@@ -1,6 +1,7 @@
 import { Description, Dialog, DialogPanel, DialogTitle, DialogBackdrop, CloseButton } from '@headlessui/react';
 import { useState } from 'react';
 import { Alert } from './Alert';
+import { Options } from './Options';
 import VanillaCalendar from './VanillaCalendar';
 
 const content = {
@@ -9,6 +10,19 @@ const content = {
   description: 'Please select a new date and time for your appointment.',
   cancelButton: 'Cancel',
   rescheduleButton: 'Save changes',
+};
+
+const config = {
+  type: 'default',
+  selectedTheme: 'light',
+  firstWeekday: 0,
+  dateMin: new Date(new Date().setDate(new Date().getDate() + 3)),
+  dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
+  disabledDates: ['2025-07-17'],
+  disableWeekdays: [0, 2, 3, 5, 6, 7],
+  onClickDate(self: { context: { selectedDates: any } }) {
+    console.log(self.context.selectedDates);
+  },
 };
 
 export function RescheduleModal() {
@@ -42,7 +56,8 @@ export function RescheduleModal() {
               <DialogTitle className="font-bold mt-0">{content.title}</DialogTitle>
               <Alert />
               <Description>{content.description}</Description>
-              <VanillaCalendar />
+              <Options />
+              <VanillaCalendar config={config} className="thisIsMyClass" />
               <div className="flex gap-4">
                 <button onClick={() => setIsOpen(false)}>{content.rescheduleButton}</button>
                 <button onClick={() => setIsOpen(false)}>{content.cancelButton}</button>

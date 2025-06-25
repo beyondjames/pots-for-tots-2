@@ -128,9 +128,6 @@
   .max-w-lg {
     max-width: var(--container-lg);
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
   }
@@ -207,9 +204,6 @@
   }
   .border-gray-300 {
     border-color: var(--color-gray-300);
-  }
-  .bg-black {
-    background-color: var(--color-black);
   }
   .bg-black\/30 {
     background-color: color-mix(in srgb, #000 30%, transparent);

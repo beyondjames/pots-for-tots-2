@@ -306,9 +306,7 @@
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
     {% if request.path contains '/tools/recurring' %}
-      {% render 'affinity-snippet' %}
-    {% else %}
-      {% render 'affinity-snippet-test' %}
+      {% render 'affinity-extensions' %}
     {% endif %}
 
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">

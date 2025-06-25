@@ -16,29 +16,29 @@ recharge.init({
 
 // Set the global variable RechargeExtensions to an object with the following properties
 window.RechargeExtensions = {
-    orderNow: {
-      disabledForNextOrder: true,
+  orderNow: {
+    disabledForNextOrder: true,
+  },
+  reschedule: {
+    calendar: {
+      enableDaysOfWeek: ['mon', 'thu'],
     },
-    reschedule: {
-      calendar: {
-        enableDaysOfWeek: ['mon', 'thu'],
-      },
+  },
+  dates: {
+    short: {
+      weekday: undefined,
+      day: 'numeric',
+      month: 'numeric',
+      year: 'numeric',
     },
-    dates: {
-      short: {
-        weekday: undefined,
-        day: 'numeric',
-        month: 'numeric',
-        year: 'numeric',
-      },
-      long: {
-        weekday: 'short',
-        day: 'numeric',
-        month: 'long',
-        year: 'numeric',
-      },
+    long: {
+      weekday: 'short',
+      day: 'numeric',
+      month: 'long',
+      year: 'numeric',
     },
-  };
+  },
+};
 
 // Recharge API
 const rechargeAPI = {
@@ -57,15 +57,14 @@ const rechargeAPI = {
   async fetchSubscriptions() {
     const response = await recharge.subscription
       .listSubscriptions(this.session, {
-        limit: 10,
         sort_by: 'id-asc',
         status: 'Active',
-        include: 'bundle_product',
       })
       .catch((error) => {
         console.error('Fetching subscriptions failed:', error);
         throw error;
       });
+    console.log('Fetched subscriptions:', response.subscriptions);
     return response.subscriptions;
   },
 
@@ -93,5 +92,16 @@ const rechargeAPI = {
         throw error;
       });
     return response.charges;
-  }
+  },
+
+  async updateNextCharge(subscriptionId, nextChargeDate) {
+    const response = await recharge.subscription
+      .updateSubscriptionChargeDate(this.session, subscriptionId, nextChargeDate)
+      .catch((error) => {
+        console.error('Updating next charge date failed:', error);
+        throw error;
+      });
+    console.log('Updated next charge date:', response);
+    return response;
+  },
 };

@@ -1,118 +1,182 @@
-<script type="text/html" data-recharge-slot="overview.footer">
-  <div id="affinity-reschedule-modal-section" class="aff-card t-mb3" style="display:none;">
-    <span class="aff-h3 t-mb2">Reschedule modal</span>
-    <div id="affinity-delivery-date-widget" class="affinity-reschedule-modal-widget">
-    </div>
-  </div>
-</script>
-
 <script>
-    const rescheduleModalManager = {
-    wrapperContainerId: 'affinity-reschedule-modal-section',
-    targetContainerId: 'affinity-reschedule-modal-widget',
-    {% comment %} chargeContainerId: 'charge-date', {% endcomment %}
-    {% comment %} upcomingContainerID: 'upcoming-delivery-date', {% endcomment %}
-    offset: 3,
-
-    async getCharge() {
-      const charges = await rechargeAPI.fetchCharges();
-      return charges.find((charge) => charge.status == 'queued');
-    },
-
-    mountWidget(charge) {
-      console.log('Mounting reschedule modal with charge:', charge);
-      window.BoxConfig = {
-        containerId: this.targetContainerId,
-        chargeConfig: { charge },
-      };
-      {% comment %} this.renderUpcomingDeliveryDate(charge); {% endcomment %}
-      {% comment %} this.handleDeliveryDateUpdate(); {% endcomment %}
-      {% comment %} this.handleSkipButtonClick(); {% endcomment %}
-      {% comment %} this.handleRescheduleButtonClick(); {% endcomment %}
-      this.showWrapperSection();
-    },
-
-    {% comment %} renderUpcomingDeliveryDate(charge) {
-      const chargeDate = document.getElementById(this.chargeContainerId);
-      const upcomingDeliveryDate = document.getElementById(this.upcomingContainerID);
-      const deliveryDate = this.calcuateDeliveryDate(charge);
-      chargeDate.innerHTML = `<p>Charge date - ${this.formatDate(charge.scheduled_at)}</p>`;
-      upcomingDeliveryDate.innerHTML = `<p>Upcoming delivery date - ${deliveryDate}</p>`;
-    }, {% endcomment %}
-
-    {% comment %} calcuateDeliveryDate(charge) {
-      const deliveryDate = new Date(charge.scheduled_at);
-      deliveryDate.setDate(deliveryDate.getDate() + this.offset);
-      return this.formatDate(deliveryDate);
-    }, {% endcomment %}
-
-    {% comment %} formatDate(dateString) {
-      const options = { year: 'numeric', month: 'short', day: '2-digit' };
-      const date = new Date(dateString);
-      return date.toLocaleDateString('en-GB', options);
-    }, {% endcomment %}
-
-    showWrapperSection() {
-      document.getElementById(this.wrapperContainerId).style.display = 'block';
-    },
-
-    {% comment %} handleDeliveryDateUpdate() {
-      document.addEventListener(deliveryDateWidgetstateManager.widgetEventsToHandle.subscriptionRescheduled, () => {
-        deliveryDateWidgetstateManager.refreshDeliveryDateWidget();
-      });
-    }, {% endcomment %}
-
-    {% comment %} handleSkipButtonClick() {
-      document.getElementById('skip-next-order').addEventListener('click', () => {
-        deliveryDateWidgetstateManager.openSkipModal();
-      });
-    }, {% endcomment %}
-
-    {% comment %} handleRescheduleButtonClick() {
-      document.getElementById('reschedule-next-order').addEventListener('click', () => {
-        deliveryDateWidgetstateManager.openRescheduleModal();
-      });
-    }, {% endcomment %}
-
-    async init() {
-      console.log('Initializing reschedule modal...');
-      try {
-        await rechargeAPI.authenticate();
-        const charge = await this.getCharge();
-        console.log('Charge fetched:', charge);
-        if (charge) this.mountWidget(charge);
-        console.log('Reschedule modal initialized successfully.');  
-      } catch (error) {
-        console.error('Initialization failed:', error);
-      }
-    },
-  };
-
-  // Customize the message to guide customers to contact you
-  const alertMessage = 'This is the alert message.';
-
-  // Listen for the reschedule button click event
-  document.addEventListener('Recharge::click::reschedule', (event) => {
-    console.log('Reschedule button clicked:', event);
-    event.preventDefault();
-
-    const affinityModal = document.createElement('affinity-modal');
-    // Add the newly created element and its content into the DOM
-    document.body.appendChild(affinityModal);
-    console.log('Affinity modal created:', affinityModal);
-    affinityModal.open();
-  });
-
-  // Listen for the reschedule flow event and then update the billing date
-  {% comment %} document.addEventListener('Recharge::action::reschedule', (event) => {
-    event.preventDefault();
-    const subscriptionId = event.detail.payload.subscriptionId;
-    alert('Run a script here to update the date for subscription ID: ' + subscriptionId);
-  }); {% endcomment %}
-
-  document.addEventListener('Recharge::slot::mounted', (event) => {
-    if (event.detail.name === 'footer' && event.detail.pathname === '/overview') {
-      rescheduleModalManager.init();
+  class DatePicker extends HTMLElement {
+    constructor() {
+      super();
     }
-  });
+
+    offset = 3;
+
+    connectedCallback() {
+      this.innerHTML = '<div class="calendar-container"></div>';
+      this.initialiseCalendar();
+    }
+
+    initialiseCalendar() {
+      console.log('Initialising calendar');
+      const { Calendar } = window.VanillaCalendarPro;
+      const container = this.querySelector('.calendar-container');
+      if (!container) {
+        console.warn('Calendar container not found!');
+        return;
+      }
+      const offset = this.offset;
+
+      // Create options for calendar
+      const options = {
+        selectedTheme: 'light',
+        firstWeekday: 0,
+        dateMin: new Date(new Date().setDate(new Date().getDate() + 3)),
+        dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
+        disableDates: [],
+        disableWeekdays: [0, 2, 3, 5, 6, 7],
+        onClickDate(self, event) {
+          console.log('Self:', self.context.selectedDates);
+          // enable the reschedule button and write the date to a property
+          const rescheduleButton = document.querySelector('.affinity-reschedule');
+          console.log('Reschedule button:', rescheduleButton);
+          rescheduleButton.disabled = false;
+          // add X days to the selected date
+          const selectedDate = new Date(self.context.selectedDates[0]);
+          console.log('Selected date before offset:', selectedDate);
+          console.log('Offset:', this.offset);
+          selectedDate.setDate(selectedDate.getDate() - offset);
+          console.log('Selected date after offset:', selectedDate);
+          rescheduleButton.setAttribute('data-date', formatDate(selectedDate));
+          console.log('Selected date:', selectedDate);
+        },
+      };
+
+      // Create a calendar instance and initialize it.
+      const calendar = new Calendar(container, options);
+      calendar.init();
+    }
+
+    // Function to get cart object for testing inside the custom element
+    async getCart() {
+      const response = await fetch('/cart.js');
+      const data = await response.json();
+      console.log('Cart:', data);
+      return data.items;
+    }
+  }
+
+  customElements.define('date-picker', DatePicker);
+
+  /**
+   *  Global function to be accessed by vanilla-calendar-pro onClickDate event
+   */
+
+  // Function to format date
+  function formatDate(dateString) {
+    console.log('Formatting date:', dateString);
+    const options = { year: 'numeric', month: 'short', day: '2-digit' };
+    const date = new Date(dateString);
+    console.log('Formatted date:', date);
+    console.log('Locale date string:', date.toLocaleDateString('en-GB', options));
+    {% comment %} return date.toLocaleDateString('en-GB', options); {% endcomment %}
+
+    // return the date in YYYY-MM-DD format
+    return date.toISOString().split('T')[0];
+  }
+
+  class RescheduleModal extends HTMLElement {
+    connectedCallback() {
+      this.render();
+      // Close on close button
+      this.querySelector('.custom-modal-close').addEventListener('click', () => this.close());
+      // Close on overlay click
+      this.querySelector('.custom-modal-overlay').addEventListener('mousedown', (e) => {
+        if (e.target === this.querySelector('.custom-modal-overlay')) {
+          this.close();
+        }
+      });
+      // Reschedule button click
+      this.querySelector('.affinity-reschedule').addEventListener('click', async () => {
+        // get the date from the button attribute
+        const date = this.querySelector('.affinity-reschedule').getAttribute('data-date');
+        // select the parent reschedule-modal element
+        const rescheduleModal = this.closest('reschedule-modal');
+        // get the subscriptionIds from the reschedule-modal object
+        const subscriptionIds = rescheduleModal.getAttribute('data-subscription-ids');
+        console.log('Reschedule button clicked', date, subscriptionIds);
+        this.updateNextChargeDate(subscriptionIds, date)
+          .then((response) => {
+            console.log('Next charge date updated:', response);
+
+            // Dispatch an event to notify the widget state manager
+            {% comment %} document.dispatchEvent(new CustomEvent('subscriptionRescheduled', {
+              detail: { subscriptionIds, newDate: date },
+            })); {% endcomment %}
+            this.close();
+
+            // Refresh the delivery date widget
+            if (document.getElementById('affinity-delivery-date-section')) {
+              deliveryDateWidgetstateManager.refreshDeliveryDateWidget();
+            }
+
+            // Dispatch a custom event to refresh the entire Affinity dashboard
+            document.dispatchEvent(new CustomEvent("Affinity:refresh"));
+
+          })
+          .catch((error) => {
+            console.error('Error updating next charge date:', error);
+          });
+      });
+      // Cancel button click
+      this.querySelector('.affinity-cancel').addEventListener('click', () => this.close());
+    }
+
+    render() {
+      this.innerHTML = `
+      <div class="custom-modal-overlay">
+        <div class="custom-modal">
+          <button class="custom-modal-close" aria-label="Close">&times;</button>
+          <h2 class="custom-modal-title">Reschedule Order</h2>
+          <div class="custom-modal-body">
+            <p>Select a new delivery date for your order.</p>
+            <date-picker></date-picker>
+            <button class="affinity-reschedule" disabled>Reschedule</button>
+            <button class="affinity-cancel">Cancel</button>
+          </div>
+        </div>
+      </div>
+      `;
+
+      // Re-initialize the calendar every time the modal is rendered
+      // Wait for the DOM to update before initializing
+      {% comment %} setTimeout(() => {
+        const datePicker = this.querySelector('date-picker');
+        if (datePicker && typeof datePicker.initialiseCalendar === 'function') {
+                console.log('Initializing calendar...');
+          datePicker.initialiseCalendar();
+        } else {
+          console.warn('DatePicker not found or initialiseCalendar method is not defined');
+        }
+      }, 0); {% endcomment %}
+    }
+
+    close() {
+      this.remove();
+    }
+
+    async updateNextChargeDate(ids, date) {
+      console.log('Updating next charge date for IDs:', ids, 'to date:', date);
+      // split the subscription IDs by comma
+      const idArray = ids.split(',').map(id => id.trim());
+      console.log('Subscription IDs array:', idArray);
+      // Create an array of promises to update each subscription
+      const updatePromises = idArray.map(id => rechargeAPI.updateNextCharge(id, date));
+      // Wait for all promises to resolve
+      try {
+        const results = await Promise.all(updatePromises);
+        console.log('All subscriptions updated:', results);
+        return results;
+      } catch (error) {
+        console.error('Error updating subscriptions:', error);
+        throw error; // Re-throw the error to handle it in the calling function
+      }
+    }
+  }
+
+  customElements.define('reschedule-modal', RescheduleModal);
 </script>

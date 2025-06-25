@@ -1,16 +1,19 @@
 <script type="text/html" data-recharge-slot="overview.header">
-  <div id="affinity-delivery-date-section" class="aff-card t-mb3" style="display:none;">
+  <div id="affinity-delivery-date-section" class="deliverycard t-mb3" style="display:none;">
     <span class="aff-h3 t-mb2">Delivery Date Widget</span>
     <div id="affinity-delivery-date-widget" class="affinity-delivery-date-widget">
       <div id="charge-date"></div>
       <div id="upcoming-delivery-date"></div>
-      <button id="reschedule-next-order">Reschedule</button>
-      <button id="skip-next-order">Skip</button>
+      <div class="deliverycard__button-wrapper">
+        <button id="reschedule-next-order" class="deliverycard__button">Reschedule</button>
+        <button id="skip-next-order" class="deliverycard__button">Skip</button>
+      </div>
     </div>
   </div>
 </script>
 
 <script>
+  // Delivery Date Widget Manager
   const deliveryDateWidgetManager = {
     wrapperContainerId: 'affinity-delivery-date-section',
     targetContainerId: 'affinitt-delivery-date-widget',
@@ -23,28 +26,61 @@
       return charges.find((charge) => charge.status == 'queued');
     },
 
-    mountWidget(charge) {
+    async getSubscriptions() {
+      const subscriptions = await rechargeAPI.fetchSubscriptions();
+
+      // Filter out those without a next_charge_scheduled_at
+      const validSubs = subscriptions.filter(sub => sub.next_charge_scheduled_at);
+      if (validSubs.length === 0) return [];
+
+      // Find the earliest date
+      const minDate = validSubs.reduce((min, sub) => {
+        const d = new Date(sub.next_charge_scheduled_at);
+        return d < min ? d : min;
+      }, new Date(validSubs[0].next_charge_scheduled_at));
+
+      // Return all subscriptions with that earliest date
+      return validSubs.filter(
+        sub => new Date(sub.next_charge_scheduled_at).getTime() === minDate.getTime()
+      );
+
+      {% comment %} const sortedSubscriptions = subscriptions.sort((a, b) => {
+        return new Date(a.next_charge_scheduled_at) - new Date(b.next_charge_scheduled_at);
+      });
+      return sortedSubscriptions[0]; {% endcomment %}
+    },
+
+    mountWidget(subscriptions) {
       window.BoxConfig = {
         containerId: this.targetContainerId,
-        chargeConfig: { charge },
+        {% comment %} chargeConfig: { charge }, {% endcomment %}
+        subscriptionConfig: { subscriptions },
       };
-      this.renderUpcomingDeliveryDate(charge);
+      this.renderUpcomingDeliveryDate(subscriptions);
       this.handleDeliveryDateUpdate();
       this.handleSkipButtonClick();
       this.handleRescheduleButtonClick();
       this.showWrapperSection();
     },
 
-    renderUpcomingDeliveryDate(charge) {
+    renderUpcomingDeliveryDate(subscriptions) {
+      console.log('Rendering upcoming delivery date for subscriptions:', subscriptions);
       const chargeDate = document.getElementById(this.chargeContainerId);
       const upcomingDeliveryDate = document.getElementById(this.upcomingContainerID);
-      const deliveryDate = this.calcuateDeliveryDate(charge);
-      chargeDate.innerHTML = `<p>Charge date - ${this.formatDate(charge.scheduled_at)}</p>`;
+      const deliveryDate = this.calcuateDeliveryDate(subscriptions[0]);
+      chargeDate.innerHTML = `<p>Charge date - ${this.formatDate(subscriptions[0].next_charge_scheduled_at)}</p>`;
       upcomingDeliveryDate.innerHTML = `<p>Upcoming delivery date - ${deliveryDate}</p>`;
+
+      // create a comma seperated list of subscription IDs
+      const subscriptionIds = subscriptions.map(sub => sub.id).join(',');
+      const rescheduleBtn = document.getElementById('reschedule-next-order');
+      if (rescheduleBtn && subscriptionIds) {
+        rescheduleBtn.setAttribute('data-subscription-ids', subscriptionIds);
+      }
     },
 
-    calcuateDeliveryDate(charge) {
-      const deliveryDate = new Date(charge.scheduled_at);
+    calcuateDeliveryDate(subscription) {
+      const deliveryDate = new Date(subscription.next_charge_scheduled_at);
       deliveryDate.setDate(deliveryDate.getDate() + this.offset);
       return this.formatDate(deliveryDate);
     },
@@ -73,15 +109,32 @@
 
     handleRescheduleButtonClick() {
       document.getElementById('reschedule-next-order').addEventListener('click', () => {
-        deliveryDateWidgetstateManager.openRescheduleModal();
+        const rescheduleBtn = document.getElementById('reschedule-next-order');
+        const subscriptionIds = rescheduleBtn.getAttribute('data-subscription-ids');
+        if (subscriptionIds) {
+          deliveryDateWidgetstateManager.openRescheduleModal(subscriptionIds);
+        } else {
+          console.warn('No subscription ID found on reschedule button.');
+        }
       });
     },
 
     async init() {
       try {
         await rechargeAPI.authenticate();
-        const charge = await this.getCharge();
-        if (charge) this.mountWidget(charge);
+        {% comment %} const charge = await this.getCharge();
+        if (charge) {
+          console.log('Charge found:', charge);
+          console.log("Line items in charge:", charge.line_items);
+          const subscriptionIds = charge.line_items.map(item => item.subscription_id);
+console.log(subscriptionIds);
+        } {% endcomment %}
+        {% comment %} if (charge) this.mountWidget(charge); {% endcomment %}
+        const subscriptions = await this.getSubscriptions();
+        if (subscriptions.length)  {
+          console.log('Subscriptions found:', subscriptions);
+          this.mountWidget(subscriptions);
+        }
       } catch (error) {
         console.error('Initialization failed:', error);
       }
@@ -109,15 +162,35 @@
       this.dispatchEvent(this.widgetEventsToTrigger.skip);
     },
 
-    openRescheduleModal() {
-      console.log('Reschedule button clicked in widet');
-      this.dispatchEvent(this.widgetEventsToTrigger.reschedule);
+    openRescheduleModal(subscriptionIds) {
+      {% comment %} console.log('Event', event); {% endcomment %}
+      {% comment %} event.preventDefault(); {% endcomment %}
+      rescheduleModalManager.open(subscriptionIds);
+      {% comment %} this.dispatchEvent(this.widgetEventsToTrigger.reschedule); {% endcomment %}
     },
   };
 
+  // Reschedule Modal Manager
+  const rescheduleModalManager = {
+    open(subscriptionIds) {
+      const rescheduleModal = document.createElement('reschedule-modal');
+      document.body.appendChild(rescheduleModal);
+      // add the subscription IDs to the modal
+      rescheduleModal.setAttribute('data-subscription-ids', subscriptionIds);
+    },
+  };
+
+  // Initialize the Delivery Date Widget when the Recharge slot is mounted
   document.addEventListener('Recharge::slot::mounted', (event) => {
     if (event.detail.name === 'header' && event.detail.pathname === '/overview') {
       deliveryDateWidgetManager.init();
     }
+  });
+
+  // Listen for the reschedule button click event
+  document.addEventListener('Recharge::click::reschedule', (event) => {
+    console.log('Reschedule button clicked', event);
+    event.preventDefault();
+    rescheduleModalManager.open(event.detail.payload.subscriptionIds);
   });
 </script>

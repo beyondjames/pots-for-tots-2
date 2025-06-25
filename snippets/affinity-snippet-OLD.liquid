@@ -1,0 +1,120 @@
+<script src="{{ 'affinity-customisations.js' | asset_url }}" defer="defer"></script>
+{{ 'affinity-customisations-OLD.css' | asset_url | stylesheet_tag }}
+{% comment %} {{ 'vite-affinity-customisations.css' | asset_url | stylesheet_tag }} {% endcomment %}
+
+<script type="text/html" data-recharge-slot="overview.header">
+  <div id="affinity-customisations"></div>
+</script>
+
+<script>
+  const deliveryDateWidgetManager = {
+    wrapperContainerId: 'affinity-delivery-date-section',
+    targetContainerId: 'affinity-delivery-date-widget',
+    chargeContainerId: 'charge-date',
+    upcomingContainerID: 'upcoming-delivery-date',
+    offset: 3,
+
+    async getCharge() {
+      const charges = await rechargeAPI.fetchCharges();
+      return charges.find((charge) => charge.status == 'queued');
+    },
+
+    mountWidget(charge) {
+      window.BoxConfig = {
+        containerId: this.targetContainerId,
+        chargeConfig: { charge },
+      };
+      this.renderUpcomingDeliveryDate(charge);
+      this.handleDeliveryDateUpdate();
+      this.handleSkipButtonClick();
+      this.handleRescheduleButtonClick();
+      this.showWrapperSection();
+    },
+
+    renderUpcomingDeliveryDate(charge) {
+      const chargeDate = document.getElementById(this.chargeContainerId);
+      const upcomingDeliveryDate = document.getElementById(this.upcomingContainerID);
+      const deliveryDate = this.calcuateDeliveryDate(charge);
+      chargeDate.innerHTML = `<p>Charge date - ${this.formatDate(charge.scheduled_at)}</p>`;
+      upcomingDeliveryDate.innerHTML = `<p>Upcoming delivery date - ${deliveryDate}</p>`;
+    },
+
+    calcuateDeliveryDate(charge) {
+      const deliveryDate = new Date(charge.scheduled_at);
+      deliveryDate.setDate(deliveryDate.getDate() + this.offset);
+      return this.formatDate(deliveryDate);
+    },
+
+    formatDate(dateString) {
+      const options = { year: 'numeric', month: 'short', day: '2-digit' };
+      const date = new Date(dateString);
+      return date.toLocaleDateString('en-GB', options);
+    },
+
+    showWrapperSection() {
+      document.getElementById(this.wrapperContainerId).style.display = 'block';
+    },
+
+    handleDeliveryDateUpdate() {
+      document.addEventListener(deliveryDateWidgetstateManager.widgetEventsToHandle.subscriptionRescheduled, () => {
+        deliveryDateWidgetstateManager.refreshDeliveryDateWidget();
+      });
+    },
+
+    handleSkipButtonClick() {
+      document.getElementById('skip-next-order').addEventListener('click', () => {
+        deliveryDateWidgetstateManager.openSkipModal();
+      });
+    },
+
+    handleRescheduleButtonClick() {
+      document.getElementById('reschedule-next-order').addEventListener('click', () => {
+        deliveryDateWidgetstateManager.openRescheduleModal();
+      });
+    },
+
+    async init() {
+      try {
+        await rechargeAPI.authenticate();
+        const charge = await this.getCharge();
+        if (charge) this.mountWidget(charge);
+      } catch (error) {
+        console.error('Initialization failed:', error);
+      }
+    },
+  };
+
+  const deliveryDateWidgetstateManager = {
+    widgetEventsToHandle: {
+      subscriptionRescheduled: 'Recharge::action::reschedule',
+    },
+    widgetEventsToTrigger: {
+      reschedule: 'Recharge::order::openRescheduleModal',
+      skip: 'Recharge::order::openSkipModal',
+    },
+
+    dispatchEvent(eventName) {
+      document.dispatchEvent(new CustomEvent(eventName));
+    },
+
+    refreshDeliveryDateWidget() {
+      deliveryDateWidgetManager.init();
+    },
+
+    openSkipModal() {
+      this.dispatchEvent(this.widgetEventsToTrigger.skip);
+    },
+
+    openRescheduleModal() {
+      console.log('Reschedule button clicked in widet');
+      this.dispatchEvent(this.widgetEventsToTrigger.reschedule);
+    },
+  };
+
+  document.addEventListener('Recharge::slot::mounted', (event) => {
+    if (event.detail.name === 'header' && event.detail.pathname === '/overview') {
+      deliveryDateWidgetManager.init();
+      console.log('Delivery Date Widget mounted');
+    }
+  });
+</script>
