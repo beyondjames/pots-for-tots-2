@@ -1,12 +1,36 @@
 <script type="text/html" data-recharge-slot="overview.header">
-  <div id="affinity-delivery-date-section" class="deliverycard t-mb3" style="display:none;">
-    <span class="aff-h3 t-mb2">Delivery Date Widget</span>
+  <div id="affinity-delivery-date-section" class="deliverycard" style="display:none;">
+    <h2 class="deliverycard__heading">Your next order</h2>
     <div id="affinity-delivery-date-widget" class="affinity-delivery-date-widget">
-      <div id="charge-date"></div>
-      <div id="upcoming-delivery-date"></div>
+      <div class="deliverycard__dates-wrapper">
+        <div class="deliverycard__date-wrapper">
+          <h2 class="deliverycard__label">Charge date</h2>
+          <h3 id="charge-date" class="deliverycard__date"></h3>
+        </div>
+        <div class="deliverycard__date-wrapper">
+          <h2 class="deliverycard__label">Delivery date</h2>
+          <h3 id="upcoming-delivery-date" class="deliverycard__date"></h3>
+        </div>
+      </div>
       <div class="deliverycard__button-wrapper">
-        <button id="reschedule-next-order" class="deliverycard__button">Reschedule</button>
-        <button id="skip-next-order" class="deliverycard__button">Skip</button>
+        <button id="reschedule-next-order" class="deliverycard__button">
+          <svg viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg" width="17" height="16"><g stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM8.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM4.5 12a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM8.5 12a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM12.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1ZM1.071 4H15.93"></path><path d="M14.786.571H2.214c-.63 0-1.143.512-1.143 1.143v12.572c0 .63.512 1.142 1.143 1.142h12.572c.63 0 1.143-.511 1.143-1.142V1.714c0-.631-.512-1.143-1.143-1.143Z"></path></g></svg>
+          <div>
+          Reschedule
+          </div>
+        </button>
+        <button id="skip-next-order" class="deliverycard__button">
+          <svg viewBox="0 0 16 7" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="7"><path d="m12.072 5.571 2.285.572m0 0 .572-2.286m-.572 2.286C13.397 3.514 10.45 1 7.5 1a6.857 6.857 0 0 0-6.446 4.571" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <div>
+            Skip
+          </div>
+        </button>
+        <button id="unskip-next-order" class="deliverycard__button">
+          <svg viewBox="0 0 16 7" fill="none" xmlns="http://www.w3.org/2000/svg" width="16" height="7"><path d="m12.072 5.571 2.285.572m0 0 .572-2.286m-.572 2.286C13.397 3.514 10.45 1 7.5 1a6.857 6.857 0 0 0-6.446 4.571" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+          <div>
+            Unskip
+          </div>
+        </button>
       </div>
     </div>
   </div>
@@ -23,14 +47,19 @@
 
     async getCharge() {
       const charges = await rechargeAPI.fetchCharges();
-      return charges.find((charge) => charge.status == 'queued');
+      {% comment %} charges.forEach((charge) => {
+        if (charge.status == 'skipped' || charge.status == 'queued') {
+          console.log('Found charge:', charge.status, charge);
+        }
+      }); {% endcomment %}
+      return charges.find((charge) => charge.status === 'queued' || charge.status === 'skipped');
     },
 
-    async getSubscriptions() {
+    {% comment %} async getSubscriptions() {
       const subscriptions = await rechargeAPI.fetchSubscriptions();
 
       // Filter out those without a next_charge_scheduled_at
-      const validSubs = subscriptions.filter(sub => sub.next_charge_scheduled_at);
+      const validSubs = subscriptions.filter((sub) => sub.next_charge_scheduled_at);
       if (validSubs.length === 0) return [];
 
       // Find the earliest date
@@ -40,49 +69,48 @@
       }, new Date(validSubs[0].next_charge_scheduled_at));
 
       // Return all subscriptions with that earliest date
-      return validSubs.filter(
-        sub => new Date(sub.next_charge_scheduled_at).getTime() === minDate.getTime()
-      );
+      return validSubs.filter((sub) => new Date(sub.next_charge_scheduled_at).getTime() === minDate.getTime());
+    }, {% endcomment %}
 
-      {% comment %} const sortedSubscriptions = subscriptions.sort((a, b) => {
-        return new Date(a.next_charge_scheduled_at) - new Date(b.next_charge_scheduled_at);
-      });
-      return sortedSubscriptions[0]; {% endcomment %}
-    },
-
-    mountWidget(subscriptions) {
+    mountWidget(charge) {
       window.BoxConfig = {
         containerId: this.targetContainerId,
-        {% comment %} chargeConfig: { charge }, {% endcomment %}
-        subscriptionConfig: { subscriptions },
+        chargeConfig: { charge },
+        {% comment %} subscriptionConfig: { subscriptions }, {% endcomment %}
       };
-      this.renderUpcomingDeliveryDate(subscriptions);
-      this.handleDeliveryDateUpdate();
-      this.handleSkipButtonClick();
-      this.handleRescheduleButtonClick();
-      this.showWrapperSection();
+      {% comment %} this.renderUpcomingDeliveryDate(subscriptions); {% endcomment %}
+      {% comment %} this.handleDeliveryDateUpdate(); {% endcomment %}
+      {% comment %} this.renderButtons(charge); {% endcomment %}
+      {% comment %} this.handleUnskipButtonClick(); {% endcomment %}
+      {% comment %} this.handleSkipButtonClick(); {% endcomment %}
+      {% comment %} this.handleRescheduleButtonClick(); {% endcomment %}
+      {% comment %} this.showWrapperSection(); {% endcomment %}
+      this.updateOrderActionsWidget(charge);
     },
 
-    renderUpcomingDeliveryDate(subscriptions) {
-      console.log('Rendering upcoming delivery date for subscriptions:', subscriptions);
+    {% comment %} renderUpcomingDeliveryDate(subscriptions) {
       const chargeDate = document.getElementById(this.chargeContainerId);
       const upcomingDeliveryDate = document.getElementById(this.upcomingContainerID);
-      const deliveryDate = this.calcuateDeliveryDate(subscriptions[0]);
-      chargeDate.innerHTML = `<p>Charge date - ${this.formatDate(subscriptions[0].next_charge_scheduled_at)}</p>`;
-      upcomingDeliveryDate.innerHTML = `<p>Upcoming delivery date - ${deliveryDate}</p>`;
+      const deliveryDate = this.calcuateDeliveryDate(subscriptions[0].next_charge_scheduled_at);
+      chargeDate.innerHTML = this.formatDate(subscriptions[0].next_charge_scheduled_at);
+      upcomingDeliveryDate.innerHTML = this.formatDate(deliveryDate);
 
       // create a comma seperated list of subscription IDs
-      const subscriptionIds = subscriptions.map(sub => sub.id).join(',');
+      const subscriptionIds = subscriptions.map((sub) => sub.id);
       const rescheduleBtn = document.getElementById('reschedule-next-order');
-      if (rescheduleBtn && subscriptionIds) {
-        rescheduleBtn.setAttribute('data-subscription-ids', subscriptionIds);
+      if (rescheduleBtn && subscriptionIds.length) {
+        rescheduleBtn.setAttribute('data-subscription-ids', JSON.stringify(subscriptionIds));
       }
     },
 
-    calcuateDeliveryDate(subscription) {
-      const deliveryDate = new Date(subscription.next_charge_scheduled_at);
+    renderButtons(charge) {
+      console.log('Charge', charge);
+    }, {% endcomment %}
+
+    calcuateDeliveryDate(date) {
+      const deliveryDate = new Date(date);
       deliveryDate.setDate(deliveryDate.getDate() + this.offset);
-      return this.formatDate(deliveryDate);
+      return deliveryDate;
     },
 
     formatDate(dateString) {
@@ -91,50 +119,85 @@
       return date.toLocaleDateString('en-GB', options);
     },
 
-    showWrapperSection() {
+    {% comment %} showWrapperSection() {
       document.getElementById(this.wrapperContainerId).style.display = 'block';
+    }, {% endcomment %}
+
+    updateOrderActionsWidget(charge) {
+      {% comment %} console.log('Updating core widget with charge:', charge); {% endcomment %}
+      const chargeDate = charge.scheduled_at;
+      {% comment %} console.log('Charge date:', chargeDate); {% endcomment %}
+      const deliveryDate = this.calcuateDeliveryDate(chargeDate);
+      {% comment %} console.log('Calculated delivery date:', deliveryDate); {% endcomment %}
+      const content = `
+        <div class="deliverycard__date-wrapper">
+          <h2 class="deliverycard__label">Charge date</h2>
+          <h3 id="charge-date" class="deliverycard__date">${this.formatDate(chargeDate)}</h3>
+        </div>
+        <div class="deliverycard__date-wrapper">
+          <h2 class="deliverycard__label">Delivery date</h2>
+          <h3 id="upcoming-delivery-date" class="deliverycard__date">${this.formatDate(deliveryDate)}</h3>
+        </div>
+      `;
+
+      const update = () => {
+        const orderActionsWidgetDelivery = document.querySelector('.recharge-component-next-order-date');
+        if (orderActionsWidgetDelivery) {
+          orderActionsWidgetDelivery.innerHTML = content;
+          observer.disconnect();
+        }
+      };
+
+      // Try immediately in case it's already there
+      update();
+
+      // If not, observe DOM changes
+      const observer = new MutationObserver(update);
+      observer.observe(document.body, { childList: true, subtree: true });
     },
 
-    handleDeliveryDateUpdate() {
+    {% comment %} handleDeliveryDateUpdate() {
       document.addEventListener(deliveryDateWidgetstateManager.widgetEventsToHandle.subscriptionRescheduled, () => {
         deliveryDateWidgetstateManager.refreshDeliveryDateWidget();
       });
-    },
+    }, {% endcomment %}
 
-    handleSkipButtonClick() {
+    {% comment %} handleUnskipButtonClick() {
+      document.getElementById('unskip-next-order').addEventListener('click', () => {
+        deliveryDateWidgetstateManager.unskip();
+      });
+    }, {% endcomment %}
+
+    {% comment %} handleSkipButtonClick() {
       document.getElementById('skip-next-order').addEventListener('click', () => {
         deliveryDateWidgetstateManager.openSkipModal();
       });
-    },
+    }, {% endcomment %}
 
-    handleRescheduleButtonClick() {
+    {% comment %} handleRescheduleButtonClick() {
       document.getElementById('reschedule-next-order').addEventListener('click', () => {
         const rescheduleBtn = document.getElementById('reschedule-next-order');
-        const subscriptionIds = rescheduleBtn.getAttribute('data-subscription-ids');
-        if (subscriptionIds) {
+        const idsAttr = rescheduleBtn.getAttribute('data-subscription-ids');
+        let subscriptionIds = [];
+        try {
+          subscriptionIds = JSON.parse(idsAttr);
+        } catch (e) {
+          console.warn('Could not parse subscription IDs:', idsAttr);
+        }
+        if (Array.isArray(subscriptionIds) && subscriptionIds.length) {
           deliveryDateWidgetstateManager.openRescheduleModal(subscriptionIds);
         } else {
-          console.warn('No subscription ID found on reschedule button.');
+          console.warn('No valid subscription IDs found on reschedule button.');
         }
       });
-    },
+    }, {% endcomment %}
 
     async init() {
       try {
         await rechargeAPI.authenticate();
-        {% comment %} const charge = await this.getCharge();
-        if (charge) {
-          console.log('Charge found:', charge);
-          console.log("Line items in charge:", charge.line_items);
-          const subscriptionIds = charge.line_items.map(item => item.subscription_id);
-console.log(subscriptionIds);
-        } {% endcomment %}
-        {% comment %} if (charge) this.mountWidget(charge); {% endcomment %}
-        const subscriptions = await this.getSubscriptions();
-        if (subscriptions.length)  {
-          console.log('Subscriptions found:', subscriptions);
-          this.mountWidget(subscriptions);
-        }
+        const charge = await this.getCharge();
+        {% comment %} const subscriptions = await this.getSubscriptions(); {% endcomment %}
+        if (charge) this.mountWidget(charge);
       } catch (error) {
         console.error('Initialization failed:', error);
       }
@@ -146,16 +209,21 @@ console.log(subscriptionIds);
       subscriptionRescheduled: 'Recharge::action::reschedule',
     },
     widgetEventsToTrigger: {
-      reschedule: 'Recharge::order::openRescheduleModal',
+      reschedule: 'Recharge::click::reschedule',
       skip: 'Recharge::order::openSkipModal',
+      unskip: 'Recharge::order::unskip',
     },
 
-    dispatchEvent(eventName) {
-      document.dispatchEvent(new CustomEvent(eventName));
+    dispatchEvent(eventName, payload = {}) {
+      document.dispatchEvent(new CustomEvent(eventName, { detail: { payload } }));
     },
 
     refreshDeliveryDateWidget() {
       deliveryDateWidgetManager.init();
+    },
+
+    unskip() {
+      this.dispatchEvent(this.widgetEventsToTrigger.unskip);
     },
 
     openSkipModal() {
@@ -163,10 +231,8 @@ console.log(subscriptionIds);
     },
 
     openRescheduleModal(subscriptionIds) {
-      {% comment %} console.log('Event', event); {% endcomment %}
-      {% comment %} event.preventDefault(); {% endcomment %}
-      rescheduleModalManager.open(subscriptionIds);
-      {% comment %} this.dispatchEvent(this.widgetEventsToTrigger.reschedule); {% endcomment %}
+      this.dispatchEvent(this.widgetEventsToTrigger.reschedule, { subscriptionIds });
+      {% comment %} rescheduleModalManager.open(subscriptionIds); {% endcomment %}
     },
   };
 
@@ -175,7 +241,6 @@ console.log(subscriptionIds);
     open(subscriptionIds) {
       const rescheduleModal = document.createElement('reschedule-modal');
       document.body.appendChild(rescheduleModal);
-      // add the subscription IDs to the modal
       rescheduleModal.setAttribute('data-subscription-ids', subscriptionIds);
     },
   };
@@ -189,7 +254,7 @@ console.log(subscriptionIds);
 
   // Listen for the reschedule button click event
   document.addEventListener('Recharge::click::reschedule', (event) => {
-    console.log('Reschedule button clicked', event);
+    console.log('Reschedule button clicked:', event.detail);
     event.preventDefault();
     rescheduleModalManager.open(event.detail.payload.subscriptionIds);
   });
