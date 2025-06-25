@@ -4,36 +4,20 @@
   "author": "James Cartwright",
   "private": true,
   "scripts": {
-    "dev": "shopify theme dev --store=pots-for-tots-food.myshopify.com && vite dev",
+    "dev": "shopify theme dev --store=pots-for-tots-food.myshopify.com",
     "prettier": "prettier",
-    "watch": "npx @tailwindcss/cli -i ./src/tailwind.css -o ./assets/affinity-customisations.css --watch",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "lint": "eslint ."
   },
   "devDependencies": {
     "@eslint/js": "^9.15.0",
     "@shopify/prettier-plugin-liquid": "^1.8.2",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.4",
     "eslint": "^9.15.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.12.0",
-    "prettier": "^3.5.2",
-    "typescript": "~5.6.2",
-    "typescript-eslint": "^8.15.0",
-    "vite": "^6.3.5"
+    "prettier": "^3.5.2"
   },
   "dependencies": {
-    "@headlessui/react": "^2.2.4",
-    "@heroicons/react": "^2.2.0",
-    "@rechargeapps/storefront-client": "^1.36.0",
-    "@tailwindcss/cli": "^4.1.8",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "tailwindcss": "^4.1.8",
-    "vanilla-calendar-pro": "^3.0.4"
+    "@rechargeapps/storefront-client": "^1.36.0"
   }
 }
