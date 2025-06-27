@@ -246,22 +246,11 @@
     "custom_multicolumn_adV6Gn": {
       "type": "custom-multicolumn",
       "blocks": {
-        "column_rLFxpX": {
+        "column_FNaUJd": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Salmon_pasta_homepage_square_new.png",
-            "title": "Creamy Salmon Pasta",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
-        },
-        "column_XgNy9B": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/14.png",
-            "title": "Cheesy Veg Pasta Bake",
+            "image": "shopify://shop_images/Website_homepage_product_images_11.svg",
+            "title": "Spanish Style Chicken and Rice",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
@@ -279,6 +268,29 @@
             "link": "shopify://collections/build-your-box"
           }
         },
+        "column_rLFxpX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Salmon_pasta_homepage_square_new.png",
+            "title": "Creamy Salmon Pasta",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
+        "column_XgNy9B": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/14.png",
+            "title": "Cheesy Veg Pasta Bake",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
         "column_QDQrVz": {
           "type": "column",
           "settings": {
@@ -289,26 +301,14 @@
             "link_label": "SHOP NOW",
             "link": "shopify://collections/build-your-box"
           }
-        },
-        "column_FNaUJd": {
-          "type": "column",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/13_b85bb989-da86-4836-b2e4-733fe155270e.png",
-            "title": "Mexican-Style Burrito Bowl",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
         }
       },
       "block_order": [
+        "column_FNaUJd",
+        "column_Yc6brM",
         "column_rLFxpX",
         "column_XgNy9B",
-        "column_Yc6brM",
-        "column_QDQrVz",
-        "column_FNaUJd"
+        "column_QDQrVz"
       ],
       "settings": {
         "title": "Meals and snacks made for your little ones",
