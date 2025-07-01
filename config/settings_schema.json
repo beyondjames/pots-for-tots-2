@@ -562,6 +562,50 @@
         "default": "scheme-2"
       },
       {
+        "type": "select",
+        "id": "primary_button_style",
+        "label": "Add to cart button style",
+        "options": [
+          {
+            "value": "primary",
+            "label": "Primary"
+          },
+          {
+            "value": "secondary",
+            "label": "Secondary"
+          }
+        ],
+        "default": "primary"
+      },
+      {
+        "type": "text",
+        "id": "primary_button_text",
+        "label": "Primary button text",
+        "default": "Quick add"
+      },
+      {
+        "type": "select",
+        "id": "secondary_button_style",
+        "label": "Secondary button style",
+        "options": [
+          {
+            "value": "primary",
+            "label": "Primary"
+          },
+          {
+            "value": "secondary",
+            "label": "Secondary"
+          }
+        ],
+        "default": "secondary"
+      },
+      {
+        "type": "text",
+        "id": "secondary_button_text",
+        "label": "Secondary button text",
+        "default": "View more"
+      },
+      {
         "type": "header",
         "content": "t:settings_schema.global.settings.header__border.content"
       },
