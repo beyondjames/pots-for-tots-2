@@ -93,8 +93,35 @@
             "image_badge_horizontal_position": "right"
           }
         },
+        "slide_6mcVhA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Spanish_chicken_-_website_homepage_4188e2c0-10b4-4bd6-88f8-8444a7400d56.svg",
+            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11.svg",
+            "heading": "A taste of summer!",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "BUILD Your BOX",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "200",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "left"
+          }
+        },
         "slide_EFdemU": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/salmon_desktop_banner.svg",
             "mobile_image": "shopify://shop_images/salmon_mobile_banner.png",
@@ -144,39 +171,13 @@
             "image_badge_vertical_position": "top",
             "image_badge_horizontal_position": "right"
           }
-        },
-        "slide_6mcVhA": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Veggie_Chilli_5.png",
-            "mobile_image": "shopify://shop_images/Veggie_Chilli_mobile.png",
-            "heading": "Chef made meals with 3 of their 5 a day",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "BUILD Your BOX",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "Shop Bundles",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false,
-            "box_align": "bottom-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "200",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "left"
-          }
         }
       },
       "block_order": [
         "slide_hgbCiy",
+        "slide_6mcVhA",
         "slide_EFdemU",
-        "slide_c6rpWy",
-        "slide_6mcVhA"
+        "slide_c6rpWy"
       ],
       "settings": {
         "layout": "full_bleed",
