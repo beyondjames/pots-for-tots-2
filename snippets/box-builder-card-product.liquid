@@ -382,20 +382,25 @@
             {{- card_product.metafields.my_fields.short_description -}}
           </div>
 
-          {%-  if card_product.metafields.custom.ingredients_list -%}
+          {%- if card_product.metafields.custom.ingredients_list -%}
           <div class="card__modal-icons">
             <div class="card__modal-ingredients">
-              {%  for ingredient in card_product.metafields.custom.ingredients_list.value %}
+              {% for ingredient in card_product.metafields.custom.ingredients_list.value %}
                 <div class="card__modal-ingredient">
                   {{ ingredient.icon | image_url: width: 70 | image_tag: alt: ingredient.title }}
-                  {% comment %} <div class="card__modal-ingredient-title">
-                    {{ ingredient.title }}
-                  </div> {% endcomment %}
                 </div>
-              {%  endfor %}
+              {% endfor %}
             </div>
           </div>
-        {%- endif -%}
+          {%- endif -%}
+
+          {% comment %} Star rating {% endcomment %}
+          {% capture skus %}
+          {% for variant in card_product.variants %}
+            {{ variant.sku }}
+          {% endfor %}
+          {% endcapture %}
+          <div class="ruk_rating_snippet" data-sku="{{ skus }}"></div>
 
           {% comment %} Nutritional Information & Cooking Instructions {% endcomment %}
           <div class="collapsible-content collapsible--layout isolate">
