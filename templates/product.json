@@ -57,7 +57,7 @@
           "settings": {
             "heading": "Ingredients",
             "icon": "none",
-            "content": "<p>{{ product.metafields.my_fields.ingredients | metafield_tag }}</p>",
+            "content": "<p>{{ product.metafields.custom.ingredients | metafield_tag }}</p>",
             "page": ""
           }
         },
@@ -148,9 +148,7 @@
           }
         }
       },
-      "block_order": [
-        "reviews_io_reviewsio_card_carousel_WWKP8f"
-      ],
+      "block_order": ["reviews_io_reviewsio_card_carousel_WWKP8f"],
       "settings": {
         "include_margins": true
       }
@@ -174,9 +172,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "1746629390d6341737",
-    "related-products"
-  ]
+  "order": ["main", "1746629390d6341737", "related-products"]
 }
