@@ -54,7 +54,8 @@
         "buttons_DDpMnG"
       ],
       "settings": {
-        "image": "shopify://shop_images/Screenshot_2024-03-05_at_10.34.00.png",
+        "image": "shopify://shop_images/Website_homepage_1.svg",
+        "image_3": "shopify://shop_images/Sweet_snacks.svg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
