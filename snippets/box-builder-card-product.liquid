@@ -400,8 +400,7 @@
             {{ variant.sku }}
           {% endfor %}
           {% endcapture %}
-          
-          <div class="ruk_rating_snippet" data-sku="{{ product.handle }};{{ product.variants | map: 'sku' | join: ';' }};{{ product.variants | map: 'id' | join: ';' }}"></div>
+          <div class="ruk_rating_snippet" data-sku="{{ skus }}"></div>
 
           {% comment %} Nutritional Information & Cooking Instructions {% endcomment %}
           <div class="collapsible-content collapsible--layout isolate">
