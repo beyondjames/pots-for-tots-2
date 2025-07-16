@@ -320,9 +320,10 @@
               <div class="order-type__frequency frequency__selector">
                 <frequency-selector>
                   <select class="order-type__select" id="subscription-frequency" name="frequency">
+                    <option value="0" selected>Please select your delivery frequency</option>
                     <option value="1">Delivery every 1 week</option>
                     <option value="2">Delivery every 2 weeks</option>
-                    <option value="4" selected>Delivery every 4 weeks</option>
+                    <option value="4">Delivery every 4 weeks</option>
                     <option value="6">Delivery every 6 weeks</option>
                     <option value="8">Delivery every 8 weeks</option>
                   </select>
@@ -368,7 +369,7 @@
                 You need to have a least 8 items to proceed
               </p>
 
-              <button class="checkout-button button button--full-width button--primary" id="UpsellPopup-{{ section.id }}" type="button" aria-haspopup="dialog">
+              <button class="checkout-button button button--full-width button--primary disabled" id="UpsellPopup-{{ section.id }}" type="button" aria-haspopup="dialog" disabled>
                 Checkout
                 {%- render 'loading-spinner' -%}
               </button>
@@ -385,7 +386,7 @@
                 You need to have a least 8 items to proceed
               </p>
 
-              <button class="button button--full-width button--primary" id="checkoutButton">
+              <button class="button button--full-width button--primary disabled" id="checkoutButton" type="button" disabled>
                 Checkout
                 {%- render 'loading-spinner' -%}
               </button>
