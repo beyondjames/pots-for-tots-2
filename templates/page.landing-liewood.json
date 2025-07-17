@@ -56,9 +56,10 @@
         "buttons_4ch6Ez"
       ],
       "settings": {
-        "image": "shopify://shop_images/NEWSLETTER_desktop_13.png",
+        "image": "shopify://shop_images/Website_homepage_2.svg",
+        "image_3": "shopify://shop_images/Liewood_collection_page_MOB.svg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
