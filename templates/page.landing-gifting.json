@@ -177,21 +177,21 @@
         "column_CbccYQ": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AK_Mobile_banner.png",
-            "title": "Pots for Tots x AK",
+            "image": "shopify://shop_images/30_ca8cca06-901a-47f3-8c5e-dbcdab0b95f1.svg",
+            "title": "Bundles",
             "title_size": "h2",
-            "text": "<p>We've partnered with the UK's No. 1 children's cookery author, Annabel Karmel to bring you a nourishing, delicious new range of handmade bites and meals.</p>",
-            "link_label": "Find out more",
-            "link": "shopify://pages/pots-for-tots-x-annabel-karmel"
+            "text": "<p>Choose from one of our carefully curated pre-made bundles.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/bundles"
           }
         },
         "column_pURBhE": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/GSN_banner_mobile_16.png",
-            "title": "Pots for Tots x GSN",
+            "image": "shopify://shop_images/28.svg",
+            "title": "Build a Box",
             "title_size": "h2",
-            "text": "<p>We've teamed up with GSN (Gold Standard Nutrition) to make family mealtimes simpler, healthier, and stress-free.</p>",
+            "text": "<p>Choose their favourite meals with our box builder to make a bespoke gift. </p>",
             "link_label": "Find out more",
             "link": "shopify://pages/pots-for-tots-x-mygsn"
           }
