@@ -162,15 +162,15 @@
     "custom_multicolumn_DLcnct": {
       "type": "custom-multicolumn",
       "blocks": {
-        "column_pURBhE": {
+        "column_48ypXC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/GSN_banner_mobile_16.png",
-            "title": "Pots for Tots x GSN",
+            "image": "shopify://shop_images/Website_homepage_product_images_liewood.png",
+            "title": "Pots for Tots x Liewood",
             "title_size": "h2",
-            "text": "<p>We've teamed up with GSN (Gold Standard Nutrition) to make family mealtimes simpler, healthier, and stress-free.</p>",
+            "text": "<p>We've collaborated with Danish designer Liewood to create a capsule collection of lifestyle products designed to bring more joy to every mealtime.</p>",
             "link_label": "Find out more",
-            "link": "shopify://pages/pots-for-tots-x-mygsn"
+            "link": "shopify://collections/liewood"
           }
         },
         "column_CbccYQ": {
@@ -184,22 +184,22 @@
             "link": "shopify://pages/pots-for-tots-x-annabel-karmel"
           }
         },
-        "column_48ypXC": {
+        "column_pURBhE": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_product_images_liewood.png",
-            "title": "Pots for Tots x Liewood",
+            "image": "shopify://shop_images/GSN_banner_mobile_16.png",
+            "title": "Pots for Tots x GSN",
             "title_size": "h2",
-            "text": "<p>We've collaborated with Danish designer Liewood to create a capsule collection of lifestyle products designed to bring more joy to every mealtime.</p>",
+            "text": "<p>We've teamed up with GSN (Gold Standard Nutrition) to make family mealtimes simpler, healthier, and stress-free.</p>",
             "link_label": "Find out more",
-            "link": "shopify://pages/pots-for-tots-x-liewood"
+            "link": "shopify://pages/pots-for-tots-x-mygsn"
           }
         }
       },
       "block_order": [
-        "column_pURBhE",
+        "column_48ypXC",
         "column_CbccYQ",
-        "column_48ypXC"
+        "column_pURBhE"
       ],
       "settings": {
         "title": "Explore our brand partnerships",
