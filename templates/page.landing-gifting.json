@@ -56,9 +56,10 @@
         "buttons_exQQXE"
       ],
       "settings": {
-        "image": "shopify://shop_images/4_a35bf90c-d454-45ba-83a5-e55e8f672178.png",
+        "image": "shopify://shop_images/Lifestyle_banner_-_gifting.svg",
+        "image_3": "shopify://shop_images/Website_homepage_product_images_11_2.svg",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -165,12 +166,12 @@
         "column_48ypXC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_product_images_liewood.png",
-            "title": "Pots for Tots x Liewood",
+            "image": "shopify://shop_images/Website_homepage_product_images_11_3.svg",
+            "title": "Pots for Tots Gift Card",
             "title_size": "h2",
-            "text": "<p>We've collaborated with Danish designer Liewood to create a capsule collection of lifestyle products designed to bring more joy to every mealtime.</p>",
-            "link_label": "Find out more",
-            "link": "shopify://collections/liewood"
+            "text": "<p>Let your loved one choose their own meals, whenever they need them.</p>",
+            "link_label": "SHOP NOW",
+            "link": "https://potsfortots.co.uk/products/pots-for-tots-gift-cards"
           }
         },
         "column_CbccYQ": {
@@ -202,9 +203,9 @@
         "column_pURBhE"
       ],
       "settings": {
-        "title": "Explore our brand partnerships",
+        "title": "Give the gift of Pots for Tots",
         "heading_size": "h1",
-        "text": "",
+        "text": "<p>Food is the ultimate care package. Whether you want to treat someone to a fully stocked freezer or give them the joy of choosing their own meals, we’ve got gifting sorted.</p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
