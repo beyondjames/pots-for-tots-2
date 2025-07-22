@@ -96,7 +96,7 @@
 
     initialiseCalendar() {
       const { Calendar } = window.VanillaCalendarPro;
-
+    
       // Create an array of disabled weekdays based on Liquid settings
       const disabledDays = [
         {% unless settings.enable_sunday %}0,{% endunless %}
@@ -107,7 +107,7 @@
         {% unless settings.enable_friday %}5,{% endunless %}
         {% unless settings.enable_saturday %}6{% endunless %}
       ];
-
+    
       // Create an array of disabled dates
       const disabledDates = '{{ settings.disabled_dates }}';
       const disabledDatesArray = disabledDates.split(',');
@@ -116,31 +116,31 @@
       const enabledDates = '{{ settings.enabled_dates }}';
       const enabledDatesArray = enabledDates.split(',');
       
-      // Get today's date in user's local timezone
-      const now = new Date();
-      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-      
-      // dateMin should be offset of 3 days from today unless it is a friday, in which case it should be an offset of 4 days
-      let dateMin = new Date(today);
+      // Get today's date
+      const today = new Date();
+      {% comment %} console.log("Today", today.getDay()); {% endcomment %}
 
-      // get the current time in user's local timezone
-      const currentHour = now.getHours();
-      const todayDayOfWeek = today.getDay();
+      // dateMin should be offset of 3 days from today unless it is a friday, in which case it should be an offset of 4 days
+      let dateMin = new Date();
+
+      // get the current time
+      const currentTime = new Date();
+      const currentHour = currentTime.getHours();
+      {% comment %} console.log("Current Hour", currentHour); {% endcomment %}
       
       // If today is Friday and the current time is after 7:00 AM, set dateMin to 4 days from today
-      if (todayDayOfWeek === 5 && currentHour >= 7) {
+      if (today.getDay() == 5 && currentHour > 7) {
         dateMin.setDate(dateMin.getDate() + 4);
       // If today is Saturday, set dateMin to 3 day from today
-      } else if (todayDayOfWeek === 6) {
+      } else if (today.getDay() == 6) {
         console.log("It is a Saturday")
         dateMin.setDate(dateMin.getDate() + 3);
       } else {
-        dateMin.setDate(dateMin.getDate() + 3);
+        dateMin.setDate(today.getDate() + 3);
       }
 
-      console.log("Date Min", dateMin);
-      console.log("User timezone:", Intl.DateTimeFormat().resolvedOptions().timeZone);
-
+      console.log("Date Min",dateMin);
+    
       // Create options for calendar
       const options = {
         selectedTheme: 'light',
@@ -159,19 +159,19 @@
           const dayNumber = parentElement.dataset.vcDateWeekDay;
           const dayText = '';
           var dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-
+    
           // Update the cart with the selected date
           const attributes = {
             _preferred_day: dayOfWeek[dayNumber],
             _first_delivery_date: formatDate(date)
           };
           updateCart({ attributes: attributes });
-
+    
           // Enable the cart checkout button
           document.querySelector('.cart__checkout-button').removeAttribute('disabled');
         }
       };
-
+    
       // Create a calendar instance and initialize it.
       const calendar = new Calendar('#calendar', options);
       calendar.init();
