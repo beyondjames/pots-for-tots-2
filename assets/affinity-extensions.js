@@ -80,7 +80,7 @@ const rechargeAPI = {
     const response = await recharge.charge
       .listCharges(this.session, {
         limit: 25,
-        sort_by: 'id-asc',
+        sort_by: 'scheduled_at-asc',
       })
       .catch((error) => {
         console.error('Fetching charges failed:', error);
