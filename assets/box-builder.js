@@ -1214,6 +1214,8 @@ class handleCheckoutButton extends HTMLElement {
     // Add an event listener to the button
     buttons.forEach((button) => {
       button.addEventListener('click', async () => {
+        this.loading(button); // Show loading spinner
+
         // Send GA4 event
         // sendEvent(button.id, 'Box Builder', 'Checkout Button Click');
 
@@ -1230,6 +1232,23 @@ class handleCheckoutButton extends HTMLElement {
         }
       });
     });
+  }
+
+  loading(button) {
+    // Hide the text on the button
+    const text = button.querySelector('span');
+    if (text) {
+      text.classList.add('hidden');
+    }
+
+    // Show loading spinner
+    const spinner = button.querySelector('.loading__spinner');
+    if (spinner) {
+      spinner.classList.remove('hidden'); // Show the spinner
+    }
+
+    // Disable the button to prevent multiple clicks
+    button.disabled = true;
   }
 }
 
