@@ -20,11 +20,10 @@
     "image_banner_tdtBKL": {
       "type": "image-banner",
       "blocks": {
-        "heading_LpdG8b": {
+        "heading_9gGmWn": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "We're here to make children's mealtimes easy.",
+            "heading": "Don't just take our word for it...!",
             "heading_size": "h1",
             "show_heading_shadow": false
           }
@@ -51,18 +50,19 @@
         }
       },
       "block_order": [
-        "heading_LpdG8b",
+        "heading_9gGmWn",
         "text_K7zeAF",
         "buttons_9gbU69"
       ],
       "settings": {
         "image": "shopify://shop_images/Lifestyle_banner_-_gifting.svg",
+        "image_3": "shopify://shop_images/Website_homepage_product_images_11_2.svg",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "badge_embed": "",
         "badge_padding": 1,
         "image_behavior": "none",
