@@ -22,6 +22,7 @@
       "blocks": {
         "heading_LpdG8b": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "We're here to make children's mealtimes easy.",
             "heading_size": "h1",
@@ -30,6 +31,7 @@
         },
         "text_K7zeAF": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "REAL food for little ones, handmade by our chefs, developed with our Children's Dietitian, frozen and delivered to your door. Meals ready in minutes. The convenience you need, without the compromise.",
             "text_style": "body"
@@ -37,6 +39,7 @@
         },
         "buttons_9gbU69": {
           "type": "buttons",
+          "disabled": true,
           "settings": {
             "button_label_1": "SHOP NOW",
             "button_link_1": "shopify://collections/build-your-box",
@@ -53,9 +56,9 @@
         "buttons_9gbU69"
       ],
       "settings": {
-        "image": "shopify://shop_images/PFT_Pattern_Background_copy.jpg",
+        "image": "shopify://shop_images/Lifestyle_banner_-_gifting.svg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "small",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -66,6 +69,16 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
+      }
+    },
+    "custom_liquid_rtTerP": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<script src=\"https://widget.reviews.io/rich-snippet-reviews-widgets/dist.js\" type=\"text/javascript\"></script>\n<div id=\"compound-widget\"></div>\n\n<script>\n        richSnippetReviewsWidgets(\"compound-widget\", {\n            store: \"www.potsfortots.co.uk\",\n            primaryClr: \"#4f7765\",\n            neutralClr: \"#333333\",\n            reviewTextClr: \"#333333\",\n            widgetName: \"compound\",\n            layout: \"fullWidth\",\n            numReviews: 40,\n            contentMode: \"company;product;third-party\",\n            sku: \"all-product-reviews;\",\n            compound: \"\"\n        });\n</script>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
       }
     },
     "custom_newsletter_brqVLX": {
@@ -137,16 +150,6 @@
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
-    },
-    "custom_liquid_rtTerP": {
-      "type": "custom-liquid",
-      "name": "t:sections.custom-liquid.presets.name",
-      "settings": {
-        "custom_liquid": "<script src=\"https://widget.reviews.io/rich-snippet-reviews-widgets/dist.js\" type=\"text/javascript\"></script>\n<div id=\"compound-widget\"></div>\n\n<script>\n        richSnippetReviewsWidgets(\"compound-widget\", {\n            store: \"www.potsfortots.co.uk\",\n            primaryClr: \"#4f7765\",\n            neutralClr: \"#333333\",\n            reviewTextClr: \"#333333\",\n            widgetName: \"compound\",\n            layout: \"fullWidth\",\n            numReviews: 40,\n            contentMode: \"company;product;third-party\",\n            sku: \"all-product-reviews;\",\n            compound: \"\"\n        });\n</script>",
-        "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
       }
