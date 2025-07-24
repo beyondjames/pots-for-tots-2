@@ -64,6 +64,51 @@
         "show_text_below": true
       }
     },
+    "rich_text_UTwFqR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_x6tbrd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get DOUBLE loyalty points on all orders throughout July!",
+            "heading_size": "h2"
+          }
+        },
+        "text_UmdXnw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_LRh8xd": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_x6tbrd",
+        "text_UmdXnw",
+        "button_LRh8xd"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
     "slideshow_tRxFr3": {
       "type": "slideshow",
       "blocks": {
@@ -190,16 +235,6 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
-    "custom_image_banner_no_text_8JgQy4": {
-      "type": "custom-image-banner-no-text",
-      "disabled": true,
-      "settings": {
-        "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
-        "image_width": "400",
-        "title": "Trustpilot",
-        "link_url": ""
-      }
-    },
     "rich_text_zNjyc8": {
       "type": "rich-text",
       "blocks": {
@@ -242,6 +277,16 @@
         "full_width": true,
         "padding_top": 8,
         "padding_bottom": 12
+      }
+    },
+    "custom_image_banner_no_text_8JgQy4": {
+      "type": "custom-image-banner-no-text",
+      "disabled": true,
+      "settings": {
+        "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
+        "image_width": "400",
+        "title": "Trustpilot",
+        "link_url": ""
       }
     },
     "custom_multicolumn_adV6Gn": {
@@ -914,9 +959,10 @@
   },
   "order": [
     "image_banner_Q7nyc4",
+    "rich_text_UTwFqR",
     "slideshow_tRxFr3",
-    "custom_image_banner_no_text_8JgQy4",
     "rich_text_zNjyc8",
+    "custom_image_banner_no_text_8JgQy4",
     "custom_multicolumn_adV6Gn",
     "rich_text_zCM7wX",
     "custom_brands_qTTbhF",
