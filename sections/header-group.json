@@ -16,6 +16,7 @@
       "blocks": {
         "announcement_XckcmE": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "DOUBLE loyalty points on all orders until end of July",
             "link": "shopify://pages/loyalty"
