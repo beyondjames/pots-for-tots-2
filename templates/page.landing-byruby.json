@@ -56,8 +56,9 @@
         "buttons_4ch6Ez"
       ],
       "settings": {
+        "image": "shopify://shop_images/Website_homepage_22.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -85,9 +86,8 @@
       "blocks": {
         "heading_Dex6F3": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Pots for Tots x ByRuby Exclusive Staycation Bundle",
             "heading_size": "h1"
           }
         },
@@ -117,7 +117,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
