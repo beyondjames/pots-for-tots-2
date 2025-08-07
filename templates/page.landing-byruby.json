@@ -199,12 +199,12 @@
         "row_cNWbrW": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_product_images_11_4.svg",
+            "image": "shopify://shop_images/Website_homepage_product_images_11_8.png",
             "caption": "Pots for tots",
             "heading": "Big nutrition, little effort",
             "text": "<p>At Pots for Tots, we're here to make mealtimes easy. We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, REAL meals for babies, toddlers and beyond. Frozen and delivered to your door, AirBnB or even Granny's house!</p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://collections/bundles"
+            "button_link": "shopify://products/pots-for-tots-x-byruby-staycation-bundle"
           }
         },
         "row_pR4dEw": {
@@ -213,9 +213,9 @@
             "image": "shopify://shop_images/318111919_517175553768116_2783082964422121144_n.jpg",
             "caption": "BYRUBY",
             "heading": "Handmade, ready when you are",
-            "text": "<p>We carefully source only the finest produce from suppliers we know well; then lovingly prepare all your favourite dishes in small batches.</p><p>Delicious dishes freshly frozen, handmade food, that’s ready when you are.</p>",
+            "text": "<p>We carefully source only the finest produce from suppliers we know well; then lovingly prepare all your favourite dishes in small batches.</p><p><br/>Delicious dishes freshly frozen, handmade food, that’s ready when you are.</p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-tove-all-together-cutlery-set-golden-caramel-mix"
+            "button_link": "shopify://products/pots-for-tots-x-byruby-staycation-bundle"
           }
         }
       },
