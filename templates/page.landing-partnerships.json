@@ -162,6 +162,17 @@
     "custom_multicolumn_DLcnct": {
       "type": "custom-multicolumn",
       "blocks": {
+        "column_TEThbW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_product_images_11_7.png",
+            "title": "Pots for Tots x ByRuby",
+            "title_size": "h2",
+            "text": "<p>We’ve partnered with ByRuby<strong> </strong>to create a bundle packed with delicious, real food for the whole family – ready to heat, no prep required.</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_48ypXC": {
           "type": "column",
           "settings": {
@@ -197,6 +208,7 @@
         }
       },
       "block_order": [
+        "column_TEThbW",
         "column_48ypXC",
         "column_CbccYQ",
         "column_pURBhE"
