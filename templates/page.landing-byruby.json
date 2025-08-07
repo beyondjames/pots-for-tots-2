@@ -57,6 +57,7 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Website_homepage_22.png",
+        "image_3": "shopify://shop_images/Website_homepage_product_images_11_7.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
