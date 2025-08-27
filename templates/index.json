@@ -167,6 +167,7 @@
         },
         "slide_6mcVhA": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Spanish_chicken_-_website_homepage_4188e2c0-10b4-4bd6-88f8-8444a7400d56.svg",
             "mobile_image": "shopify://shop_images/Website_homepage_product_images_11.svg",
