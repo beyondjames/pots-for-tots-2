@@ -138,12 +138,12 @@
       
       // If today is Friday and the current time is after 7:00 AM, set dateMin to 4 days from today
       if (today.getDay() == 5 && currentHour > 6) {
-        // console.log("It is a Friday")
-        // console.log("Current dateMin (before update)", dateMin);
+        {% comment %} console.log("It is a Friday") {% endcomment %}
+        {% comment %} console.log("Current dateMin (before update)", dateMin); {% endcomment %}
         dateMin.setDate(dateMin.getDate() + 4);
       // If today is Saturday, set dateMin to 3 day from today
       } else if (today.getDay() == 6) {
-        // console.log("It is a Saturday")
+        {% comment %} console.log("It is a Saturday") {% endcomment %}
         dateMin.setDate(dateMin.getDate() + 4);
       } else {
         dateMin.setDate(today.getDate() + 3);
@@ -152,17 +152,24 @@
       // Ensure dateMin is at midnight
       dateMin.setHours(0, 0, 0, 0);
 
-      // console.log("Date Min",dateMin);
-      // console.log('disabledDatesArray:', disabledDatesArray);
-      // console.log('enabledDatesArray:', enabledDatesArray);
-      // console.log('disabledWeekdays:', disabledDays);
+      {% comment %} console.log("Date Min",dateMin); {% endcomment %}
+      {% comment %} console.log('disabledDatesArray:', disabledDatesArray); {% endcomment %}
+      {% comment %} console.log('enabledDatesArray:', enabledDatesArray); {% endcomment %}
+      {% comment %} console.log('disabledWeekdays:', disabledDays); {% endcomment %}
+
+      // convert datemin into YYYY-MM-DD format
+      const dateMinFormatted = this.formatDateLocal(dateMin);
+      {% comment %} console.log("dateMinFormatted:", dateMinFormatted); {% endcomment %}
+
+      const dateMax = new Date(new Date().setMonth(new Date().getMonth() + 3));
+      const dateMaxFormatted = this.formatDateLocal(dateMax);
 
       // Create options for calendar
       const options = {
         selectedTheme: 'light',
         firstWeekday: 0,
-        dateMin: dateMin,
-        dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
+        dateMin: dateMinFormatted,
+        dateMax: dateMaxFormatted,
         disableDates: disabledDatesArray,
         enableDates: enabledDatesArray,
         disableWeekdays: disabledDays,
@@ -196,10 +203,19 @@
           document.querySelector('.cart__checkout-button').removeAttribute('disabled');
         }
       };
-    
+
+      {% comment %} console.log("Vanilla Calendar Options:", options); {% endcomment %}
+
       // Create a calendar instance and initialize it.
       const calendar = new Calendar('#calendar', options);
       calendar.init();
+    }
+
+    formatDateLocal(date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
     }
   
     // Function to get cart object for testing inside the custom element
