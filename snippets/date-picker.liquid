@@ -74,9 +74,8 @@
 <date-picker>
   <p>{{ settings.datepicker_message }}</p>
   <div id="calendar"></div>
-  {% comment %} <button type="button" class="btn get_cart">
-    Get Cart
-  </button> {% endcomment %}
+  {% comment %} <button type="button" class="button get_cart">Test Cart Attributes</button> {% endcomment %}
+  {% comment %} <button type="button" class="button clear_cart">Clear Cart Attributes</button> {% endcomment %}
 </date-picker>
 
 <script>
@@ -90,8 +89,15 @@
       this.initialiseCalendar();
 
       // Render buttons for testing
-      // const getCartButton = this.querySelector('.get_cart');
-      // getCartButton.addEventListener('click', this.getCart);
+      const getCartButton = this.querySelector('.get_cart');
+      if (getCartButton) {
+        getCartButton.addEventListener('click', this.getCart);
+      }
+
+      const clearCartButton = this.querySelector('.clear_cart');
+      if (clearCartButton) {
+        clearCartButton.addEventListener('click', this.clearCartAttributes);
+      }
     }
 
     initialiseCalendar() {
@@ -117,30 +123,40 @@
       const enabledDatesArray = enabledDates.split(',');
       
       // Get today's date
-      const today = new Date();
-      {% comment %} console.log("Today", today.getDay()); {% endcomment %}
+      const now = new Date();
+      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+      // console.log("Today", today.getDay());
 
       // dateMin should be offset of 3 days from today unless it is a friday, in which case it should be an offset of 4 days
       let dateMin = new Date();
 
       // get the current time
       const currentTime = new Date();
+      // console.log("Current Time", currentTime);
       const currentHour = currentTime.getHours();
-      {% comment %} console.log("Current Hour", currentHour); {% endcomment %}
+      // console.log("Current Hour", currentHour);
       
       // If today is Friday and the current time is after 7:00 AM, set dateMin to 4 days from today
-      if (today.getDay() == 5 && currentHour > 7) {
+      if (today.getDay() == 5 && currentHour > 6) {
+        // console.log("It is a Friday")
+        // console.log("Current dateMin (before update)", dateMin);
         dateMin.setDate(dateMin.getDate() + 4);
       // If today is Saturday, set dateMin to 3 day from today
       } else if (today.getDay() == 6) {
-        console.log("It is a Saturday")
-        dateMin.setDate(dateMin.getDate() + 3);
+        // console.log("It is a Saturday")
+        dateMin.setDate(dateMin.getDate() + 4);
       } else {
         dateMin.setDate(today.getDate() + 3);
       }
 
-      console.log("Date Min",dateMin);
-    
+      // Ensure dateMin is at midnight
+      dateMin.setHours(0, 0, 0, 0);
+
+      // console.log("Date Min",dateMin);
+      // console.log('disabledDatesArray:', disabledDatesArray);
+      // console.log('enabledDatesArray:', enabledDatesArray);
+      // console.log('disabledWeekdays:', disabledDays);
+
       // Create options for calendar
       const options = {
         selectedTheme: 'light',
@@ -150,6 +166,15 @@
         disableDates: disabledDatesArray,
         enableDates: enabledDatesArray,
         disableWeekdays: disabledDays,
+        onInit(self) {
+          // console.log('Calendar is initialized');
+          // Reset the cart attributes when calendar initializes
+          const attributes = {
+            _preferred_day: '',
+            _first_delivery_date: ''
+          };
+          updateCart({ attributes: attributes });
+        },
         onClickDate(self, event) {
           console.log('Date selected');
           const parentElement = event.target.closest('[data-vc-date]');
@@ -206,7 +231,7 @@
     return data.items;
   }
 
-  // Function to the cart delivery properties
+  // Function to update the cart delivery properties
   async function updateCart(updates) {
     const response = await fetch(`/cart/update.js`, {
       method: 'POST',
