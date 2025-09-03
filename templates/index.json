@@ -236,6 +236,24 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "1756898601fe522c85": {
+      "type": "apps",
+      "blocks": {
+        "reviews_io_reviewsio_rating_bar_wzmiij": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-bar/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "widget_id": "ynIW5cfZbl9p7NJY"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_io_reviewsio_rating_bar_wzmiij"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
     "custom_image_banner_no_text_8JgQy4": {
       "type": "custom-image-banner-no-text",
       "disabled": true,
@@ -955,23 +973,6 @@
         "color_scheme": "",
         "padding_top": 32,
         "padding_bottom": 12
-      }
-    },
-    "1756898601fe522c85": {
-      "type": "apps",
-      "blocks": {
-        "reviews_io_reviewsio_rating_bar_wzmiij": {
-          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-bar/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-            "widget_id": "ynIW5cfZbl9p7NJY"
-          }
-        }
-      },
-      "block_order": [
-        "reviews_io_reviewsio_rating_bar_wzmiij"
-      ],
-      "settings": {
-        "include_margins": true
       }
     }
   },
