@@ -780,7 +780,7 @@
             "header_colour": "#ffffff",
             "header_star_colour": "#ffffff",
             "heading_text_colour": "#40250a",
-            "heading_font": "helvetica_n4",
+            "heading_font": "sans_serif_n4",
             "body_text_colour": "#40250a",
             "badge_icon_colour": "#c1ddcf",
             "badge_text_colour": "#40250a",
@@ -956,12 +956,30 @@
         "padding_top": 32,
         "padding_bottom": 12
       }
+    },
+    "1756898601fe522c85": {
+      "type": "apps",
+      "blocks": {
+        "reviews_io_reviewsio_rating_bar_wzmiij": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-bar/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "widget_id": "ynIW5cfZbl9p7NJY"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_io_reviewsio_rating_bar_wzmiij"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "image_banner_Q7nyc4",
     "rich_text_UTwFqR",
     "slideshow_tRxFr3",
+    "1756898601fe522c85",
     "custom_image_banner_no_text_8JgQy4",
     "custom_multicolumn_adV6Gn",
     "rich_text_zNjyc8",
