@@ -192,6 +192,32 @@
             "image_badge_horizontal_position": "left"
           }
         },
+        "slide_btGHpn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_1500x750_1.svg",
+            "mobile_image": "shopify://shop_images/After_school.svg",
+            "heading": "Back to School",
+            "heading_size": "hxxl",
+            "show_heading_shadow": false,
+            "subheading": "",
+            "button_label": "SHOP AFTER-SCHOOL SNACKS",
+            "link": "https://potsfortots.co.uk/collections/build-your-box?filter.p.m.custom.box_builder_filters=Snacks%2FExtras",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
+        },
         "slide_EFdemU": {
           "type": "slide",
           "settings": {
@@ -223,6 +249,7 @@
         "slide_c6rpWy",
         "slide_hgbCiy",
         "slide_6mcVhA",
+        "slide_btGHpn",
         "slide_EFdemU"
       ],
       "settings": {
