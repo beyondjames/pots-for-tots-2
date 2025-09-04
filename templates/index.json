@@ -338,6 +338,7 @@
         "text_khDxDM",
         "button_4yjM8i"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -409,6 +410,7 @@
         "brand_w8dcaP",
         "brand_JzaxTa"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1",
         "padding_top": 36,
@@ -418,8 +420,9 @@
     "image_banner_bWMPQb": {
       "type": "image-banner",
       "settings": {
+        "image": "shopify://shop_images/Lifestyle_banner_-_gifting.svg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -468,6 +471,7 @@
         "column_tx4PAN",
         "column_RaWPKf"
       ],
+      "disabled": true,
       "settings": {
         "title": "PFT x Annabel Karmel",
         "heading_size": "h1",
@@ -602,6 +606,7 @@
     },
     "featured_collection_nrDTFe": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Save with bundles!",
         "heading_size": "h1",
@@ -659,6 +664,7 @@
         "template--16755842351362__7e794788-fc62-4baf-b008-d2d8ed71fd6c-text-1",
         "template--16755842351362__7e794788-fc62-4baf-b008-d2d8ed71fd6c-button-1"
       ],
+      "disabled": true,
       "settings": {
         "height": "adapt",
         "desktop_image_width": "medium",
@@ -676,6 +682,7 @@
     },
     "1719331689a4fcf305": {
       "type": "apps",
+      "disabled": true,
       "settings": {
         "include_margins": true
       }
@@ -748,6 +755,7 @@
     },
     "featured_blog_aGFxAU": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "What's new on The Parent Hub?",
         "heading_size": "h1",
@@ -786,6 +794,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-1",
+        "image": "shopify://shop_images/Recycled_background_low_res.jpg",
         "full_width": true,
         "content_alignment": "center",
         "padding_top": 60,
