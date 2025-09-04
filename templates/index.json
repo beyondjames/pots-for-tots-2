@@ -241,11 +241,12 @@
         "column_FNaUJd": {
           "type": "column",
           "settings": {
-            "title": "Mexican-Style Burrito Bowl",
+            "image": "shopify://shop_images/Sweet_Potato_Curry.png",
+            "title": "Sweet Potato Curry",
             "title_size": "h2",
             "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
+            "link_label": "",
+            "link": ""
           }
         },
         "column_XgNy9B": {
