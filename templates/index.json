@@ -252,7 +252,8 @@
         "column_XgNy9B": {
           "type": "column",
           "settings": {
-            "title": "Cheesy Veg Pasta Bake",
+            "image": "shopify://shop_images/Macaroni_Cheese_2.png",
+            "title": "Mac & Cheese",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
@@ -262,7 +263,8 @@
         "column_QDQrVz": {
           "type": "column",
           "settings": {
-            "title": "NEW! Veggie Chilli",
+            "image": "shopify://shop_images/Fish_Pie_2.png",
+            "title": "Fish Pie",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
@@ -272,7 +274,8 @@
         "column_Yc6brM": {
           "type": "column",
           "settings": {
-            "title": "Cheesy Veg Bites",
+            "image": "shopify://shop_images/Mediterranean_Veg_Orzo_2.png",
+            "title": "Mediterranean Veg Orzo",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
