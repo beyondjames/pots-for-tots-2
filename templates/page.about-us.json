@@ -53,7 +53,8 @@
         "buttons_iFD7YV"
       ],
       "settings": {
-        "image": "shopify://shop_images/PFT_Pattern_Background_copy.jpg",
+        "image": "shopify://shop_images/Website_homepage_1500x750_3.png",
+        "image_3": "shopify://shop_images/Website_homepage_product_images_11_10.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
@@ -118,7 +119,7 @@
         "row_tmiQpL": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Lentil_bol_square.png",
+            "image": "shopify://shop_images/AK_website_mobile_533_x_434_px_6.png",
             "caption": "we are",
             "heading": "Responsible",
             "text": "<p>We think children deserve to eat REAL food, whether that’s at home or on the go. We have a responsibility to provide nutritious food for the future health of our children. We are the change we’d like to see.</p>",
@@ -129,7 +130,7 @@
         "row_WD8QBm": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/IMG_1826_2.jpg",
+            "image": "shopify://shop_images/Website_homepage_product_images_11_11.png",
             "caption": "we are",
             "heading": "Honest",
             "text": "<p>We pride ourselves on being an honest food business, from what’s in our food to what our daily lives look like. Forget misleading food labels or marketing messaging. Forget \"perfect parent” social posts - we’re here to show the realities - both the joy and struggles of being a parent.</p>",
@@ -140,7 +141,7 @@
         "row_JJxeUU": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
+            "image": "shopify://shop_images/Website_homepage_product_images_11_13.png",
             "caption": "we are",
             "heading": "Supportive",
             "text": "<p>We are parents supporting parents. When it comes to raising a child, it’s hard to figure out what’s best and when. We’ve gathered all the information to cut through the noise so parents can come to us when they need a little help</p>",
@@ -151,7 +152,7 @@
         "row_eenibp": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Snacks_copy.jpg",
+            "image": "shopify://shop_images/Website_homepage_product_images_11_14.png",
             "caption": "we are",
             "heading": "Sustainable",
             "text": "<p>We always look at the impact our business has on the environment in every aspect of our brand and product, from the packaging and delivery, to the ingredients, cooking processes and food waste.</p>",
@@ -162,7 +163,6 @@
         "row_LxU9aH": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Cottage_pie_square.png",
             "caption": "We Are",
             "heading": "Trailblazing",
             "text": "<p>We’re here to make an impact in the children’s food space. We’re not afraid to call out big brands, who use misleading marketing messages and we will always be an advocate for the health of our children and yours.</p>",
@@ -229,6 +229,7 @@
         "text_TygPaX",
         "button_XhCH6G"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -318,7 +319,7 @@
         "button_LBxLCF"
       ],
       "settings": {
-        "image": "shopify://shop_images/NEWSLETTER_mobile_6.png",
+        "image": "shopify://shop_images/Pots_For_Tots_Lucy_Upton_Blog_2.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
@@ -366,7 +367,6 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/NEWSLETTER_mobile_6.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "image_heading": "",
@@ -413,8 +413,8 @@
         "text_AUMwHp",
         "button_WyM9GY"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/Buy_Women_Built_image.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -435,7 +435,6 @@
         "column_tVy4UN": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/6_b70380f0-7dba-4a56-b884-16c21b91789a.png",
             "title": "Cherrelle",
             "text": "<p>Founder/CEO</p>",
             "link_label": "",
@@ -445,7 +444,6 @@
         "column_MWBjKx": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/3_8e4e8022-0e16-429a-a8eb-02fa6aee7325.png",
             "title": "Lucy",
             "text": "<p>Children's Dietitian</p>",
             "link_label": "",
@@ -455,7 +453,6 @@
         "column_hCNqJr": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/10_e1e5e224-f80d-4077-9c6f-62c563173a73.png",
             "title": "Lizzy",
             "text": "<p>Head of Product</p>",
             "link_label": "",
@@ -465,7 +462,6 @@
         "column_Umf9FC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/7_5d10fdda-96bb-4535-aace-6432c9b25b8b.png",
             "title": "Verity",
             "text": "<p>Head of Creative</p>",
             "link_label": "",
@@ -476,7 +472,6 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/5_b6e4c880-ad7d-434a-bbc4-16eb540c1843.png",
             "title": "Flora",
             "text": "<p>Head of Growth</p>",
             "link_label": "",
@@ -486,7 +481,6 @@
         "column_gY8UJg": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Team_images_11.png",
             "title": "Jamie",
             "text": "<p>Head of Operations</p>",
             "link_label": "",
@@ -496,7 +490,6 @@
         "column_rzfYa3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/4_313e96ac-4e5f-4f85-90de-1388f3c8f7c9.png",
             "title": "Katie",
             "text": "<p>Head of Digital</p>",
             "link_label": "",
@@ -506,7 +499,6 @@
         "column_tbfNTB": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/8_f80e4c0c-245a-42a2-8698-0b5746584595.png",
             "title": "Jade",
             "text": "<p>Business Operations</p>",
             "link_label": "",
@@ -516,7 +508,6 @@
         "column_FPAqt3": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/9_18506f77-740f-4dfb-92f3-fb41ff98d3cf.png",
             "title": "Jazz",
             "text": "<p>Content Manager</p>",
             "link_label": "",
@@ -526,7 +517,6 @@
         "column_H9GVPC": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/1_b5b819d3-4fa4-45de-bea5-3c28b2ba12a5.png",
             "title": "Ali",
             "text": "<p>Head Chef</p>",
             "link_label": "",
@@ -537,7 +527,6 @@
           "type": "column",
           "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/2_2fe45570-ff55-41fc-a5c7-fc4831f0c2dc.png",
             "title": "Yulduz",
             "text": "<p>Chef</p>",
             "link_label": "",
@@ -558,6 +547,7 @@
         "column_H9GVPC",
         "column_iTBGCA"
       ],
+      "disabled": true,
       "settings": {
         "title": "Meet the team",
         "heading_size": "h1",
@@ -603,24 +593,16 @@
           "settings": {
             "smallprint": "We don't bombard you with marketing emails. We respect your privacy."
           }
-        },
-        "klaviyo_email_marketing_sms_form_embed_block_FNzXK3": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "XDcips"
-          }
         }
       },
       "block_order": [
         "heading_c3qypM",
         "paragraph_LCEMAT",
         "email_form_Vn7BeL",
-        "smallprint_jbypam",
-        "klaviyo_email_marketing_sms_form_embed_block_FNzXK3"
+        "smallprint_jbypam"
       ],
       "settings": {
         "color_scheme": "",
-        "image": "shopify://shop_images/Recycled_background_medium_res.png",
         "full_width": true,
         "content_alignment": "center",
         "padding_top": 40,
