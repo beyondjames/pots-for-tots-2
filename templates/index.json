@@ -818,6 +818,16 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "custom_liquid_JFxDEN": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-XDcips\"></div>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -837,6 +847,7 @@
     "1719331689a4fcf305",
     "custom_testimonials_pXPcd6",
     "featured_blog_aGFxAU",
-    "custom_newsletter_titGVp"
+    "custom_newsletter_titGVp",
+    "custom_liquid_JFxDEN"
   ]
 }
