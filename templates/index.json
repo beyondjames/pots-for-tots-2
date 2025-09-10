@@ -824,7 +824,7 @@
       "name": "t:sections.custom-liquid.presets.name",
       "settings": {
         "custom_liquid": "<div class=\"klaviyo-form-XDcips\"></div>",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding_top": 40,
         "padding_bottom": 52
       }
