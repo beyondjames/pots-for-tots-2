@@ -50,7 +50,7 @@
       "settings": {
         "image": "shopify://shop_images/Website_homepage_1500x750_7.svg",
         "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image_height": "medium",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -802,7 +802,7 @@
         "paragraph_kYYWPA": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!</p>"
+            "text": "<p>Parenting is an adventure. Through conversations, community, and resources, we’re here to support and connect a diverse group of parents — and now we’re bringing that same mission to the UAE. ✨</p><p><strong>Sign up to be the first to hear about our launch, get early access to new products, and receive exclusive updates.</strong></p>"
           }
         }
       },
