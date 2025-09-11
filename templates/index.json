@@ -794,7 +794,6 @@
       "blocks": {
         "heading_N3NP9V": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Join our journey",
             "heading_size": "h1"
@@ -805,19 +804,26 @@
           "settings": {
             "text": "<p>Parenting is an adventure. Through conversations, community, and resources, we’re here to support and connect a diverse group of parents — and now we’re bringing that same mission to the UAE. ✨</p><p><strong>Sign up to be the first to hear about our launch, get early access to new products, and receive exclusive updates.</strong></p>"
           }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_qetHx8": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "YqcXCy"
+          }
         }
       },
       "block_order": [
         "heading_N3NP9V",
-        "paragraph_kYYWPA"
+        "paragraph_kYYWPA",
+        "klaviyo_email_marketing_sms_form_embed_block_qetHx8"
       ],
       "settings": {
         "color_scheme": "scheme-1",
         "image": "shopify://shop_images/Recycled_background_low_res.jpg",
         "full_width": true,
         "content_alignment": "center",
-        "padding_top": 60,
-        "padding_bottom": 60
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "custom_liquid_JFxDEN": {
