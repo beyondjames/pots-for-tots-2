@@ -193,65 +193,6 @@
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
         "disabled": false,
         "settings": {}
-      },
-      "2498716461440425698": {
-        "type": "shopify://apps/influence-io-loyalty-rewards/blocks/popup-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
-        "disabled": false,
-        "settings": {}
-      },
-      "6251270934270006384": {
-        "type": "shopify://apps/stape-server-gtm/blocks/gtm/7e13c847-7971-409d-8fe0-29ec14d5f048",
-        "disabled": false,
-        "settings": {}
-      },
-      "17151115064775110295": {
-        "type": "shopify://apps/recharge-subscriptions/blocks/recharge-theme/371eed76-0b44-4869-9813-730372ea378e",
-        "disabled": false,
-        "settings": {
-          "color_brand": "#467C99",
-          "contrast_color": "#FFFFFF",
-          "color_brand_secondary": "#467C99",
-          "corners": "8px",
-          "app_background": "#f9f8f4",
-          "app_container": 1200,
-          "app_vertical_padding": 32,
-          "images_aspect_ratio": "1",
-          "cards_background": "#FFFFFF",
-          "cards_border_color": "rgba(0,0,0,0)"
-        }
-      },
-      "5149645339031002760": {
-        "type": "shopify://apps/order-limits-minmaxify/blocks/app-embed-block/3acfba32-89f3-4377-ae20-cbb9abc48475",
-        "disabled": false,
-        "settings": {
-          "async": false
-        }
-      },
-      "10830403595879607806": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-core/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
-        "settings": {
-          "url_key": "www.potsfortots.co.uk",
-          "lang": "auto",
-          "enable_syndication": false
-        }
-      },
-      "15316669992541710076": {
-        "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-snippet/92a082e5-b297-4e88-b428-ac96cbc505f9",
-        "disabled": false,
-        "settings": {
-          "star": "#5c8972",
-          "text_color": "#40250a",
-          "snippet_mode": "default",
-          "text": "Reviews",
-          "line_break": false,
-          "listen_for_changes": true,
-          "rating_without_brackets": false,
-          "format_review_count": false,
-          "show_popup": true,
-          "anchor_to_reviews_widget": true,
-          "show_empty_stars": false
-        }
       }
     },
     "color_schemes": {
