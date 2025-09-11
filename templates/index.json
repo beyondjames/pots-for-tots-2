@@ -249,11 +249,33 @@
             "link": ""
           }
         },
+        "column_6dRGUw": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Apple_and_Cinnamon_Muffins.png",
+            "title": "Apple & Cinnamon Muffins",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_XgNy9B": {
           "type": "column",
           "settings": {
             "image": "shopify://shop_images/Macaroni_Cheese_2.png",
             "title": "Mac & Cheese",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FTdcTj": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Broccoli_tots.png",
+            "title": "Broccoli Tots",
             "title_size": "h2",
             "text": "",
             "link_label": "",
@@ -271,6 +293,17 @@
             "link": ""
           }
         },
+        "column_pDykh4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Cheesy_veg_bites.png",
+            "title": "Cheesy Veg Bites",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_Yc6brM": {
           "type": "column",
           "settings": {
@@ -281,13 +314,40 @@
             "link_label": "",
             "link": ""
           }
+        },
+        "column_Ui9YxF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_product_images_11_14.png",
+            "title": "View all meals",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_kxWyjz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_product_images_11_10.png",
+            "title": "View all snacks",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "column_FNaUJd",
+        "column_6dRGUw",
         "column_XgNy9B",
+        "column_FTdcTj",
         "column_QDQrVz",
-        "column_Yc6brM"
+        "column_pDykh4",
+        "column_Yc6brM",
+        "column_Ui9YxF",
+        "column_kxWyjz"
       ],
       "settings": {
         "title": "Big nutrition, little effort!",
@@ -295,7 +355,7 @@
         "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, ready in minutes! </p>",
         "image_width": "full",
         "image_ratio": "square",
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "",
