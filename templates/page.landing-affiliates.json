@@ -103,25 +103,9 @@
         "padding_bottom": 52
       }
     },
-    "1718703387fe01fff7": {
-      "type": "apps",
-      "blocks": {
-        "klaviyo_email_marketing_sms_form_embed_block_rhNXU3": {
-          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
-          "settings": {
-            "formId": "SatZw6"
-          }
-        }
-      },
-      "block_order": [
-        "klaviyo_email_marketing_sms_form_embed_block_rhNXU3"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "featured_collection_Fgf9ic": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Can't wait until then? Discover our bestsellers!",
         "heading_size": "h1",
@@ -150,6 +134,7 @@
     },
     "featured_blog_RtECUM": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Check out the latest on our Parent Hub",
         "heading_size": "h1",
@@ -170,7 +155,6 @@
     "main",
     "image_banner_QzQ7yb",
     "rich_text_nbdicX",
-    "1718703387fe01fff7",
     "featured_collection_Fgf9ic",
     "featured_blog_RtECUM"
   ]
