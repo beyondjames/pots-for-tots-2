@@ -46,6 +46,7 @@
     },
     "featured_collection_6pDfz6": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Check out our family favourites!",
         "heading_size": "h1",
