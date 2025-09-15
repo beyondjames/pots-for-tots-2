@@ -43,10 +43,10 @@
         "text_BGFg3G"
       ],
       "settings": {
-        "image": "shopify://shop_images/Website_homepage_13.png",
+        "image": "shopify://shop_images/Website_homepage_1000_x_500_px_2.png",
         "image_3": "shopify://shop_images/AK_website_mobile_533_x_434_px.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
@@ -64,23 +64,21 @@
       "blocks": {
         "heading_VHXLGt": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
+            "heading": "Love what we do? Help us spread the word!",
+            "heading_size": "h2"
           }
         },
         "text_kbXY6F": {
           "type": "text",
           "settings": {
-            "text": "<p>Sign up to be the first to hear about our exclusive new recipes developed with the UK's no. 1 children's cookery author.</p>"
+            "text": "<p>Earn commission every time you share Pots for Tots with your audience. Whether you’re a blogger, content creator, or just passionate about helping parents discover healthy meals for little ones, our affiliate programme is a simple way to partner with us. </p><p>We believe parenting is a team effort — and we’d love for you to be part of ours. By joining our affiliate programme, you can share the gift of healthy, stress-free meals with other families and earn rewards along the way. It’s a simple way to support parents, spread the word, and grow together as a community.</p><p>It's easy to sign up, just follow the link below to apply to join our AWIN affiliate programme, and once approved you can start adding links and creative to your site or social and start earning.  </p><p></p><p></p>"
           }
         },
         "button_Cg8XkB": {
           "type": "button",
-          "disabled": true,
           "settings": {
-            "button_label": "Button label",
+            "button_label": "APPLY TO JOIN",
             "button_link": "",
             "button_style_secondary": false,
             "button_label_2": "",
