@@ -318,8 +318,8 @@
         "column_Ui9YxF": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_product_images_11_14.png",
-            "title": "View all meals",
+            "image": "shopify://shop_images/50.png",
+            "title": "Why we love frozen food",
             "title_size": "h2",
             "text": "",
             "link_label": "",
@@ -329,8 +329,8 @@
         "column_kxWyjz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_product_images_11_10.png",
-            "title": "View all snacks",
+            "image": "shopify://shop_images/Website_homepage_product_images_11_15.png",
+            "title": "Our Children's Dietitian",
             "title_size": "h2",
             "text": "",
             "link_label": "",
