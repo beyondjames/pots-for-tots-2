@@ -484,7 +484,7 @@
     "image_banner_bWMPQb": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/Lifestyle_banner_carrefour.png",
+        "image": "shopify://shop_images/Lifestyle_banner_1.png",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "middle-center",
