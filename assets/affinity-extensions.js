@@ -50,32 +50,6 @@ const rechargeAPI = {
     return this.session;
   },
 
-  // async fetchSubscriptions() {
-  //   const response = await recharge.subscription
-  //     .listSubscriptions(this.session, {
-  //       sort_by: 'id-asc',
-  //       status: 'Active',
-  //     })
-  //     .catch((error) => {
-  //       console.error('Fetching subscriptions failed:', error);
-  //       throw error;
-  //     });
-  //   return response.subscriptions;
-  // },
-
-  // async fetchOrders() {
-  //   const response = await recharge.order
-  //     .listOrders(this.session, {
-  //       limit: 10,
-  //       sort_by: 'id-asc',
-  //     })
-  //     .catch((error) => {
-  //       console.error('Fetching orders failed:', error);
-  //       throw error;
-  //     });
-  //   return response.orders;
-  // },
-
   async fetchCharges() {
     const response = await recharge.charge
       .listCharges(this.session, {
@@ -87,6 +61,15 @@ const rechargeAPI = {
         throw error;
       });
     return response.charges;
+  },
+
+  // Function to get next charge date from a subscription id
+  async getNextChargeDate(subscriptionId) {
+    const subscription = await recharge.subscription.getSubscription(this.session, subscriptionId).catch((error) => {
+      console.error('Fetching subscription failed:', error);
+      throw error;
+    });
+    return subscription.next_charge_scheduled_at;
   },
 
   async updateNextCharge(subscriptionId, nextChargeDate) {

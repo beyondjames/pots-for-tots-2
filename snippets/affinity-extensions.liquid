@@ -6,7 +6,10 @@
 
 {% comment %} Load affinity custom scripts and styling {% endcomment %}
 <script src="{{ 'affinity-extensions.js' | asset_url }}" async></script>
+<script src="{{ 'custom-date-picker.js' | asset_url }}" async></script>
+
 {{ 'affinity-extensions.css' | asset_url | stylesheet_tag }}
+{{ 'custom-date-picker.css' | asset_url | stylesheet_tag }}
 
 {% comment %} Render Affinity dashboard widgets {% endcomment %}
 {% render 'affinity-delivery-date-widget' %}

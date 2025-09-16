@@ -1,194 +1,152 @@
+{%- assign disabled_weekdays = '' -%}
+{%- unless settings.enable_sunday -%}{% assign disabled_weekdays = disabled_weekdays | append: '0,' %}{% endunless -%}
+{%- unless settings.enable_monday -%}{% assign disabled_weekdays = disabled_weekdays | append: '1,' %}{% endunless -%}
+{%- unless settings.enable_tuesday -%}{% assign disabled_weekdays = disabled_weekdays | append: '2,' %}{% endunless -%}
+{%- unless settings.enable_wednesday -%}
+  {% assign disabled_weekdays = disabled_weekdays | append: '3,' -%}
+{%- endunless -%}
+{%- unless settings.enable_thursday -%}{% assign disabled_weekdays = disabled_weekdays | append: '4,' %}{% endunless -%}
+{%- unless settings.enable_friday -%}{% assign disabled_weekdays = disabled_weekdays | append: '5,' %}{% endunless -%}
+{%- unless settings.enable_saturday -%}{% assign disabled_weekdays = disabled_weekdays | append: '6,' %}{% endunless -%}
+
 <script>
-  class DatePicker extends HTMLElement {
-    constructor() {
-      super();
-    }
-
-    offset = 3;
-
-    connectedCallback() {
-      this.innerHTML = '<div class="calendar-container"></div>';
-      this.initialiseCalendar();
-    }
-
-    initialiseCalendar() {
-      console.log('Initialising calendar');
-      const { Calendar } = window.VanillaCalendarPro;
-      const container = this.querySelector('.calendar-container');
-      if (!container) {
-        console.warn('Calendar container not found!');
-        return;
-      }
-      const offset = this.offset;
-
-      // Create options for calendar
-      const options = {
-        selectedTheme: 'light',
-        firstWeekday: 0,
-        dateMin: new Date(new Date().setDate(new Date().getDate() + 3)),
-        dateMax: new Date(new Date().setMonth(new Date().getMonth() + 3)),
-        disableDates: [],
-        disableWeekdays: [0, 2, 3, 5, 6, 7],
-        onClickDate(self, event) {
-          console.log('Self:', self.context.selectedDates);
-          // enable the reschedule button and write the date to a property
-          const rescheduleButton = document.querySelector('.affinity-reschedule');
-          console.log('Reschedule button:', rescheduleButton);
-          rescheduleButton.disabled = false;
-          // add X days to the selected date
-          const selectedDate = new Date(self.context.selectedDates[0]);
-          console.log('Selected date before offset:', selectedDate);
-          console.log('Offset:', this.offset);
-          selectedDate.setDate(selectedDate.getDate() - offset);
-          console.log('Selected date after offset:', selectedDate);
-          rescheduleButton.setAttribute('data-date', formatDate(selectedDate));
-          console.log('Selected date:', selectedDate);
-        },
-      };
-
-      // Create a calendar instance and initialize it.
-      const calendar = new Calendar(container, options);
-      calendar.init();
-    }
-
-    // Function to get cart object for testing inside the custom element
-    async getCart() {
-      const response = await fetch('/cart.js');
-      const data = await response.json();
-      console.log('Cart:', data);
-      return data.items;
-    }
-  }
-
-  customElements.define('date-picker', DatePicker);
-
-  /**
-   *  Global function to be accessed by vanilla-calendar-pro onClickDate event
-   */
-
-  // Function to format date
-  function formatDate(dateString) {
-    const date = new Date(dateString);
-    return date.toISOString().split('T')[0];
-  }
-
   class RescheduleModal extends HTMLElement {
+    static get observedAttributes() {
+      return ['next-charge-date', 'subscription-ids'];
+    }
+
+    attributeChangedCallback(name, oldValue, newValue) {
+      if (name === 'next-charge-date') {
+        this.nextChargeDate = newValue;
+      } else if (name === 'subscription-ids') {
+        this.subscriptionIds = newValue;
+      }
+    }
+
     connectedCallback() {
+      document.body.classList.add('modal-open'); // Prevent background scroll
+      this.nextChargeDate = this.getAttribute('next-charge-date');
+      this.subscriptionIds = this.getAttribute('subscription-ids');
       this.render();
-      // Close on close button
-      this.querySelector('.deliverymodal__close').addEventListener('click', () => this.close());
-      // Close on overlay click
-      this.querySelector('.deliverymodal__overlay').addEventListener('mousedown', (e) => {
-        if (e.target === this.querySelector('.deliverymodal__overlay')) {
-          this.close();
-        }
-      });
-      // Reschedule button click
-      this.querySelector('.affinity-reschedule').addEventListener('click', async () => {
-        // Disable the button to prevent multiple clicks
-        this.querySelector('.affinity-reschedule').classList.add('loading');
-        this.querySelector('.affinity-reschedule').disabled = true;
-
-        // get the date from the button attribute
-        const date = this.querySelector('.affinity-reschedule').getAttribute('data-date');
-        // select the parent reschedule-modal element
-        const rescheduleModal = this.closest('reschedule-modal');
-        // get the subscriptionIds from the reschedule-modal object
-        const subscriptionIds = rescheduleModal.getAttribute('data-subscription-ids');
-        this.updateNextChargeDate(subscriptionIds, date)
-          .then((response) => {
-            this.close();
-
-            // Refresh the delivery date widget
-            if (document.getElementById('affinity-delivery-date-section')) {
-              deliveryDateWidgetstateManager.refreshDeliveryDateWidget();
-            }
-
-            // Dispatch a custom event to refresh the entire Affinity dashboard
-            document.dispatchEvent(new CustomEvent('Affinity:refresh'));
-          })
-          .catch((error) => {
-            console.error('Error updating next charge date:', error);
-          });
-      });
-      // Cancel button click
-      this.querySelector('.affinity-cancel').addEventListener('click', () => this.close());
-      // Radio button change event
-      {% comment %} this.querySelectorAll('input[name="delay"]').forEach((radio) => {
-        radio.addEventListener('change', (event) => {
-          switch (event.target.value) {
-            case '1':
-              console.log('Delay for 1 week selected');
-              break;
-            case '2':
-              console.log('Delay for 2 weeks selected');
-              break;
-            case 'choose':
-              console.log('Choose a specific date selected');
-              // Show the date picker
-              this.querySelector('date-picker').style.display = 'block';
-              break;
-          }
-          console.log('Radio button changed:', event.target.value);
-        });
-      }); {% endcomment %}
+      this.setupListeners();
     }
 
     render() {
       this.innerHTML = `
-      <div class="deliverymodal__overlay">
-        <div class="deliverymodal__modal">
-          <div class="deliverymodal__close-wrapper">
-            <span class="deliverymodal__close" role="button" tabindex="0" aria-label="Close">
-              <div>
-                <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="m1 1 12 12M1 13 13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></div><div style="border: 0px; clip: rect(0px, 0px, 0px, 0px); clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; white-space: nowrap;">
-              </div>
-            </span>
-          </div>
-          <div class="deliverymodal__header">
-            <h2 class="deliverymodal__title">When would you like your next order?</h2>
-            <p class="deliverymodal__description">Select a new delivery date for your order.</p>
-          </div>
-          <div class="deliverymodal__body">
-            {% comment %} <fieldset>
-              <input type="radio" id="1_week" name="delay" value="1">
-              <label for="1_week">Delay for 1 week</label><br>
-              <input type="radio" id="2_weeks" name="delay" value="1">
-              <label for="2_weeks">Delay for 2 weeks</label><br>
-              <input type="radio" id="choose_date" name="delay" value="choose">
-              <label for="choose_date">Choose a specific date</label>
-            </fieldset> {% endcomment %}
-            <date-picker></date-picker>
-          </div>
-          <div class="deliverymodal__footer">
-            <button class="deliverymodal__button affinity-reschedule" disabled>
-              <span class="loader"></span>
-              <span class="label">Reschedule</span>
-            </button>
-            <button class="deliverymodal__button affinity-cancel">Cancel</button>
+        <div class="deliverymodal__overlay recharge-theme">
+          <div class="deliverymodal__modal">
+            <div class="deliverymodal__close-wrapper">
+              <span class="deliverymodal__close" role="button" tabindex="0" aria-label="Close">
+                <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                  <path d="m1 1 12 12M1 13 13 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </div>
+            <div class="deliverymodal__header">
+              <h2 class="deliverymodal__title">When would you like your next order?</h2>
+              <p class="deliverymodal__description">{{ settings.datepicker_message }}</p>
+            </div>
+            <div class="deliverymodal__body">
+              <fieldset>
+                <label for="1_week"><input type="radio" id="1_week" name="delay" value="1"><span>Delay for 1 week</span></label>
+                <label for="2_weeks"><input type="radio" id="2_weeks" name="delay" value="2"><span>Delay for 2 weeks</span></label>
+                <label for="choose_date"><input type="radio" id="choose_date" name="delay" value="choose"><span>Choose a specific date</span></label>
+              </fieldset>
+              <date-picker
+                page="account"
+                offset="2"
+                cutoff-hours='{{ settings.cutoff_hours }}'
+                cutoff-minutes='{{ settings.cutoff_minutes }}'
+                disabled-dates='{{ settings.disabled_dates | split: ',' | json }}'
+                enabled-dates='{{ settings.enabled_dates | split: ',' | json }}'
+                disabled-weekdays='{{ disabled_weekdays | split: ',' | json }}'
+                style="display: none;"
+              ></date-picker>
+            </div>
+            <div class="deliverymodal__footer">
+              <button class="deliverymodal__button affinity-reschedule" disabled>
+                <span class="loader"></span>
+                <span class="label">Reschedule</span>
+              </button>
+              <button class="deliverymodal__button affinity-cancel">Cancel</button>
+            </div>
           </div>
         </div>
-      </div>
       `;
     }
 
+    setupListeners() {
+      this.querySelector('.deliverymodal__close').addEventListener('click', () => this.close());
+      this.querySelector('.deliverymodal__overlay').addEventListener('mousedown', (e) => {
+        if (e.target === this.querySelector('.deliverymodal__overlay')) this.close();
+      });
+      this.querySelector('.affinity-reschedule').addEventListener('click', async () => {
+        const button = this.querySelector('.affinity-reschedule');
+        button.classList.add('loading');
+        button.disabled = true;
+        const date = button.getAttribute('data-date');
+        console.log('Rescheduling to:', date);
+        try {
+          await this.updateNextChargeDate(this.subscriptionIds, date);
+          this.close();
+          if (document.getElementById('affinity-delivery-date-section')) {
+            deliveryDateWidgetstateManager.refreshDeliveryDateWidget();
+          }
+          document.dispatchEvent(new CustomEvent('Affinity:refresh'));
+        } catch (error) {
+          console.error('Error updating next charge date:', error);
+        }
+      });
+      this.querySelector('.affinity-cancel').addEventListener('click', () => this.close());
+      this.querySelectorAll('input[name="delay"]').forEach((radio) => {
+        radio.addEventListener('change', (event) => {
+          const datePicker = this.querySelector('date-picker');
+          switch (event.target.value) {
+            case '1':
+              datePicker.style.display = 'none';
+              this.updateRescheduleButton(7);
+              break;
+            case '2':
+              datePicker.style.display = 'none';
+              this.updateRescheduleButton(14);
+              break;
+            case 'choose':
+              datePicker.style.display = 'block';
+              this.updateRescheduleButton(null);
+              break;
+          }
+        });
+      });
+    }
+
+    updateRescheduleButton(days) {
+      const button = this.querySelector('.affinity-reschedule');
+      if (days != null) button.disabled = false;
+      const nextCharge = new Date(this.nextChargeDate);
+      nextCharge.setDate(nextCharge.getDate() + days);
+      button.setAttribute('data-date', this.formatDate(nextCharge));
+    }
+
     close() {
+      document.body.classList.remove('modal-open'); // Restore scroll
       this.remove();
     }
 
     async updateNextChargeDate(ids, date) {
-      // split the subscription IDs by comma
-      const idArray = ids.split(',').map((id) => id.trim());
-      // Create an array of promises to update each subscription
-      const updatePromises = idArray.map((id) => rechargeAPI.updateNextCharge(id, date));
-      // Wait for all promises to resolve
-      try {
-        const results = await Promise.all(updatePromises);
-        return results;
-      } catch (error) {
-        console.error('Error updating subscriptions:', error);
-        throw error; // Re-throw the error to handle it in the calling function
-      }
+      console.log("Subscription IDs:", ids);
+      console.log("Next Charge Date:", date);
+      const idArray = ids.split(',').map(id => id.trim());
+      alert(`Updating next charge date to: ${date}, for subscriptions: ${idArray}`);
+      {% comment %} const updatePromises = idArray.map(id => rechargeAPI.updateNextCharge(id, date)); {% endcomment %}
+      {% comment %} return Promise.all(updatePromises); {% endcomment %}
+      return true;
+    }
+
+    formatDate(date) {
+      const year = date.getFullYear();
+      const month = String(date.getMonth() + 1).padStart(2, '0');
+      const day = String(date.getDate()).padStart(2, '0');
+      return `${year}-${month}-${day}`;
     }
   }
 

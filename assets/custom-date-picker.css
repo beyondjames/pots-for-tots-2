@@ -1,0 +1,77 @@
+date-picker {
+  --border-radius: 50%;
+  --heading-font-size: 24px;
+  --subheading-font-size: 16px;
+  --button-font-size: 16px;
+  --button-size: 36px;
+  --button-padding: 0.75rem;
+  --spacing: 0.5rem;
+  --primary-color: #ffaf00;
+  --secondary-color: #000;
+}
+
+date-picker .vc {
+  border: 1px solid var(--recharge-color-brand-60);
+  border-radius: var(--recharge-corners-radius);
+  margin-bottom: var(--spacing);
+}
+
+[data-vc='header'] {
+  padding-bottom: var(--spacing);
+}
+
+[data-vc-month] {
+  font-size: var(--heading-font-size);
+}
+
+[data-vc-date-btn] {
+  width: var(--button-size);
+  height: var(--button-size);
+  border-radius: var(--border-radius);
+}
+
+[data-vc-date][data-vc-date-hover]:has(+ [data-vc-date-disabled]) [data-vc-date-btn],
+[data-vc-date][data-vc-date-selected]:has(+ [data-vc-date-disabled]) [data-vc-date-btn] {
+  border-radius: var(--border-radius);
+}
+
+[data-vc-theme='light'] .vc-months__month[data-vc-months-month-selected],
+[data-vc-theme='light'] .vc-years__year[data-vc-years-year-selected],
+[data-vc-theme='light'] .vc-date__btn:hover,
+[data-vc-theme='light'] .vc-date[data-vc-date-selected] .vc-date__btn,
+[data-vc-theme='light'] .vc-date[data-vc-date-selected] .vc-date__btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+[data-vc-theme='light'] .vc-date[data-vc-date-today] .vc-date__btn {
+  /* background-color: rgb(92, 137, 114); */
+  opacity: 0.5;
+}
+
+[data-vc-date-btn],
+[data-vc-week-day],
+[data-vc='year'],
+[data-vc-theme='light'] .vc-months__month[data-vc-months-month] {
+  font-size: var(--heading-font-size);
+}
+
+[data-vc-date-btn],
+[data-vc-week-day] {
+  font-size: var(--subheading-font-size);
+}
+
+[data-vc-date-btn] {
+  font-size: var(--button-font-size);
+}
+
+[data-vc-date-btn] {
+  padding: var(--button-padding);
+}
+
+[data-vc-theme='light'] .vc-week__day[data-vc-week-day] {
+  color: var(--recharge-typography-primary);
+}
+[data-vc-theme='light'] .vc-week__day[data-vc-week-day-off] {
+  color: #cbd5e1;
+}
