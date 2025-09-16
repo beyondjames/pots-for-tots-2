@@ -29,7 +29,7 @@
 <p>{{ settings.datepicker_message }}</p>
 <date-picker
   page='cart'
-  offset='3'
+  offset='{{ settings.offset }}'
   cutoff-hours='{{ settings.cutoff_hours }}'
   cutoff-minutes='{{ settings.cutoff_minutes }}'
   disabled-dates='{{ settings.disabled_dates | split: ',' | json }}'

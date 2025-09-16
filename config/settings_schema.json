@@ -1550,6 +1550,21 @@
       },
       {
         "type": "header",
+        "content": "Delivery date offset",
+        "info": "Select a date offset for calculating the delivery date from the billing date."
+      },
+      {
+        "type": "range",
+        "id": "offset",
+        "min": 0,
+        "max": 6,
+        "step": 1,
+        "unit": "d",
+        "label": "Offset",
+        "default": 3
+      },
+      {
+        "type": "header",
         "content": "Cutoff time",
         "info": "Set a cutoff time for delivery."
       },

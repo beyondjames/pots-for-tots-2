@@ -54,7 +54,7 @@
               </fieldset>
               <date-picker
                 page="account"
-                offset="2"
+                offset='{{ settings.offset }}'
                 cutoff-hours='{{ settings.cutoff_hours }}'
                 cutoff-minutes='{{ settings.cutoff_minutes }}'
                 disabled-dates='{{ settings.disabled_dates | split: ',' | json }}'
