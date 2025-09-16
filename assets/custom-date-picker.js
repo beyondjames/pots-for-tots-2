@@ -78,6 +78,13 @@ class DatePicker extends HTMLElement {
     const currentMinutes = currentTime.getMinutes();
 
     dateMin.setDate(dateMin.getDate() + this.offset);
+
+    // Apply an extra day to logic if it's a Friday
+    if (today.getDay() == 5) {
+      console.log('It is a friday');
+      dateMin.setDate(dateMin.getDate() + 1);
+    }
+
     if (currentHour > 16 || (currentHour === 16 && currentMinutes >= 30)) {
       dateMin.setDate(dateMin.getDate() + 1);
     }
@@ -140,7 +147,7 @@ class DatePicker extends HTMLElement {
           updateCart({ attributes: attributes });
 
           // Enable the cart checkout button
-          document.querySelector('.cart__checkout').removeAttribute('disabled');
+          document.querySelector('.cart__checkout-button').removeAttribute('disabled');
         }
       },
     };

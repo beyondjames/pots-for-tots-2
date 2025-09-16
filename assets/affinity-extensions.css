@@ -164,7 +164,7 @@
 
 .deliverymodal__body fieldset > label {
   text-align: left;
-  font-size: 1rem;
+  /* font-size: 1rem; */
   font-weight: 600;
   padding: 0.5rem 1rem;
   margin: 0;
@@ -172,6 +172,12 @@
   border-radius: var(--recharge-corners-radius);
   display: flex;
   align-items: center;
+  gap: 0.5rem;
+}
+
+.deliverymodal__body fieldset input {
+  padding: 0;
+  margin: 0;
 }
 
 /* Selected state when radio is checked */

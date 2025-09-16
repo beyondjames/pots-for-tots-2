@@ -4,15 +4,15 @@ date-picker {
   --subheading-font-size: 16px;
   --button-font-size: 16px;
   --button-size: 36px;
-  --button-padding: 0.75rem;
-  --spacing: 0.5rem;
-  --primary-color: #ffaf00;
-  --secondary-color: #000;
+  --button-padding: 1rem;
+  --spacing: 2rem;
+  --primary-color: #5c8972;
+  --secondary-color: #fff;
 }
 
 date-picker .vc {
-  border: 1px solid var(--recharge-color-brand-60);
-  border-radius: var(--recharge-corners-radius);
+  border: 1px solid #e5e5e5;
+  border-radius: 7.5px;
   margin-bottom: var(--spacing);
 }
 

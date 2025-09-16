@@ -1,12 +1,12 @@
 {% comment %} Initialise the Recharge SDK {% endcomment %}
-<script src="https://static.rechargecdn.com/assets/storefront/recharge-client-1.29.0.min.js"></script>
+<script src='https://static.rechargecdn.com/assets/storefront/recharge-client-1.29.0.min.js'></script>
 
-<link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js"></script>
+<link href='https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css' rel='stylesheet'>
+<script src='https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js'></script>
 
 {% comment %} Load affinity custom scripts and styling {% endcomment %}
-<script src="{{ 'affinity-extensions.js' | asset_url }}" async></script>
-<script src="{{ 'custom-date-picker.js' | asset_url }}" async></script>
+<script src='{{ 'affinity-extensions.js' | asset_url }}' async></script>
+<script src='{{ 'custom-date-picker.js' | asset_url }}' async></script>
 
 {{ 'affinity-extensions.css' | asset_url | stylesheet_tag }}
 {{ 'custom-date-picker.css' | asset_url | stylesheet_tag }}
