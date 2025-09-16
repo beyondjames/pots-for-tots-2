@@ -213,7 +213,7 @@
 }
 
 .card__price-quick-add .quantity {
-  width: 92px;
+  width: 120px;
   min-height: 38px;
 }
 
@@ -354,12 +354,16 @@
 }
 
 .card__heading a:focus:after {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  box-shadow:
+    0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
 }
 
 .card__heading a:focus-visible:after {
-  box-shadow: 0 0 0 0.3rem rgb(var(--color-background)), 0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
+  box-shadow:
+    0 0 0 0.3rem rgb(var(--color-background)),
+    0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
 }
 
@@ -588,6 +592,18 @@
 }
 
 /* Custom Product Modal */
+.product-popup-modal__content {
+  height: auto !important;
+  padding-bottom: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+
+.product__modal-opener .product__media-icon,
+.product__modal-opener:hover .product__media-icon,
+.product__modal-opener:focus .product__media-icon {
+  opacity: 0 !important;
+}
+
 .modal-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -606,6 +622,10 @@
   }
 }
 
+.product-popup-modal__content-info .grid__item.slider__slide {
+  max-width: 100%;
+}
+
 .card__modal-title {
   margin-top: 0;
   margin-bottom: 0.5rem;
@@ -619,10 +639,6 @@
   margin-bottom: 0;
 }
 
-.card__modal-icons {
-  display: none;
-}
-
 .card__modal-nutritional-badges {
   display: flex;
 }
@@ -634,10 +650,12 @@
 
 .card__modal-description {
   line-height: 1.6rem;
+  padding-bottom: 1rem;
 }
 
+.card__modal-description,
 .card__modal-description p {
-  font-size: 14px;
-  line-height: 16px;
+  font-size: 1.5rem;
+  line-height: 2rem;
   color: #582d0e;
 }

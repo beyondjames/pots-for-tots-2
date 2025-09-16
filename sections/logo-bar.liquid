@@ -1,0 +1,178 @@
+{%- style -%}
+  .logo-grid__heading {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo-grid__icon {
+    min-width: 100px;
+  }
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="isolate page-width">
+  <div class="content-container color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
+
+    {%- unless section.settings.title == blank -%}
+      <div class="logo-grid__heading title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin title-wrapper-with-link--center center">
+        <h2 class="title inline-richtext {{ section.settings.heading_size }}">
+          {{ section.settings.title }}
+        </h2>
+
+        {%- if section.settings.description != blank -%}
+          <div class="rte">
+            {{- section.settings.description -}}
+          </div>
+        {%- endif -%}
+
+        {%- if section.settings.button_label != blank and show_mobile_slider -%}
+          <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">
+            {{- section.settings.button_label | escape -}}
+          </a>
+        {%- endif -%}
+      </div>
+    {%- endunless -%}
+
+    {% comment %} Logo Section {% endcomment %}
+    <div class="logo-grid">
+      {%- for block in section.blocks -%}
+        <div class="logo-grid__icon">
+          {% if block.settings.logo != null %}
+            {{ block.settings.logo | image_url: height: block.settings.logo_height | image_tag: loading: 'lazy' }}
+          {%  else %}
+            {{ 'collection-1' | placeholder_svg_tag }}
+          {% endif %}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Logo bar",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Logos",
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h2",
+          "label": "t:sections.all.heading_size.options__1.label"
+        },
+        {
+          "value": "h1",
+          "label": "t:sections.all.heading_size.options__2.label"
+        },
+        {
+          "value": "h0",
+          "label": "t:sections.all.heading_size.options__3.label"
+        }
+      ],
+      "default": "h1",
+      "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut lorem vel est fringilla vestibulum.</p>",
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "scheme-1"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 52
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "settings": [
+        {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+        },
+        {
+        "type": "range",
+        "id": "logo_height",
+        "min": 100,
+        "max": 250,
+        "step": 5,
+        "unit": "px",
+        "label": "Logo height",
+        "default": 100
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Logo bar",
+      "blocks": [
+        {
+          "type": "logo"
+        },
+        {
+          "type": "logo"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

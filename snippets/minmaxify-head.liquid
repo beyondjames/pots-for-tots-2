@@ -1,9 +1,0 @@
-{%- if content_for_header contains 'shopifyorderlimits.s3.amazonaws.com' -%}
-  {%- if shop.permanent_domain == 'pots-for-tots-food.myshopify.com' -%}
-    <script defer src="https://shopifyorderlimits.s3.amazonaws.com/limits/pots-for-tots-food.myshopify.com?v=87b&r=20220408130742&shop=pots-for-tots-food.myshopify.com"></script>
-  {%- endif -%}
-{%- else -%}
-  <script>
-    console.error("MinMaxify is deactivated for this website. Please don't forget to remove minmaxify-head.liquid still being referenced by theme.liquid")
-  </script>
-{%- endif -%}

@@ -1,1 +1,67 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"footer-0":{"type":"link_list","settings":{"heading":"","menu":"footer"}}},"block_order":["footer-0"],"settings":{"color_scheme":"scheme-3","newsletter_enable":false,"newsletter_heading":"","enable_follow_on_shop":false,"show_social":true,"enable_country_selector":false,"enable_language_selector":false,"payment_enable":true,"show_policy":false,"margin_top":0,"padding_top":36,"padding_bottom":36}}},"order":["footer"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "link_list",
+          "settings": {
+            "heading": "",
+            "menu": "footer"
+          }
+        },
+        "logo_dHfyhr": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/logo_colour_small_0d7b57d9-d61c-4c0c-879c-90a3c5b8605d.png",
+            "logo_height": 100
+          }
+        },
+        "logo_iYdMKN": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/KFDCBadge.png",
+            "logo_height": 130
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "logo_dHfyhr",
+        "logo_iYdMKN"
+      ],
+      "settings": {
+        "color_scheme": "scheme-3",
+        "newsletter_enable": false,
+        "newsletter_heading": "",
+        "enable_follow_on_shop": false,
+        "show_social": true,
+        "show_logo_grid": true,
+        "logo_grid_heading": "We are proudly part of:",
+        "logo_grid_heading_size": "h2",
+        "logo_grid_description": "",
+        "enable_country_selector": false,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "show_policy": false,
+        "margin_top": 0,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "footer"
+  ]
+}

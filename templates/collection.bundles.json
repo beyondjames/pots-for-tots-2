@@ -14,18 +14,16 @@
       "blocks": {
         "heading_iCCBfe": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Save up to 15% with bundles!",
+            "heading": "Save with bundles!",
             "heading_size": "h0",
             "show_heading_shadow": false
           }
         },
         "text_yWxYkr": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "Save time by selecting from our carefully curated ready-to-order bundles.",
+            "text": "Make mealtimes easier and save time (and money!) by selecting from our carefully curated ready-to-order bundles.",
             "text_style": "body"
           }
         },
@@ -47,12 +45,11 @@
         "buttons_yxPGGR"
       ],
       "settings": {
-        "image": "shopify://shop_images/Website_homepage_2.svg",
-        "image_3": "shopify://shop_images/Liewood_collection_page_MOB.svg",
+        "image": "shopify://shop_images/Hero_group_shot.png",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
-        "show_text_box": false,
+        "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
         "badge_embed": "",
@@ -60,47 +57,15 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
-        "show_text_below": false
+        "show_text_below": true
       }
     },
     "banner": {
       "type": "main-collection-banner",
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
         "color_scheme": "scheme-1"
-      }
-    },
-    "rich_text_xrjLBD": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_qdENnt": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_fJ7p9P": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>We're delighted to be partnering with Danish designer Liewood to bring you a capsule collection of lifestyle products to bring more joy to every mealtime.</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_qdENnt",
-        "text_fJ7p9P"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 20,
-        "padding_bottom": 8
       }
     },
     "product-grid": {
@@ -111,47 +76,61 @@
         "color_scheme": "scheme-1",
         "image_ratio": "adapt",
         "image_shape": "default",
-        "show_secondary_image": false,
+        "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "enable_product_button": true,
-        "enable_filtering": true,
+        "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
         "columns_mobile": "1",
-        "padding_top": 16,
+        "padding_top": 8,
         "padding_bottom": 36
       }
     },
-    "rich_text_PC3EtE": {
-      "type": "rich-text",
+    "1749131196aa629659": {
+      "type": "apps",
       "blocks": {
-        "text_ywaqme": {
-          "type": "text",
+        "reviews_io_reviewsio_card_carousel_VLmNyK": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
           "settings": {
-            "text": "<p>Our Liewood collection is available to purchase individually or as part of your meal order. A minimum purchase value of £35 applies if you are purchasing <strong>only</strong> Liewood products (i.e not with meals). </p><p>If purchased in addition to your subscription, it will be added as a one-time purchase and won't be included in your recurring order. When purchased with any of our meals, Liewood products will be packed separately but will arrive on the same day as your food delivery (we deliver every Thursday).</p><p>Introductory discount codes are not applicable to any Liewood products. </p>"
+            "star": "#000",
+            "review_type": "product",
+            "reviews_shown": 20,
+            "header_bg_colour": "#5c8972",
+            "header_colour": "#fff",
+            "header_star_colour": "#fff",
+            "heading_text_colour": "#0E1311",
+            "heading_font": "helvetica_n4",
+            "body_text_colour": "#0E1311",
+            "badge_icon_colour": "#0E1311",
+            "badge_text_colour": "#0E1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "0px",
+            "item_border_colour": "#F2F2F2",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "#F2F2F2",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-inverted)"
           }
         }
       },
       "block_order": [
-        "text_ywaqme"
+        "reviews_io_reviewsio_card_carousel_VLmNyK"
       ],
       "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "include_margins": true
       }
     }
   },
   "order": [
     "image_banner_eAPqEm",
     "banner",
-    "rich_text_xrjLBD",
     "product-grid",
-    "rich_text_PC3EtE"
+    "1749131196aa629659"
   ]
 }

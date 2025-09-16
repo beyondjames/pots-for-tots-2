@@ -56,10 +56,10 @@
         "buttons_4ch6Ez"
       ],
       "settings": {
-        "image": "shopify://shop_images/Website_homepage_2.svg",
-        "image_3": "shopify://shop_images/Liewood_collection_page_MOB.svg",
+        "image": "shopify://shop_images/Website_homepage_22.png",
+        "image_3": "shopify://shop_images/Website_homepage_product_images_11_7.png",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
@@ -87,22 +87,21 @@
       "blocks": {
         "heading_Dex6F3": {
           "type": "heading",
-          "disabled": true,
           "settings": {
-            "heading": "Talk about your brand",
+            "heading": "Pots for Tots x ByRuby Exclusive Staycation Bundle",
             "heading_size": "h1"
           }
         },
         "text_cTnm67": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>We're delighted to be partnering with Danish designer Liewood to bring you a capsule collection of lifestyle products to bring more joy to every mealtime. </strong><br/><br/><em>\"At Liewood, we believe in creating beautiful products to ease and inspire the everyday lives of families. We're thrilled to partner with Pots for Tots who create thoughtfully designed meal boxes that make mealtime fun, nutritious, and easy for families. Together, we aim to support in fostering healthy habits while adding a touch of Scandinavian style to everyday routines.\"</em> - Sophie Mohammadi, Liewood</p>"
+            "text": "<p>Going away in the UK? Let us take one thing off your plate.</p><p>We’ve teamed up with <strong>ByRuby</strong> to create the ultimate family-friendly staycation bundle – delicious, chef-made meals for the grown-ups, and nutritious, ready-to-heat dinners from <strong>Pots for Tots</strong> for the little ones.</p><p>No planning, no cooking, no stress – just more time to actually enjoy your break.</p>"
           }
         },
         "button_Q3FHeH": {
           "type": "button",
           "settings": {
-            "button_label": "Get started",
+            "button_label": "SHOP NOW",
             "button_link": "shopify://collections/liewood",
             "button_style_secondary": false,
             "button_label_2": "",
@@ -119,10 +118,80 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "full_width": true,
         "padding_top": 40,
         "padding_bottom": 52
+      }
+    },
+    "featured_product_9xxGen": {
+      "type": "featured-product",
+      "blocks": {
+        "text_VettKW": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_TmVgz7": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_F6Ddim": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_VrPrAX": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_DbYwLa": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_DDyQC7": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_W3kyFF": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_VettKW",
+        "title_TmVgz7",
+        "price_F6Ddim",
+        "variant_picker_VrPrAX",
+        "quantity_selector_DbYwLa",
+        "buy_buttons_DDyQC7",
+        "share_W3kyFF"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "pots-for-tots-x-byruby-staycation-bundle",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "multirow_nyEeCi": {
@@ -131,78 +200,29 @@
         "row_cNWbrW": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/1_791c09c8-9295-43d4-a67b-e6993e1aa366.png",
-            "caption": "LIEWOOD",
-            "heading": "Vivi Silicone Set",
-            "text": "<p>Liewood's best tableware products in silicone - all in one convenient set. A great non-breakable alternative to plastic and porcelain.</p>",
+            "image": "shopify://shop_images/Website_homepage_product_images_11_8.png",
+            "caption": "Pots for tots",
+            "heading": "Big nutrition, little effort",
+            "text": "<p>At Pots for Tots, we're here to make mealtimes easy. We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, REAL meals for babies, toddlers and beyond. Frozen and delivered to your door, AirBnB or even Granny's house!</p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-vivi-silicone-set-cat-dark-rose"
+            "button_link": "shopify://products/pots-for-tots-x-byruby-staycation-bundle"
           }
         },
         "row_pR4dEw": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/3_8532fc7e-360f-4c37-ad88-f9a5a2998f4c.png",
-            "caption": "LIEWOOD",
-            "heading": "Tove All Together Cutlery Set",
-            "text": "<p>Bring a touch of fun to mealtimes with the Tove Cutlery Set. Made from stainless steel and with 3D silicone handles for extra grip, this durable cutlery is perfect for little hands to hold and a playful tool for encouragement.</p>",
+            "image": "shopify://shop_images/Website_homepage_product_images_11_9.png",
+            "caption": "BYRUBY",
+            "heading": "Handmade, ready when you are",
+            "text": "<p>We carefully source only the finest produce from suppliers we know well; then lovingly prepare all your favourite dishes in small batches.</p><p><br/>Delicious dishes freshly frozen, handmade food, that’s ready when you are.</p>",
             "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-tove-all-together-cutlery-set-golden-caramel-mix"
-          }
-        },
-        "row_VpcYdV": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/2_57f57a23-98ea-421e-8c92-7478bbc478b2.png",
-            "caption": "LIEWOOD",
-            "heading": "Tilda Printed Bib 2-Pack",
-            "text": "<p>An essential for your changing bag this practical bib helps making mealtimes a little less messy. </p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-tilda-printed-bib-2-pack-leopard-multi-mix"
-          }
-        },
-        "row_UzEVcz": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/4_b0e61116-0bbb-48eb-9a04-dbbecf85a048.png",
-            "caption": "LIEWOOD",
-            "heading": "Neil Sippy Cup",
-            "text": "<p>Perfect for mastering the skill of drinking, the Neil Cup has a removable lid with a small spout and a smooth, tactile feel. The handles ensure a firm grip and allow the child to practice holding and tilting, as well as preparing for the use of an open cup.</p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-neil-sippy-cup-peach-sea-shell-mix"
-          }
-        },
-        "row_yDyyr3": {
-          "type": "row",
-          "settings": {
-            "image": "shopify://shop_images/5_a3cd025a-b23d-4772-a67c-ca81c693e26c.png",
-            "caption": "LIEWOOD",
-            "heading": "Falk Water Bottle",
-            "text": "<p>A premium steel water bottle, made from 80% recycled stainless steel. Designed to be easy for little hands to hold. It is leakproof and features a built-in pop-up straw lid as well as a loop handle for convenient carrying when on the go.</p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-falk-water-bottle-350-ml-bunny-sandy"
-          }
-        },
-        "row_ThrWzc": {
-          "type": "row",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Nadja_Food_Jar_LW20223_1111_Safari_sandy_mix_2.jpg",
-            "caption": "LIEWOOD",
-            "heading": "Liewood Nadja Food Jar",
-            "text": "<p>The practical food jar has double stainless-steel walls making it ideal for bringing porridge or snacks on an outing.</p>",
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://products/liewood-nadja-food-jar-peach-sea-shell-mix"
+            "button_link": "shopify://products/pots-for-tots-x-byruby-staycation-bundle"
           }
         }
       },
       "block_order": [
         "row_cNWbrW",
-        "row_pR4dEw",
-        "row_VpcYdV",
-        "row_UzEVcz",
-        "row_yDyyr3",
-        "row_ThrWzc"
+        "row_pR4dEw"
       ],
       "settings": {
         "image_height": "adapt",
@@ -223,7 +243,7 @@
     "featured_collection_BQBza9": {
       "type": "featured-collection",
       "settings": {
-        "title": "Get started with our family favourites",
+        "title": "Discover our family favourites",
         "heading_size": "h1",
         "description": "",
         "show_description": false,
@@ -319,6 +339,7 @@
     "image_banner_GVmUkf",
     "custom_image_banner_no_text_RpKxyp",
     "rich_text_PLmmAh",
+    "featured_product_9xxGen",
     "multirow_nyEeCi",
     "featured_collection_BQBza9",
     "rich_text_nejX4T",
