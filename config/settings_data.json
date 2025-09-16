@@ -124,6 +124,8 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
+    "cutoff_hours": 23,
+    "cutoff_minutes": 59,
     "checkout_logo_image": "shopify://shop_images/pots-for-tots-logo-green.svg",
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
