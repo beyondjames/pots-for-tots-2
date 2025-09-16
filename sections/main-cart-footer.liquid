@@ -83,7 +83,13 @@
             {{- 'sections.cart.note' | t -}}
           </label>
 
-          <textarea class="text-area field__input" name="note" form="cart" id="Cart-note" placeholder="{{ 'sections.cart.note' | t }}">
+          <textarea
+            class="text-area field__input"
+            name="note"
+            form="cart"
+            id="Cart-note"
+            placeholder="{{ 'sections.cart.note' | t }}"
+          >
             {{- cart.note -}}
           </textarea>
         </cart-note>
@@ -96,7 +102,7 @@
               {% render block %}
             {%- when 'date-picker' %}
               {% assign datepicker = true %}
-              {% render 'date-picker', settings: block.settings, disabled: invalid_cart %}
+              {% render 'date-picker', debug: true %}
             {%- when 'subtotal' -%}
               <div class="js-contents" {{ block.shopify_attributes }}>
                 <div>
@@ -227,73 +233,7 @@
       "type": "date-picker",
       "name": "Date picker",
       "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "datepicker_message",
-          "label": "Display message",
-          "default": "We deliver on Mondays and Thursdays, when would you like to receive your first subscription order?"
-        },
-        {
-          "type": "paragraph",
-          "content": "Select which days of the week you would like to disable in the date picker"
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_sunday",
-          "label": "Sunday",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_monday",
-          "label": "Monday",
-          "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_tuesday",
-          "label": "Tuesday",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_wednesday",
-          "label": "Wednesday",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_thursday",
-          "label": "Thursday",
-          "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_friday",
-          "label": "Friday",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "enable_saturday",
-          "label": "Saturday",
-          "default": false
-        },
-        {
-          "type": "text",
-          "id": "disabled_dates",
-          "label": "Disabled dates",
-          "default": "2024-12-24:2024-12-31,2025-01-14",
-          "info": "Enter dates in the format YYYY-MM-DD separated by commas"
-        },
-        {
-          "type": "text",
-          "id": "enabled_dates",
-          "label": "Enabled dates",
-          "info": "Enter dates in the format YYYY-MM-DD separated by commas"
-        }
-      ]
+      "settings": []
     },
     {
       "type": "@app"

@@ -2,262 +2,52 @@
   Renders a date picker
 
   Accepts:
-  - settings: {Object} Block settings Liquid object (optional)
+  - debug: {Boolean} Enable debug mode with extra buttons. This mode only debugs the cart page. (optional)
 
   Usage:
-  {% render 'date-picker', settings: block.settings, disabled: false %}
+  {% render 'date-picker', debug: true %}
 {% endcomment %}
 
-<link href="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js"></script>
+<link href='https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/styles/index.css' rel='stylesheet'>
+<script src='https://cdn.jsdelivr.net/npm/vanilla-calendar-pro/index.js'></script>
 
-{% comment %} Temporarily hide the old date picker app {% endcomment %}
-<style>
-  .cart__checkout-wrapper .order-slots,
-  .slot-picker-loader {
-    display: none;
-  }
+<script src='{{ 'affinity-extensions.js' | asset_url }}' async></script>
+<script src='{{ 'custom-date-picker.js' | asset_url }}' async></script>
+{{ 'custom-date-picker.css' | asset_url | stylesheet_tag }}
 
-  #calendar {
-    margin-bottom: 15px;
-    border: 1px solid #e5e5e5;
-  }
+{%- assign disabled_weekdays = '' -%}
+{%- unless settings.enable_sunday -%}{% assign disabled_weekdays = disabled_weekdays | append: '0,' %}{% endunless -%}
+{%- unless settings.enable_monday -%}{% assign disabled_weekdays = disabled_weekdays | append: '1,' %}{% endunless -%}
+{%- unless settings.enable_tuesday -%}{% assign disabled_weekdays = disabled_weekdays | append: '2,' %}{% endunless -%}
+{%- unless settings.enable_wednesday -%}
+  {% assign disabled_weekdays = disabled_weekdays | append: '3,' -%}
+{%- endunless -%}
+{%- unless settings.enable_thursday -%}{% assign disabled_weekdays = disabled_weekdays | append: '4,' %}{% endunless -%}
+{%- unless settings.enable_friday -%}{% assign disabled_weekdays = disabled_weekdays | append: '5,' %}{% endunless -%}
+{%- unless settings.enable_saturday -%}{% assign disabled_weekdays = disabled_weekdays | append: '6,' %}{% endunless -%}
 
-  [data-vc=header] {
-   padding-bottom: 2rem;
-  }
-  
-  [data-vc-month] {
-    font-size: 20px;
-  }
-
-  [data-vc-date-btn] {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-  }
-
-  [data-vc-date][data-vc-date-hover]:has(+[data-vc-date-disabled]) [data-vc-date-btn],
-  [data-vc-date][data-vc-date-selected]:has(+[data-vc-date-disabled]) [data-vc-date-btn] {
-    border-radius: 50%;
-  }
-
-  [data-vc-theme=light] .vc-months__month[data-vc-months-month-selected],
-  [data-vc-theme=light] .vc-years__year[data-vc-years-year-selected],
-  [data-vc-theme=light] .vc-date[data-vc-date-selected] .vc-date__btn {
-    background-color: rgb(92, 137, 114);;
-  }
-
-  [data-vc-theme=light] .vc-date[data-vc-date-today] .vc-date__btn {
-    background-color: rgb(92, 137, 114);
-    opacity: 0.5;
-  }
-
-  [data-vc-date-btn],
-  [data-vc-week-day],
-  [data-vc=year],
-  [data-vc-theme=light] .vc-months__month[data-vc-months-month] {
-    font-size: 1.7rem;
-  }
-
-  [data-vc-date-btn] {
-    padding: 0.75rem;
-  }
-
-  [data-vc-theme=light] .vc-week__day[data-vc-week-day],
-  [data-vc-theme=light] .vc-week__day[data-vc-week-day-off] {
-    color: rgb(37,37,37);
-  }
-</style>
-
-{% unless disabled %}
-<date-picker>
-  <p>{{ settings.datepicker_message }}</p>
-  <div id="calendar"></div>
-  {% comment %} <button type="button" class="button get_cart">Test Cart Attributes</button> {% endcomment %}
-  {% comment %} <button type="button" class="button clear_cart">Clear Cart Attributes</button> {% endcomment %}
+<p>{{ settings.datepicker_message }}</p>
+<date-picker
+  page='cart'
+  offset='{{ settings.offset }}'
+  cutoff-hours='{{ settings.cutoff_hours }}'
+  cutoff-minutes='{{ settings.cutoff_minutes }}'
+  disabled-dates='{{ settings.disabled_dates | split: ',' | json }}'
+  enabled-dates='{{ settings.enabled_dates | split: ',' | json }}'
+  disabled-weekdays='{{ disabled_weekdays | split: ',' | json }}'
+  debug='{{ debug }}'
+>
 </date-picker>
 
-<script>
-  class DatePicker extends HTMLElement {
-    constructor() {
-      super();
-    }
-
-    connectedCallback() {
-      console.log('Date picker connected');
-      this.initialiseCalendar();
-
-      // Render buttons for testing
-      const getCartButton = this.querySelector('.get_cart');
-      if (getCartButton) {
-        getCartButton.addEventListener('click', this.getCart);
-      }
-
-      const clearCartButton = this.querySelector('.clear_cart');
-      if (clearCartButton) {
-        clearCartButton.addEventListener('click', this.clearCartAttributes);
-      }
-    }
-
-    initialiseCalendar() {
-      const { Calendar } = window.VanillaCalendarPro;
-    
-      // Create an array of disabled weekdays based on Liquid settings
-      const disabledDays = [
-        {% unless settings.enable_sunday %}0,{% endunless %}
-        {% unless settings.enable_monday %}1,{% endunless %}
-        {% unless settings.enable_tuesday %}2,{% endunless %}
-        {% unless settings.enable_wednesday %}3,{% endunless %}
-        {% unless settings.enable_thursday %}4,{% endunless %}
-        {% unless settings.enable_friday %}5,{% endunless %}
-        {% unless settings.enable_saturday %}6{% endunless %}
-      ];
-    
-      // Create an array of disabled dates
-      const disabledDates = '{{ settings.disabled_dates }}';
-      const disabledDatesArray = disabledDates.split(',');
-
-      // Create an array of enabled dates
-      const enabledDates = '{{ settings.enabled_dates }}';
-      const enabledDatesArray = enabledDates.split(',');
-      
-      // Get today's date
-      const now = new Date();
-      const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
-      // console.log("Today", today.getDay());
-
-      // dateMin should be offset of 3 days from today unless it is a friday, in which case it should be an offset of 4 days
-      let dateMin = new Date();
-
-      // get the current time
-      const currentTime = new Date();
-      // console.log("Current Time", currentTime);
-      const currentHour = currentTime.getHours();
-      // console.log("Current Hour", currentHour);
-      
-      // If today is Friday and the current time is after 7:00 AM, set dateMin to 4 days from today
-      if (today.getDay() == 5 && currentHour > 6) {
-        {% comment %} console.log("It is a Friday") {% endcomment %}
-        {% comment %} console.log("Current dateMin (before update)", dateMin); {% endcomment %}
-        dateMin.setDate(dateMin.getDate() + 4);
-      // If today is Saturday, set dateMin to 3 day from today
-      } else if (today.getDay() == 6) {
-        {% comment %} console.log("It is a Saturday") {% endcomment %}
-        dateMin.setDate(dateMin.getDate() + 4);
-      } else {
-        dateMin.setDate(today.getDate() + 3);
-      }
-
-      // Ensure dateMin is at midnight
-      dateMin.setHours(0, 0, 0, 0);
-
-      {% comment %} console.log("Date Min",dateMin); {% endcomment %}
-      {% comment %} console.log('disabledDatesArray:', disabledDatesArray); {% endcomment %}
-      {% comment %} console.log('enabledDatesArray:', enabledDatesArray); {% endcomment %}
-      {% comment %} console.log('disabledWeekdays:', disabledDays); {% endcomment %}
-
-      // convert datemin into YYYY-MM-DD format
-      const dateMinFormatted = this.formatDateLocal(dateMin);
-      {% comment %} console.log("dateMinFormatted:", dateMinFormatted); {% endcomment %}
-
-      const dateMax = new Date(new Date().setMonth(new Date().getMonth() + 3));
-      const dateMaxFormatted = this.formatDateLocal(dateMax);
-
-      // Create options for calendar
-      const options = {
-        selectedTheme: 'light',
-        firstWeekday: 0,
-        dateMin: dateMinFormatted,
-        dateMax: dateMaxFormatted,
-        disableDates: disabledDatesArray,
-        enableDates: enabledDatesArray,
-        disableWeekdays: disabledDays,
-        onInit(self) {
-          // console.log('Calendar is initialized');
-          // Reset the cart attributes when calendar initializes
-          const attributes = {
-            _preferred_day: '',
-            _first_delivery_date: ''
-          };
-          updateCart({ attributes: attributes });
-        },
-        onClickDate(self, event) {
-          console.log('Date selected');
-          const parentElement = event.target.closest('[data-vc-date]');
-          if (!parentElement) return;
-          
-          const date = parentElement.dataset.vcDate;
-          const dayNumber = parentElement.dataset.vcDateWeekDay;
-          const dayText = '';
-          var dayOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    
-          // Update the cart with the selected date
-          const attributes = {
-            _preferred_day: dayOfWeek[dayNumber],
-            _first_delivery_date: formatDate(date)
-          };
-          updateCart({ attributes: attributes });
-    
-          // Enable the cart checkout button
-          document.querySelector('.cart__checkout-button').removeAttribute('disabled');
-        }
-      };
-
-      {% comment %} console.log("Vanilla Calendar Options:", options); {% endcomment %}
-
-      // Create a calendar instance and initialize it.
-      const calendar = new Calendar('#calendar', options);
-      calendar.init();
-    }
-
-    formatDateLocal(date) {
-      const year = date.getFullYear();
-      const month = String(date.getMonth() + 1).padStart(2, '0');
-      const day = String(date.getDate()).padStart(2, '0');
-      return `${year}-${month}-${day}`;
-    }
-  
-    // Function to get cart object for testing inside the custom element
-    async getCart() {
-      const response = await fetch('/cart.js');
-      const data = await response.json();
-      console.log('Cart:', data);
-      return data.items;
-    }
+<style>
+  date-picker {
+    display: block;
+    margin-bottom: 15px;
   }
 
-  customElements.define('date-picker', DatePicker);  
-
-  /**
-   *  Global function to be accessed by vanilla-calendar-pro onClickDate event
-   */
-
-  // Function to format date
-  function formatDate(dateString) {
-    const options = { year: "numeric", month: "short", day: "2-digit" };
-    const date = new Date(dateString);
-    return date.toLocaleDateString("en-GB", options);
+  .btn.debug {
+    display: block;
+    width: 100%;
+    margin-block-start: 0.5rem;
   }
-
-  // Function to get cart object for testing
-  async function getCart() {
-    const response = await fetch('/cart.js');
-    const data = await response.json();
-    return data.items;
-  }
-
-  // Function to update the cart delivery properties
-  async function updateCart(updates) {
-    const response = await fetch(`/cart/update.js`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(updates),
-    });
-    const data = await response.json();
-    return data;
-  }
-</script>
-{%  endunless %}
+</style>

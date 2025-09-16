@@ -4,6 +4,20 @@
   "author": "James Cartwright",
   "private": true,
   "scripts": {
-    "dev": "shopify theme dev --store=pots-for-tots-food.myshopify.com"
+    "dev": "shopify theme dev --store=pots-for-tots-food.myshopify.com",
+    "prettier": "prettier",
+    "lint": "eslint ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.15.0",
+    "@shopify/prettier-plugin-liquid": "^1.8.2",
+    "eslint": "^9.15.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.12.0",
+    "prettier": "^3.5.2"
+  },
+  "dependencies": {
+    "@rechargeapps/storefront-client": "^1.36.0"
   }
 }

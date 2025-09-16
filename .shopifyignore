@@ -5,3 +5,5 @@
 .git
 .gitignore
 package.json
+node_modules
+src
