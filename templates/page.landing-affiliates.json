@@ -1,0 +1,159 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_banner_QzQ7yb": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_bCrjgg": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Get 20% off your first 3 subscription orders",
+            "heading_size": "h1",
+            "show_heading_shadow": false
+          }
+        },
+        "text_BGFg3G": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Sign up to our newsletter for 20% off your first three subscription orders as well as exclusive tips from our Children's Dietitian and more!",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_bCrjgg",
+        "text_BGFg3G"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Website_homepage_1000_x_500_px_2.png",
+        "image_3": "shopify://shop_images/Web_banner_affiliate_MOB.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_nbdicX": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VHXLGt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Love what we do? Help us spread the word!",
+            "heading_size": "h2"
+          }
+        },
+        "text_kbXY6F": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Earn commission every time you share Pots for Tots with your audience. Whether you’re a blogger, content creator, or just passionate about helping parents discover healthy meals for little ones, our affiliate programme is a simple way to partner with us. </p><p>We believe parenting is a team effort — and we’d love for you to be part of ours. By joining our affiliate programme, you can share the gift of healthy, stress-free meals with other families and earn rewards along the way. It’s a simple way to support parents, spread the word, and grow together as a community.</p><p>It's easy to sign up, just follow the link below to apply to join our AWIN affiliate programme, and once approved you can start adding links and creative to your site or social and start earning.  </p><p></p><p></p>"
+          }
+        },
+        "button_Cg8XkB": {
+          "type": "button",
+          "settings": {
+            "button_label": "APPLY TO JOIN",
+            "button_link": "https://ui.awin.com/merchant-profile/33031",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_VHXLGt",
+        "text_kbXY6F",
+        "button_Cg8XkB"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection_Fgf9ic": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Can't wait until then? Discover our bestsellers!",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "build-your-box",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-2",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 72,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_RtECUM": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "heading": "Check out the latest on our Parent Hub",
+        "heading_size": "h1",
+        "blog": "toddlers",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_QzQ7yb",
+    "rich_text_nbdicX",
+    "featured_collection_Fgf9ic",
+    "featured_blog_RtECUM"
+  ]
+}

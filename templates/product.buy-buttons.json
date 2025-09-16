@@ -16,10 +16,6 @@
           "type": "title",
           "settings": {}
         },
-        "reviews_io_reviewsio_rating_output_FBDj38": {
-          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {}
@@ -31,15 +27,15 @@
             "swatch_shape": "circle"
           }
         },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
         "recharge_subscriptions_subscription_widget_XKfhUq": {
           "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
             "product": "{{product}}"
           }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
         },
         "buy_buttons": {
           "type": "buy_buttons",
@@ -47,6 +43,10 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
+        },
+        "reviews_io_reviewsio_rating_output_FBDj38": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {}
         },
         "description": {
           "type": "description",
@@ -61,12 +61,12 @@
       },
       "block_order": [
         "title",
-        "reviews_io_reviewsio_rating_output_FBDj38",
         "price",
         "variant_picker",
-        "recharge_subscriptions_subscription_widget_XKfhUq",
         "quantity_selector",
+        "recharge_subscriptions_subscription_widget_XKfhUq",
         "buy_buttons",
+        "reviews_io_reviewsio_rating_output_FBDj38",
         "description",
         "share"
       ],
@@ -76,10 +76,10 @@
         "media_size": "medium",
         "constrain_to_viewport": false,
         "media_fit": "contain",
-        "gallery_layout": "stacked",
+        "gallery_layout": "thumbnail_slider",
         "media_position": "left",
         "image_zoom": "none",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 60,
@@ -125,10 +125,10 @@
             "bg_start_colour": "#ffffff",
             "bg_end_colour": "#ffffff",
             "item_border_width": "0px",
-            "item_border_colour": "#000000",
+            "item_border_colour": "#f2f2f2",
             "item_border_radius": "0px",
             "item_shadow_size": "10px",
-            "item_shadow_colour": "#000000",
+            "item_shadow_colour": "#f2f2f2",
             "enable_rich_snippets": false,
             "disable_same_customer": false,
             "logo_colour": "var(--logo-inverted)"

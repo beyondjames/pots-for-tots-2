@@ -29,7 +29,7 @@
         "date_picker_LCHryJ": {
           "type": "date-picker",
           "settings": {
-            "datepicker_message": "We deliver on Mondays and Thursdays, when would you like to receive your box?",
+            "datepicker_message": "We deliver on Mondays and Thursdays (excluding bank holidays), when would you like to receive your box?",
             "enable_sunday": false,
             "enable_monday": true,
             "enable_tuesday": false,
@@ -37,7 +37,8 @@
             "enable_thursday": true,
             "enable_friday": false,
             "enable_saturday": false,
-            "disabled_dates": "2024-12-24:2024-12-31,2025-01-14"
+            "disabled_dates": "2024-12-24:2024-12-31,2025-01-14,2025-04-21,2025-05-05,2025-05-26,2025-05-27,2025-08-25",
+            "enabled_dates": "2025-04-22,2025-05-06,2025-08-26"
           }
         },
         "subtotal": {

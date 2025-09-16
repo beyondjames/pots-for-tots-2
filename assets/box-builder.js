@@ -431,14 +431,14 @@ let subscription = {
         countWarning.classList.add('hidden');
       }
       // Enable the checkout button
-      button.disabled = false;
+      // button.disabled = false;
       // Enable the modal checkout button if it exists
       if (modalButton) {
-        modalButton.disabled = false;
+        // modalButton.disabled = false;
       }
       // Enable the modal skip button if it exists
       if (modalSkipButton) {
-        modalSkipButton.disabled = false;
+        // modalSkipButton.disabled = false;
       }
     } else {
       // Display the warning message with the required count
@@ -1177,9 +1177,24 @@ class FrequencySelector extends HTMLElement {
     if (!select) return;
 
     select.addEventListener('change', (event) => {
+      console.log('Frequency changed to: ' + select.value);
       subscription.state.subscriptionFrequency = select.value;
       setCookie('potsFreq', select.value, 1);
       sessionStorage.setItem('potsFreq', select.value);
+      // enable the checkout button
+      const checkoutButton = document.querySelector('#checkoutButton');
+      if (checkoutButton && event.target.value != '0') {
+        checkoutButton.classList.remove('disabled');
+        checkoutButton.disabled = false;
+        // make the first option disabled
+        const firstOption = select.querySelector('option:first-child');
+        if (firstOption) {
+          firstOption.disabled = true; // Disable the first option
+        }
+      } else {
+        checkoutButton.classList.add('disabled');
+        checkoutButton.disabled = true;
+      }
     });
   }
 }
@@ -1199,6 +1214,8 @@ class handleCheckoutButton extends HTMLElement {
     // Add an event listener to the button
     buttons.forEach((button) => {
       button.addEventListener('click', async () => {
+        this.loading(button); // Show loading spinner
+
         // Send GA4 event
         // sendEvent(button.id, 'Box Builder', 'Checkout Button Click');
 
@@ -1215,6 +1232,23 @@ class handleCheckoutButton extends HTMLElement {
         }
       });
     });
+  }
+
+  loading(button) {
+    // Hide the text on the button
+    const text = button.querySelector('span');
+    if (text) {
+      text.classList.add('hidden');
+    }
+
+    // Show loading spinner
+    const spinner = button.querySelector('.loading__spinner');
+    if (spinner) {
+      spinner.classList.remove('hidden'); // Show the spinner
+    }
+
+    // Disable the button to prevent multiple clicks
+    button.disabled = true;
   }
 }
 
@@ -1252,12 +1286,27 @@ class subscriptionType extends HTMLElement {
             subscription.state.subscriptionType = 'onetime';
             oneTimeContent.classList.remove('hidden');
             subscriptionContent.classList.add('hidden');
+            // enable checkout button
+            const checkoutButton = document.querySelector('#checkoutButton');
+            if (checkoutButton) {
+              checkoutButton.classList.remove('disabled');
+              checkoutButton.disabled = false;
+            }
           } else {
             setCookie('potsType', 'subscription', 1); // Set cookie and session storage
             sessionStorage.setItem('potsType', 'subscription');
             subscription.state.subscriptionType = 'subscription';
             subscriptionContent.classList.remove('hidden');
             oneTimeContent.classList.add('hidden');
+            // disable checkout button if suscription frequency is first option
+            const select = document.querySelector('frequency-selector select');
+            if (select && select.value == '0') {
+              const checkoutButton = document.querySelector('#checkoutButton');
+              if (checkoutButton) {
+                checkoutButton.classList.add('disabled');
+                checkoutButton.disabled = true;
+              }
+            }
           }
 
           // Trigger updates for calculations and review box

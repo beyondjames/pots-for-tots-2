@@ -14,40 +14,41 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_cYPTa7": {
-          "type": "announcement",
-          "settings": {
-            "text": "Get 20% off your first 3 boxes when you subscribe!",
-            "link": ""
-          }
-        },
-        "announcement-bar-0": {
-          "type": "announcement",
-          "settings": {
-            "text": "We now deliver on Mondays AND Thursdays!",
-            "link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271"
-          }
-        },
         "announcement_XckcmE": {
           "type": "announcement",
           "disabled": true,
           "settings": {
-            "text": "DOUBLE POINTS ON ALL ORDERS THROUGHOUT DECEMBER",
-            "link": "shopify://collections/bundles"
+            "text": "DOUBLE loyalty points on all orders until end of July",
+            "link": "shopify://pages/loyalty"
+          }
+        },
+        "announcement_cYPTa7": {
+          "type": "announcement",
+          "settings": {
+            "text": "Get 20% off your first 3 boxes when you subscribe!",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
+        "announcement-bar-0": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "Bank Holiday Delivery Schedule Update",
+            "link": "https://help.potsfortots.co.uk/en-GB/will-you-be-delivering-over-the-christmas-period-948271"
           }
         },
         "announcement_YyVH6J": {
           "type": "announcement",
           "settings": {
-            "text": "FREE Shipping with 24+ meals 🚚",
-            "link": ""
+            "text": "FREE delivery with 24+ meals 🚚",
+            "link": "shopify://collections/build-your-box"
           }
         }
       },
       "block_order": [
+        "announcement_XckcmE",
         "announcement_cYPTa7",
         "announcement-bar-0",
-        "announcement_XckcmE",
         "announcement_YyVH6J"
       ],
       "settings": {

@@ -35,8 +35,8 @@
             "button_label_1": "BUILD YOUR BOX",
             "button_link_1": "shopify://collections/build-your-box",
             "button_style_secondary_1": false,
-            "button_label_2": "Explore AK  x PFT",
-            "button_link_2": "shopify://pages/pots-for-tots-x-annabel-karmel",
+            "button_label_2": "BUNDLES",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false
           }
         }
@@ -46,6 +46,7 @@
         "text_khPEhw",
         "buttons_mJDLgt"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Website_homepage_19.png",
         "image_3": "shopify://shop_images/Introducing_AK_mobile.png",
@@ -54,7 +55,7 @@
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-2",
         "badge_embed": "",
         "badge_padding": 1,
         "image_behavior": "none",
@@ -63,48 +64,68 @@
         "show_text_below": true
       }
     },
+    "rich_text_UTwFqR": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_x6tbrd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get DOUBLE loyalty points on all orders throughout July!",
+            "heading_size": "h2"
+          }
+        },
+        "text_UmdXnw": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+          }
+        },
+        "button_LRh8xd": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_x6tbrd",
+        "text_UmdXnw",
+        "button_LRh8xd"
+      ],
+      "disabled": true,
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
     "slideshow_tRxFr3": {
       "type": "slideshow",
       "blocks": {
-        "slide_EFdemU": {
+        "slide_c6rpWy": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_11.png",
-            "mobile_image": "shopify://shop_images/Website_mobile_3.png",
-            "heading": "Ready in minutes!",
+            "image": "shopify://shop_images/Website_homepage_AK_children.png",
+            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_4.svg",
+            "heading": "Real food for little tummies",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
-            "button_label": "Build Your Box",
+            "button_label": "BUILD YOUR  BOX",
             "link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
-            "button_label_2": "Shop Bundles",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "200",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "right"
-          }
-        },
-        "slide_hgbCiy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Group_meals_and_snacks_homepage_2.png",
-            "mobile_image": "shopify://shop_images/Website_mobile_1.png",
-            "heading": "Nutrition meets convenience",
-            "heading_size": "h0",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "Build Your Box",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "Shop Bundles",
+            "button_label_2": "SHOP Bundles",
             "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false,
             "box_align": "middle-center",
@@ -113,27 +134,80 @@
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-4",
             "text_alignment_mobile": "center",
-            "image_badge_width": "150",
+            "image_badge_width": "100",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
+          }
+        },
+        "slide_btGHpn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_1500x750_1.svg",
+            "mobile_image": "shopify://shop_images/After_school.svg",
+            "heading": "Back to School",
+            "heading_size": "hxxl",
+            "show_heading_shadow": false,
+            "subheading": "",
+            "button_label": "SHOP AFTER-SCHOOL SNACKS",
+            "link": "https://potsfortots.co.uk/collections/build-your-box?filter.p.m.custom.box_builder_filters=Snacks%2FExtras",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
+          }
+        },
+        "slide_hgbCiy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_AK_group_pink_background.png",
+            "mobile_image": "shopify://shop_images/AK_group_shot.png",
+            "heading": "Big nutrition, little effort.",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "Build Your Box",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "bottom-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "200",
             "image_badge_vertical_position": "top",
             "image_badge_horizontal_position": "right"
           }
         },
         "slide_6mcVhA": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Veggie_Chilli_5.png",
-            "mobile_image": "shopify://shop_images/Veggie_Chilli_mobile.png",
-            "heading": "Plant Power!",
+            "image": "shopify://shop_images/Spanish_chicken_-_website_homepage_4188e2c0-10b4-4bd6-88f8-8444a7400d56.svg",
+            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11.svg",
+            "heading": "A taste of summer!",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
             "button_label": "BUILD Your BOX",
             "link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
-            "button_label_2": "Shop Bundles",
+            "button_label_2": "",
             "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false,
-            "box_align": "bottom-center",
+            "box_align": "middle-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
@@ -144,41 +218,40 @@
             "image_badge_horizontal_position": "left"
           }
         },
-        "slide_c6rpWy": {
+        "slide_EFdemU": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_AK_2.jpg",
-            "mobile_image": "shopify://shop_images/Introducing_AK_mobile.png",
+            "image": "shopify://shop_images/Website_homepage_22.png",
+            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_7.png",
             "heading": "",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
             "button_label": "",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel",
+            "link": "shopify://pages/pots-for-tots-x-byruby",
             "button_style_secondary": false,
             "button_label_2": "",
-            "button_link_2": "",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false,
             "box_align": "bottom-center",
             "show_text_box": false,
             "text_alignment": "center",
             "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
+            "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
             "text_alignment_mobile": "center",
-            "image_badge_width": "100",
+            "image_badge_width": "200",
             "image_badge_vertical_position": "top",
             "image_badge_horizontal_position": "right"
           }
         }
       },
       "block_order": [
-        "slide_EFdemU",
+        "slide_c6rpWy",
+        "slide_btGHpn",
         "slide_hgbCiy",
         "slide_6mcVhA",
-        "slide_c6rpWy"
+        "slide_EFdemU"
       ],
-      "disabled": true,
       "settings": {
         "layout": "full_bleed",
         "slide_height": "large",
@@ -190,13 +263,119 @@
         "accessibility_info": "Slideshow about our brand"
       }
     },
+    "1756898601fe522c85": {
+      "type": "apps",
+      "blocks": {
+        "reviews_io_reviewsio_rating_bar_wzmiij": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-bar/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "widget_id": "ynIW5cfZbl9p7NJY"
+          }
+        }
+      },
+      "block_order": [
+        "reviews_io_reviewsio_rating_bar_wzmiij"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    },
     "custom_image_banner_no_text_8JgQy4": {
       "type": "custom-image-banner-no-text",
+      "disabled": true,
       "settings": {
         "image_desktop": "shopify://shop_images/trustpilot-average-rating-banner.jpg",
         "image_width": "400",
         "title": "Trustpilot",
         "link_url": ""
+      }
+    },
+    "custom_multicolumn_adV6Gn": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_FNaUJd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_product_images_11.svg",
+            "title": "Spanish Style Chicken and Rice",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
+        "column_Yc6brM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Bites.png",
+            "title": "AK Chicken and Veggie Bites",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
+        "column_rLFxpX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Salmon_pasta_homepage_square_new.png",
+            "title": "Creamy Salmon Pasta",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
+        "column_XgNy9B": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/14.png",
+            "title": "Cheesy Veg Pasta Bake",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
+        "column_QDQrVz": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/11_124e2609-0e36-4500-bdd7-ec6622d683e1.png",
+            "title": "Veggie Chilli",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        }
+      },
+      "block_order": [
+        "column_FNaUJd",
+        "column_Yc6brM",
+        "column_rLFxpX",
+        "column_XgNy9B",
+        "column_QDQrVz"
+      ],
+      "settings": {
+        "title": "Meals and snacks made for your little ones",
+        "heading_size": "h1",
+        "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, REAL meals for babies, toddlers and beyond. Frozen and delivered to your door.</p>",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify://collections/build-your-box",
+        "color_scheme": "scheme-1",
+        "image": "shopify://shop_images/Recycled_background_medium_res.png",
+        "image_mobile": "shopify://shop_images/Recycled_background_600px.png",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "rich_text_zNjyc8": {
@@ -241,80 +420,6 @@
         "full_width": true,
         "padding_top": 8,
         "padding_bottom": 12
-      }
-    },
-    "custom_multicolumn_adV6Gn": {
-      "type": "custom-multicolumn",
-      "blocks": {
-        "column_FNaUJd": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/13_b85bb989-da86-4836-b2e4-733fe155270e.png",
-            "title": "Mexican-Style Burrito Bowl",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
-        },
-        "column_XgNy9B": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/14.png",
-            "title": "Cheesy Veg Pasta Bake",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
-        },
-        "column_QDQrVz": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/11_124e2609-0e36-4500-bdd7-ec6622d683e1.png",
-            "title": "NEW! Veggie Chilli",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
-        },
-        "column_Yc6brM": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Cheesy_veg_bite.png",
-            "title": "Cheesy Veg Bites",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
-        }
-      },
-      "block_order": [
-        "column_FNaUJd",
-        "column_XgNy9B",
-        "column_QDQrVz",
-        "column_Yc6brM"
-      ],
-      "settings": {
-        "title": "Meals and snacks made for your little ones",
-        "heading_size": "h1",
-        "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, REAL children's meals. Frozen and delivered to your door.</p>",
-        "image_width": "full",
-        "image_ratio": "square",
-        "columns_desktop": 4,
-        "column_alignment": "center",
-        "background_style": "primary",
-        "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/build-your-box",
-        "color_scheme": "scheme-1",
-        "image": "shopify://shop_images/Recycled_background_medium_res.png",
-        "image_mobile": "shopify://shop_images/Recycled_background_600px.png",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 60
       }
     },
     "rich_text_zCM7wX": {
@@ -497,7 +602,7 @@
       "settings": {
         "title": "PFT x Annabel Karmel",
         "heading_size": "h1",
-        "text": "<p>Discover our exclusive range in partnership with the UK's No. 1 children's cookery author, Annabel Karmel.</p>",
+        "text": "<p>Discover our exclusive range for babies and toddlers in partnership with the UK's No. 1 children's cookery author, Annabel Karmel.</p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -580,10 +685,10 @@
         "row_mKmVfb": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/image00031_VSCO.jpg",
+            "image": "shopify://shop_images/AK_website_mobile_533_x_434_px_6.png",
             "caption": "",
             "heading": "How it works",
-            "text": "<p>It’s simple. Pick your dietitian-approved children's meals and we'll deliver them to your door. Choose a flexible subscription and you can pause, skip or switch meals in every order. Alternatively choose a one-off delivery. No fuss - our meals arrive frozen and ready for your children to enjoy in minutes.</p>",
+            "text": "<p>Simply choose dietitian-approved meals, and we’ll deliver them frozen to your door. Opt for a flexible subscription or a one-time order—no fuss, just quick and nutritious meals for your child!</p>",
             "button_label": "SHOP NOW",
             "button_link": "shopify://collections/build-your-box"
           }
@@ -594,7 +699,7 @@
             "image": "shopify://shop_images/8D5066D7-C512-4EC4-BB11-5B79F72A1A2E_893af116-6219-4953-bf22-4b86d204381c.jpg",
             "caption": "",
             "heading": "Our mission",
-            "text": "<p>We want to make children's mealtimes easy and convenient, as well as ensuring young children grow up eating nutritious food for every meal. Our aim is to liberate busy parents like you - we'll do the cooking, giving you precious time back to spend with their family and friends.</p>",
+            "text": "<p>We make children's mealtimes easy with nutritious and convenient meals for little ones. Let us handle the cooking and give you precious time back to spend with family and friends.</p>",
             "button_label": "LEARN MORE",
             "button_link": "shopify://pages/about-us"
           }
@@ -605,7 +710,7 @@
             "image": "shopify://shop_images/Hero_box_shot_square.png",
             "caption": "",
             "heading": "Ingredients",
-            "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Not only that but you won’t find any hard to pronounce ingredients in our products as we buy exactly the same as you would at home.</p><p>We buy free-range & grass-fed meat directly from our local butchers each week. We buy fresh, sustainable fish, dairy and great quality fresh vegetables. </p>",
+            "text": "<p>We’re committed to quality, responsibly sourced ingredients—just like you’d buy at home. Our free-range, grass-fed meat comes fresh from local butchers, along with sustainable fish, dairy, and quality vegetables. No hard-to-pronounce ingredients, just the best for your child.</p>",
             "button_label": "LEARN MORE",
             "button_link": "shopify://pages/our-food"
           }
@@ -637,7 +742,7 @@
       "settings": {
         "title": "Save with bundles!",
         "heading_size": "h1",
-        "description": "<p>Save time by selecting from our carefully curated ready-to-order bundles with up to 15% off.</p>",
+        "description": "<p>Make mealtimes easier and save time by selecting from our carefully curated ready-to-order bundles with up to 15% off.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "bundles",
@@ -673,7 +778,7 @@
         "template--16755842351362__7e794788-fc62-4baf-b008-d2d8ed71fd6c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We've worked with our Children’s Dietitian, Lucy Upton to adapt four of your existing favourites slightly for little ones who may be going through a 'fussy eating' stage and need their meals to taste, look and feel a little more familiar in our NEW Simple range.</p>",
+            "text": "<p>With our Children’s Dietitian, Lucy Upton, we’ve adapted four favorites into our NEW Simple range—perfect for fussy eaters who need familiar tastes and textures or babies who are ready to move on from purées.</p>",
             "text_style": "body"
           }
         },
@@ -692,7 +797,7 @@
         "template--16755842351362__7e794788-fc62-4baf-b008-d2d8ed71fd6c-button-1"
       ],
       "settings": {
-        "image": "shopify://shop_images/Simple_Orzo_square.png",
+        "image": "shopify://shop_images/Baby_eating_close_up.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -720,7 +825,7 @@
             "header_colour": "#ffffff",
             "header_star_colour": "#ffffff",
             "heading_text_colour": "#40250a",
-            "heading_font": "helvetica_n4",
+            "heading_font": "sans_serif_n4",
             "body_text_colour": "#40250a",
             "badge_icon_colour": "#c1ddcf",
             "badge_text_colour": "#40250a",
@@ -820,7 +925,7 @@
         "columns_desktop": 2,
         "color_scheme": "",
         "show_image": true,
-        "show_date": true,
+        "show_date": false,
         "show_author": false,
         "show_view_all": true,
         "padding_top": 36,
@@ -864,14 +969,48 @@
         "padding_top": 60,
         "padding_bottom": 60
       }
+    },
+    "logo_bar_P9wDiF": {
+      "type": "logo-bar",
+      "blocks": {
+        "logo_NB6fQr": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/KFDCBadge.png",
+            "logo_height": 130
+          }
+        },
+        "logo_YzhQx8": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/logo_colour_small_0d7b57d9-d61c-4c0c-879c-90a3c5b8605d.png",
+            "logo_height": 100
+          }
+        }
+      },
+      "block_order": [
+        "logo_NB6fQr",
+        "logo_YzhQx8"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "We are proudly  part of:",
+        "heading_size": "h2",
+        "description": "",
+        "color_scheme": "",
+        "padding_top": 32,
+        "padding_bottom": 12
+      }
     }
   },
   "order": [
     "image_banner_Q7nyc4",
+    "rich_text_UTwFqR",
     "slideshow_tRxFr3",
+    "1756898601fe522c85",
     "custom_image_banner_no_text_8JgQy4",
-    "rich_text_zNjyc8",
     "custom_multicolumn_adV6Gn",
+    "rich_text_zNjyc8",
     "rich_text_zCM7wX",
     "custom_brands_qTTbhF",
     "image_banner_bWMPQb",
@@ -883,6 +1022,7 @@
     "1719331689a4fcf305",
     "custom_testimonials_pXPcd6",
     "featured_blog_aGFxAU",
-    "custom_newsletter_titGVp"
+    "custom_newsletter_titGVp",
+    "logo_bar_P9wDiF"
   ]
 }

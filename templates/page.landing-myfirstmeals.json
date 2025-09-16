@@ -1,0 +1,549 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_banner_GVmUkf": {
+      "type": "image-banner",
+      "blocks": {
+        "buttons_4ch6Ez": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "SHOP NOW",
+            "button_link_1": "shopify://collections/build-your-box",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "buttons_4ch6Ez"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/AK_main_banner_2.png",
+        "image_2": "shopify://shop_images/AK_main_banner.png",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "desktop_content_position": "bottom-right",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "scheme-4",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_with_text_KyC4ar": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_rBFniF": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Nutritious baby meals",
+            "heading_size": "h1"
+          }
+        },
+        "text_CMCwj3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Is your baby ready to move on from purées, or are you looking for alternatives to baby food pouches? Our Simple Range has been developed in partnership with our Children's Dietitian Lucy Upton to bring you nutritionally balanced meals, packed with veggies, but with smoother textures, and slightly less herbs and spices.</p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_HdfARb": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop now",
+            "button_link": "shopify://collections/build-your-box",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_rBFniF",
+        "text_CMCwj3",
+        "button_HdfARb"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/my_first_meals.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_P6zQg9": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_JV9eLD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SIMPLEPastaBolognese_2.png",
+            "title": "Simple Pasta Bolognese",
+            "text": "<p>British beef mince in a vegetable and tomato sauce with wheat pasta.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://products/my-first-meals-bundle-8-meals"
+          }
+        },
+        "column_xq4HYH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SIMPLEChickenKorma_2_1.png",
+            "title": "Simple Mild Chicken Korma",
+            "text": "<p>Free range British chicken pieces in a mild coconut curry sauce with white rice.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://products/my-first-meals-bundle-8-meals"
+          }
+        },
+        "column_jmAhTN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/SIMPLEMedVegOrzo_2.png",
+            "title": "Simple Mediterranean Veg Orzo",
+            "text": "<p>Orzo pasta with a vegetable and tomato cream sauce.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+          }
+        }
+      },
+      "block_order": [
+        "column_JV9eLD",
+        "column_xq4HYH",
+        "column_jmAhTN"
+      ],
+      "settings": {
+        "title": "Nutritionally balanced meals",
+        "heading_size": "h1",
+        "text": "<p>These adapted versions of our popular main meals are low in salt, low in sugar, and packed with hidden veggies for a quick, easy, and stress-free mealtime.  Stock your freezer so you've always have a healthy option ready to go.</p><p>Suitable from 9 months +</p>",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "Shop the range",
+        "button_link": "shopify://products/my-first-meals-bundle-8-meals",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 24
+      }
+    },
+    "image_banner_xPHYJm": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Y6RpAM": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "",
+            "heading_size": "h1",
+            "show_heading_shadow": false
+          }
+        },
+        "text_F6yTeh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "",
+            "text_style": "body"
+          }
+        },
+        "buttons_BqNRtY": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Y6RpAM",
+        "text_F6yTeh",
+        "buttons_BqNRtY"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Website_homepage_18.png",
+        "image_2": "shopify://shop_images/my_first_meals_baby.png",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "multicolumn_bHDhwQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_HLbK8x": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AKChickenTikka_3.png",
+            "title": "Mild Chicken Tikka",
+            "text": "<p>A fruity and mild chicken tikka mixed with fluffy rice.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+          }
+        },
+        "column_pEnUkF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AKChicken_VegOrzo_3.png",
+            "title": "Chicken & Veggie Orzo",
+            "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+          }
+        },
+        "column_fPgrN7": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/AK_Bundle.png",
+            "title": "AK x PFT Bundle",
+            "text": "<p>Save 10% when you buy the full bundle + Annabel Karmel's new Finger Foods book. </p>",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+          }
+        }
+      },
+      "block_order": [
+        "column_HLbK8x",
+        "column_pEnUkF",
+        "column_fPgrN7"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Little Pots",
+        "heading_size": "h1",
+        "text": "<p>Packed with natural goodness, these delicious meals have been developed with Annabel Karmel to bring you the perfect midweek meal for your tot. Suitable from 1-5 years.</p>",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "SHOP NOW",
+        "button_link": "shopify://collections/build-your-box",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_D7CjKB": {
+      "type": "featured-product",
+      "blocks": {
+        "text_Adj3U7": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_fcxBdV": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_BgAeT7": {
+          "type": "price",
+          "settings": {}
+        },
+        "variant_picker_WcYqQp": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_TLMCpd": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons_azpYWc": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_tfLzAf": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_Adj3U7",
+        "title_fcxBdV",
+        "price_BgAeT7",
+        "variant_picker_WcYqQp",
+        "quantity_selector_TLMCpd",
+        "buy_buttons_azpYWc",
+        "share_tfLzAf"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "my-first-meals-bundle-8-meals",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_BQBza9": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "pots-for-tots-x-annabel-karmel",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "link",
+        "enable_desktop_slider": true,
+        "color_scheme": "",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_blog_tCM9wY": {
+      "type": "featured-blog",
+      "name": "t:sections.featured-blog.presets.name",
+      "settings": {
+        "heading": "The Parent Hub",
+        "heading_size": "h1",
+        "blog": "toddlers",
+        "post_limit": 2,
+        "columns_desktop": 2,
+        "color_scheme": "scheme-2",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "custom_newsletter_BMmYj9": {
+      "type": "custom-newsletter",
+      "blocks": {
+        "heading_wT8NwW": {
+          "type": "heading",
+          "settings": {
+            "heading": "Join our journey",
+            "heading_size": "h1"
+          }
+        },
+        "paragraph_N7Bb9K": {
+          "type": "paragraph",
+          "settings": {
+            "text": "<p>Parenting is an adventure. Through conversations, community and resources we support and connect a diverse group of parents. Sign up for news, offers and more!</p>"
+          }
+        },
+        "klaviyo_email_marketing_sms_form_embed_block_fUi8Gc": {
+          "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/form-embed-block/2632fe16-c075-4321-a88b-50b567f42507",
+          "settings": {
+            "formId": "XDcips"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wT8NwW",
+        "paragraph_N7Bb9K",
+        "klaviyo_email_marketing_sms_form_embed_block_fUi8Gc"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify://shop_images/Recycled_background_medium_res.png",
+        "image_mobile": "shopify://shop_images/Recycled_background_medium_res.png",
+        "full_width": true,
+        "content_alignment": "center",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "image_banner_dxeXA4": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_Ui8EKt": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "show_heading_shadow": false
+          }
+        },
+        "text_Qd7gNq": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_JtaG6U": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ui8EKt",
+        "text_Qd7gNq",
+        "buttons_JtaG6U"
+      ],
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/2_e276b8ee-9ff9-46f9-8ecb-29a7dc7b4bc8.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_with_text_aiDaEi": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_4yJBpf": {
+          "type": "heading",
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_hGWWWJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text_style": "body"
+          }
+        },
+        "button_4QTLUF": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4yJBpf",
+        "text_hGWWWJ",
+        "button_4QTLUF"
+      ],
+      "disabled": true,
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_banner_GVmUkf",
+    "image_with_text_KyC4ar",
+    "multicolumn_P6zQg9",
+    "image_banner_xPHYJm",
+    "multicolumn_bHDhwQ",
+    "featured_product_D7CjKB",
+    "featured_collection_BQBza9",
+    "image_banner_dxeXA4",
+    "featured_blog_tCM9wY",
+    "custom_newsletter_BMmYj9",
+    "image_with_text_aiDaEi"
+  ]
+}

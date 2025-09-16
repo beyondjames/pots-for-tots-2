@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,21 +14,14 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
-        },
-        "reviews_io_reviewsio_rating_output_pEd8EK": {
-          "type": "shopify:\/\/apps\/reviews-io\/blocks\/reviewsio-rating-output\/92a082e5-b297-4e88-b428-ac96cbc505f9",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "recharge_subscriptions_subscription_widget_8Lg9gC": {
-          "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/subscription-widget\/371eed76-0b44-4869-9813-730372ea378e",
+          "type": "shopify://apps/recharge-subscriptions/blocks/subscription-widget/371eed76-0b44-4869-9813-730372ea378e",
           "settings": {
             "product": "{{product}}"
           }
@@ -36,12 +29,56 @@
         "custom_liquid_7WXxdt": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<a href=\"\/collections\/build-your-box\" class=\"button button--full-width button--primary\">Get STarted\n<\/a>"
+            "custom_liquid": "<a href=\"/collections/build-your-box\" class=\"button button--full-width button--primary\">Get STarted\n</a>"
           }
+        },
+        "reviews_io_reviewsio_rating_output_pEd8EK": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-rating-output/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {}
         },
         "description": {
           "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "text_UGDA4n": {
+          "type": "text",
           "settings": {
+            "text": "{{ product.metafields.my_fields.short_description.value }}",
+            "text_style": "body"
+          }
+        },
+        "ingredients_4knwqb": {
+          "type": "ingredients",
+          "settings": {}
+        },
+        "collapsible_tab_4CQyYG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "icon": "none",
+            "content": "<p>{{ product.metafields.custom.ingredients | metafield_tag }}</p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_Q4rjHn": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Nutritional Information",
+            "icon": "none",
+            "content": "",
+            "image": "{{ product.metafields.my_fields.nutritional_information.value }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_VhhxGD": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Cooking Instructions",
+            "icon": "none",
+            "content": "",
+            "image": "{{ product.metafields.my_fields.instructions.value }}",
+            "page": ""
           }
         },
         "share": {
@@ -53,11 +90,16 @@
       },
       "block_order": [
         "title",
-        "reviews_io_reviewsio_rating_output_pEd8EK",
         "price",
         "recharge_subscriptions_subscription_widget_8Lg9gC",
         "custom_liquid_7WXxdt",
+        "reviews_io_reviewsio_rating_output_pEd8EK",
         "description",
+        "text_UGDA4n",
+        "ingredients_4knwqb",
+        "collapsible_tab_4CQyYG",
+        "collapsible_tab_Q4rjHn",
+        "collapsible_tab_VhhxGD",
         "share"
       ],
       "settings": {
@@ -69,11 +111,46 @@
         "gallery_layout": "stacked",
         "media_position": "left",
         "image_zoom": "none",
-        "mobile_thumbnails": "hide",
+        "mobile_thumbnails": "show",
         "hide_variants": false,
         "enable_video_looping": false,
         "padding_top": 60,
         "padding_bottom": 60
+      }
+    },
+    "1746629390d6341737": {
+      "type": "apps",
+      "blocks": {
+        "reviews_io_reviewsio_card_carousel_WWKP8f": {
+          "type": "shopify://apps/reviews-io/blocks/reviewsio-card-carousel/92a082e5-b297-4e88-b428-ac96cbc505f9",
+          "settings": {
+            "star": "#000000",
+            "review_type": "product",
+            "reviews_shown": 20,
+            "header_bg_colour": "#5c8972",
+            "header_colour": "#ffffff",
+            "header_star_colour": "#ffffff",
+            "heading_text_colour": "#0e1311",
+            "heading_font": "helvetica_n4",
+            "body_text_colour": "#0e1311",
+            "badge_icon_colour": "#0e1311",
+            "badge_text_colour": "#0e1311",
+            "bg_start_colour": "#ffffff",
+            "bg_end_colour": "#ffffff",
+            "item_border_width": "0px",
+            "item_border_colour": "#f2f2f2",
+            "item_border_radius": "0px",
+            "item_shadow_size": "10px",
+            "item_shadow_colour": "#f2f2f2",
+            "enable_rich_snippets": false,
+            "disable_same_customer": false,
+            "logo_colour": "var(--logo-inverted)"
+          }
+        }
+      },
+      "block_order": ["reviews_io_reviewsio_card_carousel_WWKP8f"],
+      "settings": {
+        "include_margins": true
       }
     },
     "related-products": {
@@ -95,8 +172,5 @@
       }
     }
   },
-  "order": [
-    "main",
-    "related-products"
-  ]
+  "order": ["main", "1746629390d6341737", "related-products"]
 }

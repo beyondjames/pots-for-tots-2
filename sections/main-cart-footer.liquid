@@ -17,6 +17,57 @@
   }
 {%- endstyle -%}
 
+{% comment %} Cart Logic {% endcomment %}
+{% assign datepicker_active = true %}
+
+{% comment %} Check cart is valid {% endcomment %}
+{% assign invalid_cart = false %}
+{% assign cart_error_message = '' %}
+
+{% comment %} Liewood collection ID {% endcomment %}
+{% assign liewood_collection_id = 433416012034 %}
+{% assign liewood_in_cart = 0 %}
+
+{% comment %} Build your box collection ID {% endcomment %}
+{% assign byb_collection_id = 268279972006 %}
+{% assign byb_in_cart = 0 %}
+
+{% comment %} Baking set {% endcomment %}
+{% assign baking_set_collection_id = 14854878429569 %}
+{% assign baking_set_in_cart = 0 %}
+
+{% comment %} Find products in cart {% endcomment %}
+{% for item in cart.items %}
+  {% assign product = item.product %}
+  {% assign product_collections = product.collections %}
+  {% for collection in product_collections %}
+    {% if collection.id == liewood_collection_id %}
+      {% assign liewood_in_cart  = liewood_in_cart | plus: item.quantity %}
+    {% endif %}
+    {% if collection.id == byb_collection_id %}
+      {% assign byb_in_cart = byb_in_cart | plus: item.quantity %}
+    {% endif %}
+  {% endfor %}
+  {% if product.id == baking_set_collection_id %}
+    {% assign baking_set_in_cart = baking_set_in_cart | plus: item.quantity %}
+  {% endif %}
+{% endfor %}
+
+{% comment %} Check if cart is valid {% endcomment %}
+{% if byb_in_cart > 0 and byb_in_cart < 8 %}
+  {% assign invalid_cart = true %}
+  {% assign cart_error_message = section.settings.byb_error_message %}
+{%  elsif liewood_in_cart > 0 and byb_in_cart == 0  %}
+  {% comment %} Check cart value {% endcomment %}
+  {% if cart.total_price < 3500  %}
+    {% assign invalid_cart = true %}
+    {% assign cart_error_message = section.settings.liewood_error_message %}
+  {% endif %}
+{% elsif baking_set_in_cart > 0 and byb_in_cart == 0 %}
+  {% assign invalid_cart = true %}
+  {% assign cart_error_message = section.settings.bakingset_error_message %}
+{% endif %}
+
 <div
   class="gradient color-{{ section.settings.color_scheme }}{% if cart == empty %} is-empty{% endif %}"
   id="main-cart-footer"
@@ -86,7 +137,7 @@
                 </small>
               </div>
             {%- else -%}
-              {% render 'cart-ctas', datepicker: datepicker %}
+              {% render 'cart-ctas', disabled: invalid_cart, cart_error_message: cart_error_message, datepicker_active: datepicker_active %}
           {%- endcase -%}
         {% endfor %}
 
