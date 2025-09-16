@@ -7,3 +7,11 @@
 package.json
 node_modules
 src
+.prettierrc.json
+.shopifyignore
+.vscode/\*
+index.html
+package-lock.json
+tsconfig.app.json
+tsconfig.json
+tsconfig.node.json
