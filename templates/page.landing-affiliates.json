@@ -44,9 +44,9 @@
       ],
       "settings": {
         "image": "shopify://shop_images/Website_homepage_1000_x_500_px_2.png",
-        "image_3": "shopify://shop_images/AK_website_mobile_533_x_434_px.png",
+        "image_3": "shopify://shop_images/Web_banner_affiliate_MOB.png",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
