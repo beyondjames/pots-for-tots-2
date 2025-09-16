@@ -85,7 +85,7 @@ class DatePicker extends HTMLElement {
       dateMin.setDate(dateMin.getDate() + 1);
     }
 
-    if (currentHour > 16 || (currentHour === 16 && currentMinutes >= 30)) {
+    if (currentHour > this.cutoffHours || (currentHour === this.cutoffHours && currentMinutes >= this.cutoffMinutes)) {
       dateMin.setDate(dateMin.getDate() + 1);
     }
 
