@@ -67,7 +67,7 @@
         "text_CMCwj3": {
           "type": "text",
           "settings": {
-            "text": "<p>We're delighted to partner with the UK's No. 1 children's cookery author, Annabel Karmel to bring you our nourishing, delicious range of handmade bites and meals. They're a freezer saviour for when you need a healthy meal without the prep.<br/>Simply heat, serve, and enjoy more time with your tot!</p>",
+            "text": "<p><strong>We’re delighted to be partnering once again with the UK’s No. 1 children’s cookery author, Annabel Karmel, to launch our second range of nourishing, delicious handmade bites and meals. These little freezer saviours are perfect for when you need a healthy meal without the prep – simply heat, serve, and enjoy more time with your tot!</strong></p><p></p>",
             "text_style": "body"
           }
         },
@@ -143,7 +143,7 @@
       "settings": {
         "title": "Little Bites",
         "heading_size": "h1",
-        "text": "<p>These little bites developed with Annabel Karmel are ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
+        "text": "<p>We've added two new recipes to our little bites range developed with Annabel Karmel. They're ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
