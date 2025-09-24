@@ -133,12 +133,11 @@
     }
 
     async updateNextChargeDate(ids, date) {
-      console.log("Subscription IDs:", ids);
-      console.log("Next Charge Date:", date);
-      const idArray = ids.split(',').map(id => id.trim());
-      alert(`Updating next charge date to: ${date}, for subscriptions: ${idArray}`);
-      {% comment %} const updatePromises = idArray.map(id => rechargeAPI.updateNextCharge(id, date)); {% endcomment %}
-      {% comment %} return Promise.all(updatePromises); {% endcomment %}
+      console.log('Subscription IDs:', ids);
+      console.log('Next Charge Date:', date);
+      const idArray = ids.split(',').map((id) => id.trim());
+      const updatePromises = idArray.map((id) => rechargeAPI.updateNextCharge(id, date));
+      return Promise.all(updatePromises);
       return true;
     }
 
