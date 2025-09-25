@@ -83,6 +83,7 @@
         "text_CMCwj3",
         "button_HdfARb"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/AK_website_mobile_2.png",
         "height": "adapt",
@@ -95,6 +96,115 @@
         "color_scheme": "scheme-4",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_with_text_GLjhjj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_XGFpWj": {
+          "type": "heading",
+          "settings": {
+            "heading": "Expert recipes delivered to your door!",
+            "heading_size": "h1"
+          }
+        },
+        "text_M7bDmk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re delighted to be partnering once again with the UK’s No. 1 children’s cookery author, Annabel Karmel, to launch our second range of nourishing, delicious handmade bites and meals. These little freezer saviours are perfect for when you need a healthy meal without the prep – simply heat, serve, and enjoy more time with your tot!</p>",
+            "text_style": "body"
+          }
+        },
+        "button_CwQN6W": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_XGFpWj",
+        "text_M7bDmk",
+        "button_CwQN6W"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Website_homepage_product_images_11_8.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multirow_97hLMH": {
+      "type": "multirow",
+      "blocks": {
+        "row_LiT73R": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_product_images_11_8.png",
+            "caption": "",
+            "heading": "",
+            "text": "<p>We’re delighted to be partnering once again with the UK’s No. 1 children’s cookery author, Annabel Karmel, to launch our second range of nourishing, delicious handmade bites and meals. These little freezer saviours are perfect for when you need a healthy meal without the prep – simply heat, serve, and enjoy more time with your tot!</p><p></p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_t9BNna": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/New_bites.png",
+            "caption": "AK x PFT",
+            "heading": "Little Bites",
+            "text": "<p>We've added two new recipes to our little bites range developed with Annabel Karmel. They're ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+          }
+        },
+        "row_AXWrzG": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_LiT73R",
+        "row_t9BNna",
+        "row_AXWrzG"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
         "padding_top": 36,
         "padding_bottom": 36
       }
@@ -139,9 +249,9 @@
         "column_jmAhTN"
       ],
       "settings": {
-        "title": "Little Bites",
+        "title": "",
         "heading_size": "h1",
-        "text": "<p>We've added two new recipes to our little bites range developed with Annabel Karmel. They're ideal as part of a meal or as a wholesome snack. The perfect lunch or post-nursery pick-me-up! </p><p>Suitable from 9 months +</p>",
+        "text": "",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -149,7 +259,7 @@
         "background_style": "primary",
         "button_label": "Shop the range",
         "button_link": "shopify://collections/build-your-box",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 20,
@@ -211,6 +321,65 @@
         "show_text_below": true
       }
     },
+    "multirow_U3tXqH": {
+      "type": "multirow",
+      "blocks": {
+        "row_ChUMnw": {
+          "type": "row",
+          "settings": {
+            "image": "shopify://shop_images/New_pots.png",
+            "caption": "AK x PFT",
+            "heading": "Little Pots",
+            "text": "<p>We’ve added 3 brand new meals to our range, developed with Annabel Karmel and packed with natural goodness. Perfect for fuss-free midweek dinners, they’re designed especially for little ones aged 1–5.</p>",
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+          }
+        },
+        "row_CpwWcC": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        },
+        "row_XmzrAx": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "caption": "Caption",
+            "heading": "Row",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "button_label": "Button label",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_ChUMnw",
+        "row_CpwWcC",
+        "row_XmzrAx"
+      ],
+      "name": "t:sections.multirow.presets.name",
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "scheme-2",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "multicolumn_bHDhwQ": {
       "type": "multicolumn",
       "blocks": {
@@ -251,9 +420,9 @@
         "column_fPgrN7"
       ],
       "settings": {
-        "title": "Little Pots",
+        "title": "",
         "heading_size": "h1",
-        "text": "<p>We’ve added 3 brand new meals to our range, developed with Annabel Karmel and packed with natural goodness. Perfect for fuss-free midweek dinners, they’re designed especially for little ones aged 1–5.</p>",
+        "text": "",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
@@ -261,7 +430,7 @@
         "background_style": "primary",
         "button_label": "SHOP NOW",
         "button_link": "shopify://collections/build-your-box",
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
@@ -397,18 +566,71 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_k8DJ8c": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8T343X": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_dkmpq4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>With familiar favourites like pasta dishes alongside innovative snack options that can double as mini meals, this new range offers families convenient choices with foods children will enjoy, while ensuring every bite delivers on nutrition.<br/><strong>- Lucy Upton, our Children’s Dietitian</strong></p>",
+            "text_style": "body"
+          }
+        },
+        "button_LtExfm": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/pots-for-tots-x-annabel-karmel",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8T343X",
+        "text_dkmpq4",
+        "button_LtExfm"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Lucy_Upton_Pink.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "main",
     "image_banner_GVmUkf",
     "image_with_text_KyC4ar",
+    "image_with_text_GLjhjj",
+    "multirow_97hLMH",
     "multicolumn_P6zQg9",
     "image_banner_xPHYJm",
+    "multirow_U3tXqH",
     "multicolumn_bHDhwQ",
     "video_bFAqHA",
     "image_with_text_fFiT9m",
     "featured_collection_BQBza9",
-    "custom_newsletter_BMmYj9"
+    "custom_newsletter_BMmYj9",
+    "image_with_text_k8DJ8c"
   ]
 }
