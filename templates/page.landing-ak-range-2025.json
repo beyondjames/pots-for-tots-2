@@ -36,12 +36,10 @@
       "block_order": [
         "buttons_4ch6Ez"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/AK_main_banner_2.png",
-        "image_2": "shopify://shop_images/AK_main_banner.png",
+        "image": "shopify://shop_images/AK_landing_page_main_banner_desktop.png",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "adapt",
         "desktop_content_position": "bottom-right",
         "show_text_box": false,
         "desktop_content_alignment": "left",
