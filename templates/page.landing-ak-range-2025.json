@@ -452,6 +452,55 @@
         "padding_bottom": 36
       }
     },
+    "image_with_text_k8DJ8c": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_8T343X": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image with text",
+            "heading_size": "h1"
+          }
+        },
+        "text_dkmpq4": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>\"With familiar favourites like pasta dishes alongside innovative snack options that can double as mini meals, this new range offers families convenient choices with foods children will enjoy, while ensuring every bite delivers on nutrition.\"<br/></em><strong>- Lucy Upton, our Children’s Dietitian</strong></p>",
+            "text_style": "body"
+          }
+        },
+        "button_LtExfm": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP NOW",
+            "button_link": "shopify://collections/pots-for-tots-x-annabel-karmel",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_8T343X",
+        "text_dkmpq4",
+        "button_LtExfm"
+      ],
+      "name": "t:sections.image-with-text.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Lucy_Upton_Pink.png",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "overlap",
+        "section_color_scheme": "scheme-3",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_fFiT9m": {
       "type": "image-with-text",
       "blocks": {
@@ -566,55 +615,6 @@
         "padding_top": 40,
         "padding_bottom": 52
       }
-    },
-    "image_with_text_k8DJ8c": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_8T343X": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Image with text",
-            "heading_size": "h1"
-          }
-        },
-        "text_dkmpq4": {
-          "type": "text",
-          "settings": {
-            "text": "<p>With familiar favourites like pasta dishes alongside innovative snack options that can double as mini meals, this new range offers families convenient choices with foods children will enjoy, while ensuring every bite delivers on nutrition.<br/><strong>- Lucy Upton, our Children’s Dietitian</strong></p>",
-            "text_style": "body"
-          }
-        },
-        "button_LtExfm": {
-          "type": "button",
-          "settings": {
-            "button_label": "SHOP NOW",
-            "button_link": "shopify://collections/pots-for-tots-x-annabel-karmel",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_8T343X",
-        "text_dkmpq4",
-        "button_LtExfm"
-      ],
-      "name": "t:sections.image-with-text.presets.name",
-      "settings": {
-        "image": "shopify://shop_images/Lucy_Upton_Pink.png",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
@@ -628,9 +628,9 @@
     "multirow_U3tXqH",
     "multicolumn_bHDhwQ",
     "video_bFAqHA",
+    "image_with_text_k8DJ8c",
     "image_with_text_fFiT9m",
     "featured_collection_BQBza9",
-    "custom_newsletter_BMmYj9",
-    "image_with_text_k8DJ8c"
+    "custom_newsletter_BMmYj9"
   ]
 }
