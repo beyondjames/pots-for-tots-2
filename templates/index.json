@@ -141,18 +141,19 @@
         },
         "slide_btGHpn": {
           "type": "slide",
+          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_1500x750_1.svg",
+            "image": "shopify://shop_images/AK_new_range_hero_homepage.png",
             "mobile_image": "shopify://shop_images/After_school.svg",
-            "heading": "Back to School",
+            "heading": ".",
             "heading_size": "hxxl",
             "show_heading_shadow": false,
             "subheading": "",
-            "button_label": "SHOP AFTER-SCHOOL SNACKS",
-            "link": "https://potsfortots.co.uk/collections/build-your-box?filter.p.m.custom.box_builder_filters=Snacks%2FExtras",
+            "button_label": "BUILD YOUR BOX",
+            "link": "shopify://collections/build-your-box",
             "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_label_2": "SHOP BUNDLES",
+            "button_link_2": "shopify://collections/bundles",
             "button_style_secondary_2": false,
             "box_align": "middle-center",
             "show_text_box": false,
@@ -170,7 +171,7 @@
           "settings": {
             "image": "shopify://shop_images/Website_homepage_AK_group_pink_background.png",
             "mobile_image": "shopify://shop_images/AK_group_shot.png",
-            "heading": "Big nutrition, little effort.",
+            "heading": "Big nutrition, little effort!",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
@@ -220,6 +221,7 @@
         },
         "slide_EFdemU": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Website_homepage_22.png",
             "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_7.png",
@@ -294,17 +296,6 @@
     "custom_multicolumn_adV6Gn": {
       "type": "custom-multicolumn",
       "blocks": {
-        "column_FNaUJd": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Website_homepage_product_images_11.svg",
-            "title": "Spanish Style Chicken and Rice",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
-        },
         "column_Yc6brM": {
           "type": "column",
           "settings": {
@@ -319,7 +310,7 @@
         "column_rLFxpX": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Salmon_pasta_homepage_square_new.png",
+            "image": "shopify://shop_images/Salmon_Pasta_990d5329-cef6-416c-aebb-2c1f5134010d.png",
             "title": "Creamy Salmon Pasta",
             "title_size": "h2",
             "text": "",
@@ -339,11 +330,22 @@
             "link": "shopify://collections/build-your-box"
           }
         },
+        "column_FNaUJd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Website_homepage_product_images_11.svg",
+            "title": "Spanish Style Chicken and Rice",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
         "column_QDQrVz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/11_124e2609-0e36-4500-bdd7-ec6622d683e1.png",
-            "title": "Veggie Chilli",
+            "image": "shopify://shop_images/Mild_Chicken_Tikka.png",
+            "title": "Mild Chicken Tikka",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
@@ -352,10 +354,10 @@
         }
       },
       "block_order": [
-        "column_FNaUJd",
         "column_Yc6brM",
         "column_rLFxpX",
         "column_XgNy9B",
+        "column_FNaUJd",
         "column_QDQrVz"
       ],
       "settings": {
