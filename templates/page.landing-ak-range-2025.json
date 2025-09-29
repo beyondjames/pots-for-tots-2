@@ -219,8 +219,8 @@
             "image": "shopify://shop_images/AK5VegBites_1_519796ea-c9f3-4da1-93c7-78fb0891a56f.png",
             "title": "5 Veg Bites",
             "text": "<p>The perfect tasty bites for little ones packed with 5 hidden veggies!</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
           }
         },
         "column_PMmxtD": {
@@ -229,8 +229,8 @@
             "image": "shopify://shop_images/CottagePieBites.png",
             "title": "Cottage Pie Bites",
             "text": "<p>A fun twist on a family favourite – cottage pie in a bite-sized bake!</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
           }
         },
         "column_JV9eLD": {
@@ -239,8 +239,8 @@
             "image": "shopify://shop_images/AKFishPieBites_3.png",
             "title": "Fish Pie Bites",
             "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist. </p>",
-            "link_label": "",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
           }
         },
         "column_xq4HYH": {
@@ -249,8 +249,8 @@
             "image": "shopify://shop_images/Chicken_and_Veggie_Bites.png",
             "title": "Chicken & Veggie Bites",
             "text": "<p>Baked mini bites with chicken, sweet potato and broccoli.</p>",
-            "link_label": "",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
           }
         },
         "column_jmAhTN": {
@@ -259,7 +259,17 @@
             "image": "shopify://shop_images/Cheese_and_Veggie_Frittata.png",
             "title": "Cheese and Veggie Frittatas",
             "text": "<p>Mini baked fritattas made with egg, potato, red pepper, peas and onions. </p>",
-            "link_label": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
+        "column_Mhigay": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/All_snacks.png",
+            "title": "Discover the full range!",
+            "text": "<p>Packed with veggies and goodness, our little bites are here to change the way we think about kids’ snacks - from quick fillers to feel-good fuel.</p>",
+            "link_label": "SHOP NOW",
             "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
           }
         }
@@ -269,7 +279,8 @@
         "column_PMmxtD",
         "column_JV9eLD",
         "column_xq4HYH",
-        "column_jmAhTN"
+        "column_jmAhTN",
+        "column_Mhigay"
       ],
       "settings": {
         "title": "",
@@ -412,8 +423,8 @@
             "image": "shopify://shop_images/CarrotandTomatoPastawithChicken.png",
             "title": "Carrot & Tomato Pasta with Chicken",
             "text": "<p>Tender British chicken with pasta in a rich carrot & tomato sauce</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
           }
         },
         "column_UgNRr9": {
@@ -422,8 +433,8 @@
             "image": "shopify://shop_images/MexicanStyleChicken_VeggieFajitaBowl.png",
             "title": "Mexican-Style Chicken & Veggie Fajita Bowl",
             "text": "<p>A twist on the classic family-favourite - free-range British chicken in a gently spiced tomato sauce with fluffy white rice!</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
           }
         },
         "column_rYaVwP": {
@@ -432,8 +443,8 @@
             "image": "shopify://shop_images/TomatoeyBeefOrzo.png",
             "title": "Tomatoey Beef Orzo",
             "text": "<p>British beef mince in a rich tomato sauce with tender orzo pasta</p>",
-            "link_label": "",
-            "link": ""
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
           }
         },
         "column_HLbK8x": {
@@ -442,8 +453,8 @@
             "image": "shopify://shop_images/Chicken_Tikka.png",
             "title": "Mild Chicken Tikka",
             "text": "<p>A fruity and mild chicken tikka mixed with fluffy rice.</p>",
-            "link_label": "",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
           }
         },
         "column_pEnUkF": {
@@ -485,7 +496,7 @@
         "column_alignment": "center",
         "background_style": "primary",
         "button_label": "SHOP NOW",
-        "button_link": "shopify://collections/build-your-box",
+        "button_link": "shopify://collections/pots-for-tots-x-annabel-karmel",
         "color_scheme": "scheme-2",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
