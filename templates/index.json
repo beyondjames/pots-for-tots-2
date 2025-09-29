@@ -194,11 +194,10 @@
         },
         "slide_6mcVhA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/AK_new_range_hero_homepage_2.png",
             "mobile_image": "shopify://shop_images/Website_homepage_product_images_11.svg",
-            "heading": "Fuel your fun!",
+            "heading": "Fuel their fun!",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
