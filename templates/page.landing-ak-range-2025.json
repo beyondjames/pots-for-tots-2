@@ -246,7 +246,7 @@
         "column_xq4HYH": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AKChicken_VegBites_3.png",
+            "image": "shopify://shop_images/Chicken_and_Veggie_Bites.png",
             "title": "Chicken & Veggie Bites",
             "text": "<p>Baked mini bites with chicken, sweet potato and broccoli.</p>",
             "link_label": "",
@@ -256,7 +256,7 @@
         "column_jmAhTN": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AKVeggieFrittatas_3.png",
+            "image": "shopify://shop_images/Cheese_and_Veggie_Frittata.png",
             "title": "Cheese and Veggie Frittatas",
             "text": "<p>Mini baked fritattas made with egg, potato, red pepper, peas and onions. </p>",
             "link_label": "",
@@ -439,7 +439,7 @@
         "column_HLbK8x": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AKChickenTikka_3.png",
+            "image": "shopify://shop_images/Chicken_Tikka.png",
             "title": "Mild Chicken Tikka",
             "text": "<p>A fruity and mild chicken tikka mixed with fluffy rice.</p>",
             "link_label": "",
@@ -449,11 +449,11 @@
         "column_pEnUkF": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AKChicken_VegOrzo_3.png",
+            "image": "shopify://shop_images/Chicken_and_Veggie_Orzo.png",
             "title": "Chicken & Veggie Orzo",
             "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
             "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "link": "shopify://collections/build-your-box"
           }
         },
         "column_fPgrN7": {
