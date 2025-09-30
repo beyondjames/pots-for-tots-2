@@ -81,14 +81,11 @@
         if (e.target === this.querySelector('.deliverymodal__overlay')) this.close();
       });
       this.querySelector('.affinity-reschedule').addEventListener('click', async () => {
-        console.log('Reschedule button clicked');
         const button = this.querySelector('.affinity-reschedule');
         button.classList.add('loading');
         button.disabled = true;
         const date = button.getAttribute('data-date');
-        console.log('Rescheduling to:', date);
         try {
-          console.log('Updating next charge date for subscriptions:', this.subscriptionIds);
           await this.updateNextChargeDate(this.subscriptionIds, date);
           this.close();
           if (document.getElementById('affinity-delivery-date-section')) {
@@ -135,14 +132,9 @@
     }
 
     async updateNextChargeDate(ids, date) {
-      console.log('Updating next charge date for IDs:', ids, 'to date:', date);
-      console.log('Subscription IDs:', ids);
-      console.log('Next Charge Date:', date);
       const cleanedIds = ids.replace(/^\[|\]$/g, '');
       const idArray = cleanedIds.split(',').map((id) => id.trim());
-      console.log('ID Array:', idArray);
       const updatePromises = idArray.map((id) => rechargeAPI.updateNextCharge(id, date));
-      console.log('Update Promises:', updatePromises);
       return Promise.all(updatePromises);
       return true;
     }
