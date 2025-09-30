@@ -567,9 +567,9 @@
         "column_mEPE9q": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Bites.png",
-            "title": "Chicken and Veggie Bites",
-            "text": "<p>Baked mini bites with chicken, sweet potato and broccoli.</p>",
+            "image": "shopify://shop_images/5_Veg_Bites_700e3d98-0039-4316-90ff-019f5fe85093.png",
+            "title": "5 Veg Bites",
+            "text": "<p>The perfect tasty bites for little ones packed with 5 hidden veggies!</p>",
             "link_label": "SHOP NOW",
             "link": "shopify://products/ak-chicken-veggie-bites"
           }
@@ -577,9 +577,9 @@
         "column_tx4PAN": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Orzo.png",
-            "title": "Chicken and Veggie Orzo",
-            "text": "<p>A tomato based orzo with chicken, sweetcorn and peas.</p>",
+            "image": "shopify://shop_images/Tomatoey_Beef_Orzo.png",
+            "title": "Tomatoey Beef Orzo",
+            "text": "<p>British beef mince in a rich tomato sauce with tender orzo pasta.</p>",
             "link_label": "SHOP NOW",
             "link": "shopify://products/ak-chicken-veggie-orzo"
           }
@@ -587,9 +587,9 @@
         "column_RaWPKf": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AK_Fish_Pie_Bites.png",
-            "title": "Fish Pie Bites",
-            "text": "<p>Baked salmon, sweet potato and broccoli bites with a cheesy twist.</p>",
+            "image": "shopify://shop_images/Carrot_and_Tomato_Pasta.png",
+            "title": "Carrot and Tomato Pasta with Chicken",
+            "text": "<p>Tender British chicken with pasta in a rich carrot & tomato sauce</p>",
             "link_label": "SHOP NOW",
             "link": "shopify://products/ak-fish-pie-bites"
           }
@@ -686,7 +686,7 @@
         "row_mKmVfb": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/AK_website_mobile_533_x_434_px_6.png",
+            "image": "shopify://shop_images/24.png",
             "caption": "",
             "heading": "How it works",
             "text": "<p>Simply choose dietitian-approved meals, and we’ll deliver them frozen to your door. Opt for a flexible subscription or a one-time order—no fuss, just quick and nutritious meals for your child!</p>",
@@ -708,7 +708,7 @@
         "row_dyBTqK": {
           "type": "row",
           "settings": {
-            "image": "shopify://shop_images/Hero_box_shot_square.png",
+            "image": "shopify://shop_images/23_60758dcd-7ea4-4a52-a744-6f188ae44f85.png",
             "caption": "",
             "heading": "Ingredients",
             "text": "<p>We’re committed to quality, responsibly sourced ingredients—just like you’d buy at home. Our free-range, grass-fed meat comes fresh from local butchers, along with sustainable fish, dairy, and quality vegetables. No hard-to-pronounce ingredients, just the best for your child.</p>",
