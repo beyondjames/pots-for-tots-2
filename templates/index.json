@@ -298,19 +298,8 @@
         "column_Yc6brM": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/AK_Chicken_and_Veggie_Bites.png",
-            "title": "AK Chicken and Veggie Bites",
-            "title_size": "h2",
-            "text": "",
-            "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
-          }
-        },
-        "column_rLFxpX": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Salmon_Pasta_990d5329-cef6-416c-aebb-2c1f5134010d.png",
-            "title": "Creamy Salmon Pasta",
+            "image": "shopify://shop_images/Cottage_Pie_Bites.png",
+            "title": "AK Cottage Pie Bites",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
@@ -332,8 +321,19 @@
         "column_FNaUJd": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_product_images_11.svg",
-            "title": "Spanish Style Chicken and Rice",
+            "image": "shopify://shop_images/Mexican_Fajita_Bowl.png",
+            "title": "AK Mexican-Style Chicken & Veggie Fajita Bowl",
+            "title_size": "h2",
+            "text": "",
+            "link_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box"
+          }
+        },
+        "column_rLFxpX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Salmon_Pasta_990d5329-cef6-416c-aebb-2c1f5134010d.png",
+            "title": "Creamy Salmon Pasta",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
@@ -354,9 +354,9 @@
       },
       "block_order": [
         "column_Yc6brM",
-        "column_rLFxpX",
         "column_XgNy9B",
         "column_FNaUJd",
+        "column_rLFxpX",
         "column_QDQrVz"
       ],
       "settings": {
