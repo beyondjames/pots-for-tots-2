@@ -131,6 +131,7 @@ class DatePicker extends HTMLElement {
         console.log('Date selected', date, page);
 
         if (page == 'account') {
+          console.log('Account page - setting reschedule date');
           const rescheduleButton = document.querySelector('.affinity-reschedule');
           if (rescheduleButton) {
             rescheduleButton.disabled = false;
@@ -139,6 +140,7 @@ class DatePicker extends HTMLElement {
             rescheduleButton.setAttribute('data-date', this.formatDateLocal(selectedDate));
           }
         } else if (page == 'cart') {
+          console.log('Cart page - setting delivery date');
           // Update the cart with the selected date using timezone-aware formatting
           const attributes = {
             _first_delivery_date: date,

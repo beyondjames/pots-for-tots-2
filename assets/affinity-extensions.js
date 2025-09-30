@@ -46,6 +46,7 @@ const rechargeAPI = {
         console.error('Authentication failed:', error);
         throw error;
       });
+      console.log('Authenticated with Recharge:', this.session);
     }
     return this.session;
   },
@@ -73,6 +74,9 @@ const rechargeAPI = {
   },
 
   async updateNextCharge(subscriptionId, nextChargeDate) {
+    console.log('Updating next charge date to:', nextChargeDate);
+    console.log('For subscription ID:', subscriptionId);
+    console.log('Using session:', this.session);
     const response = await recharge.subscription
       .updateSubscriptionChargeDate(this.session, subscriptionId, nextChargeDate)
       .catch((error) => {
