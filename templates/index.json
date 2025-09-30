@@ -115,6 +115,7 @@
       "blocks": {
         "slide_c6rpWy": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Website_homepage_AK_children.png",
             "mobile_image": "shopify://shop_images/Website_homepage_product_images_11_4.svg",
@@ -143,7 +144,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/29.png",
-            "mobile_image": "shopify://shop_images/AK_website_mobile_5.png",
+            "mobile_image": "shopify://shop_images/19_d909abbf-e596-4257-8355-151dc93adf6e.png",
             "heading": "Say goodbye to mealtime stress!",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
@@ -168,8 +169,8 @@
         "slide_hgbCiy": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Website_homepage_AK_group_pink_background.png",
-            "mobile_image": "shopify://shop_images/AK_group_shot.png",
+            "image": "shopify://shop_images/AK_homepage_hero_orzo.png",
+            "mobile_image": "shopify://shop_images/AK_website_mobile_6.png",
             "heading": "Big nutrition, little effort!",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
@@ -193,11 +194,10 @@
         },
         "slide_6mcVhA": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/AK_new_range_hero_homepage_2.png",
-            "mobile_image": "shopify://shop_images/Website_homepage_product_images_11.svg",
-            "heading": "Fuel their fun!",
+            "mobile_image": "shopify://shop_images/18_647bb9b4-981e-431c-92ef-f89d0cb673be.png",
+            "heading": "Kids food, made as it should be",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
