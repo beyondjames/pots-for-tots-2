@@ -59,6 +59,21 @@
         "show_text_below": true
       }
     },
+    "1759414681944d8327": {
+      "type": "apps",
+      "blocks": {
+        "influence_io_loyalty_rewards_referral_widget_JRCJjK": {
+          "type": "shopify://apps/influence-io-loyalty-rewards/blocks/referral-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "influence_io_loyalty_rewards_referral_widget_JRCJjK"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
     "rich_text_nbdicX": {
       "type": "rich-text",
       "blocks": {
@@ -92,6 +107,7 @@
         "text_kbXY6F",
         "button_Cg8XkB"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -155,27 +171,12 @@
         "stack_images_on_mobile": true,
         "show_text_below": true
       }
-    },
-    "1759411866a28ee339": {
-      "type": "apps",
-      "blocks": {
-        "influence_io_loyalty_rewards_referral_widget_eqcm3t": {
-          "type": "shopify://apps/influence-io-loyalty-rewards/blocks/referral-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "influence_io_loyalty_rewards_referral_widget_eqcm3t"
-      ],
-      "settings": {
-        "include_margins": true
-      }
     }
   },
   "order": [
     "main",
     "image_banner_QzQ7yb",
-    "1759411866a28ee339",
+    "1759414681944d8327",
     "rich_text_nbdicX",
     "image_banner_iW47z4"
   ]
