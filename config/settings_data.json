@@ -247,6 +247,33 @@
           "cards_background": "#ffffff",
           "cards_border_color": "rgba(0,0,0,0)"
         }
+      },
+      "6828711692300896689": {
+        "type": "shopify://apps/influence-io-loyalty-rewards/blocks/headless-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
+        "disabled": false,
+        "settings": {}
+      },
+      "6719573319877670557": {
+        "type": "shopify://apps/influence-io-loyalty-rewards/blocks/first-time-visit-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
+        "disabled": false,
+        "settings": {}
+      },
+      "10112296718403049266": {
+        "type": "shopify://apps/influence-io-loyalty-rewards/blocks/floating-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
+        "disabled": false,
+        "settings": {}
+      },
+      "16274361319697914395": {
+        "type": "shopify://apps/reviews-io/blocks/reviewsio-floating/92a082e5-b297-4e88-b428-ac96cbc505f9",
+        "disabled": false,
+        "settings": {
+          "widget_id": "",
+          "show_all": true,
+          "show_index": true,
+          "show_product": true,
+          "show_collection": true,
+          "show_cart": true
+        }
       }
     },
     "color_schemes": {
