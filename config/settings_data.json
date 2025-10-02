@@ -260,11 +260,6 @@
         "disabled": true,
         "settings": {}
       },
-      "2498716461440425698": {
-        "type": "shopify://apps/influence-io-loyalty-rewards/blocks/popup-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
-        "disabled": true,
-        "settings": {}
-      },
       "6828711692300896689": {
         "type": "shopify://apps/influence-io-loyalty-rewards/blocks/headless-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
         "disabled": true,
@@ -273,6 +268,11 @@
       "6719573319877670557": {
         "type": "shopify://apps/influence-io-loyalty-rewards/blocks/first-time-visit-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
         "disabled": true,
+        "settings": {}
+      },
+      "2498716461440425698": {
+        "type": "shopify://apps/influence-io-loyalty-rewards/blocks/popup-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
+        "disabled": false,
         "settings": {}
       }
     },
