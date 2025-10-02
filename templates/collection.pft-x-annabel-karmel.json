@@ -47,8 +47,8 @@
         "buttons_yxPGGR"
       ],
       "settings": {
-        "image": "shopify://shop_images/Ak_collection_banner_desktop.png",
-        "image_3": "shopify://shop_images/AK_collection_mobile.png",
+        "image": "shopify://shop_images/Ak_collection_page_hero_banner.png",
+        "image_3": "shopify://shop_images/AK_website_mobile_7.png",
         "image_overlay_opacity": 0,
         "image_height": "small",
         "desktop_content_position": "middle-center",
@@ -137,7 +137,7 @@
             "header_colour": "#ffffff",
             "header_star_colour": "#ffffff",
             "heading_text_colour": "#40250a",
-            "heading_font": "helvetica_n4",
+            "heading_font": "sans_serif_n4",
             "body_text_colour": "#40250a",
             "badge_icon_colour": "#c1ddcf",
             "badge_text_colour": "#40250a",
