@@ -101,59 +101,82 @@
         "padding_bottom": 52
       }
     },
-    "featured_collection_Fgf9ic": {
-      "type": "featured-collection",
-      "disabled": true,
+    "image_banner_iW47z4": {
+      "type": "image-banner",
+      "blocks": {
+        "heading_qJy4DA": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Image banner",
+            "heading_size": "h1",
+            "show_heading_shadow": false
+          }
+        },
+        "text_EqXYxy": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "buttons_bEhJNB": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_qJy4DA",
+        "text_EqXYxy",
+        "buttons_bEhJNB"
+      ],
+      "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "title": "Can't wait until then? Discover our bestsellers!",
-        "heading_size": "h1",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "build-your-box",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "scheme-2",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 72,
-        "padding_bottom": 36
+        "image": "shopify://shop_images/Website_homepage_1000_x_300_px_1.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "badge_embed": "",
+        "badge_padding": 1,
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
       }
     },
-    "featured_blog_RtECUM": {
-      "type": "featured-blog",
-      "disabled": true,
+    "1759411866a28ee339": {
+      "type": "apps",
+      "blocks": {
+        "influence_io_loyalty_rewards_referral_widget_eqcm3t": {
+          "type": "shopify://apps/influence-io-loyalty-rewards/blocks/referral-widget/7f1703c2-e0cb-4bd4-bb47-6548c1722f52",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "influence_io_loyalty_rewards_referral_widget_eqcm3t"
+      ],
       "settings": {
-        "heading": "Check out the latest on our Parent Hub",
-        "heading_size": "h1",
-        "blog": "toddlers",
-        "post_limit": 3,
-        "columns_desktop": 3,
-        "color_scheme": "",
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "show_view_all": true,
-        "padding_top": 36,
-        "padding_bottom": 36
+        "include_margins": true
       }
     }
   },
   "order": [
     "main",
     "image_banner_QzQ7yb",
+    "1759411866a28ee339",
     "rich_text_nbdicX",
-    "featured_collection_Fgf9ic",
-    "featured_blog_RtECUM"
+    "image_banner_iW47z4"
   ]
 }
