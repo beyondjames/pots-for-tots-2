@@ -149,7 +149,10 @@ class DatePicker extends HTMLElement {
           updateCart({ attributes: attributes });
 
           // Enable the cart checkout button
-          document.querySelector('.cart__checkout-button').removeAttribute('disabled');
+          const checkoutButton = document.querySelector('.cart__checkout-button');
+          if (!checkoutButton.hasAttribute('data-incomplete')) {
+            document.querySelector('.cart__checkout-button').removeAttribute('disabled');
+          }
         }
       },
     };
