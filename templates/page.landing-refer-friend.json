@@ -59,6 +59,50 @@
         "show_text_below": true
       }
     },
+    "rich_text_niLBTw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_WjEpRd": {
+          "type": "heading",
+          "settings": {
+            "heading": "Earn £20 for every friend you refer!",
+            "heading_size": "h1"
+          }
+        },
+        "text_WRrddp": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Feeding little ones can be tricky – so why not help a fellow parent out? Share your referral link and they’ll get £20 off their first order. As a thank-you, we’ll add £20 credit to your account too. It’s our way of helping more little ones (and parents!) enjoy stress-free, healthy meals.</p>"
+          }
+        },
+        "button_CgbUBY": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_WjEpRd",
+        "text_WRrddp",
+        "button_CgbUBY"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "1759414681944d8327": {
       "type": "apps",
       "blocks": {
@@ -176,6 +220,7 @@
   "order": [
     "main",
     "image_banner_QzQ7yb",
+    "rich_text_niLBTw",
     "1759414681944d8327",
     "rich_text_nbdicX",
     "image_banner_iW47z4"
