@@ -74,7 +74,7 @@
         "default_subscription_type": "subscription",
         "subscription_text": "<ul><li>20% off your first 3 subscription orders</li><li>Skip, pause or cancel your subscription anytime</li><li>Edit your meal or snack choices as often as you want</li></ul>",
         "onetime_text": "<p>Switch to subscribe to save 20%</p>",
-        "show_upsells": false,
+        "show_upsells": true,
         "allow_upsell_subscriptions": false,
         "upsell_heading": "Fancy a little extra?",
         "upsell_description": "",
