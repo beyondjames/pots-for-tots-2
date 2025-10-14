@@ -249,6 +249,14 @@ quick-add-modal .product-form__buttons {
   box-sizing: border-box;
 }
 
+upsell-modal .quick-add__submit {
+  min-width: 100px;
+}
+
+upsell-modal .card__price-quick-add .quantity {
+  width: 100px;
+}
+
 quick-add-modal .product-media-container.constrain-height {
   --viewport-offset: calc((var(--modal-height-offset) + var(--modal-padding) + var(--popup-border-width)) * 2);
 }

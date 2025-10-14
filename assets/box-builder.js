@@ -27,6 +27,7 @@ let subscription = {
     variants: '#card__variants', // Elements for product variant selection
     minimumProducts: '#productCount', // Element displaying minimum product count warning
     checkoutButton: '#checkoutButton', // Checkout button
+    checkoutButtonForUpsells: '.checkout-button', // Checkout button for upsells
     modalCheckoutButton: '#modal-checkout-button', // modal trigger Checkout button
     modalSkipButton: '#modal-skip-button', // modal trigger Checkout button
     cardModal: '#cardModal', // Modal for displaying product details
@@ -404,9 +405,12 @@ let subscription = {
     // Get references to elements within the review box modal
     const modalList = document.querySelector(this.selector.productModalList);
     const button = document.querySelector(this.selector.checkoutButton);
+    const checkoutButtonForUpsells = document.querySelector(this.selector.checkoutButtonForUpsells);
     const modalButton = document.querySelector(this.selector.modalCheckoutButton);
     const modalSkipButton = document.querySelector(this.selector.modalSkipButton);
     const countWarning = document.querySelector(this.selector.minimumProducts);
+    const footer = document.querySelector('.product-popup-modal__footer');
+    const allowUpsells = footer.getAttribute('data-upsells');
 
     // Retrieve product data from session storage
     let productList = sessionStorage.getItem('potsProductList');
@@ -431,21 +435,32 @@ let subscription = {
         countWarning.classList.add('hidden');
       }
       // Enable the checkout button
-      // button.disabled = false;
-      // Enable the modal checkout button if it exists
-      if (modalButton) {
-        // modalButton.disabled = false;
-      }
-      // Enable the modal skip button if it exists
-      if (modalSkipButton) {
-        // modalSkipButton.disabled = false;
+      if (allowUpsells === 'true') {
+        checkoutButtonForUpsells.disabled = false;
+        checkoutButtonForUpsells.classList.remove('disabled');
+        // Enable the modal checkout button if it exists
+        if (modalButton) {
+          modalButton.disabled = false;
+        }
+        // Enable the modal skip button if it exists
+        if (modalSkipButton) {
+          modalSkipButton.disabled = false;
+        }
+      } else {
+        button.disabled = false;
+        button.classList.remove('disabled');
       }
     } else {
       // Display the warning message with the required count
       countWarning.textContent = `Must add a minimum of 8 meals, please add ${count} more`;
       countWarning.classList.remove('hidden');
+
       // Disable the checkout button
-      button.disabled = true;
+      if (allowUpsells) {
+        checkoutButtonForUpsells.disabled = true;
+      } else {
+        button.disabled = true;
+      }
       // Disable the modal checkout button if it exists
       if (modalButton) {
         modalButton.disabled = true;
