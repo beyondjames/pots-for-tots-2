@@ -11,10 +11,13 @@ class DatePicker extends HTMLElement {
 
     const disabledWeekdaysArray = this.parseJsonAttribute('disabled-weekdays', []);
     this.disabledWeekdays = disabledWeekdaysArray.map(Number);
+    this.maxWeeks = Number(this.getAttribute('max-weeks')) || 12;
     this.cutoffHours = Number(this.getAttribute('cutoff-hours'));
     this.cutoffMinutes = Number(this.getAttribute('cutoff-minutes'));
     this.disabledDates = this.parseJsonAttribute('disabled-dates', []);
     this.enabledDates = this.parseJsonAttribute('enabled-dates', []);
+
+    console.log('Max weeks:', this.maxWeeks);
 
     this.innerHTML = '<div class="calendar-container"></div>';
     this.initialiseCalendar();
@@ -94,7 +97,8 @@ class DatePicker extends HTMLElement {
 
     // convert dateMin and dateMax into YYYY-MM-DD format
     const dateMinFormatted = this.formatDateLocal(dateMin);
-    const dateMax = new Date(new Date().setMonth(new Date().getMonth() + 3));
+    const dateMax = new Date();
+    dateMax.setDate(dateMax.getDate() + 7 * this.maxWeeks);
     const dateMaxFormatted = this.formatDateLocal(dateMax);
 
     // Create options for calendar with timezone-aware dates

@@ -30,6 +30,7 @@
 <date-picker
   page='cart'
   offset='{{ settings.offset }}'
+  max-weeks='{{ settings.max_weeks_cart }}'
   cutoff-hours='{{ settings.cutoff_hours }}'
   cutoff-minutes='{{ settings.cutoff_minutes }}'
   disabled-dates='{{ settings.disabled_dates | split: ',' | json }}'

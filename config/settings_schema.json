@@ -1609,6 +1609,33 @@
       },
       {
         "type": "header",
+        "content": "Maximum weeks ahead",
+        "info": "Select how far in advance a custom can select a delivery date."
+      },
+      {
+        "type": "range",
+        "id": "max_weeks_cart",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "w",
+        "label": "Max weeks (cart)",
+        "info": "The maximum number of weeks show on the cart page",
+        "default": 4
+      },
+      {
+        "type": "range",
+        "id": "max_weeks_account",
+        "min": 0,
+        "max": 24,
+        "step": 1,
+        "unit": "w",
+        "label": "Max weeks (account)",
+        "info": "The maximum number of weeks show on the account page",
+        "default": 12
+      },
+      {
+        "type": "header",
         "content": "Cutoff time",
         "info": "Set a cutoff time for delivery."
       },

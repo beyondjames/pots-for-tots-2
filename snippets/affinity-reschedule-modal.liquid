@@ -55,6 +55,7 @@
               <date-picker
                 page="account"
                 offset='{{ settings.offset }}'
+                max-weeks='{{ settings.max_weeks_account }}'
                 cutoff-hours='{{ settings.cutoff_hours }}'
                 cutoff-minutes='{{ settings.cutoff_minutes }}'
                 disabled-dates='{{ settings.disabled_dates | split: ',' | json }}'
