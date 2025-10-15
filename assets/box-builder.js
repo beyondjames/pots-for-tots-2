@@ -456,7 +456,7 @@ let subscription = {
       countWarning.classList.remove('hidden');
 
       // Disable the checkout button
-      if (allowUpsells) {
+      if (allowUpsells == 'true') {
         checkoutButtonForUpsells.disabled = true;
       } else {
         button.disabled = true;
