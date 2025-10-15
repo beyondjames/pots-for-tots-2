@@ -26,7 +26,7 @@
   transition: width 0.5s;
 }
 
-.progress-bar__indicator:empty{
+.progress-bar__indicator:empty {
   display: block;
 }
 
@@ -50,20 +50,20 @@
 }
 
 .progress-bar__goal-1 {
-  left: calc(33.33% - 4px);
-}
-
-.progress-bar__goal-2 {
   left: calc(50% - 4px);
 }
 
-.progress-bar__goal-3 {
-  left: calc(66.66% - 4px);
+.progress-bar__goal-2 {
+  left: calc(75% - 4px);
 }
 
-.progress-bar__goal-4 {
-  left: 100%;
+.progress-bar__goal-3 {
+  left: calc(100% - 4px);
 }
+
+/* .progress-bar__goal-4 {
+  left: 100%;
+} */
 
 .progress-bar__goal-title {
   position: absolute;
@@ -86,21 +86,21 @@
 }
 
 .progress-bar__goal-text-1 {
-  left: calc(25% - 140px);
-}
-
-.progress-bar__goal-text-2 {
+  /* left: calc(25% - 140px); */
   left: calc(50% - 80px);
 }
 
-.progress-bar__goal-text-3 {
+.progress-bar__goal-text-2 {
   left: calc(75% - 30px);
 }
 
-.progress-bar__goal-text-4 {
+.progress-bar__goal-text-3 {
   left: calc(100% - 128px);
   text-align: right;
 }
+
+/* .progress-bar__goal-text-4 {
+} */
 
 .progress-bar__goal-text-highlight {
   display: inline-block;
@@ -141,20 +141,20 @@
   }
 
   .progress-bar__goal-text-1 {
-    left: calc(33.33% - 38px);
+    left: calc(50% - 38px);
   }
 
   .progress-bar__goal-text-2 {
-    left: calc(50% - 44px);
+    left: calc(75% - 44px);
   }
 
   .progress-bar__goal-text-3 {
-    left: calc(66.66% - 44px);
-  }
-
-  .progress-bar__goal-text-4 {
     left: calc(100% - 128px);
   }
+
+  /* .progress-bar__goal-text-4 {
+    left: calc(100% - 128px);
+  } */
 
   .progress-bar__remaining {
     display: none;

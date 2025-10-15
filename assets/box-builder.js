@@ -2,7 +2,7 @@ let subscription = {
   state: {
     // Minimum and maximum allowed items in the box
     minItems: 8,
-    maxItems: 24,
+    maxItems: 16,
 
     // Counts of selected items and extras
     selectedItemCount: 0,
@@ -631,7 +631,7 @@ let subscription = {
     const goal1 = 8;
     const goal2 = 12;
     const goal3 = 16;
-    const goal4 = 24;
+    // const goal4 = 24;
 
     // Get references to goal indicators
     const goal1indicator = document.querySelector('#progress-bar-goal-1');
@@ -689,22 +689,22 @@ let subscription = {
       // if user goes back remove goal 3 as marked
       goal3indicator.classList.remove('progress-bar__goal-reached');
       width = (combinedTotal / maximum) * 100;
-    } else if (combinedTotal < goal4) {
-      // Goal 4 messaging
-      space = goal4 - combinedTotal;
+      // } else if (combinedTotal < goal4) {
+      //   // Goal 4 messaging
+      //   space = goal4 - combinedTotal;
 
-      if (space == 1) {
-        labelText = 'Checkout or add ' + space + ' more meal and delivery is';
-      } else {
-        labelText = 'Checkout or add ' + space + ' more meals and delivery is';
-      }
+      //   if (space == 1) {
+      //     labelText = 'Checkout or add ' + space + ' more meal and delivery is';
+      //   } else {
+      //     labelText = 'Checkout or add ' + space + ' more meals and delivery is';
+      //   }
 
-      labelText += ' FREE';
-      // Mark all goals as reached
-      goal1indicator.classList.add('progress-bar__goal-reached');
-      goal2indicator.classList.add('progress-bar__goal-reached');
-      goal3indicator.classList.add('progress-bar__goal-reached');
-      width = (combinedTotal / maximum) * 100;
+      //   labelText += ' FREE';
+      //   // Mark all goals as reached
+      //   goal1indicator.classList.add('progress-bar__goal-reached');
+      //   goal2indicator.classList.add('progress-bar__goal-reached');
+      //   goal3indicator.classList.add('progress-bar__goal-reached');
+      //   width = (combinedTotal / maximum) * 100;
     } else {
       // Box is full
       labelText = "You've got free delivery!";
