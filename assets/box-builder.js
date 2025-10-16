@@ -677,7 +677,7 @@ let subscription = {
       if (space == 1) {
         labelText = 'Add ' + space + ' more meal for FREE delivery!';
       } else {
-        labelText = 'Checkout or add ' + space + ' more meals for FREE delivery!';
+        labelText = 'Add ' + space + ' more meals for FREE delivery!';
       }
       // Mark goals 1 and 2 as reached
       goal1indicator.classList.add('progress-bar__goal-reached');
