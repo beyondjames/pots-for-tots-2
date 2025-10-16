@@ -704,7 +704,7 @@ let subscription = {
       //   width = (combinedTotal / maximum) * 100;
     } else {
       // Box is full
-      labelText = "You've got free delivery!";
+      labelText = "You've got FREE delivery!";
       goal1indicator.classList.add('progress-bar__goal-reached');
       goal2indicator.classList.add('progress-bar__goal-reached');
       goal3indicator.classList.add('progress-bar__goal-reached');
