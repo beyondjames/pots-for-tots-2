@@ -649,9 +649,9 @@ let subscription = {
       space = goal1 - currentItemCount;
 
       if (space == 1) {
-        labelText = 'Add ' + space + ' more meal and delivery is £5.99';
+        labelText = 'Add ' + space + ' more meal to save on delivery!';
       } else {
-        labelText = 'Add ' + space + ' more meals and delivery is £5.99';
+        labelText = 'Add ' + space + ' more meals to save on delivery!';
       }
 
       // Calculate progress based on main items
@@ -659,12 +659,12 @@ let subscription = {
     } else if (combinedTotal < goal2) {
       space = goal2 - combinedTotal;
       if (space == 1) {
-        labelText = 'Save on delivery when you add 4 extra meals to your box! ' + space + ' more meal and delivery is';
+        labelText = 'Add ' + space + ' more meal to save on delivery!';
       } else {
-        labelText = 'Checkout or add ' + space + ' more meals and delivery is';
+        labelText = 'Add ' + space + ' more meals to save on delivery!';
       }
 
-      labelText += ' £3.99';
+      labelText +=
       // Mark goal 1 as reached
       goal1indicator.classList.add('progress-bar__goal-reached');
       // if user goes back remove goal 2 as marked
@@ -676,12 +676,12 @@ let subscription = {
       space = goal3 - combinedTotal;
 
       if (space == 1) {
-        labelText = 'Checkout or add ' + space + ' more meal and delivery is';
+        labelText = 'Add ' + space + ' more meal to save on delivery!';
       } else {
-        labelText = 'Checkout or add ' + space + ' more meals and delivery is';
+        labelText = 'Checkout or add ' + space + ' more meals to save on delivery!';
       }
 
-      labelText += ' £1.99';
+      labelText +=
       // Mark goals 1 and 2 as reached
       goal1indicator.classList.add('progress-bar__goal-reached');
       goal2indicator.classList.add('progress-bar__goal-reached');
