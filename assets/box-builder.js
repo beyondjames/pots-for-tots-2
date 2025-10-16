@@ -649,9 +649,9 @@ let subscription = {
       space = goal1 - currentItemCount;
 
       if (space == 1) {
-        labelText = 'Add ' + space + ' more meal to save on delivery!';
+        labelText = 'Add ' + space + ' more meal to checkout!';
       } else {
-        labelText = 'Add ' + space + ' more meals to save on delivery!';
+        labelText = 'Add ' + space + ' more meals to checkout!';
       }
 
       // Calculate progress based on main items
@@ -664,7 +664,6 @@ let subscription = {
         labelText = 'Add ' + space + ' more meals to save on delivery!';
       }
 
-      labelText +=
       // Mark goal 1 as reached
       goal1indicator.classList.add('progress-bar__goal-reached');
       // if user goes back remove goal 2 as marked
@@ -676,12 +675,10 @@ let subscription = {
       space = goal3 - combinedTotal;
 
       if (space == 1) {
-        labelText = 'Add ' + space + ' more meal to save on delivery!';
+        labelText = 'Add ' + space + ' more meal for FREE delivery!';
       } else {
-        labelText = 'Checkout or add ' + space + ' more meals to save on delivery!';
+        labelText = 'Checkout or add ' + space + ' more meals for FREE delivery!';
       }
-
-      labelText +=
       // Mark goals 1 and 2 as reached
       goal1indicator.classList.add('progress-bar__goal-reached');
       goal2indicator.classList.add('progress-bar__goal-reached');
