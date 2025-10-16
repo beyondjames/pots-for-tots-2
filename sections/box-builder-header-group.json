@@ -14,15 +14,23 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_9nG6Nm": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Get 20% off your first 3 subscription orders with code TOTS20",
+            "text": "FREE delivery when you order 16 or more meals or snacks",
             "link": "shopify://collections/build-your-box"
           }
         }
       },
       "block_order": [
+        "announcement_9nG6Nm",
         "announcement-bar-0"
       ],
       "settings": {
