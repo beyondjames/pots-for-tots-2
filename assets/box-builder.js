@@ -659,7 +659,7 @@ let subscription = {
     } else if (combinedTotal < goal2) {
       space = goal2 - combinedTotal;
       if (space == 1) {
-        labelText = 'Checkout or add ' + space + ' more meal and delivery is';
+        labelText = 'Save on delivery when you add 4 extra meals to your box! ' + space + ' more meal and delivery is';
       } else {
         labelText = 'Checkout or add ' + space + ' more meals and delivery is';
       }
