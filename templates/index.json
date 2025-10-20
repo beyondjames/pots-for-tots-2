@@ -113,32 +113,6 @@
     "slideshow_tRxFr3": {
       "type": "slideshow",
       "blocks": {
-        "slide_btGHpn": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Homepage_AK_hero.png",
-            "mobile_image": "shopify://shop_images/19_d909abbf-e596-4257-8355-151dc93adf6e.png",
-            "heading": "Say goodbye to mealtime stress!",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false,
-            "box_align": "top-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "",
-            "image_badge_vertical_position": "middle",
-            "image_badge_horizontal_position": "centre"
-          }
-        },
         "slide_c6rpWy": {
           "type": "slide",
           "settings": {
@@ -163,6 +137,32 @@
             "image_badge_width": "100",
             "image_badge_vertical_position": "top",
             "image_badge_horizontal_position": "right"
+          }
+        },
+        "slide_btGHpn": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Homepage_AK_hero.png",
+            "mobile_image": "shopify://shop_images/19_d909abbf-e596-4257-8355-151dc93adf6e.png",
+            "heading": "Say goodbye to mealtime stress!",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "SHOP NOW",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "top-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "",
+            "image_badge_vertical_position": "middle",
+            "image_badge_horizontal_position": "centre"
           }
         },
         "slide_hgbCiy": {
@@ -247,8 +247,8 @@
         }
       },
       "block_order": [
-        "slide_btGHpn",
         "slide_c6rpWy",
+        "slide_btGHpn",
         "slide_hgbCiy",
         "slide_6mcVhA",
         "slide_EFdemU"
@@ -303,7 +303,7 @@
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
-            "link": "shopify://collections/build-your-box"
+            "link": "shopify://products/ak-cottage-pie-bites"
           }
         },
         "column_XgNy9B": {
@@ -362,7 +362,7 @@
       "settings": {
         "title": "Meals and snacks made for your little ones",
         "heading_size": "h1",
-        "text": "<p>We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. Handmade, dietitian-approved, REAL meals for babies, toddlers and beyond. Frozen and delivered to your door.</p>",
+        "text": "<p>Handmade, dietitian-approved, REAL meals for babies, toddlers and beyond. Frozen and delivered to your door. We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. </p>",
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 4,
