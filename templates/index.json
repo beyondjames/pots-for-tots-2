@@ -70,7 +70,7 @@
         "heading_x6tbrd": {
           "type": "heading",
           "settings": {
-            "heading": "Get DOUBLE loyalty points on all orders throughout July!",
+            "heading": "Get DOUBLE loyalty points on all orders until 3rd Nov!",
             "heading_size": "h2"
           }
         },
@@ -99,7 +99,6 @@
         "text_UmdXnw",
         "button_LRh8xd"
       ],
-      "disabled": true,
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "desktop_content_position": "center",
