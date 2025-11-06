@@ -102,7 +102,7 @@
           "type": "button",
           "settings": {
             "button_label": "SHOP NOW",
-            "button_link": "shopify://collections/liewood",
+            "button_link": "shopify://pages/pots-for-tots-x-byruby",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "",
