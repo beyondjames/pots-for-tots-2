@@ -100,6 +100,7 @@
         },
         "button_Q3FHeH": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "button_label": "SHOP NOW",
             "button_link": "shopify://pages/pots-for-tots-x-byruby",
