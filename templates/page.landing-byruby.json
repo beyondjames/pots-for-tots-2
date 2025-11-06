@@ -178,6 +178,7 @@
         "buy_buttons_DDyQC7",
         "share_W3kyFF"
       ],
+      "disabled": true,
       "name": "t:sections.featured-product.presets.name",
       "settings": {
         "product": "pots-for-tots-x-byruby-staycation-bundle",
