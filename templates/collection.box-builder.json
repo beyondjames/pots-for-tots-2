@@ -31,7 +31,6 @@
           "fish-curry",
           "mediterranean-vegetable-orzo",
           "pasta-bolognese",
-          "fish-option-classic-fish-pie",
           "chicken-korma",
           "broccoli-and-cheese-tots",
           "sweet-potato-cottage-pie",
@@ -66,7 +65,8 @@
           "ak-cottage-pie-bites",
           "ak-finger-foods-book",
           "ak-mexican-style-chicken-veggie-fajita-bowl",
-          "ak-tomatoey-beef-orzo"
+          "ak-tomatoey-beef-orzo",
+          "ak-classic-fish-pie-with-peas"
         ],
         "products_per_page": 48,
         "columns_desktop": 3,
