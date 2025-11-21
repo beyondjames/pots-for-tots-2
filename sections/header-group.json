@@ -14,6 +14,14 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
+        "announcement_q3DkrL": {
+          "type": "announcement",
+          "disabled": true,
+          "settings": {
+            "text": "SAVE 30% THIS FEED GOOD FRIDAY",
+            "link": ""
+          }
+        },
         "announcement_XckcmE": {
           "type": "announcement",
           "disabled": true,
@@ -46,13 +54,14 @@
         }
       },
       "block_order": [
+        "announcement_q3DkrL",
         "announcement_XckcmE",
         "announcement_cYPTa7",
         "announcement-bar-0",
         "announcement_YyVH6J"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": true,
