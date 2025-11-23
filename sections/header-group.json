@@ -16,7 +16,6 @@
       "blocks": {
         "announcement_q3DkrL": {
           "type": "announcement",
-          "disabled": true,
           "settings": {
             "text": "SAVE 30% THIS FEED GOOD FRIDAY",
             "link": ""
@@ -32,6 +31,7 @@
         },
         "announcement_cYPTa7": {
           "type": "announcement",
+          "disabled": true,
           "settings": {
             "text": "Get 20% off your first 3 boxes when you subscribe!",
             "link": "shopify://collections/build-your-box"
@@ -61,7 +61,7 @@
         "announcement_YyVH6J"
       ],
       "settings": {
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-d8dc3293-67c6-4df4-845b-2e7491bf3b5b",
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": true,
