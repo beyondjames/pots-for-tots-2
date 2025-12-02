@@ -126,6 +126,7 @@
     "cart_drawer_collection": "",
     "cutoff_hours": 23,
     "cutoff_minutes": 59,
+    "disabled_dates": "2025-12-25",
     "checkout_logo_image": "shopify://shop_images/pots-for-tots-logo-green.svg",
     "checkout_logo_position": "left",
     "checkout_logo_size": "large",
