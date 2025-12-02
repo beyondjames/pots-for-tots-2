@@ -40,7 +40,13 @@
 
     async getCharge() {
       const charges = await rechargeAPI.fetchCharges();
-      return charges.find((charge) => charge.status === 'queued' || charge.status === 'skipped');
+      return charges.find((charge) => {
+        const isValidStatus = charge.status === 'queued' || charge.status === 'skipped';
+        const scheduledDate = new Date(charge.scheduled_at);
+        const now = new Date();
+        const isNotExpired = scheduledDate >= now;
+        return isValidStatus && isNotExpired;
+      });
     },
 
     calcuateDeliveryDate(date) {
@@ -56,6 +62,7 @@
     },
 
     updateOrderActionsWidget(charge) {
+      console.log('Updating order actions widget with charge:', charge);
       const chargeDate = charge.scheduled_at;
       const deliveryDate = this.calcuateDeliveryDate(chargeDate);
       const content = `
