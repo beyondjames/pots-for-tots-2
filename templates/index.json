@@ -115,6 +115,7 @@
       "blocks": {
         "slide_EFdemU": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Feed_Good_Friday_Banner_OPTION_1a.png",
             "mobile_image": "shopify://shop_images/Mobile_banner_1a.png",
@@ -141,7 +142,6 @@
         },
         "slide_c6rpWy": {
           "type": "slide",
-          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Website_homepage_1000_x_500_px_8.png",
             "mobile_image": "shopify://shop_images/AK_website_mobile_8.png",
