@@ -115,16 +115,15 @@
       "blocks": {
         "slide_EFdemU": {
           "type": "slide",
-          "disabled": true,
           "settings": {
-            "image": "shopify://shop_images/Feed_Good_Friday_Banner_OPTION_1a.png",
-            "mobile_image": "shopify://shop_images/Mobile_banner_1a.png",
-            "heading": "SAVE 30% this Feed Good Friday",
+            "image": "shopify://shop_images/Xmas_gifting_Banner.png",
+            "mobile_image": "shopify://shop_images/Making_a_list_1.png",
+            "heading": "Shop Christmas gifts",
             "heading_size": "hxxl",
             "show_heading_shadow": true,
             "subheading": "",
-            "button_label": "Use code: FEEDGOOD30",
-            "link": "shopify://collections/build-your-box",
+            "button_label": "Shop gifts",
+            "link": "shopify://pages/gifting",
             "button_style_secondary": false,
             "button_label_2": "",
             "button_link_2": "shopify://collections/bundles",
@@ -134,7 +133,7 @@
             "text_alignment": "center",
             "image_overlay_opacity": 0,
             "color_scheme": "scheme-7ddf882d-e898-48ca-8e67-2f252577c727",
-            "text_alignment_mobile": "center",
+            "text_alignment_mobile": "left",
             "image_badge_width": "200",
             "image_badge_vertical_position": "top",
             "image_badge_horizontal_position": "right"
@@ -168,6 +167,7 @@
         },
         "slide_btGHpn": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Homepage_AK_hero.png",
             "mobile_image": "shopify://shop_images/19_d909abbf-e596-4257-8355-151dc93adf6e.png",
