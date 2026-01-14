@@ -141,6 +141,7 @@
         },
         "slide_EFdemU": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Xmas_gifting_Banner.png",
             "mobile_image": "shopify://shop_images/Making_a_list_1.png",
