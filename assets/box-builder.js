@@ -12,7 +12,7 @@ let subscription = {
     totalPrice: 0,
 
     // Subscription frequency (e.g., every 4 weeks)
-    subscriptionFrequency: 4,
+    subscriptionFrequency: 0,
 
     // Subscription type (one-time or recurring)
     subscriptionType: '',
@@ -65,17 +65,6 @@ let subscription = {
 
     // Get the discount from the page
     this.state.discount = 1 - parseFloat(document.querySelector('#discount').value) / 100;
-
-    // Handle subscription frequency settings
-    if (getCookie('potsFreq') !== '') {
-      // Use frequency from cookie if available
-      this.state.subscriptionFrequency = getCookie('potsFreq');
-      sessionStorage.setItem('potsFreq', subscription.state.subscriptionFrequency);
-    } else {
-      // Set default frequency in cookie
-      setCookie('potsFreq', this.state.subscriptionFrequency, 1);
-      sessionStorage.setItem('potsFreq', this.state.subscriptionFrequency);
-    }
 
     // Handle subscription type settings
     if (getCookie('potsType') !== '') {
@@ -158,7 +147,6 @@ let subscription = {
       setCookie('potsProducts', true, 1);
       sessionStorage.setItem('potsProductList', JSON.stringify(productList));
       sessionStorage.setItem('potsType', this.state.subscriptionType);
-      sessionStorage.setItem('potsFreq', this.state.subscriptionFrequency);
 
       // Perform calculations and updates
       this.calculateTotals();
@@ -210,7 +198,6 @@ let subscription = {
       sessionStorage.setItem('potsUpsellList', JSON.stringify(upsellList));
 
       sessionStorage.setItem('potsType', this.state.subscriptionType);
-      sessionStorage.setItem('potsFreq', this.state.subscriptionFrequency);
 
       // Perform calculations and updates
       this.calculateTotals();
@@ -429,7 +416,7 @@ let subscription = {
     const minimum = this.state.minItems; // Minimum required products
     const count = Math.abs(minimum - productCount); // Number of products needed to reach minimum
 
-    if (productCount >= minimum) {
+    if (productCount >= minimum && this.state.subscriptionFrequency !== 0) {
       // Hide the minimum product count warning if visible
       if (!countWarning.classList.contains('hidden')) {
         countWarning.classList.add('hidden');
@@ -450,9 +437,28 @@ let subscription = {
         button.disabled = false;
         button.classList.remove('disabled');
       }
-    } else {
+    } else if (productCount < minimum && this.state.subscriptionFrequency !== 0) {
       // Display the warning message with the required count
       countWarning.textContent = `Must add a minimum of 8 meals, please add ${count} more`;
+      countWarning.classList.remove('hidden');
+
+      // Disable the checkout button
+      if (allowUpsells == 'true') {
+        checkoutButtonForUpsells.disabled = true;
+      } else {
+        button.disabled = true;
+      }
+      // Disable the modal checkout button if it exists
+      if (modalButton) {
+        modalButton.disabled = true;
+      }
+      // Disable the modal skip button if it exists
+      if (modalSkipButton) {
+        modalSkipButton.disabled = true;
+      }
+    } else {
+      // Display the warning message with the required count
+      countWarning.textContent = `Must select a delivery frequency`;
       countWarning.classList.remove('hidden');
 
       // Disable the checkout button
@@ -1189,24 +1195,11 @@ class FrequencySelector extends HTMLElement {
     if (!select) return;
 
     select.addEventListener('change', (event) => {
-      console.log('Frequency changed to: ' + select.value);
+      // Update the frequency state
       subscription.state.subscriptionFrequency = select.value;
-      setCookie('potsFreq', select.value, 1);
-      sessionStorage.setItem('potsFreq', select.value);
-      // enable the checkout button
-      const checkoutButton = document.querySelector('#checkoutButton');
-      if (checkoutButton && event.target.value != '0') {
-        checkoutButton.classList.remove('disabled');
-        checkoutButton.disabled = false;
-        // make the first option disabled
-        const firstOption = select.querySelector('option:first-child');
-        if (firstOption) {
-          firstOption.disabled = true; // Disable the first option
-        }
-      } else {
-        checkoutButton.classList.add('disabled');
-        checkoutButton.disabled = true;
-      }
+
+      // Update the review modal content
+      subscription.updateReviewBoxModal();
     });
   }
 }
