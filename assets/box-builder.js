@@ -416,7 +416,7 @@ let subscription = {
     const minimum = this.state.minItems; // Minimum required products
     const count = Math.abs(minimum - productCount); // Number of products needed to reach minimum
 
-    if (productCount >= minimum && this.state.subscriptionFrequency !== 0) {
+    if ((productCount >= minimum && this.state.subscriptionFrequency !== 0) || (productCount >= minimum && type == "onetime")) {
       // Hide the minimum product count warning if visible
       if (!countWarning.classList.contains('hidden')) {
         countWarning.classList.add('hidden');
@@ -456,7 +456,7 @@ let subscription = {
       if (modalSkipButton) {
         modalSkipButton.disabled = true;
       }
-    } else {
+    } else if (type != "onetime" && this.state.subscriptionFrequency == 0) {
       // Display the warning message with the required count
       countWarning.textContent = `Must select a delivery frequency`;
       countWarning.classList.remove('hidden');
