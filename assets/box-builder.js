@@ -748,8 +748,8 @@ let subscription = {
       upsellJson = JSON.parse(upsellList);
     }
 
-    // Get the subscription frequency and type from session storage
-    let freq = sessionStorage.getItem('potsFreq');
+    // Get the subscription frequency and type from object state and storage
+    let freq = this.state.subscriptionFrequency;
     let type = sessionStorage.getItem('potsType');
 
     // Process each product in the list
@@ -891,6 +891,8 @@ let subscription = {
 
   // Function to handle adding products to the cart
   handleAddToCart: async function (data) {
+    console.log("Adding bundle to cart", data);
+
     let redirect_url = '/cart';
 
     console.log('Redirect URL: ' + redirect_url);
