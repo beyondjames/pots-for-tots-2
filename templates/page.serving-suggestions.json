@@ -195,17 +195,6 @@
             "link": "shopify://products/chilli-con-carne"
           }
         },
-        "column_gpFUzT": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Cheesy_Veg_Pasta_Bake.png",
-            "title": "Cheesy Veg Pasta Bake",
-            "title_size": "h2",
-            "text": "<p>Serve with a side of green beans, mange tout or sugar snap peas for some extra Vitamin C and folate.</p>",
-            "link_label": "Shop now",
-            "link": "shopify://products/cheesy-veg-pasta-bake"
-          }
-        },
         "column_3rRKdi": {
           "type": "column",
           "settings": {
@@ -370,7 +359,6 @@
         "column_hHM9x4",
         "column_ccpYYG",
         "column_T3KyAe",
-        "column_gpFUzT",
         "column_3rRKdi",
         "column_qk9DJY",
         "column_r6j8QQ",
