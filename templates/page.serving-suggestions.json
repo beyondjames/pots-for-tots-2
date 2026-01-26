@@ -30,7 +30,7 @@
         "text_DJe6fL": {
           "type": "text",
           "settings": {
-            "text": "<p>For little ones with larger appetites or for those over 5 years old, we suggest serving an additional side with our meals. For some inspiration, Lucy Upton shares a range of nutritious and tasty serving suggestions below!</p><p><br/></p>",
+            "text": "<p>For little ones with larger appetites or for those over 5 years old, you may benefit from adding an additional side to our meals. Lucy Upton, our resident Children's Dietitian, shares a range of nutritious and tasty serving suggestions for our meals and snacks below!</p>",
             "text_style": "body"
           }
         },
@@ -49,7 +49,7 @@
         "button_DcX6Bz"
       ],
       "settings": {
-        "image": "shopify://shop_images/NEWSLETTER_mobile_6.png",
+        "image": "shopify://shop_images/serving_suggestion.png",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -162,17 +162,6 @@
             "link": "shopify://products/ak-cheese-veggie-frittatas"
           }
         },
-        "column_iRF9cw": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Cottage_Pie_Bites_9c0199f7-0361-4519-884b-9aa721d8ee71.png",
-            "title": "Cottage Pie Bites",
-            "title_size": "h2",
-            "text": "<p>To build a mini meal, add some potato wedges, peas and vegetable batons.</p>",
-            "link_label": "Shop now",
-            "link": "shopify://products/ak-cottage-pie-bites"
-          }
-        },
         "column_m3Aqjz": {
           "type": "column",
           "settings": {
@@ -182,6 +171,17 @@
             "text": "<p>Add a pop of extra colour and to your 5-a-day by serving with a tomato salsa dip.</p>",
             "link_label": "Shop now",
             "link": "shopify://products/cheesy-veg-bites"
+          }
+        },
+        "column_xYjd8e": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Chicken_Veggie_Bites.png",
+            "title": "Chicken & Veggie Bites",
+            "title_size": "h2",
+            "text": "<p>Slice and stuff in a wholemeal pitta bread or team with cous cous and mixed veggies.</p>",
+            "link_label": "Shop now",
+            "link": "shopify://products/ak-chicken-veggie-bites"
           }
         },
         "column_kYExrL": {
@@ -195,15 +195,15 @@
             "link": "shopify://products/ak-fish-pie-bites"
           }
         },
-        "column_xYjd8e": {
+        "column_iRF9cw": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Chicken_Veggie_Bites.png",
-            "title": "Chicken & Veggie Bites",
+            "image": "shopify://shop_images/Cottage_Pie_Bites_9c0199f7-0361-4519-884b-9aa721d8ee71.png",
+            "title": "Cottage Pie Bites",
             "title_size": "h2",
-            "text": "<p>Slice and stuff in a wholemeal pitta bread or team with cous cous and mixed veggies.</p>",
+            "text": "<p>To build a mini meal, add some potato wedges, peas and vegetable batons.</p>",
             "link_label": "Shop now",
-            "link": "shopify://products/ak-chicken-veggie-bites"
+            "link": "shopify://products/ak-cottage-pie-bites"
           }
         }
       },
@@ -213,10 +213,10 @@
         "column_8Xf9yn",
         "column_WpheET",
         "column_xwiyqw",
-        "column_iRF9cw",
         "column_m3Aqjz",
+        "column_xYjd8e",
         "column_kYExrL",
-        "column_xYjd8e"
+        "column_iRF9cw"
       ],
       "settings": {
         "title": "",
