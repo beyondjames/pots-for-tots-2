@@ -187,7 +187,7 @@
         "column_T3KyAe": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Fajita_Bowl_8ae42ba1-4f15-4e04-befb-7b8c6e7a6827.png",
+            "image": "shopify://shop_images/Chilli_con_carne_9ff35b3e-893d-4fd1-9f9b-eaa1e3b778eb.png",
             "title": "Chilli con Carne",
             "title_size": "h2",
             "text": "<p>Team with mashed or sliced avocado for a dose of extra fats. Don’t forget the tortilla crisps for dunking!</p>",
@@ -198,12 +198,34 @@
         "column_3rRKdi": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Fajita_Bowl.png",
+            "image": "shopify://shop_images/Fajita_Bowl_8ae42ba1-4f15-4e04-befb-7b8c6e7a6827.png",
             "title": "Mexican-Style Chicken & Veggie Fajita Bowl",
             "title_size": "h2",
             "text": "<p>Serve with nutrient-packed extras like plain yoghurt, sour cream or smashed avocado.</p>",
             "link_label": "Shop now",
             "link": "shopify://products/ak-mexican-style-chicken-veggie-fajita-bowl"
+          }
+        },
+        "column_qQj3if": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Chicken_Veggie_Orzo_d6df3a51-6421-48f9-b5da-cf978b3c2805.png",
+            "title": "Chicken & Veggie Orzo",
+            "title_size": "h2",
+            "text": "<p>Add a sprinkle of cheese and serve with some broccoli florets for extra greens.</p>",
+            "link_label": "Shop now",
+            "link": "shopify://products/ak-chicken-veggie-orzo"
+          }
+        },
+        "column_8wqHD3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sweet_Potato_Curry_cf6de932-7ca9-44c7-a191-48277ca84db8.png",
+            "title": "Sweet Potato Curry",
+            "title_size": "h2",
+            "text": "<p>Serve with a dollop of yoghurt, long green beans and a sprinkle of coriander.</p>",
+            "link_label": "Shop now",
+            "link": "shopify://products/sweet-potato-curry"
           }
         },
         "column_qk9DJY": {
@@ -226,17 +248,6 @@
             "text": "<p>For extra Vitamin C and folate, you can add a side of fresh or frozen greens like green beans, mange tout or sugar snap peas.</p>",
             "link_label": "Shop now",
             "link": "shopify://products/cheesy-veg-bites"
-          }
-        },
-        "column_cKTPk6": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Creamy_Chicken_Leek_Pie_87adc2ea-213e-46ac-a008-2f76e202bd20.png",
-            "title": "Creamy Chicken & Leek Pie",
-            "title_size": "h2",
-            "text": "<p>Team with green peas and a dollop of mint sauce, for extra veggies and Vitamin C. </p>",
-            "link_label": "Shop now",
-            "link": "shopify://products/chicken-leek-pie"
           }
         },
         "column_zieJVB": {
@@ -360,9 +371,10 @@
         "column_ccpYYG",
         "column_T3KyAe",
         "column_3rRKdi",
+        "column_qQj3if",
+        "column_8wqHD3",
         "column_qk9DJY",
         "column_r6j8QQ",
-        "column_cKTPk6",
         "column_zieJVB",
         "column_wpQzRW",
         "column_3EMbGA",
