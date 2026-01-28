@@ -118,17 +118,6 @@
             "link": "shopify://products/mac-cheese"
           }
         },
-        "column_qt3VDe": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Cottage_Pie_9e79eb0e-4e1b-4455-babd-aa07869fc1f3.png",
-            "title": "Cottage Pie",
-            "title_size": "h2",
-            "text": "<p>Team with a side of Vitamin C-rich green veggies like broccoli or cabbage.</p>",
-            "link_label": "Shop now",
-            "link": "shopify://products/sweet-potato-cottage-pie"
-          }
-        },
         "column_j3z9pq": {
           "type": "column",
           "settings": {
@@ -138,6 +127,28 @@
             "text": "<p>Add a side of garlic bread, or nudge up the vegetables even more with some cucumber and carrot sticks.</p>",
             "link_label": "Shop now",
             "link": "shopify://products/pasta-bolognese"
+          }
+        },
+        "column_hHM9x4": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mild_Chicken_Korma_34b6d788-c4a2-472c-8e2c-8b16bd0d8de6.png",
+            "title": "Mild Chicken Korma",
+            "title_size": "h2",
+            "text": "<p>Serve with a dollop of yoghurt (contains Vitamin C!) and grated cucumber (our quick take on raita!)</p>",
+            "link_label": "Shop now",
+            "link": "shopify://products/chicken-korma"
+          }
+        },
+        "column_qt3VDe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Cottage_Pie_9e79eb0e-4e1b-4455-babd-aa07869fc1f3.png",
+            "title": "Cottage Pie",
+            "title_size": "h2",
+            "text": "<p>Team with a side of Vitamin C-rich green veggies like broccoli or cabbage.</p>",
+            "link_label": "Shop now",
+            "link": "shopify://products/sweet-potato-cottage-pie"
           }
         },
         "column_RtePkw": {
@@ -151,6 +162,28 @@
             "link": "shopify://products/ak-mild-chicken-tikka"
           }
         },
+        "column_qQj3if": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Chicken_Veggie_Orzo_d6df3a51-6421-48f9-b5da-cf978b3c2805.png",
+            "title": "Chicken & Veggie Orzo",
+            "title_size": "h2",
+            "text": "<p>Add a sprinkle of cheese and serve with some broccoli florets for extra greens.</p>",
+            "link_label": "Shop now",
+            "link": "shopify://products/ak-chicken-veggie-orzo"
+          }
+        },
+        "column_3rRKdi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Fajita_Bowl_8ae42ba1-4f15-4e04-befb-7b8c6e7a6827.png",
+            "title": "Mexican-Style Chicken & Veggie Fajita Bowl",
+            "title_size": "h2",
+            "text": "<p>Serve with nutrient-packed extras like plain yoghurt, sour cream or smashed avocado.</p>",
+            "link_label": "Shop now",
+            "link": "shopify://products/ak-mexican-style-chicken-veggie-fajita-bowl"
+          }
+        },
         "column_e6rY3N": {
           "type": "column",
           "settings": {
@@ -160,17 +193,6 @@
             "text": "<p>Add some sliced strawberries or grapes for extra Vitamin C (which helps absorb the iron from the chicken).</p>",
             "link_label": "Shop now",
             "link": "shopify://products/ak-carrot-tomato-pasta-with-chicken"
-          }
-        },
-        "column_hHM9x4": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Mild_Chicken_Korma_34b6d788-c4a2-472c-8e2c-8b16bd0d8de6.png",
-            "title": "Mild Chicken Korma",
-            "title_size": "h2",
-            "text": "<p>Serve with a dollop of yoghurt (contains Vitamin C!) and grated cucumber (our quick take on raita!)</p>",
-            "link_label": "Shop now",
-            "link": "shopify://products/chicken-korma"
           }
         },
         "column_ccpYYG": {
@@ -193,28 +215,6 @@
             "text": "<p>Team with mashed or sliced avocado for a dose of extra fats. Don’t forget the tortilla crisps for dunking!</p>",
             "link_label": "Shop now",
             "link": "shopify://products/chilli-con-carne"
-          }
-        },
-        "column_3rRKdi": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Fajita_Bowl_8ae42ba1-4f15-4e04-befb-7b8c6e7a6827.png",
-            "title": "Mexican-Style Chicken & Veggie Fajita Bowl",
-            "title_size": "h2",
-            "text": "<p>Serve with nutrient-packed extras like plain yoghurt, sour cream or smashed avocado.</p>",
-            "link_label": "Shop now",
-            "link": "shopify://products/ak-mexican-style-chicken-veggie-fajita-bowl"
-          }
-        },
-        "column_qQj3if": {
-          "type": "column",
-          "settings": {
-            "image": "shopify://shop_images/Chicken_Veggie_Orzo_d6df3a51-6421-48f9-b5da-cf978b3c2805.png",
-            "title": "Chicken & Veggie Orzo",
-            "title_size": "h2",
-            "text": "<p>Add a sprinkle of cheese and serve with some broccoli florets for extra greens.</p>",
-            "link_label": "Shop now",
-            "link": "shopify://products/ak-chicken-veggie-orzo"
           }
         },
         "column_8wqHD3": {
@@ -363,15 +363,15 @@
       },
       "block_order": [
         "column_MCP6fz",
-        "column_qt3VDe",
         "column_j3z9pq",
-        "column_RtePkw",
-        "column_e6rY3N",
         "column_hHM9x4",
+        "column_qt3VDe",
+        "column_RtePkw",
+        "column_qQj3if",
+        "column_3rRKdi",
+        "column_e6rY3N",
         "column_ccpYYG",
         "column_T3KyAe",
-        "column_3rRKdi",
-        "column_qQj3if",
         "column_8wqHD3",
         "column_qk9DJY",
         "column_r6j8QQ",
