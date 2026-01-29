@@ -139,6 +139,58 @@
             "image_badge_horizontal_position": "right"
           }
         },
+        "slide_hgbCiy": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Jan_new_Banner_2_desktop.svg",
+            "mobile_image": "shopify://shop_images/Jan_new_banners_2_mobile.svg",
+            "heading": "Natural ingredients, cooked like at home",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "Build Your Box",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "SHOP BUNDLES",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "200",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "right"
+          }
+        },
+        "slide_6mcVhA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Jan_new_Banner_3_2__desktop.svg",
+            "mobile_image": "shopify://shop_images/Jan_new_Banner_3_2__mobile.svg",
+            "heading": "Big on nutrition, ready in minutes",
+            "heading_size": "hxxl",
+            "show_heading_shadow": true,
+            "subheading": "",
+            "button_label": "BUILD Your BOX",
+            "link": "shopify://collections/build-your-box",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "shopify://collections/bundles",
+            "button_style_secondary_2": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-4",
+            "text_alignment_mobile": "center",
+            "image_badge_width": "200",
+            "image_badge_vertical_position": "top",
+            "image_badge_horizontal_position": "left"
+          }
+        },
         "slide_EFdemU": {
           "type": "slide",
           "disabled": true,
@@ -192,67 +244,14 @@
             "image_badge_vertical_position": "middle",
             "image_badge_horizontal_position": "centre"
           }
-        },
-        "slide_hgbCiy": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/AK_homepage_hero_orzo.png",
-            "mobile_image": "shopify://shop_images/AK_website_mobile_6.png",
-            "heading": "Big nutrition, little effort!",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "Build Your Box",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "SHOP BUNDLES",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "200",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "right"
-          }
-        },
-        "slide_6mcVhA": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "image": "shopify://shop_images/Website_homepage_1000_x_500_px_6.png",
-            "mobile_image": "shopify://shop_images/18_647bb9b4-981e-431c-92ef-f89d0cb673be.png",
-            "heading": "Kids food, made as it should be",
-            "heading_size": "hxxl",
-            "show_heading_shadow": true,
-            "subheading": "",
-            "button_label": "BUILD Your BOX",
-            "link": "shopify://collections/build-your-box",
-            "button_style_secondary": false,
-            "button_label_2": "",
-            "button_link_2": "shopify://collections/bundles",
-            "button_style_secondary_2": false,
-            "box_align": "middle-center",
-            "show_text_box": false,
-            "text_alignment": "center",
-            "image_overlay_opacity": 0,
-            "color_scheme": "scheme-4",
-            "text_alignment_mobile": "center",
-            "image_badge_width": "200",
-            "image_badge_vertical_position": "top",
-            "image_badge_horizontal_position": "left"
-          }
         }
       },
       "block_order": [
         "slide_c6rpWy",
-        "slide_EFdemU",
-        "slide_btGHpn",
         "slide_hgbCiy",
-        "slide_6mcVhA"
+        "slide_6mcVhA",
+        "slide_EFdemU",
+        "slide_btGHpn"
       ],
       "settings": {
         "layout": "full_bleed",
@@ -361,9 +360,9 @@
         "column_QDQrVz"
       ],
       "settings": {
-        "title": "Meals and snacks made for your little ones",
+        "title": "Nutritious meals and little bites made for your little ones",
         "heading_size": "h1",
-        "text": "<p>Handmade, dietitian-approved, REAL meals for babies, toddlers and beyond. Frozen and delivered to your door. We’re passionate about quality, responsibly sourced ingredients so that you can be sure your child is getting the very best. </p>",
+        "text": "<p>Developed with our children’s dietitian, our food is cooked in small batches, frozen and ready in minutes. We focus on quality, responsibly-sourced ingredients, so you can feel confident about what you’re feeding your child.</p>",
         "image_width": "full",
         "image_ratio": "square",
         "columns_desktop": 4,
