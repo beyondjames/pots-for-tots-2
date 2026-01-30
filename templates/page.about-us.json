@@ -485,6 +485,7 @@
         },
         "column_gY8UJg": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/Team_images_11.png",
             "title": "Jamie",
@@ -495,6 +496,7 @@
         },
         "column_rzfYa3": {
           "type": "column",
+          "disabled": true,
           "settings": {
             "image": "shopify://shop_images/4_313e96ac-4e5f-4f85-90de-1388f3c8f7c9.png",
             "title": "Katie",

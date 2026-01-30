@@ -298,12 +298,12 @@
         "column_Yc6brM": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Cottage_Pie_Bites.png",
-            "title": "AK Cottage Pie Bites",
+            "image": "shopify://shop_images/Pasta_Bolognese_2_5ca6d164-a5e2-4093-829b-f96ef2102bf1.png",
+            "title": "Pasta Bolognese",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
-            "link": "shopify://products/ak-cottage-pie-bites"
+            "link": "shopify://products/pasta-bolognese"
           }
         },
         "column_XgNy9B": {
@@ -321,34 +321,34 @@
         "column_FNaUJd": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mexican_Fajita_Bowl.png",
-            "title": "AK Mexican-Style Chicken & Veggie Fajita Bowl",
+            "image": "shopify://shop_images/Blueberry_muffins_2_9441a8e1-2d1c-4251-8c17-55de6edfa56b.png",
+            "title": "Blueberry Mini Muffins",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
-            "link": "shopify://products/ak-mexican-style-chicken-veggie-fajita-bowl"
+            "link": "shopify://products/blueberry-mini-muffins"
           }
         },
         "column_rLFxpX": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Salmon_Pasta_990d5329-cef6-416c-aebb-2c1f5134010d.png",
-            "title": "Creamy Salmon Pasta",
+            "image": "shopify://shop_images/Macaroni_Cheese_2_2fb44422-7155-47ed-8b45-24e81ec7aa36.png",
+            "title": "Mac & Cheese",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
-            "link": "shopify://products/creamy-salmon-tomato-pasta"
+            "link": "shopify://products/mac-cheese"
           }
         },
         "column_QDQrVz": {
           "type": "column",
           "settings": {
-            "image": "shopify://shop_images/Mild_Chicken_Tikka.png",
-            "title": "Mild Chicken Tikka",
+            "image": "shopify://shop_images/Banana_pancakes_2_73ea7b61-be77-41fb-b13e-06da93f15f9e.png",
+            "title": "Mini Banana Pancakes",
             "title_size": "h2",
             "text": "",
             "link_label": "SHOP NOW",
-            "link": "shopify://products/ak-mild-chicken-tikka"
+            "link": "shopify://products/mini-banana-pancakes"
           }
         }
       },
