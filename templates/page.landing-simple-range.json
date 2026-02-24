@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -287,14 +287,14 @@
         "template--16800295387394__79267f8c-0bbd-4ac0-93fc-af1d412e197c-heading-1": {
           "type": "heading",
           "settings": {
-            "heading": "Get the Simple Meals Bundle + FREE Digital Fussy Eating Guide for just £35",
+            "heading": "Get the Simple Meals Bundle for just £28",
             "heading_size": "h1"
           }
         },
         "template--16800295387394__79267f8c-0bbd-4ac0-93fc-af1d412e197c-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We've worked with our Children’s Dietitian, Lucy Upton to adapt four of your existing favourites slightly to create our new <strong>Simple</strong> range. We have Mediteranean Veg Orzo, Chicken Korma, Fish Pie and family favourite Pasta Bolognese. </p><p>This bundle contains 2 of each of the four meals for your little one to try as well as a FREE download of our <a href=\"https://potsfortots.co.uk/products/fussy-eating-e-book\">Fussy Eating e-book </a>(worth £8.99)</p><p></p>",
+            "text": "<p>We've worked with our Children’s Dietitian, Lucy Upton to adapt four of your existing favourites slightly to create our <strong>Simple</strong> range. We have Mediteranean Veg Orzo, Chicken Korma, Fish Pie and family favourite Pasta Bolognese. </p><p>This bundle contains 2 of each of the four meals for your little one to try.</p><p></p>",
             "text_style": "body"
           }
         },
@@ -302,7 +302,7 @@
           "type": "button",
           "settings": {
             "button_label": "Shop now",
-            "button_link": "shopify://products/simple-meals-fussy-eating-e-book",
+            "button_link": "shopify://products/my-first-meals-bundle-8-meals",
             "button_style_secondary": false
           }
         }
