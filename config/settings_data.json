@@ -124,7 +124,7 @@
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
-    "max_weeks_cart": 12,
+    "max_weeks_cart": 4,
     "cutoff_hours": 23,
     "cutoff_minutes": 59,
     "disabled_dates": "2026-04-06,2026-05-04,2026-05-25",
