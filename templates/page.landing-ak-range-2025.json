@@ -472,9 +472,9 @@
           "settings": {
             "image": "shopify://shop_images/AK_Bundle.png",
             "title": "AK x PFT Bundle",
-            "text": "<p>Save 10% when you buy the full bundle + Annabel Karmel's new Finger Foods book. </p>",
+            "text": "<p>Save 10% when you buy the full bundle</p>",
             "link_label": "SHOP NOW",
-            "link": "shopify://collections/pots-for-tots-x-annabel-karmel"
+            "link": "shopify://products/ak-x-pft-meals-and-bites-bundle"
           }
         }
       },
