@@ -23,14 +23,14 @@
         "heading_fVPErN": {
           "type": "heading",
           "settings": {
-            "heading": "Try our new Simple Range!",
+            "heading": "Try our Simple Range!",
             "heading_size": "h1"
           }
         },
         "text_zg4yTF": {
           "type": "text",
           "settings": {
-            "text": "<p>Perfect for those toddlers who are going through a fussy eating stage or babies who need an extra step to move on from purées.</p>",
+            "text": "<p>Perfect for babies who need an extra step to move on from purées, or toddlers who are going through a fussy eating stage.</p>",
             "text_style": "body"
           }
         },
@@ -218,7 +218,7 @@
             "image": "shopify://shop_images/9_a3131c50-d91d-4feb-bfa4-a981f2cbd53e.png",
             "caption": "",
             "heading": "Increased amount of carbohydrates",
-            "text": "<p>\"Did you know that young children need nearly ten times more energy from carbohydrates than other nutrients like protein? So we’ve added some extra carbohydrates to meet your toddler's energy needs and also to add some extra familiarity to their meal.\"</p>",
+            "text": "<p>\"Did you know that young children need nearly ten times more energy from carbohydrates than other nutrients like protein? So we’ve added some extra carbohydrates to meet your little one's energy needs and also to add some extra familiarity to their meal.\"</p>",
             "button_label": "SHOP NOW",
             "button_link": "shopify://products/my-first-meals-bundle-8-meals"
           }
