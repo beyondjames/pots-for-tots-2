@@ -395,6 +395,7 @@
     <meta name='google-site-verification' content='x97UcbPEmCz44bHdp-AQsT_4n8GC8PSO9F-FL8sc2mE'>
   </head>
 
+<script src="{{ 'loop_bundle.js' | asset_url }}"></script>
   <body class='gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}'>
     {% if request.path contains '/tools/recurring' %}
       {% render 'affinity-extensions' %}
