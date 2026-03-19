@@ -577,7 +577,32 @@ var fnCalled = false;
     window.wcp_data.wcp_cart.active_tags = [] ;
     window.wcp_data.wcp_cart.ApplyDiscountDetails = [];
         
+
+    <div class="LOOP_BUNDLE_CONTAINER_CLASS">
+        <input type="hidden" value="rendering loop bundles here as we did not found any table">
+    </div>
+        
       {% for item in cart.items %}
+{% comment %}
+    LOOP SUBSCRIPTIONS (https://apps.shopify.com/loop-subscriptions)
+    DO NOT modify this source code because
+    It is automatically generated from LOOP SUBSCRIPTIONS BUNDLE DESIGN
+    If you need to make change, please contact the Loop support team
+    LOOP BUNDLE CODE STARTS
+{% endcomment %}
+    {% assign isBundleItem = false %}
+    {%- for property in item.properties -%}
+        {% if property.first == '_bundleId' %}
+            {% assign isBundleItem = true %}
+            {% break %}
+        {% endif %}
+    {%- endfor -%}
+    {% if isBundleItem == true %}
+        {% continue %}
+    {% endif %}
+{% comment %}
+    LOOP BUNDLE CODE ENDS
+{% endcomment %}
       {% include 'wcp_discount' with item.product , wpd_discount_variant:item.variant %}
       {% include 'wcp_variant' with item.variant %}
   	  {% assign without_vd_Price = wcp_v_price %}
@@ -1138,3 +1163,8 @@ var fnCalled = false;
   </style>
 {% include 'wcp_net'%}
 {% endif %}
+{% comment %} <script defer="defer">
+  window.Loop = {};
+  window.Loop.bundleCartAllItems = {{ cart.items | json }};
+  initLoopBundle("LOOP_BUNDLE_CONTAINER_CLASS");
+</script> {% endcomment %}
