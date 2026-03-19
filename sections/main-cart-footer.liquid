@@ -271,8 +271,8 @@
 }
 {% endschema %}
 
-<script defer="defer">
+{% comment %} <script defer="defer">
   window.Loop = {};
   window.Loop.bundleCartAllItems = {{ cart.items | json }};
   initLoopBundle("LOOP_BUNDLE_CONTAINER_CLASS");
-</script>
+</script> {% endcomment %}
