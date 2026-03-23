@@ -26,6 +26,10 @@
             "product": "{{product}}"
           }
         },
+        "loop_subscriptions_loop_widget_6fcdPL": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        },
         "custom_liquid_7WXxdt": {
           "type": "custom_liquid",
           "settings": {
@@ -92,6 +96,7 @@
         "title",
         "price",
         "recharge_subscriptions_subscription_widget_8Lg9gC",
+        "loop_subscriptions_loop_widget_6fcdPL",
         "custom_liquid_7WXxdt",
         "reviews_io_reviewsio_rating_output_pEd8EK",
         "description",
@@ -131,7 +136,7 @@
             "header_colour": "#ffffff",
             "header_star_colour": "#ffffff",
             "heading_text_colour": "#0e1311",
-            "heading_font": "helvetica_n4",
+            "heading_font": "sans_serif_n4",
             "body_text_colour": "#0e1311",
             "badge_icon_colour": "#0e1311",
             "badge_text_colour": "#0e1311",
@@ -148,7 +153,9 @@
           }
         }
       },
-      "block_order": ["reviews_io_reviewsio_card_carousel_WWKP8f"],
+      "block_order": [
+        "reviews_io_reviewsio_card_carousel_WWKP8f"
+      ],
       "settings": {
         "include_margins": true
       }
@@ -172,5 +179,9 @@
       }
     }
   },
-  "order": ["main", "1746629390d6341737", "related-products"]
+  "order": [
+    "main",
+    "1746629390d6341737",
+    "related-products"
+  ]
 }
