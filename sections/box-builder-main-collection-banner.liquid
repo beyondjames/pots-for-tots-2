@@ -75,14 +75,16 @@
         <div class="collection-hero__description rte">
           {{- section.settings.collection_text -}}
 
-          <div class="collection-hero__description--delivery-date">
-            <p><strong>Order today for delivery on:</strong></p>
-            {% if section.settings.delivery_date_message != "" %}
-              {{- section.settings.delivery_date_message -}}
-            {% else %}
-              {{ weekday_date_month }}
-            {% endif %}
-          </div>
+          {%  if section.settings.show_delivery_estimate == true %}
+            <div class="collection-hero__description--delivery-date">
+              <p><strong>Order today for delivery on:</strong></p>
+              {% if section.settings.delivery_date_message != "" %}
+                {{- section.settings.delivery_date_message -}}
+              {% else %}
+                {{ weekday_date_month }}
+              {% endif %}
+            </div>
+          {%  endif %}
         </div>
       {%- else -%}
         {%- if section.settings.show_collection_description -%}
@@ -130,6 +132,12 @@
       "id": "show_collection_description",
       "default": true,
       "label": "t:sections.main-collection-banner.settings.show_collection_description.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_delivery_estimate",
+      "default": true,
+      "label": "Show Delivery date estimate"
     },
     {
       "type": "checkbox",
