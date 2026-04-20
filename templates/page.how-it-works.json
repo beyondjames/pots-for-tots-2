@@ -292,7 +292,7 @@
         "16496814660daf22ed-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We currently deliver across the UK to <strong>England, Wales, the Scottish Lowlands and the Isle of Wight</strong>. </p><p>We do <strong>not yet deliver</strong> to Channel Islands, Isle of Man, Northern Ireland, Scottish Highlands & Scottish Islands.</p><p>You can view the full list of postcodes we’re unable to deliver to <a href=\"https://help.potsfortots.co.uk/en-GB/delivery-information-437927\" target=\"_blank\" title=\"https://help.potsfortots.co.uk/en-GB/delivery-information-437927\">here</a>.</p>"
+            "text": "<p>We currently deliver across the UK to <strong>England, Wales, </strong>the<strong> Scottish Lowlands </strong>and<strong> </strong>the<strong> Isle of Wight</strong>. </p><p>We do <strong>not yet deliver</strong> to Channel Islands, Isle of Man, Northern Ireland, Scottish Highlands & Scottish Islands.</p><p>You can view the full list of postcodes we’re unable to deliver to <a href=\"https://help.potsfortots.co.uk/en-GB/delivery-information-437927\" target=\"_blank\" title=\"https://help.potsfortots.co.uk/en-GB/delivery-information-437927\">here</a>.</p>"
           }
         }
       },
