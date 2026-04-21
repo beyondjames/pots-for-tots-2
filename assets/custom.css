@@ -30,6 +30,7 @@ h4,
   outline: none !important;
 }
 
+html,
 body {
   font-family: 'Clear Sans' !important;
   -webkit-font-smoothing: antialiased;
