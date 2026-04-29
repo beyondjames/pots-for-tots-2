@@ -155,5 +155,107 @@ button.shopify-payment-button__button--unbranded,
 
 /* Product description accordion */
 .product__info-wrapper .custom-product__accordion {
+  --color-foreground: 64, 37, 10;
+  --color-primary: 79, 119, 101;
+  --color-secondary: 193, 221, 207;
   display: none;
+}
+
+.custom-product__accordion .accordion {
+  margin-top: 2.5rem;
+  margin-bottom: 0;
+  border-top: 0.1rem solid rgba(var(--color-foreground), 0.08);
+  border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
+}
+
+.custom-product__accordion summary {
+  display: flex;
+  position: relative;
+  line-height: 1;
+  padding: 1.5rem 0;
+  cursor: pointer;
+  list-style: none;
+  word-break: break-word;
+  font-family: 'Nadira Pro Bold';
+  color: rgb(var(--color-foreground));
+}
+
+.custom-product__accordion summary:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 10px;
+  height: 6px;
+  right: 0;
+  transform: translateY(5px);
+  opacity: 0.75;
+
+  background-color: currentColor;
+
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><path fill-rule='evenodd' clip-rule='evenodd' d='M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z'/></svg>");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><path fill-rule='evenodd' clip-rule='evenodd' d='M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z'/></svg>");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.custom-product__accordion details[open] > summary:after {
+  transform: rotate(180deg) translateY(-5px);
+}
+
+.custom-product__accordion details table {
+  margin-block: 16px;
+  width: 100%;
+  background: rgba(var(--color-secondary), 0.5);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.custom-product__accordion details table thead {
+  background: rgba(var(--color-primary), 1);
+  color: #fff;
+}
+
+.custom-product__accordion details table td.label {
+  background: rgba(var(--color-secondary), 1);
+}
+
+/* Minimal HTML5 accordion for product descriptions */
+.product-description-accordion {
+  border-top: 1px solid rgba(var(--color-foreground), 0.15);
+}
+
+.product-description-accordion details {
+  border-bottom: 1px solid rgba(var(--color-foreground), 0.15);
+}
+
+.product-description-accordion summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.2rem 0;
+  cursor: pointer;
+  list-style: none;
+  font-weight: 700;
+}
+
+.product-description-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.product-description-accordion summary::after {
+  content: '+';
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.product-description-accordion details[open] summary::after {
+  content: '\2212';
+}
+
+.product-description-accordion__content {
+  padding: 0 0 1.2rem;
 }
