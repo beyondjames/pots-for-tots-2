@@ -37,6 +37,10 @@
             "product": "{{product}}"
           }
         },
+        "loop_subscriptions_loop_widget_eCGXqU": {
+          "type": "shopify://apps/loop-subscriptions/blocks/loop_widget/267a7c64-5cb3-4552-b817-5485165f0a0b",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -65,6 +69,7 @@
         "variant_picker",
         "quantity_selector",
         "recharge_subscriptions_subscription_widget_XKfhUq",
+        "loop_subscriptions_loop_widget_eCGXqU",
         "buy_buttons",
         "reviews_io_reviewsio_rating_output_FBDj38",
         "description",
@@ -118,7 +123,7 @@
             "header_colour": "#ffffff",
             "header_star_colour": "#ffffff",
             "heading_text_colour": "#0e1311",
-            "heading_font": "helvetica_n4",
+            "heading_font": "sans_serif_n4",
             "body_text_colour": "#0e1311",
             "badge_icon_colour": "#0e1311",
             "badge_text_colour": "#0e1311",
