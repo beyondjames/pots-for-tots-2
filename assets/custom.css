@@ -168,6 +168,11 @@ button.shopify-payment-button__button--unbranded,
   border-bottom: 0.1rem solid rgba(var(--color-foreground), 0.08);
 }
 
+.custom-product__accordion .accordion + .accordion {
+    margin-top: 0;
+    border-top: none;
+}
+
 .custom-product__accordion summary {
   display: flex;
   position: relative;
