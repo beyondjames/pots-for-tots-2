@@ -154,11 +154,10 @@ button.shopify-payment-button__button--unbranded,
 }
 
 /* Product description accordion */
-.product__info-wrapper .custom-product__accordion {
+.custom-product__accordion {
   --color-foreground: 64, 37, 10;
   --color-primary: 79, 119, 101;
   --color-secondary: 193, 221, 207;
-  display: none;
 }
 
 .custom-product__accordion .accordion {
