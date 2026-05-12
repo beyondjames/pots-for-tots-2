@@ -226,6 +226,12 @@ button.shopify-payment-button__button--unbranded,
   background: rgba(var(--color-secondary), 1);
 }
 
+.custom-product__accordion details table td.sub-label {
+  background: rgba(var(--color-secondary), 1);
+  font-style: italic;
+  font-weight: 400;
+}
+
 /* Minimal HTML5 accordion for product descriptions */
 .product-description-accordion {
   border-top: 1px solid rgba(var(--color-foreground), 0.15);
