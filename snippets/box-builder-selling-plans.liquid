@@ -48,7 +48,7 @@
 
       {%- if variant.available == true -%}
         <div class='card__variants-variant' id='{{ variant.id }}' data-variant>
-          <ul class='card__variant-selling-plans'>
+          <ul class='card__variant-selling-plans hidden'>
             {%- for allocation in variant.selling_plan_allocations -%}
               {%- assign allocation_plan_match = ',' | append: allocation.selling_plan.id | append: ',' -%}
               {%- if recharge_plan_ids contains allocation_plan_match -%}
