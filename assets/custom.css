@@ -269,3 +269,8 @@ button.shopify-payment-button__button--unbranded,
 .product-description-accordion__content {
   padding: 0 0 1.2rem;
 }
+
+/* temporary fix */
+.box-drawer__products .box-drawer__product-price {
+  display: none !important;
+}
