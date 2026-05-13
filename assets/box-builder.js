@@ -16,9 +16,6 @@ let subscription = {
 
     // Subscription type (one-time or recurring)
     subscriptionType: '',
-
-    // Discount
-    discount: 0,
   },
 
   selector: {
@@ -62,9 +59,6 @@ let subscription = {
     const subTypeWrapper = document.querySelector('subscription-type');
     const orderTypeWrapper = document.querySelector('#orderType');
     const defaultSubType = document.querySelector('#subscription_type').value;
-
-    // Get the discount from the page
-    this.state.discount = 1 - parseFloat(document.querySelector('#discount').value) / 100;
 
     // Handle subscription type settings
     if (getCookie('potsType') !== '') {
@@ -416,7 +410,10 @@ let subscription = {
     const minimum = this.state.minItems; // Minimum required products
     const count = Math.abs(minimum - productCount); // Number of products needed to reach minimum
 
-    if ((productCount >= minimum && this.state.subscriptionFrequency !== 0) || (productCount >= minimum && type == "onetime")) {
+    if (
+      (productCount >= minimum && this.state.subscriptionFrequency !== 0) ||
+      (productCount >= minimum && type == 'onetime')
+    ) {
       // Hide the minimum product count warning if visible
       if (!countWarning.classList.contains('hidden')) {
         countWarning.classList.add('hidden');
@@ -456,7 +453,7 @@ let subscription = {
       if (modalSkipButton) {
         modalSkipButton.disabled = true;
       }
-    } else if (type != "onetime" && this.state.subscriptionFrequency == 0) {
+    } else if (type != 'onetime' && this.state.subscriptionFrequency == 0) {
       // Display the warning message with the required count
       countWarning.textContent = `Must select a delivery frequency`;
       countWarning.classList.remove('hidden');
@@ -480,28 +477,12 @@ let subscription = {
     // Build the product list HTML
     let productListContents = '<table class="box-drawer__table"><tbody>';
 
-    const discount = this.state.discount;
-
     productJson.forEach(function (product) {
       if (product.quantity > 0) {
-        let amount;
-        let discount_amount;
-        if (type == 'subscription') {
-          // Calculate price for subscription products
-          if (product.sellingPlans.length > 0) {
-            amount = ((product.sellingPlans[0].price * product.quantity) / 100).toFixed(2);
-            discount_amount = ((product.sellingPlans[0].price * product.quantity * discount) / 100).toFixed(2);
-          } else {
-            amount = ((product.price * product.quantity) / 100).toFixed(2);
-            discount_amount = ((product.price * product.quantity * discount) / 100).toFixed(2);
-          }
-        } else {
-          // Calculate price for one-time products
-          amount = ((product.price * product.quantity) / 100).toFixed(2);
-          discount_amount = ((product.price * product.quantity * discount) / 100).toFixed(2);
-        }
+        // Get pricing from product data
+        let amount = ((product.price * product.quantity) / 100).toFixed(2);
+        let discount_amount = ((product.sellingPlans[0].price * product.quantity) / 100).toFixed(2);
 
-        // let currency = '£' + amount;
         let item = '<tr class="box-drawer__table-row">';
 
         if (product.imageURL) {
@@ -515,12 +496,9 @@ let subscription = {
             '"></td>';
         }
 
-        // Get discounted products
-        const discounted_products = document.querySelector('#discounted_products').value;
-
         // Generation price for product
         let rendered_price;
-        if (discount > 0 && discount < 1 && type == 'subscription' && discounted_products.includes(product.productId)) {
+        if (type == 'subscription') {
           rendered_price = '<s>£' + amount + '</s>' + '<span>£' + discount_amount + '</span>';
         } else {
           rendered_price = '<span>£' + amount + '</span>';
@@ -556,11 +534,6 @@ let subscription = {
     let productSubscriptionTotalCost = 0;
     let productJson;
 
-    let subtype = this.state.subscriptionType;
-
-    let discount2 = this.state.discount;
-    let discounted_products = document.querySelector('#discounted_products').value;
-
     // Get the product array
     let productList = sessionStorage.getItem('potsProductList');
     productJson = JSON.parse(productList);
@@ -569,18 +542,10 @@ let subscription = {
       let lineTotal = product.price * parseInt(product.quantity);
       let productSubScriptionLineTotal = 0;
 
-      if (discounted_products.includes(product.productId)) {
-        if (product.sellingPlans.length > 0) {
-          productSubScriptionLineTotal = product.sellingPlans[0].price * parseInt(product.quantity) * discount2;
-        } else {
-          productSubScriptionLineTotal = product.price * parseInt(product.quantity) * discount2;
-        }
+      if (product.sellingPlans.length > 0) {
+        productSubScriptionLineTotal = product.sellingPlans[0].price * parseInt(product.quantity);
       } else {
-        if (product.sellingPlans.length > 0) {
-          productSubScriptionLineTotal = product.sellingPlans[0].price * parseInt(product.quantity);
-        } else {
-          productSubScriptionLineTotal = product.price * parseInt(product.quantity);
-        }
+        productSubScriptionLineTotal = product.price * parseInt(product.quantity);
       }
 
       productTotalCost += lineTotal;
@@ -891,7 +856,7 @@ let subscription = {
 
   // Function to handle adding products to the cart
   handleAddToCart: async function (data) {
-    console.log("Adding bundle to cart", data);
+    console.log('Adding bundle to cart', data);
 
     let redirect_url = '/cart';
 
