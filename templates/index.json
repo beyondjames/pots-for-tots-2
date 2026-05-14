@@ -600,6 +600,7 @@
         "column_tx4PAN",
         "column_RaWPKf"
       ],
+      "disabled": true,
       "settings": {
         "title": "PFT x Annabel Karmel",
         "heading_size": "h1",
